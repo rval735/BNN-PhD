@@ -1,0 +1,91 @@
+Main Objectives:
+- Develop an CNN on a FPGA
+- Apply that CNN to Automatic Crypto Trading
+- Expose Advantages/disadvantages of CNN on FPGA
+- Compare CNN running on FPGA/CPU/GPU
+
+Main Tasks:
+- Learn Deep Learning, NN & CNN
+- Gather Bitcoin tick data
+- Develop a CNN for CPU with Haskell-Accelerate
+- Develop a CNN for GPU with Haskell-Accelerate
+- Develop a CNN for FPGA with VHDL
+- Develop a CNN for FPGA with Haskell/Clash
+- Compare deployment between platforms
+- Research a trading methodology for CNN
+- Backtest the trading methodology with tick data
+- Compare results from CNN execution
+
+Sprint - 2 Week Period
+
+Learn Deep Learning, NN & CNN: 1 sprint (1)
+- Develop a research plan
+- Research and understand how DL, NN & CNN work
+- State of the art of common CNN
+- State of the art for CNN on FPGA
+- 4/Dec/2017 - 15/Dec/2017
+
+Gather Bitcoin tick data : 1 sprint (2)
+- Create a program and a DB to store tick Bitcoin data
+- Store all raw data from ticker, trades and order book
+- 18/Dec/2017 - 29/Dec/2017
+
+Develop a CNN for CPU with Haskell-Accelerate: 2 sprints (3 & 4)
+- Establish a base line of how a CNN works
+- Learn Haskell - Accelerate library
+- Consider current projects: DNN Graph or ZynqNet
+- Elaborate a simple model for a CNN
+- Benchmark how the CNN behaves
+- 3/Jan/2018 - 12/Jan/2018
+- 15/Jan/2018 - 26/Jan/2018
+
+Develop a CNN for GPU with Haskell-Accelerate: 2 sprints (5 & 6)
+- Transfer knowledge from previous sprint
+- Deploy previous code into a GPU environment
+- Benchmark how the CNN behaves
+- 29/Jan/2018 - 9/Feb/2018
+- 12/Feb/2018 - 23/Feb/2018
+
+Develop a CNN for FPGA with VHDL: 3 sprints (7, 8 & 9)
+- (Re)Learn VHDL
+- Transfer knowledge from previous sprint
+- Deploy previous code into a FGPA environment
+- Benchmark how the CNN behaves
+- 26/Feb/2018 - 9/Mar/2018
+- 12/Mar/2018 - 23/Mar/2018
+- 26/Mar/2018 - 6/Apr/2018
+
+Develop a CNN for FPGA with Haskell/Clash: 3 sprints (10, 11 & 12)
+- Learn Haskell - Clash library
+- Transfer knowledge from previous sprint
+- Deploy previous code into a FGPA environment
+- Benchmark how the CNN behaves
+- 9/Apr/2018 - 20/Apr/2018
+- 23/Apr/2018 - 4/May/2018
+- 7/May/2018 - 18/May/2018
+
+Compare deployment between platforms: 1 sprint (13)
+- Graph data from previous tasks
+- Identify platform weakness/strengths
+- Write conclusions about all different platforms
+- 21/May/2018 - 1/Jun/2018
+
+Research a trading methodology for CNN: 1 sprints (14)
+- Find how to train a CNN for trading
+- Use the best fit platform from previous conclusion
+- 4/Jun/2018 - 15/Jun/2018
+
+Backtest the trading methodology with tick data: 2 sprints (15 & 16)
+- Develop a CNN
+- Train the CNN
+- Test the CNN
+- Draw conclusions for historic data
+- Benchmark CNN behavior
+- Try to live test CNN
+- 18/Jun/2018 - 29/Jun/2018
+- 2/Jul/2018 - 13/Jul/2018
+
+Compare results from CNN execution
+- Write conclusions about the CNN performance
+- Write about current state and future work
+- 16/Jul/2018 - 27/Jul/2018
