@@ -1,0 +1,32 @@
+Papers:
+
+FPGA Implementation of Pseudo Random Number Generators for Monte Carlo Methods in Quantitative Finance
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/4731806/
+
+FPGA acceleration of quasi-Monte Carlo in finance
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/4629954/
+
+FinRC: challenges and opportunities for high-performance reconfigurable computing (HPRC) in computational finance
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2088265&CFID=1015325573&CFTOKEN=40858404
+
+DSL programmable engine for high frequency trading acceleration
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2088268&CFID=1015325573&CFTOKEN=40858404
+
+FPGA realization of backpropagation for stock market prediction
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/1198203/
+
+Multiplierless Algorithm for Multivariate Gaussian Random Number Generation in FPGAs
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6409492/
+
+High Frequency Trading Acceleration Using FPGAs
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6044837/
+
+Low-Latency FPGA Based Financial Data Feed Handler
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5771256/
+
+Low latency book handling in FPGA for high frequency trading
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/stamp/stamp.jsp?arnumber=6868785
+
+A Low-Latency Library in FPGA Hardware for High-Frequency Trading (HFT)
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6299067/
+

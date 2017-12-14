@@ -1,0 +1,38 @@
+Papers:
+
+The Functional Dendritic Cell Algorithm: A formal specification with Haskell
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7969518/
+
+HLogo: A parallel Haskell variant of NetLogo
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7949416/
+
+Safe Client/Server Web Development with Haskell
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7839809/
+
+A Model of Microkernel Based on Spatial-Temporal Isolation in Haskell
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6835664/
+
+Modeling of dynamic reconfigurable systems with Haskell
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6339201/
+
+Deterministic Parallel Programming with Haskell
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6231612/
+
+Comparing and Optimising Parallel Haskell Implementations for Multicore Machines
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5364479/?reload=true
+
+Towards Haskell in the cloud
+https://www.microsoft.com/en-us/research/publication/towards-haskell-cloud/
+
+A monad for deterministic parallelism
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2034685&CFID=1015325573&CFTOKEN=40858404
+
+Improving STM performance with transactional structs
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3122972&CFID=1015325573&CFTOKEN=40858404
+
+Learn Quantum Mechanics with Haskell
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1611.09471
+
+Learn Physics by Programming in Haskell
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1412.4880
+

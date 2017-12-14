@@ -1,0 +1,70 @@
+Papers:
+
+A power-efficient and high performance FPGA accelerator for convolutional neural networks: work-in-progress
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3125534&CFID=1015325573&CFTOKEN=40858404
+
+Curbing the roofline: a scalable and flexible architecture for CNNs on FPGA
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2911715&CFID=1015325573&CFTOKEN=40858404
+
+Design of an Energy-Efficient Accelerator for Training of Convolutional Neural Networks using Frequency-Domain Computation
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3062228&CFID=1015325573&CFTOKEN=40858404
+
+CirCNN: accelerating and compressing deep neural networks using block-circulant weight matrices
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3124552&CFID=1015325573&CFTOKEN=40858404
+
+Energy-Efficient CNN Implementation on a Deeply Pipelined FPGA Cluster
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2934644&CFID=1015325573&CFTOKEN=40858404
+
+Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847265&CFID=1015325573&CFTOKEN=40858404
+
+Automated Systolic Array Architecture Synthesis for High Throughput CNN Inference on FPGAs
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3062207&CFID=1015325573&CFTOKEN=40858404
+
+Maximizing CNN Accelerator Efficiency Through Resource Partitioning
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3080221&CFID=1015325573&CFTOKEN=40858404
+
+A Holistic Approach for Optimizing DSP Block Utilization of a CNN implementation on FPGA
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2967430&CFID=1015325573&CFTOKEN=40858404
+
+Throughput-Optimized OpenCL-based FPGA Accelerator for Large-Scale Convolutional Neural Networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847276&CFID=1015325573&CFTOKEN=40858404
+
+Optimizing Loop Operation and Dataflow in FPGA Acceleration of Deep Convolutional Neural Networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021736&CFID=1015325573&CFTOKEN=40858404
+
+Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021741&CFID=1015325573&CFTOKEN=40858404
+
+Why TanH is a Hardware Friendly Activation Function for CNNs
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3131937&CFID=1015325573&CFTOKEN=40858404
+
+F-CNN: An FPGA-based framework for training Convolutional Neural Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7760779/
+
+A New Implementation of Fully Programmable Complete CNN Processor Core on FPGA
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7827943/
+
+Implementing a CNN Universal Machine on FPGA: state-of-the-art and key challenges
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5760667/
+
+Caffeinated FPGAs: FPGA framework For Convolutional Neural Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7929549/
+
+Quantized CNN: A Unified Approach to Accelerate and Compress Convolutional Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8171208/
+
+fpgaConvNet: A Toolflow for Mapping Diverse Convolutional Neural Networks on Embedded FPGAs
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1711.08740
+
+A General Neural Network Hardware Architecture on FPGA
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1711.05860
+
+The implementation of a Deep Recurrent Neural Network Language Model on a Xilinx FPGA
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1710.10296
+
+A GPU-Outperforming FPGA Accelerator Architecture for Binary Convolutional Neural Networks
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1702.06392
+
+FP-BNN: Binarized neural network on FPGA
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217315655

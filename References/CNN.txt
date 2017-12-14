@@ -1,0 +1,11 @@
+Papers:
+
+An efficient FPGA implementation of a DT-CNN for small image gray-scale pre-processing
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5275114/
+
+ADaPTION: Toolbox and Benchmark for Training Convolutional Neural Networks with Reduced Numerical Precision Weights and Activation
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1711.04713
+
+Self-Taught convolutional neural networks for short text clustering
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0893608016301976
+

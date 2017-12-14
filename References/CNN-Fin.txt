@@ -1,0 +1,13 @@
+Papers:
+
+Forecasting Stock Prices from the Limit Order Book Using Convolutional Neural Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8010701/
+
+Convolutional Neural Networks Applied to High-Frequency Market Microstructure Forecasting
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8101595/
+
+Financial Time-series Data Analysis using Deep Convolutional Neural Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7979885/
+
+Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0950705117304252

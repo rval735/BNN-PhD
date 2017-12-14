@@ -1,0 +1,13 @@
+Papers:
+
+A general framework for blockchain analytics
+https://arxiv.org/abs/1707.01021
+
+Unraveling Blockchain based Crypto-currency System Supporting Oblivious Transactions: a Formalized Approach
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3055528&CFID=1015325573&CFTOKEN=40858404
+
+The Internet Blockchain: A Distributed, Tamper-Resistant Transaction Framework for the Internet
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3005771&CFID=1015325573&CFTOKEN=40858404
+
+Bitcoin meets strong consistency
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2833321&CFID=1015325573&CFTOKEN=40858404

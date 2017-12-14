@@ -1,0 +1,31 @@
+Papers:
+
+High Frequency Trading with Complex Event Processing
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7837047/
+
+Computing system and network architectures in high frequency trading financial applications
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7528289/
+
+Online evolving fuzzy rule-based prediction model for high frequency trading financial data stream
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7502509/
+
+Parallelizing High-Frequency Trading Applications by Using C++11 Attributes
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7345639/
+
+High frequency trading portfolio optimisation: Integration of financial and human factors
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6121737/
+
+High frequency trading an analysis regarding volatility and liquidity starting from a base case of algorithms and a dedicated software architecture
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6924075/
+
+Volatility Management of High Frequency Trading Environments
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6642864/
+
+High frequency trading strategy using the Hilbert transform
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5572083/
+
+Modelling the trading behaviour in high-frequency markets
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5995816/
+
+Clustering High-frequency Stock Data for Trading Volatility Analysis
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5708853/

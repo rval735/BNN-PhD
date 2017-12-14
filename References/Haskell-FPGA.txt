@@ -1,0 +1,16 @@
+Papers:
+
+A two step hardware design method using CλaSH
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6339258/
+
+System-level modelling of dynamic reconfigurable designs using functional programming abstractions
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6523639/
+
+Assertion based verification using PSL-like properties in Haskell
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6549828/
+
+HTCC: Haskell to Handel-C Hardware Compiler
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7723553/
+
+Hardware software co-design in Haskell
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3122970&CFID=1015325573&CFTOKEN=40858404

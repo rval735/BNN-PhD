@@ -1,0 +1,55 @@
+Papers:
+
+Neural network training algorithms on parallel architectures for finance applications
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/1240376/
+
+Neural networks in finance: an information analysis
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/495273/
+
+Neural network chaos and computational algorithms of forecast in finance
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/825335/
+
+Deep Direct Reinforcement Learning for Financial Signal Representation and Trading
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7407387/
+
+A binary ensemble classifier for high-frequency trading
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7280602/
+
+High-frequency trading strategies using wavelet-transformed order book information and dynamic Bayesian networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7237178/
+
+A Hybrid Genetic-Programming Swarm-Optimisation Approach for Examining the Nature and Stability of High Frequency Trading Strategies
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7033087/
+
+Co-evolving online high-frequency trading strategies using grammatical evolution
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6924111/
+
+A neural network based approach to support the Market Making strategies in High-Frequency Trading
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6889835/
+
+Adaptive Neuro Fuzzy Inference Systems for High Frequency Financial Trading and Forecasting
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5359574/
+
+A monad for deterministic parallelism
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7376685/
+
+Using Recurrent Neural Networks To Forecasting of Forex
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/cond-mat/0304469
+
+Agent Inspired Trading Using Recurrent Reinforcement Learning and LSTM Neural Networks
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1707.07338
+
+Sequence Classification of the Limit Order Book using Recurrent Neural Networks
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1707.05642
+
+Efficient Valuation of SCR via a Neural Network Approach
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1610.01946
+
+Artificial Neural Network and Time Series Modeling Based Approach to Forecasting the Exchange Rate in a Multivariate Framework
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1607.02093
+
+Neural-network-based synchronous iteration learning method for multi-player zero-sum games
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217303429
+
+A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S1877050917318252

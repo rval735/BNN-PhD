@@ -1,0 +1,23 @@
+Papers:
+
+Accelerating Large-Scale HPC Applications Using FPGAs
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5992126/
+
+Implementation of genetic algorithms using FPGA technology
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2451639&CFID=1015325573&CFTOKEN=40858404
+
+Synthesis of custom networks of heterogeneous processing elements for complex physical system emulation
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2380483&CFID=1015325573&CFTOKEN=40858404
+
+PROToFLEX: FPGA-accelerated Hybrid Functional Simulator
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/4228244/
+
+Architecting to achieve a billion requests per second throughput on a single key-value store server platform
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7284088/
+
+FPGA integrated co-design
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/932404/
+
+Parallel algorithms development for programmable logic devices
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0965997806000147
+
