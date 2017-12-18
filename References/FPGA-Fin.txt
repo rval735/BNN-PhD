@@ -6,9 +6,6 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/4731806/
 FPGA acceleration of quasi-Monte Carlo in finance
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/4629954/
 
-FinRC: challenges and opportunities for high-performance reconfigurable computing (HPRC) in computational finance
-https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2088265&CFID=1015325573&CFTOKEN=40858404
-
 DSL programmable engine for high frequency trading acceleration
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2088268&CFID=1015325573&CFTOKEN=40858404
 
@@ -25,8 +22,16 @@ Low-Latency FPGA Based Financial Data Feed Handler
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5771256/
 
 Low latency book handling in FPGA for high frequency trading
-http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/stamp/stamp.jsp?arnumber=6868785
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6868785/
 
 A Low-Latency Library in FPGA Hardware for High-Frequency Trading (HFT)
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6299067/
 
+A Hybrid Genetic-Programming Swarm-Optimisation Approach for Examining the Nature and Stability of High Frequency Trading Strategies
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7033087/
+
+Computing system and network architectures in high frequency trading financial applications
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7528289/
+
+High-Performance Quasi-Monte Carlo Financial Simulation- FPGA vs. GPP vs. GPU
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1862656&CFID=1015325573&CFTOKEN=40858404

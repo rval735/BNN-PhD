@@ -3,9 +3,6 @@ Papers:
 High Frequency Trading with Complex Event Processing
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7837047/
 
-Computing system and network architectures in high frequency trading financial applications
-http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7528289/
-
 Online evolving fuzzy rule-based prediction model for high frequency trading financial data stream
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7502509/
 

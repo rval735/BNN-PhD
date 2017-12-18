@@ -1,0 +1,42 @@
+TY  - CONF
+TI  - Low latency book handling in FPGA for high frequency trading
+T2  - 17th International Symposium on Design and Diagnostics of Electronic Circuits & Systems
+SP  - 175
+EP  - 178
+AU  - M. Dvořák
+AU  - J. Kořenek
+PY  - 2014
+KW  - electronic trading
+KW  - field programmable gate arrays
+KW  - logic design
+KW  - FPGA
+KW  - QDR SRAM
+KW  - algorithmic trading
+KW  - best bid price
+KW  - best offer price
+KW  - financial instrument
+KW  - hardware architecture
+KW  - hardware market state
+KW  - high frequency trading
+KW  - lookup latency-memory utilization trade-off
+KW  - low latency book handling
+KW  - low latency trading system
+KW  - market data processing
+KW  - storage capacity 144 Mbit
+KW  - Algorithm design and analysis
+KW  - Feeds
+KW  - Field programmable gate arrays
+KW  - Hardware
+KW  - Instruments
+KW  - Memory management
+DO  - 10.1109/DDECS.2014.6868785
+JO  - 17th International Symposium on Design and Diagnostics of Electronic Circuits & Systems
+IS  - 
+SN  - 
+VO  - 
+VL  - 
+JA  - 17th International Symposium on Design and Diagnostics of Electronic Circuits & Systems
+Y1  - 23-25 April 2014
+ER  - 
+
+

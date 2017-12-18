@@ -1,0 +1,43 @@
+TY  - CONF
+TI  - Accelerating Large-Scale HPC Applications Using FPGAs
+T2  - 2011 IEEE 20th Symposium on Computer Arithmetic
+SP  - 191
+EP  - 192
+AU  - R. Dimond
+AU  - S. Racanière
+AU  - O. Pell
+PY  - 2011
+KW  - data flow computing
+KW  - digital arithmetic
+KW  - field programmable gate arrays
+KW  - optimisation
+KW  - CPU
+KW  - FPGA accelerator
+KW  - IEEE format
+KW  - arithmetic operator
+KW  - conventional machine
+KW  - data flow programming model
+KW  - field programmable gate array
+KW  - glue logic
+KW  - large scale HPC application
+KW  - nonstandard arithmetic
+KW  - Acceleration
+KW  - Bandwidth
+KW  - Convolution
+KW  - Field programmable gate arrays
+KW  - Kernel
+KW  - Optimization
+KW  - Stacking
+KW  - Acceleration
+KW  - FPGA
+DO  - 10.1109/ARITH.2011.34
+JO  - 2011 IEEE 20th Symposium on Computer Arithmetic
+IS  - 
+SN  - 1063-6889
+VO  - 
+VL  - 
+JA  - 2011 IEEE 20th Symposium on Computer Arithmetic
+Y1  - 25-27 July 2011
+ER  - 
+
+

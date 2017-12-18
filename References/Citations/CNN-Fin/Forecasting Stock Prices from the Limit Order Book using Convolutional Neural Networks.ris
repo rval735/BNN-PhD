@@ -1,0 +1,51 @@
+TY  - CONF
+TI  - Forecasting Stock Prices from the Limit Order Book Using Convolutional Neural Networks
+T2  - 2017 IEEE 19th Conference on Business Informatics (CBI)
+SP  - 7
+EP  - 12
+AU  - A. Tsantekidis
+AU  - N. Passalis
+AU  - A. Tefas
+AU  - J. Kanniainen
+AU  - M. Gabbouj
+AU  - A. Iosifidis
+PY  - 2017
+KW  - economic forecasting
+KW  - feedforward neural nets
+KW  - learning (artificial intelligence)
+KW  - pricing
+KW  - stock markets
+KW  - time series
+KW  - CNN
+KW  - convolutional neural networks
+KW  - deep learning methodology
+KW  - financial exchanges
+KW  - financial markets
+KW  - input large-scale high-frequency time-series
+KW  - limit order book
+KW  - price movements
+KW  - stock price forecasting
+KW  - stock price movement prediction
+KW  - transaction analysis
+KW  - Convolution
+KW  - Data models
+KW  - Machine learning
+KW  - Market research
+KW  - Mathematical model
+KW  - Neural networks
+KW  - Support vector machines
+KW  - Convolutional Neural Networks
+KW  - Large scale financial data
+KW  - Limit Orderbook
+DO  - 10.1109/CBI.2017.23
+JO  - 2017 IEEE 19th Conference on Business Informatics (CBI)
+IS  - 
+SN  - 
+VO  - 01
+VL  - 01
+JA  - 2017 IEEE 19th Conference on Business Informatics (CBI)
+Y1  - 24-27 July 2017
+AB  - In today's financial markets, where most trades are performed in their entirety by electronic means and the largest fraction of them is completely automated, an opportunity has risen from analyzing this vast amount of transactions. Since all the transactions are recorded in great detail, investors can analyze all the generated data and detect repeated patterns of the price movements. Being able to detect them in advance, allows them to take profitable positions or avoid anomalous events in the financial markets. In this work we proposed a deep learning methodology, based on Convolutional Neural Networks (CNNs), that predicts the price movements of stocks, using as input large-scale, high-frequency time-series derived from the order book of financial exchanges. The dataset that we use contains more than 4 million limit order events and our comparison with other methods, like Multilayer Neural Networks and Support Vector Machines, shows that CNNs are better suited for this kind of task.
+ER  - 
+
+

@@ -1,0 +1,63 @@
+TY  - CONF
+TI  - A Low-Latency Library in FPGA Hardware for High-Frequency Trading (HFT)
+T2  - 2012 IEEE 20th Annual Symposium on High-Performance Interconnects
+SP  - 9
+EP  - 16
+AU  - J. W. Lockwood
+AU  - A. Gupte
+AU  - N. Mehta
+AU  - M. Blott
+AU  - T. English
+AU  - K. Vissers
+PY  - 2012
+KW  - IP networks
+KW  - electronic engineering computing
+KW  - electronic trading
+KW  - field programmable gate arrays
+KW  - local area networks
+KW  - memory protocols
+KW  - microprocessor chips
+KW  - network interfaces
+KW  - Ethernet line rate
+KW  - FPGA IP library
+KW  - FPGA hardware
+KW  - HFT platform
+KW  - I-O interface
+KW  - alternative hybrid architecture
+KW  - bit rate 10 Gbit/s
+KW  - computers software
+KW  - custom 1U FPGA appliance
+KW  - electronic trading
+KW  - financial protocol parser
+KW  - fixed end-to-end latency
+KW  - hardware acceleration
+KW  - high-frequency trading platform
+KW  - high-performance network adapter
+KW  - low-latency library
+KW  - memory interface
+KW  - pre-built infrastructure
+KW  - software implementation
+KW  - time 1 mus
+KW  - Field programmable gate arrays
+KW  - Hardware
+KW  - IP networks
+KW  - Libraries
+KW  - Protocols
+KW  - Registers
+KW  - Software
+KW  - Algorithmic
+KW  - FPGA
+KW  - HFT
+KW  - latency
+KW  - trading
+DO  - 10.1109/HOTI.2012.15
+JO  - 2012 IEEE 20th Annual Symposium on High-Performance Interconnects
+IS  - 
+SN  - 1550-4794
+VO  - 
+VL  - 
+JA  - 2012 IEEE 20th Annual Symposium on High-Performance Interconnects
+Y1  - 22-24 Aug. 2012
+ER  - 
+
+

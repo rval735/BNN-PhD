@@ -68,3 +68,6 @@ https://arxiv-org.ezproxy.auckland.ac.nz/abs/1702.06392
 
 FP-BNN: Binarized neural network on FPGA
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217315655
+
+An efficient FPGA implementation of a DT-CNN for small image gray-scale pre-processing
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5275114/

@@ -11,3 +11,8 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7979885/
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0950705117304252
+
+Deep learning for event-driven stock prediction
+https://www.ijcai.org/Proceedings/15/Papers/329.pdf
+https://www.scopus.com/record/display.uri?eid=2-s2.0-84949744124&origin=inward&txGid=82fa810bc8a087ba2b3407e7ab29b861
+https://dl.acm.org/citation.cfm?id=2832572

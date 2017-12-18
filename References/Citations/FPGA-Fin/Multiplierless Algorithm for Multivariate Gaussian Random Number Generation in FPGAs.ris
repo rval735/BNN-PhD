@@ -1,0 +1,58 @@
+TY  - JOUR
+TI  - Multiplierless Algorithm for Multivariate Gaussian Random Number Generation in FPGAs
+T2  - IEEE Transactions on Very Large Scale Integration (VLSI) Systems
+SP  - 2193
+EP  - 2205
+AU  - D. B. Thomas
+AU  - W. Luk
+PY  - 2013
+KW  - Gaussian distribution
+KW  - adders
+KW  - field programmable gate arrays
+KW  - graphics processing units
+KW  - random number generation
+KW  - shift registers
+KW  - table lookup
+KW  - Virtex-5 FPGA
+KW  - adders
+KW  - block-memory resources
+KW  - field-programmable gate array
+KW  - frequency 1.2 GHz
+KW  - frequency 400 MHz
+KW  - graphics processing unit
+KW  - independent Gaussian samples
+KW  - logic resources
+KW  - lookup-tables
+KW  - multiplierless algorithm
+KW  - multivariate Gaussian distribution
+KW  - multivariate Gaussian vectors
+KW  - multivariate generator
+KW  - numerical simulation
+KW  - pair-wise correlations
+KW  - random number generation
+KW  - read-only memories
+KW  - registers
+KW  - scalar Gaussian generator
+KW  - uniform distribution
+KW  - Covariance matrix
+KW  - Field programmable gate arrays
+KW  - Generators
+KW  - Matrix decomposition
+KW  - Standards
+KW  - Table lookup
+KW  - Vectors
+KW  - Field-programmable gate array (FPGA)
+KW  - Monte Carlo simulation
+KW  - multivariate samples
+KW  - random number generation
+DO  - 10.1109/TVLSI.2012.2228017
+JO  - IEEE Transactions on Very Large Scale Integration (VLSI) Systems
+IS  - 12
+SN  - 1063-8210
+VO  - 21
+VL  - 21
+JA  - IEEE Transactions on Very Large Scale Integration (VLSI) Systems
+Y1  - Dec. 2013
+ER  - 
+
+

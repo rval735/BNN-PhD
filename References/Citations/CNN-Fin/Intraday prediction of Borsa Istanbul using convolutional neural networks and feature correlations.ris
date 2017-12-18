@@ -1,0 +1,23 @@
+TY  - JOUR
+T1  - Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
+AU  - Gunduz, Hakan
+AU  - Yaslan, Yusuf
+AU  - Cataltepe, Zehra
+JO  - Knowledge-Based Systems
+VL  - 137
+IS  - Supplement C
+SP  - 138
+EP  - 148
+PY  - 2017
+DA  - 2017/12/01/
+SN  - 0950-7051
+DO  - https://doi.org/10.1016/j.knosys.2017.09.023
+UR  - http://www.sciencedirect.com/science/article/pii/S0950705117304252
+KW  - Stock market prediction
+KW  - Deep learning
+KW  - Borsa Istanbul
+KW  - Convolutional neural networks
+KW  - CNN
+KW  - Feature selection
+KW  - Feature correlations
+ER  - 

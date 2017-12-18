@@ -1,0 +1,41 @@
+TY  - CONF
+TI  - F-CNN: An FPGA-based framework for training Convolutional Neural Networks
+T2  - 2016 IEEE 27th International Conference on Application-specific Systems, Architectures and Processors (ASAP)
+SP  - 107
+EP  - 114
+AU  - Wenlai Zhao
+AU  - Haohuan Fu
+AU  - W. Luk
+AU  - Teng Yu
+AU  - Shaojun Wang
+AU  - Bo Feng
+AU  - Yuchun Ma
+AU  - Guangwen Yang
+PY  - 2016
+KW  - field programmable gate arrays
+KW  - floating point arithmetic
+KW  - neural nets
+KW  - 32-bit floating-point arithmetic
+KW  - FPGA-based framework
+KW  - bandwidth resources
+KW  - convolutional neural networks
+KW  - hardware resources
+KW  - streaming datapath
+KW  - Bandwidth
+KW  - Computational modeling
+KW  - Convolution
+KW  - Field programmable gate arrays
+KW  - Neural networks
+KW  - Runtime
+KW  - Training
+DO  - 10.1109/ASAP.2016.7760779
+JO  - 2016 IEEE 27th International Conference on Application-specific Systems, Architectures and Processors (ASAP)
+IS  - 
+SN  - 
+VO  - 
+VL  - 
+JA  - 2016 IEEE 27th International Conference on Application-specific Systems, Architectures and Processors (ASAP)
+Y1  - 6-8 July 2016
+ER  - 
+
+

@@ -6,14 +6,8 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7969518/
 HLogo: A parallel Haskell variant of NetLogo
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7949416/
 
-Safe Client/Server Web Development with Haskell
-http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7839809/
-
 A Model of Microkernel Based on Spatial-Temporal Isolation in Haskell
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6835664/
-
-Modeling of dynamic reconfigurable systems with Haskell
-http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6339201/
 
 Deterministic Parallel Programming with Haskell
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6231612/

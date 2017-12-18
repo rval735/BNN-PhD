@@ -18,9 +18,6 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7280602/
 High-frequency trading strategies using wavelet-transformed order book information and dynamic Bayesian networks
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7237178/
 
-A Hybrid Genetic-Programming Swarm-Optimisation Approach for Examining the Nature and Stability of High Frequency Trading Strategies
-http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7033087/
-
 Co-evolving online high-frequency trading strategies using grammatical evolution
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6924111/
 
@@ -53,3 +50,9 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S092523
 
 A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S1877050917318252
+
+Predicting Stock Prices Using LSTM
+https://www.ijsr.net/archive/v6i4/ART20172755.pdf
+
+A LSTM-based method for stock returns prediction: a case study of china stock market
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7364089/
