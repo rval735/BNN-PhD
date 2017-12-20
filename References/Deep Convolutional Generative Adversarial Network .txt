@@ -1,0 +1,14 @@
+Papers:
+
+Building an Automatic Sprite Generator with Deep Convolutional Generative Adversarial Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/stamp/stamp.jsp?arnumber=8080426
+
+GAN-D: Generative adversarial networks for image deconvolution
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8190958/
+
+Generative Adversarial Nets
+https://arxiv.org/abs/1406.2661
+
+Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
+https://arxiv.org/abs/1511.06434
+

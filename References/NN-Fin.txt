@@ -56,3 +56,9 @@ https://www.ijsr.net/archive/v6i4/ART20172755.pdf
 
 A LSTM-based method for stock returns prediction: a case study of china stock market
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7364089/
+
+Multi-Scale Convolutional Neural Networks for Time Series Classification
+https://arxiv.org/abs/1603.06995
+
+Classification-based Financial Markets Prediction using Deep Neural Networks
+https://arxiv.org/abs/1603.08604

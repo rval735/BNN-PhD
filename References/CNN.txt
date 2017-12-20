@@ -9,3 +9,11 @@ https://arxiv-org.ezproxy.auckland.ac.nz/abs/1711.04713
 Self-Taught convolutional neural networks for short text clustering
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0893608016301976
 
+Applications of Convolutional Neural Networks
+ijcsit.com/docs/Volume%207/vol7issue5/ijcsit20160705014.pdf
+
+Application of Modern Architectures of Deep Neural Networks for Solving Practical Problems
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7970594/
+
+Intriguing properties of neural networks
+https://arxiv.org/abs/1312.6199

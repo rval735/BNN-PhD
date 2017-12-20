@@ -1,0 +1,215 @@
+Use Haskell-Clash to develop a CNN for HFT
+
+Fin
+
+CNN
+
+Applications of Convolutional Neural Networks
+- Describe different known applications of CNN
+- Computer vision and Natural language processing as their main applications
+- Improvements over LSTM RNN, SVN
+
+CNN-Fin
+
+Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
+- Use of CNN to predict stock market price movement using random and naïve   series
+- CNN better than Macro Average F-Measure for random and correlated features
+- Istanbul stock exchange
+
+Forecasting Stock Prices from the Limit Order Book using Convolutional Neural Networks 
+- CNN better than RNN, RBM, SVM
+- Taiwan stock exchange
+
+Financial Time-series Data Analysis using Deep Convolutional Neural Networks 
+- Transform data into an image
+- Executed on a CPU using Matlab
+
+Deep learning for event-driven stock prediction
+- Use news as a feature in the CNN
+- Comparison of different CNN for market prediction
+- NN vs CNN
+- Profitability of the CNN against other publications
+- S&P stocks
+
+Convolutional Neural Networks Applied to High-Frequency Market Microstructure Forecasting 
+- Confirmation of CNN works "reasonably well" on forecasting price trend
+- Explains the structure of their CNN for order book and event flow
+
+Multi-Scale Convolutional Neural Networks for Time Series Classification
+- Use Multi-Scale CNN for time series classification
+- MCNN unifies classification, feature extraction and back propagation
+- Comprehensive benchmarking against other TSC algorithms
+- 
+NN-Fin
+
+A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters 
+- Use of NN un a trading system for 30 stocks of the Dow
+- Next steps are going to make a CNN 
+- Use SMA and RSI 
+
+Adaptive Neuro Fuzzy Inference Systems for High Frequency Financial Trading and Forecasting
+- Another Machine learning technique: Adaptive Neuro-Fuzzy Inference System
+- Use Sharpe and Sortino ratio
+- Comparison against buy and hold
+- FOREX for EUR/USD
+
+Using Recurrent Neural Networks To Forecasting of Forex
+- Use NN for time series forecasting
+- CHF, GBP, Euro and JPN
+- Use this as a relation with Bitcoin exchange
+
+FPGA
+
+Accelerating Large-Scale HPC Applications Using FPGAs
+- Use FPGA to accelerate High performance computing
+- Comparison with x86
+- Modeling wave propagation and credit derivates as its applications
+
+Haskell - FPGA
+
+Modeling of dynamic reconfigurable systems with Haskell
+- Mathematical description of Run Time Reconfigurable systems
+- Use high order functions to generalize rules of abstraction
+
+FPGA-Fin
+
+Computing system and network architectures in high frequency trading financial applications
+- Use Networked FPGAs to obtain sub-microsecond data transfer
+- CUDA for HFT algorithm
+- Comparison of different CUDA implementations
+- x86 vs GPUs
+
+A Hybrid Genetic-Programming Swarm-Optimisation Approach for Examining the Nature and Stability of High Frequency Trading Strategies
+- Use genetic algorithms for HFT strategies
+- FPGA performs the genetic calculations (15.62x over CPU)
+- CPU - FPGA - CPU structure
+
+A Low-Latency Library in FPGA Hardware for High-Frequency Trading (HFT)
+- Sustain why low latency is important in HFT transactions
+- Whole trading system in the FPGA
+- Advantages and disadvantages of a whole system in a FPGA
+- "Building and verifying new hardware is more time- consuming than writing new software due to the significantly lower abstraction level in the design flow"
+- High throughput 6.1M FIX messages/sec
+- FIX as protocol of communication
+
+DSL programmable engine for high frequency trading acceleration
+- FPGA vs x86 vs PowerPC
+- FAST as protocol of communication
+- Directly connected from network to FPGA
+- Decreased latency, increased data rate
+- DSL for programming via software
+
+FPGA acceleration of quasi-Monte Carlo in finance
+- Advantages of using  nstead of x86
+- Novel publication of quasi-Monte Carlo simulation
+
+High-Performance Quasi-Monte Carlo Financial Simulation: FPGA vs. GPP vs. GPU
+- Comparison of FPGA vs other computing architectures
+- Financial derivates and QMC simulation
+- Throughput and efficiency are compared
+- Verilog for FPGA programming
+- Speed Up of ~544X vs CPU; 50x vs GPU
+- Consumption of 336x CPU, 16x GPU
+
+Low latency book handling in FPGA for high frequency trading
+- FPGA implementation of a order book
+- Reduced lookup latency
+- Large storage due to memory arrangements
+
+Low-Latency FPGA Based Financial Data Feed Handler
+- FPGA implementation for data feeds
+- FPGA vs CPU
+- Almost planar latency when feed rate is increased  on FPGA
+- CPU varies linearly positive
+
+Multiplierless Algorithm for Multivariate Gaussian Random Number Generation in FPGAs
+- Comparison of FPGA vs CPU vs GPU
+- Monte Carlo simulations
+- 10x vs GPU, 100X vs CPU
+
+CNN-FPGA
+
+A General Neural Network Hardware Architecture on FPGA
+- Description of a general NN running on a FPGA
+- Base case for CNN, DNN, RNN
+- Energy efficient and real time applications
+
+A GPU-Outperforming FPGA Accelerator Architecture for Binary Convolutional Neural Networks
+- Implementation of a binary CNN
+- Comparison with GPU
+- 75x more energy efficient
+- 8.3x faster
+- Applied to image classification
+
+CirCNN - Accelerating and Compressing Deep Neural Networks Using Block-Circulant Weight Matrices
+- Mentions ARM processors along with FPGA chips
+- CirCNN implementation
+- It is important to reduce CNN complexity to enhance scalability when the model size grows
+
+F-CNN: An FPGA-based framework for training Convolutional Neural Networks
+- F-CNN is FPGA-CNN
+- Comparison vs CPU and GPU in efficiency and throughput
+- Whole implementation, with special focus on training
+- Applied for handwritten recognition
+- Hybrid design: CPU controller, FPGA accelerator
+
+Why TanH is a Hardware Friendly Activation Function for CNNs
+- An alternative activation function for CNN
+- Minimum number of circuits required to deploy a CNN
+- Comparison of ReLU, Sigmoid and TanH
+
+Haskell-FPGA
+
+A fine-grained parallel dataflow-inspired architecture for streaming applications
+- Thesis where Haskell and Clash is used
+- Description of logic circuits
+- Dataflow and coarse-grained reconfigurable arrays used to defend the thesis
+
+A mathematical approach towards hardware design 
+- Defend that a functional design can be used for logic circuit deployments
+- Use clash but also mentions bluespec
+- Sustain how basic functions translate to circuits
+
+A transformation-based approach to hardware design using higher-order functions
+- Thesis where Haskell and Clash is used
+- Application particule filtering
+
+A two step hardware design method using CλaSH
+- A procedure to develop HDL programs with Haskell
+- Particle filtering application
+- Publication from (previous) thesis 
+
+Comparing CλaSH and VHDL by implementing a dataflow processor
+- in some cases, Clash can synthesize better than VHDL code
+- Simpler to use a high level language for circuit design
+- Application: Dataflow processor
+- Less lines of code in clash vs VHDL
+- Lower power consumption
+
+ClasH - From Haskell To Hardware
+- Master thesis outlining Clash
+- Mentions other languages for HDL
+- One case study: reduction circuit
+
+Co-simulation between Clash and traditional HDLs
+- Use cases for clash when using fpga simulators
+- Use verilog procedural interface for the simulation
+
+Conditional Time Series Forecasting with Convolutional Neural Networks
+- Use wave CNN to make TSF
+- S&P,  Forex and CBOE interest rate as base data
+- Comparison against Naïve, LSTM and VAR
+
+Financial Software on GPUs- Between Haskell and Fortran
+- Haskell vs Fortran
+- Describe a generic algorithm for pricing (monte carlo)
+- Outline the benefits of FP for functional parallelization
+
+Specification of apertif polyphase filter bank in Clash
+- One formal application of Clash: an apertif polyphase filter bank
+- Improvements on performance and clock frequency
+
+System-level modelling of dynamic reconfigurable designs using functional programming abstractions
+- Use clash to assign a FPGA section as reconfigurable
+- Run embedded linux on the platform
+

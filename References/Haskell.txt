@@ -30,3 +30,5 @@ https://arxiv-org.ezproxy.auckland.ac.nz/abs/1611.09471
 Learn Physics by Programming in Haskell
 https://arxiv-org.ezproxy.auckland.ac.nz/abs/1412.4880
 
+Financial Software on GPUs- Between Haskell and Fortran
+https://arxiv.org/abs/1703.04691

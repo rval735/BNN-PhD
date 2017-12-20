@@ -1,0 +1,15 @@
+%0 Conference Paper
+%1 2364484
+%A Cosmin E. Oancea
+%A Christian Andreetta
+%A Jost Berthold
+%A Alain Frisch
+%A Fritz Henglein 
+%T Financial software on GPUs: between Haskell and Fortran
+%B Proceedings of the 1st ACM SIGPLAN workshop on Functional high-performance computing
+%@ 978-1-4503-1577-7
+%C Copenhagen, Denmark
+%P 61-72
+%D 2012
+%R 10.1145/2364474.2364484
+%I ACM

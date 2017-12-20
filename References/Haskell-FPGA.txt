@@ -18,3 +18,25 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3122970&CFID=101532557
 Modeling of dynamic reconfigurable systems with Haskell
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6339201/
 
+A fine-grained parallel dataflow-inspired architecture for streaming applications
+https://research.utwente.nl/en/publications/a-fine-grained-parallel-dataflow-inspired-architecture-for-stream
+
+A mathematical approach towards hardware design
+https://research.utwente.nl/en/publications/a-mathematical-approach-towards-hardware-design
+
+A transformation-based approach to hardware design using higher-order functions
+https://research.utwente.nl/en/publications/a-transformation-based-approach-to-hardware-design-using-higher-o
+
+Analysis, optimization, and design of a slam solution for an implementation on reconfigurable hardware (FPGA) using Clash 
+essay.utwente.nl/71550/
+
+Co-simulation between Clash and traditional HDLs
+http://essay.utwente.nl/70777/
+
+Hardware software co-design in Haskell
+referaat.cs.utwente.nl/conference/25/paper/7552/haskell-on-the-gpu.pdf
+
+Specification of apertif polyphase filter bank in Clash
+https://research.utwente.nl/en/publications/specification-of-apertif-polyphase-filter-bank-in-cλash
+
+

@@ -1,0 +1,13 @@
+@ARTICLE{2016arXiv160306995C,
+   author = {{Cui}, Z. and {Chen}, W. and {Chen}, Y.},
+    title = "{Multi-Scale Convolutional Neural Networks for Time Series Classification}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1603.06995},
+ primaryClass = "cs.CV",
+ keywords = {Computer Science - Computer Vision and Pattern Recognition},
+     year = 2016,
+    month = mar,
+   adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160306995C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

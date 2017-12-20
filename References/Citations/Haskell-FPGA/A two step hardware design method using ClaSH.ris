@@ -1,0 +1,46 @@
+TY  - CONF
+TI  - A two step hardware design method using C&#x03BB;aSH
+T2  - 22nd International Conference on Field Programmable Logic and Applications (FPL)
+SP  - 181
+EP  - 188
+AU  - R. Wester
+AU  - C. Baaij
+AU  - J. Kuper
+PY  - 2012
+KW  - field programmable gate arrays
+KW  - functional languages
+KW  - hardware description languages
+KW  - logic design
+KW  - mathematical analysis
+KW  - particle filtering (numerical methods)
+KW  - program compilers
+KW  - C&#x03BB;aSH HDL
+KW  - DSP application
+KW  - FPGA
+KW  - Haskell
+KW  - adequate abstraction mechanisms
+KW  - functional hardware description language
+KW  - higher level abstraction mechanism
+KW  - higher-order function
+KW  - mathematical definition
+KW  - particle filtering
+KW  - polymorphism
+KW  - two step hardware design method
+KW  - Atmospheric measurements
+KW  - Design methodology
+KW  - Equations
+KW  - Hardware
+KW  - Mathematical model
+KW  - Particle measurements
+KW  - Systematics
+DO  - 10.1109/FPL.2012.6339258
+JO  - 22nd International Conference on Field Programmable Logic and Applications (FPL)
+IS  - 
+SN  - 1946-147X
+VO  - 
+VL  - 
+JA  - 22nd International Conference on Field Programmable Logic and Applications (FPL)
+Y1  - 29-31 Aug. 2012
+ER  - 
+
+
