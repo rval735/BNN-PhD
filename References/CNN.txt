@@ -17,3 +17,6 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7970594/
 
 Intriguing properties of neural networks
 https://arxiv.org/abs/1312.6199
+
+Recent Advances in Convolutional Neural Networks
+https://arxiv.org/abs/1512.07108

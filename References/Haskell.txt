@@ -32,3 +32,12 @@ https://arxiv-org.ezproxy.auckland.ac.nz/abs/1412.4880
 
 Financial Software on GPUs- Between Haskell and Fortran
 https://arxiv.org/abs/1703.04691
+
+Haskell Ready to Dazzle the Real World
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1088351&CFID=849265052&CFTOKEN=48028547
+
+Roll your own test bed for embedded real-time protocols: a haskell experience
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1366241&CFID=849265052&CFTOKEN=48028547
+
+The limits of software transactional memory (STM): dissecting Haskell STM applications on a many-core environment
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1366241&CFID=849265052&CFTOKEN=48028547

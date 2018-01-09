@@ -21,3 +21,8 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/932404/
 Parallel algorithms development for programmable logic devices
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0965997806000147
 
+A Pythonic Approach for Rapid Hardware Prototyping and Instrumentation
+http://ieeexplore.ieee.org/document/8056860/
+
+Recent Trends in FPGA Architectures and Applications
+phwl.org/papers/rtfpga_delta08.pdf
