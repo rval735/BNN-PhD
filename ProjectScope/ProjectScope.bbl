@@ -1,0 +1,1510 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{Abdelouahab:2017:WTH:3131885.3131937}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=AK}{%
+         family={Abdelouahab},
+         familyi={A\bibinitperiod},
+         given={Kamel},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pelcat},
+         familyi={P\bibinitperiod},
+         given={Maxime},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Berry},
+         familyi={B\bibinitperiod},
+         given={Francois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{FPGA, TanH, Harware, Acceleration}
+    \strng{namehash}{AKPMBF1}
+    \strng{fullhash}{AKPMBF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{Proceedings of the 11th International Conference on
+  Distributed Smart Cameras}
+    \verb{doi}
+    \verb 10.1145/3131885.3131937
+    \endverb
+    \field{isbn}{978-1-4503-5487-5}
+    \field{pages}{199\bibrangedash 201}
+    \field{series}{ICDSC 2017}
+    \field{title}{Why TanH is a Hardware Friendly Activation Function for CNNs}
+    \verb{url}
+    \verb http://doi.acm.org.ezproxy.auckland.ac.nz/10.1145/3131885.3131937
+    \endverb
+    \list{location}{1}{%
+      {Stanford, CA, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{5ecc1e5c8c7644a9bf1ff0c60033d5faB}{inbook}{}
+    \name{author}{1}{}{%
+      {{hash=BC}{%
+         family={Baaij},
+         familyi={B\bibinitperiod},
+         given={C.P.R.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {University of Twente}%
+    }
+    \keyw{Haskell, CLaSH}
+    \strng{namehash}{BC1}
+    \strng{fullhash}{BC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Functional hardware description languages are a class of hardware
+  description languages that emphasize on the ability to express higher level
+  structural properties, such a parameterization and regularity. Due to such
+  features as higher-order functions and polymorphism, parameterization in
+  functional hardware description languages is more natural than the
+  parameterization support found in the more traditional hardware description
+  languages, like VHDL and Verilog. We de- velop a new functional hardware
+  description language, CλasH, that borrows both the syntax and semantics from
+  the general-purpose functional programming language Haskell.%
+    }
+    \field{booktitle}{ClasH - From Haskell To Hardware}
+    \field{pages}{101}
+    \field{title}{ClasH - From Haskell To Hardware}
+    \field{month}{12}
+    \field{year}{2019}
+  \endentry
+
+  \entry{2016arXiv160306995C}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CZ}{%
+         family={{Cui}},
+         familyi={C\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \strng{namehash}{CZCWCY1}
+    \strng{fullhash}{CZCWCY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1603.06995
+    \endverb
+    \field{title}{{Multi-Scale Convolutional Neural Networks for Time Series
+  Classification}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{03}
+    \field{year}{2016}
+  \endentry
+
+  \entry{2017arXiv170808917D}{article}{}
+    \name{author}{16}{}{%
+      {{hash=DC}{%
+         family={{Ding}},
+         familyi={D\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={{Liao}},
+         familyi={L\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={{Li}},
+         familyi={L\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LN}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={{Zhuo}},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=QX}{%
+         family={{Qian}},
+         familyi={Q\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={{Bai}},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YG}{%
+         family={{Yuan}},
+         familyi={Y\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MX}{%
+         family={{Ma}},
+         familyi={M\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={{Zhang}},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={{Tang}},
+         familyi={T\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QQ}{%
+         family={{Qiu}},
+         familyi={Q\bibinitperiod},
+         given={Q.},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={{Lin}},
+         familyi={L\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=YB}{%
+         family={{Yuan}},
+         familyi={Y\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition,
+  Artificial Intelligence, Computer Science - Learning, Statistics - Machine
+  Learning}
+    \strng{namehash}{DC+1}
+    \strng{fullhash}{DCLSWYLZLNZYWCQXBYYGMXZYTJQQLXYB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{eprint}
+    \verb 1708.08917
+    \endverb
+    \field{title}{{CirCNN: Accelerating and Compressing Deep Neural Networks
+  Using Block-CirculantWeight Matrices}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{08}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Ding:2015:DLE:2832415.2832572}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=DX}{%
+         family={Ding},
+         familyi={D\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yue},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ting},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Duan},
+         familyi={D\bibinitperiod},
+         given={Junwen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AAAI Press}%
+    }
+    \keyw{Deep learning, CNN, NN, S&P}
+    \strng{namehash}{DX+1}
+    \strng{fullhash}{DXZYLTDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{Proceedings of the 24th International Conference on
+  Artificial Intelligence}
+    \field{isbn}{978-1-57735-738-4}
+    \field{pages}{2327\bibrangedash 2333}
+    \field{series}{IJCAI'15}
+    \field{title}{Deep Learning for Event-driven Stock Prediction}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=2832415.2832572
+    \endverb
+    \list{location}{1}{%
+      {Buenos Aires, Argentina}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{2015arXiv151207108G}{article}{}
+    \name{author}{12}{}{%
+      {{hash=GJ}{%
+         family={{Gu}},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={{Kuen}},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={{Ma}},
+         familyi={M\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={{Shahroudy}},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={{Shuai}},
+         familyi={S\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WX}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=WG}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={{Cai}},
+         familyi={C\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition, Computer
+  Science - Learning, Computer Science - Neural and Evolutionary Computing}
+    \strng{namehash}{GJ+1}
+    \strng{fullhash}{GJWZKJMLSASBLTWXWLWGCJCT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{eprint}
+    \verb 1512.07108
+    \endverb
+    \field{title}{{Recent Advances in Convolutional Neural Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{12}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Gunduz:2017aa}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GH}{%
+         family={Gunduz},
+         familyi={G\bibinitperiod},
+         given={Hakan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yaslan},
+         familyi={Y\bibinitperiod},
+         given={Yusuf},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Cataltepe},
+         familyi={C\bibinitperiod},
+         given={Zehra},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \keyw{Stock market prediction; Deep learning; Borsa Istanbul; Convolutional
+  neural networks; CNN; Feature selection; Feature correlations}
+    \strng{namehash}{GHYYCZ1}
+    \strng{fullhash}{GHYYCZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.knosys.2017.09.023
+    \endverb
+    \field{isbn}{0950-7051}
+    \field{number}{Supplement C}
+    \field{pages}{138\bibrangedash 148}
+    \field{title}{Intraday prediction of Borsa Istanbul using convolutional
+  neural networks and feature correlations}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0950705117304252
+    \endverb
+    \field{volume}{137}
+    \field{journaltitle}{Knowledge-Based Systems}
+    \field{year}{2017}
+  \endentry
+
+  \entry{2017arXiv171105860H-2}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HY}{%
+         family={{Hao}},
+         familyi={H\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition, Computer
+  Science - Hardware Architecture, Computer Science - Neural and Evolutionary
+  Computing}
+    \strng{namehash}{HY1}
+    \strng{fullhash}{HY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{eprint}
+    \verb 1711.05860
+    \endverb
+    \field{title}{{A General Neural Network Hardware Architecture on FPGA}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{11}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Kablan:2009aa}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Kablan},
+         familyi={K\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{decision making; expert systems; financial data processing; fuzzy
+  reasoning; neural nets; pattern recognition; stock markets; adaptive neuro
+  fuzzy inference systems; automated trading strategy; decision making;
+  efficient market hypothesis; expert system; financial forecasting; financial
+  markets; financial time series; fuzzy reasoning; high frequency financial
+  trading; neural networks; pattern recognition; Adaptive systems; Economic
+  forecasting; Expert systems; Finance; Frequency; Fuzzy reasoning; Fuzzy
+  systems; Humans; Neural networks; Pattern recognition; efficient market
+  hypothesis; financial prediction; high frequency trading; neuro-fuzzy
+  inference system}
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{2009 Third International Conference on Advanced
+  Engineering Computing and Applications in Sciences}
+    \verb{doi}
+    \verb 10.1109/ADVCOMP.2009.23
+    \endverb
+    \field{pages}{105\bibrangedash 110}
+    \field{title}{Adaptive Neuro Fuzzy Inference Systems for High Frequency
+  Financial Trading and Forecasting}
+    \field{journaltitle}{2009 Third International Conference on Advanced
+  Engineering Computing and Applications in Sciences}
+    \field{year}{2009}
+  \endentry
+
+  \entry{2003cond.mat..4469K}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KVV}{%
+         family={{Kondratenko}},
+         familyi={K\bibinitperiod},
+         given={V.\bibnamedelima V.},
+         giveni={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=KYA}{%
+         family={{Kuperin}},
+         familyi={K\bibinitperiod},
+         given={Y.\bibnamedelima A},
+         giveni={Y\bibinitperiod\bibinitdelim A},
+      }}%
+    }
+    \keyw{Condensed Matter - Disordered Systems and Neural Networks,
+  Quantitative Finance - Statistical Finance}
+    \strng{namehash}{KVVKYA1}
+    \strng{fullhash}{KVVKYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{eprint}
+    \verb cond-mat/0304469
+    \endverb
+    \field{title}{{Using Recurrent Neural Networks To Forecasting of Forex}}
+    \field{journaltitle}{eprint arXiv:cond-mat/0304469}
+    \field{month}{04}
+    \field{year}{2003}
+  \endentry
+
+  \entry{essay59381}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KM}{%
+         family={{Kooijman}},
+         familyi={K\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Haskell, functional programming}
+    \strng{namehash}{KM1}
+    \strng{fullhash}{KM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Haskell as a higher order structural hardware description
+  language}
+    \verb{url}
+    \verb http://essay.utwente.nl/59381/
+    \endverb
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{L:08}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LPH}{%
+         family={Leong},
+         familyi={L\bibinitperiod},
+         given={Philip\bibnamedelima H.W.},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA, Trends}
+    \strng{namehash}{LPH1}
+    \strng{fullhash}{LPH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Proc. 4th IEEE International Symposium on Electronic
+  Design, Test and Applications}
+    \field{note}{\textbf{Invited}}
+    \field{pages}{137\bibrangedash 141}
+    \field{title}{Recent Trends in {FPGA} Architectures and Applications}
+    \verb{url}
+    \verb rtfpga_delta08.pdf
+    \endverb
+    \list{location}{1}{%
+      {Hong Kong}%
+    }
+    \field{year}{2008}
+  \endentry
+
+  \entry{2017arXiv170206392L}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LY}{%
+         family={{Li}},
+         familyi={L\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={{Xu}},
+         familyi={X\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={{Yu}},
+         familyi={Y\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={{Ren}},
+         familyi={R\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Distributed, Parallel, and Cluster Computing,
+  Computer Science - Hardware Architecture, Computer Science - Computer Vision
+  and Pattern Recognition, Computer Science - Learning, C.3}
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYLZXKYHRF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1702.06392
+    \endverb
+    \field{title}{{A GPU-Outperforming FPGA Accelerator Architecture for Binary
+  Convolutional Neural Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.DC}
+    \field{month}{02}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Lockwood:2012aa}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LJW}{%
+         family={Lockwood},
+         familyi={L\bibinitperiod},
+         given={J.\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gupte},
+         familyi={G\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Mehta},
+         familyi={M\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Blott},
+         familyi={B\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={English},
+         familyi={E\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VK}{%
+         family={Vissers},
+         familyi={V\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{IP networks; electronic engineering computing; electronic trading;
+  field programmable gate arrays; local area networks; memory protocols;
+  microprocessor chips; network interfaces; Ethernet line rate; FPGA IP
+  library; FPGA hardware; HFT platform; I-O interface; alternative hybrid
+  architecture; bit rate 10 Gbit/s; computers software; custom 1U FPGA
+  appliance; electronic trading; financial protocol parser; fixed end-to-end
+  latency; hardware acceleration; high-frequency trading platform;
+  high-performance network adapter; low-latency library; memory interface;
+  pre-built infrastructure; software implementation; time 1 mus; Field
+  programmable gate arrays; Hardware; IP networks; Libraries; Protocols;
+  Registers; Software; Algorithmic; FPGA; HFT; latency; trading}
+    \strng{namehash}{LJW+1}
+    \strng{fullhash}{LJWGAMNBMETVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{2012 IEEE 20th Annual Symposium on High-Performance
+  Interconnects}
+    \verb{doi}
+    \verb 10.1109/HOTI.2012.15
+    \endverb
+    \field{isbn}{1550-4794}
+    \field{pages}{9\bibrangedash 16}
+    \field{title}{A Low-Latency Library in FPGA Hardware for High-Frequency
+  Trading (HFT)}
+    \field{journaltitle}{2012 IEEE 20th Annual Symposium on High-Performance
+  Interconnects}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Niedermeier:2014aa}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NA}{%
+         family={Niedermeier},
+         familyi={N\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{IR-91607; EWI-25011; METIS-304761}
+    \strng{namehash}{NA1}
+    \strng{fullhash}{NA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Data driven streaming applications are quite common in modern multimedia
+  and wireless applications, like for example video and audio processing. The
+  main components of these applications are Digital Signal Processing (DSP)
+  algorithms. These algorithms are not extremely complex in terms of their
+  structure and the operations that make up the algorithms are fairly simple
+  (usually binary mathematical operations like addition and multiplication).
+  What makes it challenging to implement and execute these algorithms
+  efficiently is their large degree of fine-grained parallelism and the
+  required throughput. DSP algorithms can usually be described as dataflow
+  graphs with nodes corresponding to operations and edges between the nodes
+  expressing data dependencies. A node fires, i.e. executes, as soon as all
+  required input data has arrived at its input edge(s). To execute DSP
+  algorithms efficiently while maintaining flexibility, coarse-grained
+  reconfigurable arrays (CGRAs) can be used. CGRAs are composed of a set of
+  small, reconfigurable cores, interconnected in e.g. a two dimensional array.
+  Each core by itself is not very powerful, yet the complete array of cores
+  forms an efficient architecture with a high throughput due to its ability to
+  efficiently execute operations in parallel. In this thesis, we present a CGRA
+  targeted at data driven streaming DSP applications that contain a large
+  degree of fine grained parallelism, such as matrix manipulations or filter
+  algorithms. Along with the architecture, also a programming language is
+  presented that can directly describe DSP applications as dataflow graphs
+  which are then automatically mapped and executed on the architecture. In
+  contrast to previously published work on CGRAs, the guiding principle and
+  inspiration for the presented CGRA and its corresponding programming paradigm
+  is the dataflow principle. The result of this work is a completely integrated
+  framework targeted at streaming DSP algorithms, consisting of a CGRA, a
+  programming language and a compiler. The complete system is based on dataflow
+  principles. We conclude that by using an architecture that is based on
+  dataflow principles and a corresponding programming paradigm that can
+  directly express dataflow graphs, DSP algorithms can be implemented in a very
+  intuitive and straightforward manner.%
+    }
+    \verb{doi}
+    \verb 10.3990/1.9789036537322
+    \endverb
+    \field{isbn}{978-90-365-3732-2}
+    \field{title}{A fine-grained parallel dataflow-inspired architecture for
+  streaming applications}
+    \field{month}{08}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{5ecc1e5c8c7644a9bf1ff0c60033d5fa}{inbook}{}
+    \name{author}{6}{}{%
+      {{hash=NA}{%
+         family={Niedermeier},
+         familyi={N\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wester},
+         familyi={W\bibinitperiod},
+         given={Rinse},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Wester},
+         familyi={W\bibinitperiod},
+         given={Rinse},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Baaij},
+         familyi={B\bibinitperiod},
+         given={C.P.R.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kuper},
+         familyi={K\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Smit},
+         familyi={S\bibinitperiod},
+         given={{Gerardus Johannes Maria}},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Technology Foundation (STW)}%
+    }
+    \keyw{METIS-277454, IR-75095, EWI-18902}
+    \strng{namehash}{NA+1}
+    \strng{fullhash}{NAWRWRBCKJSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    As embedded systems are becoming increasingly complex, the design process
+  and verification have become very time-consuming. Additionally, specifying
+  hardware manually in a low-level hardware description language like VHDL is
+  usually an error-prone task. In our group, a tool (the ClaSH compiler) was
+  developed to generate fully synthesisable VHDL code from a specification
+  given in the functional programming language Haskell. In this paper, we
+  present a comparison between two implementations of the same design by using
+  ClaSH and hand-written VHDL. The design is a simple dataflow processor. As
+  measures of interest area, performance, power consumption and source lines of
+  code (SLOC) are used. The obtained results indicate that the ClaSH -generated
+  VHDL code as well as the netlist after synthesis and place and route are
+  functionally correct. The placed and routed hand-written VHDL code has also
+  the correct behaviour. Furthermore, a similar performance is achieved. The
+  power consumption is even lower for the ClaSH implementation. The SLOC for
+  ClaSH is considerably smaller and it is possible to specify the design in a
+  much higher level of abstraction compared to VHDL.%
+    }
+    \field{booktitle}{Proceedings of the Workshop on PROGram for Research on
+  Embedded Systems and Software (PROGRESS 2010)}
+    \field{isbn}{978-90-73461-67-3}
+    \field{pages}{216\bibrangedash 221}
+    \field{title}{Comparing CλaSH and VHDL by implementing a dataflow
+  processor}
+    \field{month}{11}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Oancea:2012:FSG:2364474.2364484}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=OCE}{%
+         family={Oancea},
+         familyi={O\bibinitperiod},
+         given={Cosmin\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=AC}{%
+         family={Andreetta},
+         familyi={A\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Berthold},
+         familyi={B\bibinitperiod},
+         given={Jost},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={Frisch},
+         familyi={F\bibinitperiod},
+         given={Alain},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Henglein},
+         familyi={H\bibinitperiod},
+         given={Fritz},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{autoparallelization, functional language, memory coalescing, strength
+  reduction, tiling}
+    \strng{namehash}{OCE+1}
+    \strng{fullhash}{OCEACBJFAHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{booktitle}{Proceedings of the 1st ACM SIGPLAN Workshop on Functional
+  High-performance Computing}
+    \verb{doi}
+    \verb 10.1145/2364474.2364484
+    \endverb
+    \field{isbn}{978-1-4503-1577-7}
+    \field{pages}{61\bibrangedash 72}
+    \field{series}{FHPC '12}
+    \field{title}{Financial Software on GPUs: Between Haskell and Fortran}
+    \verb{url}
+    \verb http://doi.acm.org.ezproxy.auckland.ac.nz/10.1145/2364474.2364484
+    \endverb
+    \list{location}{1}{%
+      {Copenhagen, Denmark}%
+    }
+    \field{year}{2012}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Pike:2009:RYO:1596638.1596646}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=PL}{%
+         family={Pike},
+         familyi={P\bibinitperiod},
+         given={Lee},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Goodloe},
+         familyi={G\bibinitperiod},
+         given={Alwyn},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{emulation, functional programming, physical-layer protocol testing}
+    \strng{namehash}{PLBGGA1}
+    \strng{fullhash}{PLBGGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{Proceedings of the 2Nd ACM SIGPLAN Symposium on Haskell}
+    \verb{doi}
+    \verb 10.1145/1596638.1596646
+    \endverb
+    \field{isbn}{978-1-60558-508-6}
+    \field{pages}{61\bibrangedash 68}
+    \field{series}{Haskell '09}
+    \field{title}{Roll Your Own Test Bed for Embedded Real-time Protocols: A
+  Haskell Experience}
+    \verb{url}
+    \verb http://doi.acm.org.ezproxy.auckland.ac.nz/10.1145/1596638.1596646
+    \endverb
+    \list{location}{1}{%
+      {Edinburgh, Scotland}%
+    }
+    \field{year}{2009}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Schrage:2005:HRD:1088348.1088351}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SMM}{%
+         family={Schrage},
+         familyi={S\bibinitperiod},
+         given={Martijn\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=vIA}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={IJzendoorn},
+         familyi={I\bibinitperiod},
+         given={Arjan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=vdGLC}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Gaag},
+         familyi={G\bibinitperiod},
+         given={Linda\bibnamedelima C.},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{application, bayesian networks, graphical user interface, haskell,
+  wxHaskell}
+    \strng{namehash}{SMMIAvGLCvd1}
+    \strng{fullhash}{SMMIAvGLCvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 2005 ACM SIGPLAN Workshop on Haskell}
+    \verb{doi}
+    \verb 10.1145/1088348.1088351
+    \endverb
+    \field{isbn}{1-59593-071-X}
+    \field{pages}{17\bibrangedash 26}
+    \field{series}{Haskell '05}
+    \field{title}{Haskell Ready to Dazzle the Real World}
+    \verb{url}
+    \verb http://doi.acm.org.ezproxy.auckland.ac.nz/10.1145/1088348.1088351
+    \endverb
+    \list{location}{1}{%
+      {Tallinn, Estonia}%
+    }
+    \field{year}{2005}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Tian:2010:HQC:1862648.1862656}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TX}{%
+         family={Tian},
+         familyi={T\bibinitperiod},
+         given={Xiang},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Benkrid},
+         familyi={B\bibinitperiod},
+         given={Khaled},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{CPU, FPGA, GPU, Maxwell, Quasi-Monte Carlo simulations, option
+  pricing}
+    \strng{namehash}{TXBK1}
+    \strng{fullhash}{TXBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1145/1862648.1862656
+    \endverb
+    \field{issn}{1936-7406}
+    \field{number}{4}
+    \field{pages}{26:1\bibrangedash 26:22}
+    \field{title}{High-Performance Quasi-Monte Carlo Financial Simulation: FPGA
+  vs. GPP vs. GPU}
+    \verb{url}
+    \verb http://doi.acm.org.ezproxy.auckland.ac.nz/10.1145/1862648.1862656
+    \endverb
+    \field{volume}{3}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{ACM Trans. Reconfigurable Technol. Syst.}
+    \field{month}{11}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Tsantekidis:2017aa}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=TA}{%
+         family={Tsantekidis},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PN}{%
+         family={Passalis},
+         familyi={P\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tefas},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kanniainen},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gabbouj},
+         familyi={G\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=IA}{%
+         family={Iosifidis},
+         familyi={I\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{economic forecasting; feedforward neural nets; learning (artificial
+  intelligence); pricing; stock markets; time series; CNN; convolutional neural
+  networks; deep learning methodology; financial exchanges; financial markets;
+  input large-scale high-frequency time-series; limit order book; price
+  movements; stock price forecasting; stock price movement prediction;
+  transaction analysis; Convolution; Data models; Machine learning; Market
+  research; Mathematical model; Neural networks; Support vector machines;
+  Convolutional Neural Networks; Large scale financial data; Limit Orderbook}
+    \strng{namehash}{TA+1}
+    \strng{fullhash}{TAPNTAKJGMIA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    In today's financial markets, where most trades are performed in their
+  entirety by electronic means and the largest fraction of them is completely
+  automated, an opportunity has risen from analyzing this vast amount of
+  transactions. Since all the transactions are recorded in great detail,
+  investors can analyze all the generated data and detect repeated patterns of
+  the price movements. Being able to detect them in advance, allows them to
+  take profitable positions or avoid anomalous events in the financial markets.
+  In this work we proposed a deep learning methodology, based on Convolutional
+  Neural Networks (CNNs), that predicts the price movements of stocks, using as
+  input large-scale, high-frequency time-series derived from the order book of
+  financial exchanges. The dataset that we use contains more than 4 million
+  limit order events and our comparison with other methods, like Multilayer
+  Neural Networks and Support Vector Machines, shows that CNNs are better
+  suited for this kind of task.%
+    }
+    \field{booktitle}{2017 IEEE 19th Conference on Business Informatics (CBI)}
+    \verb{doi}
+    \verb 10.1109/CBI.2017.23
+    \endverb
+    \field{pages}{7\bibrangedash 12}
+    \field{title}{Forecasting Stock Prices from the Limit Order Book Using
+  Convolutional Neural Networks}
+    \field{volume}{01}
+    \field{journaltitle}{2017 IEEE 19th Conference on Business Informatics
+  (CBI)}
+    \field{year}{2017}
+  \endentry
+
+  \entry{6339201}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=UBN}{%
+         family={Uchevler},
+         familyi={U\bibinitperiod},
+         given={B.\bibnamedelima N.},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svarstad},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{circuit complexity;functional languages;hardware description
+  languages;high level synthesis;program compilers;program
+  verification;reconfigurable architectures;CLaSH;RT level VHDL;digital circuit
+  description;digital circuit verification;dynamic reconfigurable system
+  modeling;electronic design complexity;formal verification;functional
+  HDL;high-level Haskell description translation;higher-order
+  functions;parametrization;partial evaluation technique;polymorphism;run-time
+  reconfigurable systems;synthesis tool chain;Communications
+  technology;Consumer electronics;Educational institutions;Field programmable
+  gate arrays;Hardware;Mathematical model;Unified modeling language}
+    \strng{namehash}{UBNSK1}
+    \strng{fullhash}{UBNSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{booktitle}{22nd International Conference on Field Programmable Logic
+  and Applications (FPL)}
+    \verb{doi}
+    \verb 10.1109/FPL.2012.6339201
+    \endverb
+    \field{issn}{1946-147X}
+    \field{pages}{481\bibrangedash 482}
+    \field{title}{Modeling of dynamic reconfigurable systems with Haskell}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{6523639}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=UBN}{%
+         family={Uchevler},
+         familyi={U\bibinitperiod},
+         given={B.\bibnamedelima N.},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Svarstad},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kuper},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Baaij},
+         familyi={B\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{field programmable gate arrays;hardware description languages;logic
+  design;CLaSH;FPGA design;RT level;Suzaku-sz410 board;digital circuit
+  verification;dynamic reconfigurable designs;formal verification;functional
+  HDL;functional programming abstractions;high-level Haskell
+  descriptions;high-level descriptions;high-level structures;higher-order
+  functions;partial evaluation implementation technique;run-time reconfigurable
+  systems;synthesizable VHDL;system-level modelling;Consumer
+  electronics;Digital signal processing;Field programmable gate arrays;Finite
+  impulse response filters;Hardware;Software;Unified modeling
+  language;Functional HDL;Partial Evaluation;Run-Time
+  Reconfiguration;Self-Reconfiguration}
+    \strng{namehash}{UBN+1}
+    \strng{fullhash}{UBNSKKJBC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{booktitle}{International Symposium on Quality Electronic Design
+  (ISQED)}
+    \verb{doi}
+    \verb 10.1109/ISQED.2013.6523639
+    \endverb
+    \field{issn}{1948-3287}
+    \field{pages}{379\bibrangedash 385}
+    \field{title}{System-level modelling of dynamic reconfigurable designs
+  using functional programming abstractions}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{essay70777}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=VJ}{%
+         family={{Verheij}},
+         familyi={V\bibinitperiod},
+         given={J.G.J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{CLaSH, Haskell, Simulation, HDL}
+    \strng{namehash}{VJ1}
+    \strng{fullhash}{VJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{abstract}{%
+    ClaSH is a functional hardware description language (HDL) developed at the
+  CAES group of the University of Twente. ClaSH borrows both the syntax and
+  semantics from the general-purpose functional programming language Haskell,
+  meaning that circuit designers can define their circuits with regular Haskell
+  syntax. In this thesis, research is done on the co-simulation of ClaSH and
+  traditional HDLs. The Verilog Procedural Interface (VPI), as defined in the
+  IEEE 1364 standard, is used to set-up the communication and to control a
+  Verilog simulator. An implementation is made, as will be described in this
+  thesis, to show the practical feasibility of co-simulation of ClaSH and
+  Verilog.%
+    }
+    \field{title}{Co-simulation between C$\lambda$aSH and traditional HDLs}
+    \verb{url}
+    \verb http://essay.utwente.nl/70777/
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Wester:2015aa}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WR}{%
+         family={Wester},
+         familyi={W\bibinitperiod},
+         given={Rinse},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Universiteit Twente}%
+    }
+    \keyw{Higher-order functions; EWI-26125; IR-96278; METIS-310874;
+  transformations; Hardware design}
+    \strng{namehash}{WR1}
+    \strng{fullhash}{WR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    The amount of resources available on reconfigurable logic devices like
+  FPGAs has seen a tremendous growth over the last thirty years. During this
+  period, the amount of programmable resources (CLBs and RAMs) has increased by
+  more than three orders of magnitude. Programming these reconfigurable
+  architectures has been dominated by the hardware description languages VHDL
+  and Verilog. However, it has become generally accepted that these languages
+  do not provide adequate abstraction mechanisms to deliver the design
+  productivity for designing more and more complex applications. To raise the
+  abstraction level, techniques to translate high-level languages to hardware
+  have been developed based on imperative languages like C. Parallelism is
+  achieved by parallelization of for-loops. Whether parallelization of loops is
+  possible, is determined using dependency analysis which is a very hard
+  problem. To mitigate this problem, other abstractions are needed to express
+  parallelism. In this thesis, parallelism is expressed using higher-order
+  functions, an abstraction commonly used in functional programming languages.
+  The main contribution of this thesis is a design methodology based on
+  exploiting regularity of higher-order functions. A mathematical formula,
+  e.g., a DSP algorithm, is first formulated using higher-order functions.
+  Then, transformation rules are applied to these higher-order functions to
+  distribute computations over space and time. Using these transformations, an
+  optimal trade-off can be made between space and time. Finally, hardware is
+  generated using the CLaSH compiler by translating the result of the
+  transformation to VHDL. In this thesis, we derive transformation rules for
+  several higher-order functions and prove that the transformations are
+  meaning-preserving. After transformation, a mathematically equivalent
+  description is derived in which the computations are distributed over space
+  and time. The designer can control the amount of parallelism using a
+  parameter that is introduced by the transformation. Transformation rules for
+  both one-dimensional higher-order functions and two-dimensional higher- order
+  functions have been derived and applied to several case studies: a dot
+  product, a particle filter and stencil computations.%
+    }
+    \verb{doi}
+    \verb 10.3990/1.9789036538879
+    \endverb
+    \field{isbn}{978-90-365-3887-9}
+    \field{title}{A transformation-based approach to hardware design using
+  higher-order functions}
+    \field{month}{07}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{fff28539e56047c4adca5cc3c9c29cec}{inbook}{}
+    \name{author}{4}{}{%
+      {{hash=WR}{%
+         family={Wester},
+         familyi={W\bibinitperiod},
+         given={Rinse},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sarakiotis},
+         familyi={S\bibinitperiod},
+         given={Dimitrios},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Kooistra},
+         familyi={K\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kuper},
+         familyi={K\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Open Channel Publishing}%
+    }
+    \keyw{EWI-22586, EC Grant Agreement nr.: FP7/248465, Specification,
+  METIS-289800, APERTIF Project, CλaSH, IR-82307}
+    \strng{namehash}{WR+1}
+    \strng{fullhash}{WRSDKEKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    CλaSH, a functional hardware description language based on Haskell, has
+  several abstraction mechanisms that allow a hardware designer to describe
+  architectures in a short and concise way. In this paper we evaluate CλaSH on
+  a complex DSP application, a Polyphase Filter Bank as it is used in the
+  ASTRON APERTIF project. The Polyphase Filter Bank is implemented in two
+  steps: first in Haskell as being close to a standard mathematical
+  specification, then in CλaSH which is derived from the Haskell formulation
+  by applying only minor changes. We show that the CλaSH formulation can be
+  directly mapped to hardware, thus exploiting the parallelism and concurrency
+  that is present in the original mathematical specification.%
+    }
+    \field{booktitle}{Communicating Process Architectures 2012}
+    \field{isbn}{978-0-9565409-5-9}
+    \field{note}{eemcs-eprint-22586}
+    \field{pages}{53\bibrangedash 64}
+    \field{title}{Specification of APERTIF Polyphase Filter Bank in CλaSH}
+    \field{month}{08}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Woods:2008aa}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=WNA}{%
+         family={Woods},
+         familyi={W\bibinitperiod},
+         given={N.\bibnamedelima A.},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VT}{%
+         family={VanCourt},
+         familyi={V\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Monte Carlo methods; field programmable gate arrays; financial data
+  processing; FPGA acceleration; finance; multicore processor; pricing
+  simulations; quasiMonte Carlo methods; Acceleration; Computational modeling;
+  Field programmable gate arrays; Finance; Monte Carlo methods; Multicore
+  processing; Pricing; Runtime; Security; Yield estimation}
+    \strng{namehash}{WNAVT1}
+    \strng{fullhash}{WNAVT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{2008 International Conference on Field Programmable Logic
+  and Applications}
+    \verb{doi}
+    \verb 10.1109/FPL.2008.4629954
+    \endverb
+    \field{isbn}{1946-147X}
+    \field{pages}{335\bibrangedash 340}
+    \field{title}{FPGA acceleration of quasi-Monte Carlo in finance}
+    \field{journaltitle}{2008 International Conference on Field Programmable
+  Logic and Applications}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Zoican:2016aa}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ZS}{%
+         family={Zoican},
+         familyi={Z\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={Vochin},
+         familyi={V\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{financial data processing; computing system; financial market
+  literature; high frequency trading applications; high frequency trading
+  financial applications; high processing speed; high-frequency traders; low
+  latency technology; low network latency; medium cost technology; network
+  architectures; optimal trading speed; Bandwidth; Computer architecture;
+  Computers; Graphics processing units; Instruction sets; Parallel processing;
+  Servers; computer unified device architecture; high frequency trading
+  algorithms; network latency}
+    \strng{namehash}{ZSVM1}
+    \strng{fullhash}{ZSVM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{2016 International Conference on Communications (COMM)}
+    \verb{doi}
+    \verb 10.1109/ICComm.2016.7528289
+    \endverb
+    \field{pages}{139\bibrangedash 144}
+    \field{title}{Computing system and network architectures in high frequency
+  trading financial applications}
+    \field{journaltitle}{2016 International Conference on Communications
+  (COMM)}
+    \field{year}{2016}
+  \endentry
+\endsortlist
+\endinput
