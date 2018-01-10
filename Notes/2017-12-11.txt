@@ -1,0 +1,16 @@
+papers about crypto trading
+CNN gpu
+cnn cpu
+
+what's the new contribution of study
+actual over previous
+precise objective contribution
+define objective
+criteria to measure
+abundant review of papers
+Strengths over previous work
+how this contribution will be achieved
+implement it more efficiently??
+where papers are coming from??
+quality of previous work
+ACM IEEE publications
