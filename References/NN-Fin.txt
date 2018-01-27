@@ -62,3 +62,23 @@ https://arxiv.org/abs/1603.06995
 
 Classification-based Financial Markets Prediction using Deep Neural Networks
 https://arxiv.org/abs/1603.08604
+
+Application of a Shallow Neural Network to Short-Term Stock Trading
+https://arxiv.org/abs/1703.10458
+
+Deep Investment in Financial Markets using Deep Learning Models
+https://pdfs.semanticscholar.org/ca46/cd1e40f4b473641b450eb85381532eab4294.pdf
+
+Classification-Based Financial Markets Prediction Using Deep Neural Networks
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2756331
+
+A Hybrid Model to Forecast Stock Trend Using Support Vector Machine and Neural Networks
+https://pdfs.semanticscholar.org/5d7f/6708dc42bf7035277f7a15b3ad60dee689ee.pdf
+
+Deep learning networks for stock market analysis and prediction - Methodology, data representations, and case studies
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0957417417302750
+
+Adaptive Hybrid Higher Order Neural Networks for Prediction of Stock Market Behavior
+https://www.igi-global.com/chapter/adaptive-hybrid-higher-order-neural-networks-for-prediction-of-stock-market-behavior/152103
+https://www.researchgate.net/publication/316104153_Adaptive_Hybrid_Higher_Order_Neural_Networks_for_Prediction_of_Stock_Market_Behavior
+

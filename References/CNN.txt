@@ -20,3 +20,7 @@ https://arxiv.org/abs/1312.6199
 
 Recent Advances in Convolutional Neural Networks
 https://arxiv.org/abs/1512.07108
+
+Wavelet pooling for convolutional neural networks
+https://openreview.net/forum?id=rkhlb8lCZ
+

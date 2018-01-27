@@ -1,0 +1,7 @@
+Papers:
+
+A Differential Evolution learning approach for generating compact Mamdani fuzzy rule-based models
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0957417417302725
+
+An improved genetic-fuzzy system for classification and data analysis
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S095741741730266X

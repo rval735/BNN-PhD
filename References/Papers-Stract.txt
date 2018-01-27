@@ -15,6 +15,11 @@ Recent Advances in Convolutional Neural Networks
 - General applications in which CNN have been used
 - General explanation of how CNN works
 
+Wavelet pooling for convolutional neural networks
+- Use wavelet pooling to reduce feature dimensions.
+- Uses MatConvNet
+- Executed on Intel i7-6800K, 64GB
+- MIST, CIFAR, SHVN and KDEF as its applications
 
 ------> CNN-Fin
 
@@ -52,6 +57,21 @@ Conditional Time Series Forecasting with Convolutional Neural Networks
 - S&P,  Forex and CBOE interest rate as base data
 - Comparison against Naïve, LSTM and VAR
 
+Artificial Neural Networks architectures for stock price prediction comparisons and applications
+- Implementation of MLP, CNN, LSTM
+- Comparison of their performance
+- CNN are better than other architectures
+- An novel Wavelet-CNN was implemented.
+
+Reading the Tea Leaves- A Neural Network Perspective on Technical Trading
+- Use technical analysis for price prediction
+- CNN, RNN and many other DNN models tested
+- It concludes 'there is no evidence of predictive prowess'
+
+Deep learning for stock market prediction from financial news articles
+- Use RCNN compared against other type of CNN
+- Use two sources: news and technical indicators
+- Prefer sentence embedding rather than word embedding
 
 ------> NN-Fin
 
@@ -70,6 +90,17 @@ Using Recurrent Neural Networks To Forecasting of Forex
 - Use NN for time series forecasting
 - CHF, GBP, Euro and JPN
 - Use this as a relation with Bitcoin exchange
+
+Deep learning networks for stock market analysis and prediction - Methodology, data representations, and case studies
+- Comprehensive review of current publications
+- Use data from the Korean Stock market
+- Uses a simple DNN with 3 layers
+
+Adaptive Hybrid Higher Order Neural Networks for Prediction of Stock Market Behavior
+- Use Pi-Sigma HONN to make market predictions
+- Used for Index and stocks in the USA market
+- Used a genetic algorithm and compared that with a gradient decent
+- Improved case of GA over GD
 
 
 ------> FPGA

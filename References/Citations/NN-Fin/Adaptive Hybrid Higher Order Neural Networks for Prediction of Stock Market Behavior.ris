@@ -1,0 +1,11 @@
+TY  - BOOK
+AU  - Nayak, Sarat
+AU  - Bihari Misra, Bijan
+AU  - Behera, Dr. H.
+PY  - 2017/01/01
+SP  - 
+N2  - This chapter presents two higher order neural networks (HONN) for efficient prediction of stock market behavior. The models include Pi-Sigma, and Sigma-Pi higher order neural network models. Along with the traditional gradient descent learning, how the evolutionary computation technique such as genetic algorithm (GA) can be used effectively for the learning process is also discussed here. The learning process is made adaptive to handle the noise and uncertainties associated with stock market data. Further, different prediction approaches are discussed here and application of HONN for time series forecasting is illustrated with real life data taken from a number of stock markets across the globe.
+JF  - Nature-Inspired Computing: Concepts, Methodologies, Tools, and Applications
+T1  - Adaptive Hybrid Higher Order Neural Networks for Prediction of Stock Market Behavior
+DO  - 10.4018/978-1-5225-0788-8.ch022
+ER  - 

@@ -19,3 +19,22 @@ https://dl.acm.org/citation.cfm?id=2832572
 
 Conditional Time Series Forecasting with Convolutional Neural Networks
 https://arxiv.org/abs/1703.04691
+
+Artificial Neural Networks architectures for stock price prediction: comparisons and applications
+https://iris.univr.it/retrieve/handle/11562/955101/60620/Artificial%20Neural%20Networks%20architectures%20for%20stock%20price%20prediction%20comparisons%20and%20applications.pdf
+
+Reading the Tea Leaves- A Neural Network Perspective on Technical Trading
+http://www-bcf.usc.edu/~liu32/milets17/paper/MiLeTS17_paper_4.pdf
+
+Artificial neural networks approach to the forecast of stock market price movements
+https://www.researchgate.net/profile/Luca_Di_Persio/publication/307639575_Artificial_neural_networks_approach_to_the_forecast_of_stock_market_price_movements/links/57ce86b308ae057987abb645.pdf
+
+Exploiting twitter moods to boost financial trend prediction based on deep network models
+https://link.springer.com/chapter/10.1007/978-3-319-42297-8_42
+https://link-springer-com.ezproxy.auckland.ac.nz/book/10.1007%2F978-3-319-42297-8
+
+Deep learning for stock market prediction from financial news articles
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7995302/
+
+Comparing Neural Networks for Predicting Stock Markets
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-65172-9_31
