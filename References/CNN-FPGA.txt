@@ -71,3 +71,9 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S092523
 
 An efficient FPGA implementation of a DT-CNN for small image gray-scale pre-processing
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5275114/
+
+Optimizing FPGA-based Accelerator Design for Deep Convolutional Neural Networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2689060
+
+PipeCNN- An OpenCL-Based Open-Source FPGA Accelerator for Convolution Neural Networks
+https://arxiv.org/abs/1611.02450

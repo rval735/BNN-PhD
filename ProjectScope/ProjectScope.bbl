@@ -104,6 +104,36 @@
     \field{year}{2009}
   \endentry
 
+  \entry{Grenade-Github-Code}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CH}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Huw},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Github}%
+    }
+    \keyw{functional programming, DNN, CNN, sourcecode}
+    \strng{namehash}{CH1}
+    \strng{fullhash}{CH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Grenade}
+    \verb{url}
+    \verb https://github.com/HuwCampbell/grenade
+    \endverb
+    \list{location}{1}{%
+      {San Francisco, CA, USA}%
+    }
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{2016arXiv160306995C}{article}{}
     \name{author}{3}{}{%
       {{hash=CZ}{%
@@ -983,6 +1013,85 @@
     }
     \field{year}{2009}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{2015arXiv151106434R}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RA}{%
+         family={{Radford}},
+         familyi={R\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={{Metz}},
+         familyi={M\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={{Chintala}},
+         familyi={C\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Learning, Computer Science - Computer Vision and
+  Pattern Recognition}
+    \strng{namehash}{RAMLCS1}
+    \strng{fullhash}{RAMLCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{eprint}
+    \verb 1511.06434
+    \endverb
+    \field{title}{{Unsupervised Representation Learning with Deep Convolutional
+  Generative Adversarial Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{month}{11}
+    \field{year}{2015}
+  \endentry
+
+  \entry{2015arXiv151106434R-sc}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=RA}{%
+         family={{Radford}},
+         familyi={R\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={{Metz}},
+         familyi={M\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={{Chintala}},
+         familyi={C\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Learning, Computer Science - Computer Vision and
+  Pattern Recognition}
+    \strng{namehash}{RAMLCS1}
+    \strng{fullhash}{RAMLCS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{{Unsupervised Representation Learning with Deep Convolutional
+  Generative Adversarial Networks}}
+    \verb{url}
+    \verb https://github.com/Newmu/dcgan_code
+    \endverb
+    \field{month}{11}
+    \field{year}{2015}
   \endentry
 
   \entry{Schrage:2005:HRD:1088348.1088351}{inproceedings}{}

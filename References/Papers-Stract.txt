@@ -210,6 +210,12 @@ Why TanH is a Hardware Friendly Activation Function for CNNs
 - Minimum number of circuits required to deploy a CNN
 - Comparison of ReLU, Sigmoid and TanH
 
+PipeCNN- An OpenCL-Based Open-Source FPGA Accelerator for Convolution Neural Networks
+- Github code at: https://github.com/doonny/PipeCNN
+- Full implementation of a CNN on a FPGA
+- It uses OpenCL/C++ for code implementation
+- It details improvements over other FPGA implementations (2015,2016)
+- Implements AlexNet and VGG on a DE5-Net board (Stratix V GXA7)
 
 ------> Haskell
 
@@ -278,7 +284,7 @@ Specification of apertif polyphase filter bank in Clash
 - One formal application of Clash: an apertif polyphase filter bank
 - Improvements on performance and clock frequency
 
-System-level modelling of dynamic reconfigurable designs using functional programming abstractions
+System-level modeling of dynamic reconfigurable designs using functional programming abstractions
 - Use clash to assign a FPGA section as reconfigurable
 - Run embedded linux on the platform
 
