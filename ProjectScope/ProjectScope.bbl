@@ -346,6 +346,31 @@
     \field{year}{2015}
   \endentry
 
+  \entry{TheWayOfTheTurtle}{book}{}
+    \name{author}{1}{}{%
+      {{hash=FCM}{%
+         family={Faith},
+         familyi={F\bibinitperiod},
+         given={Curtis\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill Osborne Media}%
+    }
+    \keyw{Finance, Economics Personal, Professional Development}
+    \strng{namehash}{FCM1}
+    \strng{fullhash}{FCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{9780071486644}
+    \field{title}{Way of the Turtle}
+    \field{year}{2007}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{2015arXiv151207108G}{article}{}
     \name{author}{12}{}{%
       {{hash=GJ}{%
@@ -1410,6 +1435,45 @@
     \endverb
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2016arXiv161102450W}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WD}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={{An}},
+         familyi={A\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={{Xu}},
+         familyi={X\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Hardware Architecture}
+    \strng{namehash}{WDAJXK1}
+    \strng{fullhash}{WDAJXK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{eprint}
+    \verb 1611.02450
+    \endverb
+    \field{title}{{PipeCNN: An OpenCL-Based FPGA Accelerator for Large-Scale
+  Convolution Neuron Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{11}
+    \field{year}{2016}
   \endentry
 
   \entry{Wester:2015aa}{article}{}

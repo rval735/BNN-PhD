@@ -102,6 +102,12 @@ Adaptive Hybrid Higher Order Neural Networks for Prediction of Stock Market Beha
 - Used a genetic algorithm and compared that with a gradient decent
 - Improved case of GA over GD
 
+Two-Step Disentanglement for Financial Data
+- Compare their proposed method with CAPM, Black-Sholes and GAN
+- Use their method with MNIST, Sprites NORB, YaleB databases
+- Used Nasdaq, NYSE, and AMEX data from 1976-2009
+- Beta, rho and mean as benchmarks.
+- "our algorithm encodes it as two separate parts, one that keeps the information regarding the labels and the other that is agnostic to the labels"
 
 ------> FPGA
 
@@ -287,4 +293,7 @@ Specification of apertif polyphase filter bank in Clash
 System-level modeling of dynamic reconfigurable designs using functional programming abstractions
 - Use clash to assign a FPGA section as reconfigurable
 - Run embedded linux on the platform
+
+
+------> DNN
 

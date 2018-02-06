@@ -27,3 +27,6 @@ https://openreview.net/forum?id=rkhlb8lCZ
 Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
 https://github.com/Newmu/dcgan_code
 https://arxiv.org/abs/1511.06434
+
+Automatic differentiation in machine learning: a survey
+https://arxiv.org/abs/1502.05767

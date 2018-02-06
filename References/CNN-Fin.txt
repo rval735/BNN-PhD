@@ -38,3 +38,6 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7995302/
 
 Comparing Neural Networks for Predicting Stock Markets
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-65172-9_31
+
+Two-Step Disentanglement for Financial Data
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1709.00199

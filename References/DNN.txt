@@ -1,0 +1,10 @@
+Papers:
+
+Wasserstein Learning of Deep Generative Point Process Models
+http://papers.nips.cc/paper/6917-wasserstein-learning-of-deep-generative-point-process-models
+
+Deep Reinforcement Learning: An Overview
+https://arxiv.org/abs/1701.07274
+
+Deep Learning in Neural Networks: An Overview
+https://arxiv.org/abs/1404.7828
