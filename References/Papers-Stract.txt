@@ -21,6 +21,12 @@ Wavelet pooling for convolutional neural networks
 - Executed on Intel i7-6800K, 64GB
 - MIST, CIFAR, SHVN and KDEF as its applications
 
+Automatic differentiation in machine learning- a survey
+- Use automatic diff for gradient decent learning techniques
+- Explains what AD is not: numerical diff, symbolic diff.
+- Explains how to perform AD and its modes
+- How AD and back propagation relate
+
 ------> CNN-Fin
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
@@ -297,3 +303,27 @@ System-level modeling of dynamic reconfigurable designs using functional program
 
 ------> DNN
 
+Deep Learning in Neural Networks - An Overview
+- A whole survey on how DL has developed until 2014
+- Explain origins of DL before 1940
+- Special topics in DL: SL, RL, UL.
+- References to CNN and its improvements
+
+Deep reinforcement learning - an overview
+- "Book" like publication explaining from ground up DNN and RL
+- Outline several applications: games, robotics, NLP, Computer Vision, etc
+- Provide a plethora of related resources
+
+Wasserstein Learning of Deep Generative Point Process Models
+- Use NYSE to train a NN for High frequency transactions
+- Several databases with realtime data: MIMIC, Meme, MAS
+- Compares its performance against other MLE procedures (¿Maximum Likelihood Estimate?)
+- Uses "Temporal point processes" as its main differentiator
+- Key words: Wasserstein distance training of RNN point process models
+
+-------> NN
+
+Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunities
+- Explains Backwards calculation of derivates or "backpropagation"
+- Relates it to Automatic Derivation
+- Its application to NN

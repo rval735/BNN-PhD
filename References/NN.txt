@@ -1,0 +1,5 @@
+NN 
+
+Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunities
+https://link.springer.com/chapter/10.1007/3-540-28438-9_2
+http://www.werbos.com/AD2004.pdf
