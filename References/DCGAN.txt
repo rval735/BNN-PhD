@@ -12,3 +12,14 @@ https://arxiv.org/abs/1406.2661
 Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks
 https://arxiv.org/abs/1511.06434
 
+NIPS 2016 Tutorial: Generative Adversarial Networks
+https://arxiv.org/abs/1701.00160
+
+Improved Techniques for Training GANs
+https://arxiv.org/abs/1606.03498
+
+InfoGAN- Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets
+https://arxiv.org/abs/1606.03657
+
+Population Based Training of Neural Networks
+https://arxiv.org/abs/1711.09846

@@ -3,3 +3,46 @@ NN
 Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunities
 https://link.springer.com/chapter/10.1007/3-540-28438-9_2
 http://www.werbos.com/AD2004.pdf
+
+Pixel Recurrent Neural Networks
+https://arxiv.org/abs/1601.06759
+
+Auto-Encoding Variational Bayes
+https://arxiv.org/abs/1312.6114
+
+Generative Adversarial Imitation Learning
+https://arxiv.org/abs/1606.03476
+
+VIME: Variational Information Maximizing Exploration
+https://arxiv.org/abs/1605.09674
+
+DRAW: A Recurrent Neural Network For Image Generation
+https://arxiv.org/abs/1502.04623
+
+Improving Variational Inference with Inverse Autoregressive Flow
+https://arxiv.org/abs/1606.04934
+
+Equilibrated adaptive learning rates for non-convex
+optimization
+https://arxiv.org/abs/1502.04390
+
+Generating Sequences With Recurrent Neural Networks
+https://arxiv.org/abs/1308.0850
+
+Recurrent Models of Visual Attention
+https://arxiv.org/abs/1406.6247
+
+Inferring Algorithmic Patterns with Stack-Augmented Recurrent Nets
+https://arxiv.org/abs/1503.01007
+
+Reinforcement Learning Neural Turing Machines - Revised
+https://arxiv.org/abs/1505.00521
+
+Neural Machine Translation by Jointly Learning to Align and Translate
+https://arxiv.org/abs/1409.0473
+
+End-To-End Memory Networks
+https://arxiv.org/abs/1503.08895
+
+Neural Turing Machines
+https://arxiv.org/abs/1410.5401

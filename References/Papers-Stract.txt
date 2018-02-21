@@ -27,6 +27,19 @@ Automatic differentiation in machine learning- a survey
 - Explains how to perform AD and its modes
 - How AD and back propagation relate
 
+Deep Convolutional Inverse Graphics Network
+- Propose a new architecture for NN using (de)convolutions
+- Outputs resistant to rotations, translations or light changes
+- Training using "Stochastic Gradient Variational Bayes"
+- Image input -> new images with different pose or light
+- Applications as well for 3D rendering
+
+Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
+- Use convolution and LSTM to extract text information from images
+- Flickr8k, Flickr30k and MS COCO datasets with BLEU and METEOR metrics
+- MS COCO trained for 3 days using a Titan GPU
+- It explains two stochastic attentions: soft and hard
+
 ------> CNN-Fin
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
@@ -327,3 +340,116 @@ Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunitie
 - Explains Backwards calculation of derivates or "backpropagation"
 - Relates it to Automatic Derivation
 - Its application to NN
+
+Pixel Recurrent Neural Networks
+- Detail RNN with pixel by pixel spatial dimensions
+- Use MNIST, CIFAR, and ImageNet as sources
+- Description of a better Diagonal-BiLSTM network.
+
+Auto-Encoding Variational Bayes
+- Join a probabilistic model "Variational Bayes" as a gradient learning method
+- Deep explanation of the mathematics behind their reasoning
+- Uses monte carlo gradient estimator.
+- MNIST and Frey Face datasets
+- Auto-Encoding VB (AEVB), that learns an approximate inference model using the SGVB estimator
+
+Generative Adversarial Imitation Learning
+- New general framework for directly extracting a policy from data
+- Describe "Inverse reinforcement learning"
+- Uses math to sustain their approach
+- This algorithm is evaluated against physics-based control tasks
+
+VIME: Variational Information Maximizing Exploration
+- Use "Variational bayes" for Reinforcement Learning
+- Backup their statements with mathematical models
+- VIME helps training real physical models like: MountainCar, CartPoleSwingup or SwimmerGather
+- "VIME is a curiosity-driven exploration strategy for continuous control tasks"
+
+DRAW: A Recurrent Neural Network For Image Generation
+- Applied to MNIST, CIFAR, SVHN
+- According to authors it is able to generate highly realistic natural images
+- "Loss function is a variational upper bound on the log-likelihood of the data"
+- Uses two stages: decoding <-> encoding for image generation
+- Authors showcase their findings in a youtube video: https://www.youtube.com/watch?v=Zt-7MI9eKEo
+
+Improving Variational Inference with Inverse Autoregressive Flow
+- Applied to MNIST, CIFAR
+- IAF is a new type of normalizing flow
+- Faster sampling in CIFAR thanks to log-likelihood results
+- Used variational autoencoders with bidirectional inference 
+
+Equilibrated adaptive learning rates for non-convex
+optimization
+- An alternative to stochastic gradient decent
+- Used MNIST and CURVES datasets
+- Experiments ran on a GPU
+- It compares its results at par with RMSProp
+
+Generating Sequences With Recurrent Neural Networks
+- Use LSTM to generate realistic sequences containing long range structure
+- According to authors: "system is able to generate highly realistic cursive
+handwriting"
+- Can work predicting characters or words
+- Used for Penn Treebank and Hutter Prize Wikipedia datasets for text
+- IAM Online Handwriting Database for real value data
+
+Recurrent Models of Visual Attention
+- Scale image processing considering regions of training
+- RNN with back-propagation
+- Internal RNN determines which sections should be considered from the whole input
+- "Trained end-to-end using a policy gradient method"
+
+Inferring Algorithmic Patterns with Stack-Augmented Recurrent Nets
+- Learn how to grow the complexity of a model in a structured way
+- Slight improvement using lists or stacks with RNN
+- "Complex algorithmic patterns can be more easily learned by composing simpler algorithms"
+
+Reinforcement Learning Neural Turing Machines - Revised
+- Outline how a RL-NTM can interact with an input, memory and output "tapes"
+- Gradual increments of the problem complexity, as "Curriculum learning"
+- Their gradient checking procedure helped to debug any reinforce algorithm
+- Used for simple tasks: copy, reverse, duplicate
+- Possible future work to implement on a FPGA
+
+Neural Machine Translation by Jointly Learning to Align and Translate
+- Extend the classic Encoder - Decoder with a (soft)search-RNN
+- It makes translations between english and french
+- WMT parallel corpora as a dataset
+- It compares its results quantitative and qualitatively
+
+End-To-End Memory Networks
+- RNN with (large) external memory
+- Train a NN with explicit memory and recurrent attention, 
+- A NN with "intuition" of information from a text
+- Compared to baseline NN like: LSTM, MemNN and MemNN-WSH (weakly supervised heuristic)
+
+Neural Turing Machines
+- Extent the Von Neumann architecture to NN which differentiable end-to-end
+- It is able to infer simple algorithms: copy, sort, associative recall.
+- NTM interacts with its environment using input - output channels
+- NTM uses a controller to read/write from a local memory module
+
+-------> DCGAN
+
+Generative Adversarial Networks
+- First paper about GAN: generator (G) and discriminator (D)
+- G tries to fool D improving in the generated output
+- Use MNIST, Toronto face database and CIFAR
+
+Improved Techniques for Training GANs
+- MNIST, CIFAR-10, ImageNet and SVHN data sets
+- Focused on semi-supervised learning, and the generation of images
+- The discriminator uses a "minibatch discrimination"
+- Improvements on evaluation metrics and unstable training
+
+InfoGAN- Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets
+- "InfoGAN learns interpretable representations"
+- Tested on MNIST, CelebA, SVHN datasets
+- "Completely unsupervised and learns interpretable and disentangled representations on
+challenging datasets"
+
+Population Based Training of Neural Networks
+- A different approach to tune hyperparameters
+- "Improvements in accuracy, training time and stability"
+- GAN image generation improves using PBT
+
