@@ -1,0 +1,16 @@
+Experiments for GA CNN
+Result metrics
+Plan about the experiments for the contribution
+Make experiments about the benefits of using Haskell
+Expose Tradeoffs of using haskell
+Make sustainable arguments for the work
+
+List related conferences for the PhD topic
+Suitability of the project
+Consider the Australian ranking of those conferences
+
+Have ~100 references for a thesis
+
+Create another file for the first section
+
+
