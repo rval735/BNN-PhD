@@ -1,0 +1,7 @@
+Papers:
+
+Comparative Studies of 10 Programming Languages within 10 Diverse Criteria -- a Team 7 COMP6411-S10 Term Report
+https://arxiv.org/abs/1009.0305
+
+A Comparative Study of Programming Languages in Rosetta Code
+https://arxiv.org/abs/1409.0252
