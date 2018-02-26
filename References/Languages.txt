@@ -5,3 +5,18 @@ https://arxiv.org/abs/1009.0305
 
 A Comparative Study of Programming Languages in Rosetta Code
 https://arxiv.org/abs/1409.0252
+
+Experience Report- Haskell as a Reagent
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1863595
+
+An Open-Source Sandbox for Increasing the Accessibility of Functional Programming to the Bioinformatics and Scientific Communities
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6209130/
+
+Haskell vs FSharp vs scala- a high-level language features and parallelism support comparison
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2364483
+
+Haskell vs Ada vs Cpp vs Awk vs
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.117.1208&rank=1&q=Haskell%20vs.%20Ada%20vs.%20C++%20vs.%20Awk&osm=&ossid=
+
+An embedded modeling language approach to interactive 3D and multimedia animation
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/798320/?reload=true

@@ -453,3 +453,47 @@ Population Based Training of Neural Networks
 - "Improvements in accuracy, training time and stability"
 - GAN image generation improves using PBT
 
+--------> Languages
+
+A Comparative Study of Programming Languages in Rosetta Code
+- Haskell as top 2 for functional language usage in Rosetta.
+- Functional and Scripting provide concise code
+- Python executables are smaller than Haskell due to static links.
+- Haskell smaller run time/memory/error prone than python
+
+Comparative Studies of 10 Programming Languages within 10 Diverse Criteria -- a Team 7 COMP6411-S10 Term Report
+- Haskell allows robust, concise, correct software
+- Compares Haskell with Java
+- 10 criteria for language analysis, among Web apps, secure practices or UI prototyping
+
+Experience Report: Haskell as a Reagent
+- Implementation of some Haskell modules into a large scale Python project
+- Haskell implementations of an automated computation cluster algorithm
+- "Each language has certain characteristics that make it easier and more natural to program in a certain way"
+- Functionalize Python later developments after Haskell implementation.
+- Compares Haskell partial function application with Python library implementation
+
+An Open-Source Sandbox for Increasing the Accessibility of Functional Programming to the Bioinformatics and Scientific Communities
+- Paper backing up the use of functional programming for bioinformatics
+- Functional programming languages are better to express math descriptions
+- GHCi for interactive environment
+- "Haskell code is inherently testable"
+- Implementation of a Clojure Amono Acid Predictor
+
+Haskell vs FSharp vs scala- a high-level language features and parallelism support comparison
+- Tests performed for Windows and Linux
+- The first tests haskell made the best performance in portability
+- In parallel performance, haskell demonstrates the best speedups when using more cores
+- Laziness as a double edge sword: difficult for HPC but allows infinite structures.
+
+Haskell vs Ada vs Cpp vs Awk vs
+- 1994 Research sponsored by DARPA for Naval Surface Warfare Center
+- Haskell code took less time to develop and it was more concise/easier to understand
+- Haskell lines of code were its minimal, with second in lines of documentation
+- Haskell development time was second best (after Relational-Lisp)
+- Subjective code evaluation gave an "A" to the haskell prototype
+
+An embedded modeling language approach to interactive 3D and multimedia animation
+- 1999 report on how a DSL on top of haskell was used for 3D animations
+- First introduction to "Functional Reactive Animations"
+- How Haskell enhances: composability, high order functions, strong static typing
