@@ -19,6 +19,10 @@ import numpy
 import sys
 # Include NN-Class for its methods
 from NNClass import  *
+# Add datetime to check NN's time performance
+from datetime import datetime
+
+startTime = datetime.now()
 
 args = sys.argv
 
@@ -57,66 +61,69 @@ if isinstance(epochs, int) == False:
 inputNodes = 784
 # Number output nodes, which is 10 for numbers 0 to 9
 outputNodes = 10
-# create instance of neural network
+# Create instance of NN with parameters from the command line
 n = NeuralNetwork(inputNodes, hiddenNodes, outputNodes, learningRate)
 
 # Load MNIST dataset in CSV format into a list
-training_data_file = open("../MNIST-Data/MNIST-Train.csv", 'r')
-training_data_list = training_data_file.readlines()
-training_data_file.close()
+trainingDataFile = open("../MNIST-Data/MNIST-Train.csv", 'r')
+trainingDataList = trainingDataFile.readlines()
+trainingDataFile.close()
 
-# train the neural network
+# Train loop for the NN
 for e in range(epochs):
-    print "Epoch: ", e
-    # go through all records in the training data set
-    for record in training_data_list:
-        # split the record by the ',' commas
-        all_values = record.split(',')
-        # scale and shift the inputs
-        inputs = (numpy.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.01
-        # create the target output values (all 0.01, except the desired label which is 0.99)
+    # Examine records in the data set
+    for record in trainingDataList:
+        # Split the record by the ',' considering is a CVS file
+        allValues = record.split(',')
+        # Scale and shift data
+        inputs = (numpy.asfarray(allValues[1:]) / 255.0 * 0.99) + 0.01
+        # Create the target output values (all 0.01, except the desired label which is 0.99)
         targets = numpy.zeros(outputNodes) + 0.01
-        # all_values[0] is the target label for this record
-        targets[int(all_values[0])] = 0.99
+        # allValues[0] is the target label for this record, derived from the
+        # original CSV file structure.
+        targets[int(allValues[0])] = 0.99
+        # Perform the training phase for that record
         n.train(inputs, targets)
         pass
     pass
 
-# load the mnist test data CSV file into a list
-test_data_file = open("../MNIST-Data/MNIST-Train-100.csv", 'r')
-test_data_list = test_data_file.readlines()
-test_data_file.close()
+# Load MNIST test data from CSV file into a list
+testDataFile = open("../MNIST-Data/MNIST-Train-100.csv", 'r')
+testDataList = testDataFile.readlines()
+testDataFile.close()
 
-# test the neural network
-
-# scorecard for how well the network performs, initially empty
+# The "scorecard" keeps track of the NN performance, with init empty values
 scorecard = []
 
-# go through all the records in the test data set
-for record in test_data_list:
-    # split the record by the ',' commas
-    all_values = record.split(',')
-    # correct answer is first value
-    correct_label = int(all_values[0])
-    # scale and shift the inputs
-    inputs = (numpy.asfarray(all_values[1:]) / 255.0 * 0.99) + 0.01
-    # query the network
+# Run the NN performance against the test portion of the data set
+for record in testDataList:
+    # Split the record by the ',' considering is a CVS file
+    allValues = record.split(',')
+    # allValues[0] is the target label for this record, derived from the
+    # original CSV file structure.
+    correctLabel = int(allValues[0])
+    # Scale and shift data
+    inputs = (numpy.asfarray(allValues[1:]) / 255.0 * 0.99) + 0.01
+    # Ask the NN which value the input is the record
     outputs = n.query(inputs)
-    # the index of the highest value corresponds to the label
+    # Obtain the index of the highest value, which matches the expected
+    # label the NN is predicting
     label = numpy.argmax(outputs)
-    # append correct or incorrect to list
-    if (label == correct_label):
-        # network's answer matches correct answer, add 1 to scorecard
+    # In case the predicted label matches, a +1 score will be appended
+    if (label == correctLabel):
+        # Case that the NN's answer matches "correctLabel"
         scorecard.append(1)
     else:
-        # network's answer doesn't match correct answer, add 0 to scorecard
+        # Case NN's answer did not match, then add 0 to scorecard
         scorecard.append(0)
         pass
-    
     pass
 
-# calculate the performance score, the fraction of correct answers
-scorecard_array = numpy.asarray(scorecard)
-print ("SC = ", scorecard_array.sum())
-print ("Size = ", scorecard_array.size)
-print ("performance = ", scorecard_array.sum() / float(scorecard_array.size))
+# Calculate the NN performance, comparing the right vs wrong predictions
+scorecardArr = numpy.asarray(scorecard)
+error = scorecardArr.sum() / float(scorecardArr.size)
+
+endTime = datetime.now()
+diff = endTime - startTime
+print "HNodes,", "LRate,", "Epochs,", "Error,", "Diff", "STime,", "ETime"
+print hiddenNodes, ",", learningRate, ",", epochs, ",", error, ",", diff, ",", startTime, ",", endTime
