@@ -125,5 +125,5 @@ error = scorecardArr.sum() / float(scorecardArr.size)
 
 endTime = datetime.now()
 diff = endTime - startTime
-print "HNodes,", "LRate,", "Epochs,", "Error,", "Diff", "STime,", "ETime"
+print "HNodes,", "LRate,", "Epochs,", "Error,", "Diff,", "STime,", "ETime"
 print hiddenNodes, ",", learningRate, ",", epochs, ",", error, ",", diff, ",", startTime, ",", endTime

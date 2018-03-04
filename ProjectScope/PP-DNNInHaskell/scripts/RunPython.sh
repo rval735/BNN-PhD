@@ -33,3 +33,6 @@ for i in ${HNODES[@]}; do
         done
     done
 done
+
+perl -ne 'print if ! $a{$_}++' $RESULTS > TEMP
+mv TEMP $RESULTS
