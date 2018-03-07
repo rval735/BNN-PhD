@@ -1,0 +1,64 @@
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-3,3,0.1032,0.126407s,2018-03-07 09:08:33.150903 UTC,2018-03-07 09:08:33.27731 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-3,5,0.101,0.099459s,2018-03-07 09:08:37.78276 UTC,2018-03-07 09:08:37.882219 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-3,8,0.1135,0.144957s,2018-03-07 09:08:45.089552 UTC,2018-03-07 09:08:45.234509 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-3,13,9.8e-2,0.087737s,2018-03-07 09:08:57.217156 UTC,2018-03-07 09:08:57.304893 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-2,3,9.8e-2,0.088603s,2018-03-07 09:09:16.547015 UTC,2018-03-07 09:09:16.635618 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-2,5,9.8e-2,0.084422s,2018-03-07 09:09:21.032295 UTC,2018-03-07 09:09:21.116717 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-2,8,0.1032,0.086075s,2018-03-07 09:09:28.166505 UTC,2018-03-07 09:09:28.25258 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,1.0e-2,13,9.8e-2,0.090918s,2018-03-07 09:09:39.973355 UTC,2018-03-07 09:09:40.064273 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,0.1,3,9.8e-2,0.073384s,2018-03-07 09:09:59.155437 UTC,2018-03-07 09:09:59.228821 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,0.1,5,0.1135,0.087424s,2018-03-07 09:10:03.654972 UTC,2018-03-07 09:10:03.742396 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,0.1,8,9.82e-2,0.084052s,2018-03-07 09:10:10.934897 UTC,2018-03-07 09:10:11.018949 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+5,0.1,13,9.8e-2,0.089101s,2018-03-07 09:10:23.324747 UTC,2018-03-07 09:10:23.413848 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-3,3,9.82e-2,0.108732s,2018-03-07 09:10:42.893394 UTC,2018-03-07 09:10:43.002126 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-3,5,9.8e-2,0.084494s,2018-03-07 09:10:49.512951 UTC,2018-03-07 09:10:49.597445 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-3,8,0.101,0.093186s,2018-03-07 09:11:00.263042 UTC,2018-03-07 09:11:00.356228 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-3,13,9.8e-2,0.089558s,2018-03-07 09:11:17.411783 UTC,2018-03-07 09:11:17.501341 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-2,3,9.8e-2,0.088368s,2018-03-07 09:11:45.228069 UTC,2018-03-07 09:11:45.316437 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-2,5,9.74e-2,0.088838s,2018-03-07 09:11:51.591111 UTC,2018-03-07 09:11:51.679949 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-2,8,0.1032,0.088728s,2018-03-07 09:12:02.078161 UTC,2018-03-07 09:12:02.166889 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,1.0e-2,13,9.82e-2,0.085227s,2018-03-07 09:12:19.494431 UTC,2018-03-07 09:12:19.579658 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,0.1,3,9.8e-2,0.088429s,2018-03-07 09:12:46.549737 UTC,2018-03-07 09:12:46.638166 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,0.1,5,8.92e-2,0.087765s,2018-03-07 09:12:52.932011 UTC,2018-03-07 09:12:53.019776 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,0.1,8,8.92e-2,0.098631s,2018-03-07 09:13:03.136161 UTC,2018-03-07 09:13:03.234792 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+10,0.1,13,9.58e-2,0.083158s,2018-03-07 09:13:20.389323 UTC,2018-03-07 09:13:20.472481 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+20,1.0e-3,3,0.1009,0.117169s,2018-03-07 09:13:50.963238 UTC,2018-03-07 09:13:51.080407 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+20,1.0e-3,5,9.8e-2,0.109094s,2018-03-07 09:14:05.954655 UTC,2018-03-07 09:14:06.063749 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+20,1.0e-3,8,0.1032,0.093279s,2018-03-07 09:14:30.652224 UTC,2018-03-07 09:14:30.745503 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+20,1.0e-3,13,0.0,0.14587s,2018-03-07 09:15:08.742396 UTC,2018-03-07 09:15:08.888266 UTC
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime
+HNodes, LRate, Epochs, Error, Diff, STime, ETime

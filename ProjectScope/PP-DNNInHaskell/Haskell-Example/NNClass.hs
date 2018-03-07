@@ -51,7 +51,12 @@ type HiddenNodes = Int
 type LearningRate = Float
 type NLayer = [Float]
 
-data NNBase = NNBase InputNodes HiddenNodes OutputNodes LearningRate
+data NNBase = NNBase {
+    inodes    :: InputNodes,
+    hnodes    :: HiddenNodes,
+    onodes    :: OutputNodes,
+    baseLRate :: LearningRate
+} deriving (Show)
 
 data NeuralNetwork = NeuralNetwork {
     lrate :: LearningRate,

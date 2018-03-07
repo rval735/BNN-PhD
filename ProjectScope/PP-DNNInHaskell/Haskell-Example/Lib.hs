@@ -1,3 +1,12 @@
+----
+---- CNN-PhD version 0.1, Copyright (C) 5/Mar/2018
+---- Creator: rval735
+---- This code comes with ABSOLUTELY NO WARRANTY; it is provided as "is".
+---- This is free software under GNU General Public License as published by
+---- the Free Software Foundation; either version 3 of the License, or
+---- (at your option) any later version. Check the LICENSE file at the root
+---- of this repository for more details.
+----
 -- module Main where
 
 module Lib
@@ -9,6 +18,7 @@ where
 
 import qualified Data.ByteString       as BS
 import qualified Data.ByteString.Char8 as C8
+import           Data.List
 import           Data.Maybe
 import           Data.Time.Clock
 import           NNClass
@@ -23,21 +33,25 @@ nnFunction = do
     --     exitFailure
     -- else
 
-
     let inputNodes = 784
     let outputNodes = 10
     let (nnBase, epochs) = readElems elems inputNodes outputNodes
     nn <- createNN nnBase
 
-    trainingDF <- readCVS "../MNIST-Data/MNIST-Train-100.csv"
-    testDF <- readCVS "../MNIST-Data/MNIST-Test-10.csv"
+    trainingDF <- readCVS "../MNIST-Data/MNIST-Train.csv"
+    testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
 
-    -- updatedNN = map (\(x,y) -> train y (desiredOutput x) nn) trainingDataFile
     let updatedNN = doTraining epochs nn trainingDF
-
+    let matches = queryNN updatedNN testDF
+    let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 matches
+    let matchesError = fromIntegral numberOfMatches / (fromIntegral . length $ matches)
 
     endTime <- getCurrentTime
-    print nn
+
+    let diff = diffUTCTime endTime startTime
+    print "HNodes, LRate, Epochs, Error, Diff, STime, ETime"
+    let elems = [show (hnodes nnBase), show (baseLRate nnBase), show epochs, show matchesError, show diff, show startTime, show endTime]
+    print $ intercalate ", " elems
 
 
 readElems :: [String] -> Int -> Int -> (NNBase, Int)
@@ -50,16 +64,12 @@ readElems _ iN oN =  (NNBase iN 1 oN 0.01, 0)
 
 readCVS :: String -> IO [(Int, [Float])]
 readCVS path = do
-    cvsData <- BS.readFile  "../MNIST-Data/MNIST-Test-10.csv"
+    cvsData <- BS.readFile path -- "../MNIST-Data/MNIST-Test-10.csv"
     let enlined = map (map fst . mapMaybe C8.readInt . C8.split ',') . C8.lines $ cvsData
     let (elems, rep) = unzip $ map (splitAt 1) enlined
     let simplified = map head elems
     let floated = map (map normalizer) rep
     return $ zip simplified floated
-    -- let floated = map (map (normalizer . fst)) tuples
-    -- return floated
-    -- return $
-    -- map (read :: Float) enlined
 
 normalizer :: Int -> Float
 normalizer x = 0.01 + fromIntegral x / 255 * 0.99
@@ -72,11 +82,18 @@ doTraining 0 nn _ = nn
 doTraining x nn trainData = doTraining (x - 1) iterNN trainData
     where iterNN = foldr (\(x,y) -> train y (desiredOutput x)) nn trainData
 
--- queryNN :: NeuralNetwork -> [(Int, [Float])] -> [Bool]
--- queryNN nn testData = results
---     where (expected, test) = unzip testData
---           queried = map (map (query nn)) test
---           results = [False]
+queryNN :: NeuralNetwork -> [(Int, [Float])] -> [Bool]
+queryNN nn testData = results
+    where (expected, test) = unzip testData
+          queried = map (query nn) test
+          dualQuery = zip expected queried
+          results = map matchesIndex dualQuery
+
+matchesIndex :: (Int, [Float]) -> Bool
+matchesIndex (index, xs) = maxIndex xs == index
+
+maxIndex :: Ord a => [a] -> Int
+maxIndex xs = head $ filter ((== maximum xs) . (xs !!)) [0..]
 
 
 -- # We expect at least 4 elements in the program arguments
