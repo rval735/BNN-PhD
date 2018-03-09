@@ -16,14 +16,19 @@ module Lib
 -- )
 where
 
-import qualified Data.ByteString       as BS
-import qualified Data.ByteString.Char8 as C8
+import qualified Data.ByteString               as BS
+import qualified Data.ByteString.Char8         as C8
 import           Data.List
 import           Data.Maybe
 import           Data.Time.Clock
 import           NNClass
 import           System.Environment
 import           System.Exit
+
+import           Numeric.LinearAlgebra.Devel
+                                            -- (mapMatrixWithIndex,
+                                            --  mapVectorWithIndex)
+import           Numeric.LinearAlgebra.HMatrix
 
 nnFunction :: IO ()
 nnFunction = do
@@ -38,8 +43,8 @@ nnFunction = do
     let (nnBase, epochs) = readElems elems inputNodes outputNodes
     nn <- createNN nnBase
 
-    trainingDF <- readCVS "../MNIST-Data/MNIST-Train.csv"
-    testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
+    trainingDF <- readCVS "../../MNIST-Data/MNIST-Train.csv"
+    testDF <- readCVS "../../MNIST-Data/MNIST-Test.csv"
 
     let updatedNN = doTraining epochs nn trainingDF
     let matches = queryNN updatedNN testDF
@@ -54,46 +59,47 @@ nnFunction = do
     print $ intercalate ", " elems
 
 
-readElems :: [String] -> Int -> Int -> (NNBase, Int)
+readElems :: [String] -> InputNodes -> OutputNodes -> (NNBase, Epochs)
 readElems [] iN oN = (NNBase iN 1 oN 0.01, 0)
 readElems [x, y, z] iN oN = (NNBase iN xx oN yy, zz)
-    where xx = read x:: Int
-          yy = read y :: Float
-          zz = read z :: Int
+    where xx = read x :: HiddenNodes
+          yy = read y :: LearningRate
+          zz = read z :: Epochs
 readElems _ iN oN =  (NNBase iN 1 oN 0.01, 0)
 
-readCVS :: String -> IO [(Int, [Float])]
+readCVS :: String -> IO [(Int, NLayer)]
 readCVS path = do
-    cvsData <- BS.readFile path -- "../MNIST-Data/MNIST-Test-10.csv"
+    cvsData <- BS.readFile path -- "../../MNIST-Data/MNIST-Test-10.csv"
     let enlined = map (map fst . mapMaybe C8.readInt . C8.split ',') . C8.lines $ cvsData
     let (elems, rep) = unzip $ map (splitAt 1) enlined
     let simplified = map head elems
-    let floated = map (map normalizer) rep
+    -- let floated = mapMatrixWithIndex (\_ v -> normalizer v) $ fromLists rep
+    let floated = map (fromList . map normalizer) rep
     return $ zip simplified floated
 
-normalizer :: Int -> Float
+normalizer :: Int -> R
 normalizer x = 0.01 + fromIntegral x / 255 * 0.99
 
-desiredOutput :: Int -> [Float]
-desiredOutput val = [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+desiredOutput :: Int -> NLayer
+desiredOutput val = fromList [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
 
-doTraining :: Int -> NeuralNetwork -> [(Int, [Float])] -> NeuralNetwork
+doTraining :: Int -> NeuralNetwork -> [(Int, NLayer)] -> NeuralNetwork
 doTraining 0 nn _ = nn
 doTraining x nn trainData = doTraining (x - 1) iterNN trainData
     where iterNN = foldr (\(x,y) -> train y (desiredOutput x)) nn trainData
 
-queryNN :: NeuralNetwork -> [(Int, [Float])] -> [Bool]
+queryNN :: NeuralNetwork -> [(Int, NLayer)] -> [Bool]
 queryNN nn testData = results
     where (expected, test) = unzip testData
           queried = map (query nn) test
           dualQuery = zip expected queried
           results = map matchesIndex dualQuery
 
-matchesIndex :: (Int, [Float]) -> Bool
+matchesIndex :: (Int, NLayer) -> Bool
 matchesIndex (index, xs) = maxIndex xs == index
 
-maxIndex :: Ord a => [a] -> Int
-maxIndex xs = head $ filter ((== maximum xs) . (xs !!)) [0..]
+-- maxIndex :: Ord a => [a] -> Int
+-- maxIndex xs = head $ filter ((== maximum xs) . (xs !!)) [0..]
 
 
 -- # We expect at least 4 elements in the program arguments

@@ -24,9 +24,12 @@ module NNClass
 -- )
 where
 
-import           Control.Monad
-import           System.Random
-
+import           Numeric.LinearAlgebra         (outer)
+-- import           Numeric.LinearAlgebra.Data    ()
+import           Numeric.LinearAlgebra.Devel   (mapMatrixWithIndex,
+                                                mapVectorWithIndex)
+import           Numeric.LinearAlgebra.HMatrix (Matrix, R, Vector, randn, tr',
+                                                ( #> ), (<.>))
 -- # Numerical library in python
 -- import numpy
 -- # This imports the sigmoid function expit()
@@ -48,8 +51,10 @@ import           System.Random
 type InputNodes = Int
 type OutputNodes = Int
 type HiddenNodes = Int
-type LearningRate = Float
-type NLayer = [Float]
+type LearningRate = R
+type Epochs = Int
+type NLayer = Vector R
+type NNLayer = Matrix R
 
 data NNBase = NNBase {
     inodes    :: InputNodes,
@@ -60,8 +65,8 @@ data NNBase = NNBase {
 
 data NeuralNetwork = NeuralNetwork {
     lrate :: LearningRate,
-    wih   :: [NLayer],
-    who   :: [NLayer]
+    wih   :: NNLayer,
+    who   :: NNLayer
     } deriving (Show)
 
 createNN :: NNBase -> IO NeuralNetwork
@@ -77,20 +82,18 @@ createNN (NNBase x y z lr) = do
 --         self.wih = numpy.random.normal(0.0, pow(self.inodes, -0.5), (self.hnodes, self.inodes))
 --         self.who = numpy.random.normal(0.0, pow(self.hnodes, -0.5), (self.onodes, self.hnodes))
 --
--- |Impure function that generates random list floats, with  standard
---  deviation of x^-0.5 around 0, the size of each inner list (y) and the
---  number of list (x) with a
-randomNormal :: Int -> Int -> IO [NLayer]
-randomNormal y x = replicateM y $ replicateM x $ randomRIO (stdDev * (-2), stdDev * 2)
-    where stdDev = fromIntegral x ** (-0.5)
---
+-- |Impure function that generates a normalized random matrix of doubles
+--  considering input - hidden layers
+randomNormal :: InputNodes -> OutputNodes -> IO (Matrix R)
+randomNormal inode hnode = randn hnode inode
+
 --         # activation function is the sigmoid function
 --         self.activation_function = lambda x: expit(x)
 --         pass
 activationFunc :: NLayer -> NLayer
-activationFunc = map logisticFunc
+activationFunc = mapVectorWithIndex (\_ v -> logisticFunc v)
 
-logisticFunc :: Float -> Float
+logisticFunc :: R -> R
 logisticFunc x = 1 / (1 + exp (-x))
 --
 --     # train the neural network
@@ -125,59 +128,44 @@ train :: NLayer -> NLayer -> NeuralNetwork -> NeuralNetwork
 train inputs training nn = do
     let wihNN = wih nn
     let whoNN = who nn
-    let lrateNN = lrate nn
-    let hiddenInputs = matrixMult wihNN inputs
+    let lRateNN = lrate nn
+    let hiddenInputs =  wihNN #> inputs
     let hiddenOutputs = activationFunc hiddenInputs
-    let finalInputs = matrixMult whoNN hiddenOutputs
-    let finalOutputs = activationFunc hiddenInputs
-    let outputErrors = zipWith (-) training finalOutputs
-    let hiddenErrors = matrixMult whoNN outputErrors
-    let whoDelta = updateFunc lrateNN outputErrors finalOutputs hiddenOutputs
-    let wihDelta = updateFunc lrateNN hiddenErrors hiddenInputs inputs
-    -- let whoDelta = lrateNN * vDot (outputErrors * finalOutputs * (1 - finalOutputs)) hiddenOutputs
-    -- let wihDelta = lrateNN * vDot (hiddenErrors * hiddenInputs * (1 - hiddenOutputs)) inputs
-    let wohUpdate = map (zipWith (+) whoDelta) whoNN
-    let wihUpdate = map (zipWith (+) wihDelta) wihNN
-    NeuralNetwork lrateNN wihUpdate wohUpdate
+    let finalInputs = whoNN #> hiddenOutputs
+    let finalOutputs = activationFunc finalInputs
+    let outputErrors = training - finalOutputs
+    let hiddenErrors = tr' whoNN #> outputErrors
+    let preWHO = outer (outputErrors * finalOutputs * (1.0 - finalOutputs)) hiddenOutputs
+    let whoDelta = mapMatrixWithIndex (\_ v -> v * lRateNN) preWHO
+    let preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
+    let wihDelta = mapMatrixWithIndex (\_ v -> v * lRateNN) preWIH
+    let whoUpdate = whoNN + whoDelta
+    let wihUpdate = wihNN + wihDelta
+    NeuralNetwork lRateNN wihUpdate whoUpdate
 
-matrixMult :: [NLayer] -> NLayer -> NLayer
-matrixMult xs y = map (vDot y) xs
-
-vDot :: NLayer -> NLayer -> Float
-vDot col row = sum $ zipWith (*) col row
-
-updateFunc :: Float -> NLayer -> NLayer -> NLayer -> NLayer
-updateFunc rate x y z = do
-    let zipOut = zipWith (*) x y
-    let zip1Min = map (1 - ) y
-    let zipMin = zipWith (*) zipOut zip1Min
-    let zipRes = zipWith (*) zipMin z
-    map (rate *) zipRes
-
-
---     # query the neural network
---     def query(self, inputs_list):
---         # convert inputs list to 2d array
---         inputs = numpy.array(inputs_list, ndmin=2).T
---
---         # calculate signals into hidden layer
---         hidden_inputs = numpy.dot(self.wih, inputs)
---         # calculate the signals emerging from hidden layer
---         hidden_outputs = self.activation_function(hidden_inputs)
---
---         # calculate signals into final output layer
---         final_inputs = numpy.dot(self.who, hidden_outputs)
---         # calculate the signals emerging from final output layer
---         final_outputs = self.activation_function(final_inputs)
---
---         return final_outputs
+-- --     # query the neural network
+-- --     def query(self, inputs_list):
+-- --         # convert inputs list to 2d array
+-- --         inputs = numpy.array(inputs_list, ndmin=2).T
+-- --
+-- --         # calculate signals into hidden layer
+-- --         hidden_inputs = numpy.dot(self.wih, inputs)
+-- --         # calculate the signals emerging from hidden layer
+-- --         hidden_outputs = self.activation_function(hidden_inputs)
+-- --
+-- --         # calculate signals into final output layer
+-- --         final_inputs = numpy.dot(self.who, hidden_outputs)
+-- --         # calculate the signals emerging from final output layer
+-- --         final_outputs = self.activation_function(final_inputs)
+-- --
+-- --         return final_outputs
 
 query :: NeuralNetwork -> NLayer -> NLayer
 query nn inputs = do
     let wihNN = wih nn
     let whoNN = who nn
-    let lrateNN = lrate nn
-    let hiddenInputs = matrixMult wihNN inputs
+    let lRateNN = lrate nn
+    let hiddenInputs = wihNN #> inputs
     let hiddenOutputs = activationFunc hiddenInputs
-    let finalInputs = matrixMult whoNN hiddenOutputs
+    let finalInputs = whoNN #> hiddenOutputs
     activationFunc finalInputs
