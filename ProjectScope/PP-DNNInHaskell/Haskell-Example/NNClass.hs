@@ -24,7 +24,7 @@ module NNClass
 -- )
 where
 
-import           Numeric.LinearAlgebra         (outer)
+import           Numeric.LinearAlgebra         (outer, scale)
 -- import           Numeric.LinearAlgebra.Data    ()
 import           Numeric.LinearAlgebra.Devel   (mapMatrixWithIndex,
                                                 mapVectorWithIndex)
@@ -136,9 +136,9 @@ train inputs training nn = do
     let outputErrors = training - finalOutputs
     let hiddenErrors = tr' whoNN #> outputErrors
     let preWHO = outer (outputErrors * finalOutputs * (1.0 - finalOutputs)) hiddenOutputs
-    let whoDelta = mapMatrixWithIndex (\_ v -> v * lRateNN) preWHO
+    let whoDelta = scale lRateNN preWHO
     let preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
-    let wihDelta = mapMatrixWithIndex (\_ v -> v * lRateNN) preWIH
+    let wihDelta = scale lRateNN preWIH
     let whoUpdate = whoNN + whoDelta
     let wihUpdate = wihNN + wihDelta
     NeuralNetwork lRateNN wihUpdate whoUpdate

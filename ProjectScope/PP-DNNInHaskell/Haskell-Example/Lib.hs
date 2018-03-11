@@ -9,6 +9,8 @@
 ----
 -- module Main where
 
+{-# LANGUAGE BangPatterns #-}
+
 module Lib
 -- (
 --     nnFunction,
@@ -43,13 +45,13 @@ nnFunction = do
     let (nnBase, epochs) = readElems elems inputNodes outputNodes
     nn <- createNN nnBase
 
-    trainingDF <- readCVS "../../MNIST-Data/MNIST-Train.csv"
-    testDF <- readCVS "../../MNIST-Data/MNIST-Test.csv"
+    trainingDF <- {-# SCC "readCVS" #-} readCVS "../MNIST-Data/MNIST-Train.csv"
+    testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
 
-    let updatedNN = doTraining epochs nn trainingDF
-    let matches = queryNN updatedNN testDF
-    let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 matches
-    let matchesError = fromIntegral numberOfMatches / (fromIntegral . length $ matches)
+    let updatedNN = {-# SCC "training" #-} doTraining epochs nn trainingDF
+    let matches = {-# SCC "query" #-} queryNN updatedNN testDF
+    let numberOfMatches = {-# SCC "matches" #-} foldr (\x y -> if x then y + 1 else y) 0 matches
+    let !matchesError = {-# SCC "matchesError" #-} fromIntegral numberOfMatches / (fromIntegral . length $ matches)
 
     endTime <- getCurrentTime
 
@@ -73,7 +75,6 @@ readCVS path = do
     let enlined = map (map fst . mapMaybe C8.readInt . C8.split ',') . C8.lines $ cvsData
     let (elems, rep) = unzip $ map (splitAt 1) enlined
     let simplified = map head elems
-    -- let floated = mapMatrixWithIndex (\_ v -> normalizer v) $ fromLists rep
     let floated = map (fromList . map normalizer) rep
     return $ zip simplified floated
 
