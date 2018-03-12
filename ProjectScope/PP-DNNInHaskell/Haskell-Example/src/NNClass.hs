@@ -8,46 +8,17 @@
 ---- of this repository for more details.
 ----
 
--- |Simple Neural Network class that has one hidden layer
-module NNClass
--- (
---     randomNormal,
---     NNBase (..),
---     NeuralNetwork (..),
---     activationFunc,
---     logisticFunc,
---     matrixMult,
---     vDot,
---     train,
---     createNN,
---     updateFunc
--- )
-where
+-- | Simple Neural Network class that has one hidden layer
+module NNClass where
 
 import           Numeric.LinearAlgebra         (outer, scale)
--- import           Numeric.LinearAlgebra.Data    ()
 import           Numeric.LinearAlgebra.Devel   (mapMatrixWithIndex,
                                                 mapVectorWithIndex)
 import           Numeric.LinearAlgebra.HMatrix (Matrix, R, Vector, randn, tr',
                                                 ( #> ), (<.>))
--- # Numerical library in python
--- import numpy
--- # This imports the sigmoid function expit()
--- from scipy.special import expit
---
--- # Class definition for the Neural Network
--- class NeuralNetwork:
---     # NN initialization method
---     def __init__(self, inputnodes, hiddennodes, outputnodes, learningrate):
---         # set number of nodes in each input, hidden, output layer
---         self.inodes = inputnodes
---         self.hnodes = hiddennodes
---         self.onodes = outputnodes
---
---         # learning rate
---         self.lr = learningrate
---
--- |Data Structure to keep track of the NN layers
+
+-- | Code synonyms to ease relationship between function
+--   parameters and their application
 type InputNodes = Int
 type OutputNodes = Int
 type HiddenNodes = Int
@@ -56,6 +27,7 @@ type Epochs = Int
 type NLayer = Vector R
 type NNLayer = Matrix R
 
+-- | Data definition that serves as a base line for NN creation
 data NNBase = NNBase {
     inodes    :: InputNodes,
     hnodes    :: HiddenNodes,
@@ -63,109 +35,73 @@ data NNBase = NNBase {
     baseLRate :: LearningRate
 } deriving (Show)
 
+-- | Kind of "instanced" NNBase where input/output weights have
+--   been assigned along with a learning rate
 data NeuralNetwork = NeuralNetwork {
     lrate :: LearningRate,
     wih   :: NNLayer,
     who   :: NNLayer
     } deriving (Show)
 
+-- | Take a NNBase, then create a NeuralNetwork from its parameters
+--   Impure function becase it uses random numbers
 createNN :: NNBase -> IO NeuralNetwork
 createNN (NNBase x y z lr) = do
     wihL <- randomNormal x y
     whoL <- randomNormal y z
     return $ NeuralNetwork lr wihL whoL
 
---         # link weight matrices, wih and who
---         # weights inside the arrays are w_i_j, where link is from node i to node j in the next layer
---         # w11 w21
---         # w12 w22 etc
---         self.wih = numpy.random.normal(0.0, pow(self.inodes, -0.5), (self.hnodes, self.inodes))
---         self.who = numpy.random.normal(0.0, pow(self.hnodes, -0.5), (self.onodes, self.hnodes))
---
--- |Impure function that generates a normalized random matrix of doubles
---  considering input - hidden layers
+-- | Impure function that generates a normalized random matrix of doubles
+--   considering input - hidden layers
 randomNormal :: InputNodes -> OutputNodes -> IO (Matrix R)
 randomNormal inode hnode = randn hnode inode
 
---         # activation function is the sigmoid function
---         self.activation_function = lambda x: expit(x)
---         pass
+-- | Vector application of the "Logistic" activation function
 activationFunc :: NLayer -> NLayer
 activationFunc = mapVectorWithIndex (\_ v -> logisticFunc v)
 
+-- | Logistic function formula, taking R and returning R
 logisticFunc :: R -> R
 logisticFunc x = 1 / (1 + exp (-x))
---
---     # train the neural network
---     def train(self, inputs_list, targets_list):
---         # convert inputs list to 2d array
---         inputs = numpy.array(inputs_list, ndmin=2).T
---         targets = numpy.array(targets_list, ndmin=2).T
---
---         # calculate signals into hidden layer
---         hidden_inputs = numpy.dot(self.wih, inputs)
---         # calculate the signals emerging from hidden layer
---         hidden_outputs = self.activation_function(hidden_inputs)
---
---         # calculate signals into final output layer
---         final_inputs = numpy.dot(self.who, hidden_outputs)
---         # calculate the signals emerging from final output layer
---         final_outputs = self.activation_function(final_inputs)
---
---         # output layer error is the (target - actual)
---         output_errors = targets - final_outputs
---         # hidden layer error is the output_errors, split by weights, recombined at hidden nodes
---         hidden_errors = numpy.dot(self.who.T, output_errors)
---
---         # update the weights for the links between the hidden and output layers
---         self.who += self.lr * numpy.dot((output_errors * final_outputs * (1.0 - final_outputs)), numpy.transpose(hidden_outputs))
---
---         # update the weights for the links between the input and hidden layers
---         self.wih += self.lr * numpy.dot((hidden_errors * hidden_outputs * (1.0 - hidden_outputs)), numpy.transpose(inputs))
---         pass
---
+
+-- | Match training steps from the Python example
 train :: NLayer -> NLayer -> NeuralNetwork -> NeuralNetwork
-train inputs training nn = do
-    let wihNN = wih nn
-    let whoNN = who nn
-    let lRateNN = lrate nn
-    let hiddenInputs =  wihNN #> inputs
-    let hiddenOutputs = activationFunc hiddenInputs
-    let finalInputs = whoNN #> hiddenOutputs
-    let finalOutputs = activationFunc finalInputs
-    let outputErrors = training - finalOutputs
-    let hiddenErrors = tr' whoNN #> outputErrors
-    let preWHO = outer (outputErrors * finalOutputs * (1.0 - finalOutputs)) hiddenOutputs
-    let whoDelta = scale lRateNN preWHO
-    let preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
-    let wihDelta = scale lRateNN preWIH
-    let whoUpdate = whoNN + whoDelta
-    let wihUpdate = wihNN + wihDelta
-    NeuralNetwork lRateNN wihUpdate whoUpdate
+train inputs training (NeuralNetwork lRateNN wihNN whoNN) =
+    -- Create a new NN with updated input/output weights
+    NeuralNetwork lRateNN (wihNN + wihDelta) (whoNN + whoDelta)
+    where
+    -- Multiply training inputs against input weights
+        hiddenInputs =  wihNN #> inputs
+    -- Run the activation function from the result
+        hiddenOutputs = activationFunc hiddenInputs
+    -- Multiply activated training inputs against output weights
+        finalInputs = whoNN #> hiddenOutputs
+    -- Run the activation function from the output weights result
+        finalOutputs = activationFunc finalInputs
+    -- Match the NN prediction agains the expected training value
+        outputErrors = training - finalOutputs
+    -- Multiply the difference error with the NN output weights
+        hiddenErrors = tr' whoNN #> outputErrors
+    -- Calculate a "gradient" with the expected training value, the
+    -- NN calculated output, which is multiplied by the hidden NN outputs
+        preWHO = outer (outputErrors * finalOutputs * (1.0 - finalOutputs)) hiddenOutputs
+    -- Apply the learning rate to the newly calculated output weights
+        whoDelta = scale lRateNN preWHO
+    -- Make the "gradient" but in this case for the input weights
+        preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
+    -- Apply the learning rate to the newly calculated input weights
+        wihDelta = scale lRateNN preWIH
 
--- --     # query the neural network
--- --     def query(self, inputs_list):
--- --         # convert inputs list to 2d array
--- --         inputs = numpy.array(inputs_list, ndmin=2).T
--- --
--- --         # calculate signals into hidden layer
--- --         hidden_inputs = numpy.dot(self.wih, inputs)
--- --         # calculate the signals emerging from hidden layer
--- --         hidden_outputs = self.activation_function(hidden_inputs)
--- --
--- --         # calculate signals into final output layer
--- --         final_inputs = numpy.dot(self.who, hidden_outputs)
--- --         # calculate the signals emerging from final output layer
--- --         final_outputs = self.activation_function(final_inputs)
--- --
--- --         return final_outputs
 
+-- | Match query steps from the Python example
 query :: NeuralNetwork -> NLayer -> NLayer
-query nn inputs = do
-    let wihNN = wih nn
-    let whoNN = who nn
-    let lRateNN = lrate nn
-    let hiddenInputs = wihNN #> inputs
-    let hiddenOutputs = activationFunc hiddenInputs
-    let finalInputs = whoNN #> hiddenOutputs
+query (NeuralNetwork lRateNN wihNN whoNN) inputs =
     activationFunc finalInputs
+    where
+    -- Multiply training inputs against input weights
+        hiddenInputs = wihNN #> inputs
+    -- Run the activation function from the result
+        hiddenOutputs = activationFunc hiddenInputs
+    -- Multiply activated training inputs against output weights
+        finalInputs = whoNN #> hiddenOutputs
+

@@ -7,88 +7,94 @@
 ---- (at your option) any later version. Check the LICENSE file at the root
 ---- of this repository for more details.
 ----
--- module Main where
 
 {-# LANGUAGE BangPatterns #-}
 
 module Lib
--- (
---     nnFunction,
---     readElems,
--- )
+(
+    nnFunction
+)
 where
 
 import qualified Data.ByteString               as BS
 import qualified Data.ByteString.Char8         as C8
-import           Data.List
-import           Data.Maybe
-import           Data.Time.Clock
+import           Data.List                     (intercalate)
+import           Data.Maybe                    (mapMaybe)
+import           Data.Time.Clock               (diffUTCTime, getCurrentTime)
 import           NNClass
-import           System.Environment
-import           System.Exit
+import           Numeric.LinearAlgebra.HMatrix (R, fromList, maxIndex)
+import           System.Environment            (getArgs)
+import           System.Exit                   (exitFailure)
 
-import           Numeric.LinearAlgebra.Devel
-                                            -- (mapMatrixWithIndex,
-                                            --  mapVectorWithIndex)
-import           Numeric.LinearAlgebra.HMatrix
-
+-- | Main NN function that is part of IO, here data loading, training
+--   and quering will take place.
 nnFunction :: IO ()
 nnFunction = do
+    -- Record start time
     startTime <- getCurrentTime
+    -- Read command line arguments passed to the program
     elems <- getArgs
-    -- if length elems < 3 then
-    --     exitFailure
-    -- else
-
+    -- Set constant values for input and output nodes
     let inputNodes = 784
     let outputNodes = 10
-    let (nnBase, epochs) = readElems elems inputNodes outputNodes
+    -- Confirm that the elements passed as program arguments
+    -- match the expected values.
+    (nnBase, epochs) <- readElems elems inputNodes outputNodes
+    -- Create a NN with the values read from arguments
     nn <- createNN nnBase
-
-    trainingDF <- {-# SCC "readCVS" #-} readCVS "../MNIST-Data/MNIST-Train.csv"
+    -- Read the contents of the CSV file for training and testing
+    trainingDF <- readCVS "../MNIST-Data/MNIST-Train.csv"
     testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
-
-    let updatedNN = {-# SCC "training" #-} doTraining epochs nn trainingDF
-    let matches = {-# SCC "query" #-} queryNN updatedNN testDF
-    let numberOfMatches = {-# SCC "matches" #-} foldr (\x y -> if x then y + 1 else y) 0 matches
-    let !matchesError = {-# SCC "matchesError" #-} fromIntegral numberOfMatches / (fromIntegral . length $ matches)
-
+    -- Peform the training of the NN
+    let updatedNN = doTraining epochs nn trainingDF
+    -- Query the updated NN and make a list of matches
+    let matches = queryNN updatedNN testDF
+    -- Compare the results with the number of elements were passed
+    let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 matches
+    -- Make the strict call to calculate all previous lines, making a ratio
+    -- of the number of correct values against the elements that we tested
+    let !matchesError = fromIntegral numberOfMatches / (fromIntegral . length $ matches)
+    -- Get the time of executing the whole venture
     endTime <- getCurrentTime
-
+    -- Take the difference of that time
     let diff = diffUTCTime endTime startTime
+    -- Print the results
     print "HNodes, LRate, Epochs, Error, Diff, STime, ETime"
     let elems = [show (hnodes nnBase), show (baseLRate nnBase), show epochs, show matchesError, show diff, show startTime, show endTime]
     print $ intercalate ", " elems
 
-
-readElems :: [String] -> InputNodes -> OutputNodes -> (NNBase, Epochs)
-readElems [] iN oN = (NNBase iN 1 oN 0.01, 0)
-readElems [x, y, z] iN oN = (NNBase iN xx oN yy, zz)
+-- | From a list of strings, match the elements that are expected from the
+--   user input. Consider that it is not error safe and any unexpected value
+--   will result in a run time failure
+readElems :: [String] -> InputNodes -> OutputNodes -> IO (NNBase, Epochs)
+readElems [] iN oN = exitFailure
+readElems [x, y, z] iN oN = return (NNBase iN xx oN yy, zz)
     where xx = read x :: HiddenNodes
           yy = read y :: LearningRate
           zz = read z :: Epochs
-readElems _ iN oN =  (NNBase iN 1 oN 0.01, 0)
+readElems _ iN oN = exitFailure
 
+-- | From a path, read the contents of a file, then parse those
+--   elements considering a CSV file format with no header.
 readCVS :: String -> IO [(Int, NLayer)]
 readCVS path = do
-    cvsData <- BS.readFile path -- "../../MNIST-Data/MNIST-Test-10.csv"
+    cvsData <- BS.readFile path
     let enlined = map (map fst . mapMaybe C8.readInt . C8.split ',') . C8.lines $ cvsData
     let (elems, rep) = unzip $ map (splitAt 1) enlined
     let simplified = map head elems
     let floated = map (fromList . map normalizer) rep
     return $ zip simplified floated
 
-normalizer :: Int -> R
-normalizer x = 0.01 + fromIntegral x / 255 * 0.99
-
-desiredOutput :: Int -> NLayer
-desiredOutput val = fromList [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
-
-doTraining :: Int -> NeuralNetwork -> [(Int, NLayer)] -> NeuralNetwork
+-- | Iterate a NN by the number of "Epochs" it receives with the
+--   tuple data that represents the "Expected Value" and layer "data" to
+--   feed the NN. It is recursive function until no more "Epochs" are in place
+doTraining :: Epochs -> NeuralNetwork -> [(Int, NLayer)] -> NeuralNetwork
 doTraining 0 nn _ = nn
 doTraining x nn trainData = doTraining (x - 1) iterNN trainData
     where iterNN = foldr (\(x,y) -> train y (desiredOutput x)) nn trainData
 
+-- | Ask the NN its predictions about a layer, then match that with the value
+--   it is expected to predict.
 queryNN :: NeuralNetwork -> [(Int, NLayer)] -> [Bool]
 queryNN nn testData = results
     where (expected, test) = unzip testData
@@ -96,111 +102,21 @@ queryNN nn testData = results
           dualQuery = zip expected queried
           results = map matchesIndex dualQuery
 
+---------------- Simple Functions
+
+-- | Normalize a value that is between 0 and 255 so it becomes 0.01 - 0.99
+normalizer :: Int -> R
+normalizer x = 0.01 + fromIntegral x / 255 * 0.99
+
+-- | Consider if the Layer prediction matches the index in which the
+--   expected value should be. For example, a tuple of:
+--   (3, [0,0,1,5,0,0])
+--   would return "True", because "5" is the max value and it is
+--   placed in the index "3" of the array.
 matchesIndex :: (Int, NLayer) -> Bool
 matchesIndex (index, xs) = maxIndex xs == index
 
--- maxIndex :: Ord a => [a] -> Int
--- maxIndex xs = head $ filter ((== maximum xs) . (xs !!)) [0..]
-
-
--- # We expect at least 4 elements in the program arguments
--- # which would count for hidden nodes, learning rate, and epochs.
--- if len(args) < 4:
---     print "This program needs 3 inputs in the following order:"
---     print "Hidden nodes (integer)"
---     print "Learning rate (float)"
---     print "Number of Epochs (integer)"
---     sys.exit()
---
--- # Assign the hidden nodes in the inner NN layer
--- hiddenNodes = int(args[1])
---
--- # Check that the value passed is a valid integer
--- if isinstance(hiddenNodes, int) == False:
---     print "This program needs input 1 for hidden nodes to be integer"
---     sys.exit()
---
--- # Determine how big/small steps are made after an epoch
--- learningRate = float(args[2])
--- # Check that the value passed is a valid float
--- if isinstance(learningRate, float) == False:
---     print "This program needs input 2 for learning rate to be float"
---     sys.exit()
---
--- # Number of times the training data set is iterated to train the NN
--- epochs = int(args[3])
--- # Check that the value passed is a valid integer
--- if isinstance(epochs, int) == False:
---     print "This program needs inputs 3 for epochs to be integer"
---     sys.exit()
---
--- # Number of inputs, considering a 784 size for the MNIST dataset
--- inputNodes = 784
--- # Number output nodes, which is 10 for numbers 0 to 9
--- outputNodes = 10
--- # Create instance of NN with parameters from the command line
--- n = NeuralNetwork(inputNodes, hiddenNodes, outputNodes, learningRate)
---
--- # Load MNIST dataset in CSV format into a list
--- trainingDataFile = open("../MNIST-Data/MNIST-Train.csv", 'r')
--- trainingDataList = trainingDataFile.readlines()
--- trainingDataFile.close()
---
--- # Train loop for the NN
--- for e in range(epochs):
---     # Examine records in the data set
---     for record in trainingDataList:
---         # Split the record by the ',' considering is a CVS file
---         allValues = record.split(',')
---         # Scale and shift data
---         inputs = (numpy.asfarray(allValues[1:]) / 255.0 * 0.99) + 0.01
---         # Create the target output values (all 0.01, except the desired label which is 0.99)
---         targets = numpy.zeros(outputNodes) + 0.01
---         # allValues[0] is the target label for this record, derived from the
---         # original CSV file structure.
---         targets[int(allValues[0])] = 0.99
---         # Perform the training phase for that record
---         n.train(inputs, targets)
---         pass
---     pass
---
--- # Load MNIST test data from CSV file into a list
--- testDataFile = open("../MNIST-Data/MNIST-Train-100.csv", 'r')
--- testDataList = testDataFile.readlines()
--- testDataFile.close()
---
--- # The "scorecard" keeps track of the NN performance, with init empty values
--- scorecard = []
---
--- # Run the NN performance against the test portion of the data set
--- for record in testDataList:
---     # Split the record by the ',' considering is a CVS file
---     allValues = record.split(',')
---     # allValues[0] is the target label for this record, derived from the
---     # original CSV file structure.
---     correctLabel = int(allValues[0])
---     # Scale and shift data
---     inputs = (numpy.asfarray(allValues[1:]) / 255.0 * 0.99) + 0.01
---     # Ask the NN which value the input is the record
---     outputs = n.query(inputs)
---     # Obtain the index of the highest value, which matches the expected
---     # label the NN is predicting
---     label = numpy.argmax(outputs)
---     # In case the predicted label matches, a +1 score will be appended
---     if (label == correctLabel):
---         # Case that the NN's answer matches "correctLabel"
---         scorecard.append(1)
---     else:
---         # Case NN's answer did not match, then add 0 to scorecard
---         scorecard.append(0)
---         pass
---     pass
---
--- # Calculate the NN performance, comparing the right vs wrong predictions
--- scorecardArr = numpy.asarray(scorecard)
--- error = scorecardArr.sum() / float(scorecardArr.size)
---
--- endTime = datetime.now()
--- diff = endTime - startTime
--- print "HNodes,", "LRate,", "Epochs,", "Error,", "Diff,", "STime,", "ETime"
--- print hiddenNodes, ",", learningRate, ",", epochs, ",", error, ",", diff, ",", startTime, ",", endTime
+-- | Create a layer of 10 elements that has a maximum value of 0.99 in the
+--   "val" position, otherwise 0.01
+desiredOutput :: Int -> NLayer
+desiredOutput val = fromList [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
