@@ -43,8 +43,8 @@ nnFunction = do
     -- Create a NN with the values read from arguments
     nn <- createNN nnBase
     -- Read the contents of the CSV file for training and testing
-    trainingDF <- readCVS "../MNIST-Data/MNIST-Train.csv"
-    testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
+    !trainingDF <- readCVS "../MNIST-Data/MNIST-Train.csv"
+    !testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
     -- Peform the training of the NN
     let updatedNN = doTraining epochs nn trainingDF
     -- Query the updated NN and make a list of matches

@@ -8,6 +8,8 @@
 ---- of this repository for more details.
 ----
 
+{-# LANGUAGE BangPatterns #-}
+
 -- | Simple Neural Network class that has one hidden layer
 module NNClass where
 
@@ -39,8 +41,8 @@ data NNBase = NNBase {
 --   been assigned along with a learning rate
 data NeuralNetwork = NeuralNetwork {
     lrate :: LearningRate,
-    wih   :: NNLayer,
-    who   :: NNLayer
+    wih   :: !NNLayer,
+    who   :: !NNLayer
     } deriving (Show)
 
 -- | Take a NNBase, then create a NeuralNetwork from its parameters
