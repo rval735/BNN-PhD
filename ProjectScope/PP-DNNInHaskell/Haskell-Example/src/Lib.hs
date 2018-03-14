@@ -91,7 +91,7 @@ readCVS path = do
 doTraining :: Epochs -> NeuralNetwork -> [(Int, NLayer)] -> NeuralNetwork
 doTraining 0 nn _ = nn
 doTraining x nn trainData = doTraining (x - 1) iterNN trainData
-    where iterNN = foldr (\(x,y) -> train y (desiredOutput x)) nn trainData
+    where iterNN = foldlSeq (\nNN (x,y) -> train y (desiredOutput x) nNN) nn trainData
 
 -- | Ask the NN its predictions about a layer, then match that with the value
 --   it is expected to predict.
@@ -120,3 +120,7 @@ matchesIndex (index, xs) = maxIndex xs == index
 --   "val" position, otherwise 0.01
 desiredOutput :: Int -> NLayer
 desiredOutput val = fromList [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+
+foldlSeq :: (t -> a -> t) -> t -> [a] -> t
+foldlSeq f z []     = z
+foldlSeq f z (x:xs) = let z' = z `f` x in seq z' $ foldlSeq f z' xs

@@ -37,7 +37,6 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
-    - -funbox-strict-fields
     dependencies:
     - NNHaskell
 
