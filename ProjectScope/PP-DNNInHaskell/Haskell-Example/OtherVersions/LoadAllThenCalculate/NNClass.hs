@@ -8,6 +8,8 @@
 ---- of this repository for more details.
 ----
 
+{-# LANGUAGE BangPatterns #-}
+
 -- | Simple Neural Network class that has one hidden layer
 module NNClass where
 
@@ -22,8 +24,6 @@ import           Numeric.LinearAlgebra.HMatrix (Matrix, R, Vector, randn, tr',
 type InputNodes = Int
 type OutputNodes = Int
 type HiddenNodes = Int
-type Target = Int
-type IMGData = Vector R
 type LearningRate = R
 type Epochs = Int
 type NLayer = Vector R
@@ -41,9 +41,9 @@ data NNBase = NNBase {
 --   been assigned along with a learning rate
 data NeuralNetwork = NeuralNetwork {
     lrate :: LearningRate,
-    wih   :: NNLayer,
-    who   :: NNLayer
-} deriving (Show)
+    wih   :: !NNLayer,
+    who   :: !NNLayer
+    } deriving (Show)
 
 -- | Take a NNBase, then create a NeuralNetwork from its parameters
 --   Impure function becase it uses random numbers

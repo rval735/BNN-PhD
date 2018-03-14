@@ -19,12 +19,9 @@ description:         Please see the README on Github at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - random >= 1.1
-- matrix >= 0.3.5
 - time >= 1.8
 - bytestring >= 0.1
 - hmatrix >= 0.18
-- cassava >= 0.5
-- vector >= 0.12
 
 library:
   source-dirs: src
@@ -35,8 +32,12 @@ executables:
     source-dirs:         app
     ghc-options:
     - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+    # - -rtsopts
+    # - -with-rtsopts=-N
+    - -O2
+    - -optc-O2
+    - -fforce-recomp
+    # - -fprof-auto
     dependencies:
     - NNHaskell
 

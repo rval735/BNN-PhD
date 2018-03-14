@@ -16,7 +16,8 @@ module Lib
 )
 where
 
-import qualified Data.ByteString.Lazy.Char8    as C8L
+import qualified Data.ByteString               as BS
+import qualified Data.ByteString.Char8         as C8
 import           Data.List                     (intercalate)
 import           Data.Maybe                    (mapMaybe)
 import           Data.Time.Clock               (diffUTCTime, getCurrentTime)
@@ -42,20 +43,24 @@ nnFunction = do
     -- Create a NN with the values read from arguments
     nn <- createNN nnBase
     -- Read the contents of the CSV file for training and testing
-    trainedNN <- readCVS "../MNIST-Data/MNIST-Train.csv" epochs nn
-    testedNN <- queryCVS "../MNIST-Data/MNIST-Test.csv" trainedNN
+    !trainingDF <- readCVS "../MNIST-Data/MNIST-Train.csv"
+    !testDF <- readCVS "../MNIST-Data/MNIST-Test.csv"
+    -- Peform the training of the NN
+    let updatedNN = doTraining epochs nn trainingDF
+    -- Query the updated NN and make a list of matches
+    let matches = queryNN updatedNN testDF
     -- Compare the results with the number of elements were passed
-    let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 testedNN
+    let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 matches
     -- Make the strict call to calculate all previous lines, making a ratio
     -- of the number of correct values against the elements that we tested
-    let !matchesError = fromIntegral numberOfMatches / (fromIntegral . length $ testedNN)
+    let !matchesError = fromIntegral numberOfMatches / (fromIntegral . length $ matches)
     -- Get the time of executing the whole venture
     endTime <- getCurrentTime
     -- Take the difference of that time
     let diff = diffUTCTime endTime startTime
     -- Print the results
     print "HNodes, LRate, Epochs, Error, Diff, STime, ETime"
-    let elems = [show (hnodes nnBase), show (baseLRate nnBase), show epochs, show matchesError , show diff, show startTime, show endTime]
+    let elems = [show (hnodes nnBase), show (baseLRate nnBase), show epochs, show matchesError, show diff, show startTime, show endTime]
     print $ intercalate ", " elems
 
 -- | From a list of strings, match the elements that are expected from the
@@ -67,58 +72,35 @@ readElems [x, y, z] iN oN = return (NNBase iN xx oN yy, zz)
     where xx = read x :: HiddenNodes
           yy = read y :: LearningRate
           zz = read z :: Epochs
-readElems _ _ _ =  exitFailure
+readElems _ iN oN = exitFailure
 
 -- | From a path, read the contents of a file, then parse those
---   elements considering a CSV file format with no header, with
---   the number of epochs, a NN will produce an updated NN
-readCVS :: String -> Epochs -> NeuralNetwork -> IO NeuralNetwork
-readCVS path epochs nn = analyzeLines epochs nn <$> readCVSFile path
-
--- | Ask the NN its predictions about a CSV file, then match that
---    with values it is expecting to predict in a list of booleans
-queryCVS :: String -> NeuralNetwork -> IO [Bool]
-queryCVS path nn = queryLines nn <$> readCVSFile path
-
--- | From a path to a Lazy ByteString split in lines
-readCVSFile :: String -> IO [C8L.ByteString]
-readCVSFile path = C8L.lines <$> C8L.readFile path
+--   elements considering a CSV file format with no header.
+readCVS :: String -> IO [(Int, NLayer)]
+readCVS path = do
+    cvsData <- BS.readFile path
+    let enlined = map (map fst . mapMaybe C8.readInt . C8.split ',') . C8.lines $ cvsData
+    let (elems, rep) = unzip $ map (splitAt 1) enlined
+    let simplified = map head elems
+    let floated = map (fromList . map normalizer) rep
+    return $ zip simplified floated
 
 -- | Iterate a NN by the number of "Epochs" it receives with the
---   line data that is going to be transformed into a represantion the
---   NN is able to understand. It is recursive function until no more
---   "Epochs" are in place
-analyzeLines :: Epochs -> NeuralNetwork -> [C8L.ByteString] -> NeuralNetwork
-analyzeLines 0 nn _ = nn
-analyzeLines epochs nn xs = analyzeLines (epochs - 1) trainedNN xs
-    where layers = map cleanLayer xs
-          trainedNN = foldr trainNN nn layers
+--   tuple data that represents the "Expected Value" and layer "data" to
+--   feed the NN. It is recursive function until no more "Epochs" are in place
+doTraining :: Epochs -> NeuralNetwork -> [(Int, NLayer)] -> NeuralNetwork
+doTraining 0 nn _ = nn
+doTraining x nn trainData = doTraining (x - 1) iterNN trainData
+    where iterNN = foldlSeq (\nNN (x,y) -> train y (desiredOutput x) nNN) nn trainData
 
--- | Same principle as "analyzeLines" but just to query the NN
-queryLines :: NeuralNetwork -> [C8L.ByteString] -> [Bool]
-queryLines _ [] = []
-queryLines nn xs = map (queryNN nn) layers
-    where layers = map cleanLayer xs
-
--- | One line function that transform a CSV line to a tuple with
---   (Label, Data) format
-cleanLayer :: C8L.ByteString -> (Int, NLayer)
-cleanLayer = readDecoded . map fst . mapMaybe C8L.readInt . C8L.split ','
-
--- | Tuple by tuple, perform the NN tranining from NNClass
-trainNN :: (Int, NLayer) -> NeuralNetwork -> NeuralNetwork
-trainNN (expected, layer) = train layer (desiredOutput expected)
-
--- | Tuple by tuple, perform the NN quering from NNClass
-queryNN :: NeuralNetwork -> (Int, NLayer) -> Bool
-queryNN nn (expected, layer) = matchesIndex (expected, queryLL)
-    where queryLL = query nn layer
-
--- | Transform a list of Int into a tuple with format (Label, Data)
---   for the NN to read
-readDecoded :: [Int] -> (Int, NLayer)
-readDecoded []     = (0, fromList [])
-readDecoded (x:xs) = (x, fromList $ map normalizer xs)
+-- | Ask the NN its predictions about a layer, then match that with the value
+--   it is expected to predict.
+queryNN :: NeuralNetwork -> [(Int, NLayer)] -> [Bool]
+queryNN nn testData = results
+    where (expected, test) = unzip testData
+          queried = map (query nn) test
+          dualQuery = zip expected queried
+          results = map matchesIndex dualQuery
 
 ---------------- Simple Functions
 
@@ -138,3 +120,9 @@ matchesIndex (index, xs) = maxIndex xs == index
 --   "val" position, otherwise 0.01
 desiredOutput :: Int -> NLayer
 desiredOutput val = fromList [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+
+-- | Strict version of foldl, which means it evaluates at the moment of
+--   being called instead of lazily
+foldlSeq :: (t -> a -> t) -> t -> [a] -> t
+foldlSeq f z []     = z
+foldlSeq f z (x:xs) = let z' = z `f` x in seq z' $ foldlSeq f z' xs
