@@ -29,7 +29,7 @@ echo "Will be saved in the file $RESULTS"
 for i in ${HNODES[@]}; do
     for j in ${LRATE[@]}; do
         for k in ${EPOCHS[@]}; do
-            ./$HSCODE $i $j $k >> $RESULTS
+            time ./$HSCODE $i $j $k >> $RESULTS
         done
     done
 done

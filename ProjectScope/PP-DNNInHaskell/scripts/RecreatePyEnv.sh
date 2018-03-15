@@ -21,7 +21,7 @@ sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade virtualenv
 sudo pip3 install numpy
 sudo pip3 install scipy
-sudo apt-get install libgsl0-dev liblapack-dev libatlas-base-dev
+sudo apt -y install libgsl0-dev liblapack-dev libatlas-base-dev
 
 cd ~/
 git clone https://github.com/rval735/cnn-phd.git
@@ -30,7 +30,3 @@ wget --no-check-certificate https://pjreddie.com/media/files/mnist_train.csv
 wget --no-check-certificate https://pjreddie.com/media/files/mnist_test.csv
 mv mnist_test.csv MNIST-Test.csv
 mv mnist_train.csv MNIST-Train.csv
-
-cd ..
-cd Python-Example/
-time ../scripts/RunPython.sh

@@ -15,7 +15,7 @@
 
 SAMPLE=(100)
 while [ $SAMPLE -gt 0 ]; do
-    cd PythonExample
+    cd Python-Example
     ../scripts/RunPython.sh
     cd ..
     cd scripts
