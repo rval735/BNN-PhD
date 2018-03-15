@@ -29,10 +29,10 @@ args = sys.argv
 # We expect at least 4 elements in the program arguments
 # which would count for hidden nodes, learning rate, and epochs.
 if len(args) < 4:
-    print "This program needs 3 inputs in the following order:"
-    print "Hidden nodes (integer)"
-    print "Learning rate (float)"
-    print "Number of Epochs (integer)"
+    print ("This program needs 3 inputs in the following order:")
+    print ("Hidden nodes (integer)")
+    print ("Learning rate (float)")
+    print ("Number of Epochs (integer)")
     sys.exit()
 
 # Assign the hidden nodes in the inner NN layer
@@ -40,21 +40,21 @@ hiddenNodes = int(args[1])
 
 # Check that the value passed is a valid integer
 if isinstance(hiddenNodes, int) == False:
-    print "This program needs input 1 for hidden nodes to be integer"
+    print ("This program needs input 1 for hidden nodes to be integer")
     sys.exit()
 
 # Determine how big/small steps are made after an epoch
 learningRate = float(args[2])
 # Check that the value passed is a valid float
 if isinstance(learningRate, float) == False:
-    print "This program needs input 2 for learning rate to be float"
+    print ("This program needs input 2 for learning rate to be float")
     sys.exit()
 
 # Number of times the training data set is iterated to train the NN
 epochs = int(args[3])
 # Check that the value passed is a valid integer
 if isinstance(epochs, int) == False:
-    print "This program needs inputs 3 for epochs to be integer"
+    print ("This program needs inputs 3 for epochs to be integer")
     sys.exit()
 
 # Number of inputs, considering a 784 size for the MNIST dataset
@@ -125,5 +125,5 @@ error = scorecardArr.sum() / float(scorecardArr.size)
 
 endTime = datetime.now()
 diff = endTime - startTime
-print "HNodes,", "LRate,", "Epochs,", "Error,", "Diff,", "STime,", "ETime"
-print hiddenNodes, ",", learningRate, ",", epochs, ",", error, ",", diff, ",", startTime, ",", endTime
+print ("HNodes,", "LRate,", "Epochs,", "Error,", "Diff,", "STime,", "ETime")
+print (hiddenNodes, ",", learningRate, ",", epochs, ",", error, ",", diff, ",", startTime, ",", endTime)
