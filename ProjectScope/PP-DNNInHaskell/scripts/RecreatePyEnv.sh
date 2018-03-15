@@ -21,6 +21,7 @@ sudo pip3 install --upgrade pip
 sudo pip3 install --upgrade virtualenv
 sudo pip3 install numpy
 sudo pip3 install scipy
+sudo apt-get install libgsl0-dev liblapack-dev libatlas-base-dev
 
 cd ~/
 git clone https://github.com/rval735/cnn-phd.git
