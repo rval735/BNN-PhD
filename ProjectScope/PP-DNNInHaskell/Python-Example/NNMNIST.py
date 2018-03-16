@@ -88,7 +88,7 @@ for e in range(epochs):
     pass
 
 # Load MNIST test data from CSV file into a list
-testDataFile = open("../MNIST-Data/MNIST-Train-100.csv", 'r')
+testDataFile = open("../MNIST-Data/MNIST-Test.csv", 'r')
 testDataList = testDataFile.readlines()
 testDataFile.close()
 
