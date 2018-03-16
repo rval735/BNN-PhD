@@ -17,10 +17,10 @@ sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y install build-essential libssl-dev libffi-dev python-dev
 sudo apt -y install python3-pip
-sudo pip3 install --upgrade pip
-sudo pip3 install --upgrade virtualenv
-sudo pip3 install numpy
-sudo pip3 install scipy
+sudo pip install --upgrade pip
+sudo pip install --upgrade virtualenv
+sudo pip install numpy
+sudo pip install scipy
 sudo apt -y install libgsl0-dev liblapack-dev libatlas-base-dev
 
 cd ~/
