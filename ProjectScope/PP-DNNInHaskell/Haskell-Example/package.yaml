@@ -22,6 +22,7 @@ dependencies:
 - time >= 1.8
 - bytestring >= 0.1
 - hmatrix >= 0.18
+- easytensor >= 0.4
 
 library:
   source-dirs: src
