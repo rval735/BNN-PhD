@@ -77,3 +77,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2689060
 
 PipeCNN- An OpenCL-Based Open-Source FPGA Accelerator for Convolution Neural Networks
 https://arxiv.org/abs/1611.02450
+
+Minitaur, an Event-Driven FPGA-Based Spiking Network Accelerator
+http://ieeexplore.ieee.org/document/6701396/

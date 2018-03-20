@@ -242,6 +242,12 @@ PipeCNN- An OpenCL-Based Open-Source FPGA Accelerator for Convolution Neural Net
 - It details improvements over other FPGA implementations (2015,2016)
 - Implements AlexNet and VGG on a DE5-Net board (Stratix V GXA7)
 
+Minitaur, an Event-Driven FPGA-Based Spiking Network Accelerator
+- Used MNIST and 20 newsgroups classification data sets
+- Development based on "Spiking" event-driven NN 
+- Aims robotics as one of its applications
+- Executed on a Xilinx Spartan 6 ZTEX board
+
 ------> Haskell
 
 Modeling of dynamic reconfigurable systems with Haskell
