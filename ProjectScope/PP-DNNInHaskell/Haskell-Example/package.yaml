@@ -23,6 +23,7 @@ dependencies:
 - bytestring >= 0.1
 - hmatrix >= 0.18
 - easytensor >= 0.4
+- dimensions >= 0.3.2
 
 library:
   source-dirs: src
