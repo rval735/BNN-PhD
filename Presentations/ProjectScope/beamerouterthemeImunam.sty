@@ -1,0 +1,43 @@
+%%Tema para beamer "Imunam", versión 1.0
+%%Desarrollado por Geri Morales (gerino.morales@im.unam.mx)
+%%Imate Cuernavaca, UNAM. Agosto 2014.
+
+\mode<presentation>
+
+\setbeamerfont{sectiontitle}{size=\huge, shape=\scshape}
+
+%Barra de título
+\defbeamertemplate*{frametitle}{Imunam}[1][]
+{
+  \vskip0.2cm
+  \begin{beamercolorbox}[right]{sectiontitle}
+	\usebeamerfont{date}\insertsection
+  \end{beamercolorbox}
+  \vskip-0.2cm
+    \definecolor{imred}{HTML}{BD2026}
+    \definecolor{imyellow}{HTML}{FCED27}
+    \definecolor{imorange}{HTML}{F6B419}
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.9cm]{frametitle}
+    \begin{tikzpicture}
+      \useasboundingbox (0,0) rectangle(\the\paperwidth,1.4);
+      {\node[anchor=west, white] at (0.4, 0.8){\includegraphics[width=1.5cm]{\whiteLogo}};}
+      \fill[azulunam](2.45, 0.3) rectangle(\paperwidth,1.4);
+      \ifx\insertframesubtitle\@empty%
+       {\node[anchor=west, white, font=\large] at (3.0,0.82){\insertframetitle};}
+       \else%
+       {\node[anchor=west, white, font=\large] at (3.0, 1.02){\insertframetitle};%
+       \node[anchor=west, white, font=\small] at (3.0, 0.63){\insertframesubtitle};}%
+       \fi
+     \end{tikzpicture}
+   \end{beamercolorbox}
+   \vskip-0.5cm
+}
+
+%%Impide que se imprima el logo
+\defbeamertemplate*{sidebar right}{sidebar theme}
+{%
+    \vfill%
+    \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+    \vskip2pt}
+
+\mode<all>

@@ -1,0 +1,35 @@
+%%Tema para beamer "Imunam", versión 1.0
+%%Desarrollado por Geri Morales (gerino.morales@im.unam.mx)
+%%Imate Cuernavaca, UNAM. Agosto 2014.
+
+\mode<presentation>
+
+%Paquete requerido
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage{amssymb}
+\RequirePackage{xcolor}
+
+\RequirePackage[absolute, overlay]{textpos}
+\definecolor{orounam}{HTML}{CC9933}
+\definecolor{azulunam}{HTML}{00467F}
+
+\newcommand{\whiteLogo}{images/uoa-white.png}
+\newcommand{\blueLogo}{images/uoa-blue.png}
+
+\DeclareOption{uoaPNG}{
+    \renewcommand{\blueLogo}{images/uoa-blue.png}
+    \renewcommand{\whiteLogo}{images/uoa-white.png}
+}
+\ProcessOptions\relax
+
+%Configuraciones
+\usecolortheme{Imunam}
+\useinnertheme{Imunam}
+\useoutertheme{Imunam}
+
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]
+
+\mode<all>

@@ -1,0 +1,65 @@
+%%Tema para beamer "Imunam", versión 1.0
+%%Desarrollado por Geri Morales (gerino.morales@im.unam.mx)
+%%Imate Cuernavaca, UNAM. Agosto 2014.
+
+\mode<presentation>
+
+\setbeamertemplate{background}{
+    \begin{tikzpicture}
+      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+      \fill[color=orounam] (0,0) rectangle(\the\paperwidth, \the\paperheight);
+      \fill[color=azulunam] (0,0) rectangle(0.59\paperwidth, \the\paperheight);
+      \fill[color=azulunam] (0.60\paperwidth,0.41\paperheight) rectangle(\the\paperwidth, \the\paperheight);
+      \fill[color=azulunam] (0.77\paperwidth,0) rectangle(\the\paperwidth, 0.40\paperheight);
+      %\useasboundingbox (0.77\paperwidth,0) rectangle(\the\paperwidth, 0.40\paperheight);
+      \fill[color=azulunam] (0.60\paperwidth,0) rectangle(0.76\paperwidth, 0.23\paperheight);
+      \fill[color=azulunam] (0.60\paperwidth, 0.24\paperheight) rectangle(0.69\paperwidth, 0.40\paperheight);
+      \fill[color=azulunam] (0.70\paperwidth, 0.31\paperheight) rectangle(0.76\paperwidth, 0.40\paperheight);
+      \fill[color=azulunam] (0.72\paperwidth, 0.24\paperheight) rectangle(0.76\paperwidth, 0.30\paperheight);
+      \fill[color=azulunam] (0.70\paperwidth, 0.24\paperheight) rectangle(0.71\paperwidth, 0.28\paperheight);
+      \ifnum\thepage>1\relax%
+       \fill[white, opacity=1] (0,0) rectangle(\the\paperwidth, \the\paperheight);
+       \includegraphics[width=\paperwidth, height=0.8\paperheight, angle=75]{images/forma4.jpg}
+      \fi
+    \end{tikzpicture}
+}
+
+\setbeamerfont{date}{size=\small, shape=\upshape}
+\setbeamerfont{title}{size=\huge, shape=\scshape}
+\setbeamerfont{institute}{size=\tiny, shape=\itshape}
+
+\defbeamertemplate*{title page}{Imunam}[1][]
+{
+  \begin{textblock}{9}(0.2,2.5)
+    \begin{beamercolorbox}[center,sep=1pt,#1]{title page header}
+      \usebeamerfont{title}\inserttitle\par%
+    \end{beamercolorbox}
+  \end{textblock}
+  \vskip4.5cm%
+  \begin{beamercolorbox}[wd=6cm,leftskip=0cm,#1]{author}
+    \usebeamerfont{date}\insertauthor%
+  \end{beamercolorbox}
+  \vskip0.1cm%
+  \begin{beamercolorbox}[wd=6cm, #1]{institute}
+    \usebeamerfont{institute}\insertinstitute
+  \end{beamercolorbox}
+
+  
+  \begin{textblock}{5.6}(9.7,5)
+    \begin{beamercolorbox}[right]{date}
+	\usebeamerfont{date}\insertdate%
+    \end{beamercolorbox}
+  \end{textblock}
+  
+  \begin{textblock}{4}(12.9,11.8)
+    \includegraphics[width=2cm]{\blueLogo}
+  \end{textblock}
+  \vfill
+}
+
+%A definir la apareciencia de listas y tabla de contenidos
+%\setbeamertemplate{items}[triangle]
+\setbeamertemplate{items}[triangle]
+\setbeamertemplate{sections/subsections in toc}[square]
+
+\mode<all>
