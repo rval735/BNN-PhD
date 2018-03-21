@@ -46,3 +46,6 @@ https://arxiv.org/abs/1503.08895
 
 Neural Turing Machines
 https://arxiv.org/abs/1410.5401
+
+A Survey of Neuromorphic Computing and Neural Networks in Hardware
+https://arxiv.org/abs/1705.06963
