@@ -41,3 +41,9 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1366241&CFID=849265052
 
 The limits of software transactional memory (STM): dissecting Haskell STM applications on a many-core environment
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1366241&CFID=849265052&CFTOKEN=48028547
+
+Regular, shape-polymorphic, parallel arrays in Haskell
+https://dl.acm.org/citation.cfm?id=1863582
+
+Data flow fusion with series expressions in Haskell
+https://dl.acm.org/citation.cfm?id=2503782
