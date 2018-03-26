@@ -1,0 +1,47 @@
+import qualified Data.Array.Repa                   as RP
+import qualified Data.Array.Repa.Algorithms.Matrix as RP
+
+inputNodes = 784
+outputNodes = 10
+hiddenNodes = 5
+lrate = 0.01
+epochs = 1
+nnBase = NNBase inputNodes hiddenNodes outputNodes lrate
+nn <- createNNR nnBase
+
+-- trainedNN <- readCVSR "../MNIST-Data/MNIST-Test-10.csv" epochs nn
+-- testedNN <- queryCVSR "../MNIST-Data/MNIST-Test-10.csv" trainedNN
+
+linesCSV <- readCVSFile "../MNIST-Data/MNIST-Test-10.csv"
+layers = map cleanLayerR linesCSV
+inputs = snd $ layers !! 0
+training = desiredOutputR $ fst (layers !! 0)
+
+(NeuralNetworkR lRateNN wihNN whoNN) = nn
+
+hiddenInputs <-  matVecDense wihNN inputs
+RP.extent hiddenInputs
+hiddenOutputs <- activationFuncR hiddenInputs
+RP.extent hiddenOutputs
+whoNNT <- RP.computeP $ RP.transpose whoNN :: IO NNLayerR
+RP.extent whoNNT
+finalInputs <- matVecDense whoNN hiddenOutputs
+RP.extent finalInputs
+finalOutputs <- activationFuncR finalInputs
+RP.extent finalOutputs
+outputErrors <- RP.computeP $ training RP.-^ finalOutputs :: IO NLayerR
+RP.extent outputErrors
+hiddenErrors <- matVecDense whoNNT outputErrors
+RP.extent hiddenErrors
+preWHO <- kerMap outputErrors finalOutputs
+RP.extent preWHO
+whoDelta <- RP.computeP $ RP.map (lRateNN *) preWHO :: IO NLayerR
+RP.extent whoDelta
+preWIH <- kerMap hiddenErrors inputs
+RP.extent preWIH
+wihDelta <- RP.computeP $ RP.map (lRateNN *) preWHO :: IO NLayerR
+RP.extent wihDelta
+wihFin <- matSumVecDense wihNN wihDelta
+RP.extent wihFin
+whoFin <- matSumVecDense whoNN whoDelta
+RP.extent whoFin

@@ -144,7 +144,7 @@ normalizer x = 0.01 + fromIntegral x / 255 * 0.99
 --   would return "True", because "5" is the max value and it is
 --   placed in the index "3" of the array.
 matchesIndexR :: (Int, NLayerR) -> Bool
-matchesIndexR (index, xs) =  maxVal == valAtIndex
+matchesIndexR (index, xs) = maxVal == valAtIndex
     where maxVal = RP.foldAllS max mostMinDouble xs
           valAtIndex = RP.toList xs !! index
 

@@ -1,0 +1,60 @@
+import qualified Data.Array.Repa                      as RP
+import qualified Data.Array.Repa.Algorithms.Matrix as RP
+let x = 6 :: InputNodes
+let y = 8 :: OutputNodes
+let shape = RP.Z RP.:. x RP.:. y
+let ssh = RP.Z RP.:. y
+
+let wihNN = RP.fromListUnboxed shape [1..48]
+let whoNN = RP.fromListUnboxed shape [1..6]
+let nnR = NeuralNetworkR 0.1 wihNN whoNN
+
+fLayer = RP.fromListUnboxed ssh [1 .. 8]
+
+llk <- RP.computeP $ RP.backpermute shape (\e@(RP.Z RP.:. x RP.:. y) -> RP.Z RP.:. x) fLayer :: IO NNLayerR
+llp <- RP.computeP $ RP.extend (RP.Any RP.:. x RP.:. RP.All) fLayer :: IO NNLayerR
+
+lpo <- wihNN RP.*^ llk
+lop <- RP.computeP $ wihNN RP.*^ llp :: IO NNLayerR
+
+RP.sumP lpo
+RP.sumP lop
+
+matVecDense wihNN fLayer
+
+
+
+------------------------------------------------------------
+
+import qualified Data.Array.Repa                      as RP
+import qualified Data.Array.Repa.Algorithms.Matrix as RP
+
+let x = 3 :: InputNodes
+let y = 3 :: OutputNodes
+
+let ssh = RP.Z RP.:. y
+
+fLayer1 = RP.fromListUnboxed ssh [1 .. 3]
+fLayer2 = RP.fromListUnboxed ssh [5,2,3]
+
+outerProd fLayer1 fLayer2
+
+
+
+------------------------------------------------------------
+
+import qualified Data.Array.Repa                      as RP
+import qualified Data.Array.Repa.Algorithms.Matrix as RP
+
+let x = 3 :: InputNodes
+let y = 10 :: OutputNodes
+
+let ssh = RP.Z RP.:. y
+
+fLayer1 = RP.fromListUnboxed ssh [1 .. 10]
+fLayer2 = RP.fromListUnboxed ssh [10 .. 19]
+
+traverse fLayer1 DIM0
+
+let xp = RP.fromListUnboxed (RP.Z RP.:. (3::Int) RP.:. (3::Int) RP.:. (3::Int)) [1..27] :: RP.Array RP.U RP.DIM3 Int
+RP.computeP $ RP.traverse x id (\_ (RP.Z RP.:. i RP.:. j RP.:. k) -> i) :: IO (Array U DIM3 Int)
