@@ -21,7 +21,6 @@ dependencies:
 - random >= 1.1
 - time >= 1.8
 - bytestring >= 0.1
-- hmatrix >= 0.18
 - repa >= 3.4
 - repa-algorithms >= 3.4
 
