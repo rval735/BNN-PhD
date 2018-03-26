@@ -12,18 +12,32 @@
 
 module Lib
 (
-    nnFunction
+    nnFunction,
+    nnFunctionR
 )
 where
 
-import qualified Data.ByteString.Lazy.Char8    as C8L
-import           Data.List                     (intercalate)
-import           Data.Maybe                    (mapMaybe)
-import           Data.Time.Clock               (diffUTCTime, getCurrentTime)
+import qualified Data.ByteString.Lazy.Char8           as C8L
+import           Data.List                            (intercalate)
+import           Data.Maybe                           (mapMaybe)
+import           Data.Time.Clock                      (diffUTCTime,
+                                                       getCurrentTime)
 import           NNClass
-import           Numeric.LinearAlgebra.HMatrix (R, fromList, maxIndex)
-import           System.Environment            (getArgs)
-import           System.Exit                   (exitFailure)
+import           Numeric.LinearAlgebra.HMatrix        (R, fromList, maxIndex)
+import           System.Environment                   (getArgs)
+import           System.Exit                          (exitFailure)
+
+import qualified Data.Array.Repa                      as RP
+import qualified Data.Array.Repa.Algorithms.Matrix    as RP
+import qualified Data.Array.Repa.Algorithms.Randomish as RP
+
+
+-- Set constant values for input and output nodes
+inputNodes :: Int
+inputNodes = 784
+
+outputNodes :: Int
+outputNodes = 10
 
 -- | Main NN function that is part of IO, here data loading, training
 --   and quering will take place.
@@ -33,9 +47,6 @@ nnFunction = do
     startTime <- getCurrentTime
     -- Read command line arguments passed to the program
     elems <- getArgs
-    -- Set constant values for input and output nodes
-    let inputNodes = 784
-    let outputNodes = 10
     -- Confirm that the elements passed as program arguments
     -- match the expected values.
     (nnBase, epochs) <- readElems elems inputNodes outputNodes
@@ -138,3 +149,84 @@ matchesIndex (index, xs) = maxIndex xs == index
 --   "val" position, otherwise 0.01
 desiredOutput :: Int -> NLayer
 desiredOutput val = fromList [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+
+
+
+---------------------------------------------------------------------------------
+
+nnFunctionR :: IO ()
+nnFunctionR = do
+    -- Record start time
+    startTime <- getCurrentTime
+    -- Read command line arguments passed to the program
+    elems <- getArgs
+    -- Confirm that the elements passed as program arguments
+    -- match the expected values.
+    (nnBase, epochs) <- readElems elems inputNodes outputNodes
+    -- Create a NN with the values read from arguments
+    nn <- createNNR nnBase
+    -- Read the contents of the CSV file for training and testing
+    trainedNN <- readCVSR "../MNIST-Data/MNIST-Train.csv" epochs nn
+    testedNN <- queryCVSR "../MNIST-Data/MNIST-Test.csv" trainedNN
+    -- Compare the results with the number of elements were passed
+    let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 testedNN
+    -- Make the strict call to calculate all previous lines, making a ratio
+    -- of the number of correct values against the elements that we tested
+    let !matchesError = fromIntegral numberOfMatches / (fromIntegral . length $ testedNN)
+    -- Get the time of executing the whole venture
+    endTime <- getCurrentTime
+    -- Take the difference of that time
+    let diff = diffUTCTime endTime startTime
+    -- Print the results
+    print "HNodes, LRate, Epochs, Error, Diff, STime, ETime"
+    let elems = [show (hnodes nnBase), show (baseLRate nnBase), show epochs, show matchesError , show diff, show startTime, show endTime]
+    print $ intercalate ", " elems
+
+readCVSR :: String -> Epochs -> NeuralNetworkR -> IO NeuralNetworkR
+readCVSR path epochs nn = readCVSFile path >>= analyzeLinesR epochs nn
+
+analyzeLinesR :: Epochs -> NeuralNetworkR -> [C8L.ByteString] -> IO NeuralNetworkR
+analyzeLinesR 0 nn _ = return nn
+analyzeLinesR epochs nn xs = do
+    let layers = map cleanLayerR xs
+    trainedNN <- foldrM trainNNR nn layers
+    analyzeLinesR (epochs - 1) trainedNN xs
+
+queryCVSR :: String -> NeuralNetworkR -> IO [Bool]
+queryCVSR path nn = readCVSFile path >>= queryLinesR nn
+
+queryLinesR :: NeuralNetworkR -> [C8L.ByteString] -> IO [Bool]
+queryLinesR _ [] = return []
+queryLinesR nn xs = mapM (queryNNR nn) layers
+  where layers = map cleanLayerR xs
+
+trainNNR :: (Int, NLayerR) -> NeuralNetworkR -> IO NeuralNetworkR
+trainNNR (expected, layer) = trainR layer (desiredOutputR expected)
+
+cleanLayerR :: C8L.ByteString -> (Int, NLayerR)
+cleanLayerR = readDecodedR . map fst . mapMaybe C8L.readInt . C8L.split ','
+
+readDecodedR :: [Int] -> (Int, NLayerR)
+readDecodedR []     = (0, xp)
+    where xp = RP.fromListUnboxed (RP.ix1 inputNodes) $ replicate inputNodes 0
+readDecodedR (x:xs) = (x, xp)
+    where xp = RP.fromListUnboxed (RP.ix1 inputNodes) $ map fromIntegral xs
+
+queryNNR :: NeuralNetworkR -> (Int, NLayerR) -> IO Bool
+queryNNR nn (expected, layer) = do
+    queryLL <- queryR nn layer
+    return $ matchesIndexR (expected, queryLL)
+
+matchesIndexR :: (Int, NLayerR) -> Bool
+matchesIndexR (index, xs) =  maxVal == valAtIndex
+    where maxVal = RP.foldAllS max mostMinDouble xs
+          valAtIndex = RP.toList xs !! index
+
+mostMinDouble :: Double
+mostMinDouble = fromIntegral (minBound :: Int) :: Double
+
+desiredOutputR :: Int -> NLayerR
+desiredOutputR val = RP.fromListUnboxed (RP.ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+
+foldrM :: Monad m => (a -> b -> m b) -> b -> [a] -> m b
+foldrM f d = foldr ((=<<) . f) (return d)

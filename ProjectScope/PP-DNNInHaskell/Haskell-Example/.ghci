@@ -19,5 +19,5 @@ import qualified Data.ByteString.Char8 as C8
 :set -XTypeOperators
 import qualified Data.ByteString.Lazy       as BSL
 
-import qualified Data.Array.Repa as R
+import qualified Data.Array.Repa as RP
 import qualified Data.Array.Repa.Algorithms.Matrix as RM

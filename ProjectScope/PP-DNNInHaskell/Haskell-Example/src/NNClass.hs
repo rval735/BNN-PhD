@@ -8,17 +8,27 @@
 ---- of this repository for more details.
 ----
 
+{-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE GADTs            #-}
+{-# LANGUAGE TypeOperators    #-}
+
 -- | Simple Neural Network class that has one hidden layer
 module NNClass where
 
-import           Numeric.LinearAlgebra         (outer, scale)
-import           Numeric.LinearAlgebra.Devel   (mapMatrixWithIndex,
-                                                mapVectorWithIndex)
-import           Numeric.LinearAlgebra.HMatrix (Matrix, R, Vector, randn, tr',
-                                                ( #> ), (<.>))
+import           Numeric.LinearAlgebra                (outer, scale)
+import           Numeric.LinearAlgebra.Devel          (mapMatrixWithIndex,
+                                                       mapVectorWithIndex)
+import           Numeric.LinearAlgebra.HMatrix        (Matrix, R, Vector, randn,
+                                                       tr', ( #> ), (<.>))
+
+import qualified Data.Array.Repa                      as RP
+import qualified Data.Array.Repa.Algorithms.Matrix    as RP
+import qualified Data.Array.Repa.Algorithms.Randomish as RP
+import           System.Random
 
 -- | Code synonyms to ease relationship between function
 --   parameters and their application
+type NNT = Double
 type InputNodes = Int
 type OutputNodes = Int
 type HiddenNodes = Int
@@ -28,6 +38,16 @@ type LearningRate = R
 type Epochs = Int
 type NLayer = Vector R
 type NNLayer = Matrix R
+
+type RGenLayer sh = RP.Array RP.U sh NNT
+type RGenLayerD sh = RP.Array RP.D sh NNT
+type NShape = RP.DIM1 -- RP.Z RP.:. InputNodes
+type NNShape = RP.DIM2 -- RP.Z RP.:. InputNodes RP.:. OutputNodes
+type NLayerR = RGenLayer NShape
+type NNLayerR = RGenLayer NNShape
+type NLayerDR = RGenLayerD NShape
+type NNLayerDR = RGenLayerD NNShape
+
 
 -- | Data definition that serves as a base line for NN creation
 data NNBase = NNBase {
@@ -45,6 +65,12 @@ data NeuralNetwork = NeuralNetwork {
     who   :: NNLayer
 } deriving (Show)
 
+data NeuralNetworkR = NeuralNetworkR {
+    lRateR :: LearningRate,
+    wihR   :: NNLayerR,
+    whoR   :: NNLayerR
+} deriving (Show)
+
 -- | Take a NNBase, then create a NeuralNetwork from its parameters
 --   Impure function becase it uses random numbers
 createNN :: NNBase -> IO NeuralNetwork
@@ -53,18 +79,68 @@ createNN (NNBase x y z lr) = do
     whoL <- randomNormal y z
     return $ NeuralNetwork lr wihL whoL
 
+createNNR :: NNBase -> IO NeuralNetworkR
+createNNR (NNBase x y z lr) = do
+    randomSeed <- randomIO :: IO Int
+    let pRN = randomNormalR randomSeed
+    return $ NeuralNetworkR lr (pRN x y) (pRN y z)
+
 -- | Impure function that generates a normalized random matrix of doubles
 --   considering input - hidden layers
 randomNormal :: InputNodes -> OutputNodes -> IO (Matrix R)
 randomNormal inode hnode = randn hnode inode
 
+randomNormalR :: Int ->  InputNodes -> OutputNodes -> NNLayerR
+randomNormalR seed x y = RP.randomishDoubleArray shape (-stdDev) stdDev seed
+    where shape = RP.Z RP.:. x RP.:. y
+          stdDev = 2 * fromIntegral x ** (-0.5)
+
 -- | Vector application of the "Logistic" activation function
 activationFunc :: NLayer -> NLayer
 activationFunc = mapVectorWithIndex (\_ v -> logisticFunc v)
 
+activationFuncR :: (RP.Shape sh, Monad m) => RP.Array RP.U sh NNT -> m (RP.Array RP.U sh NNT)
+activationFuncR v = RP.computeP $ RP.map logisticFunc v
+
 -- | Logistic function formula, taking R and returning R
 logisticFunc :: R -> R
 logisticFunc x = 1 / (1 + exp (-x))
+
+-- | Match training steps from the Python example
+trainR :: NLayerR -> NLayerR -> NeuralNetworkR -> IO NeuralNetworkR
+trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
+    -- Create a new NN with updated input/output weights
+    -- NeuralNetworkR lRateNN (wihNN + wihDelta) (whoNN + whoDelta)
+    -- where
+    do
+    -- Multiply training inputs against input weights
+        hiddenInputs <-  matVecDense wihNN inputs
+    -- Run the activation function from the result
+        hiddenOutputs <- activationFuncR hiddenInputs
+    -- Multiply activated training inputs against output weights
+        finalInputs <- matVecDense whoNN hiddenOutputs
+    -- Run the activation function from the output weights result
+        finalOutputs <- activationFuncR finalInputs
+
+    -- Match the NN prediction agains the expected training value
+        outputErrors <- RP.computeP $ training RP.-^ finalOutputs
+    -- Multiply the difference error with the NN output weights
+        hiddenErrors <- matVecDense whoNN outputErrors
+        preWHO <- kerMap outputErrors finalOutputs
+    -- Calculate a "gradient" with the expected training value, the
+    -- NN calculated output, which is multiplied by the hidden NN outputs
+        -- preWHO <- outerProd preErrors hiddenOutputs
+    -- -- Apply the learning rate to the newly calculated output weights
+        whoDelta <- RP.computeP $ RP.map (lRateNN *) preWHO -- :: IO NLayerR
+    -- -- Make the "gradient" but in this case for the input weights
+        -- preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
+        preWIH <- kerMap hiddenErrors inputs
+    -- -- Apply the learning rate to the newly calculated input weights
+        wihDelta <- RP.computeP $ RP.map (lRateNN *) preWHO -- :: IO NLayerR
+        wihFin <- matSumVecDense wihNN wihDelta
+        whoFin <- matSumVecDense whoNN whoDelta
+        return $ NeuralNetworkR lRateNN wihFin whoFin
+        -- return $ NeuralNetworkR lRateNN wihNN whoNN
 
 -- | Match training steps from the Python example
 train :: NLayer -> NLayer -> NeuralNetwork -> NeuralNetwork
@@ -105,3 +181,47 @@ query (NeuralNetwork lRateNN wihNN whoNN) inputs =
         hiddenOutputs = activationFunc hiddenInputs
     -- Multiply activated training inputs against output weights
         finalInputs = whoNN #> hiddenOutputs
+
+-- | Match query steps from the Python example
+queryR :: NeuralNetworkR -> NLayerR -> IO NLayerR
+queryR (NeuralNetworkR lRateNN wihNN whoNN) inputs = do
+    -- Multiply training inputs against input weights
+        hiddenInputs <-  matVecDense wihNN inputs
+    -- Run the activation function from the result
+        hiddenOutputs <- activationFuncR hiddenInputs
+    -- Multiply activated training inputs against output weights
+        finalInputs <- matVecDense whoNN hiddenOutputs
+        activationFuncR finalInputs
+
+--------------------------------------
+--------- Helper Functions -----------
+--------------------------------------
+
+matVecDense ::  NNLayerR -> NLayerR -> IO NLayerR
+matVecDense x y = do
+    let (RP.Z RP.:. sy) = RP.extent y
+    extended <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) y :: IO NNLayerR
+    pre <- RP.computeP $ x RP.*^ extended :: IO NNLayerR
+    RP.sumP pre
+
+matSumVecDense ::  NNLayerR -> NLayerR -> IO NNLayerR
+matSumVecDense x y = do
+    let (RP.Z RP.:. sy) = RP.extent y
+    extended <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) y :: IO NNLayerR
+    RP.computeP $ x RP.+^ extended
+
+outerProd :: NLayerR -> NLayerR -> IO NNLayerR
+outerProd x y = do
+    let (RP.Z RP.:. sx) = RP.extent x
+    let (RP.Z RP.:. sy) = RP.extent y
+    extendX <- RP.computeP . RP.transpose $ RP.extend (RP.Any RP.:. sx RP.:. RP.All) x :: IO NNLayerR
+    extendY <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) y :: IO NNLayerR
+    RP.computeP $ extendX RP.*^ extendY
+
+minMap :: NNT -> NLayerR -> IO NLayerR
+minMap val layer = RP.computeP $ RP.map (val -) layer
+
+kerMap :: NLayerR -> NLayerR -> IO NLayerR
+kerMap outErr outs = do
+    minusOutputs <- minMap 1 outs
+    RP.computeP $ outErr RP.*^ outs  RP.*^ minusOutputs
