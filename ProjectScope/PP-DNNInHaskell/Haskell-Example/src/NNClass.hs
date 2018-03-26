@@ -15,12 +15,6 @@
 -- | Simple Neural Network class that has one hidden layer
 module NNClass where
 
-import           Numeric.LinearAlgebra                (outer, scale)
-import           Numeric.LinearAlgebra.Devel          (mapMatrixWithIndex,
-                                                       mapVectorWithIndex)
-import           Numeric.LinearAlgebra.HMatrix        (Matrix, R, Vector, randn,
-                                                       tr', ( #> ), (<.>))
-
 import qualified Data.Array.Repa                      as RP
 import qualified Data.Array.Repa.Algorithms.Matrix    as RP
 import qualified Data.Array.Repa.Algorithms.Randomish as RP
@@ -33,11 +27,8 @@ type InputNodes = Int
 type OutputNodes = Int
 type HiddenNodes = Int
 type Target = Int
-type IMGData = Vector R
-type LearningRate = R
+type LearningRate = NNT
 type Epochs = Int
-type NLayer = Vector R
-type NNLayer = Matrix R
 
 type RGenLayer sh = RP.Array RP.U sh NNT
 type RGenLayerD sh = RP.Array RP.D sh NNT
@@ -59,12 +50,6 @@ data NNBase = NNBase {
 
 -- | Kind of "instanced" NNBase where input/output weights have
 --   been assigned along with a learning rate
-data NeuralNetwork = NeuralNetwork {
-    lrate :: LearningRate,
-    wih   :: NNLayer,
-    who   :: NNLayer
-} deriving (Show)
-
 data NeuralNetworkR = NeuralNetworkR {
     lRateR :: LearningRate,
     wihR   :: NNLayerR,
@@ -73,12 +58,6 @@ data NeuralNetworkR = NeuralNetworkR {
 
 -- | Take a NNBase, then create a NeuralNetwork from its parameters
 --   Impure function becase it uses random numbers
-createNN :: NNBase -> IO NeuralNetwork
-createNN (NNBase x y z lr) = do
-    wihL <- randomNormal x y
-    whoL <- randomNormal y z
-    return $ NeuralNetwork lr wihL whoL
-
 createNNR :: NNBase -> IO NeuralNetworkR
 createNNR (NNBase x y z lr) = do
     randomSeed <- randomIO :: IO Int
@@ -87,31 +66,22 @@ createNNR (NNBase x y z lr) = do
 
 -- | Impure function that generates a normalized random matrix of doubles
 --   considering input - hidden layers
-randomNormal :: InputNodes -> OutputNodes -> IO (Matrix R)
-randomNormal inode hnode = randn hnode inode
-
 randomNormalR :: Int ->  InputNodes -> OutputNodes -> NNLayerR
 randomNormalR seed x y = RP.randomishDoubleArray shape (-stdDev) stdDev seed
     where shape = RP.Z RP.:. x RP.:. y
           stdDev = 2 * fromIntegral x ** (-0.5)
 
 -- | Vector application of the "Logistic" activation function
-activationFunc :: NLayer -> NLayer
-activationFunc = mapVectorWithIndex (\_ v -> logisticFunc v)
-
 activationFuncR :: (RP.Shape sh, Monad m) => RP.Array RP.U sh NNT -> m (RP.Array RP.U sh NNT)
 activationFuncR v = RP.computeP $ RP.map logisticFunc v
 
 -- | Logistic function formula, taking R and returning R
-logisticFunc :: R -> R
+logisticFunc :: NNT -> NNT
 logisticFunc x = 1 / (1 + exp (-x))
 
 -- | Match training steps from the Python example
 trainR :: NLayerR -> NLayerR -> NeuralNetworkR -> IO NeuralNetworkR
 trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
-    -- Create a new NN with updated input/output weights
-    -- NeuralNetworkR lRateNN (wihNN + wihDelta) (whoNN + whoDelta)
-    -- where
     do
     -- Multiply training inputs against input weights
         hiddenInputs <-  matVecDense wihNN inputs
@@ -121,66 +91,24 @@ trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
         finalInputs <- matVecDense whoNN hiddenOutputs
     -- Run the activation function from the output weights result
         finalOutputs <- activationFuncR finalInputs
-
     -- Match the NN prediction agains the expected training value
         outputErrors <- RP.computeP $ training RP.-^ finalOutputs
     -- Multiply the difference error with the NN output weights
         hiddenErrors <- matVecDense whoNN outputErrors
-        preWHO <- kerMap outputErrors finalOutputs
     -- Calculate a "gradient" with the expected training value, the
     -- NN calculated output, which is multiplied by the hidden NN outputs
-        -- preWHO <- outerProd preErrors hiddenOutputs
-    -- -- Apply the learning rate to the newly calculated output weights
+        preWHO <- kerMap outputErrors finalOutputs
+    -- Apply the learning rate to the newly calculated output weights
         whoDelta <- RP.computeP $ RP.map (lRateNN *) preWHO -- :: IO NLayerR
-    -- -- Make the "gradient" but in this case for the input weights
-        -- preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
+    -- Make the "gradient" but in this case for the input weights
         preWIH <- kerMap hiddenErrors inputs
-    -- -- Apply the learning rate to the newly calculated input weights
+    -- Apply the learning rate to the newly calculated input weights
         wihDelta <- RP.computeP $ RP.map (lRateNN *) preWHO -- :: IO NLayerR
+    -- Update inner layers
         wihFin <- matSumVecDense wihNN wihDelta
         whoFin <- matSumVecDense whoNN whoDelta
-        return $ NeuralNetworkR lRateNN wihFin whoFin
-        -- return $ NeuralNetworkR lRateNN wihNN whoNN
-
--- | Match training steps from the Python example
-train :: NLayer -> NLayer -> NeuralNetwork -> NeuralNetwork
-train inputs training (NeuralNetwork lRateNN wihNN whoNN) =
     -- Create a new NN with updated input/output weights
-    NeuralNetwork lRateNN (wihNN + wihDelta) (whoNN + whoDelta)
-    where
-    -- Multiply training inputs against input weights
-        hiddenInputs =  wihNN #> inputs
-    -- Run the activation function from the result
-        hiddenOutputs = activationFunc hiddenInputs
-    -- Multiply activated training inputs against output weights
-        finalInputs = whoNN #> hiddenOutputs
-    -- Run the activation function from the output weights result
-        finalOutputs = activationFunc finalInputs
-    -- Match the NN prediction agains the expected training value
-        outputErrors = training - finalOutputs
-    -- Multiply the difference error with the NN output weights
-        hiddenErrors = tr' whoNN #> outputErrors
-    -- Calculate a "gradient" with the expected training value, the
-    -- NN calculated output, which is multiplied by the hidden NN outputs
-        preWHO = outer (outputErrors * finalOutputs * (1.0 - finalOutputs)) hiddenOutputs
-    -- Apply the learning rate to the newly calculated output weights
-        whoDelta = scale lRateNN preWHO
-    -- Make the "gradient" but in this case for the input weights
-        preWIH = outer (hiddenErrors * hiddenOutputs * (1.0 - hiddenOutputs)) inputs
-    -- Apply the learning rate to the newly calculated input weights
-        wihDelta = scale lRateNN preWIH
-
--- | Match query steps from the Python example
-query :: NeuralNetwork -> NLayer -> NLayer
-query (NeuralNetwork lRateNN wihNN whoNN) inputs =
-    activationFunc finalInputs
-    where
-    -- Multiply training inputs against input weights
-        hiddenInputs = wihNN #> inputs
-    -- Run the activation function from the result
-        hiddenOutputs = activationFunc hiddenInputs
-    -- Multiply activated training inputs against output weights
-        finalInputs = whoNN #> hiddenOutputs
+        return $ NeuralNetworkR lRateNN wihFin whoFin
 
 -- | Match query steps from the Python example
 queryR :: NeuralNetworkR -> NLayerR -> IO NLayerR
@@ -191,6 +119,7 @@ queryR (NeuralNetworkR lRateNN wihNN whoNN) inputs = do
         hiddenOutputs <- activationFuncR hiddenInputs
     -- Multiply activated training inputs against output weights
         finalInputs <- matVecDense whoNN hiddenOutputs
+    -- Execute the activation functor to final inputs
         activationFuncR finalInputs
 
 --------------------------------------
