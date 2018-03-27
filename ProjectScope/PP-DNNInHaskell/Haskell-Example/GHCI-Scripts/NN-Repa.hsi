@@ -1,33 +1,33 @@
 import qualified Data.Array.Repa                   as RP
 import qualified Data.Array.Repa.Algorithms.Matrix as RP
 
--- inputNodes = 784
--- outputNodes = 10
--- hiddenNodes = 5
-inputNodes = 4
-outputNodes = 3
-hiddenNodes = 2
+inputNodes = 784
+outputNodes = 10
+hiddenNodes = 5
+-- inputNodes = 4
+-- outputNodes = 3
+-- hiddenNodes = 2
 lrate = 0.01
 epochs = 1
 
 nnBase = NNBase inputNodes hiddenNodes outputNodes lrate
 nn <- createNNR nnBase
 
--- trainedNN <- readCVSR "../MNIST-Data/MNIST-Test-10.csv" epochs nn
--- testedNN <- queryCVSR "../MNIST-Data/MNIST-Test-10.csv" trainedNN
+trainedNN <- readCVSR "../MNIST-Data/MNIST-Test-10.csv" epochs nn
+testedNN <- queryCVSR "../MNIST-Data/MNIST-Test-10.csv" trainedNN
 
-listWIH = RP.fromListUnboxed (RP.ix2 hiddenNodes inputNodes) [0..(inputNodes * hiddenNodes - 1)] :: NNLayerR
-listWHO = RP.fromListUnboxed (RP.ix2 outputNodes hiddenNodes) [0..(hiddenNodes * outputNodes - 1)] :: NNLayerR
+-- listWIH = RP.fromListUnboxed (RP.ix2 hiddenNodes inputNodes) [0..(inputNodes * hiddenNodes - 1)] :: NNLayerR
+-- listWHO = RP.fromListUnboxed (RP.ix2 outputNodes hiddenNodes) [0..(hiddenNodes * outputNodes - 1)] :: NNLayerR
 
-nn = NeuralNetworkR lrate listWIH listWHO
+-- nn = NeuralNetworkR lrate listWIH listWHO
 
--- linesCSV <- readCVSFile "../MNIST-Data/MNIST-Test-10.csv"
--- layers = map cleanLayerR linesCSV
--- inputs = snd $ layers !! 0
--- training = desiredOutputR $ fst (layers !! 0)
+linesCSV <- readCVSFile "../MNIST-Data/MNIST-Test-10.csv"
+layers = map cleanLayerR linesCSV
+inputs = snd $ layers !! 0
+training = desiredOutputR $ fst (layers !! 0)
 
-inputs = RP.fromListUnboxed (RP.ix1 inputNodes) [0..(inputNodes - 1)] :: NLayerR
-training = RP.fromListUnboxed (RP.ix1 outputNodes) [0..(outputNodes - 1)] :: NLayerR
+-- inputs = RP.fromListUnboxed (RP.ix1 inputNodes) [0..(inputNodes - 1)] :: NLayerR
+-- training = RP.fromListUnboxed (RP.ix1 outputNodes) [0..(outputNodes - 1)] :: NLayerR
 
 (NeuralNetworkR lRateNN wihNN whoNN) = nn
 

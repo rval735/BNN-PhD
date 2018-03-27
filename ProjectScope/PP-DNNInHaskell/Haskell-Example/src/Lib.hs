@@ -102,6 +102,13 @@ analyzeLinesR epochs nn xs = do
     trainedNN <- foldrM trainNNR nn layers
     analyzeLinesR (epochs - 1) trainedNN xs
 
+analyzeLinesR' :: Epochs -> NeuralNetworkR -> [C8L.ByteString] -> IO NeuralNetworkR
+analyzeLinesR' 0 nn _ = return nn
+analyzeLinesR' epochs nn xs = do
+    let layers = map cleanLayerR xs
+    trainedNN <- foldrM trainNNR' nn layers
+    analyzeLinesR (epochs - 1) trainedNN xs
+
 -- | Same principle as "analyzeLines" but just to query the NN
 queryLinesR :: NeuralNetworkR -> [C8L.ByteString] -> IO [Bool]
 queryLinesR _ [] = return []
@@ -116,6 +123,9 @@ cleanLayerR = readDecodedR . map fst . mapMaybe C8L.readInt . C8L.split ','
 -- | Tuple by tuple, perform the NN tranining from NNClass
 trainNNR :: (Int, NLayerR) -> NeuralNetworkR -> IO NeuralNetworkR
 trainNNR (expected, layer) = trainR layer (desiredOutputR expected)
+
+trainNNR' :: (Int, NLayerR) -> NeuralNetworkR -> IO NeuralNetworkR
+trainNNR' (expected, layer) = trainR' layer (desiredOutputR expected)
 
 -- | Tuple by tuple, perform the NN quering from NNClass
 queryNNR :: NeuralNetworkR -> (Int, NLayerR) -> IO Bool
