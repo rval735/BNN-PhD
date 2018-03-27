@@ -62,7 +62,7 @@ createNNR :: NNBase -> IO NeuralNetworkR
 createNNR (NNBase x y z lr) = do
     randomSeed <- randomIO :: IO Int
     let pRN = randomNormalR randomSeed
-    return $ NeuralNetworkR lr (pRN x y) (pRN y z)
+    return $ NeuralNetworkR lr (pRN y x) (pRN z y)
 
 -- | Impure function that generates a normalized random matrix of doubles
 --   considering input - hidden layers
