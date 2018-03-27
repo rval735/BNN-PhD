@@ -84,7 +84,7 @@ trainR :: NLayerR -> NLayerR -> NeuralNetworkR -> IO NeuralNetworkR
 trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
     do
     -- Multiply training inputs against input weights
-        hiddenInputs <-  matVecDense wihNN inputs
+        hiddenInputs <- matVecDense wihNN inputs
     -- Run the activation function from the result
         hiddenOutputs <- activationFuncR hiddenInputs
     -- Multiply activated training inputs against output weights
@@ -92,21 +92,23 @@ trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
     -- Run the activation function from the output weights result
         finalOutputs <- activationFuncR finalInputs
     -- Match the NN prediction agains the expected training value
-        outputErrors <- RP.computeP $ training RP.-^ finalOutputs
+        outputErrors <- RP.computeP $ training RP.-^ finalOutputs -- :: IO NLayerR
+    -- Transpose the output to match the hidden inputs
+        whoNNT <- RP.computeP $ RP.transpose whoNN -- :: IO NNLayerR
     -- Multiply the difference error with the NN output weights
-        hiddenErrors <- matVecDense whoNN outputErrors
+        hiddenErrors <- matVecDense whoNNT outputErrors
     -- Calculate a "gradient" with the expected training value, the
     -- NN calculated output, which is multiplied by the hidden NN outputs
-        preWHO <- kerMap outputErrors finalOutputs
+        preWHO <- kerMap outputErrors finalOutputs hiddenOutputs
     -- Apply the learning rate to the newly calculated output weights
-        whoDelta <- RP.computeP $ RP.map (lRateNN *) preWHO -- :: IO NLayerR
+        whoDelta <- RP.computeP . RP.transpose $ RP.map (lRateNN *) preWHO :: IO NNLayerR
     -- Make the "gradient" but in this case for the input weights
-        preWIH <- kerMap hiddenErrors inputs
+        preWIH <- kerMap hiddenErrors hiddenOutputs inputs
     -- Apply the learning rate to the newly calculated input weights
-        wihDelta <- RP.computeP $ RP.map (lRateNN *) preWHO -- :: IO NLayerR
+        wihDelta <- RP.computeP . RP.transpose $ RP.map (lRateNN *) preWIH :: IO NNLayerR
     -- Update inner layers
-        wihFin <- matSumVecDense wihNN wihDelta
-        whoFin <- matSumVecDense whoNN whoDelta
+        wihFin <- RP.computeP $ wihNN RP.+^ wihDelta
+        whoFin <- RP.computeP $ whoNN RP.+^ whoDelta
     -- Create a new NN with updated input/output weights
         return $ NeuralNetworkR lRateNN wihFin whoFin
 
@@ -128,8 +130,8 @@ queryR (NeuralNetworkR lRateNN wihNN whoNN) inputs = do
 
 matVecDense ::  NNLayerR -> NLayerR -> IO NLayerR
 matVecDense x y = do
-    let (RP.Z RP.:. sy) = RP.extent y
-    extended <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) y :: IO NNLayerR
+    let (RP.Z RP.:. s1 RP.:. s2) = RP.extent x
+    extended <- RP.computeP $ RP.extend (RP.Any RP.:. s1 RP.:. RP.All) y :: IO NNLayerR
     pre <- RP.computeP $ x RP.*^ extended :: IO NNLayerR
     RP.sumP pre
 
@@ -143,14 +145,15 @@ outerProd :: NLayerR -> NLayerR -> IO NNLayerR
 outerProd x y = do
     let (RP.Z RP.:. sx) = RP.extent x
     let (RP.Z RP.:. sy) = RP.extent y
-    extendX <- RP.computeP . RP.transpose $ RP.extend (RP.Any RP.:. sx RP.:. RP.All) x :: IO NNLayerR
-    extendY <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) y :: IO NNLayerR
-    RP.computeP $ extendX RP.*^ extendY
+    extendX <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) x :: IO NNLayerR
+    extendY <- RP.computeP . RP.transpose $ RP.extend (RP.Any RP.:. sx RP.:. RP.All) y :: IO NNLayerR
+    RP.computeP $ extendX RP.*^ extendY -- :: IO NNLayerR
 
 minMap :: NNT -> NLayerR -> IO NLayerR
 minMap val layer = RP.computeP $ RP.map (val -) layer
 
-kerMap :: NLayerR -> NLayerR -> IO NLayerR
-kerMap outErr outs = do
+kerMap :: NLayerR -> NLayerR -> NLayerR -> IO NNLayerR
+kerMap outErr outs hidden = do
     minusOutputs <- minMap 1 outs
-    RP.computeP $ outErr RP.*^ outs  RP.*^ minusOutputs
+    preKer <- RP.computeP $ outErr RP.*^ outs  RP.*^ minusOutputs
+    outerProd preKer hidden

@@ -27,7 +27,6 @@ import           System.Exit                (exitFailure)
 import qualified Data.Array.Repa            as RP
 import           Data.Foldable              (foldrM)
 
-
 -- Set constant values for input and output nodes
 inputNodes :: Int
 inputNodes = 784
