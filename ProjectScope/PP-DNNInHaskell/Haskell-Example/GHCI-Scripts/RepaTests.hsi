@@ -2,39 +2,39 @@ import qualified Data.Array.Repa                   as RP
 import qualified Data.Array.Repa.Algorithms.Matrix as RP
 let x = 3 :: InputNodes
 let y = 3 :: OutputNodes
-let shape = RP.Z RP.:. x RP.:. y
-let ssh = RP.Z RP.:. x
+let shape = Z :. x :. y
+let ssh = Z :. x
 
 let nnBase = NNBase x y y 0.1
 nnR <- createNNR nnBase
 
-fLayer <- RP.computeP $ RP.slice (wihR nnR) (RP.Any RP.:. (2::Int)) :: IO NLayerR
-let ffLayer = RP.slice (wihR nnR) (RP.Any RP.:. (2::Int))
-hLayer <- RP.computeP $ RP.slice (wihR nnR) (RP.Any RP.:. (1::Int)) :: IO NLayerR
-oLayer <- RP.computeP $ RP.slice (whoR nnR) (RP.Any RP.:. (0::Int)) :: IO NLayerR
+fLayer <- computeP $ slice (wihR nnR) (Any :. (2::Int)) :: IO NLayerR
+let ffLayer = slice (wihR nnR) (Any :. (2::Int))
+hLayer <- computeP $ slice (wihR nnR) (Any :. (1::Int)) :: IO NLayerR
+oLayer <- computeP $ slice (whoR nnR) (Any :. (0::Int)) :: IO NLayerR
 
 let wihNN = wihR nnR
 let whoNN = whoR nnR
-let wihNN = RP.fromListUnboxed shape [0..8]
-let whoNN = RP.fromListUnboxed shape [9..17]
+let wihNN = fromListUnboxed shape [0..8]
+let whoNN = fromListUnboxed shape [9..17]
 nnR <- cre
 
-RP.zipWith (*) wihNN fLayer
+zipWith (*) wihNN fLayer
 
-let x = RP.fromListUnboxed (RP.Z RP.:. (5 :: Int) RP.:. (2 :: Int)) [1..10]
-RP.computeP $ RP.reshape (RP.Z RP.:. (2::Int) RP.:. (5::Int)) x :: IO (RP.Array RP.U RP.DIM2 Double)
+let x = fromListUnboxed (Z :. (5 :: Int) :. (2 :: Int)) [1..10]
+computeP $ reshape (Z :. (2::Int) :. (5::Int)) x :: IO (Array U DIM2 Double)
 
-RP.traverse2 wihNN fLayer (\_ y ->  y) (\f h sh -> h sh)
-RP.computeP $ RP.traverse2 wihNN fLayer (\_ y ->  y) (\f h sh -> h sh) :: IO NLayerR
-
-
-RP.extend (RP.Any RP.:. (3::Int) RP.:. RP.All) fLayer
-RP.computeP $ RP.extend (RP.Any RP.:. (3::Int) RP.:. RP.All) fLayer :: IO NNLayer
-RP.extend shape fLayer
+traverse2 wihNN fLayer (\_ y ->  y) (\f h sh -> h sh)
+computeP $ traverse2 wihNN fLayer (\_ y ->  y) (\f h sh -> h sh) :: IO NLayerR
 
 
-RP.backpermute shape (\e@(RP.Z RP.:. x RP.:. y) -> RP.Z RP.:. x) fLayer
-llk <- RP.computeP $ RP.backpermute shape (\e@(RP.Z RP.:. x RP.:. y) -> RP.Z RP.:. x) fLayer :: IO NNLayerR
+extend (Any :. (3::Int) :. All) fLayer
+computeP $ extend (Any :. (3::Int) :. All) fLayer :: IO NNLayer
+extend shape fLayer
 
-RP.extend (RP.Any RP.:. x RP.:. RP.All) fLayer
-llp <- RP.computeP $ RP.extend (RP.Any RP.:. x RP.:. RP.All) fLayer :: IO NNLayerR
+
+backpermute shape (\e@(Z :. x :. y) -> Z :. x) fLayer
+llk <- computeP $ backpermute shape (\e@(Z :. x :. y) -> Z :. x) fLayer :: IO NNLayerR
+
+extend (Any :. x :. All) fLayer
+llp <- computeP $ extend (Any :. x :. All) fLayer :: IO NNLayerR

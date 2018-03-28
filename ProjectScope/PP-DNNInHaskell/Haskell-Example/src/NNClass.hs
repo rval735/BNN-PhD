@@ -8,13 +8,17 @@
 ---- of this repository for more details.
 ----
 
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TypeOperators         #-}
+
 -- | Simple Neural Network class that has one hidden layer
 module NNClass where
 
-import qualified Data.Array.Repa                      as RP
-import qualified Data.Array.Repa.Algorithms.Matrix    as RP
-import qualified Data.Array.Repa.Algorithms.Randomish as RP
-import           System.Random
+import           Data.Array.Repa
+import           Data.Array.Repa.Algorithms.Randomish (randomishDoubleArray)
+import           Prelude                              hiding (map)
+-- import           Data.Array.Repa.Repr.Unboxed
+import           System.Random                        (randomIO)
 
 -- | Code synonyms to ease relationship between function
 --   parameters and their application
@@ -26,11 +30,11 @@ type Target = Int
 type LearningRate = NNT
 type Epochs = Int
 
-type RGenLayerN r sh = RP.Array r sh NNT
-type RGenLayer sh = RP.Array RP.U sh NNT
-type RGenLayerD sh = RP.Array RP.D sh NNT
-type NShape = RP.DIM1 -- RP.Z RP.:. InputNodes
-type NNShape = RP.DIM2 -- RP.Z RP.:. InputNodes RP.:. OutputNodes
+type RGenLayerN r sh = Array r sh NNT
+type RGenLayer sh = Array U sh NNT
+type RGenLayerD sh = Array D sh NNT
+type NShape = DIM1 -- Z :. InputNodes
+type NNShape = DIM2 -- Z :. InputNodes :. OutputNodes
 type NLayerR = RGenLayer NShape
 type NNLayerR = RGenLayer NNShape
 type NLayerDR = RGenLayerD NShape
@@ -64,13 +68,13 @@ createNNR (NNBase x y z lr) = do
 -- | Impure function that generates a normalized random matrix of doubles
 --   considering input - hidden layers
 randomNormalR :: Int ->  InputNodes -> OutputNodes -> NNLayerR
-randomNormalR seed x y = RP.randomishDoubleArray shape (-stdDev) stdDev seed
-    where shape = RP.Z RP.:. x RP.:. y
+randomNormalR seed x y = randomishDoubleArray shape (-stdDev) stdDev seed
+    where shape = Z :. x :. y
           stdDev = 2 * fromIntegral x ** (-0.5)
 
 -- | Vector application of the "Logistic" activation function
-activationFuncR :: (RP.Shape sh, Monad m) => RP.Array RP.U sh NNT -> m (RP.Array RP.U sh NNT)
-activationFuncR v = RP.computeP $ RP.map logisticFunc v
+activationFuncR :: (Shape sh, Monad m) => Array U sh NNT -> m (Array U sh NNT)
+activationFuncR v = computeP $ map logisticFunc v
 
 -- | Logistic function formula, taking R and returning R
 logisticFunc :: NNT -> NNT
@@ -89,23 +93,23 @@ trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
     -- Run the activation function from the output weights result
         finalOutputs <- activationFuncR finalInputs
     -- Match the NN prediction agains the expected training value
-        outputErrors <- RP.computeP $ training RP.-^ finalOutputs -- :: IO NLayerR
+        outputErrors <- computeP $ training -^ finalOutputs -- :: IO NLayerR
     -- Transpose the output to match the hidden inputs
-        whoNNT <- RP.computeP $ RP.transpose whoNN -- :: IO NNLayerR
+        whoNNT <- computeP $ transpose whoNN -- :: IO NNLayerR
     -- Multiply the difference error with the NN output weights
         hiddenErrors <- matVecDense whoNNT outputErrors
     -- Calculate a "gradient" with the expected training value, the
     -- NN calculated output, which is multiplied by the hidden NN outputs
         preWHO <- kerMap outputErrors finalOutputs hiddenOutputs
     -- Apply the learning rate to the newly calculated output weights
-        whoDelta <- RP.computeP . RP.transpose $ RP.map (lRateNN *) preWHO :: IO NNLayerR
+        whoDelta <- computeP . transpose $ map (lRateNN *) preWHO :: IO NNLayerR
     -- Make the "gradient" but in this case for the input weights
         preWIH <- kerMap hiddenErrors hiddenOutputs inputs
     -- Apply the learning rate to the newly calculated input weights
-        wihDelta <- RP.computeP . RP.transpose $ RP.map (lRateNN *) preWIH :: IO NNLayerR
+        wihDelta <- computeP . transpose $ map (lRateNN *) preWIH :: IO NNLayerR
     -- Update inner layers
-        wihFin <- RP.computeP $ wihNN RP.+^ wihDelta
-        whoFin <- RP.computeP $ whoNN RP.+^ whoDelta
+        wihFin <- computeP $ wihNN +^ wihDelta
+        whoFin <- computeP $ whoNN +^ whoDelta
     -- Create a new NN with updated input/output weights
         return $ NeuralNetworkR lRateNN wihFin whoFin
 
@@ -116,29 +120,29 @@ trainR' inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
     -- Multiply training inputs against input weights
         hiddenInputs <- matVecDense' wihNN inputs
     -- Run the activation function from the result
-        hiddenOutputs <- RP.computeP $ activationFuncR' hiddenInputs
+        hiddenOutputs <- computeP $ activationFuncR' hiddenInputs
     -- Multiply activated training inputs against output weights
         finalInputs <- matVecDense' whoNN hiddenOutputs
     -- Run the activation function from the output weights result
-        finalOutputs <- RP.computeP $ activationFuncR' finalInputs
+        finalOutputs <- computeP $ activationFuncR' finalInputs
     -- Match the NN prediction agains the expected training value
-        outputErrors <- RP.computeP $ training RP.-^ finalOutputs -- :: IO NLayerR
+        outputErrors <- computeP $ training -^ finalOutputs -- :: IO NLayerR
     -- Transpose the output to match the hidden inputs
-        whoNNT <- RP.computeP $ RP.transpose whoNN -- :: IO NNLayerR
+        whoNNT <- computeP $ transpose whoNN -- :: IO NNLayerR
     -- Multiply the difference error with the NN output weights
         hiddenErrors <- matVecDense' whoNNT outputErrors
     -- Calculate a "gradient" with the expected training value, the
     -- NN calculated output, which is multiplied by the hidden NN outputs
         let preWHO = kerMap' outputErrors finalOutputs hiddenOutputs
     -- Apply the learning rate to the newly calculated output weights
-        let whoDelta  = RP.transpose $ RP.map (lRateNN *) preWHO
+        let whoDelta  = transpose $ map (lRateNN *) preWHO
     -- Make the "gradient" but in this case for the input weights
         let preWIH = kerMap' hiddenErrors hiddenOutputs inputs
     -- Apply the learning rate to the newly calculated input weights
-        let wihDelta = RP.transpose $ RP.map (lRateNN *) preWIH
+        let wihDelta = transpose $ map (lRateNN *) preWIH
     -- Update inner layers
-        wihFin <- RP.computeP $ wihNN RP.+^ wihDelta
-        whoFin <- RP.computeP $ whoNN RP.+^ whoDelta
+        wihFin <- computeP $ wihNN +^ wihDelta
+        whoFin <- computeP $ whoNN +^ whoDelta
     -- Create a new NN with updated input/output weights
         return $ NeuralNetworkR lRateNN wihFin whoFin
 
@@ -160,66 +164,75 @@ queryR (NeuralNetworkR lRateNN wihNN whoNN) inputs = do
 
 matVecDense ::  NNLayerR -> NLayerR -> IO NLayerR
 matVecDense x y = do
-    let (RP.Z RP.:. s1 RP.:. s2) = RP.extent x
-    extended <- RP.computeP $ RP.extend (RP.Any RP.:. s1 RP.:. RP.All) y :: IO NNLayerR
-    pre <- RP.computeP $ x RP.*^ extended :: IO NNLayerR
-    RP.sumP pre
+    let (Z :. s1 :. s2) = extent x
+    extended <- computeP $ extend (Any :. s1 :. All) y :: IO NNLayerR
+    pre <- computeP $ x *^ extended :: IO NNLayerR
+    sumP pre
 
 -- matVecDense' :: ((Shape sh, Source r a, Monad m) =>  NNLayerR -> NLayerR -> m NLayerR
--- matVecDense' :: (RP.Shape sh, RP.Source r a, Monad m) => NLayerN r -> NLayerN r -> m NLayerR
+-- matVecDense' :: (Shape sh, Source r a, Monad m) => NLayerN r -> NLayerN r -> m NLayerR
+ -- matVecDense' :: (Shape sh1, Source r1 a, Shape sh2, Source r2 a, Num a, Monad m) => Array r1 (sh1 :. Int :. Int) a -> Array r2 (sh2 :. Int) a -> Array D sh2 a
 matVecDense' :: (Monad m) =>  NNLayerR -> NLayerR -> m NLayerR
-matVecDense' x y = RP.sumP pre
-    where (RP.Z RP.:. s1 RP.:. s2) = RP.extent x
-          extended = RP.extend (RP.Any RP.:. s1 RP.:. RP.All) y
-          pre = x RP.*^ extended
+matVecDense' x y = sumP pre
+    where (Z :. s1 :. s2) = extent x
+          extended = extend (Any :. s1 :. All) y
+          pre = x *^ extended
+
+-- matVecDense'' :: (Shape sh1, Source r1 a, Shape sh2, Source r2 a, Num a, Unbox a, Monad m) => Array r1 (sh1 :. Int :. Int) a -> Array r2 (sh2 :. Int) a -> m (Array U sh2 a)
+-- matVecDense'' x y = sumP y
+--     where (s0 :. s1 :. s2) = extent x
+--           extendedX = extend (Any :. s1 :. s2) x
+--           extendedY = extend (Any :. s1 :. All) y
+--           pre = extendedX *^ extendedY
 
 
 matSumVecDense ::  NNLayerR -> NLayerR -> IO NNLayerR
 matSumVecDense x y = do
-    let (RP.Z RP.:. sy) = RP.extent y
-    extended <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) y :: IO NNLayerR
-    RP.computeP $ x RP.+^ extended
+    let (Z :. sy) = extent y
+    extended <- computeP $ extend (Any :. sy :. All) y :: IO NNLayerR
+    computeP $ x +^ extended
 
 matSumVecDense' :: NNLayerR -> NLayerR -> NNLayerDR
 matSumVecDense' x y = do
-    let (RP.Z RP.:. sy) = RP.extent y
-    let extended = RP.extend (RP.Any RP.:. sy RP.:. RP.All) y
-    x RP.+^ extended
+    let (Z :. sy) = extent y
+    let extended = extend (Any :. sy :. All) y
+    x +^ extended
 
 outerProd :: NLayerR -> NLayerR -> IO NNLayerR
 outerProd x y = do
-    let (RP.Z RP.:. sx) = RP.extent x
-    let (RP.Z RP.:. sy) = RP.extent y
-    extendX <- RP.computeP $ RP.extend (RP.Any RP.:. sy RP.:. RP.All) x :: IO NNLayerR
-    extendY <- RP.computeP . RP.transpose $ RP.extend (RP.Any RP.:. sx RP.:. RP.All) y :: IO NNLayerR
-    RP.computeP $ extendX RP.*^ extendY -- :: IO NNLayerR
+    let (Z :. sx) = extent x
+    let (Z :. sy) = extent y
+    extendX <- computeP $ extend (Any :. sy :. All) x :: IO NNLayerR
+    extendY <- computeP . transpose $ extend (Any :. sx :. All) y :: IO NNLayerR
+    computeP $ extendX *^ extendY -- :: IO NNLayerR
 
 outerProd' :: NLayerDR -> NLayerR -> NNLayerDR
 outerProd' x y = do
-    let (RP.Z RP.:. sx) = RP.extent x
-    let (RP.Z RP.:. sy) = RP.extent y
-    let extendX = RP.extend (RP.Any RP.:. sy RP.:. RP.All) x
-    let extendY = RP.transpose $ RP.extend (RP.Any RP.:. sx RP.:. RP.All) y
-    extendX RP.*^ extendY -- :: IO NNLayerR
+    let (Z :. sx) = extent x
+    let (Z :. sy) = extent y
+    let extendX = extend (Any :. sy :. All) x
+    let extendY = transpose $ extend (Any :. sx :. All) y
+    extendX *^ extendY -- :: IO NNLayerR
 
 minMap :: NNT -> NLayerR -> IO NLayerR
-minMap val layer = RP.computeP $ RP.map (val -) layer
+minMap val layer = computeP $ map (val -) layer
 
+{-# INLINE minMap' #-}
 minMap' :: NNT -> NLayerR -> NLayerDR
-minMap' val = RP.map (val -)
+minMap' val = map (val -)
 
 kerMap :: NLayerR -> NLayerR -> NLayerR -> IO NNLayerR
 kerMap outErr outs hidden = do
     minusOutputs <- minMap 1 outs
-    preKer <- RP.computeP $ outErr RP.*^ outs  RP.*^ minusOutputs
+    preKer <- computeP $ outErr *^ outs  *^ minusOutputs
     outerProd preKer hidden
 
 kerMap' :: NLayerR -> NLayerR -> NLayerR -> NNLayerDR
 kerMap' outErr outs hidden = do
     let minusOutputs = minMap' 1 outs
-    let preKer = outErr RP.*^ outs  RP.*^ minusOutputs
+    let preKer = outErr *^ outs  *^ minusOutputs
     outerProd' preKer hidden
 
 -- | Vector application of the "Logistic" activation function
-activationFuncR' :: (RP.Shape sh) => RP.Array RP.U sh NNT -> RP.Array RP.D sh NNT
-activationFuncR' = RP.map logisticFunc
+activationFuncR' :: (Shape sh) => Array U sh NNT -> Array D sh NNT
+activationFuncR' = map logisticFunc

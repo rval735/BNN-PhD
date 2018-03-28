@@ -24,7 +24,7 @@ import           NNClass
 import           System.Environment         (getArgs)
 import           System.Exit                (exitFailure)
 
-import qualified Data.Array.Repa            as RP
+import           Data.Array.Repa            hiding (map)
 import           Data.Foldable              (foldrM)
 
 -- Set constant values for input and output nodes
@@ -137,9 +137,9 @@ queryNNR nn (expected, layer) = do
 --   for the NN to read
 readDecodedR :: [Int] -> (Int, NLayerR)
 readDecodedR []     = (0, xp)
-    where xp = RP.fromListUnboxed (RP.ix1 inputNodes) $ replicate inputNodes 0
+    where xp = fromListUnboxed (ix1 inputNodes) $ replicate inputNodes 0
 readDecodedR (x:xs) = (x, xp)
-    where xp = RP.fromListUnboxed (RP.ix1 inputNodes) $ map normalizer xs
+    where xp = fromListUnboxed (ix1 inputNodes) $ map normalizer xs
 
 ---------------- Simple Functions
 
@@ -154,13 +154,13 @@ normalizer x = 0.01 + fromIntegral x / 255 * 0.99
 --   placed in the index "3" of the array.
 matchesIndexR :: (Int, NLayerR) -> Bool
 matchesIndexR (index, xs) = maxVal == valAtIndex
-    where maxVal = RP.foldAllS max mostMinDouble xs
-          valAtIndex = RP.toList xs !! index
+    where maxVal = foldAllS max mostMinDouble xs
+          valAtIndex = toList xs !! index
 
 -- | Create a layer of 10 elements that has a maximum value of 0.99 in the
 --   "val" position, otherwise 0.01
 desiredOutputR :: Int -> NLayerR
-desiredOutputR val = RP.fromListUnboxed (RP.ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+desiredOutputR val = fromListUnboxed (ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
 
 -- | Use the integer minimum bound as a measure for Double types
 mostMinDouble :: Double

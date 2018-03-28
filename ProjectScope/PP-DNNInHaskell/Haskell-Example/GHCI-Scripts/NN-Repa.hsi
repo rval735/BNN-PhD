@@ -16,8 +16,8 @@ nn <- createNNR nnBase
 trainedNN <- readCVSR "../MNIST-Data/MNIST-Test-10.csv" epochs nn
 testedNN <- queryCVSR "../MNIST-Data/MNIST-Test-10.csv" trainedNN
 
--- listWIH = RP.fromListUnboxed (RP.ix2 hiddenNodes inputNodes) [0..(inputNodes * hiddenNodes - 1)] :: NNLayerR
--- listWHO = RP.fromListUnboxed (RP.ix2 outputNodes hiddenNodes) [0..(hiddenNodes * outputNodes - 1)] :: NNLayerR
+-- listWIH = fromListUnboxed (ix2 hiddenNodes inputNodes) [0..(inputNodes * hiddenNodes - 1)] :: NNLayerR
+-- listWHO = fromListUnboxed (ix2 outputNodes hiddenNodes) [0..(hiddenNodes * outputNodes - 1)] :: NNLayerR
 
 -- nn = NeuralNetworkR lrate listWIH listWHO
 
@@ -26,48 +26,49 @@ layers = map cleanLayerR linesCSV
 inputs = snd $ layers !! 0
 training = desiredOutputR $ fst (layers !! 0)
 
--- inputs = RP.fromListUnboxed (RP.ix1 inputNodes) [0..(inputNodes - 1)] :: NLayerR
--- training = RP.fromListUnboxed (RP.ix1 outputNodes) [0..(outputNodes - 1)] :: NLayerR
+-- inputs = fromListUnboxed (ix1 inputNodes) [0..(inputNodes - 1)] :: NLayerR
+-- inputsM = fromListUnboxed (ix2 hiddenNodes inputNodes) [0..(hiddenNodes * inputNodes - 1)] :: NNLayerR
+-- training = fromListUnboxed (ix1 outputNodes) [0..(outputNodes - 1)] :: NLayerR
 
 (NeuralNetworkR lRateNN wihNN whoNN) = nn
 
---ll = RP.traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(RP.Z RP.:. x RP.:. y) -> f sh )
---ll = RP.traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(RP.Z RP.:. x RP.:. y) -> g (RP.Z RP.:. ( x)) )
---ll = RP.traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(RP.Z RP.:. x RP.:. y) -> g (RP.Z RP.:. (y)) )
---ll = RP.traverse2 wihNN inputs (\(RP.Z RP.:. x RP.:. y) _ -> (RP.Z RP.:. y RP.:. x)) (\f g sh@(RP.Z RP.:. x RP.:. y) -> (g (RP.Z RP.:. y)) )
---ll = RP.traverse2 wihNN inputs (\(RP.Z RP.:. x RP.:. y) _ -> (RP.Z RP.:. y RP.:. x)) (\f g sh@(RP.Z RP.:. x RP.:. y) -> (f ((RP.Z RP.:. y RP.:. x))) )
---ll = RP.traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(RP.Z RP.:. x RP.:. y) -> (f ((RP.Z RP.:. y RP.:. x))) * (g (RP.Z RP.:. x)) )
--- ll = RP.traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(RP.Z RP.:. x RP.:. y) -> (f sh) * (g (RP.Z RP.:. x)) )
--- pre <- RP.computeP . RP.transpose $ ll:: IO NNLayerR
--- (\sh1@(RP.Z RP.:sx _) _ -> RP.Z RP.:. )
+--ll = traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(Z :. x :. y) -> f sh )
+--ll = traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(Z :. x :. y) -> g (Z :. ( x)) )
+--ll = traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(Z :. x :. y) -> g (Z :. (y)) )
+--ll = traverse2 wihNN inputs (\(Z :. x :. y) _ -> (Z :. y :. x)) (\f g sh@(Z :. x :. y) -> (g (Z :. y)) )
+--ll = traverse2 wihNN inputs (\(Z :. x :. y) _ -> (Z :. y :. x)) (\f g sh@(Z :. x :. y) -> (f ((Z :. y :. x))) )
+--ll = traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(Z :. x :. y) -> (f ((Z :. y :. x))) * (g (Z :. x)) )
+-- ll = traverse2 wihNN inputs (\sh _ -> sh) (\f g sh@(Z :. x :. y) -> (f sh) * (g (Z :. x)) )
+-- pre <- computeP . transpose $ ll:: IO NNLayerR
+-- (\sh1@(Z :sx _) _ -> Z :. )
 
 hiddenInputs <-  matVecDense wihNN inputs
--- RP.extent hiddenInputs
+-- extent hiddenInputs
 hiddenOutputs <- activationFuncR hiddenInputs
--- RP.extent hiddenOutputs
-whoNNT <- RP.computeP $ RP.transpose whoNN :: IO NNLayerR
--- RP.extent whoNNT
+-- extent hiddenOutputs
+whoNNT <- computeP $ transpose whoNN :: IO NNLayerR
+-- extent whoNNT
 finalInputs <- matVecDense whoNN hiddenOutputs
--- RP.extent finalInputs
+-- extent finalInputs
 finalOutputs <- activationFuncR finalInputs
--- RP.extent finalOutputs
-outputErrors <- RP.computeP $ training RP.-^ finalOutputs :: IO NLayerR
--- RP.extent outputErrors
+-- extent finalOutputs
+outputErrors <- computeP $ training -^ finalOutputs :: IO NLayerR
+-- extent outputErrors
 hiddenErrors <- matVecDense whoNNT outputErrors
--- RP.extent hiddenErrors
+-- extent hiddenErrors
 preWHO <- kerMap outputErrors finalOutputs hiddenOutputs
--- RP.extent preWHO
+-- extent preWHO
 preWIH <- kerMap hiddenErrors hiddenOutputs inputs
-RP.extent preWIH
-whoDelta <- RP.computeP . RP.transpose  $ RP.map (lRateNN *) preWHO :: IO NNLayerR
-RP.extent whoDelta
+extent preWIH
+whoDelta <- computeP . transpose  $ map (lRateNN *) preWHO :: IO NNLayerR
+extent whoDelta
 
-wihDelta <- RP.computeP . RP.transpose $ RP.map (lRateNN *) preWIH :: IO NNLayerR
-RP.extent wihDelta
-wihFin <- RP.computeP $ wihNN RP.+^ wihDelta :: IO NNLayerR
-RP.extent wihFin
-whoFin <- RP.computeP $ whoNN RP.+^ whoDelta :: IO NNLayerR
-RP.extent whoFin
+wihDelta <- computeP . transpose $ map (lRateNN *) preWIH :: IO NNLayerR
+extent wihDelta
+wihFin <- computeP $ wihNN +^ wihDelta :: IO NNLayerR
+extent wihFin
+whoFin <- computeP $ whoNN +^ whoDelta :: IO NNLayerR
+extent whoFin
 
 
 nnR <- analyzeLinesR epochs nn linesCSV
