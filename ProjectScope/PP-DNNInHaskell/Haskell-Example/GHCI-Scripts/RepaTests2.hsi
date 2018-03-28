@@ -1,12 +1,12 @@
-import qualified Data.Array.Repa                      as RP
-import qualified Data.Array.Repa.Algorithms.Matrix as RP
 let x = 3 :: InputNodes
 let y = 3 :: OutputNodes
+let x' = fromIntegral x
+let y' = fromIntegral y
 let shape = Z :. x :. y
 let ssh = Z :. x
 
-let wihNN = fromListUnboxed shape [0..8]
-let whoNN = fromListUnboxed shape [9..17]
+let wihNN = fromListUnboxed shape [0 .. (x' * y' - 1.0)]
+let whoNN = fromListUnboxed shape [(x' * y') .. (2 * x' * y' - 1)]
 let nnR = NeuralNetworkR 0.1 wihNN whoNN
 
 fLayer <- computeP $ slice (wihR nnR) (Any :. (2::Int)) :: IO NLayerR
@@ -32,6 +32,18 @@ let x = fromListUnboxed (Z :. (5 :: Int) :. (2 :: Int)) [1..10]
 computeP $ reshape (Z :. (2::Int) :. (5::Int)) x :: IO (Array U DIM2 Double)
 
 traverse2 wihNN fLayer (\_ y ->  y) (\f h sh -> h sh)
+
+let applySHX f h sh@(Z :. x :. y) = (f sh) * (h (Z :. x))
+let applySHY f h sh@(Z :. x :. y) = (f sh) * (h (Z :. y))
+computeP $ traverse2 wihNN fLayer (\x _ -> x) applySHX :: IO NNLayerR
+computeP $ traverse2 wihNN fLayer (\x _ -> x) applySHY :: IO NNLayerR
+
+let applySX f h sh@(Z :. x :. y) = (f sh) * (h (Z :. x))
+let applySY f h sh@(Z :. x :. y) = (f sh) * (h (Z :. y))
+computeP $ traverse2 wihNN fLayer (\x _ -> x) applySHX :: IO NNLayerR
+computeP $ traverse2 wihNN fLayer (\x _ -> x) applySHY :: IO NNLayerR
+
+computeP $ traverse2 wihNN fLayer (\x _ -> x) (\f h sh -> f sh) :: IO NNLayerR
 computeP $ traverse2 wihNN fLayer (\_ y ->  y) (\f h sh -> h sh) :: IO NLayerR
 
 
