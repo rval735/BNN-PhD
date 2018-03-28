@@ -98,14 +98,14 @@ readCVSFile path = C8L.lines <$> C8L.readFile path
 analyzeLinesR :: Epochs -> NeuralNetworkR -> [C8L.ByteString] -> IO NeuralNetworkR
 analyzeLinesR 0 nn _ = return nn
 analyzeLinesR epochs nn xs = do
-    let layers = map cleanLayerR xs
+    let layers = map cleaNLayerU xs
     trainedNN <- foldrM trainNNR nn layers
     analyzeLinesR (epochs - 1) trainedNN xs
 
 analyzeLinesR' :: Epochs -> NeuralNetworkR -> [C8L.ByteString] -> IO NeuralNetworkR
 analyzeLinesR' 0 nn _ = return nn
 analyzeLinesR' epochs nn xs = do
-    let layers = map cleanLayerR xs
+    let layers = map cleaNLayerU xs
     trainedNN <- foldrM trainNNR' nn layers
     analyzeLinesR (epochs - 1) trainedNN xs
 
@@ -113,29 +113,29 @@ analyzeLinesR' epochs nn xs = do
 queryLinesR :: NeuralNetworkR -> [C8L.ByteString] -> IO [Bool]
 queryLinesR _ [] = return []
 queryLinesR nn xs = mapM (queryNNR nn) layers
-  where layers = map cleanLayerR xs
+  where layers = map cleaNLayerU xs
 
 -- | One line function that transform a CSV line to a tuple with
 --   (Label, Data) format
-cleanLayerR :: C8L.ByteString -> (Int, NLayerR)
-cleanLayerR = readDecodedR . map fst . mapMaybe C8L.readInt . C8L.split ','
+cleaNLayerU :: C8L.ByteString -> (Int, NLayerU)
+cleaNLayerU = readDecodedR . map fst . mapMaybe C8L.readInt . C8L.split ','
 
 -- | Tuple by tuple, perform the NN tranining from NNClass
-trainNNR :: (Int, NLayerR) -> NeuralNetworkR -> IO NeuralNetworkR
+trainNNR :: (Int, NLayerU) -> NeuralNetworkR -> IO NeuralNetworkR
 trainNNR (expected, layer) = trainR layer (desiredOutputR expected)
 
-trainNNR' :: (Int, NLayerR) -> NeuralNetworkR -> IO NeuralNetworkR
+trainNNR' :: (Int, NLayerU) -> NeuralNetworkR -> IO NeuralNetworkR
 trainNNR' (expected, layer) = trainR' layer (desiredOutputR expected)
 
 -- | Tuple by tuple, perform the NN quering from NNClass
-queryNNR :: NeuralNetworkR -> (Int, NLayerR) -> IO Bool
+queryNNR :: NeuralNetworkR -> (Int, NLayerU) -> IO Bool
 queryNNR nn (expected, layer) = do
     queryLL <- queryR nn layer
     return $ matchesIndexR (expected, queryLL)
 
 -- | Transform a list of Int into a tuple with format (Label, Data)
 --   for the NN to read
-readDecodedR :: [Int] -> (Int, NLayerR)
+readDecodedR :: [Int] -> (Int, NLayerU)
 readDecodedR []     = (0, xp)
     where xp = fromListUnboxed (ix1 inputNodes) $ replicate inputNodes 0
 readDecodedR (x:xs) = (x, xp)
@@ -152,14 +152,14 @@ normalizer x = 0.01 + fromIntegral x / 255 * 0.99
 --   (3, [0,0,1,5,0,0])
 --   would return "True", because "5" is the max value and it is
 --   placed in the index "3" of the array.
-matchesIndexR :: (Int, NLayerR) -> Bool
+matchesIndexR :: (Int, NLayerU) -> Bool
 matchesIndexR (index, xs) = maxVal == valAtIndex
     where maxVal = foldAllS max mostMinDouble xs
           valAtIndex = toList xs !! index
 
 -- | Create a layer of 10 elements that has a maximum value of 0.99 in the
 --   "val" position, otherwise 0.01
-desiredOutputR :: Int -> NLayerR
+desiredOutputR :: Int -> NLayerU
 desiredOutputR val = fromListUnboxed (ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
 
 -- | Use the integer minimum bound as a measure for Double types
