@@ -69,3 +69,6 @@ RP.extent wihFin
 whoFin <- RP.computeP $ whoNN RP.+^ whoDelta :: IO NNLayerR
 RP.extent whoFin
 
+
+nnR <- analyzeLinesR epochs nn linesCSV
+nnR' <- analyzeLinesR' epochs nn linesCSV
