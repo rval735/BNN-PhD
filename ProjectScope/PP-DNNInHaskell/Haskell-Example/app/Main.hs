@@ -13,4 +13,4 @@ module Main where
 import           Lib
 
 main :: IO ()
-main = nnFunctionR
+main = nnFunction

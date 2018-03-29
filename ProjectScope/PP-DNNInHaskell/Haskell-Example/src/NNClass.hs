@@ -54,7 +54,7 @@ data NNBase = NNBase {
 
 -- | Kind of "instanced" NNBase where input/output weights have
 --   been assigned along with a learning rate
-data NeuralNetworkR = NeuralNetworkR {
+data NeuralNetwork = NeuralNetwork {
     lRateR :: LearningRate,
     wihR   :: NNLayerU,
     whoR   :: NNLayerU
@@ -62,11 +62,11 @@ data NeuralNetworkR = NeuralNetworkR {
 
 -- | Take a NNBase, then create a NeuralNetwork from its parameters
 --   Impure function becase it uses random numbers
-createNNR :: NNBase -> IO NeuralNetworkR
+createNNR :: NNBase -> IO NeuralNetwork
 createNNR (NNBase x y z lr) = do
     randomSeed <- randomIO :: IO Int
     let pRN = randomNormalR randomSeed
-    return $ NeuralNetworkR lr (pRN y x) (pRN z y)
+    return $ NeuralNetwork lr (pRN y x) (pRN z y)
 
 -- | Impure function that generates a normalized random matrix of doubles
 --   considering input - hidden layers
@@ -75,188 +75,96 @@ randomNormalR seed x y = randomishDoubleArray shape (-stdDev) stdDev seed
     where shape = Z :. x :. y
           stdDev = 2 * fromIntegral x ** (-0.5)
 
+{-# INLINE activationFuncR #-}
 -- | Vector application of the "Logistic" activation function
-activationFuncR :: (Shape sh, Monad m) => Array U sh NNT -> m (Array U sh NNT)
-activationFuncR v = computeP $ map logisticFunc v
-
--- | Logistic function formula, taking R and returning R
-logisticFunc :: NNT -> NNT
-logisticFunc x = 1 / (1 + exp (-x))
-
--- | Match training steps from the Python example
-trainR :: NLayerU -> NLayerU -> NeuralNetworkR -> IO NeuralNetworkR
-trainR inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
-    do
-    -- Multiply training inputs against input weights
-        hiddenInputs <- matVecDense wihNN inputs
-    -- Run the activation function from the result
-        hiddenOutputs <- activationFuncR hiddenInputs
-    -- Multiply activated training inputs against output weights
-        finalInputs <- matVecDense whoNN hiddenOutputs
-    -- Run the activation function from the output weights result
-        finalOutputs <- activationFuncR finalInputs
-    -- Match the NN prediction agains the expected training value
-        outputErrors <- computeP $ training -^ finalOutputs -- :: IO NLayerU
-    -- Transpose the output to match the hidden inputs
-        whoNNT <- computeP $ transpose whoNN -- :: IO NNLayerU
-    -- Multiply the difference error with the NN output weights
-        hiddenErrors <- matVecDense whoNNT outputErrors
-    -- Calculate a "gradient" with the expected training value, the
-    -- NN calculated output, which is multiplied by the hidden NN outputs
-        preWHO <- kerMap outputErrors finalOutputs hiddenOutputs
-    -- Apply the learning rate to the newly calculated output weights
-        whoDelta <- computeP . transpose $ map (lRateNN *) preWHO :: IO NNLayerU
-    -- Make the "gradient" but in this case for the input weights
-        preWIH <- kerMap hiddenErrors hiddenOutputs inputs
-    -- Apply the learning rate to the newly calculated input weights
-        wihDelta <- computeP . transpose $ map (lRateNN *) preWIH :: IO NNLayerU
-    -- Update inner layers
-        wihFin <- computeP $ wihNN +^ wihDelta
-        whoFin <- computeP $ whoNN +^ whoDelta
-    -- Create a new NN with updated input/output weights
-        return $ NeuralNetworkR lRateNN wihFin whoFin
+activationFuncR :: (Source r NNT, Shape sh) => Array r sh NNT -> Array D sh NNT
+activationFuncR = map logisticFunc
+    where  -- | Logistic function formula, taking R and returning R
+          logisticFunc :: NNT -> NNT
+          logisticFunc x = 1 / (1 + exp (-x))
 
 -- | Match training steps from the Python example
-trainR' :: (Monad m) => NLayerU -> NLayerU -> NeuralNetworkR -> m NeuralNetworkR
-trainR' inputs training (NeuralNetworkR lRateNN wihNN whoNN) =
+train :: (Monad m) => NLayerU -> NLayerU -> NeuralNetwork -> m NeuralNetwork
+train inputs training (NeuralNetwork lRateNN wihNN whoNN) =
     do
     -- Multiply training inputs against input weights
-        let hiddenInputs = matVecDense'' wihNN inputs
+        let hiddenInputs = matVecDense wihNN inputs
     -- Run the activation function from the result
-        let hiddenOutputs = activationFuncR' hiddenInputs
+        let hiddenOutputs = activationFuncR hiddenInputs
     -- Multiply activated training inputs against output weights
-        let finalInputs = matVecDense'' whoNN hiddenOutputs
+        let finalInputs = matVecDense whoNN hiddenOutputs
     -- Run the activation function from the output weights result
-        let finalOutputs = activationFuncR' finalInputs
+        let finalOutputs = activationFuncR finalInputs
     -- Match the NN prediction agains the expected training value
         let outputErrors = training -^ finalOutputs -- :: IO NLayerU
     -- Transpose the output to match the hidden inputs
         let whoNNT = transpose whoNN -- :: IO NNLayerU
     -- Multiply the difference error with the NN output weights
-        let hiddenErrors = matVecDense'' whoNNT outputErrors
+        let hiddenErrors = matVecDense whoNNT outputErrors
     -- Calculate a "gradient" with the expected training value, the
     -- NN calculated output, which is multiplied by the hidden NN outputs
-        let preWHO = kerMap'' outputErrors finalOutputs hiddenOutputs
+        let preWHO = kerMap outputErrors finalOutputs hiddenOutputs
     -- Apply the learning rate to the newly calculated output weights
         let whoDelta  = transpose $ map (lRateNN *) preWHO
     -- Make the "gradient" but in this case for the input weights
-        let preWIH = kerMap'' hiddenErrors hiddenOutputs inputs
+        let preWIH = kerMap hiddenErrors hiddenOutputs inputs
     -- Apply the learning rate to the newly calculated input weights
         let wihDelta = transpose $ map (lRateNN *) preWIH
     -- Update inner layers
         wihFin <- computeP $ wihNN +^ wihDelta
         whoFin <- computeP $ whoNN +^ whoDelta
     -- Create a new NN with updated input/output weights
-        return $ NeuralNetworkR lRateNN wihFin whoFin
+        return $ NeuralNetwork lRateNN wihFin whoFin
 
 -- | Match query steps from the Python example
-queryR :: NeuralNetworkR -> NLayerU -> IO NLayerU
-queryR (NeuralNetworkR lRateNN wihNN whoNN) inputs = do
+query :: (Monad m) => NeuralNetwork -> NLayerU -> m NLayerU
+query (NeuralNetwork lRateNN wihNN whoNN) inputs = do
     -- Multiply training inputs against input weights
-        hiddenInputs <-  matVecDense wihNN inputs
+        let hiddenInputs = matVecDense wihNN inputs
     -- Run the activation function from the result
-        hiddenOutputs <- activationFuncR hiddenInputs
+        let hiddenOutputs = activationFuncR hiddenInputs
     -- Multiply activated training inputs against output weights
-        finalInputs <- matVecDense whoNN hiddenOutputs
-    -- Execute the activation functor to final inputs
-        activationFuncR finalInputs
+        let finalInputs = matVecDense whoNN hiddenOutputs
+    -- Run the activation function from the output weights result
+        computeP $ activationFuncR finalInputs
 
---------------------------------------
---------- Helper Functions -----------
---------------------------------------
+-------------------------------------------
+--------- Repa Matrix Functions -----------
+-------------------------------------------
 
-matVecDense ::  NNLayerU -> NLayerU -> IO NLayerU
-matVecDense x y = do
-    let (Z :. s1 :. s2) = extent x
-    extended <- computeP $ extend (Any :. s1 :. All) y :: IO NNLayerU
-    pre <- computeP $ x *^ extended :: IO NNLayerU
-    sumP pre
+-- | Make a Matrix - Vector multiplication that will obtain a Vector
+--   Ex: | 0 1 2 |    | 1 |       | 8  |
+--       | 3 4 5 |    | 2 |   =   | 26 |
+--       | 6 7 8 |    | 3 |       | 44 |
+{-# INLINE matVecDense #-}
+matVecDense :: (Source r1 NNT, Source r2 NNT) => NNLayerF r1 -> NLayerF r2 -> NLayerU
+matVecDense x y = sumS $ traverse2 x y const applySHY
+    where applySHY f h sh@(Z :. x :. y) = f sh * h (Z :. y)
 
--- matVecDense' :: ((Shape sh, Source r a, Monad m) =>  NNLayerU -> NLayerU -> m NLayerU
--- matVecDense' :: (Shape sh, Source r a, Monad m) => NLayerN r -> NLayerN r -> m NLayerU
- -- matVecDense' :: (Shape sh1, Source r1 a, Shape sh2, Source r2 a, Num a, Monad m) => Array r1 (sh1 :. Int :. Int) a -> Array r2 (sh2 :. Int) a -> Array D sh2 a
-matVecDense' :: (Monad m) =>  NNLayerU -> NLayerU -> m NLayerU
-matVecDense' x y = sumP pre
-    where (Z :. s1 :. s2) = extent x
-          extended = extend (Any :. s1 :. All) y
-          pre = x *^ extended
-
--- matVecDense'' :: (Shape sh1, Source r1 a, Shape sh2, Source r2 a, Num a, Unbox a, Monad m) => Array r1 (sh1 :. Int :. Int) a -> Array r2 (sh2 :. Int) a -> m (Array U sh2 a)
-{-# INLINE matVecDense'' #-}
-matVecDense'' :: (Source r1 NNT, Source r2 NNT) => NNLayerF r1 -> NLayerF r2 -> NLayerU
-matVecDense'' x y = do
-    let applySHY f h sh@(Z :. x :. y) = f sh * h (Z :. y)
-    let pre = traverse2 x y const applySHY
-    sumS pre
-
-matSumVecDense ::  NNLayerU -> NLayerU -> IO NNLayerU
-matSumVecDense x y = do
-    let (Z :. sy) = extent y
-    extended <- computeP $ extend (Any :. sy :. All) y :: IO NNLayerU
-    computeP $ x +^ extended
-
-matSumVecDense' :: NNLayerU -> NLayerU -> NNLayerD
-matSumVecDense' x y = do
-    let (Z :. sy) = extent y
-    let extended = extend (Any :. sy :. All) y
-    x +^ extended
-
-outerProd :: NLayerU -> NLayerU -> IO NNLayerU
+-- | Transforms two Vector objects into a Matrix
+--   with columns of V2 and rows V1
+{-# INLINE outerProd #-}
+outerProd :: (Source r1 NNT, Source r2 NNT) => NLayerF r1 -> NLayerF r2 -> NNLayerD
 outerProd x y = do
     let (Z :. sx) = extent x
     let (Z :. sy) = extent y
-    extendX <- computeP $ extend (Any :. sy :. All) x :: IO NNLayerU
-    extendY <- computeP . transpose $ extend (Any :. sx :. All) y :: IO NNLayerU
-    computeP $ extendX *^ extendY -- :: IO NNLayerU
-
-outerProd' :: NLayerD -> NLayerU -> NNLayerD
-outerProd' x y = do
-    let (Z :. sx) = extent x
-    let (Z :. sy) = extent y
     let extendX = extend (Any :. sy :. All) x
     let extendY = transpose $ extend (Any :. sx :. All) y
-    extendX *^ extendY -- :: IO NNLayerU
+    extendX *^ extendY
 
-minMap :: NNT -> NLayerU -> IO NLayerU
-minMap val layer = computeP $ map (val -) layer
+-- | Constant minus a Vector
+{-# INLINE minMap #-}
+minMap :: (Source r NNT) => NNT -> NLayerF r -> NLayerD
+minMap val = map (val -)
 
-{-# INLINE minMap' #-}
-minMap' :: NNT -> NLayerU -> NLayerD
-minMap' val = map (val -)
-
-kerMap :: NLayerU -> NLayerU -> NLayerU -> IO NNLayerU
+-- | Helper that performs multiple functions to three vectors: multiply the first
+--  to the second at the same time that "1 complement" of the second. With that
+--  result it applies the outer product to the third element.
+{-# INLINE kerMap #-}
+kerMap :: (Source r1 NNT, Source r2 NNT, Source r3 NNT) => NLayerF r1 -> NLayerF r2 -> NLayerF r3 -> NNLayerD
 kerMap outErr outs hidden = do
-    minusOutputs <- minMap 1 outs
-    preKer <- computeP $ outErr *^ outs  *^ minusOutputs
+    let minusOutputs = minMap 1 outs
+    let preKer = outErr *^ outs  *^ minusOutputs
     outerProd preKer hidden
 
-kerMap' :: NLayerU -> NLayerU -> NLayerU -> NNLayerD
-kerMap' outErr outs hidden = do
-    let minusOutputs = minMap' 1 outs
-    let preKer = outErr *^ outs  *^ minusOutputs
-    outerProd' preKer hidden
 
-{-# INLINE kerMap'' #-}
-kerMap'' :: (Source r1 NNT, Source r2 NNT, Source r3 NNT) => NLayerF r1 -> NLayerF r2 -> NLayerF r3 -> NNLayerD
-kerMap'' outErr outs hidden = do
-    let minusOutputs = minMap'' 1 outs
-    let preKer = outErr *^ outs  *^ minusOutputs
-    outerProd'' preKer hidden
-
-{-# INLINE minMap'' #-}
-minMap'' :: (Source r NNT) => NNT -> NLayerF r -> NLayerD
-minMap'' val = map (val -)
-
-{-# INLINE outerProd'' #-}
-outerProd'' :: (Source r1 NNT, Source r2 NNT) => NLayerF r1 -> NLayerF r2 -> NNLayerD
-outerProd'' x y = do
-    let (Z :. sx) = extent x
-    let (Z :. sy) = extent y
-    let extendX = extend (Any :. sy :. All) x
-    let extendY = transpose $ extend (Any :. sx :. All) y
-    extendX *^ extendY -- :: IO NNLayerU
-
-{-# INLINE activationFuncR' #-}
--- | Vector application of the "Logistic" activation function
-activationFuncR' :: (Source r NNT, Shape sh) => Array r sh NNT -> Array D sh NNT
-activationFuncR' = map logisticFunc

@@ -12,7 +12,7 @@
 
 module Lib
 (
-    nnFunctionR
+    nnFunction
 )
 where
 
@@ -36,8 +36,8 @@ outputNodes = 10
 
 -- | Main NN function that is part of IO, here data loading, training
 --   and quering will take place.
-nnFunctionR :: IO ()
-nnFunctionR = do
+nnFunction :: IO ()
+nnFunction = do
     -- Record start time
     startTime <- getCurrentTime
     -- Read command line arguments passed to the program
@@ -78,13 +78,13 @@ readElems _ _ _ =  exitFailure
 -- | From a path, read the contents of a file, then parse those
 --   elements considering a CSV file format with no header, with
 --   the number of epochs, a NN will produce an updated NN
-readCVSR :: String -> Epochs -> NeuralNetworkR -> IO NeuralNetworkR
+readCVSR :: String -> Epochs -> NeuralNetwork -> IO NeuralNetwork
 readCVSR path epochs nn = readCVSFile path >>= analyzeLinesR epochs nn
 
 
 -- | Ask the NN its predictions about a CSV file, then match that
 --    with values it is expecting to predict in a list of booleans
-queryCVSR :: String -> NeuralNetworkR -> IO [Bool]
+queryCVSR :: String -> NeuralNetwork -> IO [Bool]
 queryCVSR path nn = readCVSFile path >>= queryLinesR nn
 
 -- | From a path to a Lazy ByteString split in lines
@@ -95,24 +95,17 @@ readCVSFile path = C8L.lines <$> C8L.readFile path
 --   line data that is going to be transformed into a represantion the
 --   NN is able to understand. It is recursive function until no more
 --   "Epochs" are in place
-analyzeLinesR :: Epochs -> NeuralNetworkR -> [C8L.ByteString] -> IO NeuralNetworkR
+analyzeLinesR :: Epochs -> NeuralNetwork -> [C8L.ByteString] -> IO NeuralNetwork
 analyzeLinesR 0 nn _ = return nn
 analyzeLinesR epochs nn xs = do
     let layers = map cleaNLayerU xs
-    trainedNN <- foldrM trainNNR nn layers
-    analyzeLinesR (epochs - 1) trainedNN xs
-
-analyzeLinesR' :: Epochs -> NeuralNetworkR -> [C8L.ByteString] -> IO NeuralNetworkR
-analyzeLinesR' 0 nn _ = return nn
-analyzeLinesR' epochs nn xs = do
-    let layers = map cleaNLayerU xs
-    trainedNN <- foldrM trainNNR' nn layers
+    trainedNN <- foldrM trainNN nn layers
     analyzeLinesR (epochs - 1) trainedNN xs
 
 -- | Same principle as "analyzeLines" but just to query the NN
-queryLinesR :: NeuralNetworkR -> [C8L.ByteString] -> IO [Bool]
+queryLinesR :: NeuralNetwork -> [C8L.ByteString] -> IO [Bool]
 queryLinesR _ [] = return []
-queryLinesR nn xs = mapM (queryNNR nn) layers
+queryLinesR nn xs = mapM (queryNN nn) layers
   where layers = map cleaNLayerU xs
 
 -- | One line function that transform a CSV line to a tuple with
@@ -121,16 +114,13 @@ cleaNLayerU :: C8L.ByteString -> (Int, NLayerU)
 cleaNLayerU = readDecodedR . map fst . mapMaybe C8L.readInt . C8L.split ','
 
 -- | Tuple by tuple, perform the NN tranining from NNClass
-trainNNR :: (Int, NLayerU) -> NeuralNetworkR -> IO NeuralNetworkR
-trainNNR (expected, layer) = trainR layer (desiredOutputR expected)
-
-trainNNR' :: (Int, NLayerU) -> NeuralNetworkR -> IO NeuralNetworkR
-trainNNR' (expected, layer) = trainR' layer (desiredOutputR expected)
+trainNN :: (Monad m) => (Int, NLayerU) -> NeuralNetwork -> m NeuralNetwork
+trainNN (expected, layer) = train layer (desiredOutputR expected)
 
 -- | Tuple by tuple, perform the NN quering from NNClass
-queryNNR :: NeuralNetworkR -> (Int, NLayerU) -> IO Bool
-queryNNR nn (expected, layer) = do
-    queryLL <- queryR nn layer
+queryNN :: (Monad m) => NeuralNetwork -> (Int, NLayerU) -> m Bool
+queryNN nn (expected, layer) = do
+    queryLL <- query nn layer
     return $ matchesIndexR (expected, queryLL)
 
 -- | Transform a list of Int into a tuple with format (Label, Data)
@@ -141,8 +131,9 @@ readDecodedR []     = (0, xp)
 readDecodedR (x:xs) = (x, xp)
     where xp = fromListUnboxed (ix1 inputNodes) $ map normalizer xs
 
----------------- Simple Functions
-
+-------------------------------------------
+------------- Simple Functions ------------
+-------------------------------------------
 -- | Normalize a value that is between 0 and 255 so it becomes 0.01 - 0.99
 normalizer :: Int -> NNT
 normalizer x = 0.01 + fromIntegral x / 255 * 0.99
