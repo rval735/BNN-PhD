@@ -13,15 +13,18 @@ epochs = 1
 nnBase = NNBase inputNodes hiddenNodes outputNodes lrate
 nn <- createNNR nnBase
 
-trainedNN <- readCVSR "../MNIST-Data/MNIST-Test-10.csv" epochs nn
-testedNN <- queryCVSR "../MNIST-Data/MNIST-Test-10.csv" trainedNN
+trainCSV <- readCSVFile "../MNIST-Data/MNIST-Train.csv"
+testCSV <- readCSVFile "../MNIST-Data/MNIST-Test.csv"
+
+trainedNN <- analyzeLines epochs nn trainCSV
+testedNN <- queryLines trainedNN testCSV
 
 -- listWIH = fromListUnboxed (ix2 hiddenNodes inputNodes) [0..(inputNodes * hiddenNodes - 1)] :: NNLayerR
 -- listWHO = fromListUnboxed (ix2 outputNodes hiddenNodes) [0..(hiddenNodes * outputNodes - 1)] :: NNLayerR
 
 -- nn = NeuralNetworkR lrate listWIH listWHO
 
-linesCSV <- readCVSFile "../MNIST-Data/MNIST-Test-10.csv"
+linesCSV <- readCSVFile "../MNIST-Data/MNIST-Test-10.csv"
 layers = map cleanLayerR linesCSV
 inputs = snd $ layers !! 0
 training = desiredOutputR $ fst (layers !! 0)

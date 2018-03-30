@@ -166,5 +166,3 @@ kerMap outErr outs hidden = do
     let minusOutputs = minMap 1 outs
     let preKer = outErr *^ outs  *^ minusOutputs
     outerProd preKer hidden
-
-

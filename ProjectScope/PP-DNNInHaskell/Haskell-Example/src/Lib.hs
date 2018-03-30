@@ -34,6 +34,12 @@ inputNodes = 784
 outputNodes :: Int
 outputNodes = 10
 
+data MImg = MImg {
+    valueInt :: Int,
+    valueVec :: NLayerU,
+    dataVec  :: NLayerU
+} deriving (Show)
+
 -- | Main NN function that is part of IO, here data loading, training
 --   and quering will take place.
 nnFunction :: IO ()
@@ -47,9 +53,15 @@ nnFunction = do
     (nnBase, epochs) <- readElems elems inputNodes outputNodes
     -- Create a NN with the values read from arguments
     nn <- createNNR nnBase
+
     -- Read the contents of the CSV file for training and testing
-    trainedNN <- readCVSR "../MNIST-Data/MNIST-Train.csv" epochs nn
-    testedNN <- queryCVSR "../MNIST-Data/MNIST-Test.csv" trainedNN
+    !trainCSV <- readCSVFile "../MNIST-Data/MNIST-Train.csv"
+    !testCSV <- readCSVFile "../MNIST-Data/MNIST-Test.csv"
+
+    -- With the contents read, train the NN
+    trainedNN <- analyzeLines epochs nn trainCSV
+    testedNN <- queryLines trainedNN testCSV
+
     -- Compare the results with the number of elements were passed
     let numberOfMatches = foldr (\x y -> if x then y + 1 else y) 0 testedNN
     -- Make the strict call to calculate all previous lines, making a ratio
@@ -76,60 +88,47 @@ readElems [x, y, z] iN oN = return (NNBase iN xx oN yy, zz)
 readElems _ _ _ =  exitFailure
 
 -- | From a path, read the contents of a file, then parse those
---   elements considering a CSV file format with no header, with
---   the number of epochs, a NN will produce an updated NN
-readCVSR :: String -> Epochs -> NeuralNetwork -> IO NeuralNetwork
-readCVSR path epochs nn = readCVSFile path >>= analyzeLinesR epochs nn
-
-
--- | Ask the NN its predictions about a CSV file, then match that
---    with values it is expecting to predict in a list of booleans
-queryCVSR :: String -> NeuralNetwork -> IO [Bool]
-queryCVSR path nn = readCVSFile path >>= queryLinesR nn
-
--- | From a path to a Lazy ByteString split in lines
-readCVSFile :: String -> IO [C8L.ByteString]
-readCVSFile path = C8L.lines <$> C8L.readFile path
+--   elements considering a CSV file format with no header
+--   to a MImg using Lazy ByteString in the middle.
+readCSVFile :: String -> IO [MImg]
+readCSVFile path = map readMImg . C8L.lines <$> C8L.readFile path
 
 -- | Iterate a NN by the number of "Epochs" it receives with the
 --   line data that is going to be transformed into a represantion the
 --   NN is able to understand. It is recursive function until no more
 --   "Epochs" are in place
-analyzeLinesR :: Epochs -> NeuralNetwork -> [C8L.ByteString] -> IO NeuralNetwork
-analyzeLinesR 0 nn _ = return nn
-analyzeLinesR epochs nn xs = do
-    let layers = map cleaNLayerU xs
-    trainedNN <- foldrM trainNN nn layers
-    analyzeLinesR (epochs - 1) trainedNN xs
+analyzeLines :: (Monad m) => Epochs -> NeuralNetwork -> [MImg] -> m NeuralNetwork
+analyzeLines 0 nn _ = return nn
+analyzeLines epochs nn xs = do
+    trainedNN <- {-# SCC "trainedNN" #-} foldrM trainNN nn xs
+    analyzeLines (epochs - 1) trainedNN xs
 
 -- | Same principle as "analyzeLines" but just to query the NN
-queryLinesR :: NeuralNetwork -> [C8L.ByteString] -> IO [Bool]
-queryLinesR _ [] = return []
-queryLinesR nn xs = mapM (queryNN nn) layers
-  where layers = map cleaNLayerU xs
-
--- | One line function that transform a CSV line to a tuple with
---   (Label, Data) format
-cleaNLayerU :: C8L.ByteString -> (Int, NLayerU)
-cleaNLayerU = readDecodedR . map fst . mapMaybe C8L.readInt . C8L.split ','
+queryLines :: NeuralNetwork -> [MImg] -> IO [Bool]
+queryLines _ []  = return []
+queryLines nn xs = mapM (queryNN nn) xs
 
 -- | Tuple by tuple, perform the NN tranining from NNClass
-trainNN :: (Monad m) => (Int, NLayerU) -> NeuralNetwork -> m NeuralNetwork
-trainNN (expected, layer) = train layer (desiredOutputR expected)
+trainNN :: (Monad m) => MImg -> NeuralNetwork -> m NeuralNetwork
+trainNN (MImg _ expected layer) = {-# SCC "trainNN" #-} train layer expected
 
 -- | Tuple by tuple, perform the NN quering from NNClass
-queryNN :: (Monad m) => NeuralNetwork -> (Int, NLayerU) -> m Bool
-queryNN nn (expected, layer) = do
-    queryLL <- query nn layer
-    return $ matchesIndexR (expected, queryLL)
+queryNN :: (Monad m) => NeuralNetwork -> MImg -> m Bool
+queryNN nn (MImg vI vV dV) = matchesIndex vI <$> query nn dV
 
--- | Transform a list of Int into a tuple with format (Label, Data)
---   for the NN to read
-readDecodedR :: [Int] -> (Int, NLayerU)
-readDecodedR []     = (0, xp)
-    where xp = fromListUnboxed (ix1 inputNodes) $ replicate inputNodes 0
-readDecodedR (x:xs) = (x, xp)
-    where xp = fromListUnboxed (ix1 inputNodes) $ map normalizer xs
+-- | One line function that transform a CSV line to a MImg container
+readMImg :: C8L.ByteString -> MImg
+readMImg = decodeMImg . map fst . mapMaybe C8L.readInt . C8L.split ','
+
+-- | Transform a list of Int into a MImg container. cData means
+--   container data and dData is desired outcome
+decodeMImg :: [Int] -> MImg
+decodeMImg []     = MImg 0 dData cData
+    where dData = desiredOutput 0
+          cData = fromListUnboxed (ix1 inputNodes) $ replicate inputNodes 0
+decodeMImg (x:xs) = MImg x cData dData
+    where cData = desiredOutput x
+          dData = fromListUnboxed (ix1 inputNodes) $ map normalizer xs
 
 -------------------------------------------
 ------------- Simple Functions ------------
@@ -139,19 +138,19 @@ normalizer :: Int -> NNT
 normalizer x = 0.01 + fromIntegral x / 255 * 0.99
 
 -- | Consider if the Layer prediction matches the index in which the
---   expected value should be. For example, a tuple of:
---   (3, [0,0,1,5,0,0])
+--   expected value should be. For example, parameters like:
+--   3, [0,0,1,5,0,0]
 --   would return "True", because "5" is the max value and it is
 --   placed in the index "3" of the array.
-matchesIndexR :: (Int, NLayerU) -> Bool
-matchesIndexR (index, xs) = maxVal == valAtIndex
+matchesIndex :: Int -> NLayerU -> Bool
+matchesIndex index xs = maxVal == valAtIndex
     where maxVal = foldAllS max mostMinDouble xs
           valAtIndex = toList xs !! index
 
 -- | Create a layer of 10 elements that has a maximum value of 0.99 in the
 --   "val" position, otherwise 0.01
-desiredOutputR :: Int -> NLayerU
-desiredOutputR val = fromListUnboxed (ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
+desiredOutput :: Int -> NLayerU
+desiredOutput val = fromListUnboxed (ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
 
 -- | Use the integer minimum bound as a measure for Double types
 mostMinDouble :: Double

@@ -36,16 +36,18 @@ executables:
     # - -rtsopts
     # - -with-rtsopts=-N
     - -O2
-    - -optc-O2
-    - -fforce-recomp
-    # - -fprof-auto
+    # - -optc-O2
+    # - -fforce-recomp
+    # # - -fprof-auto
     - -Odph
-    - -rtsopts
     - -fno-liberate-case
     - -funfolding-use-threshold1000
     - -funfolding-keeness-factor1000
-    # - -fllvm
+    - -fllvm
     - -optlo-O3
+# Profilers
+    # - -fprof-cafs
+    # - -fprof-auto
     dependencies:
     - NNHaskell
 
