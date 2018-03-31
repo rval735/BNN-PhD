@@ -55,8 +55,8 @@ nnFunction = do
     nn <- createNNR nnBase
 
     -- Read the contents of the CSV file for training and testing
-    !trainCSV <- readCSVFile "../MNIST-Data/MNIST-Train.csv"
-    !testCSV <- readCSVFile "../MNIST-Data/MNIST-Test.csv"
+    !trainCSV <- readCSVFile "../MNIST-Data/mnist_train.csv"
+    !testCSV <- readCSVFile "../MNIST-Data/mnist_test.csv"
 
     -- With the contents read, train the NN
     trainedNN <- analyzeLines epochs nn trainCSV
@@ -100,7 +100,7 @@ readCSVFile path = map readMImg . C8L.lines <$> C8L.readFile path
 analyzeLines :: (Monad m) => Epochs -> NeuralNetwork -> [MImg] -> m NeuralNetwork
 analyzeLines 0 nn _ = return nn
 analyzeLines epochs nn xs = do
-    trainedNN <- {-# SCC "trainedNN" #-} foldrM trainNN nn xs
+    !trainedNN <- foldrM trainNN nn xs
     analyzeLines (epochs - 1) trainedNN xs
 
 -- | Same principle as "analyzeLines" but just to query the NN
@@ -110,7 +110,7 @@ queryLines nn xs = mapM (queryNN nn) xs
 
 -- | Tuple by tuple, perform the NN tranining from NNClass
 trainNN :: (Monad m) => MImg -> NeuralNetwork -> m NeuralNetwork
-trainNN (MImg _ expected layer) = {-# SCC "trainNN" #-} train layer expected
+trainNN (MImg _ expected layer) = train layer expected
 
 -- | Tuple by tuple, perform the NN quering from NNClass
 queryNN :: (Monad m) => NeuralNetwork -> MImg -> m Bool
