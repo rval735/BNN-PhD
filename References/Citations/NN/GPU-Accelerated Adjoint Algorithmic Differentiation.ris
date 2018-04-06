@@ -1,0 +1,21 @@
+TY  - JOUR
+DB  - PMC
+AU  - Gremse, Felix
+AU  - Höfter, Andreas
+AU  - Razik, Lukas
+AU  - Kiessling, Fabian
+AU  - Naumann, Uwe
+T1  - GPU-Accelerated Adjoint Algorithmic Differentiation
+SN  - 0010-4655
+Y1  - 2016/03/01
+AB  - Many scientific problems such as classifier training or medical image reconstruction can be expressed as minimization of differentiable real-valued cost functions and solved with iterative gradient-based methods. Adjoint algorithmic differentiation (AAD) enables automated computation of gradients of such cost functions implemented as computer programs. To backpropagate adjoint derivatives, excessive memory is potentially required to store the intermediate partial derivatives on a dedicated data structure, referred to as the “tape”. Parallelization is difficult because threads need to synchronize their accesses during taping and backpropagation. This situation is aggravated for many-core architectures, such as Graphics Processing Units (GPUs), because of the large number of light-weight threads and the limited memory size in general as well as per thread. We show how these limitations can be mediated if the cost function is expressed using GPU-accelerated vector and matrix operations which are recognized as intrinsic functions by our AAD software. We compare this approach with naive and vectorized implementations for CPUs. We use four increasingly complex cost functions to evaluate the performance with respect to memory consumption and gradient computation times. Using vectorization, CPU and GPU memory consumption could be substantially reduced compared to the naive reference implementation, in some cases even by an order of complexity. The vectorization allowed usage of optimized parallel libraries during forward and reverse passes which resulted in high speedups for the vectorized CPU version compared to the naive reference implementation. The GPU version achieved an additional speedup of 7.5 ± 4.4, showing that the processing power of GPUs can be utilized for AAD using this concept. Furthermore, we show how this software can be systematically extended for more complex problems such as nonlinear absorption reconstruction for fluorescence-mediated tomography. 
+SP  - 300
+EP  - 311
+VL  - 200
+DO  - 10.1016/j.cpc.2015.10.027
+AN  - PMC4772124
+UR  - http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772124/
+U1  - 26941443[pmid]
+J1  - Comput Phys Commun
+JF  - Computer physics communications
+ER  - 

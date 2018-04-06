@@ -435,6 +435,23 @@ Neural Turing Machines
 - NTM interacts with its environment using input - output channels
 - NTM uses a controller to read/write from a local memory module
 
+GPU-Accelerated Adjoint Algorithmic Differentiation
+- Implementation improvement over naïve AD code
+- Feasible for multithreaded environments, specially GPUs
+- CPU vs GPU implementations 
+- Use vectorization to reduce tape size
+
+Automatic Differentiation of Algorithms for Machine Learning
+- Explains AD from basic calculus knowledge
+- Links AD with ML algorithms
+- Explains Forward and Reverse mode
+
+Functional Differentiation of Computer Programs
+- Presents an implementation of "Computational Differentiation" (AD synonimn)
+- Uses haskell to make that implementation
+- Brief introduction to Diffenrential Algebra and its operators
+- Applications: Hermite, Lambert functions, WKB expansions, etc
+
 -------> DCGAN
 
 Generative Adversarial Networks

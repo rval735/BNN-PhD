@@ -1,0 +1,3 @@
+http://www.xilinx.com/video/corporate/kortiq-small-efficient-cnn-accelerator.html
+http://www.kortiq.com/
+Company in Germany using Xilinx FPGA for CNN

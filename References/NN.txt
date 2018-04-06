@@ -49,3 +49,12 @@ https://arxiv.org/abs/1410.5401
 
 A Survey of Neuromorphic Computing and Neural Networks in Hardware
 https://arxiv.org/abs/1705.06963
+
+GPU-Accelerated Adjoint Algorithmic Differentiation
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4772124/
+
+Automatic Differentiation of Algorithms for Machine Learning
+https://arxiv.org/abs/1404.7456
+
+Online learning rate adaptation with hypergradient descent
+https://openreview.net/forum?id=BkrsAzWAb
