@@ -1,6 +1,6 @@
-name:                NNHaskell
+name:                NNClash
 version:             "0.01"
-github:              "https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/Haskell-Example"
+github:              "https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNClash"
 license:             GPL-3
 author:              "rval735"
 maintainer:          "rval735"
@@ -11,25 +11,23 @@ extra-source-files:
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Simple neural network that analyzes MNIST data in CSV format
+# synopsis:            Simple neural network that analyzes MNIST data in CSV format using Clash to accelerate
 # category:            Artificial Intelligence
 
-description:         Please see the README on Github at <https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNHaskell-Example#readme>
+description:         Please see the README on Github at <https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNClash#readme>
 
 dependencies:
 - base >= 4.7 && < 5
 - random >= 1.1
 - time >= 1.8
 - bytestring >= 0.1
-- repa >= 3.4
-- repa-algorithms >= 3.4
-# - hmatrix >= 0.18  # Uncomment if previous versions are going to compile
+- clash-ghc >= 0.99
 
 library:
   source-dirs: src
 
 executables:
-  NNHaskell-exe:
+  NNClash-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -40,20 +38,14 @@ executables:
     # - -optc-O2
     # - -fforce-recomp
     # # - -fprof-auto
-    - -Odph
-    - -fno-liberate-case
-    - -funfolding-use-threshold1000
-    - -funfolding-keeness-factor1000
-    - -fllvm
-    - -optlo-O3
 # Profilers
     # - -fprof-cafs
     # - -fprof-auto
     dependencies:
-    - NNHaskell
+    - NNClash
 
 tests:
-  NNHaskell-test:
+  NNClash-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -61,4 +53,4 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - NNHaskell
+    - NNClash
