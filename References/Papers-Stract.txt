@@ -269,6 +269,17 @@ Financial Software on GPUs- Between Haskell and Fortran
 - Describe a generic algorithm for pricing (monte carlo)
 - Outline the benefits of FP for functional parallelization
 
+Functional Differentiation of Computer Programs
+- Presents an implementation of "Computational Differentiation" (AD synonimn)
+- Uses haskell to make that implementation
+- Brief introduction to Differential Algebra and its operators
+- Applications: Hermite, Lambert functions, WKB expansions, etc
+
+The simple essence of automatic differentiation
+- Simplified abstractions about AD
+- Use category theory to explain AD with simple terms
+- Special emphasis in Forward and Reverse AD for backpropagation
+- Theoretical proofs that RAD is more efficient and pararellizable
 
 ------> Haskell-FPGA
 
@@ -445,12 +456,6 @@ Automatic Differentiation of Algorithms for Machine Learning
 - Explains AD from basic calculus knowledge
 - Links AD with ML algorithms
 - Explains Forward and Reverse mode
-
-Functional Differentiation of Computer Programs
-- Presents an implementation of "Computational Differentiation" (AD synonimn)
-- Uses haskell to make that implementation
-- Brief introduction to Diffenrential Algebra and its operators
-- Applications: Hermite, Lambert functions, WKB expansions, etc
 
 -------> DCGAN
 

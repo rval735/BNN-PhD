@@ -50,3 +50,6 @@ https://dl.acm.org/citation.cfm?id=2503782
 
 Functional Differentiation of Computer Programs
 https://link.springer.com/article/10.1023/A:1011501232197
+
+The simple essence of automatic differentiation
+https://arxiv.org/abs/1804.00746
