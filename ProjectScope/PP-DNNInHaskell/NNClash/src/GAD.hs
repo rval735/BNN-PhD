@@ -17,20 +17,31 @@
 
 -- {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE NoImplicitPrelude #-}
--- {-# LANGUAGE TypeFamilies  #-}
+{-# LANGUAGE TypeFamilies      #-}
 --
 -- {-# LANGUAGE GADTs         #-}
 -- {-# LANGUAGE Rank2Types    #-}
 -- {-# LANGUAGE TypeOperators #-}
 
-module Lib
+{-# LANGUAGE ConstraintKinds       #-}
+{-# LANGUAGE DataKinds             #-}
+{-# LANGUAGE DefaultSignatures     #-}
+{-# LANGUAGE FlexibleContexts      #-}
+{-# LANGUAGE FlexibleInstances     #-}
+{-# LANGUAGE GADTs                 #-}
+{-# LANGUAGE KindSignatures        #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE NoImplicitPrelude     #-}
+{-# LANGUAGE PolyKinds             #-}
+{-# LANGUAGE RankNTypes            #-}
+{-# LANGUAGE ScopedTypeVariables   #-}
+{-# LANGUAGE TypeFamilies          #-}
+{-# LANGUAGE TypeOperators         #-}
+{-# LANGUAGE UndecidableInstances  #-}
+
+module GAD
 -- (
 --     nnFunction
 -- )
 where
 
-import           GAD
-import qualified Prelude as PP
-
-nnFunction :: PP.IO ()
-nnFunction = PP.putStrLn "Hello!!"

@@ -2,13 +2,13 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b542570655d28c3e2d5b6cee617e9ddec81d6142aae974b495a7180128054ea0
+-- hash: cf32dcf9596a990a87e905b8f493a7bded576a117283db1683e6e490d3f488fb
 
 name:           NNClash
 version:        0.01
-description:    Please see the README on Github at <https://github.com/githubuser/NNClash#readme>
-homepage:       https://github.com/https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/Haskell-Example#readme
-bug-reports:    https://github.com/https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/Haskell-Example/issues
+description:    Please see the README on Github at <https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNClash#readme>
+homepage:       https://github.com/https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNClash#readme
+bug-reports:    https://github.com/https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNClash/issues
 author:         rval735
 maintainer:     rval735
 copyright:      2018 rval735
@@ -23,7 +23,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/Haskell-Example
+  location: https://github.com/https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/NNClash
 
 library
   hs-source-dirs:
@@ -32,13 +32,13 @@ library
       base >=4.7 && <5
     , bytestring >=0.1
     , clash-ghc >=0.99
+    , constraints >=0.10
     , random >=1.1
     , time >=1.8
+    , void >=0.7
   exposed-modules:
-      FIR
+      GAD
       Lib
-      MAC
-      MCF
   other-modules:
       Paths_NNClash
   default-language: Haskell2010
@@ -47,14 +47,16 @@ executable NNClash-exe
   main-is: Main.hs
   hs-source-dirs:
       app
-  ghc-options: -threaded -O2 -Odph -fno-liberate-case -funfolding-use-threshold1000 -funfolding-keeness-factor1000 -fllvm -optlo-O3
+  ghc-options: -threaded -O2
   build-depends:
       NNClash
     , base >=4.7 && <5
     , bytestring >=0.1
     , clash-ghc >=0.99
+    , constraints >=0.10
     , random >=1.1
     , time >=1.8
+    , void >=0.7
   other-modules:
       Paths_NNClash
   default-language: Haskell2010
@@ -70,8 +72,10 @@ test-suite NNClash-test
     , base >=4.7 && <5
     , bytestring >=0.1
     , clash-ghc >=0.99
+    , constraints >=0.10
     , random >=1.1
     , time >=1.8
+    , void >=0.7
   other-modules:
       Paths_NNClash
   default-language: Haskell2010

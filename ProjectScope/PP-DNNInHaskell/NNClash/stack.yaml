@@ -41,8 +41,11 @@ packages:
 # (e.g., acme-missiles-0.3)
 # extra-deps: []
 # extra-deps:
-# - git: https://github.com/achirkin/easytensor.git
-#   commit: 599ae14c52827beb39ffdff48c82d440f318df78
+# # - git: https://github.com/ekmett/categories.git
+# #   commit: 4a02808d28b275f59d9d6c08f0c2d329ee567a97
+# - git: https://github.com/leftaroundabout/constrained-categories.git
+#   commit: 04d802f3384db161fff4586ca5b01c072b7d5631
+
 #   subdirs:
 #   - easytensor
 #   - dimensions

@@ -29,6 +29,7 @@ module Lib
 -- )
 where
 
+import           Cat
 import           GAD
 import qualified Prelude as PP
 
