@@ -53,3 +53,9 @@ https://link.springer.com/article/10.1023/A:1011501232197
 
 The simple essence of automatic differentiation
 https://arxiv.org/abs/1804.00746
+
+Compiling To Categories
+http://conal.net/papers/compiling-to-categories/
+
+Beautiful Differentiation
+http://conal.net/papers/beautiful-differentiation/

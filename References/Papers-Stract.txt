@@ -281,6 +281,17 @@ The simple essence of automatic differentiation
 - Special emphasis in Forward and Reverse AD for backpropagation
 - Theoretical proofs that RAD is more efficient and pararellizable
 
+Compiling To Categories
+- Use categorical abstractions to express functions
+- With CCC, it is possible to link to Graphs, Circuits or Graphics
+- Use Haskell tools to bridge to different platforms
+- First approach to declare AD
+
+Beautiful Differentiation
+- It explains the details about Automatic Differentiation
+- It gives a high level detail of how AD is implemented in haskell
+- It generalizes for vector spaces
+
 ------> Haskell-FPGA
 
 Haskell as a higher order structural hardware description language
