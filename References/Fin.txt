@@ -26,3 +26,6 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5995816/
 
 Clustering High-frequency Stock Data for Trading Volatility Analysis
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5708853/
+
+Adjoints and automatic (algorithmic) differentiation in computational finance
+https://arxiv.org/abs/1107.1831

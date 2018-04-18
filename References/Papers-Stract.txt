@@ -2,6 +2,11 @@ Use Haskell-Clash to develop a CNN for HFT
 
 ------> Fin
 
+Adjoints and automatic (algorithmic) differentiation in computational finance
+- Use AD to reduce computation time, increase accuracy 
+- Create an "adjoint" for reverse computations
+- Applied to Monte Carlo Simulations for the Greeks
+
 ------> CNN
 
 Applications of Convolutional Neural Networks
@@ -146,6 +151,10 @@ A Pythonic Approach for Rapid Hardware Prototyping and Instrumentation
 - Runs on a Xilinx PynQ Platform
 - Also allows simulation within the board
 
+Floating-point bitwidth analysis via automatic differentiation
+- Use AD to analyze the circuit and specify floating point precision
+- Applied to D-FFT and Finite Impulse Response filter
+- C++ implementation
 
 ------> FPGA-Fin
 
@@ -203,6 +212,11 @@ Multiplierless Algorithm for Multivariate Gaussian Random Number Generation in F
 - Monte Carlo simulations
 - 10x vs GPU, 100X vs CPU
 
+Selection and implementation of high-performance platforms in finance
+- The third report, talks about FPGA implementation of a Monte Carlo simulation
+- It used Automatic Differentiation to improve on the system performance
+- It gives an overall overview of the whole system design
+- On the experiments, it shows an improvement of 200x over a Xeon CPU
 
 ------> CNN-FPGA
 

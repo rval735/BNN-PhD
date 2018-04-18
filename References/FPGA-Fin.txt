@@ -35,3 +35,7 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7528289/
 
 High-Performance Quasi-Monte Carlo Financial Simulation- FPGA vs. GPP vs. GPU
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1862656&CFID=1015325573&CFTOKEN=40858404
+
+Selection and implementation of high-performance platforms in finance
+http://www.hpcfinance.eu/sites/www.hpcfinance.eu/files/D5_4_Kozikowski.pdf
+http://www.hpcfinance.eu/publications-and-presentations.html

@@ -26,3 +26,7 @@ http://ieeexplore.ieee.org/document/8056860/
 
 Recent Trends in FPGA Architectures and Applications
 phwl.org/papers/rtfpga_delta08.pdf
+
+Floating-Point Bitwidth Analysis via Automatic Differentiation
+https://ieeexplore.ieee.org/document/1188677/
+
