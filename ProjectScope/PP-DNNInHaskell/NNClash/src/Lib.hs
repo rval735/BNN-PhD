@@ -16,7 +16,7 @@
 -- {-# LANGUAGE UndecidableInstances   #-}
 
 -- {-# LANGUAGE FlexibleContexts #-}
-{-# LANGUAGE NoImplicitPrelude #-}
+-- {-# LANGUAGE NoImplicitPrelude #-}
 -- {-# LANGUAGE TypeFamilies  #-}
 --
 -- {-# LANGUAGE GADTs         #-}
@@ -29,8 +29,9 @@ module Lib
 -- )
 where
 
-import           GAD
-import qualified Prelude as PP
+-- import           Cat
+-- import           LinearMap
+-- import           GAD
 
-nnFunction :: PP.IO ()
-nnFunction = PP.putStrLn "Hello!!"
+nnFunction :: IO ()
+nnFunction = putStrLn "Hello!!"
