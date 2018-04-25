@@ -62,3 +62,5 @@ https://openreview.net/forum?id=BkrsAzWAb
 Discrete first- and second-order adjoints and automatic differentiation for the sensitivity analysis of dynamic models
 https://www.researchgate.net/publication/220307980_Discrete_first-_and_second-order_adjoints_and_automatic_differentiation_for_the_sensitivity_analysis_of_dynamic_models
 
+Neural Network Design for J Function Approximation in Dynamic Programming
+https://arxiv.org/abs/adap-org/9806001

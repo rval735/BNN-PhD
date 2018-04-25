@@ -30,3 +30,12 @@ phwl.org/papers/rtfpga_delta08.pdf
 Floating-Point Bitwidth Analysis via Automatic Differentiation
 https://ieeexplore.ieee.org/document/1188677/
 
+Combined Spatial and Temporal Blocking for High-Performance
+Stencil Computation on FPGAs Using OpenCL
+https://arxiv.org/pdf/1802.00438.pdf
+
+High Speed SRT Divider for Intelligent Embedded System
+https://arxiv.org/abs/1802.06195
+
+Reconfigurable computing for Monte Carlo simulations: results and prospects of the Janus project
+https://arxiv.org/abs/1204.4134

@@ -156,6 +156,33 @@ Floating-point bitwidth analysis via automatic differentiation
 - Applied to D-FFT and Finite Impulse Response filter
 - C++ implementation
 
+Combined Spatial and Temporal Blocking for High-Performance Stencil Computation on FPGAs Using OpenCL
+- Compare GPU vs FPGA for 2D/3D stencil computations
+- Implemented on OpenCL
+- Better performance despite lower memory bandwidth
+- Simpler FPGA code rather than GPU implementations
+
+------> FPGA-NN
+
+ESE- Efficient Speech Recognition Engine with Sparse LSTM on FPGA
+- Implement a LSTM on Xilinx XCKU060 
+- 3x faster than GPU Pascal Titan
+- 11.5x efficient GPU
+- Used Sparse Matrix-vector Multiplication with 16bit wide elements (12quant + 4index)
+
+Hardware-efficient on-line learning through pipelined truncated-error backpropagation in binary-state networks
+- Trained with MNIST data
+- Implemented on a Spartan 6 FPGA
+- On-line learning technique for FF-NN based on pipelined backpropagation
+- Removes the need for an explicit backward pass
+- Used Binary State Networks instead of common spiked ones
+
+Towards a Multi-array Architecture for Accelerating Large-scale Matrix Multiplication on FPGAs
+- Novel implementation of Matrix multiplication
+- Applied to CNN
+- Computes floating point operations
+- Dynamic creation of "PE" to compute matrix elements
+
 ------> FPGA-Fin
 
 Computing system and network architectures in high frequency trading financial applications
@@ -261,6 +288,18 @@ Minitaur, an Event-Driven FPGA-Based Spiking Network Accelerator
 - Development based on "Spiking" event-driven NN 
 - Aims robotics as one of its applications
 - Executed on a Xilinx Spartan 6 ZTEX board
+
+FINN- A Framework for Fast, Scalable Binarized Neural Network Inference
+- Used MNIST data for its tests
+- Implemented on a FPGA Zynq UltraScale+ ZU19EG
+- Used Binary NN: Binary input activations, binary synapse weights and binary output activations
+
+Automated Systolic Array Architecture Synthesis for High Throughput CNN Inference on FPGAs
+- Implements CNN on a FPGA using a systolic array architecture
+- Used Intel OpenCL SDK
+- A "Continuous Integration" scheme was used: from code to deployment
+- AlexNet and VGG16 models were evaluated with 32bit floating points
+
 
 ------> Haskell
 

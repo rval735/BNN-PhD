@@ -80,3 +80,9 @@ https://arxiv.org/abs/1611.02450
 
 Minitaur, an Event-Driven FPGA-Based Spiking Network Accelerator
 http://ieeexplore.ieee.org/document/6701396/
+
+FINN: A Framework for Fast, Scalable Binarized Neural Network Inference
+https://arxiv.org/abs/1612.07119
+
+Automated Systolic Array Architecture Synthesis for High Throughput CNN Inference on FPGAs
+https://dl.acm.org/citation.cfm?id=3062207

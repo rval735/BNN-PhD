@@ -1,0 +1,12 @@
+Papers:
+
+
+ESE- Efficient Speech Recognition Engine with Sparse LSTM on FPGA
+https://arxiv.org/abs/1612.00694
+
+Hardware-efficient on-line learning through pipelined truncated-error backpropagation in binary-state networks
+https://arxiv.org/abs/1707.03049
+
+Towards a Multi-array Architecture for Accelerating Large-scale Matrix Multiplication on FPGAs
+https://arxiv.org/abs/1803.03790
+
