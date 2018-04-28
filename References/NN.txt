@@ -64,3 +64,12 @@ https://www.researchgate.net/publication/220307980_Discrete_first-_and_second-or
 
 Neural Network Design for J Function Approximation in Dynamic Programming
 https://arxiv.org/abs/adap-org/9806001
+
+Delving Deep into Rectifiers- Surpassing Human-Level Performance on ImageNet Classification
+https://arxiv.org/abs/1502.01852
+
+Development and Implementation of Parameterized FPGA-Based General Purpose Neural Networks for Online Applications
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/abstract/document/5607329/
+
+Artificial Neural Network Implementation on a single FPGA of a Pipelined On- Line Backpropagation
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=501837

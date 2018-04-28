@@ -26,7 +26,8 @@ REF=${ARR[${#ARR[@]}-1]}
 FULLREF="http://adsabs.harvard.edu/cgi-bin/bib_query?data_type=BIBTEX&arXiv:$REF"
 
 HTMLBIB=$(curl -s $FULLREF | tail -n +5)
-NAME=$(echo $HTMLBIB | perl -ne 'print "$1\n" if /title = "{([\w*|\W*]*)}"/' | sed s/:/-/)
+NONELEMS=":|\/"
+NAME=$(echo $HTMLBIB | perl -ne 'print "$1\n" if /title = "{([\w*|\W*]*)}"/' | sed -E s/$NONELEMS/-/g)
 echo $NAME
 echo $HTMLBIB >> "$NAME.bib"
 

@@ -1,0 +1,38 @@
+Papers:
+
+How to Train a Compact Binary Neural Network with High Accuracy
+https://www.semanticscholar.org/paper/How-to-Train-a-Compact-Binary-Neural-Network-with-Tang-Hua/75dd30fde950bc8996b5105fff6f9fc3c1d2dbae
+https://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/14619/14454
+
+Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
+https://arxiv.org/abs/1609.07061
+
+Binarized Neural Networks- Training Neural Networks with Weights and Activations Constrained to +1 or −1
+https://arxiv.org/abs/1602.02830
+
+Embedded Binarized Neural Networks
+https://dl.acm.org/citation.cfm?id=3108031
+
+ReBNet- Residual Binarized Neural Network
+https://arxiv.org/abs/1711.01243
+https://openreview.net/forum?id=SJtfOEn6-
+
+Recursive Binary Neural Network Learning Model with 2.28b-Weight Storage Requirement
+https://arxiv.org/abs/1709.05306
+
+Deep Learning Binary Neural Network on an FPGA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/abstract/document/8052915/
+
+Transfer Learning with Binary Neural Networks
+https://arxiv.org/abs/1711.10761
+https://arxiv-org.ezproxy.auckland.ac.nz/pdf/1711.10761.pdf
+
+Build a Compact Binary Neural Network through Bit-level Sensitivity and Data Pruning
+https://arxiv-org.ezproxy.auckland.ac.nz/abs/1802.00904
+
+Fully Parallel RRAM Synaptic Array for Implementing Binary Neural Network
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3201741
+
+Local Binary Convolutional Neural Networks
+https://arxiv.org/abs/1608.06049
+http://hal.cse.msu.edu/projects/lbcnn/

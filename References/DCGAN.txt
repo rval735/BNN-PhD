@@ -23,3 +23,7 @@ https://arxiv.org/abs/1606.03657
 
 Population Based Training of Neural Networks
 https://arxiv.org/abs/1711.09846
+
+Gang of GANs- Generative Adversarial Networks with Maximum Margin Ranking
+https://arxiv.org/abs/1704.04865
+http://hal.cse.msu.edu/papers/gogan/

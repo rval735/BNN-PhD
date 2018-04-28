@@ -183,6 +183,18 @@ Towards a Multi-array Architecture for Accelerating Large-scale Matrix Multiplic
 - Computes floating point operations
 - Dynamic creation of "PE" to compute matrix elements
 
+Development and Implementation of Parameterized FPGA-Based General Purpose Neural Networks for Online Applications
+- Show a "Generalized backpropagation multilayer perceptron" on FPGAs
+- Tries to minimize cost, maximize accuracy, performance and parametrization
+- Divide neurons into "Processing Elements"
+- It considers online training of the NN
+
+Artificial Neural Network Implementation on a single FPGA of a Pipelined On- Line Backpropagation
+- Implements a systolic array for multilayer perceptron
+- Used a Virtex XCV400
+- Pipelined adaptation of the back-propagation algorithm
+- Uses two degrees of parallelism: synapse-oriented and forward-backward parallelism
+
 ------> FPGA-Fin
 
 Computing system and network architectures in high frequency trading financial applications
@@ -521,6 +533,13 @@ Automatic Differentiation of Algorithms for Machine Learning
 - Links AD with ML algorithms
 - Explains Forward and Reverse mode
 
+Delving Deep into Rectifiers- Surpassing Human-Level Performance on ImageNet Classification
+- Introduction of the PReLU function
+- "improves model fitting and little overfitting risk"
+- Better recognition levels for ImageNet 2012 classification dataset
+- PReLu function is also trained using backpropagation
+- Mention of a multi-GPU deployment
+
 -------> DCGAN
 
 Generative Adversarial Networks
@@ -544,6 +563,12 @@ Population Based Training of Neural Networks
 - A different approach to tune hyperparameters
 - "Improvements in accuracy, training time and stability"
 - GAN image generation improves using PBT
+
+Gang of GANs- Generative Adversarial Networks with Maximum Margin Ranking
+- Improvements over Wasserstein GAN
+- Uses multiple GAN alleviating gradient vanishing, instability and mode collapse
+- Tested on visual datasets: CelebA, LSUN Bedroom, CIFAR-10 and 50K-SSFF
+- Theoretical background for multiple GAN
 
 --------> Languages
 
@@ -589,3 +614,73 @@ An embedded modeling language approach to interactive 3D and multimedia animatio
 - 1999 report on how a DSL on top of haskell was used for 3D animations
 - First introduction to "Functional Reactive Animations"
 - How Haskell enhances: composability, high order functions, strong static typing
+
+------> BNN
+
+How to Train a Compact Binary Neural Network with High Accuracy
+- Propose how to train BNN with their own procedures
+- Compared with AlexNex, XOR-NN and previous BNN
+- Used "PReLU" function for activation
+- Used L2 regularization to force weight bipolarization
+- High compression rates compared to other BNN implementations
+
+Quantized Neural Networks: Training Neural Networks with Low Precision Weights and Activations
+- Trained with  MNIST, CIFAR-10, SVHN and ImageNet datasets
+- MNIST QNN 7 times faster than with an unoptimized GPU kernel
+- Replaces MAC operations with XNOR and population count
+- Same accuracies as typical NN with 4-bit weights and activation Recurrent-QNN
+- Implemented NN structures: AlexNet, GoogleNet and ConvNet
+
+Binarized Neural Networks- Training Neural Networks with Weights and Activations Constrained to +1 or −1
+- Similar to quantized NN, previous publication
+- Extensive explanation of the algorithms used
+- Implemented in Theano and Torch (Git repositories)
+
+Embedded Binarized Neural Networks
+- Focus BNN for small memory devices (~ KB sizes) like Intel Curie
+- Uses just a single floating-point temporary
+- Use of "Fused Binary Convolution-Pool Blocks"
+- MNIST and CIFAR10 were considered for testing
+
+ReBNet- Residual Binarized Neural Network
+- Explains the hardware implementation of a BNN
+- Uses "Xnor-Popcount" as a binary dot product
+- "Re" stands for reconfigurable
+- Explains all phases of a BNN and its advances in parallelization
+- Results compared with CIFAR10, SVHN, MNIST, and ILSVRC-2012 (Imagenet)
+- ReBNet: scalable bin-CNN that embeds reconfigurability
+
+Recursive Binary Neural Network Learning Model with 2.28b-Weight Storage Requirement
+- RBNN that recycle synaptic data during training
+- Improvement over BNN for MNIST data set
+- This model requires 4x less storage than other binary models
+- Storage requirements around 2.28b/synapse
+
+Deep Learning Binary Neural Network on an FPGA
+- Explains how to implement a BNN on a FPGA
+- It uses only on-chip memory and an efficient batch normalization
+- Evaluated using CIFAR-10 with 332,158 img/sec and 86.06% accurracy
+- Used Zync ZC706 and Virtex 7 980T
+
+Transfer Learning with Binary Neural Networks
+- Have BNN fixed and dynamic sections that are updated later
+- Train with Imagenet then perform other tasks or "transfer learning"
+- Hybrid HW-SW approach: ship only domain specific NN layers
+
+Build a Compact Binary Neural Network through Bit-level Sensitivity and Data Pruning
+- Explores redundant work of BNN to build compact BNN
+- Considers sensitivity analysis and bit-level data pruning
+- Network size reduced with low accuracy loss, along with less runtime
+- Tested on CIFAR-10, SNVH, Chars74K and GTSRB
+
+Fully Parallel RRAM Synaptic Array for Implementing Binary Neural Network
+- Considers an parallel array architecture that results in "P-BNN"
+- Reduced energy consumption, ~20x improvement over BNN
+- Tested for MNIST and ran over TSMC 65nm PDK
+- Describes how a "Current Mode Sense Amplifier" can be used
+- Uses less circuit area, latency is reduced along with energy consumption
+
+Local Binary Convolutional Neural Networks
+- Inspired by Local Binary Patterns, it translates the idea to convolutions
+- It shows its mathematical background, with a AlexNet structure
+- Tested on MNIST, SVHN, CIFAR-10, and ILSVRC2012 ImageNet
