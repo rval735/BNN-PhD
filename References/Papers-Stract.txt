@@ -684,3 +684,12 @@ Local Binary Convolutional Neural Networks
 - Inspired by Local Binary Patterns, it translates the idea to convolutions
 - It shows its mathematical background, with a AlexNet structure
 - Tested on MNIST, SVHN, CIFAR-10, and ILSVRC2012 ImageNet
+
+------> Other
+
+Physics, Topology, Logic and Computation- A Rosetta Stone
+- Mentions Category theory from an applied perspective
+- Related different branches of science to its application in Category Theory
+- Explains concepts in CT like monoidal or CCC
+- Mentions lambda calculus in the computation section
+- Starts the conversation of how a braided monoidal category can be though of as a quantum process, a tangle or a simple computation.
