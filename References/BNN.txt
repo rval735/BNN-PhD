@@ -36,3 +36,20 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3201741
 Local Binary Convolutional Neural Networks
 https://arxiv.org/abs/1608.06049
 http://hal.cse.msu.edu/projects/lbcnn/
+
+XNOR-Net- ImageNet Classification Using Binary Convolutional Neural Networks
+http://allenai.org/plato/xnornet/
+https://arxiv.org/abs/1603.05279
+
+Bitwise Neural Networks
+http://minjekim.com/papers/icml2015_mkim.pdf
+https://arxiv.org/abs/1601.06071
+
+Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs
+https://dl.acm.org/citation.cfm?doid=3020078.3021741
+
+Accelerating Binarized Neural Networks- Comparison of FPGA, CPU, GPU, and ASIC
+https://ieeexplore.ieee.org/document/7929192/
+
+FINN- A Framework for Fast, Scalable Binarized Neural Network Inference
+https://arxiv.org/abs/1612.07119

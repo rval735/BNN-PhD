@@ -1,0 +1,352 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{2016arXiv160202830C}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CM}{%
+         family={{Courbariaux}},
+         familyi={C\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={{Hubara}},
+         familyi={H\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={{Soudry}},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={{El-Yaniv}},
+         familyi={E\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={{Bengio}},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Learning}
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMHISDERBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1602.02830
+    \endverb
+    \field{title}{{Binarized Neural Networks: Training Deep Neural Networks
+  with Weights and Activations Constrained to +1 or -1}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{month}{02}
+    \field{year}{2016}
+  \endentry
+
+  \entry{7929192}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=NE}{%
+         family={Nurvitadhi},
+         familyi={N\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sheffield},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sim},
+         familyi={S\bibinitperiod},
+         given={Jaewoong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mishra},
+         familyi={M\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Venkatesh},
+         familyi={V\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marr},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{application specific integrated circuits;field programmable gate
+  arrays;graphics processing units;microprocessor chips;neural nets;ASIC;Aria
+  10 FPGA;BNN hardware accelerator design;CPU;DNN;GPU;binarized neural
+  networks;deep neural network;hardware acceleration;Biological neural
+  networks;Field programmable gate arrays;Graphics processing
+  units;Hardware;Neurons;Random access memory;System-on-chip;ASIC;CPU;Deep
+  learning;FPGA;GPU;binarized neural networks;data analytics;hardware
+  accelerator}
+    \strng{namehash}{NE+1}
+    \strng{fullhash}{NESDSJMAVGMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{2016 International Conference on Field-Programmable
+  Technology (FPT)}
+    \verb{doi}
+    \verb 10.1109/FPT.2016.7929192
+    \endverb
+    \field{pages}{77\bibrangedash 84}
+    \field{title}{Accelerating Binarized Neural Networks: Comparison of FPGA,
+  CPU, GPU, and ASIC}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Sun:2018:FPR:3201607.3201741}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=SX}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xiaoyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=PX}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Xiaochen},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CPY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Pai-Yu},
+         giveni={P\bibinitperiod-Y\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SJs}{%
+         family={Seo},
+         familyi={S\bibinitperiod},
+         given={Jae-sun},
+         giveni={J\bibinitperiod-s\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Shimeng},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Press}%
+    }
+    \keyw{BNN, P-BNN, CSM, MNIST}
+    \strng{namehash}{SX+1}
+    \strng{fullhash}{SXPXCPYLRSJsYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 23rd Asia and South Pacific Design
+  Automation Conference}
+    \field{pages}{574\bibrangedash 579}
+    \field{series}{ASPDAC '18}
+    \field{title}{Fully Parallel RRAM Synaptic Array for Implementing Binary
+  Neural Network with (+1, \&Minus;1) Weights and (+1, 0) Neurons}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=3201607.3201741
+    \endverb
+    \list{location}{1}{%
+      {Jeju, Republic of Korea}%
+    }
+    \field{year}{2018}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Zhao:2017:ABC:3020078.3021741}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=ZR}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Ritchie},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Weinan},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Wentao},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=XT}{%
+         family={Xing},
+         familyi={X\bibinitperiod},
+         given={Tianwei},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LJH}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Jeng-Hau},
+         giveni={J\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Mani},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zhiru},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{FPGAs, binarized, binarized convolutional networks, deep learning,
+  high-level synthesis, reconfigurable computing}
+    \strng{namehash}{ZR+1}
+    \strng{fullhash}{ZRSWZWXTLJHSMGRZZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/3020078.3021741
+    \endverb
+    \field{isbn}{978-1-4503-4354-1}
+    \field{pages}{15\bibrangedash 24}
+    \field{series}{FPGA '17}
+    \field{title}{Accelerating Binarized Convolutional Neural Networks with
+  Software-Programmable FPGAs}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3020078.3021741
+    \endverb
+    \list{location}{1}{%
+      {Monterey, California, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{8052915}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ZY}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Redkar},
+         familyi={R\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HX}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \keyw{field programmable gate arrays;fixed point arithmetic;image
+  classification;learning (artificial intelligence);neural nets;object
+  recognition;quantisation (signal);1-bit XNOR operation;CIFAR-10
+  benchmark;FPGA platform;batch normalization operation;computational
+  complexity reduction;convolutional neural network;deep learning binary neural
+  network;fixed point multiplication operation;local receptive fields;low-power
+  embedded applications;memory requirement reduction;on-chip memories;spatial
+  correlation;Biological neural networks;Convolution;Field programmable gate
+  arrays;Hardware;Memory management;Training}
+    \strng{namehash}{ZYRSHX1}
+    \strng{fullhash}{ZYRSHX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    As a popular deep learning technique, convolutional neural network has been
+  widely used in many tasks such as image classification and object
+  recognition. Convolutional neural network exploits spatial correlations in
+  the images by performing convolution operations in local receptive fields.
+  Convolutional neural networks are preferred over fully connected neural
+  networks because they have fewer weights and are easier to train. Many
+  research works have been conducted to reduce the computational complexity and
+  memory requirements of convolutional neural network, to make it applicable to
+  the low-power embedded applications with limited memories. This paper
+  presents the architecture design of convolutional neural network with binary
+  weights and activations, also known as binary neural network, on an FPGA
+  platform. Weights and input activations are binarized with only two values,
+  +1 and -1. This reduces all the fixed point multiplication operations in
+  convolutional layers and fully connected layers to 1-bit XNOR operations. The
+  proposed design uses only on-chip memories. Furthermore, an efficient
+  implementation of batch normalization operation is introduced. When
+  evaluating the CIFAR-10 benchmark, the proposed FPGA design can achieve a
+  processing rate of 332,158 images per second with with accuracy of 86.06%
+  using 1-bit quantized weights and activations.%
+    }
+    \field{booktitle}{2017 IEEE 60th International Midwest Symposium on
+  Circuits and Systems (MWSCAS)}
+    \verb{doi}
+    \verb 10.1109/MWSCAS.2017.8052915
+    \endverb
+    \field{pages}{281\bibrangedash 284}
+    \field{title}{Deep learning binary neural network on an FPGA}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\endsortlist
+\endinput

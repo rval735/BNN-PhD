@@ -685,6 +685,34 @@ Local Binary Convolutional Neural Networks
 - It shows its mathematical background, with a AlexNet structure
 - Tested on MNIST, SVHN, CIFAR-10, and ILSVRC2012 ImageNet
 
+XNOR-Net- ImageNet Classification Using Binary Convolutional Neural Networks
+- Two approaches to data quantization
+- XNOR-Nets reach 58x convolutional operations that enables CPUs to train the NN
+- Tested with ImageNet and ILSVRC2012 using an AlexNet structure
+- Reduced network size by around 32X
+
+Bitwise Neural Networks
+- Proposed BNN for all elements in the NN
+- Tested for MNIST
+- Training was done with real values and bitwise 
+- Hyperbolic tangent was used for both weight compression and activation
+
+Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs
+- BNN on FPGAs with convolutions (Xilinx Zynq-7000 SoC)
+- Tested on CIFAR-10
+- Implemented in C++
+- 35.8 img/sec/watt
+
+Accelerating Binarized Neural Networks- Comparison of FPGA, CPU, GPU, and ASIC
+- Test comprehensively between architectures
+- FPGA and ASIC have a tight battle
+- Network structures: AlexNet, VGG and Neural Talk with CIFAR-10 dataset
+
+FINN- A Framework for Fast, Scalable Binarized Neural Network Inference
+- 12.3 million/sec, 0.31 microsec latency and 95.8% accuracy MNIST
+- Comprehensive explanation of its FPGA implementation with 90% LUT utilization
+- Xilinx Zynq-7000, SoC ZC706
+
 ------> Other
 
 Physics, Topology, Logic and Computation- A Rosetta Stone
