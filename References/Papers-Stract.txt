@@ -45,6 +45,12 @@ Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
 - MS COCO trained for 3 days using a Titan GPU
 - It explains two stochastic attentions: soft and hard
 
+Convolutional Neural Network on Neural Compute Stick for Voxelized Point-clouds Classification
+- Used CNN for object recognition on volumetric data
+- Proposed a 3D voxelized cloud points generation
+- Voxel tree representation "VOLA" (Volumetric accelerator)
+- Used Movidious Neural Compute USB stick to accelerate the training (~1.2W)
+
 ------> CNN-Fin
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
@@ -540,6 +546,13 @@ Delving Deep into Rectifiers- Surpassing Human-Level Performance on ImageNet Cla
 - PReLu function is also trained using backpropagation
 - Mention of a multi-GPU deployment
 
+Adam- a method for stochastic optimization
+- Algorithm for first-order gradient-based optimization, estimates of lower-order moments
+- Computationally efficient, little memory requirements, invariant to rescaling
+- Applies to multiple ML algorithms: DNN, Logistic Regression, Bias-correction term
+- Aimed for ML problems with large datasets and/or high-dimensional parameter spaces
+
+
 -------> DCGAN
 
 Generative Adversarial Networks
@@ -712,6 +725,13 @@ FINN- A Framework for Fast, Scalable Binarized Neural Network Inference
 - 12.3 million/sec, 0.31 microsec latency and 95.8% accuracy MNIST
 - Comprehensive explanation of its FPGA implementation with 90% LUT utilization
 - Xilinx Zynq-7000, SoC ZC706
+
+Neural networks with few multiplications
+- Test data set: MNIST, CIFAR10, SVHN
+- Mayor contribution: Quantized Back Propagation
+- Forward pass: binary connect or ternary connect
+- Their description tries to eliminate multiplications from all NN stages
+- "Ternary connects" is splitting binarization between [-1,0) [0,1]
 
 ------> Other
 

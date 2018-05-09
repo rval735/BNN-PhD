@@ -73,3 +73,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/abstract/document/5607329/
 
 Artificial Neural Network Implementation on a single FPGA of a Pipelined On- Line Backpropagation
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=501837
+
+Adam: a method for stochastic optimization
+https://arxiv.org/abs/1412.6980

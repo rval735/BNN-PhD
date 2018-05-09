@@ -53,3 +53,6 @@ https://ieeexplore.ieee.org/document/7929192/
 
 FINN- A Framework for Fast, Scalable Binarized Neural Network Inference
 https://arxiv.org/abs/1612.07119
+
+Neural networks with few multiplications
+https://arxiv.org/abs/1510.03009

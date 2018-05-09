@@ -36,3 +36,6 @@ https://arxiv.org/abs/1503.03167
 
 Show, Attend and Tell: Neural Image Caption Generation with Visual Attention
 https://arxiv.org/abs/1502.03044
+
+Convolutional Neural Network on Neural Compute Stick for Voxelized Point-clouds Classification
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8302078/
