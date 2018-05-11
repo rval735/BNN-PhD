@@ -51,6 +51,20 @@ Convolutional Neural Network on Neural Compute Stick for Voxelized Point-clouds 
 - Voxel tree representation "VOLA" (Volumetric accelerator)
 - Used Movidious Neural Compute USB stick to accelerate the training (~1.2W)
 
+Eyeriss- An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks
+- Eyeriss is a chip designed for CNN operations
+- Caffe runs on Jetson TK1 <-> PCI-Express of Xilinx VC707 <-> Eyeriss
+- Eyeriss is a 65nm, 200MHz, 168 PE, 16bit fixed point and adaptively-fixed CNN shapes
+- Native support for Caffe
+- Used AlexNet (227x227) and VGG-16 (224x224)
+
+Designing Energy-Efficient Convolutional Neural Networks using Energy-Aware Pruning
+- Energy-aware pruning algorithm for CNNs 
+- Uses the energy consumption to guide the pruning process
+- Minimizes error in the output feature maps instead of weights filter
+- Reduce energy consumption: AlexNet (3.7x) and GoogLeNet (1.6x)
+- Accuracy after pruning, less than 1% loss
+
 ------> CNN-Fin
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
@@ -552,6 +566,29 @@ Adam- a method for stochastic optimization
 - Applies to multiple ML algorithms: DNN, Logistic Regression, Bias-correction term
 - Aimed for ML problems with large datasets and/or high-dimensional parameter spaces
 
+NetAdapt- Platform-Aware Neural Network Adaptation for Mobile Applications
+- Algorithm that improves inference on mobile devices with trained models
+- It includes direct metrics (empirical measurements) into its adaptation
+- It tries to reduce resource consumption while keeping the same accuracy
+- Tested for mobile CPU and GPUs
+
+Hardware for Machine Learning- Challenges and Opportunities
+- Abstract survey of hardware architectures: CPU, GPU, FPGA, ASIC
+- General memory access SIMD models: Weight, output, row stationary or no local reuse
+- Oportunities: reduced precision, sparcity, compression
+
+Efficient Processing of Deep Neural Networks- A Tutorial and Survey
+- Tutorial on past, present and future of DNN from a research perspective
+- DNN Applications: image/video, speech/language, medical, game play, robotics
+- DNN numerical precision survey according to the bitwidth 
+- DNN models: LeNet, AlexNet, Overfeat, VGG, GoogLeNet, ResNet
+- Techniques used on accelerators for SIMD operations
+- Metrics for Hardware: power/energy, latency/throughput, cost
+
+Understanding the Limitations of Existing Energy-Efficient Design Approaches for Deep Neural Networks
+- "While specialized DNN hardware (ASIC, FPGA) provide improved energy-efficiency compared to GPUs, they often come at the cost of flexibility in terms layer types (CONV or FC) and network shapes that it can support; specifically they rely on certain DNN properties to achieve it"
+- "On the other hand, innovative techniques have been used for efficient DNN algorithm design, adding diversification, which in turns, hardware needs to be flexible enough
+to be efficient across all these possible combinations (dense/sparse, number of channels, batch size)".
 
 -------> DCGAN
 

@@ -39,3 +39,9 @@ https://arxiv.org/abs/1502.03044
 
 Convolutional Neural Network on Neural Compute Stick for Voxelized Point-clouds Classification
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8302078/
+
+Eyeriss- An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks
+http://ieeexplore.ieee.org/document/7738524/
+
+Designing Energy-Efficient Convolutional Neural Networks using Energy-Aware Pruning
+https://arxiv.org/abs/1611.05128

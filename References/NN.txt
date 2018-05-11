@@ -76,3 +76,17 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=501837
 
 Adam: a method for stochastic optimization
 https://arxiv.org/abs/1412.6980
+
+NetAdapt- Platform-Aware Neural Network Adaptation for Mobile Applications
+https://arxiv.org/abs/1804.03230
+http://eyeriss.mit.edu/
+
+Hardware for Machine Learning- Challenges and Opportunities
+https://arxiv.org/abs/1612.07625
+
+Efficient Processing of Deep Neural Networks- A Tutorial and Survey
+https://arxiv.org/abs/1703.09039
+
+Understanding the Limitations of Existing Energy-Efficient Design Approaches for Deep Neural Networks
+https://www.semanticscholar.org/paper/Understanding-the-Limitations-of-Existing-Design-Chen-Yang/3a7509a72a01dae5e17f1405ab3d18e1e2fd8157
+http://www.rle.mit.edu/eems/publications/
