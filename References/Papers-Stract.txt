@@ -770,6 +770,13 @@ Neural networks with few multiplications
 - Their description tries to eliminate multiplications from all NN stages
 - "Ternary connects" is splitting binarization between [-1,0) [0,1]
 
+Towards Accurate Binary Convolutional Neural Network
+- Apply convolutions to BNN without prediction degradation, it is called ABC-Net
+- This work approximates full-precision weights with linear combination of
+multiple binary weight bases
+- Employing multiple binary activations to alleviate information loss
+- Uses ResNet topology in the ImageNet dataset with close results to full precision nets
+
 ------> Other
 
 Physics, Topology, Logic and Computation- A Rosetta Stone

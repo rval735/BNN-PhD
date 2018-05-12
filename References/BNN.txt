@@ -56,3 +56,6 @@ https://arxiv.org/abs/1612.07119
 
 Neural networks with few multiplications
 https://arxiv.org/abs/1510.03009
+
+Towards Accurate Binary Convolutional Neural Network
+https://arxiv.org/abs/1711.11294
