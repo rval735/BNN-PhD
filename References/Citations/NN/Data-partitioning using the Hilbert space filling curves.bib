@@ -1,0 +1,14 @@
+@article{CASTRO2005967,
+title = "Data-partitioning using the Hilbert space filling curves: Effect on the speed of convergence of Fuzzy ARTMAP for large database problems",
+journal = "Neural Networks",
+volume = "18",
+number = "7",
+pages = "967 - 984",
+year = "2005",
+issn = "0893-6080",
+doi = "https://doi.org/10.1016/j.neunet.2005.01.007",
+url = "http://www.sciencedirect.com/science/article/pii/S089360800500047X",
+author = "José Castro and Michael Georgiopoulos and Ronald Demara and Avelino Gonzalez",
+keywords = "Fuzzy-ARTMAP, Hilbert space-filling curve, Data mining, Data-partitioning",
+abstract = "The Fuzzy ARTMAP algorithm has been proven to be one of the premier neural network architectures for classification problems. One of the properties of Fuzzy ARTMAP, which can be both an asset and a liability, is its capacity to produce new nodes (templates) on demand to represent classification categories. This property allows Fuzzy ARTMAP to automatically adapt to the database without having to a priori specify its network size. On the other hand, it has the undesirable side effect that large databases might produce a large network size (node proliferation) that can dramatically slow down the training speed of the algorithm. To address the slow convergence speed of Fuzzy ARTMAP for large database problems, we propose the use of space-filling curves, specifically the Hilbert space-filling curves (HSFC). Hilbert space-filling curves allow us to divide the problem into smaller sub-problems, each focusing on a smaller than the original dataset. For learning each partition of data, a different Fuzzy ARTMAP network is used. Through this divide-and-conquer approach we are avoiding the node proliferation problem, and consequently we speedup Fuzzy ARTMAP's training. Results have been produced for a two-class, 16-dimensional Gaussian data, and on the Forest database, available at the UCI repository. Our results indicate that the Hilbert space-filling curve approach reduces the time that it takes to train Fuzzy ARTMAP without affecting the generalization performance attained by Fuzzy ARTMAP trained on the original large dataset. Given that the resulting smaller datasets that the HSFC approach produces can independently be learned by different Fuzzy ARTMAP networks, we have also implemented and tested a parallel implementation of this approach on a Beowulf cluster of workstations that further speeds up Fuzzy ARTMAP's convergence to a solution for large database problems."
+}

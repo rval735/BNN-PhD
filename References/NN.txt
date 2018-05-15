@@ -90,3 +90,12 @@ https://arxiv.org/abs/1703.09039
 Understanding the Limitations of Existing Energy-Efficient Design Approaches for Deep Neural Networks
 https://www.semanticscholar.org/paper/Understanding-the-Limitations-of-Existing-Design-Chen-Yang/3a7509a72a01dae5e17f1405ab3d18e1e2fd8157
 http://www.rle.mit.edu/eems/publications/
+
+Data-partitioning using the Hilbert space filling curves: Effect on the speed of convergence of Fuzzy ARTMAP for large database problems
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S089360800500047X
+
+Toward Deeper Understanding of Neural Networks- The Power of Initialization and a Dual View on Expressivity
+https://arxiv.org/abs/1602.05897
+
+Functional data learning by Hilbert feedforward neural networks
+https://onlinelibrary-wiley-com.ezproxy.auckland.ac.nz/action/showCitFormats?doi=10.1002%2Fmma.2641

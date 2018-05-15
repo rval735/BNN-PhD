@@ -1,0 +1,7 @@
+SNN 
+
+Bistable Memory and Binary Counters in Spiking Neural Network
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5949465/
+
+Algorithm and Hardware Design of Discrete-Time Spiking Neural Networks Based on Back Propagation with Binary Activations
+https://arxiv.org/abs/1709.06206

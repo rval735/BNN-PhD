@@ -45,3 +45,9 @@ http://ieeexplore.ieee.org/document/7738524/
 
 Designing Energy-Efficient Convolutional Neural Networks using Energy-Aware Pruning
 https://arxiv.org/abs/1611.05128
+
+Learning to See in the Dark
+https://arxiv.org/abs/1805.01934
+
+An image representation based convolutional network for DNA classification 
+https://openreview.net/forum?id=HJvvRoe0W

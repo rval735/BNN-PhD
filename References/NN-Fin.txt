@@ -84,3 +84,9 @@ https://www.researchgate.net/publication/316104153_Adaptive_Hybrid_Higher_Order_
 
 Two-Step Disentanglement for Financial Data
 https://arxiv.org/abs/1709.00199
+
+New Neural Networks Based on Taylor Series and their Research
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5234726/
+
+An Efficient Neural Network Model with Taylor Series-Based Data Pre-processing for Stock Price Forecast
+https://www.scientific.net/AMM.284-287.3020

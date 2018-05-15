@@ -153,6 +153,22 @@ Two-Step Disentanglement for Financial Data
 - Beta, rho and mean as benchmarks.
 - "our algorithm encodes it as two separate parts, one that keeps the information regarding the labels and the other that is agnostic to the labels"
 
+New Neural Networks Based on Taylor Series and their Research
+- Propose NNs based on: Taylor series, a radial basis neuron and Fourier component neuron
+- Mentions financial datasets, but no consistent results are provided
+- It also proposes the combination of different types: Fourier, gauss or taylor components
+
+An Efficient Neural Network Model with Taylor Series-Based Data Pre-processing for Stock Price Forecast
+- Use fundamental and technical EPS and MACD as input data
+- Hand picked stock data of some Taiwan public companies
+- Their model mentions a remarkable return and high accuracy strategies
+- It applies the form of Taylor series to preprocess data
+
+Functional data learning by Hilbert feedforward neural networks
+- The "Hilbert parallel overrelaxation backpropagation (HPORBP) algorithm" is proposed
+- Mentioned that HPORBP has better accuracy than the Hilbert backpropagation algorithm
+- It has embedded considerations for parallel execution
+
 ------> FPGA
 
 Recent Trends in FPGA Architectures and Applications
@@ -590,6 +606,26 @@ Understanding the Limitations of Existing Energy-Efficient Design Approaches for
 - "On the other hand, innovative techniques have been used for efficient DNN algorithm design, adding diversification, which in turns, hardware needs to be flexible enough
 to be efficient across all these possible combinations (dense/sparse, number of channels, batch size)".
 
+Data-partitioning using the Hilbert space filling curves: Effect on the speed of convergence of Fuzzy ARTMAP for large database problems
+- Use Hilbert space-filling curves to divide into subproblems for large databases
+- Tested on one real-world database (Forest Covertype) and two artificial
+- Ran on SCEROLA Beowulf cluster of workstations
+
+Learning to See in the Dark
+- CNN for low light images with raw sensor data
+- Reduces image processing from traditional pipelines
+- New dataset for the paper, 5094 raw exposures
+- Trained from scratch using the L1 loss and the Adam optimizer
+- Used smartphone images as well
+
+Toward Deeper Understanding of Neural Networks- The Power of Initialization and a Dual View on Expressivity
+- Proposed general duality between NN and compositional kernels
+- Math background: reproducing kernel Hilbert space (RKHS) or kernel space 
+- Extensive explanation of math: taylor series, 
+- Using skeletons and compositional kernel spaces, it is possible to understand how functions learn
+- State a conjecture that ReLU is more robust to initialization
+
+
 -------> DCGAN
 
 Generative Adversarial Networks
@@ -785,3 +821,16 @@ Physics, Topology, Logic and Computation- A Rosetta Stone
 - Explains concepts in CT like monoidal or CCC
 - Mentions lambda calculus in the computation section
 - Starts the conversation of how a braided monoidal category can be though of as a quantum process, a tangle or a simple computation.
+
+------> SNN
+
+Bistable Memory and Binary Counters in Spiking Neural Network
+- Show how PNGs are capable of retaining triggering events (PNG - Polychronous Group)
+- Bistable neural pools can perform tasks such as binary and stack-like counting
+- PNGs have the capability of representing data and the power of controlling sequences of actions taking place within the network
+
+Algorithm and Hardware Design of Discrete-Time Spiking Neural Networks Based on Back Propagation with Binary Activations
+- Algorithm that uses binary activations with a straight-through gradient estimator
+- Implemented on a energy-efficient neuromorphic hardware (28nm CMOS)
+- Evaluated for the MNIST dataset (~98% accuracy)
+- Cost of 48.4 nJ per classification
