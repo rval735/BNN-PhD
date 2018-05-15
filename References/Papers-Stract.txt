@@ -656,6 +656,12 @@ Gang of GANs- Generative Adversarial Networks with Maximum Margin Ranking
 - Tested on visual datasets: CelebA, LSUN Bedroom, CIFAR-10 and 50K-SSFF
 - Theoretical background for multiple GAN
 
+DOOM Level Generation using Generative Adversarial Networks
+- Use Wasserstein GAN with gradient penalty to create levels in Doom (video game)
+- Possible alternative to Procedural Content Generation
+- Replaced tanh with sigmoid to suit grey scale colors
+- Used Adam optimizer and optimized the discriminator network five times at each update
+
 --------> Languages
 
 A Comparative Study of Programming Languages in Rosetta Code
