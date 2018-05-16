@@ -625,6 +625,22 @@ Toward Deeper Understanding of Neural Networks- The Power of Initialization and 
 - Using skeletons and compositional kernel spaces, it is possible to understand how functions learn
 - State a conjecture that ReLU is more robust to initialization
 
+On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation
+- Make a pixel-wise decomposition of nonlinear classifiers
+- It helps to visualize the contributions of single pixels to predictions
+- Tested on PASCAL VOC 2009, MNIST and pre-trained ImageNet
+- Example of Taylor-type and Bag of words decompositions
+- An step forward to analytically justify NN results using heatmaps
+
+Explaining NonLinear Classification Decisions with Deep Taylor Decomposition
+- Another publication related to previous paper (On Pixel-wise explanations)
+- "Deep Taylor Decomposition DNN"
+- Use the network structure to back propagate explanations from the output
+- MNIST and ILSVRC data sets
+- Pixel-wise heatmap explaining why a NN classifier made a particular decision
+- Examples of unconstrained (w^2 rule) and constrained (z rules) input spaces
+- It is stable under different architectures and datasets, 
+- It does not require hyperparameter tuning
 
 -------> DCGAN
 
