@@ -819,6 +819,13 @@ multiple binary weight bases
 - Employing multiple binary activations to alleviate information loss
 - Uses ResNet topology in the ImageNet dataset with close results to full precision nets
 
+Bitwise Neural Networks for Efficient Single-Channel Source Separation
+- Use BNN to perform denoising signal operations
+- BNNs learn the input Boolean mapping signals and their target Ideal Binary Masks
+- Their binarization technique "Quantization-and-Dispersion" encodes magnitude spectra
+- A two-stage training strategy was used to prepare a set of compressed weights
+- They used their own data set of signals (121080 + 18020 for tests)
+
 ------> Other
 
 Physics, Topology, Logic and Computation- A Rosetta Stone
