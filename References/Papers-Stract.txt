@@ -642,6 +642,13 @@ Explaining NonLinear Classification Decisions with Deep Taylor Decomposition
 - It is stable under different architectures and datasets, 
 - It does not require hyperparameter tuning
 
+Understanding Deep Learning requires rethinking generalization
+- This paper tries to expose the idea of NN as just memorizing data sets
+- Expose that NN do not distinguish between randomized and real labels
+- CIFAR10 and Imagenet as classification benchmarks
+- It is mentioned that a 2 layer NN with ReLU activations can represent functions of a certain sample size and dimension
+- Exposed a simple experimental framework for defining and understanding a notion of effective capacity of ML models
+
 -------> DCGAN
 
 Generative Adversarial Networks
@@ -677,6 +684,12 @@ DOOM Level Generation using Generative Adversarial Networks
 - Possible alternative to Procedural Content Generation
 - Replaced tanh with sigmoid to suit grey scale colors
 - Used Adam optimizer and optimized the discriminator network five times at each update
+
+Wasserstein GAN
+- Focused on unsupervised learning defining Earth Mover (EM) distance
+- Use WGAN to minimize and approximate EM, which "cures" training problems with GAN
+- WGAN train the discriminator to optimality by continuously estimate EM
+- According to them, WGAN can improve stability/debugging and remove mode collapse
 
 --------> Languages
 
