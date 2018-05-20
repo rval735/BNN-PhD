@@ -855,6 +855,12 @@ Bitwise Neural Networks for Efficient Single-Channel Source Separation
 - A two-stage training strategy was used to prepare a set of compressed weights
 - They used their own data set of signals (121080 + 18020 for tests)
 
+Training binary multilayer neural networks for image classification using expectation backpropagation
+- Proposed the expected backpropagation based on Bayesian framework
+- Tested for the MNIST data set
+- Performance is ok but not comparable to other DNN with real values
+- Dropout techniques significantly improve BNN with EBP
+
 ------> Other
 
 Physics, Topology, Logic and Computation- A Rosetta Stone

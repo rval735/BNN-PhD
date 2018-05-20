@@ -30,3 +30,6 @@ http://hal.cse.msu.edu/papers/gogan/
 
 DOOM Level Generation using Generative Adversarial Networks
 https://arxiv.org/abs/1804.09154
+
+Wasserstein GAN
+https://arxiv.org/abs/1701.07875

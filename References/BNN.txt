@@ -63,3 +63,6 @@ https://arxiv.org/abs/1711.11294
 Bitwise Neural Networks for Efficient Single-Channel Source Separation
 https://paris.cs.illinois.edu/pubs/kim-nips2017.pdf
 http://minjekim.com/
+
+Training binary multilayer neural networks for image classification using expectation backpropagation
+https://arxiv.org/abs/1503.03562
