@@ -108,3 +108,6 @@ https://arxiv.org/abs/1512.02479
 
 Understanding Deep Learning requires rethinking generalization
 https://arxiv.org/abs/1611.03530
+
+Improving back-propagation by adding an adversarial gradient
+https://arxiv.org/abs/1510.04189

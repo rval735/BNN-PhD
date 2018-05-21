@@ -649,6 +649,14 @@ Understanding Deep Learning requires rethinking generalization
 - It is mentioned that a 2 layer NN with ReLU activations can represent functions of a certain sample size and dimension
 - Exposed a simple experimental framework for defining and understanding a notion of effective capacity of ML models
 
+Improving back-propagation by adding an adversarial gradient
+- Adversarial gradient shows a regularizing effect (like dropout) in fully connected NN
+- In MNIST, increases the resistance and boosts classification performance
+- Requires an additional forward/backward pass to calculate
+- Tested on MNIST and CIFAR10, with ReLU, TanH, Logistic and Maxout
+
+
+< NN
 -------> DCGAN
 
 Generative Adversarial Networks
@@ -882,3 +890,4 @@ Algorithm and Hardware Design of Discrete-Time Spiking Neural Networks Based on 
 - Implemented on a energy-efficient neuromorphic hardware (28nm CMOS)
 - Evaluated for the MNIST dataset (~98% accuracy)
 - Cost of 48.4 nJ per classification
+
