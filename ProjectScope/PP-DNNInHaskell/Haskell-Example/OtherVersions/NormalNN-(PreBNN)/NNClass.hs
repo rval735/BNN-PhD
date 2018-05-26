@@ -21,7 +21,7 @@ import           System.Random                        (randomIO)
 
 -- | Code synonyms to ease relationship between function
 --   parameters and their application
-type NNT = Bool
+type NNT = Double
 type InputNodes = Int
 type OutputNodes = Int
 type HiddenNodes = Int
@@ -71,65 +71,62 @@ createNNR (NNBase x y z lr) = do
 -- | Impure function that generates a normalized random matrix of doubles
 --   considering input - hidden layers
 randomNormalR :: Int ->  InputNodes -> OutputNodes -> NNLayerU
-randomNormalR seed x y = computeUnboxedS $ map (> 0) doubleArr
+randomNormalR seed x y = randomishDoubleArray shape (-stdDev) stdDev seed
     where shape = Z :. x :. y
           stdDev = 2 * fromIntegral x ** (-0.5)
-          doubleArr = randomishDoubleArray shape (-stdDev) stdDev seed
 
 {-# INLINE activationFuncR #-}
 -- | Vector application of the "Logistic" activation function
 activationFuncR :: (Source r NNT, Shape sh) => Array r sh NNT -> Array D sh NNT
-activationFuncR ys = traverse2 ys ys const (\f g sh -> xnor (f sh) (g sh))
+activationFuncR = map logisticFunc
     where  -- | Logistic function formula, taking R and returning R
-          xnor :: Bool -> Bool -> Bool
-          xnor x y = x == y
+          logisticFunc :: NNT -> NNT
+          logisticFunc x = 1 / (1 + exp (-x))
 
 -- | Match training steps from the Python example
 train :: (Monad m) => NLayerU -> NLayerU -> NeuralNetwork -> m NeuralNetwork
-train inputs training (NeuralNetwork lRateNN wihNN whoNN) = do
--- Multiply training inputs against input weights
-    let hiddenInputs = matVecDense wihNN inputs
--- Run the activation function from the result
-    let hiddenOutputs = activationFuncR hiddenInputs
--- Multiply activated training inputs against output weights
-    let finalInputs = matVecDense whoNN hiddenOutputs
--- Run the activation function from the output weights result
-    let finalOutputs = activationFuncR finalInputs
--- Match the NN prediction agains the expected training value
-    let outputErrors = training -^ finalOutputs -- :: IO NLayerU
-    -- let outputErrors = minusBinOpr training finalOutputs -- :: IO NLayerU
--- Transpose the output to match the hidden inputs
-    let whoNNT = transpose whoNN -- :: IO NNLayerU
--- Multiply the difference error with the NN output weights
-    let hiddenErrors = matVecDense whoNNT outputErrors
--- Calculate a "gradient" with the expected training value, the
--- NN calculated output, which is multiplied by the hidden NN outputs
-    let preWHO = kerMap outputErrors finalOutputs hiddenOutputs
--- Apply the learning rate to the newly calculated output weights
-    let whoDelta  = transpose $ map (lRateNN *) preWHO
--- Make the "gradient" but in this case for the input weights
-    let preWIH = kerMap hiddenErrors hiddenOutputs inputs
--- Apply the learning rate to the newly calculated input weights
-    let wihDelta = transpose $ map (lRateNN *) preWIH
--- Update inner layers
-    wihFin <- computeP $ wihNN +^ wihDelta
-    whoFin <- computeP $ whoNN +^ whoDelta
-        -- wihFin <- plusBinOpr wihNN wihDelta
-        -- whoFin <- plusBinOpr whoNN whoDelta
--- Create a new NN with updated input/output weights
-    return $ NeuralNetwork lRateNN wihFin whoFin
+train inputs training (NeuralNetwork lRateNN wihNN whoNN) =
+    do
+    -- Multiply training inputs against input weights
+        let hiddenInputs = matVecDense wihNN inputs
+    -- Run the activation function from the result
+        let hiddenOutputs = activationFuncR hiddenInputs
+    -- Multiply activated training inputs against output weights
+        let finalInputs = matVecDense whoNN hiddenOutputs
+    -- Run the activation function from the output weights result
+        let finalOutputs = activationFuncR finalInputs
+    -- Match the NN prediction agains the expected training value
+        let outputErrors = training -^ finalOutputs -- :: IO NLayerU
+    -- Transpose the output to match the hidden inputs
+        let whoNNT = transpose whoNN -- :: IO NNLayerU
+    -- Multiply the difference error with the NN output weights
+        let hiddenErrors = matVecDense whoNNT outputErrors
+    -- Calculate a "gradient" with the expected training value, the
+    -- NN calculated output, which is multiplied by the hidden NN outputs
+        let preWHO = kerMap outputErrors finalOutputs hiddenOutputs
+    -- Apply the learning rate to the newly calculated output weights
+        let whoDelta  = transpose $ map (lRateNN *) preWHO
+    -- Make the "gradient" but in this case for the input weights
+        let preWIH = kerMap hiddenErrors hiddenOutputs inputs
+    -- Apply the learning rate to the newly calculated input weights
+        let wihDelta = transpose $ map (lRateNN *) preWIH
+    -- Update inner layers
+        wihFin <- computeP $ wihNN +^ wihDelta
+        whoFin <- computeP $ whoNN +^ whoDelta
+    -- Create a new NN with updated input/output weights
+        return $ NeuralNetwork lRateNN wihFin whoFin
 
 -- | Match query steps from the Python example
 query :: (Monad m) => NeuralNetwork -> NLayerU -> m NLayerU
 query (NeuralNetwork lRateNN wihNN whoNN) inputs = do
--- Multiply training inputs against input weights
-    let hiddenInputs = matVecDense wihNN inputs
--- Run the activation function from the result
-    let hiddenOutputs = activationFuncR hiddenInputs
--- Multiply activated training inputs against output weights
-    let finalInputs = matVecDense whoNN hiddenOutputs
--- Run the activation function from the output weights result
-    computeP $ activationFuncR finalInputs
+    -- Multiply training inputs against input weights
+        let hiddenInputs = matVecDense wihNN inputs
+    -- Run the activation function from the result
+        let hiddenOutputs = activationFuncR hiddenInputs
+    -- Multiply activated training inputs against output weights
+        let finalInputs = matVecDense whoNN hiddenOutputs
+    -- Run the activation function from the output weights result
+        computeP $ activationFuncR finalInputs
 
 -------------------------------------------
 --------- Repa Matrix Functions -----------
@@ -141,7 +138,7 @@ query (NeuralNetwork lRateNN wihNN whoNN) inputs = do
 --       | 6 7 8 |    | 3 |       | 44 |
 {-# INLINE matVecDense #-}
 matVecDense :: (Source r1 NNT, Source r2 NNT) => NNLayerF r1 -> NLayerF r2 -> NLayerU
-matVecDense x y = foldS (+) False $ traverse2 x y const applySHY
+matVecDense x y = sumS $ traverse2 x y const applySHY
     where applySHY f h sh@(Z :. x :. y) = f sh * h (Z :. y)
 
 -- | Transforms two Vector objects into a Matrix
@@ -166,14 +163,6 @@ minMap val = map (val -)
 {-# INLINE kerMap #-}
 kerMap :: (Source r1 NNT, Source r2 NNT, Source r3 NNT) => NLayerF r1 -> NLayerF r2 -> NLayerF r3 -> NNLayerD
 kerMap outErr outs hidden = do
-    let minusOutputs = minMap True outs
+    let minusOutputs = minMap 1 outs
     let preKer = outErr *^ outs  *^ minusOutputs
     outerProd preKer hidden
-
-instance Num Bool where
-    (+) = (||)
-    negate = not
-    (*) = (&&)
-    abs _ = True
-    signum x = x
-    fromInteger x = 1
