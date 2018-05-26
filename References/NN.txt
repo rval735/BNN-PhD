@@ -111,3 +111,9 @@ https://arxiv.org/abs/1611.03530
 
 Improving back-propagation by adding an adversarial gradient
 https://arxiv.org/abs/1510.04189
+
+Neuroscience-Inspired Artificial Intelligence
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0896627317305093
+
+Overcoming catastrophic forgetting in neural networks
+https://arxiv.org/abs/1612.00796

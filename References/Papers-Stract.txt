@@ -655,6 +655,20 @@ Improving back-propagation by adding an adversarial gradient
 - Requires an additional forward/backward pass to calculate
 - Tested on MNIST and CIFAR10, with ReLU, TanH, Logistic and Maxout
 
+Neuroscience-Inspired Artificial Intelligence
+- Promote more collaboration between Neuroscience and AI
+- Survey of the current research state in both fields: CS and Neuro Science
+- "Insights often develop through a continual handing back and forth of ideas between fields"
+- Future developments: Intuitive understanding, transfer learning, imagination, planning, virtual brain analytics
+
+Overcoming catastrophic forgetting in neural networks
+- Proposed method to remember old tasks by selectively slowing down learning
+- MNIST classification with Atari 2600 games with
+- Task-specific synaptic consolidation called "elastic weight consolidation (EWC)
+- EWC can be used for supervised and reinforcement learning with several sequential tasks
+- "EWC allows continual learning in a reinforcement learning context"
+- "EWC parallels with neurobiological models of synaptic consolidation"
+- Bayesian approach to learning, boosting rates for poorly constrained and slowing for crucial weights
 
 < NN
 -------> DCGAN
