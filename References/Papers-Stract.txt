@@ -231,6 +231,26 @@ Artificial Neural Network Implementation on a single FPGA of a Pipelined On- Lin
 - Pipelined adaptation of the back-propagation algorithm
 - Uses two degrees of parallelism: synapse-oriented and forward-backward parallelism
 
+EIE- Efficient Inference Engine on Compressed Deep Neural Network
+- ASIC for compressed NN which is more energy efficient
+- Better performance than DaDianNao, TrueNorth, GPU or FPGA implementations
+- It leverages sparcity of activations and weights
+- Also considers quantization and weight sharing
+- Smaller models also improve data transfer to local SRAM rather than DRAM
+- Almost linear scale from 1 to 256 PE, fabricated on 28nm and 2.36W
+
+Accelerating CNN inference on FPGAs- A Survey
+- Survey of current techniques used for CNN accelerated by FPGAs
+- Explain CNN elements, types of parallelism
+- Different approaches: algorithmic, datapath, model optimizations and hardware generation 
+- Reduce computations: weight pruning, rank approximation.
+
+Fast inference of deep neural networks in FPGAs for particle physics
+- Datasets from the LHC: classifier for jet substructure, aka, searches for dark sector particles
+- Open source HLS Library called hls4ml to build machine learning models in FPGA
+- FPGA implemenetations must account for data latency and throughput
+- Efficient network design consider: parallelization, quantization and compression
+
 ------> FPGA-Fin
 
 Computing system and network architectures in high frequency trading financial applications
