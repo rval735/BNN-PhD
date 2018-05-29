@@ -17,45 +17,34 @@
 \endgroup
 
 \sortlist[entry]{nty/global/}
-  \entry{2015arXiv151106434R}{article}{}
-    \name{author}{3}{}{%
-      {{hash=RA}{%
-         family={{Radford}},
-         familyi={R\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=ML}{%
-         family={{Metz}},
-         familyi={M\bibinitperiod},
-         given={L.},
-         giveni={L\bibinitperiod},
-      }}%
-      {{hash=CS}{%
-         family={{Chintala}},
-         familyi={C\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
+  \entry{Elliott-2017-compiling-to-categories}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EC}{%
+         family={Elliott},
+         familyi={E\bibinitperiod},
+         given={Conal},
+         giveni={C\bibinitperiod},
       }}%
     }
-    \keyw{Computer Science - Learning, Computer Science - Computer Vision and
-  Pattern Recognition}
-    \strng{namehash}{RAMLCS1}
-    \strng{fullhash}{RAMLCS1}
+    \keyw{Automatic Differentiation, Category Theory, Haskell}
+    \strng{namehash}{EC1}
+    \strng{fullhash}{EC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \verb{eprint}
-    \verb 1511.06434
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{doi}
+    \verb http://dx.doi.org/10.1145/3110271
     \endverb
-    \field{title}{{Unsupervised Representation Learning with Deep Convolutional
-  Generative Adversarial Networks}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.LG}
-    \field{month}{11}
-    \field{year}{2015}
+    \field{number}{ICFP}
+    \field{title}{Compiling To Categories}
+    \verb{url}
+    \verb http://conal.net/papers/compiling-to-categories
+    \endverb
+    \field{volume}{1}
+    \field{journaltitle}{Proc. ACM Program. Lang.}
+    \field{month}{09}
+    \field{year}{2017}
   \endentry
 \endsortlist
 \endinput
