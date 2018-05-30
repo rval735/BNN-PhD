@@ -117,3 +117,9 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S089662
 
 Overcoming catastrophic forgetting in neural networks
 https://arxiv.org/abs/1612.00796
+
+Training and inference with integers in deep neural networks
+https://arxiv.org/abs/1802.04680
+
+Dorefa-net- training low bitwidth convolutional neural networks with low bitwidth gradients
+https://arxiv.org/abs/1606.06160

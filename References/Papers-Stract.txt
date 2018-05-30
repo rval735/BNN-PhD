@@ -483,6 +483,14 @@ Wasserstein Learning of Deep Generative Point Process Models
 - Uses "Temporal point processes" as its main differentiator
 - Key words: Wasserstein distance training of RNN point process models
 
+Towards a Deeper Understanding of Training Quantized Neural Networks
+Training Quantized Nets- A Deeper Understanding
+- Paper interested in explaining why some quantized NN behave in some applications
+- Stochastic rounding lacks annealing properties required for non-convex optimization
+- Used Quantized Optimization routines: deterministic, stochastic rounding and binary connect
+- Binary Connect algorithm has the ability to concentrate on minimizers
+- Stochastic Rounding is unable to exploit greedy local search
+
 -------> NN
 
 Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunities
@@ -689,6 +697,18 @@ Overcoming catastrophic forgetting in neural networks
 - "EWC allows continual learning in a reinforcement learning context"
 - "EWC parallels with neurobiological models of synaptic consolidation"
 - Bayesian approach to learning, boosting rates for poorly constrained and slowing for crucial weights
+
+Training and inference with integers in deep neural networks
+- WAGE (Weights, Activations, Gradients and Errors) layers are shifted and linearly constrained to low-bitwidth integers
+- Use low precision integers to train the NN, 2/8 bits
+- MNIST, CIFAR, SVHN and ImageNet training sets
+- WAGE empowers pure low-bitwidth integer dataflow for training and inference
+
+Dorefa-net- training low bitwidth convolutional neural networks with low bitwidth gradients
+- Weights and activations can be deterministically quantized
+- Gradients need to be stochastically quantized
+- SVHN and ImageNet datasets
+- Gradients are quantized each time before they reach the selected convolution layers during the backward pass
 
 < NN
 -------> DCGAN

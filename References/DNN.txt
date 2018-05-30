@@ -11,3 +11,8 @@ https://arxiv.org/abs/1404.7828
 
 Synthetically Trained Neural Networks for Learning Human-Readable Plans from Real-World Demonstrations
 https://news.developer.nvidia.com/new-ai-technique-helps-robots-work-alongside-humans/
+
+Towards a Deeper Understanding of Training Quantized Neural Networks
+Training Quantized Nets- A Deeper Understanding
+https://www.padl.ws/papers/Paper%2016.pdf
+https://arxiv.org/pdf/1706.02379.pdf
