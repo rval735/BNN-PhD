@@ -16,3 +16,6 @@ Towards a Deeper Understanding of Training Quantized Neural Networks
 Training Quantized Nets- A Deeper Understanding
 https://www.padl.ws/papers/Paper%2016.pdf
 https://arxiv.org/pdf/1706.02379.pdf
+
+Opening the Black Box of Deep Neural Networks via Information
+https://arxiv.org/abs/1703.00810

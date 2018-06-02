@@ -65,6 +65,29 @@ Designing Energy-Efficient Convolutional Neural Networks using Energy-Aware Prun
 - Reduce energy consumption: AlexNet (3.7x) and GoogLeNet (1.6x)
 - Accuracy after pruning, less than 1% loss
 
+Genetic CNN
+- Proposed possibility of learning DNN structures automatically
+- Encoding method to represent each network structure in a fixed-length binary string
+- Genetic algorithm is only used to propose new network structures
+- Tested on ILSVRC(50i, 76.58%), MNIST (50i, 99.62%a) and CIFAR (i= iteration, %a= average)
+- Large fraction of network structures are still unexplored
+
+Designing architectures of convolutional neural networks to solve practical problems
+- Propose mechanisms to estimate effective CNN configurations based on FNN
+- False Nearest Neighbors, used in dynamical systems, helps to estimate CNN architectures
+- FNN transforms images and builds high dimensional space vectors
+- Datasets: CMU, MNISt, COIL, GTSRB
+- This paper CNN compare in error rates at a lower complexity
+- FNN method iteratively increases the dimension of the phase space, measuring, at each step, how much neighborhood relations change
+
+Evolutionary convolutional neural networks: An application to handwriting recognition
+- Automatic design of CNN topologies
+- Common framework with novel solutions based on genetic algorithms (GA) and grammatical evolution (GE)
+- MNIST data set tested
+- GE provides a more flexible definition of the phenotype and simultaneously prevents some of the redundancies present in the GA encoding
+- Neuroevolution is an interesting field to explore the automatic design of NN topologies,
+- Requires a fraction of the time and no manual intervention
+
 ------> CNN-Fin
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
@@ -490,6 +513,12 @@ Training Quantized Nets- A Deeper Understanding
 - Used Quantized Optimization routines: deterministic, stochastic rounding and binary connect
 - Binary Connect algorithm has the ability to concentrate on minimizers
 - Stochastic Rounding is unable to exploit greedy local search
+
+Opening the Black Box of Deep Neural Networks via Information
+- Demonstrate the effectiveness of the Information-Plane visualization of DNNs
+- The training time is dramatically reduced when adding more hidden layers
+- Extend the theory around Information Theory of Deep Learning
+- Information Bottleneck: framework for finding approximate minimal sufficient statistics, or the optimal tradeoff between compression of X and prediction of Y
 
 -------> NN
 
@@ -922,6 +951,35 @@ Training binary multilayer neural networks for image classification using expect
 - Tested for the MNIST data set
 - Performance is ok but not comparable to other DNN with real values
 - Dropout techniques significantly improve BNN with EBP
+
+Back Propagation Learning With Trinary Quantization of Weight Updates
+- Three value states: increment, decrement or same magnitude (zero) for weights
+- Aims for parallel implementations wuth 3 - 10x less iterations than standard BP
+- Sigmoid activation function (unbounded and not asymptotic)
+- The algorithm performs a descent on sum-square error surfaces
+
+GXNOR-Net- Training deep neural networks with ternary weights and activations without full-precision memory under a unified discretization framework
+- Gradient decent with 3 elements, using derivates of pulses-like functions
+- Multi-step neuronal activation discretization method and derivates approximations
+- "Gates" connected to neurons, it is "deactivated", which reduces consumption
+- Tested for MNIST, CIFAR and SVHN, reaching better results on them all
+- Three special parameters: m (quantizer), a (derivate width) and r (excitability control)
+
+FP-BNN- Binarized neural network on FPGA
+- Proposed BNN to cut down hardware consumption while maintaining acceptable accuracy
+- Resource-Aware Model Analysis (RAMA) method to 
+- 64-channel accelerator architecture for CNN and FC-NN
+- Stratix-V 5SGSD8 FPGA, 26.2W, 150MHz
+- MNIST, CIFAR and AlexNet
+
+Training deep neural networks with discrete state transition
+- Discrete State Transition (DST) introduces a probabilistic projection operator
+- DST constrains the weight matrices in a discrete weight space (DWS)
+- MNIST (1.07%), CIFAR10 (11.84%) and SVHN (2.45%) datasets
+- Could be designed for online training and computational cost reduced
+- Values could range within multi-level states in a discrete weight space
+
+< BNN
 
 ------> Other
 

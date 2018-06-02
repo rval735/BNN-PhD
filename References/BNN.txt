@@ -66,3 +66,15 @@ http://minjekim.com/
 
 Training binary multilayer neural networks for image classification using expectation backpropagation
 https://arxiv.org/abs/1503.03562
+
+Back Propagation Learning With Trinary Quantization of Weight Updates
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/089360809190007R?via%3Dihub
+
+GXNOR-Net- Training deep neural networks with ternary weights and activations without full-precision memory under a unified discretization framework
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0893608018300108
+
+FP-BNN- Binarized neural network on FPGA
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217315655
+
+Training deep neural networks with discrete state transition
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217311864

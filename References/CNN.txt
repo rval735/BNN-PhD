@@ -51,3 +51,12 @@ https://arxiv.org/abs/1805.01934
 
 An image representation based convolutional network for DNA classification 
 https://openreview.net/forum?id=HJvvRoe0W
+
+Genetic CNN
+https://arxiv.org/abs/1703.01513
+
+Designing architectures of convolutional neural networks to solve practical problems
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0957417417307340
+
+Evolutionary convolutional neural networks: An application to handwriting recognition
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217319112
