@@ -55,8 +55,8 @@ nnFunction = do
     nn <- createNNR nnBase
 
     -- Read the contents of the CSV file for training and testing
-    !trainCSV <- readCSVFile "../MNIST-Data/mnist_train-100.csv"
-    !testCSV <- readCSVFile "../MNIST-Data/mnist_test-10.csv"
+    !trainCSV <- readCSVFile "../MNIST-Data/mnist_train.csv"
+    !testCSV <- readCSVFile "../MNIST-Data/mnist_test.csv"
 
     -- With the contents read, train the NN
     trainedNN <- analyzeLines epochs nn trainCSV
@@ -125,7 +125,7 @@ readMImg = decodeMImg . map fst . mapMaybe C8L.readInt . C8L.split ','
 decodeMImg :: [Int] -> MImg
 decodeMImg []     = MImg 0 dData cData
     where dData = desiredOutput 0
-          cData = fromListUnboxed (ix1 inputNodes) $ replicate inputNodes False
+          cData = fromListUnboxed (ix1 inputNodes) $ replicate inputNodes 0
 decodeMImg (x:xs) = MImg x cData dData
     where cData = desiredOutput x
           dData = fromListUnboxed (ix1 inputNodes) $ map normalizer xs
@@ -135,7 +135,7 @@ decodeMImg (x:xs) = MImg x cData dData
 -------------------------------------------
 -- | Normalize a value that is between 0 and 255 so it becomes 0.01 - 0.99
 normalizer :: Int -> NNT
-normalizer x = x > 127
+normalizer x = 0.01 + fromIntegral x / 255 * 0.99
 
 -- | Consider if the Layer prediction matches the index in which the
 --   expected value should be. For example, parameters like:
@@ -143,12 +143,14 @@ normalizer x = x > 127
 --   would return "True", because "5" is the max value and it is
 --   placed in the index "3" of the array.
 matchesIndex :: Int -> NLayerU -> Bool
-matchesIndex index xs = toList xs !! index
+matchesIndex index xs = maxVal == valAtIndex
+    where maxVal = foldAllS max mostMinDouble xs
+          valAtIndex = toList xs !! index
 
 -- | Create a layer of 10 elements that has a maximum value of 0.99 in the
 --   "val" position, otherwise 0.01
 desiredOutput :: Int -> NLayerU
-desiredOutput val = fromListUnboxed (ix1 outputNodes) [x == val | x <- [0 .. 9]]
+desiredOutput val = fromListUnboxed (ix1 outputNodes) [if x == val then 0.99 else 0.01 | x <- [0 .. 9]]
 
 -- | Use the integer minimum bound as a measure for Double types
 mostMinDouble :: Double
