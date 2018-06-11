@@ -19,3 +19,9 @@ https://arxiv.org/pdf/1706.02379.pdf
 
 Opening the Black Box of Deep Neural Networks via Information
 https://arxiv.org/abs/1703.00810
+
+Deep Learning using Linear Support Vector Machines
+https://arxiv.org/abs/1306.0239
+
+Deeply-Supervised Nets
+https://arxiv.org/abs/1409.5185

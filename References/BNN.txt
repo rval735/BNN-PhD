@@ -78,3 +78,9 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S092523
 
 Training deep neural networks with discrete state transition
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217311864
+
+Ternary Weight Networks
+https://arxiv.org/abs/1605.04711
+
+Attacking Binarized Neural Networks
+https://arxiv.org/abs/1711.00449
