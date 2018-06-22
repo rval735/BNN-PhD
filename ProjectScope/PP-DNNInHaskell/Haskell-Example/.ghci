@@ -16,3 +16,6 @@ import qualified Data.ByteString.Char8 as C8
 :set -XTypeOperators
 import qualified Data.ByteString.Lazy       as BSL
 import           Data.Foldable
+import qualified Data.Array.Repa as RP
+import Data.List.Unique
+import           Data.Bool (bool)

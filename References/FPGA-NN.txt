@@ -18,3 +18,21 @@ https://hal.archives-ouvertes.fr/hal-01695375v2
 
 Fast inference of deep neural networks in FPGAs for particle physics
 https://arxiv.org/abs/1804.06913
+
+F-CNN- An FPGA-based framework for training Convolutional Neural Networks
+https://ieeexplore.ieee.org/document/7760779/
+
+Cnp: an fpga-based processor for convolutional networks
+https://ieeexplore.ieee.org/document/5272559/
+
+CNN-MERP- An FPGA-Based Memory-Efficient Reconfigurable Processor for Forward and Backward Propagation of Convolutional Neural Networks
+https://arxiv.org/pdf/1703.07348.pdf
+
+Toolflows for Mapping Convolutional Neural Networks on FPGAs: A Survey and Future Directions
+https://arxiv.org/abs/1803.05900
+
+Throughput-Optimized OpenCL-based FPGA Accelerator for Large-Scale Convolutional Neural Networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847276
+
+PipeCNN: An OpenCL-Based FPGA Accelerator for Large-Scale Convolution Neuron Networks
+https://arxiv.org/abs/1611.02450

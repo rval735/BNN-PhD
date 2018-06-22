@@ -60,3 +60,9 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S095741
 
 Evolutionary convolutional neural networks: An application to handwriting recognition
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231217319112
+
+Quantized Convolutional Neural Networks for Mobile Devices
+https://arxiv.org/abs/1512.06473
+
+Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation
+https://arxiv.org/abs/1712.00080

@@ -84,3 +84,15 @@ https://arxiv.org/abs/1605.04711
 
 Attacking Binarized Neural Networks
 https://arxiv.org/abs/1711.00449
+
+Binary backpropagation in content addressable memory
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5726804/
+
+Content addressable networks for initialization of backpropagation with zero error solutions
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/226962/
+
+Hardware efficient learning on a 3-D optoelectronic neural system
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/374468/
+
+A high-storage capacity content-addressable memory and its learning algorithm
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/31325/

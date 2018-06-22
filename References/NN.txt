@@ -123,3 +123,14 @@ https://arxiv.org/abs/1802.04680
 
 Dorefa-net- training low bitwidth convolutional neural networks with low bitwidth gradients
 https://arxiv.org/abs/1606.06160
+
+Learning and Memory in Neural Networks
+http://homepages.inf.ed.ac.uk/rbf/EUCOGNITION/BRIEFINGS/billings.pdf
+
+Selfless Sequential Learning.pdf
+https://arxiv.org/abs/1806.05421
+
+Explorations of the Mean Field Theory Learning Algorithm 
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/0893608089900452 
+http://home.thep.lu.se/~carsten/pubs/lu_tp_89_02.pdf
+https://researchr.org/publication/PetersonH89/

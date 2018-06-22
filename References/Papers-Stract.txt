@@ -271,8 +271,30 @@ Accelerating CNN inference on FPGAs- A Survey
 Fast inference of deep neural networks in FPGAs for particle physics
 - Datasets from the LHC: classifier for jet substructure, aka, searches for dark sector particles
 - Open source HLS Library called hls4ml to build machine learning models in FPGA
-- FPGA implemenetations must account for data latency and throughput
+- FPGA implementations must account for data latency and throughput
 - Efficient network design consider: parallelization, quantization and compression
+
+F-CNN- An FPGA-based framework for training Convolutional Neural Networks
+- Reconfiguring a streaming data path at runtime for training CNN
+- Maxeler technology can achieve a performance of 62.06 GFLOPS for 32-bit floating point
+- Training LeNet-5 is 4x faster than CPU and 7.5x more energy efficient than GPU
+
+Toolflows for Mapping Convolutional Neural Networks on FPGAs: A Survey and Future Directions
+- Full survey on current development of FPGA frameworks to run CNN
+- It talks generally about interface, hardware, portability.
+- Hardware architecture is divided in streaming and single computation engines
+
+Throughput-Optimized OpenCL-based FPGA Accelerator for Large-Scale Convolutional Neural Networks
+- Implementation of a CNN into a FPGA using OpenCL
+- AlexNet and VGG running on P395-D8 and DE5-Net FPGA boards
+- ImageNet classification with peak performance of 136.5 GOPS for convolutions; 117.8 GOPS for the entire VGG network
+- 8-bit convolution weights precision and 10-bit inner product weights precision
+
+PipeCNN: An OpenCL-Based FPGA Accelerator for Large-Scale Convolution Neuron Networks
+- FPGA accelerator with a new architecture of deeply pipelined OpenCL kernels
+- AlexNet and VGG on Altera Stratix-V A7 FPGA
+- 33.9 GOPS with a 34% resource reduction on DSP blocks compared to previous work
+- Open source code located in https://github.com/doonny/PipeCNN
 
 ------> FPGA-Fin
 
@@ -739,6 +761,21 @@ Dorefa-net- training low bitwidth convolutional neural networks with low bitwidt
 - SVHN and ImageNet datasets
 - Gradients are quantized each time before they reach the selected convolution layers during the backward pass
 
+Learning and Memory in Neural Networks
+- Paper that mentions multilayer perceptron, Hopfield and associative networks
+- Explains briefly how multilayer perceptrons can classify non linear input
+- Hopfield networks can create CAM to retrieve patterns from partial information
+- Associative networks are feedforward NN that learn an association between two input patterns
+
+Explorations of the Mean Field Theory Learning Algorithm 
+- MFT compared against Back Propagation (BP) in mirror simmetry and pattern classification
+- A NxN (visible x hidden) units can store up to 4N patterns
+- MFT can be implemented using VLSI circuitry
+- MFT learns in a substantially smaller number of training epochs than BP
+- [0,1] representation yields slower learning but better generalization than [-1,1]
+- MFT is somewhat more biological than BP because the first depends only on neighboring neuron states
+- MFT could perform feature recognition, CAM or optimization, the last with learning features "turned off"
+
 < NN
 -------> DCGAN
 
@@ -991,6 +1028,33 @@ Attacking Binarized Neural Networks
 - Black box: CleverHans for both MNIST and CIFAR-10 datasets
 - In BNN, difficulty in training leads to difficulty when attacking
 
+Binary backpropagation in content addressable memory
+- Use CAM + Binary BP to learn patterns in data
+- Activation function uses XOR, as it does for distance to the target
+- Because of discrete size corrections, minimal size is chosen, at most 1 bit in any connection row
+- When all the synapse functions are identical, selection is arbitrary
+- Patterns with a small number of discrete levels can be learned through a simple extension of the synapse function
+- Asymmetric two variable boolean functions must be learnt locally by the NN 
+
+Hardware efficient learning on a 3-D optoelectronic neural system
+- Mentions an special type of processor called Dual-Scale Topology Optoelectronic Processor (D-STOP)
+- States that BackProp and CAN (Content-Addressable networks) can be mapped to D-STOP
+- Explains the CAN algorithm, and how a NN can be initialized with CAN then move to BP
+- Because CAN uses boolean operations, cumulative errors are eliminated
+
+Content addressable networks for initialization of backpropagation with zero error solutions
+- CAN networks learn BP-like associations with an exact, error-free solutions
+- It is possible to initialize BP quickly from a CAN solution
+- CAN is a system that allows simple, efficient, discrete computational units to learn generalized mappings
+- Advantages: rapid convergence, natural hardware efficiency, quickly produce exact solutions with zero error
+
+A high-storage capacity content-addressable memory and its learning algorithm
+- Considers VLSI as a target implementation
+- It bases its theory in Hopfield networks with CAM properties
+- Connection weights are restricted to the [-1, 0, 1] domain
+- The paper presents SPICE simulations of the circuit proposed
+- It can be programmed to do CAM or optimization problems
+- The learning algorithm allows matrices to be asymmetric, where each neuron outputs (-1,1)
 
 < BNN
 
