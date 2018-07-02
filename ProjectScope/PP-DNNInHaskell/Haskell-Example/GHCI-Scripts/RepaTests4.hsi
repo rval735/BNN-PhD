@@ -3,8 +3,8 @@ let x = 3 :: InputNodes
 let y = 3 :: OutputNodes
 let x' = fromIntegral x
 let y' = fromIntegral y
-let shape = Z :. x :. y
-let ssh = Z :. x
+let shape = RP.ix2 x y
+let ssh = RP.ix1 x
 
 let stdRand = mkStdGen 8
 let listedWIH = take (x' * y') $ (randoms stdRand :: [Bool])

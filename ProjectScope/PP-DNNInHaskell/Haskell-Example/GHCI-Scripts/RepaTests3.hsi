@@ -58,3 +58,9 @@ traverse fLayer1 DIM0
 
 let xp = fromListUnboxed (Z :. (3::Int) :. (3::Int) :. (3::Int)) [1..27] :: Array U DIM3 Int
 computeP $ traverse x id (\_ (Z :. i :. j :. k) -> i) :: IO (Array U DIM3 Int)
+
+xl = fromListUnboxed (ix2 3 2) [1..6] :: Array U DIM2 Int
+computeP $ R.traverse xl (\(Z :. sx :. sy) -> ix1 sx) (\f (Z :. i) -> f (ix2 0 i)) :: IO (Array U DIM1 Int)
+
+computeP $ foldS (\x y -> bool y (y + 1) (x > 3)) 0 xl :: IO (Array U DIM1 Int)
+foldP (\x y -> x + y) 0 xl :: IO (Array U DIM1 Int)

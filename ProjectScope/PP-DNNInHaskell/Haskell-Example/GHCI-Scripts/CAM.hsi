@@ -1,0 +1,116 @@
+gen = mkStdGen 5
+
+camW = fromListUnboxed (ix2 2 2) [False, False, False, False]
+camT = fromListUnboxed (ix1 2) [2,2]
+camN = CAMNeuron camW camT
+
+input0 = fromListUnboxed (ix1 2) [False, False]
+output0 = fromListUnboxed (ix1 2) [False, False]
+input1 = fromListUnboxed (ix1 2) [False, True]
+output1 = fromListUnboxed (ix1 2) [True, True]
+input2 = fromListUnboxed (ix1 2) [True, False]
+output2 = fromListUnboxed (ix1 2) [True, True]
+input3 = fromListUnboxed (ix1 2) [True, True]
+output3 = fromListUnboxed (ix1 2) [False, False]
+
+inputs = [input0, input3, input1, input2]
+outputs = [output0, output3, output1, output2]
+ioputs = zip inputs outputs
+nn = [camN, camN]
+
+nn' = foldr (\(x, y) w -> trainCAMNN gen x y w) nn ioputs
+
+applyNeurons neurons input = foldl (\x y -> applyNeuron x y) input neurons
+Prelude.map (applyNeurons nn') inputs
+
+index = 0
+camU = CAMUpdate CAMWeigth 0 0
+
+trainCAMNN input2 output2 0 camU nn
+
+
+
+
+
+
+
+
+--------------------------------
+
+--------------------------------
+
+--------------------------------
+
+gen = mkStdGen 5
+
+--------------------------------
+
+camN = randomCAMNeuron gen 5 4
+camW = camWeigths camN
+camT = camThresholds camN
+gen' = snd $ next gen
+input = randomNNTVU gen' 5
+
+camW0 = fromListUnboxed (ix2 2 2) [False, False, False, False]
+camT0 = fromListUnboxed (ix1 2) [2,1]
+camN0 = CAMNeuron camW0 camT0
+
+camW1 = fromListUnboxed (ix2 2 2) [True, False, True, False]
+camT1 = fromListUnboxed (ix1 2) [2,2]
+camN1 = CAMNeuron camW1 camT1
+
+input0 = fromListUnboxed (ix1 2) [False, False]
+output0 = fromListUnboxed (ix1 2) [False, False]
+input1 = fromListUnboxed (ix1 2) [False, True]
+output1 = fromListUnboxed (ix1 2) [True, True]
+input2 = fromListUnboxed (ix1 2) [True, False]
+output2 = fromListUnboxed (ix1 2) [True, True]
+input3 = fromListUnboxed (ix1 2) [True, True]
+output3 = fromListUnboxed (ix1 2) [False, False]
+
+inputs = [input0, input3, input1, input2]
+outputs = [output0, output3, output1, output2]
+ioputs = zip inputs outputs
+nn = [camN0, camN1]
+
+res0 = applyNeuron input2 camN0
+res1 = applyNeuron res0 camN1
+res1
+
+applyNeurons neurons input = foldl (\x y -> applyNeuron x y) input neurons
+Prelude.map (applyNeurons nn) inputs
+
+
+--------------------------------
+let numElems = 64
+let threshold = 1
+let trainingDInputR = take 100 $ randomRs (-0.5, 0.5) gen :: [Double]
+let trainingDCorrectR = map sin trainingDInputR
+let trainingBInput = map doubleToWord trainingDInputR
+let trainingBCorrect = map doubleToWord trainingDCorrectR
+let (_, gen') = next gen
+let testDInput = take numElems $ randomRs (-0.5, 0.5) gen' :: [Double]
+let testDCorrect = map sin testDInput
+let testBInput = map doubleToWord testDInput
+let testBCorrect = map doubleToWord testDCorrect
+
+--------------------------------
+
+let (_, gen) = next gen'
+let weigths0 = take numElems $ randoms gen :: [Word64]
+let weigths1 = take numElems $ randoms gen :: [Word64]
+let weigths2 = take numElems $ randoms gen :: [Word64]
+
+fstElem = trainingBInput !! 0
+fstElemCorrect = trainingBCorrect !! 0
+
+let fstCalc = sumBits $ map (xorPCThreshold fstElem threshold) weigths0
+let sndCalc = sumBits $ map (xorPCThreshold fstCalc threshold) weigths1
+let trdCalc = sumBits $ map (xorPCThreshold sndCalc threshold) weigths2
+
+let deltaCalc = xor trdCalc fstElemCorrect
+
+
+
+
+--------------------------------
