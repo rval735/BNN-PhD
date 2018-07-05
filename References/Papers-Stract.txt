@@ -1056,6 +1056,15 @@ A high-storage capacity content-addressable memory and its learning algorithm
 - It can be programmed to do CAM or optimization problems
 - The learning algorithm allows matrices to be asymmetric, where each neuron outputs (-1,1)
 
+Optical matrix–vector implementation of the content-addressable network
+- Explains how CAN works
+- CAN is a learning algorithm that provides heteroassociative classification abilities
+- CAN can learn arbitrary binary patterns in parallel hardware implementations
+- Implementation of the CAN to optical systems
+- Used optical matrix-vector multiplication for weight computation of recall
+- Electronics were used for threshold, learning and control
+- CAN can learn and operate with tolerance to non ideal environments
+
 < BNN
 
 ------> Other

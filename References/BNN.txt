@@ -96,3 +96,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/374468/
 
 A high-storage capacity content-addressable memory and its learning algorithm
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/31325/
+
+Optical matrix–vector implementation of the content-addressable network
+https://www-osapublishing-org.ezproxy.auckland.ac.nz/ao/abstract.cfm?uri=ao-32-8-1338
