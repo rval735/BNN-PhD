@@ -99,3 +99,9 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/31325/
 
 Optical matrix–vector implementation of the content-addressable network
 https://www-osapublishing-org.ezproxy.auckland.ac.nz/ao/abstract.cfm?uri=ao-32-8-1338
+
+Neural networks for high-storage content-addressable memory- VLSI circuit and learning algorithm
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/32008/
+
+Associative content-addressable networks with exponentially many robust stable states
+https://arxiv.org/abs/1704.02019

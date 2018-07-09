@@ -1065,6 +1065,22 @@ Optical matrix–vector implementation of the content-addressable network
 - Electronics were used for threshold, learning and control
 - CAN can learn and operate with tolerance to non ideal environments
 
+Neural networks for high-storage content-addressable memory- VLSI circuit and learning algorithm
+- Proposed fully interconnected neural network with only two binary memory points per synapse
+- Proposed algorithm for programming a Hopfield neural network as a high-storage content-addressable memory
+- -1, 0, 1 as possible synaptic weights values
+- Could be used in: optimization, pattern recognition and image processing.
+
+
+Associative content-addressable networks with exponentially many robust stable states
+- Construction of ACAM (Associative Content-Addressable neural Memory) with robust error correction
+- ACAM possesses expander graph connectivity on a restricted Boltzmann machine
+- Constraint nodes correct corrupted input patterns to the nearest (in Hamming distance) permitted pattern
+- A network with initially specified connectivity but unspecified weights can self-organize to have exponentially many well-separated minima
+- ACAM can be used to to generate robust labels for arbitrary input patterns in a high 
+dimensional space
+
+
 < BNN
 
 ------> Other
