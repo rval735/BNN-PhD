@@ -17,6 +17,7 @@ import qualified Data.ByteString.Char8 as C8
 import qualified Data.ByteString.Lazy       as BSL
 import           Data.Foldable
 import qualified Data.Array.Repa as R
+import qualified Prelude as P
 import Data.Array.Repa
 import Data.Array.Repa
 import Data.List.Unique
