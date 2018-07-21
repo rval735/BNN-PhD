@@ -18,9 +18,25 @@ Prelude.map (applyNeurons nn') inputs
 Prelude.map (applyNeurons nn'') inputs
 Prelude.map (applyNeurons nn''') inputs
 
-
-
 --------------------------------
+
+train = input1
+desired = output1
+
+query = foldl applyNeuron train nn
+lstIndex = 1
+
+deltaWeights' camW0 sel0 sel0 output2
+deltaThreshold' camT0 sel0 output0
+
+updateCAMNeuron' camN0 CAMThreshold sel0 output0 output0
+updateCAMNeuron' camN0 CAMWeight sel0 input0 input0
+
+applyBackProp output1 input0 input0 camN2
+
+trainNeurons' (trainSet !! 1) (updates !! 1) nn
+trainCAMNN' nn updates trainSet
+queryCAMNN nn trainSet
 
 --------------------------------
 

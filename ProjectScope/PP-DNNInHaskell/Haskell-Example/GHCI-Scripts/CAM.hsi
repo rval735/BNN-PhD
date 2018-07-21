@@ -1,16 +1,16 @@
 gen = mkStdGen 2
 
 camW0 = fromListUnboxed (ix2 2 2) [False, False, False, False]
-camT0 = fromListUnboxed (ix1 2) [2,2]
-camN0 = CAMNeuron camW0 camT0
+camT0 = fromListUnboxed (ix1 2) [2, 2] :: NTTVU
+camN0 = CAMNeuron (CAMWElem camW0 0) (CAMTElem camT0 0)
 
 camW1 = fromListUnboxed (ix2 2 2) [False, False, False, False]
-camT1 = fromListUnboxed (ix1 2) [2,1]
-camN1 = CAMNeuron camW1 camT1
+camT1 = fromListUnboxed (ix1 2) [2,1] :: NTTVU
+camN1 = CAMNeuron (CAMWElem camW1 0) (CAMTElem camT1 0)
 
 camW2 = fromListUnboxed (ix2 2 2) [True, False, True, False]
-camT2 = fromListUnboxed (ix1 2) [2,2]
-camN2 = CAMNeuron camW2 camT2
+camT2 = fromListUnboxed (ix1 2) [2,2] :: NTTVU
+camN2 = CAMNeuron (CAMWElem camW2 0) (CAMTElem camT2 0)
 
 sel0 = fromListUnboxed (ix1 2) [True, False]
 
@@ -28,15 +28,12 @@ outputs = [output0, output1, output2, output3]
 trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
 
 nn = [camN0, camN0]
--- updatesLst = [(1, 0, CAMThreshold), (1, 0, CAMWeight), (0, 1, CAMThreshold), (0, 0, CAMWeight)]
--- updates = P.map (\(x, y, z) -> CAMUpdate x y z) updatesLst
-updates = take (length trainSet) $ constructUpdate 2
+updatesLst = [(1, 0, CAMThreshold), (1, 0, CAMWeight), (0, 1, CAMThreshold), (0, 0, CAMWeight)]
+updates = P.map (\(x, y, z) -> CAMUpdate x y z) updatesLst
+updates = take (length trainSet) $ constructUpdate' (length nn)
 
--- nn' = trainCAMNN nn updates trainSet
-queryReverseCAMNN nn trainSet
+nn' = trainNeurons' (trainSet !! 1) (updates !! 1) nn
+nn'' = trainNeurons' (trainSet !! 2) (updates !! 2) nn'
 
-train = input1
-desired = output1
-
-query = foldl applyNeuron train nn
-lstIndex = 1
+trainCAMNN' nn updates trainSet
+trainUntilLearned' nn trainSet 0 3
