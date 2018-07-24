@@ -353,6 +353,42 @@ xorPCThreshold x y = (<= y) . popCount . xor x
 flipElems :: Bits a => a -> a -> a
 flipElems = (.|.)
 
+num2Bin :: Int -> String
+num2Bin n
+    | n >= 0     =  concatMap show . reverse . n2b $ n
+    | otherwise  =  concatMap show . reverse . n2b . abs $ n
+
+n2b :: Int -> [Int]
+n2b 0 =  []
+n2b n =  n `mod` 2 : n2b (n `div` 2)
+
+num2Bin' :: Int -> Int -> [Bool]
+num2Bin' _ 0 = []
+num2Bin' size num = P.map (\x -> bool False True (check x == 0)) $ lst size
+    where lst x = take x $ iterate (* 2) 1
+          check x = mod (div (num - x) x) 2
+
+roundExp :: Int -> Int -> Int
+roundExp x y = mod opr1 opr2
+    where opr1 = round (fromIntegral x / 10 ** fromIntegral y)
+          opr2 = round $ 2 ** fromIntegral y
+
+str2Bin :: String -> [Bool]
+str2Bin = P.map (\x -> bool False True ('1' == x))
+
+fixedSize :: Int -> [Bool]-> [Bool]
+fixedSize _ [] = []
+fixedSize y xs
+    | y <= 0 || lstLength == y = xs
+    | lstLength > y = reverse . take y . reverse $ xs
+    | otherwise = missingPart ++ xs
+    where missingPart = replicate (y - lstLength) False
+          lstLength = length xs
+
+-- variant of map that passes each element's index as a second argument to f
+indexedMap :: (a -> Int -> b) -> [a] -> [b]
+indexedMap f l = P.zipWith f l [0..]
+
 ---------------------------------------------------------------------------
 
 trainNeurons' :: TrainElem -> CAMUpdate -> [CAMNeuron] -> [CAMNeuron]
@@ -376,7 +412,8 @@ trainUntilLearned' nn trainSet shiftUpdate tolerance = do
     let updates = constructUpdate' $ length nn
     let shifted = take (length trainSet) $ applyNTimes updates shiftLeft shiftUpdate
     let nn' = trainCAMNN' nn updates trainSet
-    print nn'
+    print . filter (uncurry (==)) $ zip nn nn'
     let distance = sum $ distanceCAMNN nn' trainSet
     -- print distance
     bool (trainUntilLearned' nn' trainSet (shiftUpdate + 1) tolerance) (return nn') (distance <= tolerance)
+
