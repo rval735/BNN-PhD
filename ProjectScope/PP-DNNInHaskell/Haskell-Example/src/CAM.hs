@@ -17,13 +17,13 @@ module CAM
 -- )
 where
 
-
+import           CAMTypes
 import           Data.Array.Repa                      hiding ((++))
 import           Data.Array.Repa.Algorithms.Randomish (randomishIntArray)
 import           Data.Array.Repa.Eval                 (Target)
 import           Data.Array.Repa.Repr.Unboxed         (Unbox)
 import           Data.Bits
-import           Data.Bool
+import           Data.Bool                            (bool)
 import           Data.Maybe
 import           Data.Word
 import           Prelude                              hiding (map, traverse,
@@ -31,78 +31,6 @@ import           Prelude                              hiding (map, traverse,
 import qualified Prelude                              as P
 import           System.Random
 
-type WeightsSize = Int
-type ThresholdSize = Int
-
--- | Code synonyms to ease relationship between function
---   parameters and their application
-
--- | NNT stands for Neural Network Type, which is the NN
---   type of values it carries and outputs
-type NNT = Bool
-
--- | NTT stands for Neural Threshold Type, which is the NN
---   type of values it needs to consider threshold values
-type NTT = Int
-
-
--- | Synonyms for dimensions
---   VShape stands for Vector Shape, which is a single dimension
-type VShape = DIM1 -- Z :. InputNodes
---   MShape stands for Matrix Shape, which is two dimensions
-type MShape = DIM2 -- Z :. InputNodes :. OutputNodes
-
--- | Synonyms for Array types used in NNClass
---   Flex means that it can be (un)boxed and different shape, but with NNT values
-type NNTLayerFlex r sh = Array r sh NNT
-type NNTLayerU sh = NNTLayerFlex U sh
-type NNTLayerD sh = NNTLayerFlex D sh
-
--- | NNT - Neural Network Type; V - Vector; D - Delayed
-type NNTVD = NNTLayerD VShape
--- | M - Matrix; D - Delayed
-type NNTMD = NNTLayerD MShape
--- | U - Unboxed
-type NNTVU = NNTLayerU VShape
-type NNTMU = NNTLayerU MShape
--- | F - Flexible to be delayed or unboxed
-type NNTVF r = NNTLayerFlex r VShape
-type NNTMF r = NNTLayerFlex r MShape
-
-type NTTVU = Array U VShape NTT
-
-data CAMNeuron = CAMNeuron {
-    camWeights    :: CAMWElem,
-    camThresholds :: CAMTElem
-} deriving (Eq, Show)
-
-data CAMWElem = CAMWElem {
-    camWElem :: NNTMU,
-    wChange  :: Int
-} deriving (Eq, Show)
-
-data CAMTElem = CAMTElem {
-    camTElem :: NTTVU,
-    tChange  :: Int
-} deriving (Eq, Show)
-
-type CAMNN = [CAMNeuron]
-
-data CAMElem = CAMWeight | CAMThreshold
-    deriving (Eq, Show)
-
-data CAMUpdate = CAMUpdate {
-    lstIndex :: Int,
-    nnIndex  :: Int,
-    camElem  :: CAMElem
-} deriving (Show)
-
-data TrainElem = TrainElem {
-    trainInput  :: NNTVU,
-    trainOutput :: NNTVU
-} deriving (Show)
-
-type QueryData = NNTVU
 
 transformElem :: (Shape sh, Bits a, Unbox a) => Array U sh a -> sh -> (a -> a)-> Array U sh a
 transformElem mtx sh trans = computeUnboxedS res
@@ -144,6 +72,9 @@ applyReverseNeuron' input (CAMNeuron (CAMWElem camW reg) camT) = res
           summ = layerSummation collision
           res = layerOperation summ camT (<)
 
+transformToDelta :: NNTMU -> NNTVU
+transformToDelta = foldS (.|.) False
+
 applyBackProp :: NNTVU -> NNTVU -> NNTVU -> CAMNeuron -> NNTVU
 applyBackProp delta input output (CAMNeuron camW camT) = foldS (.&.) True dWeights
     where dWeights = transpose $ deltaWeights' camW input output delta
@@ -154,21 +85,21 @@ vecCompare x y = computeS $ zipWith xor x y
 hammingWeight :: NNTVU -> Int
 hammingWeight x = sumAllS $ map (bool 0 1) x
 
-trainNeurons :: TrainElem -> CAMUpdate -> [CAMNeuron] -> [CAMNeuron]
-trainNeurons (TrainElem train desired) (CAMUpdate lstIndex nnIndex camElem) nn = bool nn' nn (hammingWeight compared == 0)
-    where query = foldl applyNeuron train nn
-          compared = vecCompare query desired
-          chosenNeuron = nn !! lstIndex
-          choppedNNR = take (lstIndex + 1) $ reverse nn
-          choppedNN = take (lstIndex + 1) nn
-          query' = foldl applyReverseNeuron compared choppedNN
-          output = foldl applyNeuron train choppedNN
-          expected = vecCompare query' output
-          camNN = updateCAMNeuron chosenNeuron camElem query' expected nnIndex
-          nn' = replaceElem nn lstIndex camNN
-
-trainCAMNN :: [CAMNeuron] -> [CAMUpdate] -> [TrainElem] -> [CAMNeuron]
-trainCAMNN nn updates trainSet = foldr (\(x, y) n -> trainNeurons x y n) nn (zip trainSet updates)
+-- trainNeurons :: TrainElem -> CAMUpdate -> [CAMNeuron] -> [CAMNeuron]
+-- trainNeurons (TrainElem train desired) (CAMUpdate lstIndex nnIndex camElem) nn = bool nn' nn (hammingWeight compared == 0)
+--     where query = foldl applyNeuron train nn
+--           compared = vecCompare query desired
+--           chosenNeuron = nn !! lstIndex
+--           choppedNNR = take (lstIndex + 1) $ reverse nn
+--           choppedNN = take (lstIndex + 1) nn
+--           query' = foldl applyReverseNeuron compared choppedNN
+--           output = foldl applyNeuron train choppedNN
+--           expected = vecCompare query' output
+--           camNN = updateCAMNeuron chosenNeuron camElem query' expected nnIndex
+--           nn' = replaceElem nn lstIndex camNN
+--
+-- trainCAMNN :: [CAMNeuron] -> [CAMUpdate] -> [TrainElem] -> [CAMNeuron]
+-- trainCAMNN nn updates trainSet = foldr (\(x, y) n -> trainNeurons x y n) nn (zip trainSet updates)
 
 queryNeurons :: [CAMNeuron] -> QueryData -> NNTVU
 queryNeurons nn query = foldl applyNeuron query nn
@@ -187,15 +118,15 @@ distanceCAMNN nn testSet = P.map hammingWeight compared
     where queries = queryCAMNN nn testSet
           compared = P.map (uncurry vecCompare) $ P.zipWith (\x (TrainElem _ y) -> (x,y)) queries testSet
 
-trainUntilLearned :: [CAMNeuron] -> [TrainElem] -> Int -> IO [CAMNeuron]
-trainUntilLearned nn trainSet shiftUpdate = do
-    let nnLength = length nn
-    let updates = constructUpdate nnLength
-    let shifted = take (length trainSet) $ applyNTimes updates shiftLeft shiftUpdate
-    let nn' = trainCAMNN nn updates trainSet
-    -- print nn'
-    let distance = sum $ distanceCAMNN nn' trainSet
-    bool (trainUntilLearned nn' trainSet (shiftUpdate + 1)) (return nn') (distance < 3)
+-- trainUntilLearned :: [CAMNeuron] -> [TrainElem] -> Int -> IO [CAMNeuron]
+-- trainUntilLearned nn trainSet shiftUpdate = do
+--     let nnLength = length nn
+--     let updates = constructUpdate nnLength
+--     let shifted = take (length trainSet) $ applyNTimes updates shiftLeft shiftUpdate
+--     let nn' = trainCAMNN nn updates trainSet
+--     -- print nn'
+--     let distance = sum $ distanceCAMNN nn' trainSet
+--     bool (trainUntilLearned nn' trainSet (shiftUpdate + 1)) (return nn') (distance < 3)
 
 updateCAMNeuron :: CAMNeuron -> CAMElem -> NNTVU -> NNTVU -> Int -> CAMNeuron
 updateCAMNeuron (CAMNeuron camW camT) CAMThreshold delta output elemIndex = CAMNeuron camW (CAMTElem threshold 0)
@@ -294,30 +225,17 @@ randomCAMNeuron :: RandomGen g => g -> WeightsSize -> ThresholdSize -> CAMNeuron
 randomCAMNeuron seed x y = CAMNeuron (CAMWElem (randomNNTMU seed x y) 0) (CAMTElem (randomNTTVU seed' x) 0)
     where (_, seed') = next seed
 
--- randomUpdate :: RandomGen g => g -> [CAMNeuron] -> (Int, CAMUpdate)
--- randomUpdate gen nn = (index0, camU)
---     where (updateCAM, gen0) = random gen
---           (index0, gen1) = randomR (0, length nn - 1) gen0
---           chosenNeuron = nn !! index0
---           weightsSh = extent $ camWeights chosenNeuron
---           thresholdSh = extent $ camThresholds chosenNeuron
---           (index1, gen2) = randomR (0, size weightsSh) gen1
---           (index2, gen3) = randomR (0, size thresholdSh) gen2
---           (index3, _) = random gen3
---           typeToUpdate = bool CAMThreshold CAMWeight updateCAM
---           camU = CAMUpdate typeToUpdate (fromIndex weightsSh index1) (fromIndex thresholdSh index2) index3
-
 lstCAMElems :: Int -> [CAMElem]
 lstCAMElems elems = [bool CAMWeight CAMThreshold (even x) | x <- [1 .. elems]]
 
-constructUpdate :: Int -> [CAMUpdate]
-constructUpdate nnElems = reverse $ concatMap (\(x,y) -> P.map (CAMUpdate x y) camElems) pairLst
-    where count = nnElems - 1
-          camElems = [CAMWeight, CAMThreshold]
-          pairLst = [(x,y) | x <- [0 .. count], y <- [0 .. count]]
+-- constructUpdate :: Int -> [CAMUpdate]
+-- constructUpdate nnElems = reverse $ concatMap (\(x,y) -> P.map (CAMUpdate x y) camElems) pairLst
+--     where count = nnElems - 1
+--           camElems = [CAMWeight, CAMThreshold]
+--           pairLst = [(x,y) | x <- [0 .. count], y <- [0 .. count]]
 
 constructUpdate' :: Int -> [CAMUpdate]
-constructUpdate' nnElems = reverse $ concatMap (\x -> P.map (CAMUpdate x 0) camElems) [0 .. count]
+constructUpdate' nnElems = reverse $ concatMap (\x -> P.map (CAMUpdate x) camElems) [0 .. count]
     where count = nnElems - 1
           camElems = [CAMWeight, CAMThreshold]
 
@@ -392,17 +310,17 @@ indexedMap f l = P.zipWith f l [0..]
 ---------------------------------------------------------------------------
 
 trainNeurons' :: TrainElem -> CAMUpdate -> [CAMNeuron] -> [CAMNeuron]
-trainNeurons' (TrainElem train desired) (CAMUpdate lstIndex nnIndex camElem) nn = bool nn' nn (hammingWeight compared == 0)
+trainNeurons' (TrainElem train desired) (CAMUpdate lIndex cElem) nn = bool nn' nn (hammingWeight compared == 0)
     where query = foldl applyNeuron train nn
           compared = vecCompare query desired
-          chosenNeuron = nn !! lstIndex
-          choppedNNR = take (lstIndex + 1) $ reverse nn
-          choppedNN = take (lstIndex + 1) nn
+          chosenNeuron = nn !! lIndex
+          choppedNNR = take (lIndex + 1) $ reverse nn
+          choppedNN = take (lIndex + 1) nn
           hidden = foldl applyNeuron train choppedNN
           output = applyNeuron hidden chosenNeuron
           deltaP = foldl applyReverseNeuron' compared choppedNNR
-          camNN = updateCAMNeuron' chosenNeuron camElem deltaP output hidden
-          nn' = replaceElem nn lstIndex camNN
+          camNN = updateCAMNeuron' chosenNeuron cElem deltaP output hidden
+          nn' = replaceElem nn lIndex camNN
 
 trainCAMNN' :: [CAMNeuron] -> [CAMUpdate] -> [TrainElem] -> [CAMNeuron]
 trainCAMNN' nn updates trainSet = foldl (\n (x, y) -> trainNeurons' x y n) nn (zip trainSet updates)
@@ -412,7 +330,7 @@ trainUntilLearned' nn trainSet shiftUpdate tolerance = do
     let updates = constructUpdate' $ length nn
     let shifted = take (length trainSet) $ applyNTimes updates shiftLeft shiftUpdate
     let nn' = trainCAMNN' nn updates trainSet
-    print . filter (uncurry (==)) $ zip nn nn'
+    -- print . filter (uncurry (==)) $ zip nn nn'
     let distance = sum $ distanceCAMNN nn' trainSet
     -- print distance
     bool (trainUntilLearned' nn' trainSet (shiftUpdate + 1) tolerance) (return nn') (distance <= tolerance)
