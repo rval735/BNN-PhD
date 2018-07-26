@@ -212,3 +212,47 @@ nn'' = trainNeurons' (trainSet !! 2) (updates !! 2) nn'
 
 trainCAMNN' nn updates trainSet
 trainUntilLearned' nn trainSet 0 3
+
+--***--__---___---___----***--__---___---___---
+--***--__---___---___----***--__---___---___---
+--***--__---___---___----***--__---___---___---
+
+nSize = 4
+testSize = 4
+nnSize = 3
+
+camW0 = fromListUnboxed (ix2 nSize nSize) $ replicate (nSize * nSize) False
+camT0 = fromListUnboxed (ix1 nSize) $ replicate nSize nSize :: NTTVU
+camN0 = CAMNeuron (CAMWElem camW0 0) (CAMTElem camT0 0)
+
+baseLst = [1 .. testSize]
+baseOLst = P.map sin [1 .. testSize]
+inputsLst = P.map (num2Bin' nSize) baseLst
+outputLst = P.map (num2Bin' nSize . round . (* 100)) baseOLst
+inputs = P.map (fromListUnboxed (ix1 nSize)) inputsLst
+outputs = P.map (fromListUnboxed (ix1 nSize)) outputLst
+
+trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
+
+nn = replicate nnSize camN0
+updates = take (length trainSet) $ constructUpdate (length nn)
+
+trainNeurons (trainSet !! 0) (updates !! 0) nn
+
+trainUntilLearned nn trainSet 0 3
+
+train = trainInput $ trainSet !! 0
+desired = trainOutput $ trainSet !! 0
+lIndex = lstIndex $ updates !! 0
+cElem = camElem $ updates !! 0
+
+query = foldl applyNeuron train nn
+compared = vecCompare query desired
+chosenNeuron = nn !! lIndex
+choppedNNR = take (lIndex + 1) $ reverse nn
+choppedNN = take (lIndex + 1) nn
+hidden = foldl applyNeuron train choppedNN
+output = applyNeuron hidden chosenNeuron
+deltaP = foldl applyReverseNeuron' compared choppedNNR
+camNN = updateCAMNeuron' chosenNeuron cElem deltaP output hidden
+nn' = replaceElem nn lIndex camNN

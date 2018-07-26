@@ -15,8 +15,10 @@ module CAMTypes
 where
 
 
-import           Data.Array.Repa (Array, D, DIM1, DIM2, Shape, U, toList)
+import           Data.Array.Repa (Any, Array, D, DIM1, DIM2, Shape, U, Z,
+                                  extent, listOfShape, toList)
 import           Data.Bool       (bool)
+import           ListExtras      (splitEvery)
 
 type WeightsSize = Int
 type ThresholdSize = Int
@@ -64,7 +66,7 @@ data CAMNeuron = CAMNeuron {
 } deriving (Eq)
 
 instance Show CAMNeuron where
-    show (CAMNeuron cW cT) = show cW ++ "\n " ++ show cT ++ "\n"
+    show = neuronString
 
 data CAMWElem = CAMWElem {
     camWElem :: NNTMU,
@@ -72,7 +74,7 @@ data CAMWElem = CAMWElem {
 } deriving (Eq)
 
 instance Show CAMWElem where
-    show (CAMWElem cW wC) = show wC ++ ":" ++ show (toBList cW)
+    show (CAMWElem cW wC) = show cW ++ ":" ++ show wC
 
 data CAMTElem = CAMTElem {
     camTElem :: NTTVU,
@@ -112,3 +114,13 @@ type QueryData = NNTVU
 
 toBList :: (Shape sh) => Array U sh Bool -> [Int]
 toBList = map (bool 0 1) . toList
+
+neuronString :: CAMNeuron -> String
+neuronString (CAMNeuron (CAMWElem cW wC) (CAMTElem cT tC)) = lastString ++ formatted
+    where lstW = map (bool 0 1) . toList $ cW
+          lstT = toList cT
+          colW = head . listOfShape $ extent cW
+          rowW = last . listOfShape $ extent cW
+          splitted = zip (splitEvery rowW lstW) lstT
+          formatted = foldr (\(x, y) z -> z ++ "\n" ++ show x ++ ":" ++ show y) "" splitted
+          lastString =  "(" ++ show wC ++ "," ++ show tC ++ ")"
