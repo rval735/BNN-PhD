@@ -167,7 +167,29 @@ trainCAMNN' (train, desired) (index, elemN, elemIndex) nn
 
 --------------------------------
 
+w2 = fromListUnboxed (ix2 3 2) [False, True, True, False, False, False]
+h1 = fromListUnboxed (ix1 2) [True, False]
+t2 = fromListUnboxed (ix1 3) [0,1,2]
+cW2 = CAMWElem w2 0
+cT2 = CAMTElem t2 0
+col2 = layerColide cW2 h1 xor
+sum2 = layerSummation col2
+o0 = layerOperation sum2 cT2 (>=)
 
+--------------------------------
+
+llN = createWeight [1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0] 3 5
+oredDelta = foldS (.|.) False $ R.transpose llN
+onesComp = construct1Complement 2 . size . extent $ oredDelta
+indexVec = foldS (.|.) False $ traverse2 onesComp oredDelta const (\f g sh@(Z :. x :. y) -> f sh .&. g (ix1 y))
+modifiedIndex = indexFirstNonZero 0 $ R.toList indexVec
+finalDelta = computeUnboxedS $ R.traverse llN id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == modifiedIndex))
+
+weights = createWeight [1, 0, 0, 1, 0, 0] 2 3
+delta = createWeight [1, 0, 0, 0, 1, 1] 2 3
+applyDeltaWeight (CAMWElem weights 0) delta
+lastWChange = 0
+deltaNextChange delta lastWChange
 
 --***--__---___---___----***--__---___---___---
 --***--__---___---___----***--__---___---___---

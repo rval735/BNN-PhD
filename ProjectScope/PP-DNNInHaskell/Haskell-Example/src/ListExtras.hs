@@ -14,7 +14,7 @@ module ListExtras
 -- )
 where
 
-import           Data.Bits
+import           Data.Bits (Bits, popCount, xor, (.|.))
 import           Data.Bool (bool)
 
 safeHead :: [a] -> Maybe a
@@ -31,9 +31,9 @@ shiftRight []  = []
 shiftRight [x] = [x]
 shiftRight x   = last x : init x
 
-applyNTimes :: [a] -> ([a] -> [a]) -> Int -> [a]
-applyNTimes x _ 0 = x
-applyNTimes x f n = let x' = f x in bool (applyNTimes x' f (n - 1)) x' (n <= 0)
+applyNTimes :: ([a] -> [a]) -> Int -> [a] -> [a]
+applyNTimes _ 0 x = x
+applyNTimes f n x = applyNTimes f (n - 1) (f x)
 
 sumTrues :: Num a => Bool -> a -> a
 sumTrues cond num = bool num (num + 1) cond
@@ -57,7 +57,7 @@ n2b 0 =  []
 n2b n =  n `mod` 2 : n2b (n `div` 2)
 
 num2Bin' :: Int -> Int -> [Bool]
-num2Bin' _ 0 = []
+num2Bin' size 0 = replicate size False
 num2Bin' size num = map (\x -> bool False True (check x == 0)) $ lst size
     where lst x = take x $ iterate (* 2) 1
           check x = mod (div (num - x) x) 2
@@ -95,3 +95,11 @@ splitEvery :: Int -> [a] -> [[a]]
 splitEvery _ [] = []
 splitEvery n xs = as : splitEvery n bs
     where (as,bs) = splitAt n xs
+
+indexFirstNonZero :: Int -> [Bool] -> Int
+indexFirstNonZero index [] = index
+indexFirstNonZero index (x : xs) = bool (indexFirstNonZero (index + 1) xs) index x
+
+indexFirstNonZeroI :: Int -> [Int] -> Int
+indexFirstNonZeroI index [] = index
+indexFirstNonZeroI index (x : xs) = bool (indexFirstNonZeroI (index + 1) xs) index (x >= 0)

@@ -34,5 +34,5 @@ randomNTTVU :: RandomGen g => g -> ThresholdSize -> NTTVU
 randomNTTVU seed y = randomishIntArray (ix1 y) 0 y (fst $ next seed)
 
 randomCAMNeuron :: RandomGen g => g -> WeightsSize -> ThresholdSize -> CAMNeuron
-randomCAMNeuron seed x y = CAMNeuron (CAMWElem (randomNNTMU seed x y) 0) (CAMTElem (randomNTTVU seed' x) 0)
+randomCAMNeuron seed x y = CAMNeuron (CAMWElem 0 (randomNNTMU seed x y)) (CAMTElem 0 (randomNTTVU seed' x))
     where (_, seed') = next seed

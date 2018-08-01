@@ -5,6 +5,7 @@
 :set -XDeriveGeneric
 :set prompt ">>="
 :m + Data.Maybe
+:m + Data.List
 import qualified Data.ByteString       as BS
 import qualified Data.ByteString.Char8 as C8
 :m + Data.Maybe
@@ -17,6 +18,7 @@ import qualified Data.ByteString.Char8 as C8
 import qualified Data.ByteString.Lazy       as BSL
 import           Data.Foldable
 import qualified Data.Array.Repa as R
+import Data.Array.Repa.Algorithms.Matrix
 import qualified Prelude as P
 import Data.Array.Repa
 import Data.Array.Repa

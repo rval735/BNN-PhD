@@ -1,42 +1,74 @@
-nSize = 4
-testSize = 4
+nSize = 3
+testSize = 7
 nnSize = 3
 
-camN0 = createZNeuron 2 3
-camN1 = createZNeuron 3 2
-camN2 = createZNeuron 4 3
+camN0 = createZNeuron 3 3
+camN1 = createZNeuron 3 3
+camN2 = createZNeuron 3 3
 
-baseLst = [1 .. testSize]
-baseOLst = P.map sin [1 .. testSize]
-inputsLst = P.map (num2Bin' nSize) baseLst
-outputLst = P.map (num2Bin' nSize . round . (* 100)) baseOLst
-inputs = P.map (fromListUnboxed (ix1 nSize)) inputsLst
+nn = [camN0, camN1, camN2]
+baseLst = [0, 2, 4, 6, 1, 3, 5, 7]
+baseOLst = [0, 6, 7, 3, 2, 4, 2, 1]
+hiddenLst = P.map (reverse . num2Bin' 2) [0]
+
+inputLst = P.map (reverse . num2Bin' nSize) baseLst
+outputLst = P.map (reverse . num2Bin' nSize) baseOLst
+inputs = P.map (fromListUnboxed (ix1 nSize)) inputLst
 outputs = P.map (fromListUnboxed (ix1 nSize)) outputLst
-
+hidden = P.map (fromListUnboxed (ix1 2)) hiddenLst
 trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
 
-nn = replicate nnSize camN0
-updates = take (length trainSet) $ constructUpdate (length nn)
+updates = updatesWithConditions (length nn) (length trainSet) 0
 
-trainNeurons (trainSet !! 0) (updates !! 0) nn
+-- trainUntilLearned nn trainSet 0 8
 
-trainUntilLearned nn trainSet 0 3
+ff x = do print x; return $ trainNeurons (trainSet !! x) (updates !! x) nn
+mapM ff [0 .. 1]
 
-train = trainInput $ trainSet !! 0
-desired = trainOutput $ trainSet !! 0
-lIndex = lstIndex $ updates !! 0
-cElem = camElem $ updates !! 0
+(TrainElem train desired) = trainSet !! 5
+(CAMUpdate lIndex cElem) = updates !! 5
 
-query = foldl applyNeuron train nn
+(query, wAo) = queryNeuronsAcc nn train -- wAo = Weights and Outputs
 compared = vecCompare query desired
 chosenNeuron = nn !! lIndex
-choppedNNR = take (lIndex + 1) $ reverse nn
-choppedNN = take (lIndex + 1) nn
-hidden = foldl applyNeuron train choppedNN
-output = applyNeuron hidden chosenNeuron
-deltaP = foldl applyReverseNeuron' compared choppedNNR
-camNN = updateCAMNeuron' chosenNeuron cElem deltaP output hidden
-nn' = replaceElem nn lIndex camNN
+wAoI = wAo !! lIndex
+deltaPos = take (length nn - lIndex) $ reverse wAo
+deltaP = calculateDelta deltaPos compared
+----
 
+ddW0 = deltaWeights' (deltaPos !! 0) compared
+wtD0 = weightsToDelta ddW0
+ddW1 = deltaWeights' (deltaPos !! 1) wtD0
+wtD1 = weightsToDelta ddW1
+ddW2 = deltaWeights' (deltaPos !! 2) wtD1
+wtD2 = weightsToDelta ddW2
 
-camW1 = fromListUnboxed (ix2 3 2) [True, False, False, True, False, False]
+nSize = 2
+camN0 = createZNeuron 2 2
+nn = [camN0, camN0]
+baseLst = [0, 1, 2, 3]
+baseOLst = [0, 3, 3, 0]
+inputLst = P.map (reverse . num2Bin' nSize) baseLst
+outputLst = P.map (reverse . num2Bin' nSize) baseOLst
+inputs = P.map (fromListUnboxed (ix1 nSize)) inputLst
+outputs = P.map (fromListUnboxed (ix1 nSize)) outputLst
+trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
+updates = updatesWithConditions (length nn) (length trainSet) 0
+-- trainUntilLearned nn trainSet 0 0
+
+trainCAMNN nn updates trainSet
+
+nn1 = trainNeurons (trainSet !! 1) (updates !! 1) nn
+nn2 = trainNeurons (trainSet !! 2) (updates !! 2) nn1
+nn3 = trainNeurons (trainSet !! 3) (updates !! 3) nn2
+
+tI = trainInput $ trainSet !! 2
+h1 = applyNeuron tI (nn3 !! 0)
+o1 = applyNeuron h1 (nn3 !! 1)
+
+camW = camWeights (nn3 !! 1)
+camT = camThresholds (nn3 !! 1)
+-- camW = CAMWElem (fromListUnboxed (ix2 2 2) [True, False, True, False]) 0
+collision = layerColide camW h1 xor
+summ = layerSummation collision
+res = layerOperation summ camT (>=)

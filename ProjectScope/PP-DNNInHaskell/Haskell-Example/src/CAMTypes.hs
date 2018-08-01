@@ -15,10 +15,12 @@ module CAMTypes
 where
 
 
-import           Data.Array.Repa (Any, Array, D, DIM1, DIM2, Shape, U, Z,
-                                  extent, listOfShape, toList)
-import           Data.Bool       (bool)
-import           ListExtras      (splitEvery)
+import           Data.Array.Repa                   (Any, Array, D, DIM1, DIM2,
+                                                    Shape, U, Z, extent,
+                                                    listOfShape, toList)
+import           Data.Array.Repa.Algorithms.Matrix (col, row)
+import           Data.Bool                         (bool)
+import           ListExtras                        (splitEvery)
 
 type WeightsSize = Int
 type ThresholdSize = Int
@@ -69,20 +71,20 @@ instance Show CAMNeuron where
     show = neuronString
 
 data CAMWElem = CAMWElem {
-    camWElem :: NNTMU,
-    wChange  :: Int
+    wChange  :: Int,
+    camWElem :: NNTMU
 } deriving (Eq)
 
 instance Show CAMWElem where
-    show (CAMWElem cW wC) = show cW ++ ":" ++ show wC
+    show = weightsString
 
 data CAMTElem = CAMTElem {
-    camTElem :: NTTVU,
-    tChange  :: Int
+    tChange  :: Int,
+    camTElem :: NTTVU
 } deriving (Eq)
 
 instance Show CAMTElem where
-    show (CAMTElem cT tC) = show tC ++ ":" ++ show (toList cT)
+    show (CAMTElem tC cT) = show tC ++ ":" ++ show (toList cT)
 
 type CAMNN = [CAMNeuron]
 
@@ -116,11 +118,17 @@ toBList :: (Shape sh) => Array U sh Bool -> [Int]
 toBList = map (bool 0 1) . toList
 
 neuronString :: CAMNeuron -> String
-neuronString (CAMNeuron (CAMWElem cW wC) (CAMTElem cT tC)) = lastString ++ formatted
-    where lstW = map (bool 0 1) . toList $ cW
+neuronString (CAMNeuron (CAMWElem wC cW) (CAMTElem tC cT)) = changesStr ++ formatted
+    where lstW = toBList cW
           lstT = toList cT
-          colW = head . listOfShape $ extent cW
-          rowW = last . listOfShape $ extent cW
-          splitted = zip (splitEvery rowW lstW) lstT
-          formatted = foldr (\(x, y) z -> z ++ "\n" ++ show x ++ ":" ++ show y) "" splitted
-          lastString =  "(" ++ show wC ++ "," ++ show tC ++ ")"
+          colW = col $ extent cW
+          splitted = zip (splitEvery colW lstW) lstT
+          formatted = foldl (\z (x, y) -> z ++ "\n" ++ show x ++ ":" ++ show y) "" splitted
+          changesStr =  "(" ++ show wC ++ "," ++ show tC ++ ")"
+
+weightsString :: CAMWElem -> String
+weightsString (CAMWElem wC cW) = show wC ++ formatted
+    where lstW = toBList cW
+          colW = col $ extent cW
+          splitted = splitEvery colW lstW
+          formatted = foldl (\y x -> y ++ "\n" ++ show x) "" splitted
