@@ -48,6 +48,21 @@ trainCAMNNTest_2x2NNXOR = do
     let nSize = 2
     let nn = replicate nSize $ createZNeuron nSize nSize
     let inputs = createOutput' nSize [0, 1, 2, 3]
+    let outputsXOR = createOutput' nSize [0, 3, 3, 0]
+    let trainSetXOR = zipWith TrainElem inputs outputsXOR
+    let updates = updatesWithConditions (length nn) (length trainSetXOR) 0
+    --- To be tested
+    let nn0 = trainCAMNN nn updates trainSetXOR
+    let result = map (== 0) $ distanceCAMNN nn0 trainSetXOR
+    --- Finish testing
+    printResult result
+
+trainCAMNNTest_2x2NNXNOR :: IO ()
+trainCAMNNTest_2x2NNXNOR = do
+    print "trainCAMNNTest_2x2NNXNOR"
+    let nSize = 2
+    let nn = replicate nSize $ createZNeuron nSize nSize
+    let inputs = createOutput' nSize [0, 1, 2, 3]
     let outputs = createOutput' nSize [0, 3, 3, 0]
     let trainSet = zipWith TrainElem inputs outputs
     let updates = updatesWithConditions (length nn) (length trainSet) 0
