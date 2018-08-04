@@ -50,12 +50,6 @@ layerColide (CAMWElem _ mtx) vtr colision = computeS $ traverse2 mtx vtr const a
 layerSummation :: NNTMU -> NTTVU
 layerSummation = sumS . map (bool 0 1)
 
--- layerSummation :: NNTMU -> NTTVU
--- layerSummation mtx = sumS vec
---     where vec0 = fromFunction (ix1 . col $ extent mtx) (const 0)
---           applySHY f h sh@(Z :. x :. y) = let nSh = ix1 x in bool (h nSh) (h nSh + 1) (f sh)
---           vec = transpose $ traverse2 mtx vec0 const applySHY
-
 layerOperation :: NTTVU -> CAMTElem -> (NTT -> NTT -> NNT) -> NNTVU
 layerOperation x (CAMTElem _ y) f = computeS $ zipWith f x y
 
@@ -115,9 +109,9 @@ distanceCAMNN nn testSet = compared
           compared = P.map (hammingWeight . uncurry vecCompare) zipped
 
 updateCAMNeuron :: CAMNeuron -> CAMElem -> NNTVU -> (NNTMU, NNTVU) -> CAMNeuron
-updateCAMNeuron (CAMNeuron camW camT) CAMThreshold deltaP (_, output) = CAMNeuron camW camTElem
+updateCAMNeuron (CAMNeuron camW camT) CAMThreshold deltaP (dW, output) = CAMNeuron camW camTElem
     where dThreshold = deltaThreshold deltaP output
-          camTElem = applyDeltaThreshold camT dThreshold
+          camTElem = applyDeltaThreshold camT dThreshold (col $ extent dW)
 updateCAMNeuron (CAMNeuron camW camT) CAMWeight deltaP wAo = CAMNeuron camWE camT
     where dWeights = deltaWeights' wAo deltaP
           camWE = applyDeltaWeight camW dWeights
@@ -145,18 +139,6 @@ applyDeltaWeight (CAMWElem wChange weights) delta = CAMWElem updatedIndex camW
     where (updatedIndex, deltaToChange) = deltaNextChange delta wChange
           camW = computeS $ zipWith (\x y -> bool x (complement x) y) weights deltaToChange
 
--- deltaNextChange :: NNTMU -> Int -> (Int, NNTMU)
--- deltaNextChange delta lastWChange = finalDelta
---     where oredDelta = foldS (.|.) False $ transpose delta
---           numElems = size . extent $ oredDelta
---           onesComp = construct1Complement lastWChange numElems
---           applySHY f g sh@(Z :. x :. y) = bool (-1) y $ f sh .&. g (ix1 y)
---           indexVec = traverse2 onesComp oredDelta const applySHY
---           modifiedIndex = safeHead . filter (>= 0) $ toList indexVec
---           finalDelta = case modifiedIndex of
---               Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
---               Nothing    -> (-1, computeS $ map (const False) delta)
-
 deltaNextChange :: NNTMU -> Int -> (Int, NNTMU)
 deltaNextChange delta lastWChange = finalDelta
     where oredDelta = foldS (.|.) False $ transpose delta
@@ -165,15 +147,15 @@ deltaNextChange delta lastWChange = finalDelta
               Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
               Nothing    -> (-1, computeS $ map (const False) delta)
 
-applyDeltaThreshold :: CAMTElem -> NTTVU -> CAMTElem
-applyDeltaThreshold cte@(CAMTElem tChange camT) delta = cteUpdate
+applyDeltaThreshold :: CAMTElem -> NTTVU -> Int -> CAMTElem
+applyDeltaThreshold cte@(CAMTElem tChange camT) delta maxValue = cteUpdate
     where changeIndexM = thresholdIndexChange tChange delta
           cteUpdate = case changeIndexM of
               Just changeIndex -> CAMTElem changeIndex $ updatedT changeIndex
               Nothing          -> cte
-          zeroOrMore x y = let opr = x + y in bool 0 opr (opr > 0)
-          applySHY index f g sh@(Z :. x) = let update = zeroOrMore (f sh) (g sh) in bool (f sh) update (x == index)
-          updatedT index = computeS $ traverse2 camT delta const (applySHY index)
+          withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr >= 0)
+          applySHY pos f g sh@(Z :. x) = let update = withinBound (f sh) (g sh) in bool (f sh) update (x == pos)
+          updatedT pos = computeS $ traverse2 camT delta const (applySHY pos)
 
 -- Here we change the value to the nearest index change.
 -- For example a vector [-1,0,1,0] has two changes/stay differences

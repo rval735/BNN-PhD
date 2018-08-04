@@ -133,8 +133,32 @@ res1
 applyNeurons neurons input = foldl (\x y -> applyNeuron x y) input neurons
 Prelude.map (applyNeurons nn) inputs
 
+--------------------------------
+
+-- applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst = result
+
+-- (tSize, index, thresholdLst, deltaLst, expIndex, expectedLst, maxValue) = (3, 0, [1,2,3], [0,0,1], 2, [2,2,3], 3)
+-- (tSize, index, thresholdLst, deltaLst, expIndex, expectedLst, maxValue) = (3, 0, [1,2,0], [0,0,-1], 2, [2,2,0], 3)
+(tSize, index, thresholdLst, deltaLst, expIndex, expectedLst, maxValue) = (3, 0, [4,2,0], [1,0,-1], 0, [2,2,0], 2)
+
+threshold = CAMTElem index $ createThreshold tSize 0 thresholdLst
+delta = createThreshold tSize 0 deltaLst
+expected = CAMTElem expIndex $ createThreshold tSize 0 expectedLst
+applyDeltaThreshold threshold delta maxValue
+result = expected == applyDeltaThreshold threshold delta maxValue
+
+(tChange, camT) = (index, camTElem threshold)
+
+changeIndexM = thresholdIndexChange tChange delta
+changeIndex = fromJust changeIndexM
+withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr >= 0)
+applySHY pos f g sh@(Z :. x) = let update = withinBound (f sh) (g sh) in bool (f sh) update (x == pos)
+updatedT pos = computeUnboxedS $ traverse2 camT delta const (applySHY pos)
+
+
 
 --------------------------------
+
 let numElems = 64
 let threshold = 1
 let trainingDInputR = take 100 $ randomRs (-0.5, 0.5) gen :: [Double]

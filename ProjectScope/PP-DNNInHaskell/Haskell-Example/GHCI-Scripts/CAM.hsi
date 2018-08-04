@@ -21,7 +21,7 @@ trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
 updates = updatesWithConditions (length nn) (length trainSet) 0
 
 -- trainUntilLearned nn trainSet 0 7
-nn' <- trainUntilLearned nn trainSet 0 4
+nn' <- trainUntilLearned nn trainSet 0 5
 
 
 
@@ -30,10 +30,6 @@ distanceCAMNN nn' trainSet
 
 
 
-
-
 --***--__---___---___----***--__---___---___---
 --***--__---___---___----***--__---___---___---
 --***--__---___---___----***--__---___---___---
-
-

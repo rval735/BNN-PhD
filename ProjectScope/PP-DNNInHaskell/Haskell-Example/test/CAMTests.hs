@@ -8,10 +8,7 @@
 ---- of this repository for more details.
 ----
 
-{-# LANGUAGE FlexibleContexts      #-}
-{-# LANGUAGE MultiParamTypeClasses #-}
-
--- | Tri-State Neural Network class
+-- | Unit test for some critical functions of the CAM file
 module CAMTests
 -- (
 -- )
@@ -20,22 +17,12 @@ where
 import           CAM
 import           CAMExtras
 import           CAMTypes
-import           Control.Monad                (when)
--- import           Data.Array.Repa
--- import           Data.Array.Repa.Algorithms.Matrix (col)
-import           Data.Array.Repa.Eval         (Target)
-import           Data.Array.Repa.Repr.Unboxed (Unbox)
-import           Data.Bits                    (complement, xor, (.&.), (.|.))
-import           Data.Bool                    (bool)
---import           Data.List                         (mapAccumL)
-import           Data.List                    (zip5)
-import           Data.Maybe                   (catMaybes, fromMaybe)
-import           ListExtras                   (applyNTimes, indexFirstNonZeroI,
-                                               num2Bin', replaceElem, safeHead,
-                                               shiftLeft)
--- import           Prelude                           hiding (map, traverse,
---                                                     zipWith)
--- import qualified Prelude                           as P
+import           Control.Monad (when)
+import           Data.Bits     (xor)
+import           Data.Bool     (bool)
+import           Data.List     (zip5)
+import           ListExtras    (applyNTimes, indexFirstNonZeroI, num2Bin',
+                                replaceElem, safeHead, shiftLeft)
 
 layerColideTest :: IO ()
 layerColideTest = do
@@ -75,8 +62,8 @@ trainCAMNNTest_Ex2NN = do
     print "trainCAMNNTest_Ex2NN"
     let nSize = 3
     let nn = [createZNeuron nSize nSize, createZNeuron 2 nSize, createZNeuron nSize 2]
-    let inputs = createOutput' nSize [0, 2, 4, 6, 1, 3, 5, 7, 0, 2, 4, 6, 1, 3, 5, 7]
-    let outputs = createOutput' nSize [0, 6, 7, 3, 2, 4, 2, 1, 0, 6, 7, 3, 2, 4, 2, 1]
+    let inputs = createOutput' nSize [0, 2, 4, 6, 1, 3, 5, 7]
+    let outputs = createOutput' nSize [0, 6, 7, 3, 2, 4, 2, 1]
     let trainSet = zipWith TrainElem inputs outputs
     let updates = updatesWithConditions (length nn) (length trainSet) 0
     --- To be tested
@@ -92,17 +79,21 @@ applyDeltaThresholdTest = do
     let baseT = [1,2,3,4]
     let baseD = [1,0,0,0]
     let baseE = [2,2,3,4]
+    let maxVal = 4
     --- To be tested
-    let result = [ applyDeltaThresholdOne nSize (-1) baseT baseD 0 baseE,
-                   applyDeltaThresholdOne nSize 0 baseT baseD 0 baseE,
-                   applyDeltaThresholdOne nSize 2 baseT baseD 0 baseE,
-                   applyDeltaThresholdOne nSize 3 baseT baseD 0 baseE,
-                   applyDeltaThresholdOne nSize 4 baseT baseD 0 baseE,
-                   applyDeltaThresholdOne nSize 2 baseT [0,-1,0,0] 1 [1,1,3,4],
-                   applyDeltaThresholdOne nSize 1 baseT [0,-1,-1,0] 2 [1,2,2,4],
-                   applyDeltaThresholdOne 3 1 [1,2,3] [1,0,0] 0 [2,2,3],
-                   applyDeltaThresholdOne 3 1 [1,2,2] [1,0,-1] 2 [1,2,1],
-                   applyDeltaThresholdOne 3 1 [1,2,3] [1,0,0] 0 [2,2,3]]
+    let result = [ applyDeltaThresholdOne nSize (-1) baseT baseD 0 baseE maxVal,
+                   applyDeltaThresholdOne nSize 0 baseT baseD 0 baseE maxVal,
+                   applyDeltaThresholdOne nSize 2 baseT baseD 0 baseE maxVal,
+                   applyDeltaThresholdOne nSize 3 baseT baseD 0 baseE maxVal,
+                   applyDeltaThresholdOne nSize 4 baseT baseD 0 baseE maxVal,
+                   applyDeltaThresholdOne nSize 2 baseT [0,-1,0,0] 1 [1,1,3,4] maxVal,
+                   applyDeltaThresholdOne nSize 1 baseT [0,-1,-1,0] 2 [1,2,2,4] maxVal,
+                   applyDeltaThresholdOne 3 1 [1,2,3] [1,0,0] 0 [2,2,3] maxVal,
+                   applyDeltaThresholdOne 3 1 [1,2,2] [1,0,-1] 2 [1,2,1] maxVal,
+                   applyDeltaThresholdOne 3 1 [1,2,3] [1,0,0] 0 [2,2,3] maxVal,
+                   applyDeltaThresholdOne 3 0 [1,2,3] [0,0,1] 2 [1,2,3] 3,
+                   applyDeltaThresholdOne 3 0 [1,2,0] [0,0,-1] 2 [1,2,0] 3,
+                   applyDeltaThresholdOne 3 2 [4,2,0] [1,0,-1] 0 [2,2,0] 2]
     --- Finish testing
     printResult result
 
@@ -190,13 +181,13 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
         print "*********"
     return $ result == expected
 
-applyDeltaThresholdOne :: Int -> Int -> [Int] -> [Int] -> Int -> [Int] -> Bool
-applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst = result
+applyDeltaThresholdOne :: Int -> Int -> [Int] -> [Int] -> Int -> [Int] -> Int -> Bool
+applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst maxValue = result
     where threshold = CAMTElem index $ createThreshold tSize 0 thresholdLst
           delta = createThreshold tSize 0 deltaLst
           expected = CAMTElem expIndex $ createThreshold tSize 0 expectedLst
           --- To be tested
-          result = expected == applyDeltaThreshold threshold delta
+          result = expected == applyDeltaThreshold threshold delta maxValue
 
 deltaNextChangeOne :: Int -> Int -> Int -> [Int] -> Int -> [Int] -> Bool
 deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
