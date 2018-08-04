@@ -105,7 +105,7 @@ data TrainElem = TrainElem {
 }
 
 instance Show TrainElem where
-    show (TrainElem tI tO) = show (toBList tI) ++ "\n " ++ show (toBList tO) ++ "\n"
+    show (TrainElem tI tO) = "I:" ++ show (toBList tI) ++ "\nO:" ++ show (toBList tO)
 
 type QueryData = NNTVU
 

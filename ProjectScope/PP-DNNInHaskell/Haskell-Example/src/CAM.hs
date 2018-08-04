@@ -29,11 +29,12 @@ import           Data.Bits                         (complement, xor, (.&.),
                                                     (.|.))
 import           Data.Bool                         (bool)
 import           Data.List                         (mapAccumL)
-import           Data.Maybe                        (catMaybes, fromMaybe)
+import           Data.Maybe                        (catMaybes, fromMaybe,
+                                                    isJust)
 import           ListExtras                        (applyNTimes,
                                                     indexFirstNonZeroI,
                                                     replaceElem, safeHead,
-                                                    shiftLeft)
+                                                    shiftLeft, toBoth)
 import           Prelude                           hiding (map, traverse,
                                                     zipWith)
 import qualified Prelude                           as P
@@ -122,7 +123,8 @@ updateCAMNeuron (CAMNeuron camW camT) CAMWeight deltaP wAo = CAMNeuron camWE cam
           camWE = applyDeltaWeight camW dWeights
 
 calculateDelta :: [(NNTMU, NNTVU)] -> NNTVU -> NNTVU
-calculateDelta wAo delta = foldl (\y x -> weightsToDelta $ deltaWeights' x y) delta wAo
+-- calculateDelta wAo delta = foldl (\y x -> weightsToDelta $ deltaWeights' x y) delta wAo
+calculateDelta wAo delta = foldl (\y x -> weightsToDelta . computeS . transpose $ deltaWeights' x y) delta wAo
 
 deltaThreshold :: NNTVU -> NNTVU -> NTTVU
 deltaThreshold delta output = computeS $ zipWith changes delta output
@@ -143,25 +145,42 @@ applyDeltaWeight (CAMWElem wChange weights) delta = CAMWElem updatedIndex camW
     where (updatedIndex, deltaToChange) = deltaNextChange delta wChange
           camW = computeS $ zipWith (\x y -> bool x (complement x) y) weights deltaToChange
 
+-- deltaNextChange :: NNTMU -> Int -> (Int, NNTMU)
+-- deltaNextChange delta lastWChange = finalDelta
+--     where oredDelta = foldS (.|.) False $ transpose delta
+--           numElems = size . extent $ oredDelta
+--           onesComp = construct1Complement lastWChange numElems
+--           applySHY f g sh@(Z :. x :. y) = bool (-1) y $ f sh .&. g (ix1 y)
+--           indexVec = traverse2 onesComp oredDelta const applySHY
+--           modifiedIndex = safeHead . filter (>= 0) $ toList indexVec
+--           finalDelta = case modifiedIndex of
+--               Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
+--               Nothing    -> (-1, computeS $ map (const False) delta)
+
 deltaNextChange :: NNTMU -> Int -> (Int, NNTMU)
-deltaNextChange delta lastWChange = (modifiedIndex, computeS finalDelta)
+deltaNextChange delta lastWChange = finalDelta
     where oredDelta = foldS (.|.) False $ transpose delta
-          numElems = size . extent $ oredDelta
-          boundedChange = let plusOne = lastWChange + 1 in bool 0 plusOne (plusOne <= numElems)
-          onesComp = construct1Complement boundedChange numElems
-          applySHY f g sh@(Z :. x :. y) = bool (-1) y $ f sh .&. g (ix1 y)
-          indexVec = traverse2 onesComp oredDelta const applySHY
-          modifiedIndex = indexFirstNonZeroI 0 $ toList indexVec
-          finalDelta = traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == modifiedIndex))
+          changeIndexM = weightIndexChange lastWChange oredDelta
+          finalDelta = case changeIndexM of
+              Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
+              Nothing    -> (-1, computeS $ map (const False) delta)
 
 applyDeltaThreshold :: CAMTElem -> NTTVU -> CAMTElem
-applyDeltaThreshold (CAMTElem tChange camT) delta = CAMTElem updatedIndex updatedT
-    where changeIndex = fromMaybe (tChange + 1) $ thresholdIndexChange (tChange + 1) delta
-          updatedIndex = bool changeIndex 0 (changeIndex > (length . toList $ delta))
+applyDeltaThreshold cte@(CAMTElem tChange camT) delta = cteUpdate
+    where changeIndexM = thresholdIndexChange tChange delta
+          cteUpdate = case changeIndexM of
+              Just changeIndex -> CAMTElem changeIndex $ updatedT changeIndex
+              Nothing          -> cte
           zeroOrMore x y = let opr = x + y in bool 0 opr (opr > 0)
-          applySHY f g sh@(Z :. x) = let update = zeroOrMore (f sh) (g sh) in bool (f sh) update (x == updatedIndex)
-          updatedT = computeS $ traverse2 camT delta const applySHY
+          applySHY index f g sh@(Z :. x) = let update = zeroOrMore (f sh) (g sh) in bool (f sh) update (x == index)
+          updatedT index = computeS $ traverse2 camT delta const (applySHY index)
 
+-- Here we change the value to the nearest index change.
+-- For example a vector [-1,0,1,0] has two changes/stay differences
+-- If "indexChange" is -1, it means it has never changed, then we expect
+-- to return Just 0, because index 0 has a change value.
+-- If "indexChange" is 0, it means last time 0 was modified, then it should
+-- return Just 2, because index 1 does not represent a change.
 thresholdIndexChange :: Int -> NTTVU -> Maybe Int
 thresholdIndexChange = indexChange (/= 0)
 
@@ -171,7 +190,7 @@ weightIndexChange = indexChange id
 indexChange :: (Unbox a) => (a -> Bool) -> Int -> Array U DIM1 a -> Maybe Int
 indexChange condition location delta = safeHead $ catMaybes [safeHead y, safeHead x]
     where traversal g sh@(Z :. x) = bool (-1) x (condition $ g sh)
-          (x, y) = splitAt location . filter (>= 0) . toList $ traverse delta id traversal
+          (x, y) = toBoth (filter (>= 0)) . splitAt (location + 1) . toList $ traverse delta id traversal
 
 applySelection :: NNT -> NNT -> NNT -> NNT -> NNT
 applySelection x y z w = xor (xor x y) (complement z) .&. w
@@ -200,10 +219,11 @@ trainNeurons (TrainElem train desired) (CAMUpdate lIndex cElem) nn = bool nn' nn
           compared = vecCompare query desired
           chosenNeuron = nn !! lIndex
           wAoI = wAo !! lIndex
-          deltaPos = take (length nn - lIndex) $ reverse wAo
+          deltaPos = take (length nn - lIndex - 1) $ reverse wAo
           deltaP = calculateDelta deltaPos compared
+          atLeastOne = hammingWeight deltaP
           camNN = updateCAMNeuron chosenNeuron cElem deltaP wAoI
-          nn' = replaceElem nn lIndex camNN
+          nn' = bool nn (replaceElem nn lIndex camNN) $ atLeastOne > 0
 
 trainCAMNN :: [CAMNeuron] -> [CAMUpdate] -> [TrainElem] -> [CAMNeuron]
 trainCAMNN nn updates trainSet = foldl (\n (x, y) -> trainNeurons x y n) nn (zip trainSet updates)
@@ -214,7 +234,7 @@ trainUntilLearned nn trainSet shift tolerance = do
     let nn' = trainCAMNN nn updates trainSet
     -- print . filter (uncurry (==)) $ zip nn nn'
     -- printNN nn nn'
-    -- print nn'
+    -- print updates
     let distance = sum $ distanceCAMNN nn' trainSet
     print distance
     bool (trainUntilLearned nn' trainSet (shift + 1) tolerance) (return nn') (distance <= tolerance)
@@ -223,5 +243,4 @@ printNN :: [CAMNeuron] -> [CAMNeuron] -> IO ()
 printNN nn nn' = do
     let zipped = zip nn nn'
     print "---------------"
-    mapM_ (\(x,y) -> print $ show x P.++ "\n->" P.++ show y ) zipped
-
+    mapM_ (\(x,y) -> do print "NN:"; print x; print "NN':"; print y ) zipped

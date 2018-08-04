@@ -19,19 +19,36 @@ import           Data.Array.Repa       (computeS, fromListUnboxed, ix1, ix2,
                                         traverse2)
 import           Data.Array.Repa.Index
 import           Data.Bool
-import           ListExtras            (applyNTimes, shiftLeft)
+import           ListExtras            (applyNTimes, binaryList, num2Bin',
+                                        shiftLeft)
 
 createZNeuron :: Int -> Int -> CAMNeuron
-createZNeuron rowI colI = CAMNeuron (CAMWElem 0 camW0) (CAMTElem 0 camT0)
-    where camW0 = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
-          camT0 = fromListUnboxed (ix1 rowI) $ replicate rowI colI
+createZNeuron rowI colI = CAMNeuron (CAMWElem (-1) camW0) (CAMTElem (-1) camT0)
+    where camW0 = createWeight rowI colI []
+          camT0 = createThreshold rowI colI []
 
-createWeight :: [Int] -> Int -> Int -> NNTMU
-createWeight [] rowI colI = camWElem . camWeights $ createZNeuron rowI colI
-createWeight lst rowI colI
-    | length lst /= (rowI * colI) = camWElem . camWeights $ createZNeuron rowI colI
-    | otherwise = fromListUnboxed (ix2 rowI colI) binLst
-    where binLst = map (\x -> bool False True (0 /= x)) lst
+createWeight :: Int -> Int -> [Int] -> NNTMU
+createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
+createWeight rowI colI xs
+    | length xs /= (rowI * colI) = createWeight rowI colI []
+    | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
+
+createThreshold :: Int -> Int -> [Int] -> NTTVU
+createThreshold rowI colI [] = fromListUnboxed (ix1 rowI) $ replicate rowI colI
+createThreshold rowI _ xs
+    | length xs /= rowI = createThreshold rowI 0 []
+    | otherwise = fromListUnboxed (ix1 rowI) xs
+
+createOutput :: Int -> [Int] -> NNTVU
+createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
+createOutput elems xs
+    | length xs /= elems = createOutput elems []
+    | otherwise = fromListUnboxed (ix1 elems) $ binaryList xs
+
+createOutput' :: Int -> [Int] -> [NNTVU]
+createOutput' _ [] = []
+createOutput' binLength xs = map elemsLst xs
+    where elemsLst = fromListUnboxed (ix1 binLength) . reverse . num2Bin' binLength
 
 construct1Complement :: Int -> Int -> NNTMU
 construct1Complement startPos rows

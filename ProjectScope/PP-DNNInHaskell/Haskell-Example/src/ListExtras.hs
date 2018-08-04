@@ -44,8 +44,14 @@ sumBits = foldr sumTrues 0
 xorPCThreshold :: Bits a => a -> Int -> a -> Bool
 xorPCThreshold x y = (<= y) . popCount . xor x
 
+binaryList :: [Int] -> [Bool]
+binaryList = map (\x -> bool False True (0 /= x))
+
 flipElems :: Bits a => a -> a -> a
 flipElems = (.|.)
+
+toBoth :: (a -> b) -> (a, a) -> (b, b)
+toBoth f (x, y) = (f x, f y)
 
 num2Bin :: Int -> String
 num2Bin n

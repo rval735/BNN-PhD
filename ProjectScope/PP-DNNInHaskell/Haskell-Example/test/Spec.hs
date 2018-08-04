@@ -8,9 +8,16 @@
 ---- of this repository for more details.
 ----
 
-import           TestHMatrixOprs
+import           CAMTests
 
 main :: IO ()
 main = do
-    matrixMultiplication
-    matrixFunctionApplication
+    layerColideTest
+    layerSummationTest
+    trainCAMNNTest_2x2NNXOR
+    trainCAMNNTest_Ex2NN
+    applyDeltaThresholdTest
+    applyDeltaWeightTest
+    deltaNextChangeTest
+    thresholdIndexChangeTest
+    weightIndexChangeTest

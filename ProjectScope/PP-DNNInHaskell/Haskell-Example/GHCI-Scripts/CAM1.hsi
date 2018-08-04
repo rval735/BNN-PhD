@@ -46,6 +46,27 @@ Prelude.map (\x -> randomUpdate x nn) genElem
 
 --------------------------------
 
+let ((row, col), (indexW, weightLst), deltaLst, (indexE, expectedLst)) = testExamples2 !! 2
+let delta = createWeight row col deltaLst
+let lastWChange = indexW
+let oredDelta = foldS (.|.) False $ R.transpose delta
+oredDelta
+let numElems = size . extent $ oredDelta
+numElems
+let onesComp = construct1Complement lastWChange numElems
+onesComp
+applySHY f g sh@(Z :. x :. y) = bool (-1) y $ f sh .&. g (ix1 y)
+indexVec = computeUnboxedS $ traverse2 onesComp oredDelta const applySHY
+indexVec
+modifiedIndex = head . filter (>= 0) $ R.toList  indexVec
+modifiedIndex
+finalDelta = computeUnboxedS $ R.traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == modifiedIndex))
+CAMWElem 0 finalDelta
+
+delta = createWeight row col [1,0,0,1,0,1,0,0,1]
+CAMWElem 0 delta
+
+
 --------------------------------
 
 applyReverseNeuron compared camN2
@@ -153,8 +174,109 @@ desired = output2
 
 trainCAMNN' (train, desired) (index, elemN, elemIndex) nn
 
---------------------------------
+--------------------------------------------
+              
+let (row, col) = (3, 3)
+delta = createWeight row col [1,0,0,1,0,1,0,0,1]
+expected = createWeight row col [1,0,0,1,0,0,0,0,0]
+indexW = 4
+indexE = 0
+deltaNextChange delta indexW
+(indexW, expected) == deltaNextChange delta indexW
 
+lastWChange = indexW
+
+oredDelta = foldS (.|.) False $ R.transpose delta
+numElems = size . extent $ oredDelta
+onesComp = construct1Complement lastWChange numElems
+applySHY f g sh@(Z :. x :. y) = bool (-1) y $ f sh .&. g (ix1 y)
+indexVec = computeUnboxedS $ traverse2 onesComp oredDelta const applySHY
+modifiedIndex = safeHead . filter (>= 0) $ R.toList indexVec
+      finalDelta = case modifiedIndex of
+          Just index -> (index, computeUnboxedS $ R.traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
+          Nothing    -> (lastWChange, delta)
+          
+
+-- -ff--f-f-f-f-f-f-f-f-f-f-f-f-f
+let (row, col) = (3, 3)
+delta = createWeight row col [1,0,0,1,0,1,0,0,1]
+expected = createWeight row col [1,0,0,1,0,0,0,0,0]
+indexW = -1
+indexE = 0
+deltaNextChange delta indexW
+(indexW, expected) == deltaNextChange delta indexW
+
+lastWChange = indexW
+
+oredDelta = foldS (.|.) False $ R.transpose delta
+changeIndexM = weightIndexChange lastWChange oredDelta
+finalDelta = case changeIndexM of
+    Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
+    Nothing    -> (-1, computeS $ map (const False) delta)
+
+
+
+--------------------------------------------
+--------------------------------------------
+
+nSize = 2
+camN0 = createZNeuron 2 2
+nn = [camN0, camN0]
+baseLst = [0, 1, 2, 3]
+baseOLst = [0, 3, 3, 0]
+inputLst = P.map (reverse . num2Bin' nSize) baseLst
+outputLst = P.map (reverse . num2Bin' nSize) baseOLst
+inputs = P.map (fromListUnboxed (ix1 nSize)) inputLst
+outputs = P.map (fromListUnboxed (ix1 nSize)) outputLst
+trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
+updates = updatesWithConditions (length nn) (length trainSet) 0
+trainUntilLearned nn trainSet 0 0
+
+trainCAMNN nn updates trainSet
+nn1 = trainNeurons (trainSet !! 1) (updates !! 1) nn
+nn2 = trainNeurons (trainSet !! 2) (updates !! 2) nn1
+nn3 = trainNeurons (trainSet !! 3) (updates !! 3) nn2
+
+train = trainInput $ trainSet !! 2
+desired = trainOutput $ trainSet !! 2
+lIndex = lstIndex (updates !! 2)
+cElem = camElem (updates !! 2)
+
+(query, wAo) = queryNeuronsAcc nn1 train -- wAo = Weights and Outputs
+query
+wAo
+compared = vecCompare query desired
+compared
+chosenNeuron = nn !! lIndex
+chosenNeuron
+wAoI = wAo !! lIndex
+wAoI
+deltaPos = take (length nn - lIndex - 1) $ reverse wAo
+deltaPos
+deltaP = calculateDelta deltaPos compared
+deltaP
+atLeastOne = hammingWeight deltaP
+atLeastOne
+camNN = updateCAMNeuron chosenNeuron cElem deltaP wAoI
+camNN
+nn' = bool nn1 (replaceElem nn1 lIndex camNN) $ atLeastOne > 0
+nn'
+
+
+
+tI = trainInput $ trainSet !! 2
+h1 = applyNeuron tI (nn3 !! 0)
+o1 = applyNeuron h1 (nn3 !! 1)
+
+camW = camWeights (nn3 !! 1)
+camT = camThresholds (nn3 !! 1)
+-- camW = CAMWElem (fromListUnboxed (ix2 2 2) [True, False, True, False]) 0
+collision = layerColide camW h1 xor
+summ = layerSummation collision
+res = layerOperation summ camT (>=)
+
+--------------------------------------------
+--------------------------------------------
 
 
 --------------------------------
@@ -278,3 +400,52 @@ output = applyNeuron hidden chosenNeuron
 deltaP = foldl applyReverseNeuron' compared choppedNNR
 camNN = updateCAMNeuron' chosenNeuron cElem deltaP output hidden
 nn' = replaceElem nn lIndex camNN
+
+--***--__---___---___----***--__---___---___---
+--***--__---___---___----***--__---___---___---
+--***--__---___---___----***--__---___---___---
+
+let (row, col) = (3,3)
+camW0 = CAMWElem 0 $ createWeight row col [1,1,1,0,1,1,1,1,0]
+camT0 = CAMTElem 2 $ createThreshold row col [2,3,2]
+camN0 = CAMNeuron camW0 camT0
+
+camW1 = CAMWElem 2 $ createWeight row col [1,0,1,0,0,0,0,1,1]
+camT1 = CAMTElem 2 $ createThreshold row col [2,2,1]
+camN1 = CAMNeuron camW1 camT1
+
+camW2 = CAMWElem 0 $ createWeight row col [0,0,1,1,0,1,0,1,1]
+camT2 = CAMTElem 2 $ createThreshold row col [1,1,2]
+camN2 = CAMNeuron camW2 camT2
+nn = [camN0, camN1, camN2]
+updates' = updatesWithConditions (length nn) (length trainSet) 4
+
+-- trainCAMNN nn updates' trainSet
+pos = 0
+nn1 = trainNeurons (trainSet !! pos) (updates' !! pos) nn
+pos = 1
+nn2 = trainNeurons (trainSet !! pos) (updates' !! pos) nn1
+pos = 2
+nn3 = trainNeurons (trainSet !! pos) (updates' !! pos) nn2
+pos = 3
+nn4 = trainNeurons (trainSet !! pos) (updates' !! pos) nn3
+pos = 4
+nn5 = trainNeurons (trainSet !! pos) (updates' !! pos) nn4
+pos = 5
+nn6 = trainNeurons (trainSet !! pos) (updates' !! pos) nn5
+pos = 6
+nn7 = trainNeurons (trainSet !! pos) (updates' !! pos) nn6
+pos = 7
+nn8 = trainNeurons (trainSet !! pos) (updates' !! pos) nn7
+(TrainElem train desired) = (trainSet !! pos)
+(CAMUpdate lIndex cElem) = (updates' !! pos)
+
+(query, wAo) = queryNeuronsAcc nn7 train
+compared = vecCompare query desired
+chosenNeuron = nn7 !! lIndex
+wAoI = wAo !! lIndex
+deltaPos = take (length nn7 - lIndex) $ reverse wAo
+deltaP = calculateDelta deltaPos compared
+camNN = updateCAMNeuron chosenNeuron cElem deltaP wAoI
+nn' = replaceElem nn7 lIndex camNN
+
