@@ -20,7 +20,7 @@ where
 import           CAMExtras                         (construct1Complement,
                                                     constructUpdate)
 import           CAMTypes
-import           Control.Monad                     (mapM_)
+import           Control.Monad                     (mapM_, when)
 import           Data.Array.Repa
 import           Data.Array.Repa.Algorithms.Matrix (col)
 import           Data.Array.Repa.Eval              (Target)
@@ -214,12 +214,14 @@ trainUntilLearned :: [CAMNeuron] -> [TrainElem] -> Int -> Int -> IO [CAMNeuron]
 trainUntilLearned nn trainSet shift tolerance = do
     let updates = updatesWithConditions (length nn) (length trainSet) shift
     let nn' = trainCAMNN nn updates trainSet
+    let shiftTo = bool (shift + 1) 0 (shift > length trainSet)
     -- print . filter (uncurry (==)) $ zip nn nn'
     -- printNN nn nn'
     -- print updates
     let distance = sum $ distanceCAMNN nn' trainSet
-    print distance
-    bool (trainUntilLearned nn' trainSet (shift + 1) tolerance) (return nn') (distance <= tolerance)
+    let opr = print nn' >> print distance
+    when (shiftTo == 0) opr
+    bool (trainUntilLearned nn' trainSet shiftTo tolerance) (return nn') (distance <= tolerance)
 
 printNN :: [CAMNeuron] -> [CAMNeuron] -> IO ()
 printNN nn nn' = do

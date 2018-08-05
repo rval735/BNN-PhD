@@ -247,14 +247,18 @@ nSize = 2
 camN0 = createZNeuron 2 2
 nn = [camN0, camN0]
 baseLst = [0, 1, 2, 3]
-baseOLst = [0, 3, 3, 0]
+-- baseOLst = [0, 3, 3, 0] -- XOR output
+baseOLst = [3, 0, 0, 3] -- XNOR output
 inputLst = P.map (reverse . num2Bin' nSize) baseLst
 outputLst = P.map (reverse . num2Bin' nSize) baseOLst
 inputs = P.map (fromListUnboxed (ix1 nSize)) inputLst
 outputs = P.map (fromListUnboxed (ix1 nSize)) outputLst
 trainSet = P.zipWith (\x y -> TrainElem x y) inputs outputs
 updates = updatesWithConditions (length nn) (length trainSet) 0
-trainUntilLearned nn trainSet 0 0
+nn1 <- trainUntilLearned nn trainSet 0 0
+
+distanceCAMNN nn1 trainSet
+let nn2 = trainCAMNN nn updates trainSet
 
 trainCAMNN nn updates trainSet
 nn1 = trainNeurons (trainSet !! 1) (updates !! 1) nn
@@ -386,12 +390,12 @@ trainUntilLearned' nn trainSet 0 3
 --***--__---___---___----***--__---___---___---
 
 nSize = 4
-testSize = 4
+testSize = 5
 nnSize = 3
 
 camW0 = fromListUnboxed (ix2 nSize nSize) $ replicate (nSize * nSize) False
 camT0 = fromListUnboxed (ix1 nSize) $ replicate nSize nSize :: NTTVU
-camN0 = CAMNeuron (CAMWElem camW0 0) (CAMTElem camT0 0)
+camN0 = CAMNeuron (CAMWElem (-1) camW0 ) (CAMTElem (-1) camT0)
 
 baseLst = [1 .. testSize]
 baseOLst = P.map sin [1 .. testSize]
@@ -407,7 +411,7 @@ updates = take (length trainSet) $ constructUpdate (length nn)
 
 trainNeurons (trainSet !! 0) (updates !! 0) nn
 
-trainUntilLearned nn trainSet 0 3
+trainUntilLearned nn trainSet 0 0
 
 train = trainInput $ trainSet !! 0
 desired = trainOutput $ trainSet !! 0
