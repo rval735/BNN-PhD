@@ -8,6 +8,7 @@
 ---- of this repository for more details.
 ----
 
+import           CAMMNISTTests
 import           CAMTests
 
 main :: IO ()

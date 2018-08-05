@@ -25,6 +25,8 @@ dependencies:
 - repa-algorithms >= 3.4
 - Unique >= 0.4
 - data-binary-ieee754 >= 0.4.4
+- mnist-idx >= 0.1.2.8
+- vector >=0.10 && <0.13
 # - hmatrix >= 0.18  # Uncomment if previous versions are going to compile
 
 library:

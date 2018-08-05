@@ -23,7 +23,6 @@ import           CAMTypes
 import           Control.Monad                     (mapM_, when)
 import           Data.Array.Repa
 import           Data.Array.Repa.Algorithms.Matrix (col)
-import           Data.Array.Repa.Eval              (Target)
 import           Data.Array.Repa.Repr.Unboxed      (Unbox)
 import           Data.Bits                         (complement, xor, (.&.),
                                                     (.|.))

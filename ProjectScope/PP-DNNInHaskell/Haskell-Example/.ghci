@@ -1,29 +1,30 @@
-:m + System.Random
-:m + Control.Monad
+:set prompt ">>="
 :set -XOverloadedStrings
 :set -XFlexibleContexts
 :set -XDeriveGeneric
-:set prompt ">>="
+:set -XDataKinds
+:set -XTypeApplications
+:set -XTypeOperators
+:m + System.Random
+:m + Control.Monad
 :m + Data.Maybe
 :m + Data.List
-import qualified Data.ByteString       as BS
-import qualified Data.ByteString.Char8 as C8
+:m + Control.Arrow
 :m + Data.Maybe
 :m + Data.Time.Clock
 :m + System.Environment
 :m + System.Exit
-:set -XDataKinds
-:set -XTypeApplications
-:set -XTypeOperators
-import qualified Data.ByteString.Lazy       as BSL
-import           Data.Foldable
+:m + Data.Foldable
+:m + Data.List.Unique
+:m + Data.Bool
+:m + Data.Binary.IEEE754
+:m + GHC.Word
+:m + Data.Bits
+:m + Data.IDX
+import qualified Data.ByteString       as BS
+import qualified Data.ByteString.Char8 as C8
+import qualified Data.ByteString.Lazy  as BSL
 import qualified Data.Array.Repa as R
-import Data.Array.Repa.Algorithms.Matrix
+import qualified Data.Array.Repa.Algorithms.Matrix as R
 import qualified Prelude as P
-import Data.Array.Repa
-import Data.Array.Repa
-import Data.List.Unique
-import           Data.Bool (bool)
-import Data.Binary.IEEE754
-import GHC.Word
-import Data.Bits
+import qualified Data.Vector.Unboxed as V
