@@ -15,7 +15,8 @@ main = do
     layerColideTest
     layerSummationTest
     trainCAMNNTest_2x2NNXOR
-    trainCAMNNTest_Ex2NN
+    -- trainCAMNNTest_Ex2NN
+    -- trainUntilLearnedTest
     applyDeltaThresholdTest
     applyDeltaWeightTest
     deltaNextChangeTest

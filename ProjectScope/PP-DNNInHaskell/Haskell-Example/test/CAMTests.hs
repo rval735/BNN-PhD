@@ -82,10 +82,29 @@ trainCAMNNTest_Ex2NN = do
     let trainSet = zipWith TrainElem inputs outputs
     let updates = updatesWithConditions (length nn) (length trainSet) 0
     --- To be tested
+    -- trainUntilLearned nn trainSet 0 6
     nn' <- recursiveNN trainSet updates nn
     let result = map (== 0) $ distanceCAMNN nn' trainSet
     --- Finish testing
     printResult result
+
+trainUntilLearnedTest :: IO ()
+trainUntilLearnedTest = do
+    print "trainUntilLearnedTest"
+    let (nSize, testSize, nnSize) = (4, 5, 3)
+    let camN0 = createZNeuron nSize nSize
+    let inputs = createOutput' nSize [1 .. testSize]
+    let baseOLst = map (sin . fromIntegral) [1 .. testSize]
+    let outputs = createOutput' nSize $ map (round . (*100)) baseOLst
+    let trainSet = zipWith TrainElem inputs outputs
+    let nn = replicate nnSize camN0
+    let updates = take (length trainSet) $ constructUpdate (length nn)
+    --- To be tested
+    nn' <- trainUntilLearned nn trainSet 0 0
+    let result = map (== 0) $ distanceCAMNN nn' trainSet
+    --- Finish testing
+
+    print result
 
 applyDeltaThresholdTest :: IO ()
 applyDeltaThresholdTest = do
