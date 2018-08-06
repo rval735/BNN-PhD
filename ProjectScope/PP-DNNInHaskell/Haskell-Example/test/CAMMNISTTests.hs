@@ -21,7 +21,9 @@ import qualified Data.Array.Repa     as R
 import           Data.Bool           (bool)
 import           Data.IDX            (decodeIDXFile, decodeIDXLabelsFile,
                                       labeledIntData)
+import           Data.List           (intercalate)
 import           Data.Maybe          (fromJust)
+import           Data.Time.Clock     (diffUTCTime, getCurrentTime)
 import qualified Data.Vector.Unboxed as V
 import           ListExtras          (num2Bin')
 import           System.Random       (mkStdGen, split)
@@ -29,6 +31,8 @@ import           System.Random       (mkStdGen, split)
 runMNIST :: IO ()
 runMNIST = do
     print "runMNIST"
+    -- Record start time
+    startTime <- getCurrentTime
     dta <- loadMNISTFiles "../MNIST-Data/t10k-labels-idx1-ubyte" "../MNIST-Data/t10k-images-idx3-ubyte"
     let inputSize = 784
     let outputSize = 4
@@ -53,8 +57,15 @@ runMNIST = do
     let distance = distanceCAMNN nn' testSet
     let matches = length . filter (== 0) $ distance
     let percentage = fromIntegral matches / fromIntegral (length distance) * 100
+    -- Get the time of executing the whole venture
+    endTime <- getCurrentTime
+    -- Take the difference of that time
+    let diff = diffUTCTime endTime startTime
     print $ "Distance: " ++ show distance
     print $ show matches ++ "/" ++ show (length distance) ++ "->" ++ show percentage ++ "%"
+    print "HNodes, Epochs, Error, Diff, STime, ETime"
+    let elems = [show llSize, show epochs, show percentage, show diff, show startTime, show endTime]
+    print $ intercalate ", " elems
     return ()
 
 loadMNISTFiles :: String -> String -> IO [(Int, V.Vector Int)]
@@ -65,4 +76,3 @@ loadMNISTFiles labelPath dataPath = do
     let dta = fromJust maybeData
     let mnist = labeledIntData lbl dta
     return $ fromJust mnist
-
