@@ -21,11 +21,20 @@ import           Data.Array.Repa.Index
 import           Data.Bool
 import           ListExtras            (applyNTimes, binaryList, num2Bin',
                                         shiftLeft)
+import           System.Random         (mkStdGen, next, randomRs, randoms)
 
 createZNeuron :: Int -> Int -> CAMNeuron
 createZNeuron rowI colI = CAMNeuron (CAMWElem (-1) camW0) (CAMTElem (-1) camT0)
     where camW0 = createWeight rowI colI []
           camT0 = createThreshold rowI colI []
+
+createRNeuron :: Int -> Int -> Int -> CAMNeuron
+createRNeuron rowI colI seed = CAMNeuron (CAMWElem (-1) camW0) (CAMTElem (-1) camT0)
+    where stdGen = mkStdGen seed
+          (_, stdGen') = next stdGen
+          numberElems = rowI * colI
+          camW0 = createWeight rowI colI . take numberElems $ randomRs (0, 1) stdGen
+          camT0 = createThreshold rowI 0 . take rowI $ randomRs (0, colI) stdGen'
 
 createWeight :: Int -> Int -> [Int] -> NNTMU
 createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False

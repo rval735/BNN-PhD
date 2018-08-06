@@ -65,7 +65,7 @@ outputNodes = 10
 n = NeuralNetwork(inputNodes, hiddenNodes, outputNodes, learningRate)
 
 # Load MNIST dataset in CSV format into a list
-trainingDataFile = open("../MNIST-Data/MNIST-Train.csv", 'r')
+trainingDataFile = open("../MNIST-Data/mnist_train-100.csv", 'r')
 trainingDataList = trainingDataFile.readlines()
 trainingDataFile.close()
 
@@ -88,7 +88,7 @@ for e in range(epochs):
     pass
 
 # Load MNIST test data from CSV file into a list
-testDataFile = open("../MNIST-Data/MNIST-Test.csv", 'r')
+testDataFile = open("../MNIST-Data/mnist_test-10.csv", 'r')
 testDataList = testDataFile.readlines()
 testDataFile.close()
 
@@ -125,5 +125,5 @@ error = scorecardArr.sum() / float(scorecardArr.size)
 
 endTime = datetime.now()
 diff = endTime - startTime
-print ("HNodes,", "LRate,", "Epochs,", "Error,", "Diff,", "STime,", "ETime")
-print (hiddenNodes, ",", learningRate, ",", epochs, ",", error, ",", diff, ",", startTime, ",", endTime)
+print ("HNodes\tLRate\tEpochs\tError\tDiff\tSTime\tETime")
+print (hiddenNodes, learningRate, epochs, error, diff, startTime, endTime)

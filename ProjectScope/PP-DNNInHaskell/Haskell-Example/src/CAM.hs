@@ -211,16 +211,29 @@ trainCAMNN nn updates trainSet = foldl (\n (x, y) -> trainNeurons x y n) nn (zip
 
 trainUntilLearned :: [CAMNeuron] -> [TrainElem] -> Int -> Int -> IO [CAMNeuron]
 trainUntilLearned nn trainSet shift tolerance = do
-    let updates = updatesWithConditions (length nn) (length trainSet) shift
-    let nn' = trainCAMNN nn updates trainSet
-    let shiftTo = bool (shift + 1) 0 (shift > length trainSet)
-    -- print . filter (uncurry (==)) $ zip nn nn'
-    -- printNN nn nn'
-    -- print updates
+    let (shiftTo, nn') = trainGeneral nn trainSet shift
     let distance = sum $ distanceCAMNN nn' trainSet
-    let opr = print nn' >> print distance
-    when (shiftTo == 0) opr
+    let printOpr = print nn' >> print ("Distance: " P.++ show distance)
+    when (shiftTo == 0) printOpr
     bool (trainUntilLearned nn' trainSet shiftTo tolerance) (return nn') (distance <= tolerance)
+
+trainWithEpochs :: [CAMNeuron] -> [TrainElem] -> Int -> Int -> IO [CAMNeuron]
+trainWithEpochs nn _ _ 0 = return nn
+trainWithEpochs nn trainSet shift epochs
+    | epochs < 0 = return nn
+    | otherwise = do
+        let (shiftTo, nn') = trainGeneral nn trainSet shift
+        -- print $ "Epoch:" P.++ show epochs
+        -- print nn'
+        trainWithEpochs nn' trainSet shiftTo $ epochs - 1
+
+trainGeneral :: [CAMNeuron] -> [TrainElem] -> Int -> (Int, [CAMNeuron])
+trainGeneral [] _ _ = (-1, [])
+trainGeneral nn trainSet shift = (shiftTo, nn')
+    where updates = updatesWithConditions (length nn) (length trainSet) shift
+          nn' = trainCAMNN nn updates trainSet
+          shiftTo = bool (shift + 1) 0 (shift > length trainSet)
+
 
 printNN :: [CAMNeuron] -> [CAMNeuron] -> IO ()
 printNN nn nn' = do
