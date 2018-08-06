@@ -17,24 +17,15 @@ where
 import           CAMTypes
 import           Data.Array.Repa       (computeS, fromListUnboxed, ix1, ix2,
                                         traverse2)
-import           Data.Array.Repa.Index
-import           Data.Bool
+import           Data.Array.Repa.Index ((:.) (..), Z (..))
+import           Data.Bool             (bool)
 import           ListExtras            (applyNTimes, binaryList, num2Bin',
                                         shiftLeft)
-import           System.Random         (mkStdGen, next, randomRs, randoms)
 
 createZNeuron :: Int -> Int -> CAMNeuron
-createZNeuron rowI colI = CAMNeuron (CAMWElem (-1) camW0) (CAMTElem (-1) camT0)
+createZNeuron rowI colI = CAMNeuron (CAMWElem initialValue camW0) (CAMTElem initialValue camT0)
     where camW0 = createWeight rowI colI []
           camT0 = createThreshold rowI colI []
-
-createRNeuron :: Int -> Int -> Int -> CAMNeuron
-createRNeuron rowI colI seed = CAMNeuron (CAMWElem (-1) camW0) (CAMTElem (-1) camT0)
-    where stdGen = mkStdGen seed
-          (_, stdGen') = next stdGen
-          numberElems = rowI * colI
-          camW0 = createWeight rowI colI . take numberElems $ randomRs (0, 1) stdGen
-          camT0 = createThreshold rowI 0 . take rowI $ randomRs (0, colI) stdGen'
 
 createWeight :: Int -> Int -> [Int] -> NNTMU
 createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
@@ -54,9 +45,9 @@ createOutput elems xs
     | length xs /= elems = createOutput elems []
     | otherwise = fromListUnboxed (ix1 elems) $ binaryList xs
 
-createOutput' :: Int -> [Int] -> [NNTVU]
-createOutput' _ [] = []
-createOutput' binLength xs = map elemsLst xs
+createOutputLst :: Int -> [Int] -> [NNTVU]
+createOutputLst _ [] = []
+createOutputLst binLength xs = map elemsLst xs
     where elemsLst = fromListUnboxed (ix1 binLength) . reverse . num2Bin' binLength
 
 construct1Complement :: Int -> Int -> NNTMU

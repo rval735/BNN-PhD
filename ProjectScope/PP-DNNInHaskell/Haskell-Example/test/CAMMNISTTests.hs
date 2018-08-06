@@ -14,22 +14,17 @@ module CAMMNISTTests
 -- )
 where
 
-import           CAM
-import           CAMExtras
-import           CAMTypes
-import           Control.Arrow       (second)
-import           Control.Monad       (when)
+import           CAM                 (distanceCAMNN, trainWithEpochs)
+import           CAMRandom           (randomCAMNeuron)
+import           CAMTypes            (TrainElem (..))
 import qualified Data.Array.Repa     as R
-import           Data.Bits           (xor)
 import           Data.Bool           (bool)
 import           Data.IDX            (decodeIDXFile, decodeIDXLabelsFile,
                                       labeledIntData)
-import           Data.List           (zip5)
 import           Data.Maybe          (fromJust)
 import qualified Data.Vector.Unboxed as V
-import           ListExtras          (applyNTimes, indexFirstNonZeroI, num2Bin',
-                                      replaceElem, safeHead, shiftLeft)
-import           System.Random       (mkStdGen, newStdGen, next)
+import           ListExtras          (num2Bin')
+import           System.Random       (mkStdGen, split)
 
 runMNIST :: IO ()
 runMNIST = do
@@ -48,12 +43,10 @@ runMNIST = do
     let transformNum = R.fromListUnboxed (R.ix1 outputSize) . reverse . num2Bin' outputSize
     let trainSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) $ take trainingSet dta
     let testSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) . take nnSize $ drop testingSet dta
-    let (seed0, genStd0) = next genStd
-    let (seed1, genStd1) = next genStd0
-    let (seed2, genStd2) = next genStd1
-    let camN0 = createRNeuron nnSize inputSize seed0
-    let camN1 = createRNeuron nnSize nnSize seed1
-    let camN2 = createRNeuron outputSize nnSize seed2
+    let (genStd0, genStd1) = split genStd
+    let camN0 = randomCAMNeuron genStd nnSize inputSize
+    let camN1 = randomCAMNeuron genStd0 nnSize nnSize
+    let camN2 = randomCAMNeuron genStd0 outputSize nnSize
     let nn = [camN0] ++ replicate llSize camN1 ++ [camN2]
     -- nn' <- trainUntilLearned nn trainSet 0 5
     nn' <- trainWithEpochs nn trainSet 0 epochs

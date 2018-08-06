@@ -21,8 +21,6 @@ import           Control.Monad (when)
 import           Data.Bits     (xor)
 import           Data.Bool     (bool)
 import           Data.List     (zip5)
-import           ListExtras    (applyNTimes, indexFirstNonZeroI, num2Bin',
-                                replaceElem, safeHead, shiftLeft)
 
 layerColideTest :: IO ()
 layerColideTest = do
@@ -47,8 +45,8 @@ trainCAMNNTest_2x2NNXOR = do
     print "trainCAMNNTest_2x2NNXOR"
     let nSize = 2
     let nn = replicate nSize $ createZNeuron nSize nSize
-    let inputs = createOutput' nSize [0, 1, 2, 3]
-    let outputsXOR = createOutput' nSize [0, 3, 3, 0]
+    let inputs = createOutputLst nSize [0, 1, 2, 3]
+    let outputsXOR = createOutputLst nSize [0, 3, 3, 0]
     let trainSetXOR = zipWith TrainElem inputs outputsXOR
     let updates = updatesWithConditions (length nn) (length trainSetXOR) 0
     --- To be tested
@@ -57,28 +55,13 @@ trainCAMNNTest_2x2NNXOR = do
     --- Finish testing
     printResult result
 
-trainCAMNNTest_2x2NNXNOR :: IO ()
-trainCAMNNTest_2x2NNXNOR = do
-    print "trainCAMNNTest_2x2NNXNOR"
-    let nSize = 2
-    let nn = replicate nSize $ createZNeuron nSize nSize
-    let inputs = createOutput' nSize [0, 1, 2, 3]
-    let outputs = createOutput' nSize [0, 3, 3, 0]
-    let trainSet = zipWith TrainElem inputs outputs
-    let updates = updatesWithConditions (length nn) (length trainSet) 0
-    --- To be tested
-    let nn' = trainCAMNN nn updates trainSet
-    let result = map (== 0) $ distanceCAMNN nn' trainSet
-    --- Finish testing
-    printResult result
-
 trainCAMNNTest_Ex2NN :: IO ()
 trainCAMNNTest_Ex2NN = do
     print "trainCAMNNTest_Ex2NN"
     let nSize = 3
     let nn = [createZNeuron nSize nSize, createZNeuron 2 nSize, createZNeuron nSize 2]
-    let inputs = createOutput' nSize [0, 2, 4, 6, 1, 3, 5, 7]
-    let outputs = createOutput' nSize [0, 6, 7, 3, 2, 4, 2, 1]
+    let inputs = createOutputLst nSize [0, 2, 4, 6, 1, 3, 5, 7]
+    let outputs = createOutputLst nSize [0, 6, 7, 3, 2, 4, 2, 1]
     let trainSet = zipWith TrainElem inputs outputs
     let updates = updatesWithConditions (length nn) (length trainSet) 0
     --- To be tested
@@ -93,9 +76,9 @@ trainUntilLearnedTest = do
     print "trainUntilLearnedTest"
     let (nSize, testSize, nnSize) = (4, 5, 3)
     let camN0 = createZNeuron nSize nSize
-    let inputs = createOutput' nSize [1 .. testSize]
+    let inputs = createOutputLst nSize [1 .. testSize]
     let baseOLst = map (sin . fromIntegral) [1 .. testSize]
-    let outputs = createOutput' nSize $ map (round . (*100)) baseOLst
+    let outputs = createOutputLst nSize $ map (round . (*100)) baseOLst
     let trainSet = zipWith TrainElem inputs outputs
     let nn = replicate nnSize camN0
     let updates = take (length trainSet) $ constructUpdate (length nn)

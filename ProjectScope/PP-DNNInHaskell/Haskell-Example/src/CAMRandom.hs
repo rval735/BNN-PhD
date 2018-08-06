@@ -18,21 +18,24 @@ import           CAMTypes
 import           Data.Array.Repa                      (fromListUnboxed, ix1,
                                                        ix2)
 import           Data.Array.Repa.Algorithms.Randomish (randomishIntArray)
-import           System.Random
+import           System.Random                        (RandomGen, next, randoms,
+                                                       split)
 
-randomNNTMU :: RandomGen g => g -> WeightsSize -> ThresholdSize -> NNTMU
-randomNNTMU seed x y = fromListUnboxed shape lstElems
-    where lstElems = take (x * y) $ randoms seed :: [NNT]
-          shape = ix2 x y
+randomNNTMU :: RandomGen g => g -> Int -> Int -> NNTMU
+randomNNTMU seed rowI colI = fromListUnboxed shape lstElems
+    where lstElems = take (rowI * colI) $ randoms seed :: [NNT]
+          shape = ix2 rowI colI
 
-randomNNTVU :: RandomGen g => g -> ThresholdSize -> NNTVU
-randomNNTVU seed y = fromListUnboxed shape lstElems
-    where lstElems = take y $ randoms seed :: [NNT]
-          shape = ix1 y
+randomNNTVU :: RandomGen g => g -> Int -> NNTVU
+randomNNTVU seed elems = fromListUnboxed shape lstElems
+    where lstElems = take elems $ randoms seed :: [NNT]
+          shape = ix1 elems
 
-randomNTTVU :: RandomGen g => g -> ThresholdSize -> NTTVU
-randomNTTVU seed y = randomishIntArray (ix1 y) 0 y (fst $ next seed)
+randomNTTVU :: RandomGen g => g -> Int -> Int -> NTTVU
+randomNTTVU seed elems maxVal = randomishIntArray (ix1 elems) 0 maxVal (fst $ next seed)
 
-randomCAMNeuron :: RandomGen g => g -> WeightsSize -> ThresholdSize -> CAMNeuron
-randomCAMNeuron seed x y = CAMNeuron (CAMWElem 0 (randomNNTMU seed x y)) (CAMTElem 0 (randomNTTVU seed' x))
-    where (_, seed') = next seed
+randomCAMNeuron :: RandomGen g => g -> Int -> Int -> CAMNeuron
+randomCAMNeuron seed rowI colI = CAMNeuron wElem tElem
+    where (seed1, seed0) = split seed
+          wElem = CAMWElem initialValue $ randomNNTMU seed0 rowI colI
+          tElem = CAMTElem initialValue $ randomNTTVU seed1 rowI colI

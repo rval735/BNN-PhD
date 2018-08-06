@@ -25,6 +25,9 @@ import           ListExtras                        (splitEvery)
 type WeightsSize = Int
 type ThresholdSize = Int
 
+initialValue :: Int
+initialValue = -1
+
 -- | Code synonyms to ease relationship between function
 --   parameters and their application
 
@@ -107,9 +110,6 @@ data TrainElem = TrainElem {
 instance Show TrainElem where
     show (TrainElem tI tO) = "I:" ++ show (toBList tI) ++ "\nO:" ++ show (toBList tO)
 
-type QueryData = NNTVU
-
-
 ---------------------------------------
 ------------- Helper List -------------
 ---------------------------------------
@@ -132,3 +132,9 @@ weightsString (CAMWElem wC cW) = show wC ++ formatted
           colW = col $ extent cW
           splitted = splitEvery colW lstW
           formatted = foldl (\y x -> y ++ "\n" ++ show x) "" splitted
+
+printNN :: [CAMNeuron] -> [CAMNeuron] -> IO ()
+printNN nn nn' = do
+    let zipped = zip nn nn'
+    print "---------------"
+    mapM_ (\(x,y) -> do print "NN:"; print x; print "NN':"; print y ) zipped

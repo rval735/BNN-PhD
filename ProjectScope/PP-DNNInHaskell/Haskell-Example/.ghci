@@ -15,9 +15,7 @@
 :m + System.Environment
 :m + System.Exit
 :m + Data.Foldable
-:m + Data.List.Unique
 :m + Data.Bool
-:m + Data.Binary.IEEE754
 :m + GHC.Word
 :m + Data.Bits
 :m + Data.IDX

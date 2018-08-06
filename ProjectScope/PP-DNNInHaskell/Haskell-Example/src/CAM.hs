@@ -28,19 +28,12 @@ import           Data.Bits                         (complement, xor, (.&.),
                                                     (.|.))
 import           Data.Bool                         (bool)
 import           Data.List                         (mapAccumL)
-import           Data.Maybe                        (catMaybes, fromMaybe,
-                                                    isJust)
-import           ListExtras                        (applyNTimes,
-                                                    indexFirstNonZeroI,
-                                                    replaceElem, safeHead,
-                                                    shiftLeft, toBoth)
+import           Data.Maybe                        (catMaybes)
+import           ListExtras                        (applyNTimes, replaceElem,
+                                                    safeHead, shiftLeft, toBoth)
 import           Prelude                           hiding (map, traverse,
                                                     zipWith)
 import qualified Prelude                           as P
-
-transformElem :: (Shape sh, Unbox a) => Array U sh a -> sh -> (a -> a)-> Array U sh a
-transformElem mtx sh trans = computeS res
-    where res = traverse mtx id (\f shape -> bool (f shape) (trans $ f shape) (shape == sh))
 
 layerColide :: CAMWElem -> NNTVU -> (NNT -> NNT -> NNT)-> NNTMU
 layerColide (CAMWElem _ mtx) vtr colision = computeS $ traverse2 mtx vtr const applySHY
@@ -58,26 +51,8 @@ applyNeuron input (CAMNeuron camW camT) = res
           summ = layerSummation collision
           res = layerOperation summ camT (>=)
 
-applyReverseNeuron :: NNTVU -> CAMNeuron -> NNTVU
-applyReverseNeuron input (CAMNeuron camW camT) = res
-    where collision = layerColide camW input (\x y -> complement $ xor x y)
-          summ = layerSummation collision
-          res = layerOperation summ camT (<)
-
--- TR stands for Transpose - Reverse
-applyTRNeuron :: NNTVU -> CAMNeuron -> NNTVU
-applyTRNeuron input (CAMNeuron (CAMWElem reg camW) camT) = res
-    where camWE = CAMWElem reg (computeS $ transpose camW)
-          collision = layerColide camWE input (\x y -> complement $ xor x y)
-          summ = layerSummation collision
-          res = layerOperation summ camT (<)
-
 weightsToDelta :: NNTMU -> NNTVU
 weightsToDelta = foldS (.|.) False
-
-applyBackProp :: NNTVU -> NNTVU -> NNTVU -> CAMNeuron -> NNTVU
-applyBackProp delta input output (CAMNeuron camW camT) = weightsToDelta dWeights
-    where dWeights = computeS . transpose $ deltaWeights camW input output delta
 
 vecCompare :: NNTVU -> NNTVU -> NNTVU
 vecCompare x y = computeS $ zipWith xor x y
@@ -85,21 +60,15 @@ vecCompare x y = computeS $ zipWith xor x y
 hammingWeight :: NNTVU -> Int
 hammingWeight x = sumAllS $ map (bool 0 1) x
 
-queryNeurons :: [CAMNeuron] -> QueryData -> NNTVU
+queryNeurons :: [CAMNeuron] -> NNTVU -> NNTVU
 queryNeurons nn query = foldl applyNeuron query nn
 
-queryNeuronsAcc :: [CAMNeuron] -> QueryData -> (NNTVU, [(NNTMU, NNTVU)])
+queryNeuronsAcc :: [CAMNeuron] -> NNTVU -> (NNTVU, [(NNTMU, NNTVU)])
 queryNeuronsAcc nn query = mapAccumL f query nn
     where f x n@(CAMNeuron y _) = let apNN = applyNeuron x n in (apNN, (layerColide y x xor, applyNeuron x n))
 
 queryCAMNN :: [CAMNeuron] -> [TrainElem] -> [NNTVU]
 queryCAMNN nn = P.map (\(TrainElem query _) -> queryNeurons nn query)
-
-queryReverseNeurons :: [CAMNeuron] -> TrainElem -> NNTVU
-queryReverseNeurons nn (TrainElem query _) = foldl applyReverseNeuron query nn
-
-queryReverseCAMNN :: [CAMNeuron] -> [TrainElem] -> [NNTVU]
-queryReverseCAMNN nn = P.map (queryReverseNeurons nn)
 
 distanceCAMNN :: [CAMNeuron] -> [TrainElem] -> [Int]
 distanceCAMNN nn testSet = compared
@@ -112,25 +81,19 @@ updateCAMNeuron (CAMNeuron camW camT) CAMThreshold deltaP (dW, output) = CAMNeur
     where dThreshold = deltaThreshold deltaP output
           camTElem = applyDeltaThreshold camT dThreshold (col $ extent dW)
 updateCAMNeuron (CAMNeuron camW camT) CAMWeight deltaP wAo = CAMNeuron camWE camT
-    where dWeights = deltaWeights' wAo deltaP
+    where dWeights = deltaWeights wAo deltaP
           camWE = applyDeltaWeight camW dWeights
 
 calculateDelta :: [(NNTMU, NNTVU)] -> NNTVU -> NNTVU
--- calculateDelta wAo delta = foldl (\y x -> weightsToDelta $ deltaWeights' x y) delta wAo
-calculateDelta wAo delta = foldl (\y x -> weightsToDelta . computeS . transpose $ deltaWeights' x y) delta wAo
+calculateDelta wAo delta = foldl (\y x -> weightsToDelta . computeS . transpose $ deltaWeights x y) delta wAo
 
 deltaThreshold :: NNTVU -> NNTVU -> NTTVU
 deltaThreshold delta output = computeS $ zipWith changes delta output
     where changes x y = bool 0 (bool (-1) 1 y) x
 
-deltaWeights :: CAMWElem -> NNTVU -> NNTVU -> NNTVU -> NNTMU
-deltaWeights (CAMWElem _ weights) input output delta = computeS res
-    where applySHY f g h j sh@(Z :. x :. y) = let nSh = ix1 x in applySelection (f sh) (g nSh) (h nSh) (j nSh)
-          res = traverse4 weights input output delta (\x _ _ _ -> x) applySHY
-
-deltaWeights' :: (NNTMU, NNTVU) -> NNTVU -> NNTMU
-deltaWeights' (wXh, output) delta = computeS res
-    where applySHY f g h sh@(Z :. x :. y) = let nSh = ix1 x in applySelection' (f sh) (g nSh) (h nSh)
+deltaWeights :: (NNTMU, NNTVU) -> NNTVU -> NNTMU
+deltaWeights (wXh, output) delta = computeS res
+    where applySHY f g h sh@(Z :. x :. y) = let nSh = ix1 x in applySelection (f sh) (g nSh) (h nSh)
           res = traverse3 wXh output delta (\x _ _ -> x) applySHY
 
 applyDeltaWeight :: CAMWElem -> NNTMU -> CAMWElem
@@ -144,7 +107,7 @@ deltaNextChange delta lastWChange = finalDelta
           changeIndexM = weightIndexChange lastWChange oredDelta
           finalDelta = case changeIndexM of
               Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
-              Nothing    -> (-1, computeS $ map (const False) delta)
+              Nothing    -> (initialValue, computeS $ map (const False) delta)
 
 applyDeltaThreshold :: CAMTElem -> NTTVU -> Int -> CAMTElem
 applyDeltaThreshold cte@(CAMTElem tChange camT) delta maxValue = cteUpdate
@@ -173,16 +136,10 @@ indexChange condition location delta = safeHead $ catMaybes [safeHead y, safeHea
     where traversal g sh@(Z :. x) = bool (-1) x (condition $ g sh)
           (x, y) = toBoth (filter (>= 0)) . splitAt (location + 1) . toList $ traverse delta id traversal
 
-applySelection :: NNT -> NNT -> NNT -> NNT -> NNT
-applySelection x y z w = xor (xor x y) (complement z) .&. w
-
-applySelection' :: NNT -> NNT -> NNT -> NNT
-applySelection' x y z = z .&. xor x (complement y)
+applySelection :: NNT -> NNT -> NNT -> NNT
+applySelection x y z = z .&. xor x (complement y)
 
 ---------------------------------------------------------------------------
-
-lstCAMElems :: Int -> [CAMElem]
-lstCAMElems elems = [bool CAMWeight CAMThreshold (even x) | x <- [1 .. elems]]
 
 updatesWithConditions :: Int -> Int -> Int -> [CAMUpdate]
 updatesWithConditions nnElems trainElems shiftBy
@@ -228,15 +185,8 @@ trainWithEpochs nn trainSet shift epochs
         trainWithEpochs nn' trainSet shiftTo $ epochs - 1
 
 trainGeneral :: [CAMNeuron] -> [TrainElem] -> Int -> (Int, [CAMNeuron])
-trainGeneral [] _ _ = (-1, [])
+trainGeneral [] _ _ = (initialValue, [])
 trainGeneral nn trainSet shift = (shiftTo, nn')
     where updates = updatesWithConditions (length nn) (length trainSet) shift
           nn' = trainCAMNN nn updates trainSet
           shiftTo = bool (shift + 1) 0 (shift > length trainSet)
-
-
-printNN :: [CAMNeuron] -> [CAMNeuron] -> IO ()
-printNN nn nn' = do
-    let zipped = zip nn nn'
-    print "---------------"
-    mapM_ (\(x,y) -> do print "NN:"; print x; print "NN':"; print y ) zipped
