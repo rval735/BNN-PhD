@@ -36,21 +36,21 @@ executables:
     source-dirs:         app
     ghc-options:
     - -threaded
-    # - -rtsopts
+    - -rtsopts
     # - -with-rtsopts=-N
     - -O2
     # - -optc-O2
     # - -fforce-recomp
     # # - -fprof-auto
-    - -Odph
-    - -fno-liberate-case
-    - -funfolding-use-threshold1000
-    - -funfolding-keeness-factor1000
-    - -fllvm
-    - -optlo-O3
+    # - -Odph
+    # - -fno-liberate-case
+    # - -funfolding-use-threshold1000
+    # - -funfolding-keeness-factor1000
+    # - -fllvm
+    # - -optlo-O3
 # Profilers
-    # - -fprof-cafs
-    # - -fprof-auto
+    - -fprof-cafs
+    - -fprof-auto
     dependencies:
     - NNHaskell
 
@@ -64,3 +64,8 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - NNHaskell
+    
+    
+# Command line
+# stack build --profile --executable-profiling --library-profiling
+# stack exec NNHaskell-exe -- +RTS -p -h -sstderr

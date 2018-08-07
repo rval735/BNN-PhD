@@ -8,10 +8,13 @@
 ---- of this repository for more details.
 ----
 
+{-# LANGUAGE BangPatterns #-}
+
 -- | Test CAM for the MNIST dataset
-module CAMMNISTTests
--- (
--- )
+module CAMMNIST
+(
+    runMNIST
+)
 where
 
 import           CAM                 (distanceCAMNN, trainWithEpochs)
@@ -37,35 +40,39 @@ runMNIST = do
     let inputSize = 784
     let outputSize = 4
     let epochs = 5
-    let nnSize = 32
-    let llSize = 5
-    let trainingSet = 8000
-    let testingSet = 2000
+    let nnSize = 16
+    let llSize = 2
+    let trainingSet = 800
+    let testingSet = 200
     let genStd = mkStdGen inputSize
     -- genStd <- newStdGen
     let transformV = R.fromUnboxed (R.ix1 inputSize) . V.map (\z -> bool False True (z >= 50))
     let transformNum = R.fromListUnboxed (R.ix1 outputSize) . reverse . num2Bin' outputSize
     let trainSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) $ take trainingSet dta
-    let testSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) . take nnSize $ drop testingSet dta
+    let testSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) . take testingSet $ drop trainingSet dta
     let (genStd0, genStd1) = split genStd
     let camN0 = randomCAMNeuron genStd nnSize inputSize
     let camN1 = randomCAMNeuron genStd0 nnSize nnSize
     let camN2 = randomCAMNeuron genStd0 outputSize nnSize
     let nn = [camN0] ++ replicate llSize camN1 ++ [camN2]
     -- nn' <- trainUntilLearned nn trainSet 0 5
-    nn' <- trainWithEpochs nn trainSet 0 epochs
+    let !nnM = trainWithEpochs nn trainSet 0 epochs
+    nn' <- nnM
     let distance = distanceCAMNN nn' testSet
     let matches = length . filter (== 0) $ distance
     let percentage = fromIntegral matches / fromIntegral (length distance) * 100
     -- Get the time of executing the whole venture
+    print $ "Matches: " ++ show matches
     endTime <- getCurrentTime
     -- Take the difference of that time
     let diff = diffUTCTime endTime startTime
-    print $ "Distance: " ++ show distance
-    print $ show matches ++ "/" ++ show (length distance) ++ "->" ++ show percentage ++ "%"
-    print "HNodes, Epochs, Error, Diff, STime, ETime"
-    let elems = [show llSize, show epochs, show percentage, show diff, show startTime, show endTime]
-    print $ intercalate ", " elems
+    print $ "Samples: " ++ show (length distance)
+    print $ "Error: " ++ show percentage ++ "%"
+    print $ "HNodes: " ++ show llSize
+    print $ "Epochs: " ++  show epochs
+    print $ "Start Time: " ++ show startTime
+    print $ "End Time: " ++ show endTime
+    print $ "Diff: " ++ show diff
     return ()
 
 loadMNISTFiles :: String -> String -> IO [(Int, V.Vector Int)]

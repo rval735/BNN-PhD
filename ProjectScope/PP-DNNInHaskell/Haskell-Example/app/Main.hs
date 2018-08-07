@@ -10,7 +10,8 @@
 
 module Main where
 
+import           CAMMNIST
 import           Lib
 
 main :: IO ()
-main = nnFunction
+main = runMNIST
