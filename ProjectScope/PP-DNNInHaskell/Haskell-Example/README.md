@@ -1,14 +1,12 @@
 # NNHaskell
 
-Simple neural network that analyzes MNIST data in CSV format.
+Full Binary Neural Network that analyzes MNIST binary data.
 
 To compile, simply clone the repository and run (within the folder):
 
 ```bash
 stack build
-stack exec NNHaskell-exe 5 0.01 2
+stack exec NNHaskell-exe
 ```
 
-The first is the number of hidden layers the neural network will have. The second
-parameter stands for the learning rate. The third is the number of epochs to
-train the NN.
+That will execute the Binary Neural Network for the MNIST dataset.

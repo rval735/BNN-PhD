@@ -1,11 +1,11 @@
 nSize = 3
 
-camN0 = createZNeuron 3 3
-camN1 = createZNeuron 2 3
-camN2 = createZNeuron 3 2
+canN0 = createZNeuron 3 3
+canN1 = createZNeuron 2 3
+canN2 = createZNeuron 3 2
 
--- nn = replicate 5 camN0
-nn = [camN0, camN1, camN2]
+-- nn = replicate 5 canN0
+nn = [canN0, canN1, canN2]
 
 baseLst = [0, 2, 4, 6, 1, 3, 5, 7]
 baseOLst = [0, 6, 7, 3, 2, 4, 2, 1]
@@ -25,8 +25,8 @@ nn' <- trainUntilLearned nn trainSet 0 5
 
 
 
-queryCAMNN nn' trainSet
-distanceCAMNN nn' trainSet
+queryCANNN nn' trainSet
+distanceCANNN nn' trainSet
 
 
 

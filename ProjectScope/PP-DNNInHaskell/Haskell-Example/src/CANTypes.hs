@@ -8,8 +8,8 @@
 ---- of this repository for more details.
 ----
 
--- | File that keeps all types and CAM definitions together
-module CAMTypes
+-- | File that keeps all types and CAN definitions together
+module CANTypes
 -- (
 -- )
 where
@@ -65,42 +65,42 @@ type NNTMF r = NNTLayerFlex r MShape
 
 type NTTVU = Array U VShape NTT
 
-data CAMNeuron = CAMNeuron {
-    camWeights    :: CAMWElem,
-    camThresholds :: CAMTElem
+data CANNeuron = CANNeuron {
+    canWeights    :: CANWElem,
+    canThresholds :: CANTElem
 } deriving (Eq)
 
-instance Show CAMNeuron where
+instance Show CANNeuron where
     show = neuronString
 
-data CAMWElem = CAMWElem {
+data CANWElem = CANWElem {
     wChange  :: Int,
-    camWElem :: NNTMU
+    canWElem :: NNTMU
 } deriving (Eq)
 
-instance Show CAMWElem where
+instance Show CANWElem where
     show = weightsString
 
-data CAMTElem = CAMTElem {
+data CANTElem = CANTElem {
     tChange  :: Int,
-    camTElem :: NTTVU
+    canTElem :: NTTVU
 } deriving (Eq)
 
-instance Show CAMTElem where
-    show (CAMTElem tC cT) = show tC ++ ":" ++ show (toList cT)
+instance Show CANTElem where
+    show (CANTElem tC cT) = show tC ++ ":" ++ show (toList cT)
 
-type CAMNN = [CAMNeuron]
+type CANNN = [CANNeuron]
 
-data CAMElem = CAMWeight | CAMThreshold
+data CANElem = CANWeight | CANThreshold
     deriving (Eq, Show)
 
-data CAMUpdate = CAMUpdate {
+data CANUpdate = CANUpdate {
     lstIndex :: Int,
-    camElem  :: CAMElem
+    canElem  :: CANElem
 }
 
-instance Show CAMUpdate where
-    show (CAMUpdate lI cE) = "{" ++ show lI ++ ":" ++ show cE ++ "}"
+instance Show CANUpdate where
+    show (CANUpdate lI cE) = "{" ++ show lI ++ ":" ++ show cE ++ "}"
 
 data TrainElem = TrainElem {
     trainInput  :: NNTVU,
@@ -117,8 +117,8 @@ instance Show TrainElem where
 toBList :: (Shape sh) => Array U sh Bool -> [Int]
 toBList = map (bool 0 1) . toList
 
-neuronString :: CAMNeuron -> String
-neuronString (CAMNeuron (CAMWElem wC cW) (CAMTElem tC cT)) = changesStr ++ formatted
+neuronString :: CANNeuron -> String
+neuronString (CANNeuron (CANWElem wC cW) (CANTElem tC cT)) = changesStr ++ formatted
     where lstW = toBList cW
           lstT = toList cT
           colW = col $ extent cW
@@ -126,14 +126,14 @@ neuronString (CAMNeuron (CAMWElem wC cW) (CAMTElem tC cT)) = changesStr ++ forma
           formatted = foldl (\z (x, y) -> z ++ "\n" ++ show x ++ ":" ++ show y) "" splitted
           changesStr =  "(" ++ show wC ++ "," ++ show tC ++ ")"
 
-weightsString :: CAMWElem -> String
-weightsString (CAMWElem wC cW) = show wC ++ formatted
+weightsString :: CANWElem -> String
+weightsString (CANWElem wC cW) = show wC ++ formatted
     where lstW = toBList cW
           colW = col $ extent cW
           splitted = splitEvery colW lstW
           formatted = foldl (\y x -> y ++ "\n" ++ show x) "" splitted
 
-printNN :: [CAMNeuron] -> [CAMNeuron] -> IO ()
+printNN :: [CANNeuron] -> [CANNeuron] -> IO ()
 printNN nn nn' = do
     let zipped = zip nn nn'
     print "---------------"

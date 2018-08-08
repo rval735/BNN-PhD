@@ -8,13 +8,13 @@
 ---- of this repository for more details.
 ----
 
--- | Helper file to add random creation of CAM types
-module CAMRandom
+-- | Helper file to add random creation of CAN types
+module CANRandom
 -- (
 -- )
 where
 
-import           CAMTypes
+import           CANTypes
 import           Data.Array.Repa                      (fromListUnboxed, ix1,
                                                        ix2)
 import           Data.Array.Repa.Algorithms.Randomish (randomishIntArray)
@@ -34,8 +34,8 @@ randomNNTVU seed elems = fromListUnboxed shape lstElems
 randomNTTVU :: RandomGen g => g -> Int -> Int -> NTTVU
 randomNTTVU seed elems maxVal = randomishIntArray (ix1 elems) 0 maxVal (fst $ next seed)
 
-randomCAMNeuron :: RandomGen g => g -> Int -> Int -> CAMNeuron
-randomCAMNeuron seed rowI colI = CAMNeuron wElem tElem
+randomCANNeuron :: RandomGen g => g -> Int -> Int -> CANNeuron
+randomCANNeuron seed rowI colI = CANNeuron wElem tElem
     where (seed1, seed0) = split seed
-          wElem = CAMWElem initialValue $ randomNNTMU seed0 rowI colI
-          tElem = CAMTElem initialValue $ randomNTTVU seed1 rowI colI
+          wElem = CANWElem initialValue $ randomNNTMU seed0 rowI colI
+          tElem = CANTElem initialValue $ randomNTTVU seed1 rowI colI

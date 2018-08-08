@@ -8,13 +8,13 @@
 ---- of this repository for more details.
 ----
 
--- | Extra functions to complement CAM
-module CAMExtras
+-- | Extra functions to complement CAN
+module CANExtras
 -- (
 -- )
 where
 
-import           CAMTypes
+import           CANTypes
 import           Data.Array.Repa       (computeS, fromListUnboxed, ix1, ix2,
                                         traverse2)
 import           Data.Array.Repa.Index ((:.) (..), Z (..))
@@ -22,10 +22,10 @@ import           Data.Bool             (bool)
 import           ListExtras            (applyNTimes, binaryList, num2Bin',
                                         shiftLeft)
 
-createZNeuron :: Int -> Int -> CAMNeuron
-createZNeuron rowI colI = CAMNeuron (CAMWElem initialValue camW0) (CAMTElem initialValue camT0)
-    where camW0 = createWeight rowI colI []
-          camT0 = createThreshold rowI colI []
+createZNeuron :: Int -> Int -> CANNeuron
+createZNeuron rowI colI = CANNeuron (CANWElem initialValue canW0) (CANTElem initialValue canT0)
+    where canW0 = createWeight rowI colI []
+          canT0 = createThreshold rowI colI []
 
 createWeight :: Int -> Int -> [Int] -> NNTMU
 createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
@@ -60,7 +60,7 @@ construct1Complement startPos rows
           indexesArr = fromListUnboxed (ix1 rows) indexesLst
           flipIndexes f g sh@(Z :. x :. y) = let val = g (ix1 x) in bool False True (val == y)
 
-constructUpdate :: Int -> [CAMUpdate]
+constructUpdate :: Int -> [CANUpdate]
 constructUpdate nnElems = elems (nnElems - 1)
-    where camElems = [CAMWeight, CAMThreshold]
-          elems n = reverse $ concatMap (\x -> map (CAMUpdate x) camElems) [0 .. n]
+    where canElems = [CANWeight, CANThreshold]
+          elems n = reverse $ concatMap (\x -> map (CANUpdate x) canElems) [0 .. n]

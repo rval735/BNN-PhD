@@ -8,15 +8,15 @@
 ---- of this repository for more details.
 ----
 
--- | Unit test for some critical functions of the CAM file
-module CAMTests
+-- | Unit test for some critical functions of the CAN file
+module CANTests
 -- (
 -- )
 where
 
-import           CAM
-import           CAMExtras
-import           CAMTypes
+import           CAN
+import           CANExtras
+import           CANTypes
 import           Control.Monad (when)
 import           Data.Bits     (xor)
 import           Data.Bool     (bool)
@@ -40,9 +40,9 @@ layerSummationTest = do
     --- Finish testing
     printResult result
 
-trainCAMNNTest_2x2NNXOR :: IO ()
-trainCAMNNTest_2x2NNXOR = do
-    print "trainCAMNNTest_2x2NNXOR"
+trainCANNNTest_2x2NNXOR :: IO ()
+trainCANNNTest_2x2NNXOR = do
+    print "trainCANNNTest_2x2NNXOR"
     let nSize = 2
     let nn = replicate nSize $ createZNeuron nSize nSize
     let inputs = createOutputLst nSize [0, 1, 2, 3]
@@ -50,14 +50,14 @@ trainCAMNNTest_2x2NNXOR = do
     let trainSetXOR = zipWith TrainElem inputs outputsXOR
     let updates = updatesWithConditions (length nn) (length trainSetXOR) 0
     --- To be tested
-    let nn0 = trainCAMNN nn updates trainSetXOR
-    let result = map (== 0) $ distanceCAMNN nn0 trainSetXOR
+    let nn0 = trainCANNN nn updates trainSetXOR
+    let result = map (== 0) $ distanceCANNN nn0 trainSetXOR
     --- Finish testing
     printResult result
 
-trainCAMNNTest_Ex2NN :: IO ()
-trainCAMNNTest_Ex2NN = do
-    print "trainCAMNNTest_Ex2NN"
+trainCANNNTest_Ex2NN :: IO ()
+trainCANNNTest_Ex2NN = do
+    print "trainCANNNTest_Ex2NN"
     let nSize = 3
     let nn = [createZNeuron nSize nSize, createZNeuron 2 nSize, createZNeuron nSize 2]
     let inputs = createOutputLst nSize [0, 2, 4, 6, 1, 3, 5, 7]
@@ -67,7 +67,7 @@ trainCAMNNTest_Ex2NN = do
     --- To be tested
     -- trainUntilLearned nn trainSet 0 6
     nn' <- recursiveNN trainSet updates nn
-    let result = map (== 0) $ distanceCAMNN nn' trainSet
+    let result = map (== 0) $ distanceCANNN nn' trainSet
     --- Finish testing
     printResult result
 
@@ -75,16 +75,16 @@ trainUntilLearnedTest :: IO ()
 trainUntilLearnedTest = do
     print "trainUntilLearnedTest"
     let (nSize, testSize, nnSize) = (4, 5, 3)
-    let camN0 = createZNeuron nSize nSize
+    let canN0 = createZNeuron nSize nSize
     let inputs = createOutputLst nSize [1 .. testSize]
     let baseOLst = map (sin . fromIntegral) [1 .. testSize]
     let outputs = createOutputLst nSize $ map (round . (*100)) baseOLst
     let trainSet = zipWith TrainElem inputs outputs
-    let nn = replicate nnSize camN0
+    let nn = replicate nnSize canN0
     let updates = take (length trainSet) $ constructUpdate (length nn)
     --- To be tested
     nn' <- trainUntilLearned nn trainSet 0 0
-    let result = map (== 0) $ distanceCAMNN nn' trainSet
+    let result = map (== 0) $ distanceCANNN nn' trainSet
     --- Finish testing
 
     print result
@@ -176,8 +176,8 @@ weightIndexChangeTest = do
 
 layerColideOne :: (Int, Int) -> [Int] -> [Int] -> [Int] -> Bool
 layerColideOne (row, col) weightLst inputLst expectedLst = result
-    where oneCAMWElem xs = CAMWElem 0 $ createWeight row col xs
-          weight = oneCAMWElem weightLst
+    where oneCANWElem xs = CANWElem 0 $ createWeight row col xs
+          weight = oneCANWElem weightLst
           input = createOutput col inputLst
           expected = createWeight row col expectedLst
           --- To be tested
@@ -186,13 +186,13 @@ layerColideOne (row, col) weightLst inputLst expectedLst = result
 
 applyDeltaOne :: Bool -> ((Int, Int),(Int, [Int]),[Int], (Int, [Int])) -> IO Bool
 applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expectedLst)) = do
-    let weights = CAMWElem indexW $ createWeight row col weightLst
+    let weights = CANWElem indexW $ createWeight row col weightLst
     let delta = createWeight row col deltaLst
-    let expected = CAMWElem indexE $ createWeight row col expectedLst
+    let expected = CANWElem indexE $ createWeight row col expectedLst
     let result = applyDeltaWeight weights delta
     when display $ do
         print weights
-        print (CAMWElem 0 delta)
+        print (CANWElem 0 delta)
         print expected
         print result
         print "*********"
@@ -200,9 +200,9 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
 
 applyDeltaThresholdOne :: Int -> Int -> [Int] -> [Int] -> Int -> [Int] -> Int -> Bool
 applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst maxValue = result
-    where threshold = CAMTElem index $ createThreshold tSize 0 thresholdLst
+    where threshold = CANTElem index $ createThreshold tSize 0 thresholdLst
           delta = createThreshold tSize 0 deltaLst
-          expected = CAMTElem expIndex $ createThreshold tSize 0 expectedLst
+          expected = CANTElem expIndex $ createThreshold tSize 0 expectedLst
           --- To be tested
           result = expected == applyDeltaThreshold threshold delta maxValue
 
@@ -228,14 +228,14 @@ weightIndexChangeOne index row weights expected = result == expected
           result = weightIndexChange index nnt
           --- Finish testing
 
-printPartialNN :: TrainElem -> CAMUpdate -> [CAMNeuron] -> IO [CAMNeuron]
+printPartialNN :: TrainElem -> CANUpdate -> [CANNeuron] -> IO [CANNeuron]
 printPartialNN train update nn = do
     let nn' = trainNeurons train update nn
     print nn'
     print "------------"
     return nn'
 
-recursiveNN :: [TrainElem] -> [CAMUpdate] -> [CAMNeuron] -> IO [CAMNeuron]
+recursiveNN :: [TrainElem] -> [CANUpdate] -> [CANNeuron] -> IO [CANNeuron]
 recursiveNN [] _ nn = return nn
 recursiveNN (x : xs) (y : ys) nn = do
     nn' <- printPartialNN x y nn

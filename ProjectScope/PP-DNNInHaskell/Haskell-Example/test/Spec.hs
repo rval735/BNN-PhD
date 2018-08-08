@@ -8,13 +8,13 @@
 ---- of this repository for more details.
 ----
 
-import           CAMTests
+import           CANTests
 
 main :: IO ()
 main = do
     layerColideTest
     layerSummationTest
-    trainCAMNNTest_2x2NNXOR
+    trainCANNNTest_2x2NNXOR
     -- trainCAMNNTest_Ex2NN
     -- trainUntilLearnedTest
     applyDeltaThresholdTest

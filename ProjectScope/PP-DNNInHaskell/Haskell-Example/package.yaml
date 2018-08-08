@@ -1,7 +1,7 @@
 name:                NNHaskell
-version:             "0.01"
+version:             "0.011"
 github:              "https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/Haskell-Example"
-license:             GPL-3
+license:             "GPL-3"
 author:              "rval735"
 maintainer:          "rval735"
 copyright:           "2018 rval735"

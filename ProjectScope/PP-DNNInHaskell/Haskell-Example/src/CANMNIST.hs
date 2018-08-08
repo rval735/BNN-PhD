@@ -10,16 +10,16 @@
 
 {-# LANGUAGE BangPatterns #-}
 
--- | Test CAM for the MNIST dataset
-module CAMMNIST
+-- | Test CAN for the MNIST dataset
+module CANMNIST
 (
     runMNIST
 )
 where
 
-import           CAM                 (distanceCAMNN, trainWithEpochs)
-import           CAMRandom           (randomCAMNeuron)
-import           CAMTypes            (TrainElem (..))
+import           CAN                 (distanceCANNN, trainWithEpochs)
+import           CANRandom           (randomCANNeuron)
+import           CANTypes            (TrainElem (..))
 import qualified Data.Array.Repa     as R
 import           Data.Bool           (bool)
 import           Data.IDX            (decodeIDXFile, decodeIDXLabelsFile,
@@ -51,14 +51,14 @@ runMNIST = do
     let trainSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) $ take trainingSet dta
     let testSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) . take testingSet $ drop trainingSet dta
     let (genStd0, genStd1) = split genStd
-    let camN0 = randomCAMNeuron genStd nnSize inputSize
-    let camN1 = randomCAMNeuron genStd0 nnSize nnSize
-    let camN2 = randomCAMNeuron genStd0 outputSize nnSize
-    let nn = [camN0] ++ replicate llSize camN1 ++ [camN2]
+    let canN0 = randomCANNeuron genStd nnSize inputSize
+    let canN1 = randomCANNeuron genStd0 nnSize nnSize
+    let canN2 = randomCANNeuron genStd0 outputSize nnSize
+    let nn = [canN0] ++ replicate llSize canN1 ++ [canN2]
     -- nn' <- trainUntilLearned nn trainSet 0 5
     let !nnM = trainWithEpochs nn trainSet 0 epochs
     nn' <- nnM
-    let distance = distanceCAMNN nn' testSet
+    let distance = distanceCANNN nn' testSet
     let matches = length . filter (== 0) $ distance
     let percentage = fromIntegral matches / fromIntegral (length distance) * 100
     -- Get the time of executing the whole venture

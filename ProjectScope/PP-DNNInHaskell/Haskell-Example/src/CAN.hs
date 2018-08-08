@@ -8,18 +8,18 @@
 ---- of this repository for more details.
 ----
 
-{-# LANGUAGE FlexibleContexts      #-}
-{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE FlexibleContexts #-}
 
--- | Tri-State Neural Network class
-module CAM
+-- | Binary Neural Network that uses an arrange called Content Addressaable Memory
+--   to match binary patterns form the input to provide a binary output.
+module CAN
 -- (
 -- )
 where
 
-import           CAMExtras                         (construct1Complement,
+import           CANExtras                         (construct1Complement,
                                                     constructUpdate)
-import           CAMTypes
+import           CANTypes
 import           Control.Monad                     (mapM_, when)
 import           Data.Array.Repa
 import           Data.Array.Repa.Algorithms.Matrix (col)
@@ -35,21 +35,21 @@ import           Prelude                           hiding (map, traverse,
                                                     zipWith)
 import qualified Prelude                           as P
 
-layerColide :: CAMWElem -> NNTVU -> (NNT -> NNT -> NNT)-> NNTMU
-layerColide (CAMWElem _ mtx) vtr colision = computeS $ traverse2 mtx vtr const applySHY
+layerColide :: CANWElem -> NNTVU -> (NNT -> NNT -> NNT)-> NNTMU
+layerColide (CANWElem _ mtx) vtr colision = computeS $ traverse2 mtx vtr const applySHY
     where applySHY f h sh@(Z :. x :. y) = colision (f sh) (h $ ix1 y)
 
 layerSummation :: NNTMU -> NTTVU
 layerSummation = sumS . map (bool 0 1)
 
-layerOperation :: NTTVU -> CAMTElem -> (NTT -> NTT -> NNT) -> NNTVU
-layerOperation x (CAMTElem _ y) f = computeS $ zipWith f x y
+layerOperation :: NTTVU -> CANTElem -> (NTT -> NTT -> NNT) -> NNTVU
+layerOperation x (CANTElem _ y) f = computeS $ zipWith f x y
 
-applyNeuron :: NNTVU -> CAMNeuron -> NNTVU
-applyNeuron input (CAMNeuron camW camT) = res
-    where collision = layerColide camW input xor
+applyNeuron :: NNTVU -> CANNeuron -> NNTVU
+applyNeuron input (CANNeuron canW canT) = res
+    where collision = layerColide canW input xor
           summ = layerSummation collision
-          res = layerOperation summ camT (>=)
+          res = layerOperation summ canT (>=)
 
 weightsToDelta :: NNTMU -> NNTVU
 weightsToDelta = foldS (.|.) False
@@ -60,29 +60,29 @@ vecCompare x y = computeS $ zipWith xor x y
 hammingWeight :: NNTVU -> Int
 hammingWeight x = sumAllS $ map (bool 0 1) x
 
-queryNeurons :: [CAMNeuron] -> NNTVU -> NNTVU
+queryNeurons :: [CANNeuron] -> NNTVU -> NNTVU
 queryNeurons nn query = foldl applyNeuron query nn
 
-queryNeuronsAcc :: [CAMNeuron] -> NNTVU -> (NNTVU, [(NNTMU, NNTVU)])
+queryNeuronsAcc :: [CANNeuron] -> NNTVU -> (NNTVU, [(NNTMU, NNTVU)])
 queryNeuronsAcc nn query = mapAccumL f query nn
-    where f x n@(CAMNeuron y _) = let apNN = applyNeuron x n in (apNN, (layerColide y x xor, applyNeuron x n))
+    where f x n@(CANNeuron y _) = let apNN = applyNeuron x n in (apNN, (layerColide y x xor, applyNeuron x n))
 
-queryCAMNN :: [CAMNeuron] -> [TrainElem] -> [NNTVU]
-queryCAMNN nn = P.map (\(TrainElem query _) -> queryNeurons nn query)
+queryCANNN :: [CANNeuron] -> [TrainElem] -> [NNTVU]
+queryCANNN nn = P.map (\(TrainElem query _) -> queryNeurons nn query)
 
-distanceCAMNN :: [CAMNeuron] -> [TrainElem] -> [Int]
-distanceCAMNN nn testSet = compared
-    where queries = queryCAMNN nn testSet
+distanceCANNN :: [CANNeuron] -> [TrainElem] -> [Int]
+distanceCANNN nn testSet = compared
+    where queries = queryCANNN nn testSet
           zipped = P.zipWith (\x (TrainElem _ y) -> (x,y)) queries testSet
           compared = P.map (hammingWeight . uncurry vecCompare) zipped
 
-updateCAMNeuron :: CAMNeuron -> CAMElem -> NNTVU -> (NNTMU, NNTVU) -> CAMNeuron
-updateCAMNeuron (CAMNeuron camW camT) CAMThreshold deltaP (dW, output) = CAMNeuron camW camTElem
+updateCANNeuron :: CANNeuron -> CANElem -> NNTVU -> (NNTMU, NNTVU) -> CANNeuron
+updateCANNeuron (CANNeuron canW canT) CANThreshold deltaP (dW, output) = CANNeuron canW canTElem
     where dThreshold = deltaThreshold deltaP output
-          camTElem = applyDeltaThreshold camT dThreshold (col $ extent dW)
-updateCAMNeuron (CAMNeuron camW camT) CAMWeight deltaP wAo = CAMNeuron camWE camT
+          canTElem = applyDeltaThreshold canT dThreshold (col $ extent dW)
+updateCANNeuron (CANNeuron canW canT) CANWeight deltaP wAo = CANNeuron canWE canT
     where dWeights = deltaWeights wAo deltaP
-          camWE = applyDeltaWeight camW dWeights
+          canWE = applyDeltaWeight canW dWeights
 
 calculateDelta :: [(NNTMU, NNTVU)] -> NNTVU -> NNTVU
 calculateDelta wAo delta = foldl (\y x -> weightsToDelta . computeS . transpose $ deltaWeights x y) delta wAo
@@ -96,10 +96,10 @@ deltaWeights (wXh, output) delta = computeS res
     where applySHY f g h sh@(Z :. x :. y) = let nSh = ix1 x in applySelection (f sh) (g nSh) (h nSh)
           res = traverse3 wXh output delta (\x _ _ -> x) applySHY
 
-applyDeltaWeight :: CAMWElem -> NNTMU -> CAMWElem
-applyDeltaWeight (CAMWElem wChange weights) delta = CAMWElem updatedIndex camW
+applyDeltaWeight :: CANWElem -> NNTMU -> CANWElem
+applyDeltaWeight (CANWElem wChange weights) delta = CANWElem updatedIndex canW
     where (updatedIndex, deltaToChange) = deltaNextChange delta wChange
-          camW = computeS $ zipWith (\x y -> bool x (complement x) y) weights deltaToChange
+          canW = computeS $ zipWith (\x y -> bool x (complement x) y) weights deltaToChange
 
 deltaNextChange :: NNTMU -> Int -> (Int, NNTMU)
 deltaNextChange delta lastWChange = finalDelta
@@ -109,15 +109,15 @@ deltaNextChange delta lastWChange = finalDelta
               Just index -> (index, computeS $ traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
               Nothing    -> (initialValue, computeS $ map (const False) delta)
 
-applyDeltaThreshold :: CAMTElem -> NTTVU -> Int -> CAMTElem
-applyDeltaThreshold cte@(CAMTElem tChange camT) delta maxValue = cteUpdate
+applyDeltaThreshold :: CANTElem -> NTTVU -> Int -> CANTElem
+applyDeltaThreshold cte@(CANTElem tChange canT) delta maxValue = cteUpdate
     where changeIndexM = thresholdIndexChange tChange delta
           cteUpdate = case changeIndexM of
-              Just changeIndex -> CAMTElem changeIndex $ updatedT changeIndex
+              Just changeIndex -> CANTElem changeIndex $ updatedT changeIndex
               Nothing          -> cte
           withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr >= 0)
           applySHY pos f g sh@(Z :. x) = let update = withinBound (f sh) (g sh) in bool (f sh) update (x == pos)
-          updatedT pos = computeS $ traverse2 camT delta const (applySHY pos)
+          updatedT pos = computeS $ traverse2 canT delta const (applySHY pos)
 
 -- Here we change the value to the nearest index change.
 -- For example a vector [-1,0,1,0] has two changes/stay differences
@@ -141,7 +141,7 @@ applySelection x y z = z .&. xor x (complement y)
 
 ---------------------------------------------------------------------------
 
-updatesWithConditions :: Int -> Int -> Int -> [CAMUpdate]
+updatesWithConditions :: Int -> Int -> Int -> [CANUpdate]
 updatesWithConditions nnElems trainElems shiftBy
     | (nnElems * 2) < trainElems = transform matchTrain
     | otherwise = transform updates
@@ -151,8 +151,8 @@ updatesWithConditions nnElems trainElems shiftBy
 
 ---------------------------------------------------------------------------
 
-trainNeurons :: TrainElem -> CAMUpdate -> [CAMNeuron] -> [CAMNeuron]
-trainNeurons (TrainElem train desired) (CAMUpdate lIndex cElem) nn = bool nn' nn (hammingWeight compared == 0)
+trainNeurons :: TrainElem -> CANUpdate -> [CANNeuron] -> [CANNeuron]
+trainNeurons (TrainElem train desired) (CANUpdate lIndex cElem) nn = bool nn' nn (hammingWeight compared == 0)
     where (query, wAo) = queryNeuronsAcc nn train -- wAo = Weights and Outputs
           compared = vecCompare query desired
           chosenNeuron = nn !! lIndex
@@ -160,21 +160,21 @@ trainNeurons (TrainElem train desired) (CAMUpdate lIndex cElem) nn = bool nn' nn
           deltaPos = take (length nn - lIndex - 1) $ reverse wAo
           deltaP = calculateDelta deltaPos compared
           atLeastOne = hammingWeight deltaP
-          camNN = updateCAMNeuron chosenNeuron cElem deltaP wAoI
-          nn' = bool nn (replaceElem nn lIndex camNN) $ atLeastOne > 0
+          canNN = updateCANNeuron chosenNeuron cElem deltaP wAoI
+          nn' = bool nn (replaceElem nn lIndex canNN) $ atLeastOne > 0
 
-trainCAMNN :: [CAMNeuron] -> [CAMUpdate] -> [TrainElem] -> [CAMNeuron]
-trainCAMNN nn updates trainSet = foldl (\n (x, y) -> trainNeurons x y n) nn (zip trainSet updates)
+trainCANNN :: [CANNeuron] -> [CANUpdate] -> [TrainElem] -> [CANNeuron]
+trainCANNN nn updates trainSet = foldl (\n (x, y) -> trainNeurons x y n) nn (zip trainSet updates)
 
-trainUntilLearned :: [CAMNeuron] -> [TrainElem] -> Int -> Int -> IO [CAMNeuron]
+trainUntilLearned :: [CANNeuron] -> [TrainElem] -> Int -> Int -> IO [CANNeuron]
 trainUntilLearned nn trainSet shift tolerance = do
     let (shiftTo, nn') = trainGeneral nn trainSet shift
-    let distance = sum $ distanceCAMNN nn' trainSet
+    let distance = sum $ distanceCANNN nn' trainSet
     let printOpr = print nn' >> print ("Distance: " P.++ show distance)
     when (shiftTo == 0) printOpr
     bool (trainUntilLearned nn' trainSet shiftTo tolerance) (return nn') (distance <= tolerance)
 
-trainWithEpochs :: [CAMNeuron] -> [TrainElem] -> Int -> Int -> IO [CAMNeuron]
+trainWithEpochs :: [CANNeuron] -> [TrainElem] -> Int -> Int -> IO [CANNeuron]
 trainWithEpochs nn _ _ 0 = return nn
 trainWithEpochs nn trainSet shift epochs
     | epochs < 0 = return nn
@@ -184,9 +184,9 @@ trainWithEpochs nn trainSet shift epochs
         -- print nn'
         trainWithEpochs nn' trainSet shiftTo $ epochs - 1
 
-trainGeneral :: [CAMNeuron] -> [TrainElem] -> Int -> (Int, [CAMNeuron])
+trainGeneral :: [CANNeuron] -> [TrainElem] -> Int -> (Int, [CANNeuron])
 trainGeneral [] _ _ = (initialValue, [])
 trainGeneral nn trainSet shift = (shiftTo, nn')
     where updates = updatesWithConditions (length nn) (length trainSet) shift
-          nn' = trainCAMNN nn updates trainSet
+          nn' = trainCANNN nn updates trainSet
           shiftTo = bool (shift + 1) 0 (shift > length trainSet)

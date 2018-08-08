@@ -10,7 +10,7 @@
 
 module Main where
 
-import           CAMMNIST
+import           CANMNIST
 import           Lib
 
 main :: IO ()
