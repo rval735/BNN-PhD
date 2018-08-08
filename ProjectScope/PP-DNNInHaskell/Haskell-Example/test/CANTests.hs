@@ -17,10 +17,11 @@ where
 import           CAN
 import           CANExtras
 import           CANTypes
-import           Control.Monad (when)
-import           Data.Bits     (xor)
-import           Data.Bool     (bool)
-import           Data.List     (zip5)
+import           Control.Monad   (when)
+import qualified Data.Array.Repa as R
+import           Data.Bits       (xor)
+import           Data.Bool       (bool)
+import           Data.List       (zip5)
 
 layerColideTest :: IO ()
 layerColideTest = do
@@ -181,7 +182,7 @@ layerColideOne (row, col) weightLst inputLst expectedLst = result
           input = createOutput col inputLst
           expected = createWeight row col expectedLst
           --- To be tested
-          result = expected == layerColide weight input xor
+          result = expected == R.computeS (layerColide weight input xor)
           --- Finish testing
 
 applyDeltaOne :: Bool -> ((Int, Int),(Int, [Int]),[Int], (Int, [Int])) -> IO Bool
@@ -189,7 +190,7 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
     let weights = CANWElem indexW $ createWeight row col weightLst
     let delta = createWeight row col deltaLst
     let expected = CANWElem indexE $ createWeight row col expectedLst
-    let result = applyDeltaWeight weights delta
+    let result = applyDeltaWeight weights (R.delay delta)
     when display $ do
         print weights
         print (CANWElem 0 delta)
@@ -204,28 +205,28 @@ applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst ma
           delta = createThreshold tSize 0 deltaLst
           expected = CANTElem expIndex $ createThreshold tSize 0 expectedLst
           --- To be tested
-          result = expected == applyDeltaThreshold threshold delta maxValue
+          result = expected == applyDeltaThreshold threshold (R.delay delta) maxValue
 
 deltaNextChangeOne :: Int -> Int -> Int -> [Int] -> Int -> [Int] -> Bool
 deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
     where delta = createWeight row col weightLst
           expected = createWeight row col expectedLst
           --- To be tested
-          result = (indexE, expected) == deltaNextChange delta indexW
+          result = (indexE, R.delay expected) == deltaNextChange (R.delay delta) indexW
           --- Finish testing
 
 thresholdIndexChangeOne :: Int -> Int -> [Int] -> Maybe Int -> Bool
 thresholdIndexChangeOne index row threshold expected = result == expected
     where nnt = createThreshold row 0 threshold
           --- To be tested
-          result = thresholdIndexChange index nnt
+          result = thresholdIndexChange index (R.delay nnt)
           --- Finish testing
 
 weightIndexChangeOne :: Int -> Int -> [Int] -> Maybe Int -> Bool
 weightIndexChangeOne index row weights expected = result == expected
     where nnt = createOutput row weights
           --- To be tested
-          result = weightIndexChange index nnt
+          result = weightIndexChange index (R.delay nnt)
           --- Finish testing
 
 printPartialNN :: TrainElem -> CANUpdate -> [CANNeuron] -> IO [CANNeuron]

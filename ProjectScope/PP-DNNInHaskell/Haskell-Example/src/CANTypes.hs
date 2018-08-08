@@ -64,6 +64,8 @@ type NNTVF r = NNTLayerFlex r VShape
 type NNTMF r = NNTLayerFlex r MShape
 
 type NTTVU = Array U VShape NTT
+type NTTVD = Array D VShape NTT
+type NTTVF r = Array r VShape NTT
 
 data CANNeuron = CANNeuron {
     canWeights    :: CANWElem,
