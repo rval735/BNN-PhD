@@ -1,0 +1,40 @@
+$stack exec NNHaskell-exe -- +RTS -p -h -sstderr
+"runMNIST"
+"Matches: 16"
+"Samples: 200"
+"Error: 8.0%"
+"HNodes: 2"
+"Epochs: 5"
+"Start Time: 2018-08-10 05:59:35.812618 UTC"
+"End Time: 2018-08-10 06:00:33.577113 UTC"
+"Diff: 57.764495s"
+ 122,200,573,688 bytes allocated in the heap
+     607,932,352 bytes copied during GC
+     102,410,656 bytes maximum residency (458 sample(s))
+       1,019,168 bytes maximum slop
+             127 MB total memory in use (0 MB lost due to fragmentation)
+
+                                     Tot time (elapsed)  Avg pause  Max pause
+  Gen  0     117615 colls,     0 par    0.964s   1.119s     0.0000s    0.0080s
+  Gen  1       458 colls,     0 par    0.003s   0.003s     0.0000s    0.0002s
+
+  TASKS: 4 (1 bound, 3 peak workers (3 total), using -N1)
+
+  SPARKS: 0 (0 converted, 0 overflowed, 0 dud, 0 GC'd, 0 fizzled)
+
+  INIT    time    0.001s  (  0.014s elapsed)
+  MUT     time   56.026s  ( 56.824s elapsed)
+  GC      time    0.831s  (  0.951s elapsed)
+  RP      time    0.000s  (  0.000s elapsed)
+  PROF    time    0.136s  (  0.171s elapsed)
+  EXIT    time    0.000s  (  0.008s elapsed)
+  Total   time   56.995s  ( 57.797s elapsed)
+
+  Alloc rate    2,181,126,647 bytes per MUT second
+
+  Productivity  98.3% of total user, 98.0% of total elapsed
+
+gc_alloc_block_sync: 0
+whitehole_spin: 0
+gen[0].sync: 0
+gen[1].sync: 0

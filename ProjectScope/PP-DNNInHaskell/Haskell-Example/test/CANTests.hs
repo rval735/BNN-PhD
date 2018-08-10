@@ -51,7 +51,7 @@ trainCANNNTest_2x2NNXOR = do
     let trainSetXOR = zipWith TrainElem inputs outputsXOR
     let updates = updatesWithConditions (length nn) (length trainSetXOR) 0
     --- To be tested
-    let nn0 = trainCANNN nn updates trainSetXOR
+    nn0 <- trainCANNN nn updates trainSetXOR
     let result = map (== 0) $ distanceCANNN nn0 trainSetXOR
     --- Finish testing
     printResult result
@@ -99,7 +99,7 @@ applyDeltaThresholdTest = do
     let baseE = [2,2,3,4]
     let maxVal = 4
     --- To be tested
-    let result = [ applyDeltaThresholdOne nSize (-1) baseT baseD 0 baseE maxVal,
+    result <- sequence [ applyDeltaThresholdOne nSize (-1) baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 0 baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 2 baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 3 baseT baseD 0 baseE maxVal,
@@ -201,7 +201,7 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
     let weights = CANWElem indexW $ createWeight row col weightLst
     let delta = createWeight row col deltaLst
     let expected = CANWElem indexE $ createWeight row col expectedLst
-    let result = applyDeltaWeight weights (R.delay delta)
+    result <- applyDeltaWeight weights (R.delay delta)
     when display $ do
         print weights
         print (CANWElem 0 delta)
@@ -210,13 +210,15 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
         print "*********"
     return $ result == expected
 
-applyDeltaThresholdOne :: Int -> Int -> [Int] -> [Int] -> Int -> [Int] -> Int -> Bool
-applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst maxValue = result
-    where threshold = CANTElem index $ createThreshold tSize 0 thresholdLst
-          delta = createThreshold tSize 0 deltaLst
-          expected = CANTElem expIndex $ createThreshold tSize 0 expectedLst
-          --- To be tested
-          result = expected == applyDeltaThreshold threshold (R.delay delta) maxValue
+applyDeltaThresholdOne :: (Monad m) => Int -> Int -> [Int] -> [Int] -> Int -> [Int] -> Int -> m Bool
+applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst maxValue = do
+    let threshold = CANTElem index $ createThreshold tSize 0 thresholdLst
+    let delta = createThreshold tSize 0 deltaLst
+    let expected = CANTElem expIndex $ createThreshold tSize 0 expectedLst
+    funct <- applyDeltaThreshold threshold (R.delay delta) maxValue
+    --- To be tested
+    return $ expected == funct
+    --- Finish testing
 
 deltaNextChangeOne :: Int -> Int -> Int -> [Int] -> Int -> [Int] -> Bool
 deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
@@ -252,7 +254,7 @@ splitVecAtOne location vecLst (expectedFLst, expectedSLst) = result == expected
 
 printPartialNN :: TrainElem -> CANUpdate -> [CANNeuron] -> IO [CANNeuron]
 printPartialNN train update nn = do
-    let nn' = trainNeurons train update nn
+    nn' <- trainNeurons train update nn
     print nn'
     print "------------"
     return nn'

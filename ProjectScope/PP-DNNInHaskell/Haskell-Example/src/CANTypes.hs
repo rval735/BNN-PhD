@@ -72,6 +72,11 @@ data CANNeuron = CANNeuron {
     canThresholds :: CANTElem
 } deriving (Eq)
 
+data CANNeuronD = CANNeuronD {
+    canWeightsD    :: CANWElemD,
+    canThresholdsD :: CANTElemD
+} deriving (Eq)
+
 instance Show CANNeuron where
     show = neuronString
 
@@ -80,12 +85,22 @@ data CANWElem = CANWElem {
     canWElem :: NNTMU
 } deriving (Eq)
 
+data CANWElemD = CANWElemD {
+    wChangeD  :: Int,
+    canWElemD :: NNTMD
+} deriving (Eq)
+
 instance Show CANWElem where
     show = weightsString
 
 data CANTElem = CANTElem {
     tChange  :: Int,
     canTElem :: NTTVU
+} deriving (Eq)
+
+data CANTElemD = CANTElemD {
+    tChangeD  :: Int,
+    canTElemD :: NTTVD
 } deriving (Eq)
 
 instance Show CANTElem where
