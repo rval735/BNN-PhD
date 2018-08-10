@@ -29,7 +29,8 @@ import           Data.Bits                         (complement, xor, (.&.),
                                                     (.|.))
 import           Data.Bool                         (bool)
 import           Data.List                         (mapAccumL)
-import           Data.Maybe                        (catMaybes)
+import           Data.Maybe                        (isNothing)
+import qualified Data.Vector.Unboxed               as V
 import           ListExtras                        (applyNTimes, replaceElem,
                                                     safeHead, shiftLeft, toBoth)
 import           Prelude                           hiding (map, traverse,
@@ -52,7 +53,10 @@ applyNeuron input (CANNeuron canW canT) = res
           summ = layerSummation collision
           res = layerOperation (delay summ) canT (>=)
 
-weightsToDelta :: NNTMD -> NNTVU
+-- weightsToDelta :: NNTMD -> NNTVD
+-- weightsToDelta delta = traverse2 delta  id (\f (Z :. x :. y) -> ) -- foldS (.|.) False
+
+weightsToDelta :: (Source r NNT) => NNTMF r -> NNTVU
 weightsToDelta = foldS (.|.) False
 
 vecCompare :: (Source r NNT) => NNTVF r -> NNTVF r -> NNTVD
@@ -68,13 +72,13 @@ queryNeuronsAcc :: [CANNeuron] -> NNTVD -> (NNTVD, [(NNTMD, NNTVD)])
 queryNeuronsAcc nn query = mapAccumL f query nn
     where f x n@(CANNeuron y _) = let apNN = applyNeuron x n in (apNN, (layerColide y x xor, applyNeuron x n))
 
-queryCANNN :: [CANNeuron] -> [TrainElem] -> [NNTVU]
-queryCANNN nn = P.map (\(TrainElem query _) -> computeUnboxedS $ queryNeurons nn (delay query))
+queryCANNN :: [CANNeuron] -> [TrainElem] -> [NNTVD]
+queryCANNN nn = P.map (\(TrainElem query _) -> queryNeurons nn (delay query))
 
 distanceCANNN :: [CANNeuron] -> [TrainElem] -> [Int]
 distanceCANNN nn testSet = compared
     where queries = queryCANNN nn testSet
-          zipped = P.zipWith (\x (TrainElem _ y) -> (x, y)) queries testSet
+          zipped = P.zipWith (\x (TrainElem _ y) -> (x, delay y)) queries testSet
           compared = P.map (hammingWeight . uncurry vecCompare) zipped
 
 updateCANNeuron :: CANNeuron -> CANElem -> NNTVU -> (NNTMD, NNTVD) -> CANNeuron
@@ -93,7 +97,7 @@ deltaThreshold = zipWith changes
     where changes x y = bool 0 (bool (-1) 1 y) x
 
 -- deltaWeights ::  (Source r NNT) => (NNTMF r, NNTVF r) -> NNTVF r -> NNTMD
-deltaWeights :: NNTVU -> (NNTMD, NNTVD) -> NNTMD
+deltaWeights :: (Source r NNT) => NNTVF r -> (NNTMD, NNTVD) -> NNTMD
 deltaWeights delta (wXh, output) = traverse3 wXh output delta (\x _ _ -> x) applySHY
     where applySHY f g h sh@(Z :. x :. y) = let nSh = ix1 x in applySelection (f sh) (g nSh) (h nSh)
 
@@ -122,10 +126,10 @@ applyDeltaThreshold cte@(CANTElem tChange canT) delta maxValue = cteUpdate
 
 -- Here we change the value to the nearest index change.
 -- For example a vector [-1,0,1,0] has two changes/stay differences
--- If "indexChange" is -1, it means it has never changed, then we expect
--- to return Just 0, because index 0 has a change value.
--- If "indexChange" is 0, it means last time 0 was modified, then it should
--- return Just 2, because index 1 does not represent a change.
+-- If the first argument is "-1", it means it has never been changed, then we expect
+-- to return "Just 0", because index "0" has a change value.
+-- In case it is "0", it means last time "0" was modified, then it should
+-- return "Just 2", because index 1 does not represent a change.
 thresholdIndexChange :: Int -> NTTVD -> Maybe Int
 thresholdIndexChange = indexChange (/= 0)
 
@@ -133,9 +137,11 @@ weightIndexChange :: Int -> NNTVD -> Maybe Int
 weightIndexChange = indexChange id
 
 indexChange :: (Unbox a) => (a -> Bool) -> Int -> Array D DIM1 a -> Maybe Int
-indexChange condition location delta = safeHead $ catMaybes [safeHead y, safeHead x]
+indexChange condition location delta = bool y x $ isNothing y
     where traversal g sh@(Z :. x) = bool (-1) x (condition $ g sh)
-          (x, y) = toBoth (filter (>= 0)) . splitAt (location + 1) . toList $ traverse delta id traversal
+          splitted = splitVecAt location $ traverse delta id traversal
+          (x, y) = toBoth (firstElem . filterVec (>= 0)) splitted
+
 
 applySelection :: NNT -> NNT -> NNT -> NNT
 applySelection x y z = z .&. xor x (complement y)
@@ -146,9 +152,9 @@ updatesWithConditions :: Int -> Int -> Int -> [CANUpdate]
 updatesWithConditions nnElems trainElems shiftBy
     | (nnElems * 2) < trainElems = transform matchTrain
     | otherwise = transform updates
-        where updates = constructUpdate nnElems
-              matchTrain = concat $ replicate (div trainElems (nnElems * 2) + 1) updates
-              transform = take trainElems . applyNTimes shiftLeft shiftBy
+    where updates = constructUpdate nnElems
+          matchTrain = concat $ replicate (div trainElems (nnElems * 2) + 1) updates
+          transform = take trainElems . applyNTimes shiftLeft shiftBy
 
 ---------------------------------------------------------------------------
 
@@ -191,3 +197,28 @@ trainGeneral nn trainSet shift = (shiftTo, nn')
     where updates = updatesWithConditions (length nn) (length trainSet) shift
           nn' = trainCANNN nn updates trainSet
           shiftTo = bool (shift + 1) 0 (shift > length trainSet)
+
+---------------------------------------------------------------------------
+
+splitVecAt :: Int -> NTTVD -> (NTTVD, NTTVD)
+splitVecAt location vec
+    | location >= size shVec = (vec, emptyVec)
+    | location < 0 = (emptyVec, vec)
+    | otherwise = (leftV, rightV)
+    where shVec = extent vec
+          emptyVec = fromFunction shVec (const initialValue)
+          indexed = fromIndex shVec location
+          locPlus = location + 1
+          leftV = extract (ix1 0) (ix1 locPlus) vec
+          rightV = extract (ix1 locPlus) (ix1 $ size shVec - locPlus) vec
+
+filterVec :: (Int -> Bool) -> NTTVD -> NTTVU
+filterVec filterF vec = fromUnboxed (ix1 $ V.length elems) elems
+    where shVec = extent vec
+          elems = V.filter filterF . toUnboxed $ computeUnboxedS vec
+
+firstElem :: NTTVU -> Maybe Int
+firstElem vec
+    | shSize <= 0 = Nothing
+    | otherwise = Just (linearIndex vec 0)
+    where shSize = size $ extent vec

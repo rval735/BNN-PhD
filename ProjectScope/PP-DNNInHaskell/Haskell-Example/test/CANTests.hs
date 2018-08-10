@@ -171,6 +171,17 @@ weightIndexChangeTest = do
     --- Finish testing
     printResult result
 
+splitVecAtTest :: IO ()
+splitVecAtTest = do
+    print "splitVecAtTest"
+    -- To be tested
+    let result = [splitVecAtOne (-1) [1,2,3] ([-1,-1,-1], [1,2,3]),
+                  splitVecAtOne 0 [1,2,3] ([1], [2,3]),
+                  splitVecAtOne 5 [1,2,3] ([1,2,3], [-1,-1,-1]),
+                  splitVecAtOne 1 [1,2,3,4,5] ([1,2], [3,4,5])]
+    -- Finish testing
+    print result
+
 --------------------------------------------------------------------------------
 ---------- Extra Methods ----------
 --------------------------------------------------------------------------------
@@ -228,6 +239,16 @@ weightIndexChangeOne index row weights expected = result == expected
           --- To be tested
           result = weightIndexChange index (R.delay nnt)
           --- Finish testing
+
+splitVecAtOne :: Int -> [Int] -> ([Int], [Int]) -> Bool
+splitVecAtOne location vecLst (expectedFLst, expectedSLst) = result == expected
+    where vec = R.delay $ createThreshold (length vecLst) 0 vecLst
+          expected = (R.delay $ createThreshold (length expectedFLst) 0 expectedFLst,
+                      R.delay $ createThreshold (length expectedSLst) 0 expectedSLst)
+          --- To be tested
+          result = splitVecAt location vec
+          --- Finish testing
+
 
 printPartialNN :: TrainElem -> CANUpdate -> [CANNeuron] -> IO [CANNeuron]
 printPartialNN train update nn = do

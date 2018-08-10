@@ -22,3 +22,4 @@ main = do
     deltaNextChangeTest
     thresholdIndexChangeTest
     weightIndexChangeTest
+    splitVecAtTest
