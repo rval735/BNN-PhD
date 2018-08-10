@@ -180,7 +180,7 @@ splitVecAtTest = do
                   splitVecAtOne 5 [1,2,3] ([1,2,3], [-1,-1,-1]),
                   splitVecAtOne 1 [1,2,3,4,5] ([1,2], [3,4,5])]
     -- Finish testing
-    print result
+    printResult result
 
 --------------------------------------------------------------------------------
 ---------- Extra Methods ----------
