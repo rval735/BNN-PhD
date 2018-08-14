@@ -35,7 +35,7 @@ applyNTimes :: ([a] -> [a]) -> Word8 -> [a] -> [a]
 applyNTimes _ 0 x = x
 applyNTimes f n x = applyNTimes f (n - 1) (f x)
 
-binaryList :: [Int] -> [Bool]
+binaryList :: Integral a => [a] -> [Bool]
 binaryList = map (\x -> bool False True (0 /= x))
 
 toBoth :: (a -> b) -> (a, a) -> (b, b)

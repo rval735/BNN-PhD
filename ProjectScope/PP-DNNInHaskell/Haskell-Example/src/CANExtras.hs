@@ -27,7 +27,7 @@ createZNeuron rowI colI = CANNeuron (CANWElem initialValue canW0) (CANTElem init
     where canW0 = createWeight rowI colI []
           canT0 = createThreshold rowI colI []
 
-createWeight :: Int -> Int -> [Int] -> NNTMU
+createWeight :: Int -> Int -> [NTT] -> NNTMU
 createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
 createWeight rowI colI xs
     | length xs /= (rowI * colI) = createWeight rowI colI []
@@ -39,7 +39,7 @@ createThreshold rowI _ xs
     | length xs /= rowI = createThreshold rowI 0 []
     | otherwise = fromListUnboxed (ix1 rowI) xs
 
-createOutput :: Int -> [Int] -> NNTVU
+createOutput :: Int -> [NTT] -> NNTVU
 createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
 createOutput elems xs
     | length xs /= elems = createOutput elems []
