@@ -33,8 +33,8 @@ createWeight rowI colI xs
     | length xs /= (rowI * colI) = createWeight rowI colI []
     | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
 
-createThreshold :: Int -> Int -> [Int] -> NTTVU
-createThreshold rowI colI [] = fromListUnboxed (ix1 rowI) $ replicate rowI colI
+createThreshold :: Int -> Int -> [NTT] -> NTTVU
+createThreshold rowI colI [] = fromListUnboxed (ix1 rowI) $ replicate rowI (fromIntegral colI)
 createThreshold rowI _ xs
     | length xs /= rowI = createThreshold rowI 0 []
     | otherwise = fromListUnboxed (ix1 rowI) xs
@@ -56,11 +56,11 @@ construct1Complement startPos rows
     | startPos < 0 = emptyArr
     | otherwise = computeS $ traverse2 emptyArr indexesArr const flipIndexes
     where emptyArr = fromListUnboxed (ix2 rows rows) $ replicate (rows * rows) False
-          indexesLst = applyNTimes shiftLeft startPos [0 .. (rows - 1)]
+          indexesLst = applyNTimes shiftLeft (fromIntegral startPos) [0 .. (rows - 1)]
           indexesArr = fromListUnboxed (ix1 rows) indexesLst
           flipIndexes f g sh@(Z :. x :. y) = let val = g (ix1 x) in bool False True (val == y)
 
-constructUpdate :: Int -> [CANUpdate]
+constructUpdate :: NTT -> [CANUpdate]
 constructUpdate nnElems = elems (nnElems - 1)
     where canElems = [CANWeight, CANThreshold]
           elems n = reverse $ concatMap (\x -> map (CANUpdate x) canElems) [0 .. n]

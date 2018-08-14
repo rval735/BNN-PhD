@@ -49,7 +49,7 @@ trainCANNNTest_2x2NNXOR = do
     let inputs = createOutputLst nSize [0, 1, 2, 3]
     let outputsXOR = createOutputLst nSize [0, 3, 3, 0]
     let trainSetXOR = zipWith TrainElem inputs outputsXOR
-    let updates = updatesWithConditions (length nn) (length trainSetXOR) 0
+    let updates = updatesWithConditions (fromIntegral $ length nn) (fromIntegral $ length trainSetXOR) 0
     --- To be tested
     let nn0 = trainCANNN nn updates trainSetXOR
     let result = map (== 0) $ distanceCANNN nn0 trainSetXOR
@@ -64,7 +64,7 @@ trainCANNNTest_Ex2NN = do
     let inputs = createOutputLst nSize [0, 2, 4, 6, 1, 3, 5, 7]
     let outputs = createOutputLst nSize [0, 6, 7, 3, 2, 4, 2, 1]
     let trainSet = zipWith TrainElem inputs outputs
-    let updates = updatesWithConditions (length nn) (length trainSet) 0
+    let updates = updatesWithConditions (fromIntegral $ length nn) (fromIntegral $ length trainSet) 0
     --- To be tested
     -- trainUntilLearned nn trainSet 0 6
     nn' <- recursiveNN trainSet updates nn
@@ -82,7 +82,7 @@ trainUntilLearnedTest = do
     let outputs = createOutputLst nSize $ map (round . (*100)) baseOLst
     let trainSet = zipWith TrainElem inputs outputs
     let nn = replicate nnSize canN0
-    let updates = take (length trainSet) $ constructUpdate (length nn)
+    let updates = take (length trainSet) $ constructUpdate (fromIntegral $ length nn)
     --- To be tested
     nn' <- trainUntilLearned nn trainSet 0 0
     let result = map (== 0) $ distanceCANNN nn' trainSet
@@ -99,19 +99,19 @@ applyDeltaThresholdTest = do
     let baseE = [2,2,3,4]
     let maxVal = 4
     --- To be tested
-    let result = [ applyDeltaThresholdOne nSize (-1) baseT baseD 0 baseE maxVal,
+    let result = [ applyDeltaThresholdOne nSize initialValue baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 0 baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 2 baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 3 baseT baseD 0 baseE maxVal,
                    applyDeltaThresholdOne nSize 4 baseT baseD 0 baseE maxVal,
-                   applyDeltaThresholdOne nSize 2 baseT [0,-1,0,0] 1 [1,1,3,4] maxVal,
-                   applyDeltaThresholdOne nSize 1 baseT [0,-1,-1,0] 2 [1,2,2,4] maxVal,
+                   applyDeltaThresholdOne nSize 2 baseT [0,initialValue,0,0] 1 [1,1,3,4] maxVal,
+                   applyDeltaThresholdOne nSize 1 baseT [0,initialValue,initialValue,0] 2 [1,2,2,4] maxVal,
                    applyDeltaThresholdOne 3 1 [1,2,3] [1,0,0] 0 [2,2,3] maxVal,
-                   applyDeltaThresholdOne 3 1 [1,2,2] [1,0,-1] 2 [1,2,1] maxVal,
+                   applyDeltaThresholdOne 3 1 [1,2,2] [1,0,initialValue] 2 [1,2,1] maxVal,
                    applyDeltaThresholdOne 3 1 [1,2,3] [1,0,0] 0 [2,2,3] maxVal,
                    applyDeltaThresholdOne 3 0 [1,2,3] [0,0,1] 2 [1,2,3] 3,
-                   applyDeltaThresholdOne 3 0 [1,2,0] [0,0,-1] 2 [1,2,0] 3,
-                   applyDeltaThresholdOne 3 2 [4,2,0] [1,0,-1] 0 [2,2,0] 2]
+                   applyDeltaThresholdOne 3 0 [1,2,0] [0,0,initialValue] 2 [1,2,0] 3,
+                   applyDeltaThresholdOne 3 2 [4,2,0] [1,0,initialValue] 0 [2,2,0] 2]
     --- Finish testing
     printResult result
 
@@ -132,8 +132,8 @@ deltaNextChangeTest = do
                   deltaNextChangeOne row col 2 baseDelta 0 [1,0,0,1,0,0,0,0,0],
                   deltaNextChangeOne row col 0 baseDelta 2 [0,0,0,0,0,1,0,0,1],
                   deltaNextChangeOne row col 4 baseDelta 0 [1,0,0,1,0,0,0,0,0],
-                  deltaNextChangeOne row col (-1) baseDelta 0 [1,0,0,1,0,0,0,0,0],
-                  deltaNextChangeOne row col 2 [0,0,0,0,0,0,0,0,0] (-1) [0,0,0,0,0,0,0,0,0]
+                  deltaNextChangeOne row col initialValue baseDelta 0 [1,0,0,1,0,0,0,0,0],
+                  deltaNextChangeOne row col 2 [0,0,0,0,0,0,0,0,0] initialValue [0,0,0,0,0,0,0,0,0]
                   ]
     --- Finish testing
     printResult result
@@ -142,16 +142,16 @@ thresholdIndexChangeTest :: IO ()
 thresholdIndexChangeTest = do
     print "thresholdIndexChangeTest"
     --- To be tested
-    let (rows, example) = (4, [-1,0,1,-1])
+    let (rows, example) = (4, [initialValue,0,1,initialValue])
     let result = [thresholdIndexChangeOne 2 rows example (Just 3),
                   thresholdIndexChangeOne 1 rows example (Just 2),
                   thresholdIndexChangeOne 0 rows example (Just 2),
                   thresholdIndexChangeOne 3 rows example (Just 0),
                   thresholdIndexChangeOne 4 rows example (Just 0),
                   thresholdIndexChangeOne 5 rows example (Just 0),
-                  thresholdIndexChangeOne (-1) rows example (Just 0),
+                  thresholdIndexChangeOne initialValue rows example (Just 0),
                   thresholdIndexChangeOne 1 rows [0,0,0,0] Nothing,
-                  thresholdIndexChangeOne 6 rows [0,0,-1,0] (Just 2)]
+                  thresholdIndexChangeOne 6 rows [0,0,initialValue,0] (Just 2)]
     --- Finish testing
     printResult result
 
@@ -165,9 +165,9 @@ weightIndexChangeTest = do
                   weightIndexChangeOne 0 rows example (Just 1),
                   weightIndexChangeOne 3 rows example (Just 1),
                   weightIndexChangeOne 4 rows example (Just 1),
-                  weightIndexChangeOne (-1) rows example (Just 1),
+                  weightIndexChangeOne initialValue rows example (Just 1),
                   weightIndexChangeOne 1 rows [0,0,0,0] Nothing,
-                  weightIndexChangeOne (-1) rows [0,0,0,0] Nothing]
+                  weightIndexChangeOne initialValue rows [0,0,0,0] Nothing]
     --- Finish testing
     printResult result
 
@@ -175,9 +175,9 @@ splitVecAtTest :: IO ()
 splitVecAtTest = do
     print "splitVecAtTest"
     -- To be tested
-    let result = [splitVecAtOne (-1) [1,2,3] ([-1,-1,-1], [1,2,3]),
+    let result = [splitVecAtOne initialValue [1,2,3] ([initialValue,initialValue,initialValue], [1,2,3]),
                   splitVecAtOne 0 [1,2,3] ([1], [2,3]),
-                  splitVecAtOne 5 [1,2,3] ([1,2,3], [-1,-1,-1]),
+                  splitVecAtOne 5 [1,2,3] ([1,2,3], [initialValue,initialValue,initialValue]),
                   splitVecAtOne 1 [1,2,3,4,5] ([1,2], [3,4,5])]
     -- Finish testing
     printResult result
@@ -198,9 +198,9 @@ layerColideOne (row, col) weightLst inputLst expectedLst = result
 
 applyDeltaOne :: Bool -> ((Int, Int),(Int, [Int]),[Int], (Int, [Int])) -> IO Bool
 applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expectedLst)) = do
-    let weights = CANWElem indexW $ createWeight row col weightLst
+    let weights = CANWElem (fromIntegral indexW) $ createWeight row col weightLst
     let delta = createWeight row col deltaLst
-    let expected = CANWElem indexE $ createWeight row col expectedLst
+    let expected = CANWElem (fromIntegral indexE) $ createWeight row col expectedLst
     let result = applyDeltaWeight weights (R.delay delta)
     when display $ do
         print weights
@@ -210,15 +210,15 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
         print "*********"
     return $ result == expected
 
-applyDeltaThresholdOne :: Int -> Int -> [Int] -> [Int] -> Int -> [Int] -> Int -> Bool
+applyDeltaThresholdOne :: Int -> NTT -> [NTT] -> [NTT] -> Int -> [NTT] -> NTT -> Bool
 applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst maxValue = result
     where threshold = CANTElem index $ createThreshold tSize 0 thresholdLst
           delta = createThreshold tSize 0 deltaLst
-          expected = CANTElem expIndex $ createThreshold tSize 0 expectedLst
+          expected = CANTElem (fromIntegral expIndex) $ createThreshold tSize 0 expectedLst
           --- To be tested
           result = expected == applyDeltaThreshold threshold (R.delay delta) maxValue
 
-deltaNextChangeOne :: Int -> Int -> Int -> [Int] -> Int -> [Int] -> Bool
+deltaNextChangeOne :: Int -> Int -> NTT -> [Int] -> NTT -> [Int] -> Bool
 deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
     where delta = createWeight row col weightLst
           expected = createWeight row col expectedLst
@@ -226,21 +226,21 @@ deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
           result = (indexE, R.delay expected) == deltaNextChange (R.delay delta) indexW
           --- Finish testing
 
-thresholdIndexChangeOne :: Int -> Int -> [Int] -> Maybe Int -> Bool
+thresholdIndexChangeOne :: NTT -> Int -> [NTT] -> Maybe NTT -> Bool
 thresholdIndexChangeOne index row threshold expected = result == expected
     where nnt = createThreshold row 0 threshold
           --- To be tested
           result = thresholdIndexChange index (R.delay nnt)
           --- Finish testing
 
-weightIndexChangeOne :: Int -> Int -> [Int] -> Maybe Int -> Bool
+weightIndexChangeOne :: NTT -> Int -> [Int] -> Maybe NTT -> Bool
 weightIndexChangeOne index row weights expected = result == expected
     where nnt = createOutput row weights
           --- To be tested
           result = weightIndexChange index (R.delay nnt)
           --- Finish testing
 
-splitVecAtOne :: Int -> [Int] -> ([Int], [Int]) -> Bool
+splitVecAtOne :: NTT -> [NTT] -> ([NTT], [NTT]) -> Bool
 splitVecAtOne location vecLst (expectedFLst, expectedSLst) = result == expected
     where vec = R.delay $ createThreshold (length vecLst) 0 vecLst
           expected = (R.delay $ createThreshold (length expectedFLst) 0 expectedFLst,

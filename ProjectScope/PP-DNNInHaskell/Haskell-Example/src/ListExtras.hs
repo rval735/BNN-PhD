@@ -15,6 +15,7 @@ module ListExtras
 where
 
 import           Data.Bool (bool)
+import           Data.Word (Word8)
 
 safeHead :: [a] -> Maybe a
 safeHead []      = Nothing
@@ -30,7 +31,7 @@ shiftRight []  = []
 shiftRight [x] = [x]
 shiftRight x   = last x : init x
 
-applyNTimes :: ([a] -> [a]) -> Int -> [a] -> [a]
+applyNTimes :: ([a] -> [a]) -> Word8 -> [a] -> [a]
 applyNTimes _ 0 x = x
 applyNTimes f n x = applyNTimes f (n - 1) (f x)
 
