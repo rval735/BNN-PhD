@@ -22,6 +22,7 @@ import qualified Data.Array.Repa as R
 import           Data.Bits       (xor)
 import           Data.Bool       (bool)
 import           Data.List       (zip5)
+import           ListExtras      (applyNTimes, shiftLeft)
 
 layerColideTest :: IO ()
 layerColideTest = do
@@ -182,6 +183,42 @@ splitVecAtTest = do
     -- Finish testing
     printResult result
 
+trainWithEpochsTest :: IO ()
+trainWithEpochsTest = do
+    print "trainWithEpochsTest"
+    let input = createOutputLst 3 [0, 2, 4, 6, 1, 3, 5, 7]
+    let output = createOutputLst 3 [0, 6, 7, 3, 2, 4, 2, 1]
+    let trainSet = zipWith TrainElem input output
+    let canN0 = createZNeuron 3 3
+    let canN1 = createZNeuron 2 3
+    let canN2 = createZNeuron 3 2
+    let nn = [canN0, canN1, canN2]
+    let eN0 = CANWElem 1 $ createWeight 3 3 [1,0,0,0,1,0,1,0,0]
+    let eN1 = CANWElem 2 $ createWeight 2 3 [1,0,1,1,1,1]
+    let eN2 = CANWElem 0 $ createWeight 3 2 [0,0,1,0,1,1]
+    let eT0 = CANTElem 2 $ createThreshold 3 0 [3,2,2]
+    let eT1 = CANTElem 1 $ createThreshold 2 0 [1,2]
+    let eT2 = CANTElem 2 $ createThreshold 3 0 [2,1,2]
+    let expected = [CANNeuron eN0 eT0, CANNeuron eN1 eT1, CANNeuron eN2 eT2]
+    let updates = applyNTimes shiftLeft 2 $ constructUpdate 3
+    -- To be tested
+    nn' <- trainWithEpochs nn trainSet 0 1
+    nn'' <- trainWithEpochs nn' trainSet 2 1
+    let nn0' = trainNeurons (trainSet !! 0) (updates !! 0) nn'
+    let nn1' = trainNeurons (trainSet !! 1) (updates !! 1) nn0'
+    let nn2' = trainNeurons (trainSet !! 2) (updates !! 2) nn1'
+    let nn3' = trainNeurons (trainSet !! 3) (updates !! 3) nn2'
+    let nn4' = trainNeurons (trainSet !! 4) (updates !! 4) nn3'
+    let nn5' = trainNeurons (trainSet !! 5) (updates !! 5) nn4'
+    let nn6' = trainNeurons (trainSet !! 6) (updates !! 0) nn5'
+    let nn7' = trainNeurons (trainSet !! 7) (updates !! 1) nn6'
+    let result = [nn'' == expected,
+                  nn'' == nn7',
+                  nn7' == expected]
+    print nn''
+    -- Finish testing
+    printResult result
+
 --------------------------------------------------------------------------------
 ---------- Extra Methods ----------
 --------------------------------------------------------------------------------
@@ -296,3 +333,4 @@ testExamples2 = [ex1, ex2, ex3, ex4, ex5, ex6]
           ex4 = ((3, 2), (1, []), [0,0,1,0,0,1], (0,[0,0,1,0,0,0]))
           ex5 = ((3, 3), (1, []), [0,0,0,0,0,0,1,0,1], (2, [0,0,0,0,0,0,0,0,1]))
           ex6 = ((3, 3), (1, []), [0,1,0,0,0,0,1,0,1], (2, [0,0,0,0,0,0,0,0,1]))
+
