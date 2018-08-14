@@ -215,7 +215,6 @@ trainWithEpochsTest = do
     let result = [nn'' == expected,
                   nn'' == nn7',
                   nn7' == expected]
-    print nn''
     -- Finish testing
     printResult result
 
