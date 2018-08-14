@@ -186,7 +186,7 @@ splitVecAtTest = do
 ---------- Extra Methods ----------
 --------------------------------------------------------------------------------
 
-layerColideOne :: (Int, Int) -> [Int] -> [Int] -> [Int] -> Bool
+layerColideOne :: (Int, Int) -> [NTT] -> [NTT] -> [NTT] -> Bool
 layerColideOne (row, col) weightLst inputLst expectedLst = result
     where oneCANWElem xs = CANWElem 0 $ createWeight row col xs
           weight = oneCANWElem weightLst
@@ -196,7 +196,7 @@ layerColideOne (row, col) weightLst inputLst expectedLst = result
           result = expected == R.computeS (layerColide weight input xor)
           --- Finish testing
 
-applyDeltaOne :: Bool -> ((Int, Int),(Int, [Int]),[Int], (Int, [Int])) -> IO Bool
+applyDeltaOne :: Bool -> ((Int, Int),(Int, [NTT]),[NTT], (Int, [NTT])) -> IO Bool
 applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expectedLst)) = do
     let weights = CANWElem (fromIntegral indexW) $ createWeight row col weightLst
     let delta = createWeight row col deltaLst
@@ -218,7 +218,7 @@ applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst ma
           --- To be tested
           result = expected == applyDeltaThreshold threshold (R.delay delta) maxValue
 
-deltaNextChangeOne :: Int -> Int -> NTT -> [Int] -> NTT -> [Int] -> Bool
+deltaNextChangeOne :: Int -> Int -> NTT -> [NTT] -> NTT -> [NTT] -> Bool
 deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
     where delta = createWeight row col weightLst
           expected = createWeight row col expectedLst
@@ -233,7 +233,7 @@ thresholdIndexChangeOne index row threshold expected = result == expected
           result = thresholdIndexChange index (R.delay nnt)
           --- Finish testing
 
-weightIndexChangeOne :: NTT -> Int -> [Int] -> Maybe NTT -> Bool
+weightIndexChangeOne :: NTT -> Int -> [NTT] -> Maybe NTT -> Bool
 weightIndexChangeOne index row weights expected = result == expected
     where nnt = createOutput row weights
           --- To be tested
@@ -277,7 +277,7 @@ printResult xs = do
 ---------- Extra Methods ----------
 --------------------------------------------------------------------------------
 
-testExamples :: [(Int, Int, [Int], [Int], [Int])]
+testExamples :: [(Int, Int, [NTT], [NTT], [NTT])]
 testExamples = zip5 row col weights input wXORi
     where row = [2, 3, 3, 2, 2, 2]
           col = [3, 2, 3, 3, 2, 2]
@@ -288,7 +288,7 @@ testExamples = zip5 row col weights input wXORi
           wXORi = [[1, 0, 0, 1, 1, 0], [0,0,0,0,1,1], [0,0,0,1,0,1,0,0,0], [0,0,1,1,1,1],
                   [1,0,1,0], [0,0,0,0]]
 
-testExamples2 :: [((Int, Int), (Int, [Int]), [Int], (Int, [Int]))]
+testExamples2 :: [((Int, Int), (Int, [NTT]), [NTT], (Int, [NTT]))]
 testExamples2 = [ex1, ex2, ex3, ex4, ex5, ex6]
     where ex1 = ((2, 3), (0, []), [1,1,1,1,1,1], (1, [0,1,0,0,1,0]))
           ex2 = ((3, 2), (1, []), [0,0,0,1,0,1], (1, [0,0,0,1,0,1]))
