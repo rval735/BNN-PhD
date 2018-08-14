@@ -193,10 +193,14 @@ trainWithEpochs nn trainSet shift epochs
 
 trainGeneral :: [CANNeuron] -> [TrainElem] -> Int -> (Int, [CANNeuron])
 trainGeneral [] _ _ = (initialValue, [])
-trainGeneral nn trainSet shift = (shiftTo, nn')
-    where updates = updatesWithConditions (length nn) (length trainSet) shift
+trainGeneral nn trainSet shiftV = (shiftTo, nn')
+    where nnL = fromIntegral $ length nn
+          tsL = fromIntegral $ length trainSet
+          updates = updatesWithConditions nnL tsL shiftV
+          upL = fromIntegral $ length updates
           nn' = trainCANNN nn updates trainSet
-          shiftTo = bool (shift + 1) 0 (shift > length trainSet)
+          shiftBy = shiftV + bool (tsL - (nnL * 2)) ((nnL * 2) - tsL) (nnL * 2 > tsL)
+          shiftTo = bool shiftBy 0 (shiftBy > tsL)
 
 ---------------------------------------------------------------------------
 
