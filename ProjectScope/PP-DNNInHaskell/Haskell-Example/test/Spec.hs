@@ -23,3 +23,4 @@ main = do
     thresholdIndexChangeTest
     weightIndexChangeTest
     splitVecAtTest
+    trainWithEpochsTest
