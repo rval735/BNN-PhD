@@ -12,9 +12,9 @@
 
 -- | Test CAN for the MNIST dataset
 module CANMNIST
-(
-    runMNIST
-)
+-- (
+--     runMNIST
+-- )
 where
 
 import           CAN                 (distanceCANNN, trainWithEpochs)
