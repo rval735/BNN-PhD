@@ -205,14 +205,14 @@ trainWithEpochsTest = do
     nn' <- trainWithEpochs nn trainSet 0 1
     nn'' <- trainWithEpochs nn' trainSet 2 1
     nn''' <- trainWithEpochs nn trainSet 0 2
-    let nn0' = trainNeurons (head trainSet) (head updates) nn'
-    let nn1' = trainNeurons (trainSet !! 1) (updates !! 1) nn0'
-    let nn2' = trainNeurons (trainSet !! 2) (updates !! 2) nn1'
-    let nn3' = trainNeurons (trainSet !! 3) (updates !! 3) nn2'
-    let nn4' = trainNeurons (trainSet !! 4) (updates !! 4) nn3'
-    let nn5' = trainNeurons (trainSet !! 5) (updates !! 5) nn4'
-    let nn6' = trainNeurons (trainSet !! 6) (head updates) nn5'
-    let nn7' = trainNeurons (trainSet !! 7) (updates !! 1) nn6'
+    nn0' <- trainNeurons (head trainSet) (head updates) nn'
+    nn1' <- trainNeurons (trainSet !! 1) (updates !! 1) nn0'
+    nn2' <- trainNeurons (trainSet !! 2) (updates !! 2) nn1'
+    nn3' <- trainNeurons (trainSet !! 3) (updates !! 3) nn2'
+    nn4' <- trainNeurons (trainSet !! 4) (updates !! 4) nn3'
+    nn5' <- trainNeurons (trainSet !! 5) (updates !! 5) nn4'
+    nn6' <- trainNeurons (trainSet !! 6) (head updates) nn5'
+    nn7' <- trainNeurons (trainSet !! 7) (updates !! 1) nn6'
     let result = [nn'' == expected,
                   nn'' == nn7',
                   nn7' == expected,
