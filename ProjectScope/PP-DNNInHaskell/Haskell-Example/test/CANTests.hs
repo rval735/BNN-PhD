@@ -222,6 +222,40 @@ trainWithEpochsTest = do
     -- Finish testing
     printResult result
 
+trainUntilLearnedTest2 :: IO ()
+trainUntilLearnedTest2 = do
+    print "trainUntilLearnedTest2"
+    let input = createOutputLst 4 [0 .. 15]
+    let output = createOutputLst 5 [y * 2 | y <- [0 .. 15]]
+    let trainSet = zipWith TrainElem input output
+    let canN0 = createZNeuron 3 4
+    let canN1 = createZNeuron 2 3
+    let canN2 = createZNeuron 5 2
+    let nn = [canN0, canN1, canN2]
+    let eN0 = CANWElem 2 $ createWeight 3 4 [0,0,0,1,0,0,1,0,1,1,1,0]
+    let eN1 = CANWElem 2 $ createWeight 2 3 [0,1,0,0,0,0]
+    let eN2 = CANWElem 0 $ createWeight 5 2 [1,1,1,1,0,0,1,0,1,1]
+    let eT0 = CANTElem 1 $ createThreshold 3 0 [3,3,2]
+    let eT1 = CANTElem 0 $ createThreshold 2 0 [2,1]
+    let eT2 = CANTElem 3 $ createThreshold 5 0 [1,1,2,2,2]
+    let expected = [CANNeuron eN0 eT0, CANNeuron eN1 eT1, CANNeuron eN2 eT2]
+    let expDist = [1,2,0,1,2,1,1,2,2,1,1,2,1,0,2,1]
+    let expMatch = 2
+    let updates = applyNTimes shiftLeft 2 $ constructUpdate 3
+    -- To be tested
+    nn' <- trainUntilLearned nn trainSet 0 20
+    let dist = distanceCANNN nn' trainSet
+    let matches = length . filter (== 0) $ dist
+    let result = [nn' == expected,
+                  dist == expDist,
+                  matches == expMatch]
+    -- Finish testing
+    -- print nn'
+    -- print expected
+    -- print dist
+    -- print matches
+    printResult result
+
 --------------------------------------------------------------------------------
 ---------- Extra Methods ----------
 --------------------------------------------------------------------------------
