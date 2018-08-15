@@ -178,7 +178,7 @@ trainUntilLearned nn trainSet shift tolerance = do
     let (shiftTo, nn') = trainGeneral nn trainSet shift
     let distance = sum $ distanceCANNN nn' trainSet
     let printOpr = print nn' >> print ("Distance: " P.++ show distance)
-    when (shiftTo == 0) printOpr
+    -- when (shiftTo == 0) printOpr
     bool (trainUntilLearned nn' trainSet shiftTo tolerance) (return nn') (distance <= tolerance)
 
 trainWithEpochs :: [CANNeuron] -> [TrainElem] -> NTT -> NTT -> IO [CANNeuron]

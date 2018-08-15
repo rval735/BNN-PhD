@@ -24,3 +24,4 @@ main = do
     weightIndexChangeTest
     splitVecAtTest
     trainWithEpochsTest
+    trainUntilLearnedTest2
