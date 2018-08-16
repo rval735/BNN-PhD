@@ -21,7 +21,7 @@ import           Data.Array.Repa                   (Any, Array, D, DIM1, DIM2,
 import           Data.Array.Repa.Algorithms.Matrix (col, row)
 import           Data.Bool                         (bool)
 import qualified Data.Vector.Storable              as VS
-import           Data.Word                         (Word16)
+import           Data.Word                         (Word16, Word8)
 import           ListExtras                        (splitEvery)
 
 type WeightsSize = Int
@@ -39,7 +39,9 @@ type NNT = Bool
 
 -- | NTT stands for Neural Threshold Type, which is the NN
 --   type of values it needs to consider threshold values
-type NTT = Word16
+type NTT = Word8
+-- type NTT = Word16
+-- type NTT = Int
 
 
 -- | Synonyms for dimensions
