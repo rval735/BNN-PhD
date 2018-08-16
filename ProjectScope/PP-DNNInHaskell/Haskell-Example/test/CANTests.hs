@@ -200,7 +200,7 @@ trainWithEpochsTest = do
     let eT1 = CANTElem 1 $ createThreshold 2 0 [1,2]
     let eT2 = CANTElem 2 $ createThreshold 3 0 [2,1,2]
     let expected = [CANNeuron eN0 eT0, CANNeuron eN1 eT1, CANNeuron eN2 eT2]
-    let updates = applyNTimes shiftLeft 2 $ constructUpdate 3
+    let updates = applyNTimes 2 shiftLeft $ constructUpdate 3
     -- To be tested
     nn' <- trainWithEpochs nn trainSet 0 1
     nn'' <- trainWithEpochs nn' trainSet 2 1
@@ -241,7 +241,7 @@ trainUntilLearnedTest2 = do
     let expected = [CANNeuron eN0 eT0, CANNeuron eN1 eT1, CANNeuron eN2 eT2]
     let expDist = [1,2,0,1,2,1,1,2,2,1,1,2,1,0,2,1]
     let expMatch = 2
-    let updates = applyNTimes shiftLeft 2 $ constructUpdate 3
+    let updates = applyNTimes 2 shiftLeft $ constructUpdate 3
     -- To be tested
     nn' <- trainUntilLearned nn trainSet 0 20
     let dist = distanceCANNN nn' trainSet

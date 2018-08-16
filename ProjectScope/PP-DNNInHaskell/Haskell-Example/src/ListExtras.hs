@@ -15,7 +15,6 @@ module ListExtras
 where
 
 import           Data.Bool (bool)
-import           Data.Word (Word8)
 
 safeHead :: [a] -> Maybe a
 safeHead []      = Nothing
@@ -31,9 +30,8 @@ shiftRight []  = []
 shiftRight [x] = [x]
 shiftRight x   = last x : init x
 
-applyNTimes :: ([a] -> [a]) -> Word8 -> [a] -> [a]
-applyNTimes _ 0 x = x
-applyNTimes f n x = applyNTimes f (n - 1) (f x)
+applyNTimes :: Int -> (b -> b) -> b -> b
+applyNTimes = (foldr (.) id .) . replicate
 
 binaryList :: Integral a => [a] -> [Bool]
 binaryList = map (\x -> bool False True (0 /= x))

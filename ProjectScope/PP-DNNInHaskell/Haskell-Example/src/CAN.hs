@@ -154,7 +154,7 @@ updatesWithConditions nnElems trainElems shiftBy
     | otherwise = transform updates
     where updates = constructUpdate nnElems
           matchTrain = concat $ replicate (fromIntegral $ div trainElems (nnElems * 2) + 1) updates
-          transform = take (fromIntegral trainElems) . applyNTimes shiftLeft shiftBy
+          transform = take (fromIntegral trainElems) . applyNTimes (fromIntegral shiftBy) shiftLeft
 
 ---------------------------------------------------------------------------
 

@@ -56,7 +56,7 @@ construct1Complement startPos rows
     | startPos < 0 = emptyArr
     | otherwise = computeS $ traverse2 emptyArr indexesArr const flipIndexes
     where emptyArr = fromListUnboxed (ix2 rows rows) $ replicate (rows * rows) False
-          indexesLst = applyNTimes shiftLeft (fromIntegral startPos) [0 .. (rows - 1)]
+          indexesLst = applyNTimes (fromIntegral startPos) shiftLeft [0 .. (rows - 1)]
           indexesArr = fromListUnboxed (ix1 rows) indexesLst
           flipIndexes f g sh@(Z :. x :. y) = let val = g (ix1 x) in bool False True (val == y)
 

@@ -21,14 +21,14 @@ import           Data.Array.Repa                   (Any, Array, D, DIM1, DIM2,
 import           Data.Array.Repa.Algorithms.Matrix (col, row)
 import           Data.Bool                         (bool)
 import qualified Data.Vector.Storable              as VS
-import           Data.Word                         (Word8)
+import           Data.Word                         (Word16)
 import           ListExtras                        (splitEvery)
 
 type WeightsSize = Int
 type ThresholdSize = Int
 
-initialValue :: Word8
-initialValue = 255
+initialValue :: NTT
+initialValue = maxBound
 
 -- | Code synonyms to ease relationship between function
 --   parameters and their application
@@ -39,7 +39,7 @@ type NNT = Bool
 
 -- | NTT stands for Neural Threshold Type, which is the NN
 --   type of values it needs to consider threshold values
-type NTT = Word8
+type NTT = Word16
 
 
 -- | Synonyms for dimensions
@@ -78,7 +78,7 @@ instance Show CANNeuron where
     show = neuronString
 
 data CANWElem = CANWElem {
-    wChange  :: Word8,
+    wChange  :: NTT,
     canWElem :: NNTMU
 } deriving (Eq)
 
@@ -86,7 +86,7 @@ instance Show CANWElem where
     show = weightsString
 
 data CANTElem = CANTElem {
-    tChange  :: Word8,
+    tChange  :: NTT,
     canTElem :: NTTVU
 } deriving (Eq)
 
@@ -99,7 +99,7 @@ data CANElem = CANWeight | CANThreshold
     deriving (Eq, Show)
 
 data CANUpdate = CANUpdate {
-    lstIndex :: Word8,
+    lstIndex :: NTT,
     canElem  :: CANElem
 }
 
