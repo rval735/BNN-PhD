@@ -8,10 +8,12 @@
 ---- of this repository for more details.
 ----
 
+import           CANExtrasTests
 import           CANTests
-
 main :: IO ()
 main = do
+    print "*--------------------*"
+    print "CANTests"
     layerColideTest
     layerSummationTest
     trainCANNNTest_2x2NNXOR
@@ -25,3 +27,6 @@ main = do
     splitVecAtTest
     trainWithEpochsTest
     trainUntilLearnedTest2
+    print "*--------------------*"
+    print "CANExtrasTests"
+    createThresholdTest

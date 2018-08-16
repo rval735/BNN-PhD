@@ -23,6 +23,7 @@ import           Data.Bits       (xor)
 import           Data.Bool       (bool)
 import           Data.List       (zip5)
 import           ListExtras      (applyNTimes, shiftLeft)
+import           TestExtras
 
 layerColideTest :: IO ()
 layerColideTest = do
@@ -323,7 +324,6 @@ splitVecAtOne location vecLst (expectedFLst, expectedSLst) = result == expected
           result = splitVecAt location vec
           --- Finish testing
 
-
 printPartialNN :: TrainElem -> CANUpdate -> [CANNeuron] -> IO [CANNeuron]
 printPartialNN train update nn = do
     let nn' = trainNeurons train update nn
@@ -337,18 +337,8 @@ recursiveNN (x : xs) (y : ys) nn = do
     nn' <- printPartialNN x y nn
     recursiveNN xs ys nn'
 
-checkFails :: [Bool] -> String
-checkFails xs = show count ++ " / " ++ show (length xs)
-    where count = foldl (\x y -> bool x (x + 1) y) 0 xs
-
-printResult :: [Bool] -> IO ()
-printResult xs = do
-    print xs
-    print $ checkFails xs
-    print "------------"
-
 --------------------------------------------------------------------------------
----------- Extra Methods ----------
+---------- Test Examples ----------
 --------------------------------------------------------------------------------
 
 testExamples :: [(Int, Int, [NTT], [NTT], [NTT])]
