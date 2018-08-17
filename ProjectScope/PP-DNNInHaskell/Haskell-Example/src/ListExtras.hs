@@ -30,11 +30,10 @@ shiftRight []  = []
 shiftRight [x] = [x]
 shiftRight x   = last x : init x
 
-applyNTimes :: ([a] -> [a]) -> Int -> [a] -> [a]
-applyNTimes _ 0 x = x
-applyNTimes f n x = applyNTimes f (n - 1) (f x)
+applyNTimes :: Int -> (b -> b) -> b -> b
+applyNTimes = (foldr (.) id .) . replicate
 
-binaryList :: [Int] -> [Bool]
+binaryList :: Integral a => [a] -> [Bool]
 binaryList = map (\x -> bool False True (0 /= x))
 
 toBoth :: (a -> b) -> (a, a) -> (b, b)

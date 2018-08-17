@@ -62,7 +62,7 @@ weightsToDelta = foldS (.|.) False
 vecCompare :: (Source r NNT) => NNTVF r -> NNTVF r -> NNTVD
 vecCompare = zipWith xor
 
-hammingWeight :: (Source r NNT) => NNTVF r -> Int
+hammingWeight :: (Source r NNT) => NNTVF r -> NTT
 hammingWeight x = sumAllS $ map (bool 0 1) x
 
 queryNeurons :: [CANNeuron] -> NNTVD -> NNTVD
@@ -75,7 +75,7 @@ queryNeuronsAcc nn query = mapAccumL f query nn
 queryCANNN :: [CANNeuron] -> [TrainElem] -> [NNTVD]
 queryCANNN nn = P.map (\(TrainElem query _) -> queryNeurons nn (delay query))
 
-distanceCANNN :: [CANNeuron] -> [TrainElem] -> [Int]
+distanceCANNN :: [CANNeuron] -> [TrainElem] -> [NTT]
 distanceCANNN nn testSet = compared
     where queries = queryCANNN nn testSet
           zipped = P.zipWith (\x (TrainElem _ y) -> (x, delay y)) queries testSet
@@ -84,7 +84,7 @@ distanceCANNN nn testSet = compared
 updateCANNeuron :: (Monad m) => CANNeuron -> CANElem -> NNTVU -> (NNTMD, NNTVD) -> m CANNeuron
 updateCANNeuron (CANNeuron canW canT) CANThreshold deltaP (dW, output) = do
     let dThreshold = deltaThreshold deltaP output
-    canTElem <- applyDeltaThreshold canT dThreshold (col $ extent dW)
+    canTElem <- applyDeltaThreshold canT dThreshold (fromIntegral . col $ extent dW)
     return $ CANNeuron canW canTElem
 updateCANNeuron (CANNeuron canW canT) CANWeight deltaP (dW, output) = do
     let dWeights = deltaWeights deltaP (delay dW, delay output)
@@ -109,22 +109,22 @@ applyDeltaWeight (CANWElem wChange weights) delta = do
     canW <- computeP $ zipWith (\x y -> bool x (complement x) y) weights deltaToChange
     return $ CANWElem updatedIndex canW
 
-deltaNextChange :: NNTMD -> Int -> (Int, NNTMD)
+deltaNextChange :: NNTMD -> NTT -> (NTT, NNTMD)
 deltaNextChange delta lastWChange = finalDelta
     where oredDelta = foldS (.|.) False $ transpose delta
           changeIndexM = weightIndexChange lastWChange (delay oredDelta)
           finalDelta = case changeIndexM of
-              Just index -> (index, traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == index)))
+              Just index -> (index, traverse delta id (\f sh@(Z :. x :. y) -> bool False (f sh) (y == fromIntegral index)))
               Nothing    -> (initialValue, map (const False) delta)
 
-applyDeltaThreshold :: (Monad m) => CANTElem -> NTTVD -> Int -> m CANTElem
+applyDeltaThreshold :: (Monad m) => CANTElem -> NTTVD -> NTT -> m CANTElem
 applyDeltaThreshold cte@(CANTElem tChange canT) delta maxValue = do
     let changeIndexM = thresholdIndexChange tChange delta
-    let withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr >= 0)
+    let withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr >= 0 && opr /= initialValue)
     let applySHY pos f g sh@(Z :. x) = let update = withinBound (f sh) (g sh) in bool (f sh) update (x == pos)
     let updatedT pos = computeP $ traverse2 canT delta const (applySHY pos)
     case changeIndexM of
-        Just changeIndex -> CANTElem changeIndex <$> updatedT changeIndex
+        Just changeIndex -> CANTElem changeIndex <$> updatedT (fromIntegral changeIndex)
         Nothing          -> return cte
 
 -- Here we change the value to the nearest index change.
@@ -133,17 +133,17 @@ applyDeltaThreshold cte@(CANTElem tChange canT) delta maxValue = do
 -- to return "Just 0", because index "0" has a change value.
 -- In case it is "0", it means last time "0" was modified, then it should
 -- return "Just 2", because index 1 does not represent a change.
-thresholdIndexChange :: Int -> NTTVD -> Maybe Int
+thresholdIndexChange :: NTT -> NTTVD -> Maybe NTT
 thresholdIndexChange = indexChange (/= 0)
 
-weightIndexChange :: Int -> NNTVD -> Maybe Int
+weightIndexChange :: NTT -> NNTVD -> Maybe NTT
 weightIndexChange = indexChange id
 
-indexChange :: (Unbox a) => (a -> Bool) -> Int -> Array D DIM1 a -> Maybe Int
+indexChange :: (Unbox a) => (a -> Bool) -> NTT -> Array D DIM1 a -> Maybe NTT
 indexChange condition location delta = bool y x $ isNothing y
-    where traversal g sh@(Z :. x) = bool (-1) x (condition $ g sh)
+    where traversal g sh@(Z :. x) = bool initialValue (fromIntegral x) (condition $ g sh)
           splitted = splitVecAt location $ traverse delta id traversal
-          (x, y) = toBoth (firstElem . filterVec (>= 0)) splitted
+          (x, y) = toBoth (firstElem . filterVec (/= initialValue)) splitted
 
 
 applySelection :: NNT -> NNT -> NNT -> NNT
@@ -151,13 +151,13 @@ applySelection x y z = z .&. xor x (complement y)
 
 ---------------------------------------------------------------------------
 
-updatesWithConditions :: Int -> Int -> Int -> [CANUpdate]
+updatesWithConditions :: NTT -> NTT -> NTT -> [CANUpdate]
 updatesWithConditions nnElems trainElems shiftBy
     | (nnElems * 2) < trainElems = transform matchTrain
     | otherwise = transform updates
     where updates = constructUpdate nnElems
-          matchTrain = concat $ replicate (div trainElems (nnElems * 2) + 1) updates
-          transform = take trainElems . applyNTimes shiftLeft shiftBy
+          matchTrain = concat $ replicate (fromIntegral $ div trainElems (nnElems * 2) + 1) updates
+          transform = take (fromIntegral trainElems) . applyNTimes (fromIntegral shiftBy) shiftLeft
 
 ---------------------------------------------------------------------------
 
@@ -165,19 +165,19 @@ trainNeurons :: (Monad m) => TrainElem -> CANUpdate -> [CANNeuron] -> m [CANNeur
 trainNeurons (TrainElem train desired) (CANUpdate lIndex cElem) nn = do
     let (query, wAo) = queryNeuronsAcc nn (delay train)
     let compared = vecCompare query (delay desired)
-    let chosenNeuron = nn !! lIndex
-    let wAoI = wAo !! lIndex
-    let deltaPos = take (length nn - lIndex - 1) $ reverse wAo
+    let chosenNeuron = nn !! fromIntegral lIndex
+    let wAoI = wAo !! fromIntegral lIndex
+    let deltaPos = take (length nn - fromIntegral lIndex - 1) $ reverse wAo
     let deltaP = calculateDelta compared deltaPos
     let atLeastOne = hammingWeight deltaP
     canNN <- updateCANNeuron chosenNeuron cElem deltaP wAoI
-    let nn' = bool nn (replaceElem nn lIndex canNN) $ atLeastOne > 0
+    let nn' = bool nn (replaceElem nn (fromIntegral lIndex)canNN) $ atLeastOne > 0
     return $ bool nn' nn (hammingWeight compared == 0)
 
 trainCANNN :: (Monad m) => [CANNeuron] -> [CANUpdate] -> [TrainElem] -> m [CANNeuron]
 trainCANNN nn updates trainSet = foldM (\n (x, y) -> trainNeurons x y n) nn (zip trainSet updates)
 
-trainUntilLearned :: [CANNeuron] -> [TrainElem] -> Int -> Int -> IO [CANNeuron]
+trainUntilLearned :: [CANNeuron] -> [TrainElem] -> NTT -> NTT -> IO [CANNeuron]
 trainUntilLearned nn trainSet shift tolerance = do
     (shiftTo, nn') <- trainGeneral nn trainSet shift
     let distance = sum $ distanceCANNN nn' trainSet
@@ -185,7 +185,7 @@ trainUntilLearned nn trainSet shift tolerance = do
     -- when (shiftTo == 0) printOpr
     bool (trainUntilLearned nn' trainSet shiftTo tolerance) (return nn') (distance <= tolerance)
 
-trainWithEpochs :: [CANNeuron] -> [TrainElem] -> Int -> Int -> IO [CANNeuron]
+trainWithEpochs :: [CANNeuron] -> [TrainElem] -> NTT -> NTT -> IO [CANNeuron]
 trainWithEpochs nn _ _ 0 = return nn
 trainWithEpochs nn trainSet shift epochs
     | epochs < 0 = return nn
@@ -195,7 +195,7 @@ trainWithEpochs nn trainSet shift epochs
         -- print nn'
         trainWithEpochs nn' trainSet shiftTo $ epochs - 1
 
-trainGeneral :: (Monad m) => [CANNeuron] -> [TrainElem] -> Int -> m (Int, [CANNeuron])
+trainGeneral :: (Monad m) => [CANNeuron] -> [TrainElem] -> NTT -> m (NTT, [CANNeuron])
 trainGeneral [] _ _ = return (initialValue, [])
 trainGeneral nn trainSet shiftV = do
     let nnL = fromIntegral $ length nn
@@ -209,25 +209,26 @@ trainGeneral nn trainSet shiftV = do
 
 ---------------------------------------------------------------------------
 
-splitVecAt :: Int -> NTTVD -> (NTTVD, NTTVD)
+splitVecAt :: NTT -> NTTVD -> (NTTVD, NTTVD)
 splitVecAt location vec
-    | location >= size shVec = (vec, emptyVec)
-    | location < 0 = (emptyVec, vec)
+    | location < 0 || location == initialValue = (emptyVec, vec)
+    | loc >= size shVec = (vec, emptyVec)
     | otherwise = (leftV, rightV)
-    where shVec = extent vec
+    where loc = fromIntegral location
+          shVec = extent vec
           emptyVec = fromFunction shVec (const initialValue)
-          indexed = fromIndex shVec location
-          locPlus = location + 1
+          indexed = fromIndex shVec loc
+          locPlus = loc + 1
           leftV = extract (ix1 0) (ix1 locPlus) vec
           rightV = extract (ix1 locPlus) (ix1 $ size shVec - locPlus) vec
 
-filterVec :: (Int -> Bool) -> NTTVD -> NTTVU
+filterVec :: (NTT -> Bool) -> NTTVD -> NTTVU
 filterVec filterF vec = fromUnboxed (ix1 $ V.length elems) elems
     where shVec = extent vec
           elems = V.filter filterF . toUnboxed $ computeS vec
 
-firstElem :: NTTVU -> Maybe Int
+firstElem :: NTTVU -> Maybe NTT
 firstElem vec
     | shSize <= 0 = Nothing
-    | otherwise = Just (linearIndex vec 0)
+    | otherwise = Just (fromIntegral $ linearIndex vec 0)
     where shSize = size $ extent vec

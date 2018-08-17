@@ -1,5 +1,5 @@
 ----
----- CNN-PhD version 0.1, Copyright (C) 17/Aug/2018
+---- CNN-PhD version 0.1, Copyright (C) 16/Aug/2018
 ---- Creator: rval735
 ---- This code comes with ABSOLUTELY NO WARRANTY; it is provided as "is".
 ---- This is free software under GNU General Public License as published by
@@ -8,15 +8,14 @@
 ---- of this repository for more details.
 ----
 
--- | Unit test for some functions on CANRandom
-module CANRandomTests
+-- | Unit test for some critical functions of the CAN file
+module CANExtrasTests
 -- (
 -- )
 where
 
 import           CAN
 import           CANExtras
-import           CANRandom
 import           CANTypes
 import           Control.Monad   (when)
 import qualified Data.Array.Repa as R
@@ -24,30 +23,28 @@ import           Data.Bits       (xor)
 import           Data.Bool       (bool)
 import           Data.List       (zip5)
 import           ListExtras      (applyNTimes, shiftLeft)
-import           System.Random
 import           TestExtras
 
-randomNTTVUTest :: IO ()
-randomNTTVUTest = do
-    print "randomNTTVUTest"
-    let gen = mkStdGen 5
+createThresholdTest :: IO ()
+createThresholdTest = do
+    print "createThresholdTest"
     --- To be tested
-    let result = [randomNTTVUOne gen 4 4 [1,1,4,0],
-                  randomNTTVUOne gen 4 5 [5,1,1,0],
-                  randomNTTVUOne gen 6 5 [5,1,1,0,2,1],
-                  randomNTTVUOne gen 0 5 [],
-                  -- randomNTTVUOne gen 2 (-1) [],
-                  randomNTTVUOne gen (-1) 2 []
-                  -- randomNTTVUOne gen (-1) (-1) []
-                 ]
+    let result = [createThresholdOne 2 8 [] $ R.fromListUnboxed (R.ix1 2) [8,8],
+                  createThresholdOne 2 0 [] $ R.fromListUnboxed (R.ix1 2) [0,0],
+                  createThresholdOne 1 1 [2] $ R.fromListUnboxed (R.ix1 1) [2],
+                  createThresholdOne 3 9 [1,1,1] $ R.fromListUnboxed (R.ix1 3) [1,1,1],
+                  createThresholdOne 2 2 [0,1,2] $ R.fromListUnboxed (R.ix1 2) [0,0],
+                  createThresholdOne 4 2 [0,1,2] $ R.fromListUnboxed (R.ix1 4) [0,0,0,0],
+                  createThresholdOne 3 2 [0,1,2] $ R.fromListUnboxed (R.ix1 3) [0,1,2]]
     --- Finish testing
     printResult result
+
+
 
 --------------------------------------------------------------------------------
 ---------- Extra Methods ----------
 --------------------------------------------------------------------------------
 
-randomNTTVUOne :: RandomGen g => g -> Int -> NTT -> [NTT] -> Bool
-randomNTTVUOne gen elems maxVal expected = expV == result
-    where result = randomNTTVU gen elems maxVal
-          expV = createThreshold elems 0 expected
+createThresholdOne :: Int -> NTT -> [NTT] -> NTTVU -> Bool
+createThresholdOne rowI colI lst expected = result == expected
+    where result = createThreshold rowI colI lst

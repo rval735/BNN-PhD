@@ -14,12 +14,13 @@ module CANRandom
 -- )
 where
 
+import           CANExtras                            (createZThreshold)
 import           CANTypes
 import           Data.Array.Repa                      (fromListUnboxed, ix1,
                                                        ix2)
 import           Data.Array.Repa.Algorithms.Randomish (randomishIntArray)
-import           System.Random                        (RandomGen, next, randoms,
-                                                       split)
+import           System.Random                        (RandomGen, next,
+                                                       randomRs, randoms, split)
 
 randomNNTMU :: RandomGen g => g -> Int -> Int -> NNTMU
 randomNNTMU seed rowI colI = fromListUnboxed shape lstElems
@@ -31,14 +32,16 @@ randomNNTVU seed elems = fromListUnboxed shape lstElems
     where lstElems = take elems $ randoms seed :: [NNT]
           shape = ix1 elems
 
-randomNTTVU :: RandomGen g => g -> Int -> Int -> NTTVU
+randomNTTVU :: RandomGen g => g -> Int -> NTT -> NTTVU
 randomNTTVU seed elems maxVal
-    | elems <= 0 = fromListUnboxed (ix1 0) []
-    | maxVal < 0 = fromListUnboxed (ix1 elems) $ replicate elems 0
-    | otherwise = randomishIntArray (ix1 elems) 0 maxVal (fst $ next seed)
+    | elems <= 0 = createZThreshold 0
+    | maxVal < 0 = createZThreshold elems
+    | otherwise = fromListUnboxed shape lstElems
+    where lstElems = take elems $ randomRs (0, maxVal) seed :: [NTT]
+          shape = ix1 elems
 
 randomCANNeuron :: RandomGen g => g -> Int -> Int -> CANNeuron
 randomCANNeuron seed rowI colI = CANNeuron wElem tElem
     where (seed1, seed0) = split seed
           wElem = CANWElem initialValue $ randomNNTMU seed0 rowI colI
-          tElem = CANTElem initialValue $ randomNTTVU seed1 rowI colI
+          tElem = CANTElem initialValue $ randomNTTVU seed1 rowI (fromIntegral colI)

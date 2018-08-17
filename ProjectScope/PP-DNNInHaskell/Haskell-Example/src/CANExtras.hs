@@ -25,27 +25,28 @@ import           ListExtras            (applyNTimes, binaryList, num2Bin',
 createZNeuron :: Int -> Int -> CANNeuron
 createZNeuron rowI colI = CANNeuron (CANWElem initialValue canW0) (CANTElem initialValue canT0)
     where canW0 = createWeight rowI colI []
-          canT0 = createThreshold rowI colI []
+          canT0 = createThreshold rowI (fromIntegral colI) []
 
-createWeight :: Int -> Int -> [Int] -> NNTMU
+createWeight :: Int -> Int -> [NTT] -> NNTMU
 createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
 createWeight rowI colI xs
     | length xs /= (rowI * colI) = createWeight rowI colI []
     | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
 
-createThreshold :: Int -> Int -> [Int] -> NTTVU
+createThreshold :: Int -> NTT -> [NTT] -> NTTVU
 createThreshold rowI colI xs
-    | rowI < 0 = computeS $ createZThreshold 0
-    | length xs /= rowI = computeS $ createZThreshold rowI
-    | null xs = fromListUnboxed (ix1 rowI) $ replicate rowI colI
+    | rowI < 0 || colI < 0 = createZThreshold 0
+    | null xs = colIVec
+    | length xs /= rowI = createZThreshold rowI
     | otherwise = fromListUnboxed (ix1 rowI) xs
+    where colIVec = computeS $ fromFunction (ix1 rowI) (const colI)
 
-createZThreshold :: NTT -> NTTVD
+createZThreshold :: Int -> NTTVU
 createZThreshold rowI
-    | rowI <= 0 = fromFunction (ix1 0) (const 0)
-    | otherwise = fromFunction (ix1 rowI) (const 0)
+    | rowI <= 0 = computeS $ fromFunction (ix1 0) (const 0)
+    | otherwise = computeS $ fromFunction (ix1 rowI) (const 0)
 
-createOutput :: Int -> [Int] -> NNTVU
+createOutput :: Int -> [NTT] -> NNTVU
 createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
 createOutput elems xs
     | length xs /= elems = createOutput elems []
@@ -62,11 +63,11 @@ construct1Complement startPos rows
     | startPos < 0 = emptyArr
     | otherwise = computeS $ traverse2 emptyArr indexesArr const flipIndexes
     where emptyArr = fromListUnboxed (ix2 rows rows) $ replicate (rows * rows) False
-          indexesLst = applyNTimes shiftLeft startPos [0 .. (rows - 1)]
+          indexesLst = applyNTimes (fromIntegral startPos) shiftLeft [0 .. (rows - 1)]
           indexesArr = fromListUnboxed (ix1 rows) indexesLst
           flipIndexes f g sh@(Z :. x :. y) = let val = g (ix1 x) in bool False True (val == y)
 
-constructUpdate :: Int -> [CANUpdate]
+constructUpdate :: NTT -> [CANUpdate]
 constructUpdate nnElems = elems (nnElems - 1)
     where canElems = [CANWeight, CANThreshold]
           elems n = reverse $ concatMap (\x -> map (CANUpdate x) canElems) [0 .. n]
