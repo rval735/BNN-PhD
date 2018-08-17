@@ -9,7 +9,9 @@
 ----
 
 import           CANExtrasTests
+import           CANRandomTests
 import           CANTests
+
 main :: IO ()
 main = do
     print "*--------------------*"
@@ -30,3 +32,6 @@ main = do
     print "*--------------------*"
     print "CANExtrasTests"
     createThresholdTest
+    print "*--------------------*"
+    print "CANRandomTests"
+    randomNTTVUTest

@@ -15,8 +15,8 @@ module CANExtras
 where
 
 import           CANTypes
-import           Data.Array.Repa       (computeS, fromListUnboxed, ix1, ix2,
-                                        traverse2)
+import           Data.Array.Repa       (computeS, fromFunction, fromListUnboxed,
+                                        ix1, ix2, traverse2)
 import           Data.Array.Repa.Index ((:.) (..), Z (..))
 import           Data.Bool             (bool)
 import           ListExtras            (applyNTimes, binaryList, num2Bin',
@@ -25,7 +25,7 @@ import           ListExtras            (applyNTimes, binaryList, num2Bin',
 createZNeuron :: Int -> Int -> CANNeuron
 createZNeuron rowI colI = CANNeuron (CANWElem initialValue canW0) (CANTElem initialValue canT0)
     where canW0 = createWeight rowI colI []
-          canT0 = createThreshold rowI colI []
+          canT0 = createThreshold rowI (fromIntegral colI) []
 
 createWeight :: Int -> Int -> [NTT] -> NNTMU
 createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
@@ -33,11 +33,18 @@ createWeight rowI colI xs
     | length xs /= (rowI * colI) = createWeight rowI colI []
     | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
 
-createThreshold :: Int -> Int -> [NTT] -> NTTVU
-createThreshold rowI colI [] = fromListUnboxed (ix1 rowI) $ replicate rowI (fromIntegral colI)
-createThreshold rowI _ xs
-    | length xs /= rowI = createThreshold rowI 0 []
+createThreshold :: Int -> NTT -> [NTT] -> NTTVU
+createThreshold rowI colI xs
+    | rowI < 0 || colI < 0 = createZThreshold 0
+    | null xs = colIVec
+    | length xs /= rowI = createZThreshold rowI
     | otherwise = fromListUnboxed (ix1 rowI) xs
+    where colIVec = computeS $ fromFunction (ix1 rowI) (const colI)
+
+createZThreshold :: Int -> NTTVU
+createZThreshold rowI
+    | rowI <= 0 = computeS $ fromFunction (ix1 0) (const 0)
+    | otherwise = computeS $ fromFunction (ix1 rowI) (const 0)
 
 createOutput :: Int -> [NTT] -> NNTVU
 createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
