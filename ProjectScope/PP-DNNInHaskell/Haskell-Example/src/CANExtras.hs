@@ -15,8 +15,8 @@ module CANExtras
 where
 
 import           CANTypes
-import           Data.Array.Repa       (computeS, fromListUnboxed, ix1, ix2,
-                                        traverse2)
+import           Data.Array.Repa       (computeS, fromFunction, fromListUnboxed,
+                                        ix1, ix2, traverse2)
 import           Data.Array.Repa.Index ((:.) (..), Z (..))
 import           Data.Bool             (bool)
 import           ListExtras            (applyNTimes, binaryList, num2Bin',
@@ -34,10 +34,16 @@ createWeight rowI colI xs
     | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
 
 createThreshold :: Int -> Int -> [Int] -> NTTVU
-createThreshold rowI colI [] = fromListUnboxed (ix1 rowI) $ replicate rowI colI
-createThreshold rowI _ xs
-    | length xs /= rowI = createThreshold rowI 0 []
+createThreshold rowI colI xs
+    | rowI < 0 = computeS $ createZThreshold 0
+    | length xs /= rowI = computeS $ createZThreshold rowI
+    | null xs = fromListUnboxed (ix1 rowI) $ replicate rowI colI
     | otherwise = fromListUnboxed (ix1 rowI) xs
+
+createZThreshold :: NTT -> NTTVD
+createZThreshold rowI
+    | rowI <= 0 = fromFunction (ix1 0) (const 0)
+    | otherwise = fromFunction (ix1 rowI) (const 0)
 
 createOutput :: Int -> [Int] -> NNTVU
 createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False

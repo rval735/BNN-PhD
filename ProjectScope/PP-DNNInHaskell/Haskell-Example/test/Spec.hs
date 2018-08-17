@@ -8,6 +8,7 @@
 ---- of this repository for more details.
 ----
 
+import           CANRandomTests
 import           CANTests
 
 main :: IO ()
@@ -25,3 +26,5 @@ main = do
     splitVecAtTest
     trainWithEpochsTest
     trainUntilLearnedTest2
+    print "*------------*"
+    randomNTTVUTest
