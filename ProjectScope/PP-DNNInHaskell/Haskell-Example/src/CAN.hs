@@ -120,7 +120,7 @@ applyDeltaThreshold cte@(CANTElem tChange canT) delta maxValue = cteUpdate
           cteUpdate = case changeIndexM of
               Just changeIndex -> CANTElem changeIndex $ updatedT (fromIntegral changeIndex)
               Nothing          -> cte
-          withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr /= initialValue)
+          withinBound x y = let opr = x + y in bool 0 (bool maxValue opr (opr <= maxValue)) (opr >= 0  && opr /= initialValue)
           applySHY pos f g sh@(Z :. x) = let update = withinBound (f sh) (g sh) in bool (f sh) update (x == pos)
           updatedT pos = computeS $ traverse2 canT delta const (applySHY pos)
 
