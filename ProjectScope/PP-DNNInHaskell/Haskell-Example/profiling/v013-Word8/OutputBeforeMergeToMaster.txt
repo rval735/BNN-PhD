@@ -1,0 +1,39 @@
+Int - Word8
+"Matches: 28"
+"Samples: 200"
+"Error: 14.000000000000002%"
+"HNodes: 2"
+"Epochs: 5"
+"Start Time: 2018-08-17 09:00:40.563976 UTC"
+"End Time: 2018-08-17 09:01:38.045648 UTC"
+"Diff: 57.481672s"
+
+Word8 - Word8
+"Matches: 27"
+"Samples: 200"
+"Error: 13.5%"
+"HNodes: 2"
+"Epochs: 5"
+"Start Time: 2018-08-17 08:55:21.149872 UTC"
+"End Time: 2018-08-17 08:55:27.621995 UTC"
+"Diff: 6.472123s"
+
+Word16 - Word8
+"Matches: 28"
+"Samples: 200"
+"Error: 14.000000000000002%"
+"HNodes: 2"
+"Epochs: 5"
+"Start Time: 2018-08-17 08:58:16.011617 UTC"
+"End Time: 2018-08-17 08:59:10.568639 UTC"
+"Diff: 54.557022s"
+
+Int - Master
+"Matches: 28"
+"Samples: 200"
+"Error: 14.000000000000002%"
+"HNodes: 2"
+"Epochs: 5"
+"Start Time: 2018-08-17 09:05:42.315756 UTC"
+"End Time: 2018-08-17 09:06:36.243709 UTC"
+"Diff: 53.927953s"
