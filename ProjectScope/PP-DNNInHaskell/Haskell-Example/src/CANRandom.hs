@@ -32,7 +32,10 @@ randomNNTVU seed elems = fromListUnboxed shape lstElems
           shape = ix1 elems
 
 randomNTTVU :: RandomGen g => g -> Int -> Int -> NTTVU
-randomNTTVU seed elems maxVal = randomishIntArray (ix1 elems) 0 maxVal (fst $ next seed)
+randomNTTVU seed elems maxVal
+    | elems <= 0 = fromListUnboxed (ix1 0) []
+    | maxVal < 0 = fromListUnboxed (ix1 elems) $ replicate elems 0
+    | otherwise = randomishIntArray (ix1 elems) 0 maxVal (fst $ next seed)
 
 randomCANNeuron :: RandomGen g => g -> Int -> Int -> CANNeuron
 randomCANNeuron seed rowI colI = CANNeuron wElem tElem
