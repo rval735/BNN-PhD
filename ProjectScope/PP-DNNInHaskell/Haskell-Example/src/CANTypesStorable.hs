@@ -22,13 +22,14 @@ import           CANTypes
 import qualified Data.Array.Repa      as R
 import           Data.Bool
 import           Data.Vector.Storable hiding (length, mapM, mapM_)
-import qualified Data.Vector.Storable as V
+import qualified Data.Vector.Storable as VS
 import qualified Foreign              as F
 import           Foreign.C.Types
 
 import           Data.Word            (Word32)
 import           GHC.Int
 
+import           Unsafe.Coerce
 
 -- Define a 4 element vector type
 data Vec4 = Vec4 {-# UNPACK #-} !CFloat
@@ -40,6 +41,25 @@ data Vec4 = Vec4 {-# UNPACK #-} !CFloat
 --     tChange  :: NTT,
 --     canTElem :: NTTVU
 -- } deriving (Eq)
+
+instance Storable VShape where
+    alignment _ = F.alignment (undefined :: Int)
+    sizeOf _ = F.sizeOf (undefined :: Int)
+    {-# INLINE peek #-}
+    peek p = R.ix1 <$> F.peek q
+        where q = F.castPtr p :: F.Ptr Int
+    {-# INLINE poke #-}
+    poke p (R.Z R.:. x) = F.poke q x
+        where q = F.castPtr p :: F.Ptr Int
+
+instance Storable R.U where
+    alignment _ = F.alignment (undefined :: Bool)
+    sizeOf _ = F.sizeOf (undefined :: Bool)
+    {-# INLINE peek #-}
+    peek p = return $ unsafeCoerce True
+    {-# INLINE poke #-}
+    poke p _ = F.poke q True
+        where q = F.castPtr p :: F.Ptr Bool
 
 instance Storable NTTVU where
     alignment _ = F.alignment (undefined :: NTT)

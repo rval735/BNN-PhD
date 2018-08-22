@@ -1,0 +1,14 @@
+import Foreign.Ptr
+import Foreign.Storable
+import Foreign.Marshal.Alloc
+-- import qualified Data.Vector.Storable as VS
+-- :break CANTypesStorable 71
+trs = createThreshold 3 0 [9,8,7]
+tss <- mallocBytes 4 :: IO (Ptr NTTVU)
+q = castPtr tss :: Ptr NTT
+pokeByteOff q 0 trs
+peekByteOff q 0  :: IO NTTVU
+peek tss
+poke tss trs
+VS.singleton trs
+
