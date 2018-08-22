@@ -29,8 +29,8 @@ import           Foreign.C.Types
 import           Data.Word            (Word32)
 import           GHC.Int
 
+import           System.IO.Unsafe
 import           Unsafe.Coerce
-
 -- Define a 4 element vector type
 data Vec4 = Vec4 {-# UNPACK #-} !CFloat
                  {-# UNPACK #-} !CFloat
@@ -61,9 +61,20 @@ instance Storable R.U where
     poke p _ = F.poke q True
         where q = F.castPtr p :: F.Ptr Bool
 
+-- instance Storable NTTVU where
+--     alignment _ = F.alignment (undefined :: NTT)
+--     sizeOf vec = unsafePerformIO (print vec >> return 1)
+--
+--         -- F.sizeOf (undefined :: NTT) * length (R.toList vec) -- * (R.size (R.extent vec) + 1)
+--     {-# INLINE peek #-}
+--     peek p = return $ createThreshold 0 0 []
+--     {-# INLINE poke #-}
+--     poke p _ = return ()
+
 instance Storable NTTVU where
     alignment _ = F.alignment (undefined :: NTT)
-    sizeOf vec = F.sizeOf (undefined :: NTT) * (R.size (R.extent vec) + 1)
+    sizeOf _ = F.sizeOf (undefined :: NTT)
+    -- sizeOf vec = F.sizeOf (undefined :: NTT) * (R.size (R.extent vec) + 1)
 
     {-# INLINE peek #-}
     peek p = do
@@ -73,13 +84,15 @@ instance Storable NTTVU where
         return $ createThreshold vSize 0 b
         where q = F.castPtr p :: F.Ptr NTT
 
-    {-# INLINE peekElemOff #-}
-    peekElemOff p idx = do
-        print "peekElemOff"
-        vSize <- fromIntegral <$> F.peekElemOff q 0
-        b <- mapM (F.peekElemOff q) [idx + 1 .. vSize]
-        return $ createThreshold (length b) 0 b
-        where q = F.castPtr p :: F.Ptr NTT
+    -- {-# INLINE peekElemOff #-}
+    -- peekElemOff p idx = do
+    --     print "peekElemOff"
+    --     print idx
+    --     print p
+    --     vSize <- fromIntegral <$> F.peekElemOff q 0
+    --     b <- mapM (F.peekElemOff q) [idx + 1 .. vSize]
+    --     return $ createThreshold (length b) 0 b
+    --     where q = F.castPtr p :: F.Ptr NTT
 
     -- {-# INLINE peekByteOff #-}
     -- peekByteOff p idx = F.peekByteOff q idx8
@@ -94,14 +107,16 @@ instance Storable NTTVU where
         where q = F.castPtr p
               size = R.size $ R.extent vec
 
-    {-# INLINE pokeElemOff #-}
-    pokeElemOff p idx vec = do
-        print "pokeElemOff"
-        sizeP <- F.peekElemOff q 0
-        let indexes = let sizeI = fromIntegral sizeP in bool [] [idx .. sizeI - vecSize] (sizeI > vecSize)
-        mapM_ (uncurry $ F.pokeElemOff q) $ zip indexes (R.toList vec)
-        where q = F.castPtr p :: F.Ptr NTT
-              vecSize = R.size (R.extent vec) - 1
+    -- {-# INLINE pokeElemOff #-}
+    -- pokeElemOff p idx vec = do
+    --     print "pokeElemOff"
+    --     print idx
+    --     print p
+    --     sizeP <- F.peekElemOff q 0
+    --     let indexes = let sizeI = fromIntegral sizeP in bool [] [idx .. sizeI - vecSize] (sizeI > vecSize)
+    --     mapM_ (uncurry $ F.pokeElemOff q) $ zip indexes (R.toList vec)
+    --     where q = F.castPtr p :: F.Ptr NTT
+    --           vecSize = R.size (R.extent vec) - 1
 
     -- {-# INLINE pokeByteOff #-}
     -- pokeByteOff p idx vec = do
@@ -205,3 +220,6 @@ instance Storable Atoms where
 
 kk = I 4
 lsk = S 4
+
+-- RefLink: https://github.com/oreqizer/minicraft/blob/master/haskell/naive1.hs#L40
+-- RefLink: https://hackage.haskell.org/package/vector-0.11.0.0/docs/src/Data-Vector-Unboxed-Base.html#Unbox
