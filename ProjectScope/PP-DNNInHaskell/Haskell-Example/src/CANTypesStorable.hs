@@ -50,7 +50,7 @@ instance Storable NNTMU where
         xSize <- fromIntegral <$> F.peekElemOff q 0
         ySize <- fromIntegral <$> F.peekElemOff q 1
         b <- mapM (F.peekElemOff r) [0 .. (xSize * ySize - 1)]
-        return $ createWeight' xSize ySize b
+        return $ createNNTMU xSize ySize b
         where nntPos = F.sizeOf (undefined :: NTT) * 2
               q = F.castPtr p :: F.Ptr NTT
               r = F.castPtr $ F.plusPtr p nntPos :: F.Ptr NNT
@@ -75,7 +75,7 @@ instance Storable NNTVU where
     peek p = do
         vSize <- fromIntegral <$> F.peekElemOff q 0
         b <- mapM (F.peekElemOff r) [0 .. vSize - 1]
-        return $ createInput vSize b
+        return $ createNNTVU vSize b
         where nttSize = F.sizeOf (undefined :: NTT)
               q = F.castPtr p :: F.Ptr NTT
               r = F.castPtr $ F.plusPtr p nttSize :: F.Ptr NNT
@@ -98,7 +98,7 @@ instance Storable NTTVU where
     peek p = do
         vSize <- fromIntegral <$> F.peekElemOff q 0
         b <- mapM (F.peekElemOff q) [1 .. vSize]
-        return $ createThreshold vSize 0 b
+        return $ createNTTVU vSize 0 b
         where q = F.castPtr p :: F.Ptr NTT
 
     {-# INLINE poke #-}

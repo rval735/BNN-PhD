@@ -15,7 +15,9 @@ module CANTests
 where
 
 import           CAN
-import           CANExtras
+import           CANExtras       (constructUpdate, createNNTMU, createNNTMU',
+                                  createNNTVU, createNNTVU', createNNTVULst,
+                                  createNTTVU, createZNeuron)
 import           CANTypes
 import           Control.Monad   (when)
 import qualified Data.Array.Repa as R
@@ -36,8 +38,8 @@ layerColideTest = do
 layerSummationTest :: IO ()
 layerSummationTest = do
     print "layerSummationTest"
-    let weights = map (\(x, y, _, _, z) -> createWeight x y z) testExamples
-    let expected = map (\x -> createThreshold (length x) 0 x) [[1,2], [0,0,2], [0,2,0], [1,3], [1,1], [0,0]]
+    let weights = map (\(x, y, _, _, z) -> createNNTMU' x y z) testExamples
+    let expected = map (\x -> createNTTVU (length x) 0 x) [[1,2], [0,0,2], [0,2,0], [1,3], [1,1], [0,0]]
     --- To be tested
     let result = zipWith (==) expected $ map layerSummation weights
     --- Finish testing
@@ -48,8 +50,8 @@ trainCANNNTest_2x2NNXOR = do
     print "trainCANNNTest_2x2NNXOR"
     let nSize = 2
     let nn = replicate nSize $ createZNeuron nSize nSize
-    let inputs = createOutputLst nSize [0, 1, 2, 3]
-    let outputsXOR = createOutputLst nSize [0, 3, 3, 0]
+    let inputs = createNNTVULst nSize [0, 1, 2, 3]
+    let outputsXOR = createNNTVULst nSize [0, 3, 3, 0]
     let trainSetXOR = zipWith TrainElem inputs outputsXOR
     let updates = updatesWithConditions (fromIntegral $ length nn) (fromIntegral $ length trainSetXOR) 0
     --- To be tested
@@ -63,8 +65,8 @@ trainCANNNTest_Ex2NN = do
     print "trainCANNNTest_Ex2NN"
     let nSize = 3
     let nn = [createZNeuron nSize nSize, createZNeuron 2 nSize, createZNeuron nSize 2]
-    let inputs = createOutputLst nSize [0, 2, 4, 6, 1, 3, 5, 7]
-    let outputs = createOutputLst nSize [0, 6, 7, 3, 2, 4, 2, 1]
+    let inputs = createNNTVULst nSize [0, 2, 4, 6, 1, 3, 5, 7]
+    let outputs = createNNTVULst nSize [0, 6, 7, 3, 2, 4, 2, 1]
     let trainSet = zipWith TrainElem inputs outputs
     let updates = updatesWithConditions (fromIntegral $ length nn) (fromIntegral $ length trainSet) 0
     --- To be tested
@@ -79,9 +81,9 @@ trainUntilLearnedTest = do
     print "trainUntilLearnedTest"
     let (nSize, testSize, nnSize) = (4, 5, 3)
     let canN0 = createZNeuron nSize nSize
-    let inputs = createOutputLst nSize [1 .. testSize]
+    let inputs = createNNTVULst nSize [1 .. testSize]
     let baseOLst = map (sin . fromIntegral) [1 .. testSize]
-    let outputs = createOutputLst nSize $ map (round . (*100)) baseOLst
+    let outputs = createNNTVULst nSize $ map (round . (*100)) baseOLst
     let trainSet = zipWith TrainElem inputs outputs
     let nn = replicate nnSize canN0
     let updates = take (length trainSet) $ constructUpdate (fromIntegral $ length nn)
@@ -187,19 +189,19 @@ splitVecAtTest = do
 trainWithEpochsTest :: IO ()
 trainWithEpochsTest = do
     print "trainWithEpochsTest"
-    let input = createOutputLst 3 [0, 2, 4, 6, 1, 3, 5, 7]
-    let output = createOutputLst 3 [0, 6, 7, 3, 2, 4, 2, 1]
+    let input = createNNTVULst 3 [0, 2, 4, 6, 1, 3, 5, 7]
+    let output = createNNTVULst 3 [0, 6, 7, 3, 2, 4, 2, 1]
     let trainSet = zipWith TrainElem input output
     let canN0 = createZNeuron 3 3
     let canN1 = createZNeuron 2 3
     let canN2 = createZNeuron 3 2
     let nn = [canN0, canN1, canN2]
-    let eN0 = CANWElem 1 $ createWeight 3 3 [1,0,0,0,1,0,1,0,0]
-    let eN1 = CANWElem 2 $ createWeight 2 3 [1,0,1,1,1,1]
-    let eN2 = CANWElem 0 $ createWeight 3 2 [0,0,1,0,1,1]
-    let eT0 = CANTElem 2 $ createThreshold 3 0 [3,2,2]
-    let eT1 = CANTElem 1 $ createThreshold 2 0 [1,2]
-    let eT2 = CANTElem 2 $ createThreshold 3 0 [2,1,2]
+    let eN0 = CANWElem 1 $ createNNTMU' 3 3 [1,0,0,0,1,0,1,0,0]
+    let eN1 = CANWElem 2 $ createNNTMU' 2 3 [1,0,1,1,1,1]
+    let eN2 = CANWElem 0 $ createNNTMU' 3 2 [0,0,1,0,1,1]
+    let eT0 = CANTElem 2 $ createNTTVU 3 0 [3,2,2]
+    let eT1 = CANTElem 1 $ createNTTVU 2 0 [1,2]
+    let eT2 = CANTElem 2 $ createNTTVU 3 0 [2,1,2]
     let expected = [CANNeuron eN0 eT0, CANNeuron eN1 eT1, CANNeuron eN2 eT2]
     let updates = applyNTimes 2 shiftLeft $ constructUpdate 3
     -- To be tested
@@ -226,19 +228,19 @@ trainWithEpochsTest = do
 trainUntilLearnedTest2 :: IO ()
 trainUntilLearnedTest2 = do
     print "trainUntilLearnedTest2"
-    let input = createOutputLst 4 [0 .. 15]
-    let output = createOutputLst 5 [y * 2 | y <- [0 .. 15]]
+    let input = createNNTVULst 4 [0 .. 15]
+    let output = createNNTVULst 5 [y * 2 | y <- [0 .. 15]]
     let trainSet = zipWith TrainElem input output
     let canN0 = createZNeuron 3 4
     let canN1 = createZNeuron 2 3
     let canN2 = createZNeuron 5 2
     let nn = [canN0, canN1, canN2]
-    let eN0 = CANWElem 2 $ createWeight 3 4 [0,0,0,1,0,0,1,0,1,1,1,0]
-    let eN1 = CANWElem 2 $ createWeight 2 3 [0,1,0,0,0,0]
-    let eN2 = CANWElem 0 $ createWeight 5 2 [1,1,1,1,0,0,1,0,1,1]
-    let eT0 = CANTElem 1 $ createThreshold 3 0 [3,3,2]
-    let eT1 = CANTElem 0 $ createThreshold 2 0 [2,1]
-    let eT2 = CANTElem 3 $ createThreshold 5 0 [1,1,2,2,2]
+    let eN0 = CANWElem 2 $ createNNTMU' 3 4 [0,0,0,1,0,0,1,0,1,1,1,0]
+    let eN1 = CANWElem 2 $ createNNTMU' 2 3 [0,1,0,0,0,0]
+    let eN2 = CANWElem 0 $ createNNTMU' 5 2 [1,1,1,1,0,0,1,0,1,1]
+    let eT0 = CANTElem 1 $ createNTTVU 3 0 [3,3,2]
+    let eT1 = CANTElem 0 $ createNTTVU 2 0 [2,1]
+    let eT2 = CANTElem 3 $ createNTTVU 5 0 [1,1,2,2,2]
     let expected = [CANNeuron eN0 eT0, CANNeuron eN1 eT1, CANNeuron eN2 eT2]
     let expDist = [1,2,0,1,2,1,1,2,2,1,1,2,1,0,2,1]
     let expMatch = 2
@@ -263,19 +265,19 @@ trainUntilLearnedTest2 = do
 
 layerColideOne :: (Int, Int) -> [NTT] -> [NTT] -> [NTT] -> Bool
 layerColideOne (row, col) weightLst inputLst expectedLst = result
-    where oneCANWElem xs = CANWElem 0 $ createWeight row col xs
+    where oneCANWElem xs = CANWElem 0 $ createNNTMU' row col xs
           weight = oneCANWElem weightLst
-          input = createOutput col inputLst
-          expected = createWeight row col expectedLst
+          input = createNNTVU' col inputLst
+          expected = createNNTMU' row col expectedLst
           --- To be tested
           result = expected == R.computeS (layerColide weight input xor)
           --- Finish testing
 
 applyDeltaOne :: Bool -> ((Int, Int),(Int, [NTT]),[NTT], (Int, [NTT])) -> IO Bool
 applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expectedLst)) = do
-    let weights = CANWElem (fromIntegral indexW) $ createWeight row col weightLst
-    let delta = createWeight row col deltaLst
-    let expected = CANWElem (fromIntegral indexE) $ createWeight row col expectedLst
+    let weights = CANWElem (fromIntegral indexW) $ createNNTMU' row col weightLst
+    let delta = createNNTMU' row col deltaLst
+    let expected = CANWElem (fromIntegral indexE) $ createNNTMU' row col expectedLst
     let result = applyDeltaWeight weights (R.delay delta)
     when display $ do
         print weights
@@ -287,39 +289,39 @@ applyDeltaOne display ((row, col), (indexW, weightLst), deltaLst, (indexE, expec
 
 applyDeltaThresholdOne :: Int -> NTT -> [NTT] -> [NTT] -> Int -> [NTT] -> NTT -> Bool
 applyDeltaThresholdOne tSize index thresholdLst deltaLst expIndex expectedLst maxValue = result
-    where threshold = CANTElem index $ createThreshold tSize 0 thresholdLst
-          delta = createThreshold tSize 0 deltaLst
-          expected = CANTElem (fromIntegral expIndex) $ createThreshold tSize 0 expectedLst
+    where threshold = CANTElem index $ createNTTVU tSize 0 thresholdLst
+          delta = createNTTVU tSize 0 deltaLst
+          expected = CANTElem (fromIntegral expIndex) $ createNTTVU tSize 0 expectedLst
           --- To be tested
           result = expected == applyDeltaThreshold threshold (R.delay delta) maxValue
 
 deltaNextChangeOne :: Int -> Int -> NTT -> [NTT] -> NTT -> [NTT] -> Bool
 deltaNextChangeOne row col indexW weightLst indexE expectedLst = result
-    where delta = createWeight row col weightLst
-          expected = createWeight row col expectedLst
+    where delta = createNNTMU' row col weightLst
+          expected = createNNTMU' row col expectedLst
           --- To be tested
           result = (indexE, R.delay expected) == deltaNextChange (R.delay delta) indexW
           --- Finish testing
 
 thresholdIndexChangeOne :: NTT -> Int -> [NTT] -> Maybe NTT -> Bool
 thresholdIndexChangeOne index row threshold expected = result == expected
-    where nnt = createThreshold row 0 threshold
+    where nnt = createNTTVU row 0 threshold
           --- To be tested
           result = thresholdIndexChange index (R.delay nnt)
           --- Finish testing
 
 weightIndexChangeOne :: NTT -> Int -> [NTT] -> Maybe NTT -> Bool
 weightIndexChangeOne index row weights expected = result == expected
-    where nnt = createOutput row weights
+    where nnt = createNNTVU' row weights
           --- To be tested
           result = weightIndexChange index (R.delay nnt)
           --- Finish testing
 
 splitVecAtOne :: NTT -> [NTT] -> ([NTT], [NTT]) -> Bool
 splitVecAtOne location vecLst (expectedFLst, expectedSLst) = result == expected
-    where vec = R.delay $ createThreshold (length vecLst) 0 vecLst
-          expected = (R.delay $ createThreshold (length expectedFLst) 0 expectedFLst,
-                      R.delay $ createThreshold (length expectedSLst) 0 expectedSLst)
+    where vec = R.delay $ createNTTVU (length vecLst) 0 vecLst
+          expected = (R.delay $ createNTTVU (length expectedFLst) 0 expectedFLst,
+                      R.delay $ createNTTVU (length expectedSLst) 0 expectedSLst)
           --- To be tested
           result = splitVecAt location vec
           --- Finish testing

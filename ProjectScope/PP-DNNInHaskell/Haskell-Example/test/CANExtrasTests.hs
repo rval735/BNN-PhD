@@ -15,7 +15,7 @@ module CANExtrasTests
 where
 
 import           CAN
-import           CANExtras
+import           CANExtras       (createNTTVU)
 import           CANTypes
 import           Control.Monad   (when)
 import qualified Data.Array.Repa as R
@@ -47,4 +47,4 @@ createThresholdTest = do
 
 createThresholdOne :: Int -> NTT -> [NTT] -> NTTVU -> Bool
 createThresholdOne rowI colI lst expected = result == expected
-    where result = createThreshold rowI colI lst
+    where result = createNTTVU rowI colI lst

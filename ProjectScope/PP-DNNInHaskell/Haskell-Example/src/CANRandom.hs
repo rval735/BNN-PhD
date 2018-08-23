@@ -14,7 +14,7 @@ module CANRandom
 -- )
 where
 
-import           CANExtras                            (createZThreshold)
+import           CANExtras                            (createZNTTVU)
 import           CANTypes
 import           Data.Array.Repa                      (fromListUnboxed, ix1,
                                                        ix2)
@@ -34,8 +34,8 @@ randomNNTVU seed elems = fromListUnboxed shape lstElems
 
 randomNTTVU :: RandomGen g => g -> Int -> NTT -> NTTVU
 randomNTTVU seed elems maxVal
-    | elems <= 0 = createZThreshold 0
-    | maxVal < 0 = createZThreshold elems
+    | elems <= 0 = createZNTTVU 0
+    | maxVal < 0 = createZNTTVU elems
     | otherwise = fromListUnboxed shape lstElems
     where lstElems = take elems $ randomRs (0, maxVal) seed :: [NTT]
           shape = ix1 elems
