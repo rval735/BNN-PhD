@@ -10,5 +10,16 @@ pokeByteOff q 0 trs
 peekByteOff q 0  :: IO NTTVU
 peek tss
 poke tss trs
-VS.singleton trs
+VS.fromList [trs,trs]
 
+tks = CANTElem 0 trs
+VS.fromList [tks,tks]
+
+tkl = createInput 3 [False, True, True]
+VS.fromList [tkl, tkl]
+
+trr = TrainElem tkl tkl
+VS.singleton trr
+
+tmt = createWeight 2 3 [0 .. 5]
+VS.singleton tmt

@@ -33,6 +33,12 @@ createWeight rowI colI xs
     | length xs /= (rowI * colI) = createWeight rowI colI []
     | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
 
+createWeight' :: Int -> Int -> [NNT] -> NNTMU
+createWeight' rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
+createWeight' rowI colI xs
+    | length xs /= (rowI * colI) = createWeight' rowI colI []
+    | otherwise = fromListUnboxed (ix2 rowI colI) xs
+
 createThreshold :: Int -> NTT -> [NTT] -> NTTVU
 createThreshold rowI colI xs
     | rowI < 0 || colI < 0 = createZThreshold 0
@@ -45,6 +51,12 @@ createZThreshold :: Int -> NTTVU
 createZThreshold rowI
     | rowI <= 0 = computeS $ fromFunction (ix1 0) (const 0)
     | otherwise = computeS $ fromFunction (ix1 rowI) (const 0)
+
+createInput :: Int -> [NNT] -> NNTVU
+createInput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
+createInput elems xs
+    | length xs /= elems = createOutput elems []
+    | otherwise = fromListUnboxed (ix1 elems) xs
 
 createOutput :: Int -> [NTT] -> NNTVU
 createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
