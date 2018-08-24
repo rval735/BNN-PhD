@@ -24,37 +24,43 @@ import           ListExtras            (applyNTimes, binaryList, num2Bin',
 
 createZNeuron :: Int -> Int -> CANNeuron
 createZNeuron rowI colI = CANNeuron (CANWElem initialValue canW0) (CANTElem initialValue canT0)
-    where canW0 = createWeight rowI colI []
-          canT0 = createThreshold rowI (fromIntegral colI) []
+    where canW0 = createNNTMU rowI colI []
+          canT0 = createNTTVU rowI (fromIntegral colI) []
 
-createWeight :: Int -> Int -> [NTT] -> NNTMU
-createWeight rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
-createWeight rowI colI xs
-    | length xs /= (rowI * colI) = createWeight rowI colI []
-    | otherwise = fromListUnboxed (ix2 rowI colI) $ binaryList xs
+createNNTMU' :: Int -> Int -> [NTT] -> NNTMU
+createNNTMU' rowI colI = createNNTMU rowI colI . binaryList
 
-createThreshold :: Int -> NTT -> [NTT] -> NTTVU
-createThreshold rowI colI xs
-    | rowI < 0 || colI < 0 = createZThreshold 0
+createNNTMU :: Int -> Int -> [NNT] -> NNTMU
+createNNTMU rowI colI [] = fromListUnboxed (ix2 rowI colI) $ replicate (rowI * colI) False
+createNNTMU rowI colI xs
+    | length xs /= (rowI * colI) = createNNTMU rowI colI []
+    | otherwise = fromListUnboxed (ix2 rowI colI) xs
+
+createNTTVU :: Int -> NTT -> [NTT] -> NTTVU
+createNTTVU rowI colI xs
+    | rowI < 0 || colI < 0 = createZNTTVU 0
     | null xs = colIVec
-    | length xs /= rowI = createZThreshold rowI
+    | length xs /= rowI = createZNTTVU rowI
     | otherwise = fromListUnboxed (ix1 rowI) xs
     where colIVec = computeS $ fromFunction (ix1 rowI) (const colI)
 
-createZThreshold :: Int -> NTTVU
-createZThreshold rowI
+createZNTTVU :: Int -> NTTVU
+createZNTTVU rowI
     | rowI <= 0 = computeS $ fromFunction (ix1 0) (const 0)
     | otherwise = computeS $ fromFunction (ix1 rowI) (const 0)
 
-createOutput :: Int -> [NTT] -> NNTVU
-createOutput elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
-createOutput elems xs
-    | length xs /= elems = createOutput elems []
-    | otherwise = fromListUnboxed (ix1 elems) $ binaryList xs
+createNNTVU :: Int -> [NNT] -> NNTVU
+createNNTVU elems [] = fromListUnboxed (ix1 elems) $ replicate elems False
+createNNTVU elems xs
+    | length xs /= elems = createNNTVU elems []
+    | otherwise = fromListUnboxed (ix1 elems) xs
 
-createOutputLst :: Int -> [Int] -> [NNTVU]
-createOutputLst _ [] = []
-createOutputLst binLength xs = map elemsLst xs
+createNNTVU' :: Int -> [NTT] -> NNTVU
+createNNTVU' elems xs = createNNTVU elems $ binaryList xs
+
+createNNTVULst :: Int -> [Int] -> [NNTVU]
+createNNTVULst _ [] = []
+createNNTVULst binLength xs = map elemsLst xs
     where elemsLst = fromListUnboxed (ix1 binLength) . reverse . num2Bin' binLength
 
 construct1Complement :: Int -> Int -> NNTMU

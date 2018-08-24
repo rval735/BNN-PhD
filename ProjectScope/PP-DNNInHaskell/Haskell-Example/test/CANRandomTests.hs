@@ -15,7 +15,7 @@ module CANRandomTests
 where
 
 import           CAN
-import           CANExtras
+import           CANExtras       (createNTTVU)
 import           CANRandom
 import           CANTypes
 import           Control.Monad   (when)
@@ -50,4 +50,4 @@ randomNTTVUTest = do
 randomNTTVUOne :: RandomGen g => g -> Int -> NTT -> [NTT] -> Bool
 randomNTTVUOne gen elems maxVal expected = expV == result
     where result = randomNTTVU gen elems maxVal
-          expV = createThreshold elems 0 expected
+          expV = createNTTVU elems 0 expected
