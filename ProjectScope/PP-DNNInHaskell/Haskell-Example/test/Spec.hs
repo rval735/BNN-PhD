@@ -38,3 +38,4 @@ main = do
     randomNTTVUTest
     print "*--------------------*"
     print "CANTypesStorableTests"
+    nntmuStorableTest

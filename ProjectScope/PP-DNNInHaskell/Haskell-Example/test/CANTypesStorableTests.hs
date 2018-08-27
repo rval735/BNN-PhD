@@ -20,20 +20,22 @@ import           CANExtras            (constructUpdate, createNNTMU,
                                        createNNTVULst, createNTTVU,
                                        createZNeuron)
 import           CANTypes
+import           CANTypesStorable
 import           Control.Monad        (when)
 import qualified Data.Array.Repa      as R
 import           Data.Bits            (xor)
 import           Data.Bool            (bool)
 import           Data.List            (zip5)
-import           Data.Vector.Storable (singleton)
+import qualified Data.Vector.Storable as VS
 import           ListExtras           (applyNTimes, shiftLeft)
 import           TestExtras
 
 nntmuStorableTest :: IO ()
 nntmuStorableTest = do
     print "nntmuStorableTest"
-    let nttmu = createNTTMU' 3 2 [0,1,0,1,0,1]
+    let nttmu = createNNTMU' 3 2 [0,1,0,1,0,1]
+    let vss = VS.singleton nttmu
     --- To be tested
-    let result = VS.singleton nttmu
+    let result = [VS.length vss == 1]
     --- Finish testing
     printResult result
