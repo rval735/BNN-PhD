@@ -11,6 +11,7 @@
 import           CANExtrasTests
 import           CANRandomTests
 import           CANTests
+import           CANTypesStorableTests
 
 main :: IO ()
 main = do
@@ -35,3 +36,5 @@ main = do
     print "*--------------------*"
     print "CANRandomTests"
     randomNTTVUTest
+    print "*--------------------*"
+    print "CANTypesStorableTests"

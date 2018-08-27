@@ -18,24 +18,21 @@ module CAN
 -- )
 where
 
-import           CANExtras                         (construct1Complement,
-                                                    constructUpdate)
+import           CANExtras                    (construct1Complement,
+                                               constructUpdate)
 import           CANTypes
-import           Control.Monad                     (mapM_, when)
+import           Control.Monad                (mapM_, when)
 import           Data.Array.Repa
-import           Data.Array.Repa.Algorithms.Matrix (col)
-import           Data.Array.Repa.Repr.Unboxed      (Unbox)
-import           Data.Bits                         (complement, xor, (.&.),
-                                                    (.|.))
-import           Data.Bool                         (bool)
-import           Data.List                         (mapAccumL)
-import           Data.Maybe                        (isNothing)
-import qualified Data.Vector.Unboxed               as V
-import           ListExtras                        (applyNTimes, replaceElem,
-                                                    safeHead, shiftLeft, toBoth)
-import           Prelude                           hiding (map, traverse,
-                                                    zipWith)
-import qualified Prelude                           as P
+import           Data.Array.Repa.Repr.Unboxed (Unbox)
+import           Data.Bits                    (complement, xor, (.&.), (.|.))
+import           Data.Bool                    (bool)
+import           Data.List                    (mapAccumL)
+import           Data.Maybe                   (isNothing)
+import qualified Data.Vector.Unboxed          as V
+import           ListExtras                   (applyNTimes, replaceElem,
+                                               safeHead, shiftLeft, toBoth)
+import           Prelude                      hiding (map, traverse, zipWith)
+import qualified Prelude                      as P
 
 layerColide :: (Source r NNT) => CANWElem -> NNTVF r -> (NNT -> NNT -> NNT)-> NNTMD
 layerColide (CANWElem _ mtx) vtr colision = traverse2 mtx vtr const applySHY

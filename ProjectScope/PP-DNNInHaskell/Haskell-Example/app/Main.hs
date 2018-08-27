@@ -11,7 +11,6 @@
 module Main where
 
 import           CANMNIST
-import           Lib
 
 main :: IO ()
 main = runMNIST

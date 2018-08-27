@@ -14,13 +14,10 @@ module CANRandom
 -- )
 where
 
-import           CANExtras                            (createZNTTVU)
+import           CANExtras       (createZNTTVU)
 import           CANTypes
-import           Data.Array.Repa                      (fromListUnboxed, ix1,
-                                                       ix2)
-import           Data.Array.Repa.Algorithms.Randomish (randomishIntArray)
-import           System.Random                        (RandomGen, next,
-                                                       randomRs, randoms, split)
+import           Data.Array.Repa (fromListUnboxed, ix1, ix2)
+import           System.Random   (RandomGen, next, randomRs, randoms, split)
 
 randomNNTMU :: RandomGen g => g -> Int -> Int -> NNTMU
 randomNNTMU seed rowI colI = fromListUnboxed shape lstElems

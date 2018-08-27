@@ -15,14 +15,13 @@ module CANTypes
 where
 
 
-import           Data.Array.Repa                   (Any, Array, D, DIM1, DIM2,
-                                                    Shape, U, Z, extent,
-                                                    listOfShape, toList)
-import           Data.Array.Repa.Algorithms.Matrix (col, row)
-import           Data.Bool                         (bool)
-import qualified Data.Vector.Storable              as VS
-import           Data.Word                         (Word16, Word8)
-import           ListExtras                        (splitEvery)
+import           Data.Array.Repa      ((:.) (..), Any, Array, D, DIM1, DIM2,
+                                       Shape, U, Z (..), extent, listOfShape,
+                                       toList)
+import           Data.Bool            (bool)
+import qualified Data.Vector.Storable as VS
+import           Data.Word            (Word16, Word8)
+import           ListExtras           (splitEvery)
 
 type WeightsSize = Int
 type ThresholdSize = Int
@@ -144,3 +143,9 @@ printNN nn nn' = do
     let zipped = zip nn nn'
     print "---------------"
     mapM_ (\(x,y) -> do print "NN:"; print x; print "NN':"; print y ) zipped
+
+col :: DIM2 -> Int
+col (Z :. x :. y) = y
+
+row :: DIM2 -> Int
+row (Z :. x :. y) = x

@@ -1,5 +1,5 @@
-name:                NNHaskell
-version:             "0.011"
+name:                "NNHaskell"
+version:             0.011
 github:              "https://github.com/rval735/cnn-phd/tree/master/ProjectScope/PP-DNNInHaskell/Haskell-Example"
 license:             "GPL-3"
 author:              "rval735"
@@ -22,10 +22,8 @@ dependencies:
 - time >= 1.8
 - bytestring >= 0.1
 - repa >= 3.4
-- repa-algorithms >= 3.4
 - mnist-idx >= 0.1.2.8
-- vector >=0.10 && <0.13
-# - hmatrix >= 0.18  # Uncomment if previous versions are going to compile
+- vector >= 0.10 && <0.13
 
 library:
   source-dirs: src
@@ -64,7 +62,8 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - NNHaskell
-    
+    - QuickCheck >= 2.11.3
+    - tasty >= 1.1
     
 # Command line
 # stack build --profile --executable-profiling --library-profiling
