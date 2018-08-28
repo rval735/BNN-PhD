@@ -28,7 +28,7 @@ import           Data.Bool            (bool)
 import           Data.List            (zip5)
 import qualified Data.Vector.Storable as VS
 import           ListExtras           (applyNTimes, shiftLeft)
-import           TestExtras
+import           TestExtras           (printResult)
 
 nntmuStorableTest :: IO ()
 nntmuStorableTest = do
