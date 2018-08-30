@@ -14,7 +14,8 @@ module ListExtras
 -- )
 where
 
-import           Data.Bool (bool)
+import           Data.Bool            (bool)
+import qualified Data.Vector.Storable as VS
 
 safeHead :: [a] -> Maybe a
 safeHead []      = Nothing
@@ -24,6 +25,14 @@ shiftLeft :: [a] -> [a]
 shiftLeft []  = []
 shiftLeft [x] = [x]
 shiftLeft x   = tail x ++ [head x]
+
+shiftLeftV :: VS.Storable a => Int -> VS.Vector a -> VS.Vector a
+shiftLeftV 0 x = x
+shiftLeftV n x
+    | VS.null x = VS.empty
+    | VS.length x == 1 = x
+    | otherwise = shiftLeftV (n - 1) y
+    where y = VS.tail x VS.++ VS.singleton (VS.head x)
 
 shiftRight :: [a] -> [a]
 shiftRight []  = []

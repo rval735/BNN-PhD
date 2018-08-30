@@ -21,14 +21,15 @@ where
 import           CANExtras                    (construct1Complement,
                                                constructUpdate)
 import           CANTypes
+import           CANTypesStorable
 import           Control.Monad                (mapM_, when)
 import           Data.Array.Repa
 import           Data.Array.Repa.Repr.Unboxed (Unbox)
 import           Data.Bits                    (complement, xor, (.&.), (.|.))
 import           Data.Bool                    (bool)
-import           Data.List                    (mapAccumL)
 import           Data.Maybe                   (isNothing)
-import qualified Data.Vector.Unboxed          as V
+import qualified Data.Vector.Storable         as VS
+import qualified Data.Vector.Unboxed          as VU
 import           ListExtras                   (applyNTimes, replaceElem,
                                                safeHead, shiftLeft, toBoth)
 import           Prelude                      hiding (map, traverse, zipWith)
@@ -65,8 +66,8 @@ hammingWeight x = sumAllS $ map (bool 0 1) x
 queryNeurons :: [CANNeuron] -> NNTVD -> NNTVD
 queryNeurons nn query = foldl applyNeuron query nn
 
-queryNeuronsAcc :: [CANNeuron] -> NNTVD -> (NNTVD, [(NNTMD, NNTVD)])
-queryNeuronsAcc nn query = mapAccumL f query nn
+queryNeuronsAcc :: VS.Vector CANNeuron -> NNTVD -> (NNTVD, VS.Vector (NNTMD, NNTVD))
+queryNeuronsAcc nn query = mapAccumVec f query nn
     where f x n@(CANNeuron y _) = let apNN = applyNeuron x n in (apNN, (layerColide y x xor, applyNeuron x n))
 
 queryCANNN :: [CANNeuron] -> [TrainElem] -> [NNTVD]
@@ -86,8 +87,8 @@ updateCANNeuron (CANNeuron canW canT) CANWeight deltaP (dW, output) = CANNeuron 
     where dWeights = deltaWeights deltaP (delay dW, delay output)
           canWE = applyDeltaWeight canW dWeights
 
-calculateDelta :: NNTVD -> [(NNTMD, NNTVD)] -> NNTVU
-calculateDelta delta = foldl (\x y -> weightsToDelta . transpose $ deltaWeights x y) (computeS delta)
+calculateDelta :: NNTVD -> VS.Vector (NNTMD, NNTVD) -> NNTVU
+calculateDelta delta = VS.foldl (\x y -> weightsToDelta . transpose $ deltaWeights x y) (computeS delta)
 
 deltaThreshold :: NNTVU -> NNTVD -> NTTVD
 deltaThreshold = zipWith changes
@@ -145,32 +146,32 @@ applySelection x y z = z .&. xor x (complement y)
 
 ---------------------------------------------------------------------------
 
-updatesWithConditions :: NTT -> NTT -> NTT -> [CANUpdate]
+updatesWithConditions :: NTT -> NTT -> NTT -> VS.Vector CANUpdate
 updatesWithConditions nnElems trainElems shiftBy
-    | (nnElems * 2) < trainElems = transform matchTrain
-    | otherwise = transform updates
+    | (nnElems * 2) < trainElems = VS.fromList $ transform matchTrain
+    | otherwise = VS.fromList $ transform updates
     where updates = constructUpdate nnElems
           matchTrain = concat $ replicate (fromIntegral $ div trainElems (nnElems * 2) + 1) updates
           transform = take (fromIntegral trainElems) . applyNTimes (fromIntegral shiftBy) shiftLeft
 
 ---------------------------------------------------------------------------
 
-trainNeurons :: TrainElem -> CANUpdate -> [CANNeuron] -> [CANNeuron]
+trainNeurons :: TrainElem -> CANUpdate -> VS.Vector CANNeuron -> VS.Vector CANNeuron
 trainNeurons (TrainElem train desired) (CANUpdate lIndex cElem) nn = bool nn' nn (hammingWeight compared == 0)
     where (query, wAo) = queryNeuronsAcc nn (delay train) -- wAo = Weights and Outputs
           compared = vecCompare query (delay desired)
-          chosenNeuron = nn !! fromIntegral lIndex
-          wAoI = wAo !! fromIntegral lIndex
-          deltaPos = take (length nn - fromIntegral lIndex - 1) $ reverse wAo
+          chosenNeuron = nn VS.! fromIntegral lIndex
+          wAoI = wAo VS.! fromIntegral lIndex
+          deltaPos = VS.take (length nn - fromIntegral lIndex - 1) $ VS.reverse wAo
           deltaP = calculateDelta compared deltaPos
           atLeastOne = hammingWeight deltaP
           canNN = updateCANNeuron chosenNeuron cElem deltaP wAoI
-          nn' = bool nn (replaceElem nn (fromIntegral lIndex) canNN) $ atLeastOne > 0
+          nn' = bool nn (nn VS.// [(fromIntegral lIndex, canNN)]) $ atLeastOne > 0
 
-trainCANNN :: [CANNeuron] -> [CANUpdate] -> [TrainElem] -> [CANNeuron]
-trainCANNN nn updates trainSet = foldl (\n (x, y) -> trainNeurons x y n) nn (zip trainSet updates)
+trainCANNN :: VS.Vector CANNeuron -> VS.Vector CANUpdate -> VS.Vector TrainElem -> VS.Vector CANNeuron
+trainCANNN nn updates trainSet = VS.foldl (\n (x, y) -> trainNeurons x y n) nn (VS.zipWith (,) trainSet updates)
 
-trainUntilLearned :: [CANNeuron] -> [TrainElem] -> NTT -> NTT -> IO [CANNeuron]
+trainUntilLearned :: VS.Vector CANNeuron -> VS.Vector TrainElem -> NTT -> NTT -> IO (VS.Vector CANNeuron)
 trainUntilLearned nn trainSet shift tolerance = do
     let (shiftTo, nn') = trainGeneral nn trainSet shift
     let distance = sum $ distanceCANNN nn' trainSet
@@ -178,7 +179,7 @@ trainUntilLearned nn trainSet shift tolerance = do
     -- when (shiftTo == 0) printOpr
     bool (trainUntilLearned nn' trainSet shiftTo tolerance) (return nn') (distance <= tolerance)
 
-trainWithEpochs :: [CANNeuron] -> [TrainElem] -> NTT -> NTT -> IO [CANNeuron]
+trainWithEpochs :: VS.Vector CANNeuron -> VS.Vector TrainElem -> NTT -> NTT -> IO (VS.Vector CANNeuron)
 trainWithEpochs nn _ _ 0 = return nn
 trainWithEpochs nn trainSet shift epochs
     | epochs < 0 = return nn
@@ -188,9 +189,10 @@ trainWithEpochs nn trainSet shift epochs
         -- print nn'
         trainWithEpochs nn' trainSet shiftTo $ epochs - 1
 
-trainGeneral :: [CANNeuron] -> [TrainElem] -> NTT -> (NTT, [CANNeuron])
-trainGeneral [] _ _ = (initialValue, [])
-trainGeneral nn trainSet shiftV = (shiftTo, nn')
+trainGeneral :: VS.Vector CANNeuron -> VS.Vector TrainElem -> NTT -> (NTT, VS.Vector CANNeuron)
+trainGeneral nn trainSet shiftV
+    | null trainSet = (initialValue, VS.empty)
+    | otherwise = (shiftTo, nn')
     where nnL = fromIntegral $ length nn
           tsL = fromIntegral $ length trainSet
           updates = updatesWithConditions nnL tsL shiftV
@@ -215,12 +217,16 @@ splitVecAt location vec
           rightV = extract (ix1 locPlus) (ix1 $ size shVec - locPlus) vec
 
 filterVec :: (NTT -> Bool) -> NTTVD -> NTTVU
-filterVec filterF vec = fromUnboxed (ix1 $ V.length elems) elems
+filterVec filterF vec = fromUnboxed (ix1 $ VU.length elems) elems
     where shVec = extent vec
-          elems = V.filter filterF . toUnboxed $ computeUnboxedS vec
+          elems = VU.filter filterF . toUnboxed $ computeUnboxedS vec
 
 firstElem :: NTTVU -> Maybe NTT
 firstElem vec
     | shSize <= 0 = Nothing
     | otherwise = Just (fromIntegral $ linearIndex vec 0)
     where shSize = size $ extent vec
+
+
+mapAccumVec :: (a -> b -> (a, c)) -> a -> VS.Vector b -> (a, VS.Vector c)
+mapAccumVec f val vec = undefined

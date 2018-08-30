@@ -51,7 +51,7 @@ instance Storable NNTMU where
         ySize <- fromIntegral <$> F.peekElemOff q 1
         b <- mapM (F.peekElemOff r) [0 .. (xSize * ySize - 1)]
         return $ createNNTMU xSize ySize b
-        where nntPos = F.sizeOf (undefined :: NTT) * 2
+        where nntPos = nttElemSize * 2
               q = F.castPtr p :: F.Ptr NTT
               r = F.castPtr $ F.plusPtr p nntPos :: F.Ptr NNT
 
@@ -60,7 +60,7 @@ instance Storable NNTMU where
         F.pokeElemOff q 0 $ fromIntegral xSize
         F.pokeElemOff q 1 $ fromIntegral ySize
         mapM_ (uncurry $ F.pokeElemOff r) $ zip [0 .. xSize * ySize] (R.toList mtx)
-        where nntPos = F.sizeOf (undefined :: NTT) * 2
+        where nntPos = nttElemSize * 2
               q = F.castPtr p :: F.Ptr NTT
               (R.Z R.:. xSize R.:. ySize) = R.extent mtx
               r = F.castPtr $ F.plusPtr p nntPos :: F.Ptr NNT
@@ -76,18 +76,16 @@ instance Storable NNTVU where
         vSize <- fromIntegral <$> F.peekElemOff q 0
         b <- mapM (F.peekElemOff r) [0 .. vSize - 1]
         return $ createNNTVU vSize b
-        where nttSize = F.sizeOf (undefined :: NTT)
-              q = F.castPtr p :: F.Ptr NTT
-              r = F.castPtr $ F.plusPtr p nttSize :: F.Ptr NNT
+        where q = F.castPtr p :: F.Ptr NTT
+              r = F.castPtr $ F.plusPtr p nttElemSize :: F.Ptr NNT
 
     {-# INLINE poke #-}
     poke p vec = do
         F.pokeElemOff q 0 $ fromIntegral size
         mapM_ (uncurry $ F.pokeElemOff r) $ zip [0 .. size - 1] (R.toList vec)
-        where nttSize = F.sizeOf (undefined :: NTT)
-              q = F.castPtr p :: F.Ptr NTT
+        where q = F.castPtr p :: F.Ptr NTT
               size = R.size $ R.extent vec
-              r = F.castPtr $ F.plusPtr p nttSize :: F.Ptr NNT
+              r = F.castPtr $ F.plusPtr p nttElemSize :: F.Ptr NNT
 
 instance Storable NTTVU where
     alignment _ = F.alignment (undefined :: NTT)
@@ -117,17 +115,15 @@ instance Storable CANTElem where
         a <- F.peekElemOff q 0
         b <- F.peek r
         return (CANTElem a b)
-        where elemSize = F.sizeOf (undefined :: NTT)
-              q = F.castPtr p
-              r = F.castPtr $ F.plusPtr p elemSize
+        where q = F.castPtr p
+              r = F.castPtr $ F.plusPtr p nttElemSize
 
     {-# INLINE poke #-}
     poke p (CANTElem tChange canTElem) = do
         F.pokeElemOff q 0 tChange
         F.poke r canTElem
         where q = F.castPtr p
-              elemSize = F.sizeOf (undefined :: NTT)
-              r = F.castPtr $ F.plusPtr p elemSize
+              r = F.castPtr $ F.plusPtr p nttElemSize
 
 instance Storable TrainElem where
     sizeOf _ = F.sizeOf (undefined :: NNTVU) * 2
@@ -144,6 +140,33 @@ instance Storable TrainElem where
         F.pokeElemOff q 0 inp
         F.pokeElemOff q 1 oup
         where q = F.castPtr p :: F.Ptr NNTVU
+
+instance Storable CANUpdate where
+    sizeOf _ = F.sizeOf (undefined :: NTT) + 1
+    alignment _ = F.alignment (undefined :: NTT)
+
+    {-# INLINE peek #-}
+    peek p = do
+        a <- F.peekElemOff q 0
+        b <- F.peek r
+        return . CANUpdate a $ bool CANWeight CANThreshold b
+        where
+              q = F.castPtr p :: F.Ptr NTT
+              r = F.castPtr $ F.plusPtr p nttElemSize :: F.Ptr Bool
+
+    {-# INLINE poke #-}
+    poke p (CANUpdate idx canElem) = do
+        F.pokeElemOff q 0 idx
+        F.poke r $ bool False True (canElem == CANThreshold)
+        where q = F.castPtr p :: F.Ptr NTT
+              r = F.castPtr $ F.plusPtr p nttElemSize :: F.Ptr Bool
+
+
+nttElemSize :: Int
+nttElemSize = F.sizeOf (undefined :: NTT)
+
+nntElemSize :: Int
+nntElemSize = F.sizeOf (undefined :: NNT)
 
 -- RefLink: https://github.com/oreqizer/minicraft/blob/master/haskell/naive1.hs#L40
 -- RefLink: https://hackage.haskell.org/package/vector-0.11.0.0/docs/src/Data-Vector-Unboxed-Base.html#Unbox
