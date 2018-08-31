@@ -15,13 +15,11 @@ module CANTypes
 where
 
 
-import           Data.Array.Repa      ((:.) (..), Any, Array, D, DIM1, DIM2,
-                                       Shape, U, Z (..), extent, listOfShape,
-                                       toList)
-import           Data.Bool            (bool)
-import qualified Data.Vector.Storable as VS
-import           Data.Word            (Word16, Word8)
-import           ListExtras           (splitEvery)
+import           Data.Array.Repa ((:.) (..), Any, Array, D, DIM1, DIM2, Shape,
+                                  U, Z (..), extent, listOfShape, toList)
+import           Data.Bool       (bool)
+import           Data.Word       (Word16, Word8)
+import           ListExtras      (splitEvery)
 
 type WeightsSize = Int
 type ThresholdSize = Int

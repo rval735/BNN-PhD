@@ -28,7 +28,7 @@ import           Data.List           (intercalate)
 import           Data.Maybe          (fromJust)
 import           Data.Time.Clock     (diffUTCTime, getCurrentTime)
 import qualified Data.Vector.Unboxed as V
-import           ListExtras          (num2Bin')
+import           ListExtras          (num2Bin', replaceElem)
 import           System.Random       (mkStdGen, split)
 
 runMNIST :: IO ()
@@ -38,6 +38,7 @@ runMNIST = do
     startTime <- getCurrentTime
     dta <- loadMNISTFiles "../MNIST-Data/t10k-labels-idx1-ubyte" "../MNIST-Data/t10k-images-idx3-ubyte"
     let inputSize = 784
+    -- let outputSize = 10
     let outputSize = 4
     let epochs = 5
     let nnSize = 16
@@ -47,6 +48,7 @@ runMNIST = do
     let genStd = mkStdGen inputSize
     -- genStd <- newStdGen
     let transformV = R.fromUnboxed (R.ix1 inputSize) . V.map (\z -> bool False True (z >= 50))
+    -- let transformNum = R.fromListUnboxed (R.ix1 outputSize) . num2Lst
     let transformNum = R.fromListUnboxed (R.ix1 outputSize) . reverse . num2Bin' outputSize
     let trainSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) $ take trainingSet dta
     let testSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) . take testingSet $ drop trainingSet dta
@@ -83,3 +85,10 @@ loadMNISTFiles labelPath dataPath = do
     let dta = fromJust maybeData
     let mnist = labeledIntData lbl dta
     return $ fromJust mnist
+
+num2Lst :: Int -> [Bool]
+num2Lst x
+    | x > 10 = lstFalse
+    | x < 0 = lstFalse
+    | otherwise = replaceElem lstFalse x True
+    where lstFalse = replicate 10 False

@@ -26,9 +26,6 @@ import qualified Data.Vector.Storable as VS
 import qualified Foreign              as F
 import           Foreign.C.Types
 
-import           Data.Word            (Word32)
-import           GHC.Int
-
 nttvuSize :: Int
 nttvuSize = 32
 
