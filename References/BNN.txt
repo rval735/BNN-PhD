@@ -105,3 +105,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/32008/
 
 Associative content-addressable networks with exponentially many robust stable states
 https://arxiv.org/abs/1704.02019
+
+Dorefa-net- training low bitwidth convolutional neural networks with low bitwidth gradients
+https://arxiv.org/abs/1606.06160
