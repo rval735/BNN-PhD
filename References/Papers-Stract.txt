@@ -1105,3 +1105,10 @@ Algorithm and Hardware Design of Discrete-Time Spiking Neural Networks Based on 
 - Evaluated for the MNIST dataset (~98% accuracy)
 - Cost of 48.4 nJ per classification
 
+------> Evolutionary
+
+Hardware/Software Partitioning for Heterogeneous Multicore SoC Using Genetic Algorithm
+- Investigates genetic algorithm (GA) for hardware/software partitioning
+- Processing engines(PE) as CPU, FPGA or ASIC; Communicating structure adopts NOC
+- Uses a Task Graph (TG) to model the system; also called Directed Acyclic Graph (DAG) with weights
+- GA helps to partition work between PE more efficiently

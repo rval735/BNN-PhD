@@ -1,0 +1,4 @@
+Evolutionary
+
+Hardware/Software Partitioning for Heterogeneous Multicore SoC Using Genetic Algorithm
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6173439/
