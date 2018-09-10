@@ -50,9 +50,14 @@ applyNeuron input (CANNeuron canW canT) = res
           summ = layerSummation collision
           res = layerOperation (delay summ) canT (>=)
 
+applyInverseNeuron :: (Source r NNT) => NNTVF r -> CANNeuron -> NNTVD
+applyInverseNeuron input (CANNeuron canW canT) = res
+    where collision = layerColide canW input (\x y -> complement $ xor x y)
+          summ = layerSummation collision
+          res = layerOperation (delay summ) canT (<)
+
 -- weightsToDelta :: NNTMD -> NNTVD
 -- weightsToDelta delta = traverse2 delta  id (\f (Z :. x :. y) -> ) -- foldS (.|.) False
-
 weightsToDelta :: (Source r NNT) => NNTMF r -> NNTVU
 weightsToDelta = foldS (.|.) False
 
@@ -64,6 +69,9 @@ hammingWeight x = sumAllS $ map (bool 0 1) x
 
 queryNeurons :: [CANNeuron] -> NNTVD -> NNTVD
 queryNeurons nn query = foldl applyNeuron query nn
+
+queryInverseNeurons :: [CANNeuron] -> NNTVD -> NNTVD
+queryInverseNeurons nn query = foldl applyInverseNeuron query nn
 
 queryNeuronsAcc :: [CANNeuron] -> NNTVD -> (NNTVD, [(NNTMD, NNTVD)])
 queryNeuronsAcc nn query = mapAccumL f query nn
