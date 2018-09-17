@@ -179,8 +179,8 @@ trainCANNN :: [CANNeuron] -> [CANUpdate] -> [TrainElem] -> [CANNeuron]
 trainCANNN nn updates trainSet = foldl (\n (x, y) -> trainNeurons x y n) nn (zip trainSet updates)
 
 trainUntilLearned :: [CANNeuron] -> [TrainElem] -> NTT -> NTT -> IO [CANNeuron]
-trainUntilLearned nn trainSet shift tolerance = do
-    let (shiftTo, nn') = trainGeneral nn trainSet shift
+trainUntilLearned nn trainSet shiftVal tolerance = do
+    let (shiftTo, nn') = trainGeneral nn trainSet shiftVal
     let distance = sum $ distanceCANNN nn' trainSet
     let printOpr = print nn' >> print ("Distance: " P.++ show distance)
     -- when (shiftTo == 0) printOpr

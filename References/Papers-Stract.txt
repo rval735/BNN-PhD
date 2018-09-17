@@ -1112,3 +1112,10 @@ Hardware/Software Partitioning for Heterogeneous Multicore SoC Using Genetic Alg
 - Processing engines(PE) as CPU, FPGA or ASIC; Communicating structure adopts NOC
 - Uses a Task Graph (TG) to model the system; also called Directed Acyclic Graph (DAG) with weights
 - GA helps to partition work between PE more efficiently
+
+Evolving simple programs for playing Atari games
+- Use Cartesian Genetic programming to evolve simple functions
+- Play repeatedly Atari games in Arcade Learning Environment (ALE)
+- Use pixel input and floating outputs, also all functions were constrained within [-1,1]
+- Improvement of scores over humans or other DNN techniques
+- Special mentions about KungFu Master, Centipede or Boxing for its win strategies

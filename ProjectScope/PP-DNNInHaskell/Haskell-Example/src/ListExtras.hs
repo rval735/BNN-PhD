@@ -45,6 +45,15 @@ num2Bin' size num = map (\x -> bool False True (check x == 0)) $ lst size
     where lst x = take x $ iterate (* 2) 1
           check x = mod (div (num - x) x) 2
 
+bin2Num :: [Bool] -> Int
+bin2Num [] = 0
+bin2Num lst
+    | last lst = foldl (\z (x,y) -> z - condInv x y ) (-1) lstI
+    | otherwise = foldl (\z (x,y) -> z + cond x y ) 0 lstI
+    where lstI = zip [0 .. ] lst
+          cond x = bool 0 (2 ^ x)
+          condInv x = bool (2 ^ x) 0
+
 -- variant of map that passes each element's index as a second argument to f
 indexedMap :: (a -> Int -> b) -> [a] -> [b]
 indexedMap f l = zipWith f l [0..]
