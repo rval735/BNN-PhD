@@ -80,6 +80,13 @@ queryNeuronsAcc nn query = mapAccumL f query nn
 queryCANNN :: [CANNeuron] -> [TrainElem] -> [NNTVD]
 queryCANNN nn = P.map (\(TrainElem query _) -> queryNeurons nn (delay query))
 
+queryCANNN' :: [CANNeuron] -> [TrainElem] -> [TrainElem]
+queryCANNN' nn elems = P.map (uncurry TrainElem) zipped
+    where delayed = queryCANNN nn elems
+          mapped = P.map computeUnboxedS delayed
+          expected = P.map trainOutput elems
+          zipped = P.zip mapped expected
+
 distanceCANNN :: [CANNeuron] -> [TrainElem] -> [NTT]
 distanceCANNN nn testSet = compared
     where queries = queryCANNN nn testSet

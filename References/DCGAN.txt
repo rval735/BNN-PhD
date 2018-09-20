@@ -33,3 +33,6 @@ https://arxiv.org/abs/1804.09154
 
 Wasserstein GAN
 https://arxiv.org/abs/1701.07875
+
+Autoencoding beyond pixels using a learned similarity metric
+https://arxiv.org/abs/1512.09300

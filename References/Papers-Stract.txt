@@ -819,6 +819,12 @@ Wasserstein GAN
 - WGAN train the discriminator to optimality by continuously estimate EM
 - According to them, WGAN can improve stability/debugging and remove mode collapse
 
+Autoencoding beyond pixels using a learned similarity metric
+- Combination of a variational autoencoder with a generative adversarial network
+- GANs avoid element wise similarity measures by construction
+- Trained with RMSProp using a learning rate of 0.0003 and a batch size of 64
+- Used to reconstruct dataset samples with visual attribute vectors added to their latent representations
+
 --------> Languages
 
 A Comparative Study of Programming Languages in Rosetta Code
