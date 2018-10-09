@@ -1,0 +1,28 @@
+startTime <- getCurrentTime
+dta <- loadMNISTFiles "../MNIST-Data/t10k-labels-idx1-ubyte" "../MNIST-Data/t10k-images-idx3-ubyte"
+let inputSize = 784
+-- let outputSize = 10
+let outputSize = 1
+let outputSizeP = 10
+let epochs = 5
+let nnSize = 6
+let llSize = 6
+let trainingN = 1000
+let testingN = 200
+let mapEach = showResults inputSize outputSize trainingN testingN dta nnSize llSize epochs startTime
+nns <- mapM mapEach [0 .. 9]
+print "Finished with each"
+
+let dtaN = take (trainingN + testingN) $ drop (trainingN + testingN) dta
+let (trainSetP, testSet) = createDataSet inputSize outputSize trainingN testingN dtaN (-1)
+-- let transTrainP = trainCollapse nns trainSetP
+
+qCs = map (`queryCANNN'` trainSetP) nns
+empty = createNNTVU 0 []
+trans = P.foldl (\x (TrainElem _ y) -> R.computeUnboxedS $ R.append x y) empty (qCs !! 0)
+trans = map (P.foldl (\(TrainElem _ x) y -> R.append y x) empty) qCs
+
+
+nnp <- trainNN trainSetP inputSize outputSize nnSize llSize epochs
+printResults testSet startTime llSize epochs nnp (-1)
+return nnp

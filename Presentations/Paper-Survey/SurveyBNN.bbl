@@ -1,0 +1,739 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{2016arXiv161006918A}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AM}{%
+         family={{Abadi}},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ADG}{%
+         family={{Andersen}},
+         familyi={A\bibinitperiod},
+         given={D.\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Cryptography and Security, Computer Science -
+  Machine Learning}
+    \strng{namehash}{AMADG1}
+    \strng{fullhash}{AMADG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{eprint}
+    \verb 1610.06918
+    \endverb
+    \field{title}{{Learning to Protect Communications with Adversarial Neural
+  Cryptography}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CR}
+    \field{month}{10}
+    \field{year}{2016}
+  \endentry
+
+  \entry{1206405}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BA}{%
+         family={Bermak},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; neural chips;pattern classification;VLSI;scalable 3D chip;binary
+  neural network classification;VLSI;MCM;on-chip control
+  unit;expansibility;multiprecision neural chip;4 bit;8 bit;16 bit;Neural
+  networks;Very large scale integration;Artificial neural
+  networks;Packaging;Network topology;Hardware;Gas detectors;Costs;Integrated
+  circuit interconnections;Power system interconnection}
+    \strng{namehash}{BA1}
+    \strng{fullhash}{BA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    This paper describes a 3D VLSI Chip for binary neural network
+  classification applications. The 3D circuit includes three layers of MCM
+  integrating 4 chips each making it a total of 12 chips integrated in a volume
+  of (2 /spl times/ 2 /spl times/ 0.7)cm/sup 3/. The architecture is scalable,
+  and real-time binary neural network classifier systems could be built with
+  one, two or all twelve chip solutions. Each basic chip includes an on-chip
+  control unit for programming options of the neural network topology and
+  precision. The system is modular and presents easy expansibility without
+  requiring extra devices. Experimental test results showed that a full recall
+  operation is obtained in less than 1.2/spl mu/s for any topology with 4-bit
+  or 8-bit precision while it is obtained in less than 2.2/spl mu/s for any
+  16-bit precision. As a consequence the 3D chip is a very powerful
+  reconfigurable and a multiprecision neural chip exhibiting a significant
+  speed of 1.25 GCPS.%
+    }
+    \field{booktitle}{Proceedings of the 2003 International Symposium on
+  Circuits and Systems, 2003. ISCAS '03.}
+    \verb{doi}
+    \verb 10.1109/ISCAS.2003.1206405
+    \endverb
+    \field{pages}{V\bibrangedash V}
+    \field{title}{A highly scalable 3D chip for binary neural network
+  classification applications}
+    \field{volume}{5}
+    \field{year}{2003}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{5726804}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BSA}{%
+         family={Brodsky},
+         familyi={B\bibinitperiod},
+         given={S.\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GCC}{%
+         family={Guest},
+         familyi={G\bibinitperiod},
+         given={C.\bibnamedelima C.},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, content-addressable storage;learning systems;neural
+  nets;arbitrary bit-level significance;binary backpropagation;bit connection
+  weights;content addressable memory;continuous backpropagation network
+  learning model;local computation;pseudoanalog extension}
+    \strng{namehash}{BSAGCC1}
+    \strng{fullhash}{BSAGCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{1990 IJCNN International Joint Conference on Neural
+  Networks}
+    \verb{doi}
+    \verb 10.1109/IJCNN.1990.137846
+    \endverb
+    \field{pages}{205\bibrangedash 210 vol.3}
+    \field{title}{Binary backpropagation in content addressable memory}
+    \field{year}{1990}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Brodsky:93}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BSA}{%
+         family={Brodsky},
+         familyi={B\bibinitperiod},
+         given={Stephen\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MGC}{%
+         family={Marsden},
+         familyi={M\bibinitperiod},
+         given={Gary\bibnamedelima C.},
+         giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=GCC}{%
+         family={Guest},
+         familyi={G\bibinitperiod},
+         given={Clark\bibnamedelima C.},
+         giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {OSA}%
+    }
+    \keyw{BNN, Cylindrical lenses; Light valves; Neural networks; Optical
+  components; Optical neural systems; Parallel processing}
+    \strng{namehash}{BSAMGCGCC1}
+    \strng{fullhash}{BSAMGCGCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The content-addressable network (CAN) is an efficient, intrinsically
+  discrete training algorithm for binary-valued classification networks. The
+  binary nature of the CAN network permits accelerated learning and
+  significantly reduced hardware-implementation requirements. A multilayer
+  optoelectronic CAN network employing matrix--vector multiplication was
+  constructed. The network learned and correctly classified trained patterns,
+  gaining a measure of fault tolerance by learning associative solutions to
+  optical hardware imperfections. Operation of this system is possible owing to
+  the reduced hardware accuracy requirements of the CAN learning algorithm.%
+    }
+    \verb{doi}
+    \verb 10.1364/AO.32.001338
+    \endverb
+    \field{number}{8}
+    \field{pages}{1338\bibrangedash 1345}
+    \field{title}{Optical matrix--vector implementation of the
+  content-addressable network}
+    \verb{url}
+    \verb http://ao.osa.org/abstract.cfm?URI=ao-32-8-1338
+    \endverb
+    \field{volume}{32}
+    \field{journaltitle}{Appl. Opt.}
+    \field{year}{1993}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2018arXiv180804752G}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GY}{%
+         family={{Guo}},
+         familyi={G\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Machine Learning, Computer Science - Neural and
+  Evolutionary Computing, Statistics - Machine Learning}
+    \strng{namehash}{GY1}
+    \strng{fullhash}{GY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{eprint}
+    \verb 1808.04752
+    \endverb
+    \field{title}{{A Survey on Methods and Theories of Quantized Neural
+  Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{08}
+    \field{year}{2018}
+  \endentry
+
+  \entry{2015arXiv151203385H}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HK}{%
+         family={{He}},
+         familyi={H\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={{Zhang}},
+         familyi={Z\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={{Ren}},
+         familyi={R\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={{Sun}},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \strng{namehash}{HK+1}
+    \strng{fullhash}{HKZXRSSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{eprint}
+    \verb 1512.03385
+    \endverb
+    \field{title}{{Deep Residual Learning for Image Recognition}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{12}
+    \field{year}{2015}
+  \endentry
+
+  \entry{4790104}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KM}{%
+         family={Kam},
+         familyi={K\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Guez},
+         familyi={G\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;State-space methods;Neural networks;Information analysis;Pattern
+  analysis;Hopfield neural networks;Pattern recognition;Information
+  retrieval;Convergence;Hamming distance;Content based retrieval}
+    \strng{namehash}{KMCRGA1}
+    \strng{fullhash}{KMCRGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Analysis of the state space for the fully-connected binary neural network
+  ("the Hopfield model") remains an important objective in utilizing the
+  network in pattern recognition and associative information retrieval. Most of
+  the research pertaining to the network's state space so far concentrated on
+  stable-state enumeration and often it was assumed that the patterns which are
+  to be stored are random. We discuss the case of deterministic known codewords
+  whose storage is required, and show that for this important case bounds on
+  the retrieval probabilities and convergence rates can be achieved. The main
+  tool which we employ is Birth-and-Death Markov chains, describing the Hamming
+  distance of the network's state from the stored patterns. The results are
+  applicable to both the asynchronous network and to the Boltzmann machine, and
+  can be utilized to compare codeword sets in terms of efficiency of their
+  retrieval, when the neural network is used as a content addressable memory.%
+    }
+    \field{booktitle}{1988 American Control Conference}
+    \verb{doi}
+    \verb 10.23919/ACC.1988.4790104
+    \endverb
+    \field{pages}{2276\bibrangedash 2281}
+    \field{title}{On the State Space of the Binary Neural Network}
+    \field{year}{1988}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Krizhevsky2999257}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates Inc.}%
+    }
+    \keyw{CNN, ImageNet, ILSVRC, Convolution}
+    \strng{namehash}{KASIHGE1}
+    \strng{fullhash}{KASIHGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Proceedings of the 25th International Conference on
+  Neural Information Processing Systems - Volume 1}
+    \field{pages}{1097\bibrangedash 1105}
+    \field{series}{NIPS'12}
+    \field{title}{ImageNet Classification with Deep Convolutional Neural
+  Networks}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=2999134.2999257
+    \endverb
+    \list{location}{1}{%
+      {Lake Tahoe, Nevada}%
+    }
+    \field{year}{2012}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{AIWinter}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Kurenkov},
+         familyi={K\bibinitperiod},
+         given={Andrey},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{AI, Neural Networks, History}
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{A 'Brief' History of Neural Nets and Deep Learning}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{Linnainmaa1976}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Linnainmaa},
+         familyi={L\bibinitperiod},
+         given={Seppo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Neural Networks, Backpropagation}
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The article describes analytic and algorithmic methods for determining the
+  coefficients of the Taylor expansion of an accumulated rounding error with
+  respect to the local rounding errors, and hence determining the influence of
+  the local errors on the accumulated error. Second and higher order
+  coefficients are also discussed, and some possible methods of reducing the
+  extensive storage requirements are analyzed.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF01931367
+    \endverb
+    \field{issn}{1572-9125}
+    \field{number}{2}
+    \field{pages}{146\bibrangedash 160}
+    \field{title}{Taylor expansion of the accumulated rounding error}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF01931367
+    \endverb
+    \field{volume}{16}
+    \field{journaltitle}{BIT Numerical Mathematics}
+    \field{year}{1976}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{5432472}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=LL}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{cancer;genetic algorithms;medical image processing;neural
+  nets;artificial neural network;breast cancer diagnosis;women;adaptive genetic
+  algorithm;macro-search capability;global optimization;computational
+  cost;Wisions breast cancer data set;Artificial neural networks;Breast
+  cancer;Genetic algorithms;Genetic mutations;Flowcharts;Economic
+  forecasting;Space technology;Data mining;Conference management;Knowledge
+  management;adaptive genetic algorithm;neural network;weights and
+  thresholds;breast cancer diagnosis}
+    \strng{namehash}{LLDM1}
+    \strng{fullhash}{LLDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{2010 Third International Conference on Knowledge
+  Discovery and Data Mining}
+    \verb{doi}
+    \verb 10.1109/WKDD.2010.148
+    \endverb
+    \field{pages}{593\bibrangedash 596}
+    \field{title}{An Evolutionary Artificial Neural Network Approach for Breast
+  Cancer Diagnosis}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Minsky:1988:PEE:50066}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MML}{%
+         family={Minsky},
+         familyi={M\bibinitperiod},
+         given={Marvin\bibnamedelima L.},
+         giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PSA}{%
+         family={Papert},
+         familyi={P\bibinitperiod},
+         given={Seymour\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \keyw{NN, Neural Networks}
+    \strng{namehash}{MMLPSA1}
+    \strng{fullhash}{MMLPSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{isbn}{0-262-63111-3}
+    \field{title}{Perceptrons: Expanded Edition}
+    \list{location}{1}{%
+      {Cambridge, MA, USA}%
+    }
+    \field{year}{1988}
+  \endentry
+
+  \entry{7033335}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=POP}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={O.\bibnamedelima P.},
+         giveni={O\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tiwari},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; generalisation (artificial intelligence);learning (artificial
+  intelligence);neural nets;optimisation;pattern classification;quantum
+  computing;quantum based binary neural network learning algorithm;network
+  structure optimisation;neurons;classification accuracy;hidden layer;training
+  accuracy;generalization accuracy;QANN;Neurons;Accuracy;Training;Biological
+  neural networks;Testing;Diabetes;Binary neural network;Quantum
+  processing;Qubits;Back propagation learning}
+    \strng{namehash}{POPTA1}
+    \strng{fullhash}{POPTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{booktitle}{2014 International Conference on Information Technology}
+    \verb{doi}
+    \verb 10.1109/ICIT.2014.29
+    \endverb
+    \field{pages}{270\bibrangedash 274}
+    \field{title}{Quantum Inspired Binary Neural Network Algorithm}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2017arXiv170309039S}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SV}{%
+         family={{Sze}},
+         familyi={S\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CYH}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={Y.-H.},
+         giveni={Y\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=YTJ}{%
+         family={{Yang}},
+         familyi={Y\bibinitperiod},
+         given={T.-J.},
+         giveni={T\bibinitperiod-J\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={{Emer}},
+         familyi={E\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Computer Science; Computer Vision; Pattern Recognition}
+    \strng{namehash}{SV+1}
+    \strng{fullhash}{SVCYHYTJEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1703.09039
+    \endverb
+    \field{title}{{Efficient Processing of Deep Neural Networks: A Tutorial and
+  Survey}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
+  \entry{2009arXiv0904.4587T}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TJM}{%
+         family={{Torres-Moreno}},
+         familyi={T\bibinitperiod},
+         given={J.-M.},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=GMB}{%
+         family={{Gordon}},
+         familyi={G\bibinitperiod},
+         given={M.\bibnamedelima B.},
+         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Science; Artificial Intelligence; Neural and
+  Evolutionary Computing}
+    \strng{namehash}{TJMGMB1}
+    \strng{fullhash}{TJMGMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{eprint}
+    \verb 0904.4587
+    \endverb
+    \field{title}{{Adaptive Learning with Binary Neurons}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.AI}
+    \field{month}{04}
+    \field{year}{2009}
+  \endentry
+
+  \entry{2018arXiv180500728V}{article}{}
+    \name{author}{6}{}{%
+      {{hash=VV}{%
+         family={{Volz}},
+         familyi={V\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={{Schrum}},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LSM}{%
+         family={{Lucas}},
+         familyi={L\bibinitperiod},
+         given={S.\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={{Smith}},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={{Risi}},
+         familyi={R\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Artificial Intelligence, Computer Science - Neural
+  and Evolutionary Computing}
+    \strng{namehash}{VV+1}
+    \strng{fullhash}{VVSJLJLSMSARS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{eprint}
+    \verb 1805.00728
+    \endverb
+    \field{title}{{Evolving Mario Levels in the Latent Space of a Deep
+  Convolutional Generative Adversarial Network}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.AI}
+    \field{month}{05}
+    \field{year}{2018}
+  \endentry
+
+  \entry{8393327}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=YB}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{NN-Evol; finance; exchange rates;forecasting theory;genetic
+  algorithms;neural nets;stock markets;time series;trees (mathematics);CVFNT
+  model;time series datasets;neural network;finance time series
+  prediction;complex-valued flexible neural tree model;artificial bee
+  colony;forecasting accuracy;genetic algorithm;Shanghai stock index;exchange
+  rates;Neural networks;Time series analysis;Brain modeling;Predictive
+  models;Forecasting;Data models;Indexes;evolutionary method;flexible neural
+  tree;complex-valued;artificial bee colony}
+    \strng{namehash}{YB+1}
+    \strng{fullhash}{YBZWGLMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{2017 13th International Conference on Natural
+  Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD)}
+    \verb{doi}
+    \verb 10.1109/FSKD.2017.8393327
+    \endverb
+    \field{pages}{54\bibrangedash 58}
+    \field{title}{Finance time series prediction using complex-valued flexible
+  neural tree model}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\endsortlist
+\endinput
