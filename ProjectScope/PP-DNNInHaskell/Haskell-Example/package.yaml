@@ -68,3 +68,4 @@ tests:
 # Command line
 # stack build --profile --executable-profiling --library-profiling
 # stack exec NNHaskell-exe -- +RTS -p -h -sstderr
+# stack ghci --main-is  NNHaskell:test:NNHaskell-test --test --trace --ghci-options "-fexternal-interpreter -prof"

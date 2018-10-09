@@ -12,18 +12,21 @@ function checkURL {
     fi
 }
 
-if [[ ! $1 = *"arxiv.org/abs/"* ]]; then
-  echo "This script needs a URL from arxiv like: arxiv.org/abs/*.*"
+if [[ ! $1 =~ [0-9]{4}.[0-9]{4,5} ]]; then
+  echo "This script needs a arXiv like: 1502.04623"
   exit 0
 fi
 
-checkURL $1
+ARXIVURL="https://arxiv.org/abs/"$1
+
+checkURL $ARXIVURL
 
 STR=$1
 set -f                      # avoid globbing (expansion of *).
 ARR=(${STR//\// })
 REF=${ARR[${#ARR[@]}-1]}
-FULLREF="http://adsabs.harvard.edu/cgi-bin/bib_query?data_type=BIBTEX&arXiv:$REF"
+echo $REF
+FULLREF="http://adsabs.harvard.edu/cgi-bin/bib_query?data_type=BIBTEX&arXiv:$1"
 
 HTMLBIB=$(curl -s $FULLREF | tail -n +5)
 NONELEMS=":|\/"

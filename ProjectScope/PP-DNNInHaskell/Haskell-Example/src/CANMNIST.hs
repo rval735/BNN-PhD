@@ -17,7 +17,8 @@ module CANMNIST
 -- )
 where
 
-import           CAN                 (distanceCANNN, trainWithEpochs)
+import           CAN                 (distanceCANNN, queryCANNN',
+                                      trainWithEpochs)
 import           CANRandom           (randomCANNeuron)
 import           CANTypes            (CANNeuron, NTT, TrainElem (..))
 import qualified Data.Array.Repa     as R
@@ -31,7 +32,7 @@ import qualified Data.Vector.Unboxed as V
 import           ListExtras          (num2Bin', replaceElem)
 import           System.Random       (mkStdGen, split)
 
-runMNIST :: IO ()
+runMNIST :: IO [CANNeuron]
 runMNIST = do
     print "runMNIST"
     -- Record start time
@@ -40,15 +41,18 @@ runMNIST = do
     let inputSize = 784
     -- let outputSize = 10
     let outputSize = 1
-    let epochs = 5
-    let nnSize = 16
-    let llSize = 2
-    let trainingN = 800
-    let testingN = 200
+    let outputSizeP = 10
+    let epochs = 3
+    let nnSize = 3
+    let llSize = 6
+    let trainingN = 100
+    let testingN = 20
     let mapEach = showResults inputSize outputSize trainingN testingN dta nnSize llSize epochs startTime
-    res <- mapM mapEach [0 .. 9]
-    print $ "Global Average: " ++ show (sum res / fromIntegral (length res))
-
+    nns' <- mapM mapEach [0 .. 9]
+    print "Finished with each"
+    res <- trainSnd inputSize outputSizeP trainingN testingN dta nnSize llSize epochs startTime nns'
+    -- print $ "Global Average: " ++ show (sum res / fromIntegral (length res))
+    return res
     -- return ()
 
 loadMNISTFiles :: String -> String -> IO [(Int, V.Vector Int)]
@@ -100,15 +104,32 @@ trainNN trainSet inputSize outputSize nnSize llSize epochs = do
     nnM
 
 createDataSet :: Int -> Int -> Int -> Int -> [(Int, V.Vector Int)] ->  Int -> ([TrainElem], [TrainElem])
-createDataSet inputSize outputSize trainingN testingN dta filterN  = (trainSet, testSet)
+createDataSet inputSize outputSize trainingN testingN dta filterN = (trainSet, testSet)
     where transformV = R.fromUnboxed (R.ix1 inputSize) . V.map (\z -> bool False True (z >= 50))
           -- transformNum = R.fromListUnboxed (R.ix1 outputSize) . reverse . num2Bin' outputSize
-          transformNum x = R.fromListUnboxed (R.ix1 outputSize) [bool False True (x == filterN)]
+          lstFilter x = bool (reverse $ num2Bin' outputSize x) [bool False True (x == filterN)] (x > -1)
+          transformNum x = R.fromListUnboxed (R.ix1 outputSize) $ lstFilter x
           trainSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) $ take trainingN dta
           testSet = map (\(x,y) -> TrainElem (transformV y) (transformNum x)) . take testingN $ drop trainingN dta
 
-showResults :: Int -> Int -> Int -> Int -> [(Int, V.Vector Int)] -> Int -> Int -> NTT -> UTCTime -> Int -> IO Float
+showResults :: Int -> Int -> Int -> Int -> [(Int, V.Vector Int)] -> Int -> Int -> NTT -> UTCTime -> Int -> IO [CANNeuron]
 showResults inputSize outputSize trainingN testingN dta nnSize llSize epochs startTime filterN = do
     let (trainSet, testSet) = createDataSet inputSize outputSize trainingN testingN dta filterN
     nn <- trainNN trainSet inputSize outputSize  nnSize llSize epochs
     printResults testSet startTime llSize epochs nn filterN
+    return nn
+
+trainSnd :: Int -> Int -> Int -> Int -> [(Int, V.Vector Int)] -> Int -> Int -> NTT -> UTCTime -> [[CANNeuron]] -> IO [CANNeuron]
+trainSnd inputSize outputSize trainingN testingN dta nnSize llSize epochs startTime nns = do
+    let dtaN = take (trainingN + testingN) $ drop (trainingN + testingN) dta
+    let (trainSetP, testSet) = createDataSet inputSize outputSize trainingN testingN dtaN (-1)
+    let transTrainP = trainCollapse nns trainSetP
+    nnp <- trainNN trainSetP inputSize outputSize nnSize llSize epochs
+    printResults testSet startTime llSize epochs nnp (-1)
+    return nnp
+
+trainCollapse :: [[CANNeuron]] -> [TrainElem] -> [TrainElem]
+trainCollapse nns trainSet = undefined
+    where qCs = P.map (`queryCANNN'` trainSet) nns
+          empty = createZNTTVU 0
+          trans = P.foldl (\(TrainElem _ x) y -> append y x) empty qCs
