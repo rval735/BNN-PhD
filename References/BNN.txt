@@ -49,7 +49,7 @@ Accelerating Binarized Convolutional Neural Networks with Software-Programmable 
 https://dl.acm.org/citation.cfm?doid=3020078.3021741
 
 Accelerating Binarized Neural Networks- Comparison of FPGA, CPU, GPU, and ASIC
-https://ieeexplore.ieee.org/document/7929192/
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7929192/
 
 FINN- A Framework for Fast, Scalable Binarized Neural Network Inference
 https://arxiv.org/abs/1612.07119
@@ -108,3 +108,54 @@ https://arxiv.org/abs/1704.02019
 
 Dorefa-net- training low bitwidth convolutional neural networks with low bitwidth gradients
 https://arxiv.org/abs/1606.06160
+
+A highly scalable 3D chip for binary neural network classification applications
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1206405
+
+A Survey on Methods and Theories of Quantized Neural Networks
+https://arxiv.org/abs/1808.04752
+
+Adaptive Learning with Binary Neurons
+https://arxiv.org/abs/0904.4587
+
+Binary Ensemble Neural Network- More Bits per Network or More Networks per Bit
+https://arxiv.org/abs/1806.07550
+
+Binary neural network with 16 Mb RRAM macro chip for classification and online training
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7838429
+
+Espresso- Efficient Forward Propagation for BCNNs
+https://arxiv.org/abs/1705.07175
+
+Hashing with Binary Matrix Pursuit
+https://arxiv.org/abs/1808.01990
+
+Learning in Memristive Neural Network Architectures using Analog Backpropagation Circuits
+https://arxiv.org/abs/1808.10631
+
+Learning to Train a Binary Neural Network
+https://arxiv.org/abs/1809.10463
+
+On the State Space of the Binary Neural Network
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4790104
+
+Quantum Inspired Binary Neural Network Algorithm
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7033335
+
+Training Binary Multilayer Neural Networks for Image Classification using Expectation Backpropagation
+https://arxiv.org/abs/1503.03562
+
+Training Compact Neural Networks with Binary Weights and Low Precision Activations
+https://arxiv.org/abs/1808.02631
+
+Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
+https://arxiv.org/abs/1712.05877
+
+Universal Perceptron and DNA-Like Learning Algorithm for Binary Neural Networks- Non-LSBF Implementation
+https://ieeexplore.ieee.org/document/5159360/
+
+Xcel-RAM- Accelerating Binary Neural Networks in High-Throughput SRAM Compute Arrays
+https://arxiv.org/abs/1807.00343
+
+XNOR Neural Engine- a Hardware Accelerator IP for 21.6 fJ-op Binary Neural Network Inference
+https://arxiv.org/abs/1807.03010

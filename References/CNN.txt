@@ -66,3 +66,16 @@ https://arxiv.org/abs/1512.06473
 
 Super SloMo: High Quality Estimation of Multiple Intermediate Frames for Video Interpolation
 https://arxiv.org/abs/1712.00080
+
+Non-local Neural Networks
+https://arxiv.org/abs/1711.07971
+
+Deep Residual Learning for Image Recognition
+https://arxiv.org/abs/1512.03385
+
+ImageNet Classification with deep convolutional neural networks
+https://dl.acm.org/citation.cfm?id=2999257
+https://www.nvidia.cn/content/tesla/pdf/machine-learning/imagenet-classification-with-deep-convolutional-nn.pdf
+
+SqueezeNet- AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size
+https://arxiv.org/abs/1602.07360

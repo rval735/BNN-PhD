@@ -39,3 +39,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1862656&CFID=101532557
 Selection and implementation of high-performance platforms in finance
 http://www.hpcfinance.eu/sites/www.hpcfinance.eu/files/D5_4_Kozikowski.pdf
 http://www.hpcfinance.eu/publications-and-presentations.html
+
+Fast inference of deep neural networks in FPGAs for particle physics
+https://arxiv.org/abs/1804.06913

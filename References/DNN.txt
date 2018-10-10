@@ -25,3 +25,6 @@ https://arxiv.org/abs/1306.0239
 
 Deeply-Supervised Nets
 https://arxiv.org/abs/1409.5185
+
+Expectation Backpropagation- Parameter-Free Training of Multilayer Neural Networks with Continuous or Discrete Weights
+https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-training-of-multilayer-neural-networks-with-continuous-or-discrete-weights.pdf

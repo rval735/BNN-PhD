@@ -88,6 +88,28 @@ Evolutionary convolutional neural networks: An application to handwriting recogn
 - Neuroevolution is an interesting field to explore the automatic design of NN topologies,
 - Requires a fraction of the time and no manual intervention
 
+Non-local Neural Networks
+-
+-
+-
+
+Deep Residual Learning for Image Recognition
+-
+-
+-
+
+ImageNet Classification with deep convolutional neural networks
+-
+-
+-
+
+SqueezeNet- AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size
+-
+-
+-
+
+< CNN
+
 ------> CNN-Fin
 
 Intraday prediction of Borsa Istanbul using convolutional neural networks and feature correlations
@@ -140,6 +162,12 @@ Deep learning for stock market prediction from financial news articles
 - Use two sources: news and technical indicators
 - Prefer sentence embedding rather than word embedding
 
+Finance time series prediction using complex-valued flexible neural tree model
+-
+-
+-
+
+< CNN-Fin
 ------> NN-Fin
 
 A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters 
@@ -220,6 +248,13 @@ Combined Spatial and Temporal Blocking for High-Performance Stencil Computation 
 - Implemented on OpenCL
 - Better performance despite lower memory bandwidth
 - Simpler FPGA code rather than GPU implementations
+
+Reconfigurable computing for Monte Carlo simulations: results and prospects of the Janus project
+-
+-
+-
+
+< FPGA
 
 ------> FPGA-NN
 
@@ -358,6 +393,12 @@ Selection and implementation of high-performance platforms in finance
 - It gives an overall overview of the whole system design
 - On the experiments, it shows an improvement of 200x over a Xeon CPU
 
+Fast inference of deep neural networks in FPGAs for particle physics
+-
+-
+-
+
+< FPGA-Fin
 ------> CNN-FPGA
 
 A General Neural Network Hardware Architecture on FPGA
@@ -542,6 +583,12 @@ Opening the Black Box of Deep Neural Networks via Information
 - Extend the theory around Information Theory of Deep Learning
 - Information Bottleneck: framework for finding approximate minimal sufficient statistics, or the optimal tradeoff between compression of X and prediction of Y
 
+Expectation Backpropagation- Parameter-Free Training of Multilayer Neural Networks with Continuous or Discrete Weights
+-
+-
+-
+
+< DNN
 -------> NN
 
 Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunities
@@ -776,6 +823,21 @@ Explorations of the Mean Field Theory Learning Algorithm
 - MFT is somewhat more biological than BP because the first depends only on neighboring neuron states
 - MFT could perform feature recognition, CAM or optimization, the last with learning features "turned off"
 
+A Survey on Deep Transfer Learning
+-
+-
+-
+
+Perceptrons- Expanded Edition
+-
+-
+-
+
+Taylor expansion of the accumulated rounding error
+-
+-
+-
+
 < NN
 -------> DCGAN
 
@@ -825,6 +887,17 @@ Autoencoding beyond pixels using a learned similarity metric
 - Trained with RMSProp using a learning rate of 0.0003 and a batch size of 64
 - Used to reconstruct dataset samples with visual attribute vectors added to their latent representations
 
+Evolving Mario Levels in the Latent Space of a Deep Convolutional Generative Adversarial Network
+-
+-
+-
+
+Learning to Protect Communications with Adversarial Neural Cryptography
+-
+-
+-
+
+< DCGAN
 --------> Languages
 
 A Comparative Study of Programming Languages in Rosetta Code
@@ -1086,6 +1159,89 @@ Associative content-addressable networks with exponentially many robust stable s
 - ACAM can be used to to generate robust labels for arbitrary input patterns in a high 
 dimensional space
 
+A highly scalable 3D chip for binary neural network classification applications
+- Binary neural networks require only TLUs and are very suitable for a VLSI implementation
+- The threshold function is indeed easy to implement in digital and this results in significant silicon area saving as compared to sigmoidal or radial basis functions used in multilayer perceptrons or RBF networks and implemented through area consuming look-up tables. 
+
+A Survey on Methods and Theories of Quantized Neural Networks
+-
+-
+-
+
+Adaptive Learning with Binary Neurons
+-
+-
+-
+
+Binary Ensemble Neural Network- More Bits per Network or More Networks per Bit
+-
+-
+-
+
+Binary neural network with 16 Mb RRAM macro chip for classification and online training
+-
+-
+-
+
+Espresso- Efficient Forward Propagation for BCNNs
+-
+-
+-
+
+Hashing with Binary Matrix Pursuit
+-
+-
+-
+
+Learning in Memristive Neural Network Architectures using Analog Backpropagation Circuits
+-
+-
+-
+
+Learning to Train a Binary Neural Network
+-
+-
+-
+
+On the State Space of the Binary Neural Network
+-
+-
+-
+
+Quantum Inspired Binary Neural Network Algorithm
+-
+-
+-
+
+Training Binary Multilayer Neural Networks for Image Classification using Expectation Backpropagation
+-
+-
+-
+
+Training Compact Neural Networks with Binary Weights and Low Precision Activations
+-
+-
+-
+
+Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
+-
+-
+-
+
+Universal Perceptron and DNA-Like Learning Algorithm for Binary Neural Networks- Non-LSBF Implementation
+- Use genetic algorithm ideas to train BNN
+- Focused on two problems: n-bit parity function and circular region approximation
+- Uses only boolean operations for the whole algorithm
+
+Xcel-RAM- Accelerating Binary Neural Networks in High-Throughput SRAM Compute Arrays
+-
+-
+-
+
+XNOR Neural Engine- a Hardware Accelerator IP for 21.6 fJ-op Binary Neural Network Inference
+-
+-
+-
 
 < BNN
 
@@ -1125,3 +1281,40 @@ Evolving simple programs for playing Atari games
 - Use pixel input and floating outputs, also all functions were constrained within [-1,1]
 - Improvement of scores over humans or other DNN techniques
 - Special mentions about KungFu Master, Centipede or Boxing for its win strategies
+
+Evolution Strategies as a Scalable Alternative to Reinforcement Learning
+-
+-
+-
+
+Optimization of Deep Neural Networks Using SoCs with OpenCL
+-
+-
+-
+
+An Evolutionary Artificial Neural Network Approach for Breast Cancer Diagnosis
+-
+-
+-
+
+An evolutionary neural network algorithm for max cut problems
+-
+-
+-
+
+Comparison of Neural Network and Hybrid Genetic Algorithm-Neural Network in Forecasting of Philippine Peso-US Dollar Exchange Rate
+-
+-
+-
+
+Convolution by Evolution- Differentiable Pattern Producing Networks
+-
+-
+-
+
+Finance time series prediction using complex-valued flexible neural tree model
+-
+-
+-
+
+< Evolutionary

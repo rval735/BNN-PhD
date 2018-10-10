@@ -39,3 +39,6 @@ https://arxiv.org/abs/1802.06195
 
 Reconfigurable computing for Monte Carlo simulations: results and prospects of the Janus project
 https://arxiv.org/abs/1204.4134
+
+
+https://arxiv.org/abs/1602.04283

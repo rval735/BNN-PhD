@@ -41,3 +41,6 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-65172
 
 Two-Step Disentanglement for Financial Data
 https://arxiv-org.ezproxy.auckland.ac.nz/abs/1709.00199
+
+Finance time series prediction using complex-valued flexible neural tree model
+https://ieeexplore.ieee.org/document/8393327

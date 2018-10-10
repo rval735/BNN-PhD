@@ -5,3 +5,24 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6173439/
 
 Evolving simple programs for playing Atari games
 https://arxiv.org/abs/1806.05695
+
+Evolution Strategies as a Scalable Alternative to Reinforcement Learning
+https://arxiv.org/abs/1703.03864
+
+Optimization of Deep Neural Networks Using SoCs with OpenCL
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5982427/
+
+An Evolutionary Artificial Neural Network Approach for Breast Cancer Diagnosis
+https://ieeexplore.ieee.org/document/5432472
+
+An evolutionary neural network algorithm for max cut problems
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/616215
+
+Comparison of Neural Network and Hybrid Genetic Algorithm-Neural Network in Forecasting of Philippine Peso-US Dollar Exchange Rate
+https://ieeexplore.ieee.org/abstract/document/7016218/
+
+Convolution by Evolution- Differentiable Pattern Producing Networks
+https://dl.acm.org/citation.cfm?id=2908890
+
+Finance time series prediction using complex-valued flexible neural tree model
+https://ieeexplore.ieee.org/document/8393327/

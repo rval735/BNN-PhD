@@ -1,12 +1,118 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-10-01 22:23:15 +1300 
+%% Created for RHVT at 2018-10-10 20:02:15 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{2016arXiv160204283L,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160204283L},
+	Archiveprefix = {arXiv},
+	Author = {{Lacey}, G. and {Taylor}, G.~W. and {Areibi}, S.},
+	Date-Added = {2018-10-10 00:44:17 +0000},
+	Date-Modified = {2018-10-10 00:44:26 +0000},
+	Eprint = {1602.04283},
+	Journal = {ArXiv e-prints},
+	Keywords = {FPGA; Computer Science - Distributed, Parallel, and Cluster Computing, Computer Science - Machine Learning, Statistics - Machine Learning},
+	Month = feb,
+	Primaryclass = {cs.DC},
+	Title = {{Deep Learning on FPGAs: Past, Present, and Future}},
+	Year = 2016}
+
+@article{Gadea-Girones:2018aa,
+	Abstract = {In the optimization of deep neural networks (DNNs) via evolutionary algorithms (EAs) and the implementation of the training necessary for the creation of the objective function, there is often a trade-off between efficiency and flexibility. Pure software solutions implemented on general-purpose processors tend to be slow because they do not take advantage of the inherent parallelism of these devices, whereas hardware realizations based on heterogeneous platforms (combining central processing units (CPUs), graphics processing units (GPUs) and/or field-programmable gate arrays (FPGAs)) are designed based on different solutions using methodologies supported by different languages and using very different implementation criteria. This paper first presents a study that demonstrates the need for a heterogeneous (CPU-GPU-FPGA) platform to accelerate the optimization of artificial neural networks (ANNs) using genetic algorithms. Second, the paper presents implementations of the calculations related to the individuals evaluated in such an algorithm on different (CPU- and FPGA-based) platforms, but with the same source files written in OpenCL. The implementation of individuals on remote, low-cost FPGA systems on a chip (SoCs) is found to enable the achievement of good efficiency in terms of performance per watt.},
+	An = {PMC5982427},
+	Author = {Gadea-Giron{\'e}s, Rafael and Colom-Palero, Ricardo and Herrero-Bosch, Vicente},
+	Date = {2018/05/},
+	Date-Added = {2018-10-10 00:41:23 +0000},
+	Date-Modified = {2018-10-10 00:41:45 +0000},
+	Db = {PMC},
+	Doi = {10.3390/s18051384},
+	Isbn = {1424-8220},
+	J1 = {Sensors (Basel)},
+	Journal = {Sensors (Basel, Switzerland)},
+	Keywords = {Evolutionary; SoC; OpenCL},
+	Month = {05},
+	Number = {5},
+	Pages = {1384},
+	Publisher = {MDPI},
+	Title = {Optimization of Deep Neural Networks Using SoCs with OpenCL},
+	Ty = {JOUR},
+	U1 = {29710875{$[$}pmid{$]$}; sensors-18-01384{$[$}PII{$]$}},
+	Url = {http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5982427/},
+	Volume = {18},
+	Year = {2018},
+	Year1 = {2018/04/30},
+	Year2 = {2018/03/08/received},
+	Year3 = {2018/04/27/accepted},
+	Bdsk-Url-1 = {http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5982427/},
+	Bdsk-Url-2 = {https://doi.org/10.3390/s18051384}}
+
+@article{2017arXiv171205877J,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2017arXiv171205877J},
+	Archiveprefix = {arXiv},
+	Author = {{Jacob}, B. and {Kligys}, S. and {Chen}, B. and {Zhu}, M. and {Tang}, M. and {Howard}, A. and {Adam}, H. and {Kalenichenko}, D.},
+	Date-Added = {2018-10-10 00:07:20 +0000},
+	Date-Modified = {2018-10-10 00:07:26 +0000},
+	Eprint = {1712.05877},
+	Journal = {ArXiv e-prints},
+	Keywords = {BNN; Computer Science - Machine Learning, Statistics - Machine Learning},
+	Month = dec,
+	Title = {{Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference}},
+	Year = 2017}
+
+@inproceedings{Soudry2014ExpectationBP,
+	Abstract = {Multilayer Neural Networks (MNNs) are commonly trained using gradient
+descent-based methods, such as BackPropagation (BP). Inference in probabilistic
+graphical models is often done using variational Bayes methods, such as Expectation
+Propagation (EP). We show how an EP based approach can also be used
+to train deterministic MNNs. Specifically, we approximate the posterior of the
+weights given the data using a ``mean-field'' factorized distribution, in an online
+setting. Using online EP and the central limit theorem we find an analytical approximation
+to the Bayes update of this posterior, as well as the resulting Bayes
+estimates of the weights and outputs.
+Despite a different origin, the resulting algorithm, Expectation BackPropagation
+(EBP), is very similar to BP in form and efficiency. However, it has several additional
+advantages: (1) Training is parameter-free, given initial conditions (prior)
+and the MNN architecture. This is useful for large-scale problems, where parameter
+tuning is a major challenge. (2) The weights can be restricted to have discrete
+values. This is especially useful for implementing trained MNNs in precision limited
+hardware chips, thus improving their speed and energy efficiency by several
+orders of magnitude.
+We test the EBP algorithm numerically in eight binary text classification tasks.
+In all tasks, EBP outperforms: (1) standard BP with the optimal constant learning
+rate (2) previously reported state of the art. Interestingly, EBP-trained MNNs with
+binary weights usually perform better than MNNs with continuous (real) weights
+- if we average the MNN output using the inferred posterior.},
+	Annote = {https://www.semanticscholar.org/paper/Expectation-Backpropagation%3A-Parameter-Free-of-with-Soudry-Hubara/0b88ed755c4dcd0ac3d25842a5bbbe4ebcefeeec
+
+https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-training-of-multilayer-neural-networks-with-continuous-or-discrete-weights.pdf},
+	Author = {Daniel Soudry and Itay Hubara and Ron Meir},
+	Booktitle = {NIPS},
+	Date-Added = {2018-10-09 23:57:10 +0000},
+	Date-Modified = {2018-10-10 00:00:53 +0000},
+	Keywords = {DNN; Backpropagation; Discrete weight space; Continuos weight space},
+	Title = {Expectation Backpropagation: Parameter-Free Training of Multilayer Neural Networks with Continuous or Discrete Weights},
+	Year = {2014}}
+
+@article{2018arXiv180607550Z,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180607550Z},
+	Archiveprefix = {arXiv},
+	Author = {{Zhu}, S. and {Dong}, X. and {Su}, H.},
+	Date-Added = {2018-10-09 23:07:05 +0000},
+	Date-Modified = {2018-10-09 23:07:12 +0000},
+	Eprint = {1806.07550},
+	Journal = {ArXiv e-prints},
+	Keywords = {BNN; Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+	Month = jun,
+	Title = {{Binary Ensemble Neural Network: More Bits per Network or More Networks per Bit?}},
+	Year = 2018}
 
 @article{2016arXiv160207360I,
 	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
@@ -72,10 +178,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Cakir}, F. and {He}, K. and {Sclaroff}, S.},
 	Date-Added = {2018-09-30 02:43:46 +0000},
-	Date-Modified = {2018-09-30 02:43:53 +0000},
+	Date-Modified = {2018-10-09 23:14:42 +0000},
 	Eprint = {1808.01990},
 	Journal = {ArXiv e-prints},
-	Keywords = {CNN; Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, Statistics - Machine Learning},
+	Keywords = {BNN; Computer Science - Machine Learning, Computer Science - Computer Vision and Pattern Recognition, Statistics - Machine Learning},
 	Month = aug,
 	Title = {{Hashing with Binary Matrix Pursuit}},
 	Year = 2018}
@@ -144,10 +250,11 @@
 	Archiveprefix = {arXiv},
 	Author = {{Duarte}, J. and {Han}, S. and {Harris}, P. and {Jindariani}, S. and {Kreinar}, E. and {Kreis}, B. and {Ngadiuba}, J. and {Pierini}, M. and {Rivera}, R. and {Tran}, N. and {Wu}, Z.},
 	Date-Added = {2018-09-30 01:22:32 +0000},
-	Date-Modified = {2018-09-30 01:22:32 +0000},
+	Date-Modified = {2018-10-10 00:48:54 +0000},
 	Doi = {10.1088/1748-0221/13/07/P07027},
 	Eprint = {1804.06913},
 	Journal = {Journal of Instrumentation},
+	Keywords = {FPGA-Fin; NN; Physics},
 	Month = jul,
 	Pages = {P07027},
 	Primaryclass = {physics.ins-det},
@@ -192,9 +299,9 @@
 	Author = {M. L. R. Torregoza and E. P. Dadios},
 	Booktitle = {2014 International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control, Environment and Management (HNICEM)},
 	Date-Added = {2018-09-29 02:58:04 +0000},
-	Date-Modified = {2018-09-29 02:59:02 +0000},
+	Date-Modified = {2018-10-10 06:51:39 +0000},
 	Doi = {10.1109/HNICEM.2014.7016218},
-	Keywords = {NN-Evol;banking;forecasting theory;genetic algorithms;neural nets;pricing;hybrid genetic algorithm neural network;Philippine peso US dollar exchange rate forecasting;Philippine dealing system;PDS;central bank;demand and supply analysis;artificial neural network;consumer price index;interest rate;inflation rate;lending interest rate;purchasing power;foreign exchange rates;banking;training data;Exchange rates;Genetic algorithms;Artificial neural networks;Forecasting;Conferences;Economic indicators;Artificial Neural Network;forecasting;prediction;exchange rate;evolutionary algorithm},
+	Keywords = {Evolutionary;banking;forecasting theory;genetic algorithms;neural nets;pricing;hybrid genetic algorithm neural network;Philippine peso US dollar exchange rate forecasting;Philippine dealing system;PDS;central bank;demand and supply analysis;artificial neural network;consumer price index;interest rate;inflation rate;lending interest rate;purchasing power;foreign exchange rates;banking;training data;Exchange rates;Genetic algorithms;Artificial neural networks;Forecasting;Conferences;Economic indicators;Artificial Neural Network;forecasting;prediction;exchange rate;evolutionary algorithm},
 	Month = {Nov},
 	Pages = {1-5},
 	Title = {Comparison of neural network and hybrid genetic algorithm-neural network in forecasting of Philippine Peso-US Dollar exchange rate},
@@ -264,9 +371,9 @@
 	Author = {N. Funabiki and J. Kitamichi and S. Nishikawa},
 	Booktitle = {Proceedings of International Conference on Neural Networks (ICNN'97)},
 	Date-Added = {2018-09-28 09:23:32 +0000},
-	Date-Modified = {2018-09-28 09:23:48 +0000},
+	Date-Modified = {2018-10-10 06:34:05 +0000},
 	Doi = {10.1109/ICNN.1997.616215},
-	Keywords = {NN-Evol;neural nets;genetic algorithms;set theory;graph theory;minimisation;computational complexity;evolutionary neural network algorithm;ENN;max cut problems;undirected graph;NP-hard problem;partition;disjoint subsets;evolutionary initialization scheme;energy minimization criteria;binary neural network;randomly weighted complete graphs;unweighted random graphs;maximum neural network;mean field annealing;simulated annealing;greedy algorithm;Neural networks;Neurons;Simulated annealing;NP-hard problem;Equations;Multi-layer neural network;Computer networks;Minimization;Greedy algorithms;Approximation algorithms},
+	Keywords = {Evolutionary; neural nets;genetic algorithms;set theory;graph theory;minimisation;computational complexity;evolutionary neural network algorithm;ENN;max cut problems;undirected graph;NP-hard problem;partition;disjoint subsets;evolutionary initialization scheme;energy minimization criteria;binary neural network;randomly weighted complete graphs;unweighted random graphs;maximum neural network;mean field annealing;simulated annealing;greedy algorithm;Neural networks;Neurons;Simulated annealing;NP-hard problem;Equations;Multi-layer neural network;Computer networks;Minimization;Greedy algorithms;Approximation algorithms},
 	Month = {June},
 	Pages = {1260-1265 vol.2},
 	Title = {An evolutionary neural network algorithm for max cut problems},
@@ -294,10 +401,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{He}, K. and {Zhang}, X. and {Ren}, S. and {Sun}, J.},
 	Date-Added = {2018-09-27 11:00:34 +0000},
-	Date-Modified = {2018-09-27 11:00:34 +0000},
+	Date-Modified = {2018-10-10 00:25:10 +0000},
 	Eprint = {1512.03385},
 	Journal = {ArXiv e-prints},
-	Keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	Keywords = {CNN; Computer Science - Computer Vision and Pattern Recognition},
 	Month = dec,
 	Primaryclass = {cs.CV},
 	Title = {{Deep Residual Learning for Image Recognition}},
@@ -309,10 +416,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Fernando}, C. and {Banarse}, D. and {Reynolds}, M. and {Besse}, F. and {Pfau}, D. and {Jaderberg}, M. and {Lanctot}, M. and {Wierstra}, D.},
 	Date-Added = {2018-09-26 08:54:27 +0000},
-	Date-Modified = {2018-09-26 08:55:12 +0000},
+	Date-Modified = {2018-10-10 07:00:44 +0000},
 	Eprint = {1606.02580},
 	Journal = {ArXiv e-prints},
-	Keywords = {NN-Evol; Computer Science; Neural; Evolutionary Computing; Computer Vision; Pattern Recognition; Machine Learning;},
+	Keywords = {Evolutionary; Computer Science; Neural; Evolutionary Computing; Computer Vision; Pattern Recognition; Machine Learning;},
 	Month = jun,
 	Title = {{Convolution by Evolution: Differentiable Pattern Producing Networks}},
 	Year = 2016}
@@ -323,10 +430,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Salimans}, T. and {Ho}, J. and {Chen}, X. and {Sidor}, S. and {Sutskever}, I.},
 	Date-Added = {2018-09-26 08:48:55 +0000},
-	Date-Modified = {2018-09-26 08:48:55 +0000},
+	Date-Modified = {2018-10-10 00:38:32 +0000},
 	Eprint = {1703.03864},
 	Journal = {ArXiv e-prints},
-	Keywords = {Statistics - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	Keywords = {Evolutionary; Statistics - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
 	Month = mar,
 	Primaryclass = {stat.ML},
 	Title = {{Evolution Strategies as a Scalable Alternative to Reinforcement Learning}},
@@ -338,10 +445,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Tan}, C. and {Sun}, F. and {Kong}, T. and {Zhang}, W. and {Yang}, C. and {Liu}, C.},
 	Date-Added = {2018-09-26 08:24:11 +0000},
-	Date-Modified = {2018-09-26 08:24:11 +0000},
+	Date-Modified = {2018-10-10 00:49:11 +0000},
 	Eprint = {1808.01974},
 	Journal = {ArXiv e-prints},
-	Keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	Keywords = {NN; Computer Science - Machine Learning, Statistics - Machine Learning},
 	Month = aug,
 	Title = {{A Survey on Deep Transfer Learning}},
 	Year = 2018}
@@ -366,10 +473,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Abadi}, M. and {Andersen}, D.~G.},
 	Date-Added = {2018-09-26 05:39:12 +0000},
-	Date-Modified = {2018-09-26 05:39:12 +0000},
+	Date-Modified = {2018-10-10 00:36:22 +0000},
 	Eprint = {1610.06918},
 	Journal = {ArXiv e-prints},
-	Keywords = {Computer Science - Cryptography and Security, Computer Science - Machine Learning},
+	Keywords = {DCGAN; Computer Science - Cryptography and Security, Computer Science - Machine Learning},
 	Month = oct,
 	Primaryclass = {cs.CR},
 	Title = {{Learning to Protect Communications with Adversarial Neural Cryptography}},
@@ -381,10 +488,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Volz}, V. and {Schrum}, J. and {Liu}, J. and {Lucas}, S.~M. and {Smith}, A. and {Risi}, S.},
 	Date-Added = {2018-09-26 05:35:11 +0000},
-	Date-Modified = {2018-09-26 05:35:11 +0000},
+	Date-Modified = {2018-10-10 00:33:52 +0000},
 	Eprint = {1805.00728},
 	Journal = {ArXiv e-prints},
-	Keywords = {Computer Science - Artificial Intelligence, Computer Science - Neural and Evolutionary Computing},
+	Keywords = {DCGAN; Evolutionary; Computer Science - Artificial Intelligence, Computer Science - Neural and Evolutionary Computing},
 	Month = may,
 	Primaryclass = {cs.AI},
 	Title = {{Evolving Mario Levels in the Latent Space of a Deep Convolutional Generative Adversarial Network}},
@@ -408,9 +515,9 @@
 	Author = {B. Yang and W. Zhang and L. Gong and H. Ma},
 	Booktitle = {2017 13th International Conference on Natural Computation, Fuzzy Systems and Knowledge Discovery (ICNC-FSKD)},
 	Date-Added = {2018-09-26 01:45:32 +0000},
-	Date-Modified = {2018-09-26 01:55:03 +0000},
+	Date-Modified = {2018-10-10 07:02:14 +0000},
 	Doi = {10.1109/FSKD.2017.8393327},
-	Keywords = {NN-Evol; finance; exchange rates;forecasting theory;genetic algorithms;neural nets;stock markets;time series;trees (mathematics);CVFNT model;time series datasets;neural network;finance time series prediction;complex-valued flexible neural tree model;artificial bee colony;forecasting accuracy;genetic algorithm;Shanghai stock index;exchange rates;Neural networks;Time series analysis;Brain modeling;Predictive models;Forecasting;Data models;Indexes;evolutionary method;flexible neural tree;complex-valued;artificial bee colony},
+	Keywords = {Evolutionary; finance; exchange rates;forecasting theory;genetic algorithms;neural nets;stock markets;time series;trees (mathematics);CVFNT model;time series datasets;neural network;finance time series prediction;complex-valued flexible neural tree model;artificial bee colony;forecasting accuracy;genetic algorithm;Shanghai stock index;exchange rates;Neural networks;Time series analysis;Brain modeling;Predictive models;Forecasting;Data models;Indexes;evolutionary method;flexible neural tree;complex-valued;artificial bee colony},
 	Month = {July},
 	Pages = {54-58},
 	Title = {Finance time series prediction using complex-valued flexible neural tree model},
@@ -421,9 +528,9 @@
 	Author = {L. Liu and M. Deng},
 	Booktitle = {2010 Third International Conference on Knowledge Discovery and Data Mining},
 	Date-Added = {2018-09-26 01:39:28 +0000},
-	Date-Modified = {2018-09-26 01:39:28 +0000},
+	Date-Modified = {2018-10-10 06:13:15 +0000},
 	Doi = {10.1109/WKDD.2010.148},
-	Keywords = {cancer;genetic algorithms;medical image processing;neural nets;artificial neural network;breast cancer diagnosis;women;adaptive genetic algorithm;macro-search capability;global optimization;computational cost;Wisions breast cancer data set;Artificial neural networks;Breast cancer;Genetic algorithms;Genetic mutations;Flowcharts;Economic forecasting;Space technology;Data mining;Conference management;Knowledge management;adaptive genetic algorithm;neural network;weights and thresholds;breast cancer diagnosis},
+	Keywords = {Evolutionary; cancer;genetic algorithms;medical image processing;neural nets;artificial neural network;breast cancer diagnosis;women;adaptive genetic algorithm;macro-search capability;global optimization;computational cost;Wisions breast cancer data set;Artificial neural networks;Breast cancer;Genetic algorithms;Genetic mutations;Flowcharts;Economic forecasting;Space technology;Data mining;Conference management;Knowledge management;adaptive genetic algorithm;neural network;weights and thresholds;breast cancer diagnosis},
 	Month = {Jan},
 	Pages = {593-596},
 	Title = {An Evolutionary Artificial Neural Network Approach for Breast Cancer Diagnosis},
@@ -1009,10 +1116,10 @@
 	Archiveprefix = {arXiv},
 	Author = {{Cheng}, Z. and {Soudry}, D. and {Mao}, Z. and {Lan}, Z.},
 	Date-Added = {2018-05-19 11:32:04 +0000},
-	Date-Modified = {2018-05-19 11:32:04 +0000},
+	Date-Modified = {2018-10-09 23:48:40 +0000},
 	Eprint = {1503.03562},
 	Journal = {ArXiv e-prints},
-	Keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning},
+	Keywords = {BNN; Computer Science - Neural and Evolutionary Computing, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning},
 	Month = mar,
 	Title = {{Training Binary Multilayer Neural Networks for Image Classification using Expectation Backpropagation}},
 	Year = 2015}
@@ -1105,7 +1212,7 @@
 	Title = {{DOOM Level Generation using Generative Adversarial Networks}},
 	Year = 2018,
 	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QgS4uL1JlZmVyZW5jZXMvQ2l0YXRpb25zL05OL09uIFBpeGVsLVdpc2UgRXhwbGFuYXRpb25zIGZvciBOb24tTGluZWFyIENsYXNzaWZpZXIgRGVjaXNpb25zIGJ5IExheWVyLVdpc2UgUmVsZXZhbmNlIFByb3BhZ2F0aW9uLmJpYtIXCxgZV05TLmRhdGFPEQLMAAAAAALMAAIAAAlNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fT24gUGl4ZWwtV2lzZSBFeHBsI0ZGRkZGRkZGLmJpYgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAAAk5OAAIAly86VXNlcnM6cmh2dDpEZXY6Q05OLVBoZDpSZWZlcmVuY2VzOkNpdGF0aW9uczpOTjpPbiBQaXhlbC1XaXNlIEV4cGxhbmF0aW9ucyBmb3IgTm9uLUxpbmVhciBDbGFzc2lmaWVyIERlY2lzaW9ucyBieSBMYXllci1XaXNlIFJlbGV2YW5jZSBQcm9wYWdhdGlvbi5iaWIAAA4AzgBmAE8AbgAgAFAAaQB4AGUAbAAtAFcAaQBzAGUAIABFAHgAcABsAGEAbgBhAHQAaQBvAG4AcwAgAGYAbwByACAATgBvAG4ALQBMAGkAbgBlAGEAcgAgAEMAbABhAHMAcwBpAGYAaQBlAHIAIABEAGUAYwBpAHMAaQBvAG4AcwAgAGIAeQAgAEwAYQB5AGUAcgAtAFcAaQBzAGUAIABSAGUAbABlAHYAYQBuAGMAZQAgAFAAcgBvAHAAYQBnAGEAdABpAG8AbgAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAlVVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvTk4vT24gUGl4ZWwtV2lzZSBFeHBsYW5hdGlvbnMgZm9yIE5vbi1MaW5lYXIgQ2xhc3NpZmllciBEZWNpc2lvbnMgYnkgTGF5ZXItV2lzZSBSZWxldmFuY2UgUHJvcGFnYXRpb24uYmliAAATAAEvAAAVAAIAC///AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOARIBFwEfA+8D8QP2BAEECgQYBBwEIwQsBDEEPgRBBFMEVgRbAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAABF0=},
-	Bdsk-File-2 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QOS4uL1JlZmVyZW5jZXMvQ2l0YXRpb25zL0JOTi9Ob24tbG9jYWwgTmV1cmFsIE5ldHdvcmtzLmJpYtIXCxgZV05TLmRhdGFPEQGsAAAAAAGsAAIAAAlNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8dTm9uLWxvY2FsIE5ldXJhbCBOZXR3b3Jrcy5iaWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAAA0JOTgAAAgBPLzpVc2VyczpyaHZ0OkRldjpDTk4tUGhkOlJlZmVyZW5jZXM6Q2l0YXRpb25zOkJOTjpOb24tbG9jYWwgTmV1cmFsIE5ldHdvcmtzLmJpYgAADgA8AB0ATgBvAG4ALQBsAG8AYwBhAGwAIABOAGUAdQByAGEAbAAgAE4AZQB0AHcAbwByAGsAcwAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIATVVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvQk5OL05vbi1sb2NhbCBOZXVyYWwgTmV0d29ya3MuYmliAAATAAEvAAAVAAIAC///AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAMoAzwDXAocCiQKOApkCogKwArQCuwLEAskC1gLZAusC7gLzAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAvU=}}
+	Bdsk-File-2 = {YnBsaXN0MDDUAQIDBAUGJCVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKgHCBMUFRYaIVUkbnVsbNMJCgsMDxJXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6INDoACgAOiEBGABIAFgAdccmVsYXRpdmVQYXRoWWFsaWFzRGF0YV8QOS4uL1JlZmVyZW5jZXMvQ2l0YXRpb25zL0NOTi9Ob24tbG9jYWwgTmV1cmFsIE5ldHdvcmtzLmJpYtIXCxgZV05TLmRhdGFPEQGsAAAAAAGsAAIAAAlNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8dTm9uLWxvY2FsIE5ldXJhbCBOZXR3b3Jrcy5iaWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAAA0NOTgAAAgBPLzpVc2VyczpyaHZ0OkRldjpDTk4tUGhkOlJlZmVyZW5jZXM6Q2l0YXRpb25zOkNOTjpOb24tbG9jYWwgTmV1cmFsIE5ldHdvcmtzLmJpYgAADgA8AB0ATgBvAG4ALQBsAG8AYwBhAGwAIABOAGUAdQByAGEAbAAgAE4AZQB0AHcAbwByAGsAcwAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIATVVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvQ05OL05vbi1sb2NhbCBOZXVyYWwgTmV0d29ya3MuYmliAAATAAEvAAAVAAIAC///AACABtIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNdTlNNdXRhYmxlRGF0YaMdHyBWTlNEYXRhWE5TT2JqZWN00hscIiNcTlNEaWN0aW9uYXJ5oiIgXxAPTlNLZXllZEFyY2hpdmVy0SYnVHJvb3SAAQAIABEAGgAjAC0AMgA3AEAARgBNAFUAYABnAGoAbABuAHEAcwB1AHcAhACOAMoAzwDXAocCiQKOApkCogKwArQCuwLEAskC1gLZAusC7gLzAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAvU=}}
 
 @inproceedings{5234726,
 	Author = {X. Chen and Q. Ma and T. Alkharobi},
@@ -3190,11 +3297,11 @@ In this thesis, research is done on the co-simulation of ClaSH and traditional H
 	Author = {J. F. Chen and W. L. Chen and C. P. Huang and S. H. Huang and A. P. Chen},
 	Booktitle = {2016 7th International Conference on Cloud Computing and Big Data (CCBD)},
 	Date-Added = {2018-02-05 09:05:50 +0000},
-	Date-Modified = {2018-02-05 09:05:50 +0000},
+	Date-Modified = {2018-10-10 00:34:11 +0000},
 	Doi = {10.1109/CCBD.2016.027},
 	Journal = {2016 7th International Conference on Cloud Computing and Big Data (CCBD)},
 	Journal1 = {2016 7th International Conference on Cloud Computing and Big Data (CCBD)},
-	Keywords = {decision support systems; feature extraction; feedforward neural nets; financial data processing; learning (artificial intelligence); stock markets; time series; FinTech; Taiwan Stock Index Futures; artificial intelligence; deep convolutional neural networks; deep learning; feature extraction; financial markets; financial time-series data analysis; historical datasets; intelligent trading decision support system; multimedia fields; next financial technology generation; numerical features; planar feature representation; time-series data prediction; time-series data processing; trading simulation application; Data models; Feature extraction; Machine learning; Market research; Neural networks; Time series analysis; Training; Deep learning; convolutional neural networks; data visualization; machine learning; trend prediction},
+	Keywords = {CNN-FIN; decision support systems; feature extraction; feedforward neural nets; financial data processing; learning (artificial intelligence); stock markets; time series; FinTech; Taiwan Stock Index Futures; artificial intelligence; deep convolutional neural networks; deep learning; feature extraction; financial markets; financial time-series data analysis; historical datasets; intelligent trading decision support system; multimedia fields; next financial technology generation; numerical features; planar feature representation; time-series data prediction; time-series data processing; trading simulation application; Data models; Feature extraction; Machine learning; Market research; Neural networks; Time series analysis; Training; Deep learning; convolutional neural networks; data visualization; machine learning; trend prediction},
 	Pages = {87--92},
 	Title = {Financial Time-Series Data Analysis Using Deep Convolutional Neural Networks},
 	Ty = {CONF},

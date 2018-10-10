@@ -131,3 +131,12 @@ Explorations of the Mean Field Theory Learning Algorithm
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/0893608089900452 
 http://home.thep.lu.se/~carsten/pubs/lu_tp_89_02.pdf
 https://researchr.org/publication/PetersonH89/
+
+A Survey on Deep Transfer Learning
+https://arxiv.org/abs/1808.01974
+
+Perceptrons- Expanded Edition
+https://dl.acm.org/citation.cfm?id=50066
+
+Taylor expansion of the accumulated rounding error
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/BF01931367
