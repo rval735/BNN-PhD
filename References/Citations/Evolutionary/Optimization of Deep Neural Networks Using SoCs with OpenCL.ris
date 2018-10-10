@@ -1,0 +1,24 @@
+TY  - JOUR
+DB  - PMC
+AU  - Gadea-Gironés, Rafael
+AU  - Colom-Palero, Ricardo
+AU  - Herrero-Bosch, Vicente
+T1  - Optimization of Deep Neural Networks Using SoCs with OpenCL
+SN  - 1424-8220
+Y1  - 2018/05/
+PY  - 2018/04/30
+PY  - 2018/03/08/received
+PY  - 2018/04/27/accepted
+AB  - In the optimization of deep neural networks (DNNs) via evolutionary algorithms (EAs) and the implementation of the training necessary for the creation of the objective function, there is often a trade-off between efficiency and flexibility. Pure software solutions implemented on general-purpose processors tend to be slow because they do not take advantage of the inherent parallelism of these devices, whereas hardware realizations based on heterogeneous platforms (combining central processing units (CPUs), graphics processing units (GPUs) and/or field-programmable gate arrays (FPGAs)) are designed based on different solutions using methodologies supported by different languages and using very different implementation criteria. This paper first presents a study that demonstrates the need for a heterogeneous (CPU-GPU-FPGA) platform to accelerate the optimization of artificial neural networks (ANNs) using genetic algorithms. Second, the paper presents implementations of the calculations related to the individuals evaluated in such an algorithm on different (CPU- and FPGA-based) platforms, but with the same source files written in OpenCL. The implementation of individuals on remote, low-cost FPGA systems on a chip (SoCs) is found to enable the achievement of good efficiency in terms of performance per watt. 
+SP  - 1384
+VL  - 18
+IS  - 5
+U1  - 29710875[pmid]
+DO  - 10.3390/s18051384
+AN  - PMC5982427
+UR  - http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5982427/
+U1  - sensors-18-01384[PII]
+J1  - Sensors (Basel)
+JF  - Sensors (Basel, Switzerland)
+PB  - MDPI
+ER  - 
