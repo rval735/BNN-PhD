@@ -838,6 +838,11 @@ Taylor expansion of the accumulated rounding error
 -
 -
 
+Transfer Learning for Visual Categorization- A Survey
+-
+-
+-
+
 < NN
 -------> DCGAN
 
@@ -1239,6 +1244,51 @@ Xcel-RAM- Accelerating Binary Neural Networks in High-Throughput SRAM Compute Ar
 -
 
 XNOR Neural Engine- a Hardware Accelerator IP for 21.6 fJ-op Binary Neural Network Inference
+-
+-
+-
+
+Accelerator Design with Effective Resource Utilization for Binary Convolutional Neural Networks on an FPGA
+-
+-
+-
+
+Stochastic weights binary neural networks on FPGA
+-
+-
+-
+
+BRein Memory- A Single-Chip Binary-Ternary Reconfigurable in-Memory Deep Neural Network Accelerator Achieving 1.4 TOPS at 0.6 W
+-
+-
+-
+
+BitFlow- Exploiting Vector Parallelism for Binary Neural Networks on CPU
+-
+-
+-
+
+An Energy-Efficient Architecture for Binary Weight Convolutional Neural Networks
+-
+-
+-
+
+XNORBIN- A 95 TOp-s-W hardware accelerator for binary convolutional neural networks
+-
+-
+-
+
+True Gradient-Based Training of Deep Binary Activated Neural Networks Via Continuous Binarization
+-
+-
+-
+
+Fully parallel RRAM synaptic array for implementing binary neural network with (+1, −1) weights and (+1, 0) neurons
+-
+-
+-
+
+Hyperdrive- A Systolically Scalable Binary-Weight CNN Inference Engine for mW IoT End-Nodes
 -
 -
 -

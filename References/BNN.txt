@@ -16,6 +16,7 @@ https://dl.acm.org/citation.cfm?id=3108031
 ReBNet- Residual Binarized Neural Network
 https://arxiv.org/abs/1711.01243
 https://openreview.net/forum?id=SJtfOEn6-
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8457633
 
 Recursive Binary Neural Network Learning Model with 2.28b-Weight Storage Requirement
 https://arxiv.org/abs/1709.05306
@@ -159,3 +160,30 @@ https://arxiv.org/abs/1807.00343
 
 XNOR Neural Engine- a Hardware Accelerator IP for 21.6 fJ-op Binary Neural Network Inference
 https://arxiv.org/abs/1807.03010
+
+Accelerator Design with Effective Resource Utilization for Binary Convolutional Neural Networks on an FPGA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8457667
+
+Stochastic weights binary neural networks on FPGA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8394726
+
+BRein Memory- A Single-Chip Binary-Ternary Reconfigurable in-Memory Deep Neural Network Accelerator Achieving 1.4 TOPS at 0.6 W
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8226999
+
+BitFlow- Exploiting Vector Parallelism for Binary Neural Networks on CPU
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8425178
+
+An Energy-Efficient Architecture for Binary Weight Convolutional Neural Networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8103902
+
+XNORBIN- A 95 TOp-s-W hardware accelerator for binary convolutional neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8373076
+
+True Gradient-Based Training of Deep Binary Activated Neural Networks Via Continuous Binarization
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8461456
+
+Fully parallel RRAM synaptic array for implementing binary neural network with (+1, −1) weights and (+1, 0) neurons
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8297384
+
+Hyperdrive- A Systolically Scalable Binary-Weight CNN Inference Engine for mW IoT End-Nodes
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8429420

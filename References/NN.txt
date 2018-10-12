@@ -140,3 +140,6 @@ https://dl.acm.org/citation.cfm?id=50066
 
 Taylor expansion of the accumulated rounding error
 https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/BF01931367
+
+Transfer Learning for Visual Categorization- A Survey
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6847217

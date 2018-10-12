@@ -16,7 +16,7 @@ FULLREF="https://ieeexplore.ieee.org/xpl/downloadCitations?download-format=downl
 HTMLBIB=$(curl -s $FULLREF)
 CLEANED=$(echo $HTMLBIB | perl -pe 's/<br>//g')
 NAME=$(echo -e $CLEANED | perl -ne 'print $1 if /\stitle\=\{([\w*|\W*|\s*|\d*|\D*]*)},\s*y/s')
-NAME2=$(echo -e $NAME | perl -pe 's/:/-/g')
+NAME2=$(echo -e $NAME | perl -pe 's/[:|\/]/-/g')
 
 if [ -z "$NAME2" ]
 then

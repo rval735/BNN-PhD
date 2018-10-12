@@ -32,8 +32,8 @@
          giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \keyw{Computer Science - Cryptography and Security, Computer Science -
-  Machine Learning}
+    \keyw{DCGAN; Computer Science - Cryptography and Security, Computer Science
+  - Machine Learning}
     \strng{namehash}{AMADG1}
     \strng{fullhash}{AMADG1}
     \field{labelnamesource}{author}
@@ -197,6 +197,249 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{5159360}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CF}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=HQ}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Q.},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Boolean functions;learning (artificial intelligence);multilayer
+  perceptrons;binary neural network;linearly nonseparable Boolean
+  functions;nonLSBF;DNA-like learning and decomposing algorithm;DNA-like
+  LDA;DNA-like offset sequence;logic XOR operation;weight-threshold
+  value;multilayer perceptron;function mapping;parity Boolean function;Neural
+  networks;Boolean functions;Neurons;Multilayer perceptrons;Linear discriminant
+  analysis;Logic;Backpropagation algorithms;Input variables;Mathematics;Binary
+  neural network;DNA-like learning and decomposing algorithm (DNA-like
+  LDA);linearly nonseparable Boolean function (non-LSBF);multilayer perceptron
+  (MLP);parity Boolean function (PBF);Algorithms;Artificial
+  Intelligence;DNA;Linear Models;Neural Networks (Computer)}
+    \strng{namehash}{CF+1}
+    \strng{fullhash}{CFCGHQHGXX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Implementing linearly nonseparable Boolean functions (non-LSBF) has been an
+  important and yet challenging task due to the extremely high complexity of
+  this kind of functions and the exponentially increasing percentage of the
+  number of non-LSBF in the entire set of Boolean functions as the number of
+  input variables increases. In this paper, an algorithm named DNA-like
+  learning and decomposing algorithm (DNA-like LDA) is proposed, which is
+  capable of effectively implementing non-LSBF. The novel algorithm first
+  trains the DNA-like offset sequence and decomposes non-LSBF into logic XOR
+  operations of a sequence of LSBF, and then determines the weight-threshold
+  values of the multilayer perceptron (MLP) that perform both the
+  decompositions of LSBF and the function mapping the hidden neurons to the
+  output neuron. The algorithm is validated by two typical examples about the
+  problem of approximating the circular region and the well-known
+  &lt;i&gt;n&lt;/i&gt; -bit parity Boolean function (PBF).%
+    }
+    \verb{doi}
+    \verb 10.1109/TNN.2009.2023122
+    \endverb
+    \field{issn}{1045-9227}
+    \field{number}{8}
+    \field{pages}{1293\bibrangedash 1301}
+    \field{title}{Universal Perceptron and DNA-Like Learning Algorithm for
+  Binary Neural Networks: Non-LSBF Implementation}
+    \field{volume}{20}
+    \field{journaltitle}{IEEE Transactions on Neural Networks}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2015arXiv150303562C}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CZ}{%
+         family={{Cheng}},
+         familyi={C\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={{Soudry}},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MZ}{%
+         family={{Mao}},
+         familyi={M\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={{Lan}},
+         familyi={L\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Science - Neural and Evolutionary Computing, Computer
+  Science - Computer Vision and Pattern Recognition, Computer Science -
+  Learning}
+    \strng{namehash}{CZ+1}
+    \strng{fullhash}{CZSDMZLZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1503.03562
+    \endverb
+    \field{title}{{Training Binary Multilayer Neural Networks for Image
+  Classification using Expectation Backpropagation}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{03}
+    \field{year}{2015}
+  \endentry
+
+  \entry{2016arXiv160202830C}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CM}{%
+         family={{Courbariaux}},
+         familyi={C\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={{Hubara}},
+         familyi={H\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={{Soudry}},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=ER}{%
+         family={{El-Yaniv}},
+         familyi={E\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={{Bengio}},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, Learning}
+    \strng{namehash}{CM+1}
+    \strng{fullhash}{CMHISDERBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1602.02830
+    \endverb
+    \field{title}{{Binarized Neural Networks: Training Deep Neural Networks
+  with Weights and Activations Constrained to +1 or -1}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.LG}
+    \field{month}{02}
+    \field{year}{2016}
+  \endentry
+
+  \entry{616215}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=FN}{%
+         family={Funabiki},
+         familyi={F\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kitamichi},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={Nishikawa},
+         familyi={N\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary; neural nets;genetic algorithms;set theory;graph
+  theory;minimisation;computational complexity;evolutionary neural network
+  algorithm;ENN;max cut problems;undirected graph;NP-hard
+  problem;partition;disjoint subsets;evolutionary initialization scheme;energy
+  minimization criteria;binary neural network;randomly weighted complete
+  graphs;unweighted random graphs;maximum neural network;mean field
+  annealing;simulated annealing;greedy algorithm;Neural
+  networks;Neurons;Simulated annealing;NP-hard problem;Equations;Multi-layer
+  neural network;Computer networks;Minimization;Greedy algorithms;Approximation
+  algorithms}
+    \strng{namehash}{FNKJNS1}
+    \strng{fullhash}{FNKJNS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    An "evolutionary neural network (ENN)" is presented for the max cut problem
+  of an undirected graph G(V, E) in this paper. The goal of the NP-hard problem
+  is to find a partition of V into two disjoint subsets such that the cut size
+  be maximized. The cut size is the sum of weights on edges in E whose
+  endpoints belong to different subsets. The ENN combines the evolutionary
+  initialization scheme of the neural state into the energy minimization
+  criteria of the binary neural network. The performance of ENN is evaluated
+  through simulations in randomly weighted complete graphs and unweighted
+  random graphs with up to 1000 vertices. The results show that the
+  evolutionary initialization scheme drastically improves the solution quality.
+  ENN can always find better solutions than the maximum neural network, the
+  mean field annealing, the simulated annealing, and the greedy algorithm.%
+    }
+    \field{booktitle}{Proceedings of International Conference on Neural
+  Networks (ICNN'97)}
+    \verb{doi}
+    \verb 10.1109/ICNN.1997.616215
+    \endverb
+    \field{pages}{1260\bibrangedash 1265 vol.2}
+    \field{title}{An evolutionary neural network algorithm for max cut
+  problems}
+    \field{volume}{2}
+    \field{year}{1997}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{2018arXiv180804752G}{article}{}
     \name{author}{1}{}{%
       {{hash=GY}{%
@@ -252,7 +495,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \keyw{CNN; Computer Science - Computer Vision and Pattern Recognition}
     \strng{namehash}{HK+1}
     \strng{fullhash}{HKZXRSSJ1}
     \field{labelnamesource}{author}
@@ -372,7 +615,7 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{AIWinter}{misc}{}
+  \entry{AIWinter-Andrey}{misc}{}
     \name{author}{1}{}{%
       {{hash=KA}{%
          family={Kurenkov},
@@ -389,7 +632,70 @@
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{title}{A 'Brief' History of Neural Nets and Deep Learning}
-    \warn{\item Invalid format of field 'urldate'}
+    \verb{url}
+    \verb http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-ne
+    \verb ts-and-deep-learning
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month' \item Invalid format of field
+  'urldate'}
+  \endentry
+
+  \entry{2017arXiv171110761L}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LS}{%
+         family={{Leroux}},
+         familyi={L\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={{Bohez}},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VT}{%
+         family={{Verbelen}},
+         familyi={V\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VB}{%
+         family={{Vankeirsbilck}},
+         familyi={V\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={{Simoens}},
+         familyi={S\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=DB}{%
+         family={{Dhoedt}},
+         familyi={D\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Science; Neural and Evolutionary Computing; Computer
+  Vision; Pattern Recognition}
+    \strng{namehash}{LS+1}
+    \strng{fullhash}{LSBSVTVBSPDB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{eprint}
+    \verb 1711.10761
+    \endverb
+    \field{title}{{Transfer Learning with Binary Neural Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{11}
+    \field{year}{2017}
   \endentry
 
   \entry{Linnainmaa1976}{article}{}
@@ -447,14 +753,14 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{cancer;genetic algorithms;medical image processing;neural
-  nets;artificial neural network;breast cancer diagnosis;women;adaptive genetic
-  algorithm;macro-search capability;global optimization;computational
-  cost;Wisions breast cancer data set;Artificial neural networks;Breast
-  cancer;Genetic algorithms;Genetic mutations;Flowcharts;Economic
-  forecasting;Space technology;Data mining;Conference management;Knowledge
-  management;adaptive genetic algorithm;neural network;weights and
-  thresholds;breast cancer diagnosis}
+    \keyw{Evolutionary; cancer;genetic algorithms;medical image
+  processing;neural nets;artificial neural network;breast cancer
+  diagnosis;women;adaptive genetic algorithm;macro-search capability;global
+  optimization;computational cost;Wisions breast cancer data set;Artificial
+  neural networks;Breast cancer;Genetic algorithms;Genetic
+  mutations;Flowcharts;Economic forecasting;Space technology;Data
+  mining;Conference management;Knowledge management;adaptive genetic
+  algorithm;neural network;weights and thresholds;breast cancer diagnosis}
     \strng{namehash}{LLDM1}
     \strng{fullhash}{LLDM1}
     \field{labelnamesource}{author}
@@ -542,6 +848,229 @@
     \field{title}{Quantum Inspired Binary Neural Network Algorithm}
     \field{year}{2014}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2017arXiv170507175P}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PF}{%
+         family={{Pedersoli}},
+         familyi={P\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={{Tzanetakis}},
+         familyi={T\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={{Tagliasacchi}},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Science - Distributed, Parallel, and Cluster Computing,
+  Computer Science - Computer Vision and Pattern Recognition, Computer Science
+  - Machine Learning, Computer Science - Neural and Evolutionary Computing,
+  62M45, I.2.6}
+    \strng{namehash}{PFTGTA1}
+    \strng{fullhash}{PFTGTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{eprint}
+    \verb 1705.07175
+    \endverb
+    \field{title}{{Espresso: Efficient Forward Propagation for BCNNs}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.DC}
+    \field{month}{05}
+    \field{year}{2017}
+  \endentry
+
+  \entry{2016arXiv160305279R}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RM}{%
+         family={{Rastegari}},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=OV}{%
+         family={{Ordonez}},
+         familyi={O\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={{Redmon}},
+         familyi={R\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={{Farhadi}},
+         familyi={F\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMOVRJFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{eprint}
+    \verb 1603.05279
+    \endverb
+    \field{title}{{XNOR-Net: ImageNet Classification Using Binary Convolutional
+  Neural Networks}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{03}
+    \field{year}{2016}
+  \endentry
+
+  \entry{6847217}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SL}{%
+         family={Shao},
+         familyi={S\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \keyw{NN; image classification;learning (artificial intelligence);object
+  recognition;visual categorization;transfer learning algorithms;object
+  recognition;image classification;human action recognition;Knowledge
+  transfer;Visualization;Training;Training data;Adaptation models;Learning
+  systems;Testing;Action recognition;image classification;machine
+  learning;object recognition;survey;transfer learning;visual
+  categorization.;Action recognition;image classification;machine
+  learning;object recognition;survey;transfer learning;visual
+  categorization;Algorithms;Humans;Knowledge;Machine Learning;Models,
+  Theoretical;Neural Networks (Computer);Surveys and Questionnaires;Transfer
+  (Psychology);Visual Perception}
+    \strng{namehash}{SLZFLX1}
+    \strng{fullhash}{SLZFLX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Regular machine learning and data mining techniques study the training data
+  for future inferences under a major assumption that the future data are
+  within the same feature space or have the same distribution as the training
+  data. However, due to the limited availability of human labeled training
+  data, training data that stay in the same feature space or have the same
+  distribution as the future data cannot be guaranteed to be sufficient enough
+  to avoid the over-fitting problem. In real-world applications, apart from
+  data in the target domain, related data in a different domain can also be
+  included to expand the availability of our prior knowledge about the target
+  future data. Transfer learning addresses such cross-domain learning problems
+  by extracting useful information from data in a related domain and
+  transferring them for being used in target tasks. In recent years, with
+  transfer learning being applied to visual categorization, some typical
+  problems, e.g., view divergence in action recognition tasks and concept
+  drifting in image classification tasks, can be efficiently solved. In this
+  paper, we survey state-of-the-art transfer learning algorithms in visual
+  categorization applications, such as object recognition, image
+  classification, and human action recognition.%
+    }
+    \verb{doi}
+    \verb 10.1109/TNNLS.2014.2330900
+    \endverb
+    \field{issn}{2162-237X}
+    \field{number}{5}
+    \field{pages}{1019\bibrangedash 1034}
+    \field{title}{Transfer Learning for Visual Categorization: A Survey}
+    \field{volume}{26}
+    \field{journaltitle}{IEEE Transactions on Neural Networks and Learning
+  Systems}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Soudry2014ExpectationBP}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Hubara},
+         familyi={H\bibinitperiod},
+         given={Itay},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Meir},
+         familyi={M\bibinitperiod},
+         given={Ron},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{DNN; Backpropagation; Discrete weight space; Continuos weight space}
+    \strng{namehash}{SDHIMR1}
+    \strng{fullhash}{SDHIMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Multilayer Neural Networks (MNNs) are commonly trained using gradient
+  descent-based methods, such as BackPropagation (BP). Inference in
+  probabilistic graphical models is often done using variational Bayes methods,
+  such as Expectation Propagation (EP). We show how an EP based approach can
+  also be used to train deterministic MNNs. Specifically, we approximate the
+  posterior of the weights given the data using a ``mean-field'' factorized
+  distribution, in an online setting. Using online EP and the central limit
+  theorem we find an analytical approximation to the Bayes update of this
+  posterior, as well as the resulting Bayes estimates of the weights and
+  outputs. Despite a different origin, the resulting algorithm, Expectation
+  BackPropagation (EBP), is very similar to BP in form and efficiency. However,
+  it has several additional advantages: (1) Training is parameter-free, given
+  initial conditions (prior) and the MNN architecture. This is useful for
+  large-scale problems, where parameter tuning is a major challenge. (2) The
+  weights can be restricted to have discrete values. This is especially useful
+  for implementing trained MNNs in precision limited hardware chips, thus
+  improving their speed and energy efficiency by several orders of magnitude.
+  We test the EBP algorithm numerically in eight binary text classification
+  tasks. In all tasks, EBP outperforms: (1) standard BP with the optimal
+  constant learning rate (2) previously reported state of the art.
+  Interestingly, EBP-trained MNNs with binary weights usually perform better
+  than MNNs with continuous (real) weights - if we average the MNN output using
+  the inferred posterior.%
+    }
+    \field{booktitle}{NIPS}
+    \field{title}{Expectation Backpropagation: Parameter-Free Training of
+  Multilayer Neural Networks with Continuous or Discrete Weights}
+    \field{annotation}{%
+  https://www.semanticscholar.org/paper/Expectation-Backpropagation%3A-Parameter-Free-of-with-Soudry-Hubara/0b88ed755c4dcd0ac3d25842a5bbbe4ebcefeeec
+  https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-training-of-multilayer-neural-networks-with-continuous-or-discrete-weights.pdf%
+    }
+    \field{year}{2014}
   \endentry
 
   \entry{2017arXiv170309039S}{article}{}
@@ -663,8 +1192,8 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \keyw{Computer Science - Artificial Intelligence, Computer Science - Neural
-  and Evolutionary Computing}
+    \keyw{DCGAN; Evolutionary; Computer Science - Artificial Intelligence,
+  Computer Science - Neural and Evolutionary Computing}
     \strng{namehash}{VV+1}
     \strng{fullhash}{VVSJLJLSMSARS1}
     \field{labelnamesource}{author}
@@ -710,7 +1239,7 @@
          giveni={H\bibinitperiod},
       }}%
     }
-    \keyw{NN-Evol; finance; exchange rates;forecasting theory;genetic
+    \keyw{Evolutionary; finance; exchange rates;forecasting theory;genetic
   algorithms;neural nets;stock markets;time series;trees (mathematics);CVFNT
   model;time series datasets;neural network;finance time series
   prediction;complex-valued flexible neural tree model;artificial bee
@@ -733,6 +1262,96 @@
     \field{title}{Finance time series prediction using complex-valued flexible
   neural tree model}
     \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{7838429}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=YS}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GB}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=QH}{%
+         family={Qian},
+         familyi={Q\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; CMOS integrated circuits;electronic engineering computing;image
+  recognition;neural nets;resistive RAM;MNIST handwritten digit dataset;CMOS
+  process;Tsinghua;BNN;image recognition;binary RRAM macrochip device;resistive
+  memory technology;pre-mature analog property;synaptic device;large-scale
+  binary neural network;word length 1 bit;storage capacity 16 Mbit;size 130 nm}
+    \strng{namehash}{YS+1}
+    \strng{fullhash}{YSLZCPWHGBWDWWQH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    On-chip implementation of large-scale neural networks with emerging
+  synaptic devices is attractive but challenging, primarily due to the
+  pre-mature analog properties of today's resistive memory technologies. This
+  work aims to realize a large-scale neural network using today's available
+  binary RRAM devices for image recognition. We propose a methodology to
+  binarize the neural network parameters with a goal of reducing the precision
+  of weights and neurons to 1-bit for classification and &lt;;8-bit for online
+  training. We experimentally demonstrate the binary neural network (BNN) on
+  Tsinghua's 16 Mb RRAM macro chip fabricated in 130 nm CMOS process. Even
+  under finite bit yield and endurance cycles, the system performance on MNIST
+  handwritten digit dataset achieves ~96.5% accuracy for both classification
+  and online training, close to ~97% accuracy by the ideal software
+  implementation. This work reports the largest scale of the synaptic arrays
+  and achieved the highest accuracy so far.%
+    }
+    \field{booktitle}{2016 IEEE International Electron Devices Meeting (IEDM)}
+    \verb{doi}
+    \verb 10.1109/IEDM.2016.7838429
+    \endverb
+    \field{issn}{2156-017X}
+    \field{pages}{16.2.1\bibrangedash 16.2.4}
+    \field{title}{Binary neural network with 16 Mb RRAM macro chip for
+  classification and online training}
+    \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
   \endentry
 \endsortlist
