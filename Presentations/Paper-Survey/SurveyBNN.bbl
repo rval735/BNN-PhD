@@ -52,6 +52,361 @@
     \field{year}{2016}
   \endentry
 
+  \entry{2018arXiv180700343A}{article}{}
+    \name{author}{5}{}{%
+      {{hash=AA}{%
+         family={{Agrawal}},
+         familyi={A\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=JA}{%
+         family={{Jaiswal}},
+         familyi={J\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={{Han}},
+         familyi={H\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={{Srinivasan}},
+         familyi={S\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={{Roy}},
+         familyi={R\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Science; Emerging Technologies}
+    \strng{namehash}{AA+1}
+    \strng{fullhash}{AAJAHBSGRK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{eprint}
+    \verb 1807.00343
+    \endverb
+    \field{title}{{Xcel-RAM: Accelerating Binary Neural Networks in
+  High-Throughput SRAM Compute Arrays}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
+
+  \entry{8226999}{article}{}
+    \name{author}{11}{}{%
+      {{hash=AK}{%
+         family={Ando},
+         familyi={A\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=UK}{%
+         family={Ueyoshi},
+         familyi={U\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=OK}{%
+         family={Orimo},
+         familyi={O\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yonekawa},
+         familyi={Y\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sato},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NH}{%
+         family={Nakahara},
+         familyi={N\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TYS}{%
+         family={Takamaeda-Yamazaki},
+         familyi={T\bibinitperiod-Y\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Ikebe},
+         familyi={I\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Asai},
+         familyi={A\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kuroda},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Motomura},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;low-power electronics;neural nets;random-access
+  storage;reconfigurable architectures;deep neural network
+  accelerator;binary/ternary deep neural networks;In-memory neural network
+  processing;binary/ternaty neural network;BRein memory;single-chip
+  binary/ternary reconfigurable in-memory;reconfigurable accelerator
+  architecture;external data access;power 0.6 W;frequency 400 MHz;Biological
+  neural networks;Random access memory;Memory
+  management;Neurons;System-on-chip;Parallel processing;Binary neural
+  networks;in-memory processing;near-memory processing;neural
+  networks;reconfigurable array;ternary neural networks}
+    \strng{namehash}{AK+1}
+    \strng{fullhash}{AKUKOKYHSSNHTYSIMATKTMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    A versatile reconfigurable accelerator architecture for binary/ternary deep
+  neural networks is presented. In-memory neural network processing without any
+  external data accesses, sustained by the symmetry and simplicity of the
+  computation of the binary/ternaty neural network, improves the energy
+  efficiency dramatically. The prototype chip is fabricated, and it achieves
+  1.4 TOPS (tera operations per second) peak performance with 0.6-W power
+  consumption at 400-MHz clock. The application examination is also conducted.%
+    }
+    \verb{doi}
+    \verb 10.1109/JSSC.2017.2778702
+    \endverb
+    \field{issn}{0018-9200}
+    \field{number}{4}
+    \field{pages}{983\bibrangedash 994}
+    \field{title}{BRein Memory: A Single-Chip Binary/Ternary Reconfigurable
+  in-Memory Deep Neural Network Accelerator Achieving 1.4 TOPS at 0.6 W}
+    \field{volume}{53}
+    \field{journaltitle}{IEEE Journal of Solid-State Circuits}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8429420}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=AR}{%
+         family={Andri},
+         familyi={A\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cavigelli},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rossi},
+         familyi={R\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Benini},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; computer vision;feedforward neural nets;Internet of
+  Things;learning (artificial intelligence);low-power
+  electronics;microprocessor chips;hardware accelerators;core efficiency;I/O
+  bandwidth;ultra-low power devices;BWN accelerator;systolic-scalable
+  architecture;state-of-the-art BNN accelerators;resource-intensive FP16
+  arithmetic;TOp/s/W system-level efficiency;binary-weight streaming
+  approach;BWN;hyperdrive;weight quantization;binary-weight neural
+  networks;memory footprint;aggressive
+  quantization;mW-devices;memory-intensive;machine learning;computer
+  vision;impressive results;deep neural networks;mW IoT end-nodes;systolically
+  scalable binary-weight CNN inference engine;Frequency modulation;Computer
+  architecture;Quantization (signal);Neural
+  networks;System-on-chip;Hardware;Bandwidth;Hardware Accelerator;Binary
+  Weights Neural Networks;IoT}
+    \strng{namehash}{AR+2}
+    \strng{fullhash}{ARCLRDBL2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Deep neural networks have achieved impressive results in computer vision
+  and machine learning. Unfortunately, state-of-the-art networks are extremely
+  compute-and memory-intensive which makes them unsuitable for mW-devices such
+  as IoT end-nodes. Aggressive quantization of these networks dramatically
+  reduces the computation and memory footprint. Binary-weight neural networks
+  (BWNs) follow this trend, pushing weight quantization to the limit. Hardware
+  accelerators for BWNs presented up to now have focused on core efficiency,
+  disregarding I/O bandwidth and system-level efficiency that are crucial for
+  deployment of accelerators in ultra-low power devices. We present Hyperdrive:
+  a BWN accelerator dramatically reducing the I/O bandwidth exploiting a novel
+  binary-weight streaming approach, and capable of handling high-resolution
+  images by virtue of its systolic-scalable architecture. We achieve a 5.9
+  TOp/s/W system-level efficiency (i.e. including I/Os)-2.2x higher than
+  state-of-the-art BNN accelerators, even if our core uses resource-intensive
+  FP16 arithmetic for increased robustness.%
+    }
+    \field{booktitle}{2018 IEEE Computer Society Annual Symposium on VLSI
+  (ISVLSI)}
+    \verb{doi}
+    \verb 10.1109/ISVLSI.2018.00099
+    \endverb
+    \field{issn}{2159-3477}
+    \field{pages}{509\bibrangedash 515}
+    \field{title}{Hyperdrive: A Systolically Scalable Binary-Weight CNN
+  Inference Engine for mW IoT End-Nodes}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2016arXiv160605487A}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AR}{%
+         family={{Andri}},
+         familyi={A\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={{Cavigelli}},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={{Rossi}},
+         familyi={R\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={{Benini}},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Hardware Architecture, Computer Vision; Pattern Recognition,
+  Neural and Evolutionary Computing}
+    \strng{namehash}{AR+1}
+    \strng{fullhash}{ARCLRDBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{eprint}
+    \verb 1606.05487
+    \endverb
+    \field{title}{{YodaNN: An Architecture for Ultra-Low Power Binary-Weight
+  CNN Acceleration}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{06}
+    \field{year}{2016}
+  \endentry
+
+  \entry{8373076}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=BAA}{%
+         family={Bahou},
+         familyi={B\bibinitperiod},
+         given={A.\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KG}{%
+         family={Karunaratne},
+         familyi={K\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AR}{%
+         family={Andri},
+         familyi={A\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cavigelli},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Benini},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; embedded systems;low-power electronics;neural nets;power aware
+  computing;binary convolutional neural networks;off-chip memory;low-power
+  embedded systems;extreme quantization;flexible accelerator;aggressive
+  data;nontrivial network topologies;feature map volumes;energy
+  efficiency;hardware accelerator;binary CNN;weight binarization;collapsing
+  energy-intensive sum-of-products;XNOR-and-popcount
+  operations;Hardware;Convolutional neural
+  networks;System-on-chip;Computational modeling;Computer architecture;Program
+  processors}
+    \strng{namehash}{BAA+1}
+    \strng{fullhash}{BAAKGARCLBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Deploying state-of-the-art CNNs requires power-hungry processors and
+  off-chip memory. This precludes the implementation of CNNs in low-power
+  embedded systems. Recent research shows CNNs sustain extreme quantization,
+  binarizing their weights and intermediate feature maps, thereby saving 8-32x
+  memory and collapsing energy-intensive sum-of-products into XNOR-and-popcount
+  operations. We present XNORBIN, a flexible accelerator for binary CNNs with
+  computation tightly coupled to memory for aggressive data reuse supporting
+  even non-trivial network topologies with large feature map volumes.
+  Implemented in UMC 65nm technology XNORBIN achieves an energy efficiency of
+  95 TOp/s/W and an area efficiency of 2.0TOp/s/MGE at 0.8 V.%
+    }
+    \field{booktitle}{2018 IEEE Symposium in Low-Power and High-Speed Chips
+  (COOL CHIPS)}
+    \verb{doi}
+    \verb 10.1109/CoolChips.2018.8373076
+    \endverb
+    \field{issn}{2473-4683}
+    \field{pages}{1\bibrangedash 3}
+    \field{title}{XNORBIN: A 95 TOp/s/W hardware accelerator for binary
+  convolutional neural networks}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{1206405}{inproceedings}{}
     \name{author}{1}{}{%
       {{hash=BA}{%
@@ -100,6 +455,51 @@
     \field{volume}{5}
     \field{year}{2003}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2018arXiv180910463B}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BJ}{%
+         family={{Bethge}},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={{Yang}},
+         familyi={Y\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={{Bartz}},
+         familyi={B\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={{Meinel}},
+         familyi={M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;Computer Science; Machine Learning, Computer Science - Computer
+  Vision and Pattern Recognition, Statistics - Machine Learning}
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJYHBCMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 1809.10463
+    \endverb
+    \field{title}{{Learning to Train a Binary Neural Network}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{09}
+    \field{year}{2018}
   \endentry
 
   \entry{5726804}{inproceedings}{}
@@ -324,6 +724,86 @@
     \field{year}{2015}
   \endentry
 
+  \entry{2018arXiv180703010C}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CF}{%
+         family={{Conti}},
+         familyi={C\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={{Davide Schiavone}},
+         familyi={D\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={{Benini}},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Science - Neural and Evolutionary Computing, Computer
+  Science - Hardware Architecture, Computer Science - Machine Learning}
+    \strng{namehash}{CFDPBL1}
+    \strng{fullhash}{CFDPBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1807.03010
+    \endverb
+    \field{title}{{XNOR Neural Engine: a Hardware Accelerator IP for 21.6 fJ/op
+  Binary Neural Network Inference}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
+
+  \entry{2015arXiv151100363C}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CM}{%
+         family={{Courbariaux}},
+         familyi={C\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={{Bengio}},
+         familyi={B\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DJP}{%
+         family={{David}},
+         familyi={D\bibinitperiod},
+         given={J.-P.},
+         giveni={J\bibinitperiod-P\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Machine Learning; Computer Vision; Pattern Recognition; Neural
+  and Evolutionary Computing}
+    \strng{namehash}{CMBYDJP1}
+    \strng{fullhash}{CMBYDJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1511.00363
+    \endverb
+    \field{title}{{BinaryConnect: Training Deep Neural Networks with binary
+  weights during propagations}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{11}
+    \field{year}{2015}
+  \endentry
+
   \entry{2016arXiv160202830C}{article}{}
     \name{author}{5}{}{%
       {{hash=CM}{%
@@ -374,6 +854,66 @@
     \field{eprintclass}{cs.LG}
     \field{month}{02}
     \field{year}{2016}
+  \endentry
+
+  \entry{8394726}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=FY}{%
+         family={Fukuda},
+         familyi={F\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=KT}{%
+         family={Kawahara},
+         familyi={K\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;field programmable gate arrays;Internet of Things;learning
+  (artificial intelligence);neural nets;stochastic processes;binary
+  calculation;stochastic weights binary neural
+  networks;IoT;BNN;SWBNN;FPGA;Internet of things;artificial
+  intelligence;AI;binary neural networks;CIFAR10 database;field-programmable
+  gate array implementation;Next generation networking;Neural
+  networks;IoT;Neural-network;BNN;FPGA;stochastic}
+    \strng{namehash}{FYKT1}
+    \strng{fullhash}{FYKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    To achieve an advanced Internet of Things (IoT), it is necessary to combine
+  artificial intelligence (AI) with IoT. Compact circuits that can operate AI
+  functions will be useful for this purpose. Therefore, we propose stochastic
+  weights binary neural networks (SWBNN). SWBNNs are more accurate than binary
+  neural networks (BNN) with small circuits. BNNs can be realized with small
+  circuits since binary calculation needs simpler circuits than real number
+  calculation. However, BNNs have lower accuracy than networks with real
+  numbers. Thus, the proposed SWBNNs are BNNs that behave stochastically, which
+  makes them more accurate than BNNs. Moreover, SWBNNs can still be achieved
+  with small circuits since they execute binary calculation. As a result, the
+  accuracy for the test data of SWBNNs is closer to the accuracy for learning
+  data than the accuracy for the test data of BNNs is. Especially when using
+  the CIFAR10 database, the difference in the identification accuracy rate
+  between learning data and test data decreased from 6% for BNNs to 2% for
+  SWBNNs. From results of a field-programmable gate array (FPGA)
+  implementation, circuits of SWBNNs are sufficiently small although they are
+  10% bigger than those of BNNs. Therefore, SWBNNs are more accurate than BNNs,
+  and the circuit costs ofintroducing stochastic weights are low.%
+    }
+    \field{booktitle}{2018 7th International Symposium on Next Generation
+  Electronics (ISNE)}
+    \verb{doi}
+    \verb 10.1109/ISNE.2018.8394726
+    \endverb
+    \field{issn}{2378-8607}
+    \field{pages}{1\bibrangedash 3}
+    \field{title}{Stochastic weights binary neural networks on FPGA}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{616215}{inproceedings}{}
@@ -440,6 +980,73 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{8457633}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Ghasemzadeh},
+         familyi={G\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Samragh},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Koushanfar},
+         familyi={K\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; field programmable gate arrays;learning (artificial
+  intelligence);matrix multiplication;neural nets;ReBNet;residual binarized
+  neural network;large-scale deep learning models;power-hungry
+  matrix-multiplication;light-weight XnorPopcount operations;fixed-point
+  counterparts;FPGA;memory footprint;hardware accelerator;Hardware;Neural
+  networks;Training;Field programmable gate arrays;Parallel processing;Cost
+  function;Libraries;Deep neural networks;Reconfigurable computing;Domain
+  customized computing;Binary neural network;Residual binarization}
+    \strng{namehash}{GMSMKF1}
+    \strng{fullhash}{GMSMKF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    This paper proposes ReBNet, an end-to-end framework for training
+  reconfigurable binary neural networks on software and developing efficient
+  accelerators for execution on FPGA. Binary neural networks offer an
+  intriguing opportunity for deploying large-scale deep learning models on
+  resource-constrained devices. Binarization reduces the memory footprint and
+  replaces the power-hungry matrix-multiplication with light-weight
+  XnorPopcount operations. However, binary networks suffer from a degraded
+  accuracy compared to their fixed-point counterparts. We show that the
+  state-of-the-art methods for optimizing binary networks accuracy,
+  significantly increase the implementation cost and complexity. To compensate
+  for the degraded accuracy while adhering to the simplicity of binary
+  networks, we devise the first reconfigurable scheme that can adjust the
+  classification accuracy based on the application. Our proposition improves
+  the classification accuracy by representing features with multiple levels of
+  residual binarization. Unlike previous methods, our approach does not
+  exacerbate the area cost of the hardware accelerator. Instead, it provides a
+  tradeoff between throughput and accuracy while the area overhead of
+  multi-level binarization is negligible.%
+    }
+    \field{booktitle}{2018 IEEE 26th Annual International Symposium on
+  Field-Programmable Custom Computing Machines (FCCM)}
+    \verb{doi}
+    \verb 10.1109/FCCM.2018.00018
+    \endverb
+    \field{issn}{2576-2621}
+    \field{pages}{57\bibrangedash 64}
+    \field{title}{ReBNet: Residual Binarized Neural Network}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{2018arXiv180804752G}{article}{}
     \name{author}{1}{}{%
       {{hash=GY}{%
@@ -449,8 +1056,8 @@
          giveni={Y\bibinitperiod},
       }}%
     }
-    \keyw{Computer Science - Machine Learning, Computer Science - Neural and
-  Evolutionary Computing, Statistics - Machine Learning}
+    \keyw{BNN; Machine Learning, Neural and Evolutionary Computing,
+  Statistics,Machine Learning}
     \strng{namehash}{GY1}
     \strng{fullhash}{GY1}
     \field{labelnamesource}{author}
@@ -513,6 +1120,106 @@
     \field{year}{2015}
   \endentry
 
+  \entry{8425178}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=HY}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={Zhai},
+         familyi={Z\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Su},
+         familyi={S\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jin},
+         familyi={J\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;computational complexity;field programmable gate arrays;graphics
+  processing units;learning (artificial intelligence);multiprocessing
+  systems;neural nets;optimisation;parallel processing;vector
+  parallelism;binary Neural Networks;CPU;Deep learning;computer vision;big
+  bang;Deep Neural Networks;high computational complexity;Binary Neural
+  Networks;BNNs;arithmetic operations;bitwise operations;image-to-column
+  method;low arithmetic intensity;gemm-operator-network;computing power;BitFlow
+  features;efficient binary convolution;VGG network;counterpart full-precision
+  DNNs;GPU;Convolution;Neural networks;Layout;Parallel
+  processing;Acceleration;Graphics processing units;Machine learning;Network
+  Compression;Binary Neural Network (BNN);Vector Parallelism;Intel Xeon Phi}
+    \strng{namehash}{HY+1}
+    \strng{fullhash}{HYZJLDGYZYLWSLJJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Deep learning has revolutionized computer vision and other fields since its
+  big bang in 2012. However, it is challenging to deploy Deep Neural Networks
+  (DNNs) into real-world applications due to their high computational
+  complexity. Binary Neural Networks (BNNs) dramatically reduce computational
+  complexity by replacing most arithmetic operations with bitwise operations.
+  Existing implementations of BNNs have been focusing on GPU or FPGA, and using
+  the conventional image-to-column method that doesn't perform well for binary
+  convolution due to low arithmetic intensity and unfriendly pattern for
+  bitwise operations. We propose BitFlow, a gemm-operator-network three-level
+  optimization framework for fully exploiting the computing power of BNNs on
+  CPU. BitFlow features a new class of algorithm named PressedConv for
+  efficient binary convolution using locality-aware layout and vector
+  parallelism. We evaluate BitFlow with the VGG network. On a single core of
+  Intel Xeon Phi, BitFlow obtains 1.8x speedup over unoptimized BNN
+  implementations, and 11.5x speedup over counterpart full-precision DNNs. Over
+  64 cores, BitFlow enables BNNs to run 1.1x faster than counterpart
+  full-precision DNNs on GPU (GTX 1080).%
+    }
+    \field{booktitle}{2018 IEEE International Parallel and Distributed
+  Processing Symposium (IPDPS)}
+    \verb{doi}
+    \verb 10.1109/IPDPS.2018.00034
+    \endverb
+    \field{issn}{1530-2075}
+    \field{pages}{244\bibrangedash 253}
+    \field{title}{BitFlow: Exploiting Vector Parallelism for Binary Neural
+  Networks on CPU}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{4790104}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=KM}{%
@@ -566,6 +1273,46 @@
     \field{title}{On the State Space of the Binary Neural Network}
     \field{year}{1988}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2018arXiv180810631K}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KO}{%
+         family={{Krestinskaya}},
+         familyi={K\bibinitperiod},
+         given={O.},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SKN}{%
+         family={{Salama}},
+         familyi={S\bibinitperiod},
+         given={K.\bibnamedelima N.},
+         giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={{Pappachen James}},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;Computer Science - Emerging Technologies, Computer Science -
+  Artificial Intelligence}
+    \strng{namehash}{KOSKNPA1}
+    \strng{fullhash}{KOSKNPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{eprint}
+    \verb 1808.10631
+    \endverb
+    \field{title}{{Learning in Memristive Neural Network Architectures using
+  Analog Backpropagation Circuits}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{08}
+    \field{year}{2018}
   \endentry
 
   \entry{Krizhevsky2999257}{inproceedings}{}
@@ -892,6 +1639,58 @@
     \field{year}{2017}
   \endentry
 
+  \entry{2018arXiv180403867P}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PA}{%
+         family={{Prabhu}},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={{Batchu}},
+         familyi={B\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={{Gajawada}},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={{Aurobindo Munagala}},
+         familyi={A\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={{Namboodiri}},
+         familyi={N\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Computer Vision; Pattern Recognition}
+    \strng{namehash}{PA+1}
+    \strng{fullhash}{PABVGRASNA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \verb{eprint}
+    \verb 1804.03867
+    \endverb
+    \field{title}{{Hybrid Binary Networks: Optimizing for Accuracy, Efficiency
+  and Memory}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{04}
+    \field{year}{2018}
+  \endentry
+
   \entry{2016arXiv160305279R}{article}{}
     \name{author}{4}{}{%
       {{hash=RM}{%
@@ -936,6 +1735,88 @@
     \field{eprintclass}{cs.CV}
     \field{month}{03}
     \field{year}{2016}
+  \endentry
+
+  \entry{8461456}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SC}{%
+         family={Sakr},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Choi},
+         familyi={C\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=GK}{%
+         family={Gopalakrishnan},
+         familyi={G\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Shanbhag},
+         familyi={S\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; gradient methods;learning (artificial intelligence);neural
+  nets;gradient-based training;deep binary activated neural networks;continuous
+  binarization;deep learning;tremendous complexity;resource constrained
+  platforms;training procedure;binary activation functions;minimal accuracy
+  degradation;gradient-based learning;back-propagation algorithm;straight
+  through estimator;floating-point baseline;STE;Training;Neural
+  networks;Complexity theory;Machine learning;Stochastic processes;Perturbation
+  methods;Approximation algorithms;deep learning;binary neural
+  networks;activation functions}
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCCJWZGKSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    With the ever growing popularity of deep learning, the tremendous
+  complexity of deep neural networks is becoming problematic when one considers
+  inference on resource constrained platforms. Binary networks have emerged as
+  a potential solution, however, they exhibit a fundamentallimi-tation in
+  realizing gradient-based learning as their activations are
+  non-differentiable. Current work has so far relied on approximating gradients
+  in order to use the back-propagation algorithm via the straight through
+  estimator (STE). Such approximations harm the quality of the training
+  procedure causing a noticeable gap in accuracy between binary neural networks
+  and their full precision baselines. We present a novel method to train binary
+  activated neural networks using true gradient-based learning. Our idea is
+  motivated by the similarities between clipping and binary activation
+  functions. We show that our method has minimal accuracy degradation with
+  respect to the full precision baseline. Finally, we test our method on three
+  benchmarking datasets: MNIST, CIFAR-10, and SVHN. For each benchmark, we show
+  that continuous binarization using true gradient-based learning achieves an
+  accuracy within 1.5% of the floating-point baseline, as compared to accuracy
+  drops as high as 6% when training the same binary activated network using the
+  STE.%
+    }
+    \field{booktitle}{2018 IEEE International Conference on Acoustics, Speech
+  and Signal Processing (ICASSP)}
+    \verb{doi}
+    \verb 10.1109/ICASSP.2018.8461456
+    \endverb
+    \field{issn}{2379-190X}
+    \field{pages}{2346\bibrangedash 2350}
+    \field{title}{True Gradient-Based Training of Deep Binary Activated Neural
+  Networks Via Continuous Binarization}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{6847217}{article}{}
@@ -1071,6 +1952,71 @@
   https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-training-of-multilayer-neural-networks-with-continuous-or-discrete-weights.pdf%
     }
     \field{year}{2014}
+  \endentry
+
+  \entry{Sun:2018:FPR:3201607.3201741}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=SX}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Xiaoyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=PX}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Xiaochen},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=CPY}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Pai-Yu},
+         giveni={P\bibinitperiod-Y\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SJs}{%
+         family={Seo},
+         familyi={S\bibinitperiod},
+         given={Jae-sun},
+         giveni={J\bibinitperiod-s\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Shimeng},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Press}%
+    }
+    \keyw{BNN, P-BNN, CSM, MNIST}
+    \strng{namehash}{SX+1}
+    \strng{fullhash}{SXPXCPYLRSJsYS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the 23rd Asia and South Pacific Design
+  Automation Conference}
+    \field{pages}{574\bibrangedash 579}
+    \field{series}{ASPDAC '18}
+    \field{title}{Fully Parallel RRAM Synaptic Array for Implementing Binary
+  Neural Network with (+1, \&Minus;1) Weights and (+1, 0) Neurons}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=3201607.3201741
+    \endverb
+    \list{location}{1}{%
+      {Jeju, Republic of Korea}%
+    }
+    \field{year}{2018}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{2017arXiv170309039S}{article}{}
@@ -1212,6 +2158,87 @@
     \field{year}{2018}
   \endentry
 
+  \entry{8103902}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;adders;convolution;energy conservation;error analysis;feedforward
+  neural nets;multiplying circuits;neural chips;trees
+  (mathematics);energy-efficient architecture;binary weight convolutional
+  neural networks;high-precision weights;binary weights;approximate binary
+  multipliers;BCNN hardware architecture;energy efficiency;classification
+  accuracy;data path delay;processing schedule;off-chip I/O access;critical
+  path delay;optimized compressor trees;approximate adder;error
+  analysis;memory-efficient quantization;on-chip storage requirement;size 65.0
+  nm;Computer architecture;Hardware;Neural networks;Neurons;Adders;Quantization
+  (signal);Convolution;Approximate computing;binary weight convolutional neural
+  network (BCNN) architecture;convolutional neural network (CNN);deep
+  learning;energy-efficient design;signal processing;VLSI architecture}
+    \strng{namehash}{WYLJWZ1}
+    \strng{fullhash}{WYLJWZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Binary weight convolutional neural networks (BCNNs) can achieve near
+  state-of-the-art classification accuracy and have far less computation
+  complexity compared with traditional CNNs using high-precision weights. Due
+  to their binary weights, BCNNs are well suited for vision-based
+  Internet-of-Things systems being sensitive to power consumption. BCNNs make
+  it possible to achieve very high throughput with moderate power dissipation.
+  In this paper, an energy-efficient architecture for BCNNs is proposed. It
+  fully exploits the binary weights and other hardware-friendly characteristics
+  of BCNNs. A judicious processing schedule is proposed so that off-chip I/O
+  access is minimized and activations are maximally reused. To significantly
+  reduce the critical path delay, we introduce optimized compressor trees and
+  approximate binary multipliers with two novel compensation schemes. The
+  latter is able to save significant hardware resource, and almost no
+  computation accuracy is compromised. Taking advantage of error resiliency of
+  BCNNs, an innovative approximate adder is developed, which significantly
+  reduces the silicon area and data path delay. Thorough error analysis and
+  extensive experimental results on several data sets show that the approximate
+  adders in the data path cause negligible accuracy loss. Moreover, algorithmic
+  transformations for certain layers of BCNNs and a memory-efficient
+  quantization scheme are incorporated to further reduce the energy cost and
+  on-chip storage requirement. Finally, the proposed BCNN hardware architecture
+  is implemented with the SMIC 130-nm technology. The postlayout results
+  demonstrate that our design can achieve an energy efficiency over 2.0TOp/s/W
+  when scaled to 65 nm, which is more than two times better than the prior
+  art.%
+    }
+    \verb{doi}
+    \verb 10.1109/TVLSI.2017.2767624
+    \endverb
+    \field{issn}{1063-8210}
+    \field{number}{2}
+    \field{pages}{280\bibrangedash 293}
+    \field{title}{An Energy-Efficient Architecture for Binary Weight
+  Convolutional Neural Networks}
+    \field{volume}{26}
+    \field{journaltitle}{IEEE Transactions on Very Large Scale Integration
+  (VLSI) Systems}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8393327}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=YB}{%
@@ -1263,6 +2290,66 @@
   neural tree model}
     \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{bmxnet}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=YH}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Haojin},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fritzsche},
+         familyi={F\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Bartz},
+         familyi={B\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Meinel},
+         familyi={M\bibinitperiod},
+         given={Christoph},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{BNN; binary neural networks, computer vision, machine learning, open
+  source}
+    \strng{namehash}{YH+1}
+    \strng{fullhash}{YHFMBCMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{booktitle}{Proceedings of the 2017 ACM on Multimedia Conference}
+    \verb{doi}
+    \verb 10.1145/3123266.3129393
+    \endverb
+    \field{isbn}{978-1-4503-4906-2}
+    \field{pages}{1209\bibrangedash 1212}
+    \field{series}{MM '17}
+    \field{title}{BMXNet: An Open-Source Binary Neural Network Implementation
+  Based on MXNet}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3123266.3129393
+    \endverb
+    \list{location}{1}{%
+      {Mountain View, California, USA}%
+    }
+    \field{annotation}{%
+    https://arxiv.org/abs/1705.09864 https://github.com/hpi-xnor/BMXNet%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{7838429}{inproceedings}{}
@@ -1353,6 +2440,46 @@
   classification and online training}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2018arXiv180802631Z}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZB}{%
+         family={{Zhuang}},
+         familyi={Z\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={{Shen}},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RI}{%
+         family={{Reid}},
+         familyi={R\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN;Computer Science - Computer Vision and Pattern Recognition}
+    \strng{namehash}{ZBSCRI1}
+    \strng{fullhash}{ZBSCRI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{eprint}
+    \verb 1808.02631
+    \endverb
+    \field{title}{{Training Compact Neural Networks with Binary Weights and Low
+  Precision Activations}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{08}
+    \field{year}{2018}
   \endentry
 \endsortlist
 \endinput

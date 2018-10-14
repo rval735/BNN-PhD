@@ -187,3 +187,17 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8297384
 
 Hyperdrive- A Systolically Scalable Binary-Weight CNN Inference Engine for mW IoT End-Nodes
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8429420
+
+BinaryConnect- Training Deep Neural Networks with binary weights during propagations
+https://arxiv.org/abs/1511.00363
+
+YodaNN- An Architecture for Ultra-Low Power Binary-Weight CNN Acceleration
+https://ieeexplore.ieee.org/document/7560203/
+https://arxiv.org/abs/1606.05487
+
+BMXNet- An Open-Source Binary Neural Network Implementation Based on MXNet
+https://arxiv.org/abs/1705.09864
+https://github.com/hpi-xnor/BMXNet
+
+Hybrid Binary Networks- Optimizing for Accuracy, Efficiency and Memory
+https://arxiv.org/abs/1804.03867

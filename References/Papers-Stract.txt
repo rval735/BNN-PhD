@@ -1293,6 +1293,26 @@ Hyperdrive- A Systolically Scalable Binary-Weight CNN Inference Engine for mW Io
 -
 -
 
+BinaryConnect- Training Deep Neural Networks with binary weights during propagations
+-
+-
+-
+
+YodaNN- An Architecture for Ultra-Low Power Binary-Weight CNN Acceleration
+-
+-
+-
+
+BMXNet- An Open-Source Binary Neural Network Implementation Based on MXNet
+-
+-
+-
+
+Hybrid Binary Networks- Optimizing for Accuracy, Efficiency and Memory
+-
+-
+-
+
 < BNN
 
 ------> Other
