@@ -26,3 +26,19 @@ https://dl.acm.org/citation.cfm?id=2908890
 
 Finance time series prediction using complex-valued flexible neural tree model
 https://ieeexplore.ieee.org/document/8393327/
+
+Universal Value Function Approximators
+http://proceedings.mlr.press/v37/schaul15.pdf
+http://proceedings.mlr.press/v37/schaul15.html
+
+Emergent Complexity via Multi-Agent Competition
+https://arxiv.org/abs/1710.03748
+
+Simple random search provides a competitive approach to reinforcement learning
+https://arxiv.org/abs/1803.07055
+
+Deep Neuroevolution- Genetic Algorithms are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning
+https://arxiv.org/abs/1712.06567
+
+Towards Generalization and Simplicity in Continuous Control
+https://arxiv.org/abs/1703.02660
