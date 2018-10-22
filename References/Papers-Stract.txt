@@ -1313,6 +1313,31 @@ Hybrid Binary Networks- Optimizing for Accuracy, Efficiency and Memory
 -
 -
 
+Towards Fast and Energy-Efficient Binarized Neural Network Inference on FPGA
+-
+-
+-
+
+Binary Ensemble Neural Network- More Bits per Network or More Networks per Bit
+-
+-
+-
+
+No Multiplication, No Floating Point, No Problem, Training Networks for Efficient Inference
+-
+-
+-
+
+Probabilistic Binary Neural Networks
+-
+-
+-
+
+A Fully Onchip Binarized Convolutional Neural Network FPGA Impelmentation with Accurate Inference
+-
+-
+-
+
 < BNN
 
 ------> Other

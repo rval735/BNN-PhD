@@ -201,3 +201,18 @@ https://github.com/hpi-xnor/BMXNet
 
 Hybrid Binary Networks- Optimizing for Accuracy, Efficiency and Memory
 https://arxiv.org/abs/1804.03867
+
+Towards Fast and Energy-Efficient Binarized Neural Network Inference on FPGA
+https://arxiv.org/abs/1810.02068
+
+Binary Ensemble Neural Network- More Bits per Network or More Networks per Bit
+https://arxiv.org/abs/1806.07550
+
+No Multiplication, No Floating Point, No Problem, Training Networks for Efficient Inference
+https://arxiv.org/abs/1809.09244
+
+Probabilistic Binary Neural Networks
+https://arxiv.org/abs/1809.03368
+
+A Fully Onchip Binarized Convolutional Neural Network FPGA Impelmentation with Accurate Inference
+https://dl.acm.org/citation.cfm?id=3218615
