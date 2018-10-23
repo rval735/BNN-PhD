@@ -1338,6 +1338,16 @@ A Fully Onchip Binarized Convolutional Neural Network FPGA Impelmentation with A
 -
 -
 
+FBNA- A Fully Binarized Neural Network Accelerator
+-
+-
+-
+
+A Lightweight YOLOv2: A Binarized CNN with A Parallel Support Vector Regression for an FPGA
+-
+-
+-
+
 < BNN
 
 ------> Other

@@ -216,3 +216,12 @@ https://arxiv.org/abs/1809.03368
 
 A Fully Onchip Binarized Convolutional Neural Network FPGA Impelmentation with Accurate Inference
 https://dl.acm.org/citation.cfm?id=3218615
+
+FBNA- A Fully Binarized Neural Network Accelerator
+http://kalman.mee.tcd.ie/fpl2018/content/pdfs/FPL2018-43iDzVTplcpussvbfIaaHz/40ktQvKBJbJ4H6l6mTML04/6AJHnlQf9pKYlEi5B7Rh7v.pdf
+http://kalman.mee.tcd.ie/fpl2018/program/
+https://www.semanticscholar.org/paper/FBNA%3A-A-Fully-Binarized-Neural-Network-Accelerator-Guo-Ma/dd871d3be7fe4e605275b453fc97c2ea2570ef5d
+
+A Lightweight YOLOv2- A Binarized CNN with A Parallel Support Vector Regression for an FPGA
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3174266
+
