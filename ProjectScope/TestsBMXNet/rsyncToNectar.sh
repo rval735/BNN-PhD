@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~/Dev/CNN-Phd/ProjectScope/TestsBMXNet
-rsync -ar --update --delete --exclude="results/" . nectar:~/TestsBMXNet
+rsync -ar --update --delete --exclude="results/" --exclude="bnn/data/" . nectar:~/TestsBMXNet
 
 
 # https://stackoverflow.com/questions/1515730/is-there-a-command-like-watch-or-inotifywait-on-the-mac
