@@ -11,7 +11,7 @@ mnist = mx.test_utils.get_mnist()
 ctx = mx.gpu() if mx.test_utils.list_gpus() else mx.cpu()
 
 batch_size = 100
-epochs = 10
+epochs = 5
 train_iter = mx.io.NDArrayIter(mnist['train_data'], mnist['train_label'], batch_size, shuffle=True)
 val_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
 
