@@ -66,7 +66,7 @@ def main(args):
 	train_img, val_img, train_lbl, val_lbl = prepare_data()
 	#can be used for checking mnist data with respect to its label
 	#check_data_visually(train_img, train_lbl)
-	batch_size = 200
+	batch_size = 100
 	if not args.predict:
 		print 'Starting training with the following characteristics'
 		print "Batch size:" + str(batch_size)

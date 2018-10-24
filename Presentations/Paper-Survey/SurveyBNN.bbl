@@ -677,6 +677,81 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{7966159}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CX}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HX}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=XN}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{application specific integrated circuits;convolution;field
+  programmable gate arrays;fixed point arithmetic;floating point
+  arithmetic;neural nets;FxpNet;deep convolutional neural network;fixed-point
+  representation;bit-width arithmetics;forward pass;backward
+  pass;floating-point values;binarized neural networks;quantized neural
+  networks;fixed-point primal weights;low resolution fixed-point
+  values;fixed-point primal parameters;FPGAs;ASICs;integer batch
+  normalization;IBN;fixed-point ADAM;FxpADAM;CIFAR-10 dataset;12-bit primal
+  parameters;12-bit gradients;Quantization (signal);Training;Field programmable
+  gate arrays;Neural networks;Convolution;Kernel;Acceleration}
+    \strng{namehash}{CX+1}
+    \strng{fullhash}{CXHXZHXN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    We introduce FxpNet, a framework to train deep convolutional neural
+  networks with low bit-width arithmetics in both forward pass and backward
+  pass. During training FxpNet further reduces the bit-width of stored
+  parameters (also known as primal parameters) by adaptively updating their
+  fixed-point formats. These primal parameters are usually represented in the
+  full resolution of floating-point values in previous binarized and quantized
+  neural networks. In FxpNet, during forward pass fixed-point primal weights
+  and activations are first binarized before computation, while in backward
+  pass all gradients are represented as low resolution fixed-point values and
+  then accumulated to corresponding fixed-point primal parameters. To have
+  highly efficient implementations in FPGAs, ASICs and other dedicated devices,
+  FxpNet introduces Integer Batch Normalization (IBN) and Fixed-point ADAM
+  (FxpADAM) methods to further reduce the required floating-point operations,
+  which will save considerable power and chip area. The evaluation on CIFAR-10
+  dataset indicates the effectiveness that FxpNet with 12-bit primal parameters
+  and 12-bit gradients achieves comparable prediction accuracy with
+  state-of-the-art binarized and quantized neural networks.%
+    }
+    \field{booktitle}{2017 International Joint Conference on Neural Networks
+  (IJCNN)}
+    \verb{doi}
+    \verb 10.1109/IJCNN.2017.7966159
+    \endverb
+    \field{issn}{2161-4407}
+    \field{pages}{2494\bibrangedash 2501}
+    \field{title}{FxpNet: Training a deep convolutional neural network in
+  fixed-point representation}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{2015arXiv150303562C}{article}{}
     \name{author}{4}{}{%
       {{hash=CZ}{%
@@ -2008,7 +2083,7 @@
     \field{pages}{574\bibrangedash 579}
     \field{series}{ASPDAC '18}
     \field{title}{Fully Parallel RRAM Synaptic Array for Implementing Binary
-  Neural Network with (+1, \&Minus;1) Weights and (+1, 0) Neurons}
+  Neural Network with (+1, -1) Weights and (+1, 0) Neurons}
     \verb{url}
     \verb http://dl.acm.org/citation.cfm?id=3201607.3201741
     \endverb
@@ -2440,6 +2515,64 @@
   classification and online training}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2016arXiv160606160Z}{article}{}
+    \name{author}{6}{}{%
+      {{hash=ZS}{%
+         family={{Zhou}},
+         familyi={Z\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={{Wu}},
+         familyi={W\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=NZ}{%
+         family={{Ni}},
+         familyi={N\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={{Zhou}},
+         familyi={Z\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={{Wen}},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={{Zou}},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, Computer Science - Neural and Evolutionary Computing, Computer
+  Science - Learning}
+    \strng{namehash}{ZS+1}
+    \strng{fullhash}{ZSWYNZZXWHZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{eprint}
+    \verb 1606.06160
+    \endverb
+    \field{title}{{DoReFa-Net: Training Low Bitwidth Convolutional Neural
+  Networks with Low Bitwidth Gradients}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{06}
+    \field{year}{2016}
   \endentry
 
   \entry{2018arXiv180802631Z}{article}{}

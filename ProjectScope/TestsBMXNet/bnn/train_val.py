@@ -166,9 +166,11 @@ def train_binary(train_img, val_img, train_lbl, val_lbl, batch_size, epochs, gpu
 	model.fit(
 		train_iter,  			# training data
 		eval_data=val_iter, 	# validation data
-		optimizer='Adam',
+		#optimizer='Adam',
+		optimizer='sgd',
 		num_epoch=epochs,
 		initializer = mx.initializer.Xavier(),
-		batch_end_callback = mx.callback.Speedometer(batch_size, 5) # output progress for each 200 data batches
+		#batch_end_callback = mx.callback.Speedometer(batch_size, 5) # output progress for each 200 data batches
+		batch_end_callback = mx.callback.Speedometer(batch_size, 100) 
 	)
 	return model

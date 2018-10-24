@@ -10,8 +10,8 @@ mnist = mx.test_utils.get_mnist()
 # Set the compute context, GPU is available otherwise CPU
 ctx = mx.gpu() if mx.test_utils.list_gpus() else mx.cpu()
 
-batch_size = 200
-epochs = 5
+batch_size = 100
+epochs = 10
 train_iter = mx.io.NDArrayIter(mnist['train_data'], mnist['train_label'], batch_size, shuffle=True)
 val_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
 
@@ -42,10 +42,10 @@ print (datetime.datetime.now())
 # train with the same
 lenet_model.fit(train_iter,
                 eval_data=val_iter,
-                optimizer = 'Adam',
-                optimizer_params = {'learning_rate':0.1},
+                optimizer = 'sgd',
+                optimizer_params={'learning_rate':0.1},
                 eval_metric = 'acc',
-                batch_end_callback = mx.callback.Speedometer(batch_size, 5),
+                batch_end_callback = mx.callback.Speedometer(batch_size, 100),
                 num_epoch = epochs)
 
 print ("Finished fitting the model at:")

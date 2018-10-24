@@ -10,8 +10,8 @@ mnist = mx.test_utils.get_mnist()
 # Set the compute context, GPU is available otherwise CPU
 ctx = mx.gpu() if mx.test_utils.list_gpus() else mx.cpu()
 
-batch_size = 200
-epochs = 5
+batch_size = 100
+epochs = 10
 train_iter = mx.io.NDArrayIter(mnist['train_data'], mnist['train_label'], batch_size, shuffle=True)
 val_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
 
@@ -41,13 +41,12 @@ print (datetime.datetime.now())
 
 mlp_model.fit(train_iter,  # train data
               eval_data = val_iter,  # validation data
-              optimizer = 'Adam',  # use SGD to train
+              optimizer = 'sgd',  # use SGD to train
               optimizer_params = {'learning_rate':0.1},  # use fixed learning rate
               eval_metric = 'acc',  # report accuracy during training
-              batch_end_callback = mx.callback.Speedometer(batch_size, 5), # output progress for each 100 data batches
+              batch_end_callback = mx.callback.Speedometer(batch_size, 100), # output progress for each 100 data batches
               num_epoch = epochs)  # train for at most 10 dataset passes
-
-
+              
 print ("Finished fitting the model at:")
 print (datetime.datetime.now())
 
