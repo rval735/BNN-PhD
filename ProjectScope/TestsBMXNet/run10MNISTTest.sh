@@ -8,16 +8,21 @@ echoDate()
 echo "About to start MNIST DNN"
 echoDate
 
-for i in `seq 1 10`; do
+#for i in `seq 1 10`; do
     /usr/bin/time -va python MNISTTest.py
-done
+#done
+
+echoDate
 
 echo "About to start MNIST CNN"
 
-for i in `seq 1 10`; do
+#for i in `seq 1 10`; do
     /usr/bin/time -va python MNISTTestCNN.py
-done
+#done
 
 echoDate
 
 echo "Finished"
+
+# To run this script
+# nohup ./run10MNISTTest.sh &>> results/test0.txt &
