@@ -1,12 +1,27 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-10-22 22:26:17 +1300 
+%% Created for RHVT at 2018-10-24 20:44:45 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{7966159,
+	Abstract = {We introduce FxpNet, a framework to train deep convolutional neural networks with low bit-width arithmetics in both forward pass and backward pass. During training FxpNet further reduces the bit-width of stored parameters (also known as primal parameters) by adaptively updating their fixed-point formats. These primal parameters are usually represented in the full resolution of floating-point values in previous binarized and quantized neural networks. In FxpNet, during forward pass fixed-point primal weights and activations are first binarized before computation, while in backward pass all gradients are represented as low resolution fixed-point values and then accumulated to corresponding fixed-point primal parameters. To have highly efficient implementations in FPGAs, ASICs and other dedicated devices, FxpNet introduces Integer Batch Normalization (IBN) and Fixed-point ADAM (FxpADAM) methods to further reduce the required floating-point operations, which will save considerable power and chip area. The evaluation on CIFAR-10 dataset indicates the effectiveness that FxpNet with 12-bit primal parameters and 12-bit gradients achieves comparable prediction accuracy with state-of-the-art binarized and quantized neural networks.},
+	Author = {X. Chen and X. Hu and H. Zhou and N. Xu},
+	Booktitle = {2017 International Joint Conference on Neural Networks (IJCNN)},
+	Date-Added = {2018-10-24 07:44:36 +0000},
+	Date-Modified = {2018-10-24 07:44:36 +0000},
+	Doi = {10.1109/IJCNN.2017.7966159},
+	Issn = {2161-4407},
+	Keywords = {application specific integrated circuits;convolution;field programmable gate arrays;fixed point arithmetic;floating point arithmetic;neural nets;FxpNet;deep convolutional neural network;fixed-point representation;bit-width arithmetics;forward pass;backward pass;floating-point values;binarized neural networks;quantized neural networks;fixed-point primal weights;low resolution fixed-point values;fixed-point primal parameters;FPGAs;ASICs;integer batch normalization;IBN;fixed-point ADAM;FxpADAM;CIFAR-10 dataset;12-bit primal parameters;12-bit gradients;Quantization (signal);Training;Field programmable gate arrays;Neural networks;Convolution;Kernel;Acceleration},
+	Month = {May},
+	Pages = {2494-2501},
+	Title = {FxpNet: Training a deep convolutional neural network in fixed-point representation},
+	Year = {2017},
+	Bdsk-Url-1 = {https://doi.org/10.1109/IJCNN.2017.7966159}}
 
 @inproceedings{Nakahara:2018:LYB:3174243.3174266,
 	Acmid = {3174266},
@@ -3652,10 +3667,10 @@ In this thesis, research is done on the co-simulation of ClaSH and traditional H
 	Archiveprefix = {arXiv},
 	Author = {{Borovykh}, A. and {Bohte}, S. and {Oosterlee}, C.~W.},
 	Date-Added = {2018-02-05 09:05:50 +0000},
-	Date-Modified = {2018-02-05 09:05:50 +0000},
+	Date-Modified = {2018-10-24 07:44:45 +0000},
 	Eprint = {1703.04691},
 	Journal = {ArXiv e-prints},
-	Keywords = {Statistics - Machine Learning},
+	Keywords = {BNN; Statistics; Machine Learning},
 	Month = mar,
 	Primaryclass = {stat.ML},
 	Title = {{Conditional Time Series Forecasting with Convolutional Neural Networks}},

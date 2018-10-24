@@ -1348,6 +1348,11 @@ A Lightweight YOLOv2: A Binarized CNN with A Parallel Support Vector Regression 
 -
 -
 
+FxpNet- Training deep convolutional neural network in fixed-point representation
+-
+-
+-
+
 < BNN
 
 ------> Other

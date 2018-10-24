@@ -225,3 +225,5 @@ https://www.semanticscholar.org/paper/FBNA%3A-A-Fully-Binarized-Neural-Network-A
 A Lightweight YOLOv2- A Binarized CNN with A Parallel Support Vector Regression for an FPGA
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3174266
 
+FxpNet- Training deep convolutional neural network in fixed-point representation
+https://ieeexplore.ieee.org/document/7966159/
