@@ -843,6 +843,11 @@ Transfer Learning for Visual Categorization- A Survey
 -
 -
 
+Gradient-based learning applied to document recognition
+-
+-
+-
+
 < NN
 -------> DCGAN
 

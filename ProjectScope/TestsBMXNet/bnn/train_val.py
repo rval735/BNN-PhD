@@ -11,6 +11,7 @@ import pdb
 from dorefa_ops import get_dorefa
 from math_ops import *
 from random import randint
+import datetime
 
 logging.getLogger().setLevel(logging.DEBUG)
 
@@ -126,32 +127,60 @@ def val(model_prefix, epoch_num, train_img, val_img, train_lbl, val_lbl, batch_s
 	print('Preparing data for validation...')
 	train_iter, val_iter = prepair_data(train_img, val_img, train_lbl, val_lbl, batch_size)
 	print('Loading model...')
+	
+	before_predict = datetime.datetime.now()
+	print(before_predict)
+	
 	model = mx.mod.Module.load(model_prefix, epoch_num, context = device)
 	
 	model.bind(data_shapes=val_iter.provide_data,
 	         label_shapes=val_iter.provide_label, for_training=False)  # create memory by given input shapes
-	model.init_params()  # initial parameters with the default random initializer
+	# model.init_params()  # initial parameters with the default random initializer
 	print('Evaluating...')
+	
 	metric = mx.metric.Accuracy()
 	score = model.score(val_iter, metric)
+	after_predict = datetime.datetime.now()
+	diff = (after_predict - before_predict).total_seconds()
+	samples = batch_size / diff
+	
 	print score
+	print("Number of predictions: " + str(batch_size))
+	print("Samples/Sec:" + str(samples))
+	print(after_predict)
+	return model
 	#print 'Validation accuracy: %f%%' % (score*100)
 
-def classify(val_img, model_prefix, epoch_num, train_img, train_lbl, val_lbl, batch_size, gpu_id=0):
+def classify(val_img, model, epoch_num, train_img, train_lbl, val_lbl, batch_size, gpu_id=0):
 	device = mx.cpu()
 	if gpu_id >= 0:
 		device = mx.gpu(gpu_id)
 	train_iter, val_iter = prepair_data(train_img, val_img, train_lbl, val_lbl, batch_size)
-	model = mx.mod.Module.load(model_prefix, epoch_num, context = device)
+	
+	before_predict = datetime.datetime.now()
+	print(before_predict)
 		
 	model.bind(data_shapes=val_iter.provide_data,
          	   label_shapes=val_iter.provide_label, for_training=False)  # create memory by given input shapes
-	model.init_params()  # initial parameters with the default random initializer
+	# model.init_params()  # initial parameters with the default random initializer
 	n = randint(0,100)
 	#plt.imshow(val_img[n], cmap='Greys_r')
 	#plt.axis('off')
 	#plt.show()
 	prob = model.predict(eval_data=val_iter, num_batch=1)[n].asnumpy()
+	
+	print('Evaluating...')
+	
+	metric = mx.metric.Accuracy()
+	score = model.score(val_iter, metric)
+	after_predict = datetime.datetime.now()
+	diff = (after_predict - before_predict).total_seconds()
+	samples = batch_size / diff
+	
+	print score
+	print("Number of predictions: " + str(batch_size))
+	print("Samples/Sec: " + str(samples))
+	print(after_predict)
 	print 'Classified as %d[%d] with probability %f' % (prob.argmax(), val_lbl[n], max(prob))
 
 def train_binary(train_img, val_img, train_lbl, val_lbl, batch_size, epochs, gpu_id=0):
@@ -171,6 +200,6 @@ def train_binary(train_img, val_img, train_lbl, val_lbl, batch_size, epochs, gpu
 		num_epoch=epochs,
 		initializer = mx.initializer.Xavier(),
 		#batch_end_callback = mx.callback.Speedometer(batch_size, 5) # output progress for each 200 data batches
-		batch_end_callback = mx.callback.Speedometer(batch_size, 100) 
+		batch_end_callback = mx.callback.Speedometer(batch_size, 100)
 	)
 	return model

@@ -1,12 +1,29 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-10-24 20:44:45 +1300 
+%% Created for RHVT at 2018-10-25 14:08:55 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{726791,
+	Abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day.},
+	Author = {Y. Lecun and L. Bottou and Y. Bengio and P. Haffner},
+	Date-Added = {2018-10-25 01:06:25 +0000},
+	Date-Modified = {2018-10-25 01:06:33 +0000},
+	Doi = {10.1109/5.726791},
+	Issn = {0018-9219},
+	Journal = {Proceedings of the IEEE},
+	Keywords = {NN; optical character recognition;multilayer perceptrons;backpropagation;convolution;gradient-based learning;document recognition;multilayer neural networks;back-propagation;gradient based learning technique;complex decision surface synthesis;high-dimensional patterns;handwritten character recognition;handwritten digit recognition task;2D shape variability;document recognition systems;field extraction;segmentation recognition;language modeling;graph transformer networks;GTN;multimodule systems;performance measure minimization;cheque reading;convolutional neural network character recognizers;Neural networks;Pattern recognition;Machine learning;Optical character recognition software;Character recognition;Feature extraction;Multi-layer neural network;Optical computing;Hidden Markov models;Principal component analysis},
+	Month = {Nov},
+	Number = {11},
+	Pages = {2278-2324},
+	Title = {Gradient-based learning applied to document recognition},
+	Volume = {86},
+	Year = {1998},
+	Bdsk-Url-1 = {https://doi.org/10.1109/5.726791}}
 
 @inproceedings{7966159,
 	Abstract = {We introduce FxpNet, a framework to train deep convolutional neural networks with low bit-width arithmetics in both forward pass and backward pass. During training FxpNet further reduces the bit-width of stored parameters (also known as primal parameters) by adaptively updating their fixed-point formats. These primal parameters are usually represented in the full resolution of floating-point values in previous binarized and quantized neural networks. In FxpNet, during forward pass fixed-point primal weights and activations are first binarized before computation, while in backward pass all gradients are represented as low resolution fixed-point values and then accumulated to corresponding fixed-point primal parameters. To have highly efficient implementations in FPGAs, ASICs and other dedicated devices, FxpNet introduces Integer Batch Normalization (IBN) and Fixed-point ADAM (FxpADAM) methods to further reduce the required floating-point operations, which will save considerable power and chip area. The evaluation on CIFAR-10 dataset indicates the effectiveness that FxpNet with 12-bit primal parameters and 12-bit gradients achieves comparable prediction accuracy with state-of-the-art binarized and quantized neural networks.},

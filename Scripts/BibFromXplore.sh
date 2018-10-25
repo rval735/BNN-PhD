@@ -4,7 +4,7 @@ echo "About to retrieve Bibitem from IEEEXplore with ID:" $1
 
 # Full URL example: https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7838429
 
-if [[ ! $1 =~ [0-9]{7} ]]; then
+if [[ ! $1 =~ [0-9]{6,7} ]]; then
   echo "This script needs a record ID from IEEEXplore like: 7838429 (7 numbers)"
   exit 0
 fi

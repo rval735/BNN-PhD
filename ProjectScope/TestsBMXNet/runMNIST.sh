@@ -4,6 +4,7 @@ echo "About to start MNIST Test"
 
 ./run10MNISTTest.sh
 
+echo "------------------------------------"
 echo "About to start MNIST BNN"
 
 cd bnn
@@ -12,4 +13,4 @@ cd bnn
 echo "Finished both"
 
 # To run this script
-# nohup ./run10MNISTTest.sh &>> results/allTest0.txt &
+# nohup ./runMNIST.sh &>> results/DNN-CNN-BNN.txt &

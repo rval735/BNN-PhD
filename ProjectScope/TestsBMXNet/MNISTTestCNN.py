@@ -12,6 +12,7 @@ ctx = mx.gpu() if mx.test_utils.list_gpus() else mx.cpu()
 
 batch_size = 100
 epochs = 5
+out_file = "results/CNNModel"
 train_iter = mx.io.NDArrayIter(mnist['train_data'], mnist['train_label'], batch_size, shuffle=True)
 val_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
 
@@ -48,14 +49,25 @@ lenet_model.fit(train_iter,
                 batch_end_callback = mx.callback.Speedometer(batch_size, 100),
                 num_epoch = epochs)
 
+lenet_model.save_checkpoint(out_file, epochs)
+before_predict = datetime.datetime.now()
 print ("Finished fitting the model at:")
-print (datetime.datetime.now())
+print (before_predict)
 
-test_iter = mx.io.NDArrayIter(mnist['test_data'], None, batch_size)
+numberToTest = batch_size
+test_iter = mx.io.NDArrayIter(mnist['test_data'], None, numberToTest)
 prob = lenet_model.predict(test_iter)
-test_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
-# predict accuracy for lenet
+#assert prob.shape == (10000, 10)
+
+test_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], numberToTest)
+# predict accuracy of mlp
 acc = mx.metric.Accuracy()
 lenet_model.score(test_iter, acc)
+after_predict = datetime.datetime.now()
+diff = (after_predict - before_predict).total_seconds()
+samples = numberToTest / diff
 print(acc)
-assert acc.get()[1] > 0.98, "Achieved accuracy (%f) is lower than expected (0.98)" % acc.get()[1]
+print(after_predict)
+print("Number of predictions: " + str(numberToTest))
+print("Samples/Sec:" + str(samples))
+#assert acc.get()[1] > 0.98, "Achieved accuracy (%f) is lower than expected (0.98)" % acc.get()[1]

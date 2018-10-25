@@ -14,6 +14,7 @@ echoDate
 
 echoDate
 
+echo "------------------------------------"
 echo "About to start MNIST CNN"
 
 #for i in `seq 1 10`; do
@@ -26,3 +27,4 @@ echo "Finished"
 
 # To run this script
 # nohup ./run10MNISTTest.sh &>> results/test0.txt &
+# nohup ./run10MNISTTest.sh &>> results/allTest4.txt &

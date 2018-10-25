@@ -9,6 +9,7 @@ import urllib
 import gzip
 import struct
 import argparse
+import mxnet as mx
 #import matplotlib.pyplot as plt
 
 from train_val import train as mnist_train
@@ -72,10 +73,10 @@ def main(args):
 		print "Batch size:" + str(batch_size)
 		model = mnist_train_binary(train_img, val_img, train_lbl, val_lbl, batch_size, args.epochs, args.gpu_id)
 		model.save_checkpoint(args.out_file, args.epochs)
+		mnist_classify(val_img, model, args.epochs, train_img, train_lbl, val_lbl, batch_size, args.gpu_id)
 	else:
 		mnist_val(args.model_prefix, args.epochs, train_img, val_img, train_lbl, val_lbl, batch_size, args.gpu_id)
-		#mnist_classify(val_img, args.model_prefix, args.epochs, train_img, train_lbl, val_lbl, batch_size, args.gpu_id)
-
+	
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description='generate generate annotations file from data source')
 	parser.add_argument('--model_prefix', dest='model_prefix', type=str, help="gives where to find the binary model file and .json file")

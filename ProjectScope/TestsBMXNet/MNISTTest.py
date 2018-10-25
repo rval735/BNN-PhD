@@ -12,6 +12,7 @@ ctx = mx.gpu() if mx.test_utils.list_gpus() else mx.cpu()
 
 batch_size = 100
 epochs = 5
+out_file = "results/DNNModel"
 train_iter = mx.io.NDArrayIter(mnist['train_data'], mnist['train_label'], batch_size, shuffle=True)
 val_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
 
@@ -46,17 +47,27 @@ mlp_model.fit(train_iter,  # train data
               eval_metric = 'acc',  # report accuracy during training
               batch_end_callback = mx.callback.Speedometer(batch_size, 100), # output progress for each 100 data batches
               num_epoch = epochs)  # train for at most 10 dataset passes
-              
+
+mlp_model.save_checkpoint(out_file, epochs)
+before_predict = datetime.datetime.now()
 print ("Finished fitting the model at:")
-print (datetime.datetime.now())
+print (before_predict)
 
-test_iter = mx.io.NDArrayIter(mnist['test_data'], None, batch_size)
+numberToTest = batch_size
+test_iter = mx.io.NDArrayIter(mnist['test_data'], None, numberToTest)
 prob = mlp_model.predict(test_iter)
-assert prob.shape == (10000, 10)
+#assert prob.shape == (10000, 10)
 
-test_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], batch_size)
+test_iter = mx.io.NDArrayIter(mnist['test_data'], mnist['test_label'], numberToTest)
 # predict accuracy of mlp
 acc = mx.metric.Accuracy()
 mlp_model.score(test_iter, acc)
+after_predict = datetime.datetime.now()
+diff = (after_predict - before_predict).total_seconds()
+samples = numberToTest / diff
 print(acc)
-assert acc.get()[1] > 0.96, "Achieved accuracy (%f) is lower than expected (0.96)" % acc.get()[1]
+print(after_predict)
+print("Number of predictions: " + str(numberToTest))
+print("Samples/Sec:" + str(samples))
+
+#assert acc.get()[1] > 0.96, "Achieved accuracy (%f) is lower than expected (0.96)" % acc.get()[1]
