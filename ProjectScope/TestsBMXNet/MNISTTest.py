@@ -68,6 +68,7 @@ samples = numberToTest / diff
 print(acc)
 print(after_predict)
 print("Number of predictions: " + str(numberToTest))
+print("Difference:" + str(diff))
 print("Samples/Sec:" + str(samples))
 
 #assert acc.get()[1] > 0.96, "Achieved accuracy (%f) is lower than expected (0.96)" % acc.get()[1]

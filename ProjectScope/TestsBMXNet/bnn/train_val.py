@@ -147,6 +147,7 @@ def val(model_prefix, epoch_num, train_img, val_img, train_lbl, val_lbl, batch_s
 	print score
 	print("Number of predictions: " + str(batch_size))
 	print("Samples/Sec:" + str(samples))
+	print("Difference: " + str(diff))
 	print(after_predict)
 	return model
 	#print 'Validation accuracy: %f%%' % (score*100)
@@ -180,6 +181,7 @@ def classify(val_img, model, epoch_num, train_img, train_lbl, val_lbl, batch_siz
 	print score
 	print("Number of predictions: " + str(batch_size))
 	print("Samples/Sec: " + str(samples))
+	print("Difference: " + str(diff))
 	print(after_predict)
 	print 'Classified as %d[%d] with probability %f' % (prob.argmax(), val_lbl[n], max(prob))
 

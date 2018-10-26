@@ -1,0 +1,247 @@
+About to start MNIST Test
+About to start MNIST DNN
+2018-10-25_22:32:25
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1426: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  label = np.fromstring(flbl.read(), dtype=np.int8)
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1429: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  image = np.fromstring(fimg.read(), dtype=np.uint8).reshape(len(label), rows, cols)
+Fitting the model at:
+2018-10-25 22:32:29.130165
+INFO:root:Epoch[0] Batch [100]	Speed: 20004.36 samples/sec	accuracy=0.105446
+INFO:root:Epoch[0] Batch [200]	Speed: 19618.00 samples/sec	accuracy=0.111700
+INFO:root:Epoch[0] Batch [300]	Speed: 18849.64 samples/sec	accuracy=0.109200
+INFO:root:Epoch[0] Batch [400]	Speed: 19943.20 samples/sec	accuracy=0.116200
+INFO:root:Epoch[0] Batch [500]	Speed: 19934.93 samples/sec	accuracy=0.112400
+INFO:root:Epoch[0] Train-accuracy=0.247879
+INFO:root:Epoch[0] Time cost=3.049
+INFO:root:Epoch[0] Validation-accuracy=0.380100
+INFO:root:Epoch[1] Batch [100]	Speed: 19883.41 samples/sec	accuracy=0.454158
+INFO:root:Epoch[1] Batch [200]	Speed: 19896.78 samples/sec	accuracy=0.579200
+INFO:root:Epoch[1] Batch [300]	Speed: 19577.44 samples/sec	accuracy=0.747500
+INFO:root:Epoch[1] Batch [400]	Speed: 19514.48 samples/sec	accuracy=0.799700
+INFO:root:Epoch[1] Batch [500]	Speed: 19457.94 samples/sec	accuracy=0.822500
+INFO:root:Epoch[1] Train-accuracy=0.844343
+INFO:root:Epoch[1] Time cost=3.046
+INFO:root:Epoch[1] Validation-accuracy=0.863700
+INFO:root:Epoch[2] Batch [100]	Speed: 19851.04 samples/sec	accuracy=0.852079
+INFO:root:Epoch[2] Batch [200]	Speed: 19798.80 samples/sec	accuracy=0.873500
+INFO:root:Epoch[2] Batch [300]	Speed: 19835.73 samples/sec	accuracy=0.888200
+INFO:root:Epoch[2] Batch [400]	Speed: 19466.05 samples/sec	accuracy=0.900700
+INFO:root:Epoch[2] Batch [500]	Speed: 19735.70 samples/sec	accuracy=0.902200
+INFO:root:Epoch[2] Train-accuracy=0.914444
+INFO:root:Epoch[2] Time cost=3.037
+INFO:root:Epoch[2] Validation-accuracy=0.918300
+INFO:root:Epoch[3] Batch [100]	Speed: 19894.79 samples/sec	accuracy=0.914752
+INFO:root:Epoch[3] Batch [200]	Speed: 19894.56 samples/sec	accuracy=0.923600
+INFO:root:Epoch[3] Batch [300]	Speed: 19603.57 samples/sec	accuracy=0.926500
+INFO:root:Epoch[3] Batch [400]	Speed: 19902.71 samples/sec	accuracy=0.933900
+INFO:root:Epoch[3] Batch [500]	Speed: 19873.21 samples/sec	accuracy=0.934100
+INFO:root:Epoch[3] Train-accuracy=0.941414
+INFO:root:Epoch[3] Time cost=3.031
+INFO:root:Epoch[3] Validation-accuracy=0.939700
+INFO:root:Epoch[4] Batch [100]	Speed: 19767.22 samples/sec	accuracy=0.940594
+INFO:root:Epoch[4] Batch [200]	Speed: 19675.98 samples/sec	accuracy=0.946600
+INFO:root:Epoch[4] Batch [300]	Speed: 19748.10 samples/sec	accuracy=0.945800
+INFO:root:Epoch[4] Batch [400]	Speed: 19419.24 samples/sec	accuracy=0.946500
+INFO:root:Epoch[4] Batch [500]	Speed: 19715.50 samples/sec	accuracy=0.949900
+INFO:root:Epoch[4] Train-accuracy=0.956667
+INFO:root:Epoch[4] Time cost=3.050
+INFO:root:Epoch[4] Validation-accuracy=0.950100
+INFO:root:Saved checkpoint to "results/DNNModel-0005.params"
+Finished fitting the model at:
+2018-10-25 22:32:45.208792
+EvalMetric: {'accuracy': 0.9501}
+2018-10-25 22:32:45.561873
+Number of predictions: 100
+Samples/Sec:283.221130562
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 18.76
+	System time (seconds): 1.15
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:19.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 876632
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 347068
+	Voluntary context switches: 3891
+	Involuntary context switches: 4877
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 864
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-10-25_22:32:45
+------------------------------------
+About to start MNIST CNN
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1426: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  label = np.fromstring(flbl.read(), dtype=np.int8)
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1429: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  image = np.fromstring(fimg.read(), dtype=np.uint8).reshape(len(label), rows, cols)
+Fitting the model at:
+2018-10-25 22:32:49.189892
+INFO:root:Epoch[0] Batch [100]	Speed: 283.35 samples/sec	accuracy=0.109010
+INFO:root:Epoch[0] Batch [200]	Speed: 283.65 samples/sec	accuracy=0.113100
+INFO:root:Epoch[0] Batch [300]	Speed: 284.71 samples/sec	accuracy=0.113200
+INFO:root:Epoch[0] Batch [400]	Speed: 286.44 samples/sec	accuracy=0.109300
+INFO:root:Epoch[0] Batch [500]	Speed: 285.28 samples/sec	accuracy=0.115500
+INFO:root:Epoch[0] Train-accuracy=0.111212
+INFO:root:Epoch[0] Time cost=202.935
+INFO:root:Epoch[0] Validation-accuracy=0.116800
+INFO:root:Epoch[1] Batch [100]	Speed: 417.67 samples/sec	accuracy=0.317525
+INFO:root:Epoch[1] Batch [200]	Speed: 404.40 samples/sec	accuracy=0.796200
+INFO:root:Epoch[1] Batch [300]	Speed: 404.50 samples/sec	accuracy=0.890400
+INFO:root:Epoch[1] Batch [400]	Speed: 409.41 samples/sec	accuracy=0.915900
+INFO:root:Epoch[1] Batch [500]	Speed: 407.23 samples/sec	accuracy=0.933500
+INFO:root:Epoch[1] Train-accuracy=0.937172
+INFO:root:Epoch[1] Time cost=147.023
+INFO:root:Epoch[1] Validation-accuracy=0.947600
+INFO:root:Epoch[2] Batch [100]	Speed: 410.92 samples/sec	accuracy=0.950594
+INFO:root:Epoch[2] Batch [200]	Speed: 403.03 samples/sec	accuracy=0.953700
+INFO:root:Epoch[2] Batch [300]	Speed: 404.92 samples/sec	accuracy=0.963100
+INFO:root:Epoch[2] Batch [400]	Speed: 398.83 samples/sec	accuracy=0.964800
+INFO:root:Epoch[2] Batch [500]	Speed: 399.97 samples/sec	accuracy=0.967900
+INFO:root:Epoch[2] Train-accuracy=0.967475
+INFO:root:Epoch[2] Time cost=149.021
+INFO:root:Epoch[2] Validation-accuracy=0.975100
+INFO:root:Epoch[3] Batch [100]	Speed: 399.27 samples/sec	accuracy=0.971089
+INFO:root:Epoch[3] Batch [200]	Speed: 393.86 samples/sec	accuracy=0.971600
+INFO:root:Epoch[3] Batch [300]	Speed: 404.30 samples/sec	accuracy=0.974600
+INFO:root:Epoch[3] Batch [400]	Speed: 409.31 samples/sec	accuracy=0.976800
+INFO:root:Epoch[3] Batch [500]	Speed: 402.02 samples/sec	accuracy=0.977900
+INFO:root:Epoch[3] Train-accuracy=0.977475
+INFO:root:Epoch[3] Time cost=149.486
+INFO:root:Epoch[3] Validation-accuracy=0.982100
+INFO:root:Epoch[4] Batch [100]	Speed: 393.63 samples/sec	accuracy=0.978317
+INFO:root:Epoch[4] Batch [200]	Speed: 394.99 samples/sec	accuracy=0.979800
+INFO:root:Epoch[4] Batch [300]	Speed: 396.39 samples/sec	accuracy=0.980600
+INFO:root:Epoch[4] Batch [400]	Speed: 395.09 samples/sec	accuracy=0.983000
+INFO:root:Epoch[4] Batch [500]	Speed: 396.39 samples/sec	accuracy=0.982800
+INFO:root:Epoch[4] Train-accuracy=0.980606
+INFO:root:Epoch[4] Time cost=151.623
+INFO:root:Epoch[4] Validation-accuracy=0.984200
+INFO:root:Saved checkpoint to "results/CNNModel-0005.params"
+Finished fitting the model at:
+2018-10-25 22:47:47.771020
+EvalMetric: {'accuracy': 0.9842}
+2018-10-25 22:48:27.613492
+Number of predictions: 100
+Samples/Sec:2.50988442685
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 940.04
+	System time (seconds): 1.41
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:41.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 877200
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 352262
+	Voluntary context switches: 3662
+	Involuntary context switches: 37113
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 3384
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-10-25_22:48:27
+Finished
+------------------------------------
+About to start MNIST BNN
+About to start MNIST BNN
+2018-10-25_22:48:27
+preparing data...
+mnist_cnn.py:32: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  label = np.fromstring(flbl.read(), dtype=np.int8)
+mnist_cnn.py:35: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  image = np.fromstring(fimg.read(), dtype=np.uint8).reshape(len(label), rows, cols)
+Starting training with the following characteristics
+Batch size:100
+using quantized lenet with bitwidth 1 (weights), 1 (activations) and 6 (gradients)
+INFO:root:Epoch[0] Batch [100]	Speed: 119.52 samples/sec	accuracy=0.533663
+INFO:root:Epoch[0] Batch [200]	Speed: 100.34 samples/sec	accuracy=0.762900
+INFO:root:Epoch[0] Batch [300]	Speed: 100.66 samples/sec	accuracy=0.807600
+INFO:root:Epoch[0] Batch [400]	Speed: 101.25 samples/sec	accuracy=0.826200
+INFO:root:Epoch[0] Batch [500]	Speed: 100.66 samples/sec	accuracy=0.852500
+INFO:root:Epoch[0] Train-accuracy=0.861212
+INFO:root:Epoch[0] Time cost=578.856
+INFO:root:Epoch[0] Validation-accuracy=0.870500
+INFO:root:Epoch[1] Batch [100]	Speed: 146.61 samples/sec	accuracy=0.866634
+INFO:root:Epoch[1] Batch [200]	Speed: 149.48 samples/sec	accuracy=0.877600
+INFO:root:Epoch[1] Batch [300]	Speed: 146.63 samples/sec	accuracy=0.877600
+INFO:root:Epoch[1] Batch [400]	Speed: 148.96 samples/sec	accuracy=0.877900
+INFO:root:Epoch[1] Batch [500]	Speed: 148.99 samples/sec	accuracy=0.889900
+INFO:root:Epoch[1] Train-accuracy=0.890707
+INFO:root:Epoch[1] Time cost=404.578
+INFO:root:Epoch[1] Validation-accuracy=0.897700
+INFO:root:Epoch[2] Batch [100]	Speed: 147.35 samples/sec	accuracy=0.892376
+INFO:root:Epoch[2] Batch [200]	Speed: 149.29 samples/sec	accuracy=0.896100
+INFO:root:Epoch[2] Batch [300]	Speed: 149.08 samples/sec	accuracy=0.896300
+INFO:root:Epoch[2] Batch [400]	Speed: 146.91 samples/sec	accuracy=0.895300
+INFO:root:Epoch[2] Batch [500]	Speed: 147.53 samples/sec	accuracy=0.902200
+INFO:root:Epoch[2] Train-accuracy=0.905657
+INFO:root:Epoch[2] Time cost=404.487
+INFO:root:Epoch[2] Validation-accuracy=0.906800
+INFO:root:Epoch[3] Batch [100]	Speed: 148.26 samples/sec	accuracy=0.903465
+INFO:root:Epoch[3] Batch [200]	Speed: 148.37 samples/sec	accuracy=0.907700
+INFO:root:Epoch[3] Batch [300]	Speed: 149.73 samples/sec	accuracy=0.907400
+INFO:root:Epoch[3] Batch [400]	Speed: 149.31 samples/sec	accuracy=0.905800
+INFO:root:Epoch[3] Batch [500]	Speed: 149.49 samples/sec	accuracy=0.909300
+INFO:root:Epoch[3] Train-accuracy=0.913838
+INFO:root:Epoch[3] Time cost=402.234
+INFO:root:Epoch[3] Validation-accuracy=0.914900
+INFO:root:Epoch[4] Batch [100]	Speed: 150.09 samples/sec	accuracy=0.909802
+INFO:root:Epoch[4] Batch [200]	Speed: 120.61 samples/sec	accuracy=0.911800
+INFO:root:Epoch[4] Batch [300]	Speed: 101.24 samples/sec	accuracy=0.915200
+INFO:root:Epoch[4] Batch [400]	Speed: 103.05 samples/sec	accuracy=0.911400
+INFO:root:Epoch[4] Batch [500]	Speed: 149.41 samples/sec	accuracy=0.915500
+INFO:root:Epoch[4] Train-accuracy=0.917374
+INFO:root:Epoch[4] Time cost=479.109
+INFO:root:Epoch[4] Validation-accuracy=0.918900
+INFO:root:Saved checkpoint to "../results/trainedBNN-0005.params"
+2018-10-25 23:30:42.148057
+WARNING:root:Already bound, ignoring bind()
+Evaluating...
+[('accuracy', 0.9189)]
+Number of predictions: 100
+Samples/Sec: 1.86031822901
+2018-10-25 23:31:35.902301
+Classified as 4[4] with probability 0.997110
+	Command being timed: "python mnist_cnn.py --o ../results/trainedBNN --epochs 5"
+	User time (seconds): 2570.67
+	System time (seconds): 16.06
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 43:08.28
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1189264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 587152
+	Voluntary context switches: 60993
+	Involuntary context switches: 188436
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 9000
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-10-25_23:31:35
+Finished
+Finished both

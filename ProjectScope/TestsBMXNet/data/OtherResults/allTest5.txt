@@ -1,0 +1,162 @@
+nohup: ignoring input
+About to start MNIST DNN
+2018-10-25_12:11:40
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1426: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  label = np.fromstring(flbl.read(), dtype=np.int8)
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1429: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  image = np.fromstring(fimg.read(), dtype=np.uint8).reshape(len(label), rows, cols)
+INFO:root:Epoch[0] Batch [100]	Speed: 44437.92 samples/sec	accuracy=0.104653
+INFO:root:Epoch[0] Batch [200]	Speed: 44222.91 samples/sec	accuracy=0.110100
+INFO:root:Epoch[0] Batch [300]	Speed: 41504.63 samples/sec	accuracy=0.113000
+INFO:root:Epoch[0] Batch [400]	Speed: 44616.79 samples/sec	accuracy=0.108700
+INFO:root:Epoch[0] Batch [500]	Speed: 44083.70 samples/sec	accuracy=0.122400
+INFO:root:Epoch[0] Train-accuracy=0.234848
+INFO:root:Epoch[0] Time cost=1.370
+INFO:root:Epoch[0] Validation-accuracy=0.370400
+INFO:root:Epoch[1] Batch [100]	Speed: 44335.52 samples/sec	accuracy=0.468713
+INFO:root:Epoch[1] Batch [200]	Speed: 44591.46 samples/sec	accuracy=0.582400
+INFO:root:Epoch[1] Batch [300]	Speed: 44120.15 samples/sec	accuracy=0.748100
+INFO:root:Epoch[1] Batch [400]	Speed: 43374.35 samples/sec	accuracy=0.795900
+INFO:root:Epoch[1] Batch [500]	Speed: 44176.47 samples/sec	accuracy=0.825300
+INFO:root:Epoch[1] Train-accuracy=0.840404
+INFO:root:Epoch[1] Time cost=1.363
+INFO:root:Epoch[1] Validation-accuracy=0.865500
+INFO:root:Epoch[2] Batch [100]	Speed: 44001.10 samples/sec	accuracy=0.862772
+INFO:root:Epoch[2] Batch [200]	Speed: 43810.46 samples/sec	accuracy=0.870900
+INFO:root:Epoch[2] Batch [300]	Speed: 44022.26 samples/sec	accuracy=0.882400
+INFO:root:Epoch[2] Batch [400]	Speed: 44062.35 samples/sec	accuracy=0.895500
+INFO:root:Epoch[2] Batch [500]	Speed: 43665.65 samples/sec	accuracy=0.903200
+INFO:root:Epoch[2] Train-accuracy=0.913737
+INFO:root:Epoch[2] Time cost=1.368
+INFO:root:Epoch[2] Validation-accuracy=0.919600
+INFO:root:Epoch[3] Batch [100]	Speed: 44889.74 samples/sec	accuracy=0.917723
+INFO:root:Epoch[3] Batch [200]	Speed: 44477.22 samples/sec	accuracy=0.923700
+INFO:root:Epoch[3] Batch [300]	Speed: 43400.52 samples/sec	accuracy=0.925100
+INFO:root:Epoch[3] Batch [400]	Speed: 44411.71 samples/sec	accuracy=0.932700
+INFO:root:Epoch[3] Batch [500]	Speed: 44546.80 samples/sec	accuracy=0.935000
+INFO:root:Epoch[3] Train-accuracy=0.940202
+INFO:root:Epoch[3] Time cost=1.358
+INFO:root:Epoch[3] Validation-accuracy=0.941000
+INFO:root:Epoch[4] Batch [100]	Speed: 44485.19 samples/sec	accuracy=0.942079
+INFO:root:Epoch[4] Batch [200]	Speed: 44898.19 samples/sec	accuracy=0.945400
+INFO:root:Epoch[4] Batch [300]	Speed: 44760.15 samples/sec	accuracy=0.943400
+INFO:root:Epoch[4] Batch [400]	Speed: 44653.22 samples/sec	accuracy=0.947600
+INFO:root:Epoch[4] Batch [500]	Speed: 34152.76 samples/sec	accuracy=0.950600
+INFO:root:Epoch[4] Train-accuracy=0.955859
+INFO:root:Epoch[4] Time cost=1.411
+INFO:root:Epoch[4] Validation-accuracy=0.954400
+Fitting the model at:
+2018-10-25 12:11:42.153848
+Finished fitting the model at:
+2018-10-25 12:11:49.583550
+EvalMetric: {'accuracy': 0.9544}
+2018-10-25 12:11:49.812370
+Number of predictions: 100
+Samples/Sec:437.0247356
+Traceback (most recent call last):
+  File "MNISTTest.py", line 71, in <module>
+    assert acc.get()[1] > 0.96, "Achieved accuracy (%f) is lower than expected (0.96)" % acc.get()[1]
+AssertionError: Achieved accuracy (0.954400) is lower than expected (0.96)
+Command exited with non-zero status 1
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 8.75
+	System time (seconds): 0.73
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 876624
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 347164
+	Voluntary context switches: 3821
+	Involuntary context switches: 4285
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 1
+2018-10-25_12:11:49
+About to start MNIST CNN
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1426: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  label = np.fromstring(flbl.read(), dtype=np.int8)
+/home/ubuntu/.local/lib/python2.7/site-packages/mxnet/test_utils.py:1429: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  image = np.fromstring(fimg.read(), dtype=np.uint8).reshape(len(label), rows, cols)
+INFO:root:Epoch[0] Batch [100]	Speed: 419.42 samples/sec	accuracy=0.107624
+INFO:root:Epoch[0] Batch [200]	Speed: 414.86 samples/sec	accuracy=0.109700
+INFO:root:Epoch[0] Batch [300]	Speed: 422.40 samples/sec	accuracy=0.109200
+INFO:root:Epoch[0] Batch [400]	Speed: 431.87 samples/sec	accuracy=0.115200
+INFO:root:Epoch[0] Batch [500]	Speed: 431.67 samples/sec	accuracy=0.115600
+INFO:root:Epoch[0] Train-accuracy=0.112020
+INFO:root:Epoch[0] Time cost=141.376
+INFO:root:Epoch[0] Validation-accuracy=0.113500
+INFO:root:Epoch[1] Batch [100]	Speed: 414.90 samples/sec	accuracy=0.302475
+INFO:root:Epoch[1] Batch [200]	Speed: 403.33 samples/sec	accuracy=0.794600
+INFO:root:Epoch[1] Batch [300]	Speed: 407.75 samples/sec	accuracy=0.885500
+INFO:root:Epoch[1] Batch [400]	Speed: 393.46 samples/sec	accuracy=0.913200
+INFO:root:Epoch[1] Batch [500]	Speed: 401.27 samples/sec	accuracy=0.931700
+INFO:root:Epoch[1] Train-accuracy=0.943131
+INFO:root:Epoch[1] Time cost=148.024
+INFO:root:Epoch[1] Validation-accuracy=0.952900
+INFO:root:Epoch[2] Batch [100]	Speed: 401.65 samples/sec	accuracy=0.949505
+INFO:root:Epoch[2] Batch [200]	Speed: 321.92 samples/sec	accuracy=0.955400
+INFO:root:Epoch[2] Batch [300]	Speed: 270.11 samples/sec	accuracy=0.961600
+INFO:root:Epoch[2] Batch [400]	Speed: 385.39 samples/sec	accuracy=0.963300
+INFO:root:Epoch[2] Batch [500]	Speed: 399.78 samples/sec	accuracy=0.968400
+INFO:root:Epoch[2] Train-accuracy=0.971212
+INFO:root:Epoch[2] Time cost=172.595
+INFO:root:Epoch[2] Validation-accuracy=0.975900
+INFO:root:Epoch[3] Batch [100]	Speed: 420.15 samples/sec	accuracy=0.973168
+INFO:root:Epoch[3] Batch [200]	Speed: 399.23 samples/sec	accuracy=0.971300
+INFO:root:Epoch[3] Batch [300]	Speed: 407.58 samples/sec	accuracy=0.975400
+INFO:root:Epoch[3] Batch [400]	Speed: 401.08 samples/sec	accuracy=0.975400
+INFO:root:Epoch[3] Batch [500]	Speed: 410.33 samples/sec	accuracy=0.977100
+INFO:root:Epoch[3] Train-accuracy=0.979394
+INFO:root:Epoch[3] Time cost=147.180
+INFO:root:Epoch[3] Validation-accuracy=0.982500
+INFO:root:Epoch[4] Batch [100]	Speed: 408.57 samples/sec	accuracy=0.980594
+INFO:root:Epoch[4] Batch [200]	Speed: 412.22 samples/sec	accuracy=0.977500
+INFO:root:Epoch[4] Batch [300]	Speed: 404.52 samples/sec	accuracy=0.980600
+INFO:root:Epoch[4] Batch [400]	Speed: 409.97 samples/sec	accuracy=0.981600
+INFO:root:Epoch[4] Batch [500]	Speed: 333.61 samples/sec	accuracy=0.981800
+INFO:root:Epoch[4] Train-accuracy=0.984242
+INFO:root:Epoch[4] Time cost=161.350
+INFO:root:Epoch[4] Validation-accuracy=0.986100
+Fitting the model at:
+2018-10-25 12:11:51.541617
+Finished fitting the model at:
+2018-10-25 12:26:20.099055
+EvalMetric: {'accuracy': 0.9861}
+2018-10-25 12:26:59.391464
+Number of predictions: 100
+Samples/Sec:2.54502084614
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 908.04
+	System time (seconds): 0.96
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 15:09.57
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 876848
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 352245
+	Voluntary context switches: 3703
+	Involuntary context switches: 36433
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-10-25_12:26:59
+Finished

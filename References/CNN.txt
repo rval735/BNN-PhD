@@ -72,6 +72,7 @@ https://arxiv.org/abs/1711.07971
 
 Deep Residual Learning for Image Recognition
 https://arxiv.org/abs/1512.03385
+https://ieeexplore.ieee.org/document/7780459
 
 ImageNet Classification with deep convolutional neural networks
 https://dl.acm.org/citation.cfm?id=2999257

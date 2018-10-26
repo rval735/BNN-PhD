@@ -1,0 +1,84 @@
+nohup: ignoring input
+About to start MNIST BNN
+2018-10-25_12:32:25
+mnist_cnn.py:32: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  label = np.fromstring(flbl.read(), dtype=np.int8)
+mnist_cnn.py:35: DeprecationWarning: The binary mode of fromstring is deprecated, as it behaves surprisingly on unicode inputs. Use frombuffer instead
+  image = np.fromstring(fimg.read(), dtype=np.uint8).reshape(len(label), rows, cols)
+INFO:root:Epoch[0] Batch [100]	Speed: 160.79 samples/sec	accuracy=0.539802
+INFO:root:Epoch[0] Batch [200]	Speed: 153.42 samples/sec	accuracy=0.761600
+INFO:root:Epoch[0] Batch [300]	Speed: 165.51 samples/sec	accuracy=0.809400
+INFO:root:Epoch[0] Batch [400]	Speed: 151.02 samples/sec	accuracy=0.823400
+INFO:root:Epoch[0] Batch [500]	Speed: 150.87 samples/sec	accuracy=0.847800
+INFO:root:Epoch[0] Train-accuracy=0.859899
+INFO:root:Epoch[0] Time cost=386.956
+INFO:root:Epoch[0] Validation-accuracy=0.869300
+INFO:root:Epoch[1] Batch [100]	Speed: 145.71 samples/sec	accuracy=0.869307
+INFO:root:Epoch[1] Batch [200]	Speed: 150.31 samples/sec	accuracy=0.879100
+INFO:root:Epoch[1] Batch [300]	Speed: 149.00 samples/sec	accuracy=0.877300
+INFO:root:Epoch[1] Batch [400]	Speed: 151.65 samples/sec	accuracy=0.876900
+INFO:root:Epoch[1] Batch [500]	Speed: 149.03 samples/sec	accuracy=0.884000
+INFO:root:Epoch[1] Train-accuracy=0.890505
+INFO:root:Epoch[1] Time cost=402.077
+INFO:root:Epoch[1] Validation-accuracy=0.894800
+INFO:root:Epoch[2] Batch [100]	Speed: 105.94 samples/sec	accuracy=0.893366
+INFO:root:Epoch[2] Batch [200]	Speed: 103.24 samples/sec	accuracy=0.901300
+INFO:root:Epoch[2] Batch [300]	Speed: 102.35 samples/sec	accuracy=0.895900
+INFO:root:Epoch[2] Batch [400]	Speed: 148.80 samples/sec	accuracy=0.892800
+INFO:root:Epoch[2] Batch [500]	Speed: 149.90 samples/sec	accuracy=0.902500
+INFO:root:Epoch[2] Train-accuracy=0.901111
+INFO:root:Epoch[2] Time cost=502.311
+INFO:root:Epoch[2] Validation-accuracy=0.904900
+INFO:root:Epoch[3] Batch [100]	Speed: 129.73 samples/sec	accuracy=0.906337
+INFO:root:Epoch[3] Batch [200]	Speed: 150.32 samples/sec	accuracy=0.910800
+INFO:root:Epoch[3] Batch [300]	Speed: 149.69 samples/sec	accuracy=0.904600
+INFO:root:Epoch[3] Batch [400]	Speed: 151.05 samples/sec	accuracy=0.901800
+INFO:root:Epoch[3] Batch [500]	Speed: 147.35 samples/sec	accuracy=0.907700
+INFO:root:Epoch[3] Train-accuracy=0.909899
+INFO:root:Epoch[3] Time cost=410.284
+INFO:root:Epoch[3] Validation-accuracy=0.912100
+INFO:root:Epoch[4] Batch [100]	Speed: 148.16 samples/sec	accuracy=0.912772
+INFO:root:Epoch[4] Batch [200]	Speed: 150.14 samples/sec	accuracy=0.917000
+INFO:root:Epoch[4] Batch [300]	Speed: 151.49 samples/sec	accuracy=0.910900
+INFO:root:Epoch[4] Batch [400]	Speed: 149.77 samples/sec	accuracy=0.907500
+INFO:root:Epoch[4] Batch [500]	Speed: 150.29 samples/sec	accuracy=0.913700
+INFO:root:Epoch[4] Train-accuracy=0.915859
+INFO:root:Epoch[4] Time cost=399.499
+INFO:root:Epoch[4] Validation-accuracy=0.914500
+INFO:root:Saved checkpoint to "trained_model-0005.params"
+WARNING:root:Already bound, ignoring bind()
+preparing data...
+Starting training with the following characteristics
+Batch size:100
+using quantized lenet with bitwidth 1 (weights), 1 (activations) and 6 (gradients)
+2018-10-25 13:12:12.847813
+Evaluating...
+[('accuracy', 0.9145)]
+Number of predictions: 100
+Samples/Sec: 1.92838874404
+Classified as 8[9] with probability 0.869541
+	Command being timed: "python mnist_cnn.py --o trained_model --epochs 5"
+	User time (seconds): 2420.08
+	System time (seconds): 16.67
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 40:38.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1185224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 586079
+	Voluntary context switches: 58592
+	Involuntary context switches: 178093
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 9288
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-10-25_13:13:04
+Finished

@@ -1,0 +1,688 @@
+The program 'screen' is currently not installed. You can install it by typing:
+sudo apt install screen
+nohup: ignoring input
+About to start MNIST DNN
+2018-10-21_10:55:54
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 76.30
+	System time (seconds): 4.53
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:42.68
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865628
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322532
+	Voluntary context switches: 408534
+	Involuntary context switches: 424766
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 69.76
+	System time (seconds): 4.22
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:28.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322526
+	Voluntary context switches: 408746
+	Involuntary context switches: 423321
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 77.09
+	System time (seconds): 4.38
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:43.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865488
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322528
+	Voluntary context switches: 408321
+	Involuntary context switches: 424637
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 76.69
+	System time (seconds): 4.47
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:42.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865712
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322529
+	Voluntary context switches: 408369
+	Involuntary context switches: 425045
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 77.20
+	System time (seconds): 4.37
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:43.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865820
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322532
+	Voluntary context switches: 408154
+	Involuntary context switches: 424785
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 77.36
+	System time (seconds): 4.39
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:43.64
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865412
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322521
+	Voluntary context switches: 408321
+	Involuntary context switches: 424876
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 77.76
+	System time (seconds): 4.43
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:44.52
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865348
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322535
+	Voluntary context switches: 408464
+	Involuntary context switches: 425160
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 76.54
+	System time (seconds): 4.34
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:41.90
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865740
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322515
+	Voluntary context switches: 408437
+	Involuntary context switches: 425243
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 77.28
+	System time (seconds): 4.36
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:43.40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865296
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322545
+	Voluntary context switches: 408489
+	Involuntary context switches: 425054
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training DNN at epoch 0: accuracy=0.781267
+training DNN at epoch 1: accuracy=0.899367
+training DNN at epoch 2: accuracy=0.914083
+training DNN at epoch 3: accuracy=0.923617
+training DNN at epoch 4: accuracy=0.930617
+training DNN at epoch 5: accuracy=0.937100
+training DNN at epoch 6: accuracy=0.942267
+training DNN at epoch 7: accuracy=0.946183
+training DNN at epoch 8: accuracy=0.949933
+training DNN at epoch 9: accuracy=0.953250
+validation CNN: accuracy=0.953600
+	Command being timed: "python MNISTTest.py"
+	User time (seconds): 76.45
+	System time (seconds): 4.59
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:42.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 866876
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 322984
+	Voluntary context switches: 408810
+	Involuntary context switches: 425342
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+About to start MNIST CNN
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1659.78
+	System time (seconds): 4.46
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:30.47
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328163
+	Voluntary context switches: 6700
+	Involuntary context switches: 412613
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1657.13
+	System time (seconds): 4.20
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:24.55
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 866792
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328660
+	Voluntary context switches: 6629
+	Involuntary context switches: 411946
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1652.12
+	System time (seconds): 4.05
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:15.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 866780
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328666
+	Voluntary context switches: 6653
+	Involuntary context switches: 410912
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1664.28
+	System time (seconds): 4.14
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:39.50
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865856
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328160
+	Voluntary context switches: 6706
+	Involuntary context switches: 413883
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1663.10
+	System time (seconds): 4.06
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:36.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 867236
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328633
+	Voluntary context switches: 6611
+	Involuntary context switches: 413708
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1666.54
+	System time (seconds): 3.92
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:43.20
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865440
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328143
+	Voluntary context switches: 6622
+	Involuntary context switches: 414403
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1669.30
+	System time (seconds): 3.80
+	Percent of CPU this job got: 49%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 55:48.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 866916
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328597
+	Voluntary context switches: 6629
+	Involuntary context switches: 414937
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1678.76
+	System time (seconds): 3.84
+	Percent of CPU this job got: 73%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 38:22.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865576
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328148
+	Voluntary context switches: 6703
+	Involuntary context switches: 192184
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1557.21
+	System time (seconds): 3.92
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 26:02.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865344
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328179
+	Voluntary context switches: 6725
+	Involuntary context switches: 54668
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+training CNN at epoch 0: accuracy=0.867317
+training CNN at epoch 1: accuracy=0.942433
+training CNN at epoch 2: accuracy=0.957017
+training CNN at epoch 3: accuracy=0.964767
+training CNN at epoch 4: accuracy=0.969767
+training CNN at epoch 5: accuracy=0.973083
+training CNN at epoch 6: accuracy=0.975450
+training CNN at epoch 7: accuracy=0.977667
+training CNN at epoch 8: accuracy=0.979150
+training CNN at epoch 9: accuracy=0.980750
+validation CNN: accuracy=0.982500
+	Command being timed: "python MNISTTestCNN.py"
+	User time (seconds): 1635.10
+	System time (seconds): 3.98
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 27:20.07
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 865608
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 328164
+	Voluntary context switches: 6713
+	Involuntary context switches: 55530
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+2018-10-21_19:23:32
+Finished
