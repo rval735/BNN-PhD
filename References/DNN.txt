@@ -28,3 +28,6 @@ https://arxiv.org/abs/1409.5185
 
 Expectation Backpropagation- Parameter-Free Training of Multilayer Neural Networks with Continuous or Discrete Weights
 https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-training-of-multilayer-neural-networks-with-continuous-or-discrete-weights.pdf
+
+Trust Region Policy Optimization
+https://arxiv.org/abs/1502.05477

@@ -146,3 +146,9 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6847217
 
 Gradient-based learning applied to document recognition
 https://ieeexplore.ieee.org/document/726791
+
+Neural GPUs Learn Algorithms
+https://arxiv.org/abs/1511.08228
+
+FermiNets- Learning generative machines to generate efficient neural networks via generative synthesis
+https://arxiv.org/abs/1809.05989

@@ -80,3 +80,6 @@ https://www.nvidia.cn/content/tesla/pdf/machine-learning/imagenet-classification
 
 SqueezeNet- AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size
 https://arxiv.org/abs/1602.07360
+
+HyperNetworks
+https://arxiv.org/abs/1609.09106

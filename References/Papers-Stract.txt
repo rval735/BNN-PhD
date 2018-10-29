@@ -108,6 +108,11 @@ SqueezeNet- AlexNet-level accuracy with 50x fewer parameters and <0.5MB model si
 -
 -
 
+HyperNetworks
+-
+-
+-
+
 < CNN
 
 ------> CNN-Fin
@@ -588,6 +593,11 @@ Expectation Backpropagation- Parameter-Free Training of Multilayer Neural Networ
 -
 -
 
+Trust Region Policy Optimization
+-
+-
+-
+
 < DNN
 -------> NN
 
@@ -847,6 +857,17 @@ Gradient-based learning applied to document recognition
 -
 -
 -
+
+Neural GPUs Learn Algorithms
+- Proposes a scalable convolutional gated recurrent unit (CGRU) that assimilates GPU architectures
+- Can perform operations like binary summation, multiplication, counting, copy, reverse or duplication
+- Dropout helps this architecture compared to other recurrent neural networks
+- Neural GPUs use the standard, heavily optimized convolution operation and are fast
+
+FermiNets- Learning generative machines to generate efficient neural networks via generative synthesis
+- Create a pair Generative - Inquisitor to train G to later create efficient NN
+- Tested for image classification, semantic segmentation and object dectection
+- >4x improvements in image inferences per joule consumed on a Nvidia Tegra X2 mobile processor
 
 < NN
 -------> DCGAN
@@ -1323,11 +1344,6 @@ Towards Fast and Energy-Efficient Binarized Neural Network Inference on FPGA
 -
 -
 
-Binary Ensemble Neural Network- More Bits per Network or More Networks per Bit
--
--
--
-
 No Multiplication, No Floating Point, No Problem, Training Networks for Efficient Inference
 -
 -
@@ -1398,9 +1414,10 @@ Evolving simple programs for playing Atari games
 - Special mentions about KungFu Master, Centipede or Boxing for its win strategies
 
 Evolution Strategies as a Scalable Alternative to Reinforcement Learning
--
--
--
+- Scalable algorithm that linearly grows as the number of CPUs are open
+- ES can be competitive with competing RL algorithms 
+- Tested with MuJoCo and Atari game lab
+- It avoids gradient decent and agent communication is low
 
 Optimization of Deep Neural Networks Using SoCs with OpenCL
 -
@@ -1456,5 +1473,21 @@ Towards Generalization and Simplicity in Continuous Control
 -
 -
 -
+
+Large-Scale Evolution of Image Classifiers
+-
+-
+-
+
+Deep Learning with Darwin- Evolutionary Synthesis of Deep Neural Networks
+- Uses evolutionary algorithms to improve how the NN inferences more efficiently
+- Uses probabilities to make selections between NN  
+- Restricts resources available to descendant networks to encourage the evolution of highly-efficient deep neural networks
+- Tests datasets: MSRA-B and HKU-IS with VGG-Net model
+
+Evolution in Groups- A deeper look at synaptic cluster driven evolution of deep neural networks
+- Focuses on parallelization of NN models via a genetic scheme
+- Creates sparse groups via a probabilistic graphical modeling paradigm
+- Genetic encoding scheme used to mimic heredity can have a significant impact on the architecture of the evolved offspring networks
 
 < Evolutionary

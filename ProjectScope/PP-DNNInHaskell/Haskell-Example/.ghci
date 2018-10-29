@@ -1,3 +1,6 @@
+:set +s
+:set +t
+:set -DGHCI
 :set prompt ">>="
 :set -XOverloadedStrings
 :set -XFlexibleContexts
