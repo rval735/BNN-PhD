@@ -459,7 +459,12 @@ Automated Systolic Array Architecture Synthesis for High Throughput CNN Inferenc
 - A "Continuous Integration" scheme was used: from code to deployment
 - AlexNet and VGG16 models were evaluated with 32bit floating points
 
+High Performance Binary Neural Networks on the Xeon-FPGA Platform
+-
+-
+-
 
+< CNN-FPGA
 ------> Haskell
 
 Modeling of dynamic reconfigurable systems with Haskell
@@ -1384,6 +1389,18 @@ Physics, Topology, Logic and Computation- A Rosetta Stone
 - Explains concepts in CT like monoidal or CCC
 - Mentions lambda calculus in the computation section
 - Starts the conversation of how a braided monoidal category can be though of as a quantum process, a tangle or a simple computation.
+
+BMOA- Binary Magnetic Optimization Algorithm
+- Physics inspired optimization algorithm
+- Uses tanh to calculate the probability that velocity for an agent approximates function minima
+- It performs better for full connected topology than GA or Particle Swarm Optimization
+
+What are Extreme Learning Machines- Filling the Gap Between Frank Rosenblatt’s Dream and John von Neumann’s Puzzle
+- Use neural networks with random hidden nodes
+- Homogeneous architecture for: feature learning, clustering, regression and classification
+- Comparison between to ELM, SVM and LS-SVM
+
+< Other
 
 ------> SNN
 

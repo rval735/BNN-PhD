@@ -86,3 +86,6 @@ https://arxiv.org/abs/1612.07119
 
 Automated Systolic Array Architecture Synthesis for High Throughput CNN Inference on FPGAs
 https://dl.acm.org/citation.cfm?id=3062207
+
+High Performance Binary Neural Networks on the Xeon-FPGA Platform
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8056823

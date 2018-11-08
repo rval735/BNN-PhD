@@ -6,3 +6,9 @@ https://link.springer.com/chapter/10.1007%2F978-3-642-12821-9_2
 
 Evolving simple programs for playing Atari games
 https://arxiv.org/abs/1806.05695
+
+BMOA- Binary Magnetic Optimization Algorithm
+https://scinapse.io/papers/2055672992
+
+What are Extreme Learning Machines- Filling the Gap Between Frank Rosenblatt’s Dream and John von Neumann’s Puzzle
+https://link.springer.com/article/10.1007/s12559-015-9333-0
