@@ -31,3 +31,6 @@ https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-tra
 
 Trust Region Policy Optimization
 https://arxiv.org/abs/1502.05477
+
+Differentiable plasticity- training plastic neural networks with backpropagation
+https://arxiv.org/abs/1804.02464

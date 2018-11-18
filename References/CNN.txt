@@ -83,3 +83,6 @@ https://arxiv.org/abs/1602.07360
 
 HyperNetworks
 https://arxiv.org/abs/1609.09106
+
+An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solution
+https://arxiv.org/abs/1807.03247

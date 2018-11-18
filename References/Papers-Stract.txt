@@ -113,6 +113,11 @@ HyperNetworks
 -
 -
 
+An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solution
+-
+-
+-
+
 < CNN
 
 ------> CNN-Fin
@@ -602,6 +607,11 @@ Trust Region Policy Optimization
 -
 -
 -
+
+Differentiable plasticity- training plastic neural networks with backpropagation
+- In an image reconstruction task, a network memorizes a set of natural images that it has never seen before, then the network reconstructs the missing half from memory
+- Highly flexible, providing gradient descent with an elementary building block: plastic connection
+- Offer a more efficient form of memory than recurrence alone 
 
 < DNN
 -------> NN
@@ -1477,9 +1487,10 @@ Simple random search provides a competitive approach to reinforcement learning
 -
 
 Deep Neuroevolution- Genetic Algorithms are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning
--
--
--
+- Evolves DNNs with a simple, traditional, population-based genetic algorithm
+- The “Deep GA” successfully evolves networks with over four million free parameters
+- Combines DNNs with Novelty Search, an exploration algorithm designed for tasks with deceptive or sparse reward functions
+- Shows the Deep GA parallelizes better than, and is thus faster than, ES, A3C, and DQN
 
 Towards Generalization and Simplicity in Continuous Control
 -
@@ -1501,5 +1512,49 @@ Evolution in Groups- A deeper look at synaptic cluster driven evolution of deep 
 - Focuses on parallelization of NN models via a genetic scheme
 - Creates sparse groups via a probabilistic graphical modeling paradigm
 - Genetic encoding scheme used to mimic heredity can have a significant impact on the architecture of the evolved offspring networks
+
+DENSER- Deep Evolutionary Network Structured Representation
+-
+-
+-
+
+On the Relationship Between the OpenAI Evolution Strategy and Stochastic Gradient Descent
+-
+-
+-
+
+Simple Evolutionary Optimization Can Rival Stochastic Gradient Descent in Neural Networks
+-
+-
+-
+
+Simple Statistical Gradient-Following Algorithms for Connectionist Reinforcement Learning
+-
+-
+-
+
+Parameter-exploring Policy Gradients
+-
+-
+-
+
+Evolution strategies- An alternative evolutionary algorithm
+- Presents the (dis)advantages of GA vs ES
+- Mentions that GA are more adequate for discrete whereas ES are more suitable for continuous spaces
+- ES combines robust converge velocity and reliability compared to GA
+
+Natural Evolution Strategies
+- It uses the natural gradient to update a parameterized search distribution
+in the direction of higher expected fitness
+- In NES, the most important parameter to be adapted is the learning rate (eta)
+- Several adaptations to the original idea: exponential NES, radial distributions, rotationally symmetric, separable NES
+- NES is compared with CMA-ES
+
+Evolving Neural Networks through Augmenting Topologies
+- Outperforms the best fixed-topology method on reinforcement learning tasks
+- Employs a principled method of crossover of different topologies
+- Protects structural innovation using speciation
+- Incrementally growing from minimal structure
+- Increasingly sophisticated strategies are evolved by allowing networks to compete
 
 < Evolutionary
