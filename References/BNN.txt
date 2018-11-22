@@ -227,3 +227,27 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3174266
 
 FxpNet- Training deep convolutional neural network in fixed-point representation
 https://ieeexplore.ieee.org/document/7966159/
+
+Application of binary neural networks for classification
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1259700
+
+Design of two architectures of asynchronous binary neural networks using linear programming
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/203280
+
+Pattern classification by geometrical learning of binary neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/714090
+
+A GA-based flexible learning algorithm with error tolerance for digital binary neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5178979
+
+Rule extraction from binary neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/817981
+
+Hamming Clustering- A New Approach to Rule Extraction
+https://www.researchgate.net/publication/2908547_Hamming_Clustering_A_New_Approach_to_Rule_Extraction
+
+NullaNet- Training Deep Neural Networks for Reduced-Memory-Access Inference
+https://arxiv.org/abs/1807.08716
+
+Design and implementation of binary neural network learning with fuzzy clustering
+https://airccj.org/CSCP/vol2/csit2334.pdf

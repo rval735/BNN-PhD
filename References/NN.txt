@@ -152,3 +152,12 @@ https://arxiv.org/abs/1511.08228
 
 FermiNets- Learning generative machines to generate efficient neural networks via generative synthesis
 https://arxiv.org/abs/1809.05989
+
+Training neural networks to identify coding regions in genomic DNA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/497852
+
+Neural Network in Human Identification by DNA Sequences
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5380141
+
+Study of underlying repeats in genomic DNA sequences with neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/480879

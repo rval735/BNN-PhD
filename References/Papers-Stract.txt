@@ -884,6 +884,21 @@ FermiNets- Learning generative machines to generate efficient neural networks vi
 - Tested for image classification, semantic segmentation and object dectection
 - >4x improvements in image inferences per joule consumed on a Nvidia Tegra X2 mobile processor
 
+Training neural networks to identify coding regions in genomic DNA
+- NN receives its inputs from statistical measures taken on a 99-base window
+- Complete training set of 10652 non-coding vectors and 741 coding vectors
+- CODEX attempts to predict the location of genomic coding regions by examining the output of the combination of 5 neural networks
+
+Neural Network in Human Identification by DNA Sequences
+- Analyzes the similarity/dissimilarity of DNA sequences
+- Establishes the zigzag curve and calculate its curvature, then that forms the input of the NN
+- LVQ network is the best for this set; since this network distinguishes between curvature vectors correctly.
+
+Study of underlying repeats in genomic DNA sequences with neural networks
+- Modeling quasi-random replacements using with multi-symbol extension of energy-minimizing neural networks
+- Genomes datasets of PHIX174 and MIG4XX 
+- The distance between two sequences of arbitrary length is determined as the number of non-coincident nucleotides in the same sites (Hamming distance)
+
 < NN
 -------> DCGAN
 
@@ -1388,6 +1403,47 @@ FxpNet- Training deep convolutional neural network in fixed-point representation
 -
 -
 -
+
+Application of binary neural networks for classification
+- Based on geometric technique, called Expand and Truncate Learning (ETL)
+- Construct a three-layer NN to get multiple outputs using an improved ETL algorithm
+- Classification examples: 3bit Input - 2 output; 7 in - 2 Out.
+
+Design of two architectures of asynchronous binary neural networks using linear programming
+- Proposes a new design technique for asynchronous binary neural networks with two architectures
+- First, a fully connected network that reads a N-digit cue and classifies it into a category represented by a N-digit pattern
+- Second, a two-layer network that reads an M-digit cue and associates it with a L-digit pattern
+
+Pattern classification by geometrical learning of binary neural networks
+- Use ETL algorithm to classify the breast cancer database
+- Weights and thresholds are determined based on geometrical analysis hyperplanes
+- ETL learning has 15 hidden units, using 10.6 seconds of processor time
+
+A GA-based flexible learning algorithm with error tolerance for digital binary neural networks
+- GA are used with flexible fitness that tolerates error; suitable to reduce the number of hidden neurons, tolerate noise and outliers
+- It applies the algorithm to design of Cellular Automata
+- Chromosomes are candidates of binary weights and integer thresholds
+
+Rule extraction from binary neural networks
+- Defines a new constructive learning algorithm, called Hamming clustering (HC)
+- HC has a polynomial computational cost and memory required is polynomial asymptotic
+- Tested with the Wisconsin Breast Cancer database
+
+Hamming Clustering- A New Approach to Rule Extraction
+- Almost same as paper "Rule extraction from binary neural networks" with minor improvements
+- The algorithm directly infer the explicit rules in if-then form
+- The goal of HS is to generate consistent set of rules synthesizing the knowledge embedded in the underlying Boolean function f
+
+NullaNet- Training Deep Neural Networks for Reduced-Memory-Access Inference
+- Treat MLP weights and thresholds as binary inputs/outputs
+- Optimize for the same circuit paths that result in a similar operation
+- Tested for the MNIST dataset
+
+Design and implementation of binary neural network learning with fuzzy clustering
+- Based on the concept of binary neural network and geometrical expansion
+- ETL with Fuzzy C-Means algorithm used to train a three-layer BNN for a semisupervised classifier.
+- Applies two algorithms to the dataset ETL and FCM
+- Tested with Iris, Balance scale, BUPA and Wine datasets
 
 < BNN
 
