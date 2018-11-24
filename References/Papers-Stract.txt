@@ -118,6 +118,11 @@ An Intriguing Failing of Convolutional Neural Networks and the CoordConv Solutio
 -
 -
 
+BING- Binarized Normed Gradients for Objectness Estimation at 300fps
+- Experiments performed on PASCAL VOC 2007 dataset with 96.2% object detection rate
+- BING uses atomic updates (BITWISE SHIFT and BITWISE OR) to avoid the loop computing
+- Can process object windows at 300fps, while other methods require several seconds for one image
+
 < CNN
 
 ------> CNN-Fin
@@ -341,6 +346,13 @@ PipeCNN: An OpenCL-Based FPGA Accelerator for Large-Scale Convolution Neuron Net
 - 33.9 GOPS with a 34% resource reduction on DSP blocks compared to previous work
 - Open source code located in https://github.com/doonny/PipeCNN
 
+Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks
+- Thorough comparison of execution advantages of FPGA over GPUs
+- "FPGAs offer superior energy efficiency (Ops/Watt), but they do not offer the performance of today’s GPUs on DNNs"
+- Evaluation of two FPGA generations (Aria/Stratix 10) vs GPU (Titan X)
+- Full/Ternary RestNet NN implementation; BNN with 5.4 better performance (TOP/Sec) than GPU
+
+< FPGA-NN
 ------> FPGA-Fin
 
 Computing system and network architectures in high frequency trading financial applications
@@ -1444,6 +1456,34 @@ Design and implementation of binary neural network learning with fuzzy clusterin
 - ETL with Fuzzy C-Means algorithm used to train a three-layer BNN for a semisupervised classifier.
 - Applies two algorithms to the dataset ETL and FCM
 - Tested with Iris, Balance scale, BUPA and Wine datasets
+
+A super parallel sorter using a binary neural network with AND-OR synaptic connections
+- Their algorithm implementation does not need any adders
+- The sorting operation is performed in two clock cycles
+- Tested with data sizes from 100 - 1000 with same 2 cycles
+
+Quantum Based Learning with Binary Neural Network
+- NN architecture and weights are decided by quantum superposition
+- Quantum computing optimizes the NN structure and the performance: # neurons and classification accuracy
+- Accepts binary form of inputs and generate binary form of outputs
+- Tested on PIMA Indian diabetes dataset compared with MTiling-real networks
+
+High Speed Image Segmentation Using a Binary Neural Network
+- Uses a BNN to process "Remote Sensing" data for regions of interest based on texture
+- Advanced Distributed Associative Memory (ADAM) NN with only boolean operations
+- Considers that N tuple network, with reasonable recognition performance
+- Small data set of infra-red scanning sensor taken from an aircraft flying at 3000ft
+
+Application of the Dynamic Binary Neural Network to Switching Circuits
+- GA-based learning can store Binary Periodic Orbits into BNN with simple structure
+- Application to various switching circuits; also for analysis/synthesis of various digital dynamical systems
+- Matrix converter that converts a three-phase ac input into some three-phase ac output via nine switches
+- The learning algorithm tries to separate the true vertices of the teacher signal by the separating hyper planes
+
+Analysis for Characteristics of GA-Based Learning Method of Binary Neural Networks
+- Learning can be obtained in the less number of generations by properly setting selection methods and parameters in a GA
+- Learning characteristics of GAETL for the three-layer BNN
+- Elitism and inverse-elitism can reduce the number of hidden layer neurons
 
 < BNN
 

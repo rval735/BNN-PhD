@@ -36,3 +36,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847276
 
 PipeCNN: An OpenCL-Based FPGA Accelerator for Large-Scale Convolution Neuron Networks
 https://arxiv.org/abs/1611.02450
+
+Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021740

@@ -251,3 +251,18 @@ https://arxiv.org/abs/1807.08716
 
 Design and implementation of binary neural network learning with fuzzy clustering
 https://airccj.org/CSCP/vol2/csit2334.pdf
+
+A super parallel sorter using a binary neural network with AND-OR synaptic connections
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/BF00228719
+
+Quantum Based Learning with Binary Neural Network
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-81-322-2208-8_43
+
+High Speed Image Segmentation Using a Binary Neural Network
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-59041-2_23
+
+Application of the Dynamic Binary Neural Network to Switching Circuits
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-42042-9_86
+
+Analysis for Characteristics of GA-Based Learning Method of Binary Neural Networks
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11550822_51
