@@ -269,6 +269,11 @@ Reconfigurable computing for Monte Carlo simulations: results and prospects of t
 -
 -
 
+Floating-Point DSP Block Architecture for FPGAs
+- Proposes a new DSP that provides fixed and FP functions integrated into the FPGA fabric
+- High density of over 1600 single precision FP DSP block (20nm) adn 1.6 TFLOP
+- 700K LUT device will require 17% for the equivalent of 1600 DSP blocks
+
 < FPGA
 
 ------> FPGA-NN
@@ -350,7 +355,26 @@ Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks
 - Thorough comparison of execution advantages of FPGA over GPUs
 - "FPGAs offer superior energy efficiency (Ops/Watt), but they do not offer the performance of today’s GPUs on DNNs"
 - Evaluation of two FPGA generations (Aria/Stratix 10) vs GPU (Titan X)
-- Full/Ternary RestNet NN implementation; BNN with 5.4 better performance (TOP/Sec) than GPU
+- Full/Ternary RestNet NN implementation; BNN with 5.4 better performance (TOP/Sec) than Titan X (28nm) GPU
+
+An OpenCL Deep Learning Accelerator on Arria 10
+- Maximizes data reuse and minimizes external memory bandwidth
+- Uses Winograd transform to significantly boost the performance of the FPGA
+- Arria 10 achieves a performance of 1020img/s, or 23img/s/W when running the AlexNet CNN benchmark and ILSVRC dataset
+- Uses half-precision (FP16) instead of single-precision (FP32) on PEs
+
+Improving the Performance of OpenCL-based FPGA Accelerator for Convolutional Neural Network
+- Quantitatively models the performance with respect to resource utilization for VGG model
+- Memory performance limit on bandwidth (6x smaller) but PE 2D interconnection reduces that requirement
+- 2D dispatcher with an optimized scheduling policy to minimize memory requirements and leverate CNN data locality
+- Arria 10 achieves 1.79 TOP/s with 385MHz and 47.78 Gops/s/W energy efficiency
+- CNN are bandwidth bounded, not latency bounded, of which streaming applications are as well affected
+
+Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
+- 16 bit fixed point number on the Zynq706 board with 2 PE reaches 4.45 FPS (ImageNet)
+- Limited bandwidth is one of the acceleration bottlenecks of CNN models in embedded systems
+- CONV layers are computation centric and Fully connected memory centric
+- Used VGG16-SVD with 86.66% top-5 accuracy (137 GOP/s) under 150Mhz
 
 < FPGA-NN
 ------> FPGA-Fin

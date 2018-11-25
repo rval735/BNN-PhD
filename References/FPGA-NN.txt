@@ -39,3 +39,12 @@ https://arxiv.org/abs/1611.02450
 
 Can FPGAs Beat GPUs in Accelerating Next-Generation Deep Neural Networks
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021740
+
+An OpenCL Deep Learning Accelerator on Arria 10
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021738
+
+Improving the Performance of OpenCL-based FPGA Accelerator for Convolutional Neural Network
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021698
+
+Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847265

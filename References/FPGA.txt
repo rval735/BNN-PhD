@@ -40,5 +40,8 @@ https://arxiv.org/abs/1802.06195
 Reconfigurable computing for Monte Carlo simulations: results and prospects of the Janus project
 https://arxiv.org/abs/1204.4134
 
-
+Deep Learning on FPGAs: Past, Present, and Future
 https://arxiv.org/abs/1602.04283
+
+Floating-Point DSP Block Architecture for FPGAs
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2689071
