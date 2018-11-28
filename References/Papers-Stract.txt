@@ -123,6 +123,12 @@ BING- Binarized Normed Gradients for Objectness Estimation at 300fps
 - BING uses atomic updates (BITWISE SHIFT and BITWISE OR) to avoid the loop computing
 - Can process object windows at 300fps, while other methods require several seconds for one image
 
+On Face Segmentation, Face Swapping, and Face Perception
+- Paper on face swap, related to DeepFakes
+- Full source code provided
+- Uses a CNN to make fast and accurate segmentations, then swap faces
+- Base their technique on generative models to make 3D face shape blend estimation
+
 < CNN
 
 ------> CNN-Fin
