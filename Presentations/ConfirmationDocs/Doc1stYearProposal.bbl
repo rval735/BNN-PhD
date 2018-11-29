@@ -1211,6 +1211,46 @@
     \field{year}{2017}
   \endentry
 
+  \entry{Linnainmaa1976}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LS}{%
+         family={Linnainmaa},
+         familyi={L\bibinitperiod},
+         given={Seppo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Neural Networks, Backpropagation}
+    \strng{namehash}{LS1}
+    \strng{fullhash}{LS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The article describes analytic and algorithmic methods for determining the
+  coefficients of the Taylor expansion of an accumulated rounding error with
+  respect to the local rounding errors, and hence determining the influence of
+  the local errors on the accumulated error. Second and higher order
+  coefficients are also discussed, and some possible methods of reducing the
+  extensive storage requirements are analyzed.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF01931367
+    \endverb
+    \field{issn}{1572-9125}
+    \field{number}{2}
+    \field{pages}{146\bibrangedash 160}
+    \field{title}{Taylor expansion of the accumulated rounding error}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF01931367
+    \endverb
+    \field{volume}{16}
+    \field{journaltitle}{BIT Numerical Mathematics}
+    \field{year}{1976}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{McCulloch1943}{article}{}
     \name{author}{2}{}{%
       {{hash=MWS}{%
@@ -1538,6 +1578,48 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{SCHMIDHUBER201585}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJ}{%
+         family={Schmidhuber},
+         familyi={S\bibinitperiod},
+         given={J{\"u}rgen},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{DNN; Deep learning, Supervised learning, Unsupervised learning,
+  Reinforcement learning, Evolutionary computation}
+    \strng{namehash}{SJ1}
+    \strng{fullhash}{SJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    In recent years, deep artificial neural networks (including recurrent ones)
+  have won numerous contests in pattern recognition and machine learning. This
+  historical survey compactly summarizes relevant work, much of it from the
+  previous millennium. Shallow and Deep Learners are distinguished by the depth
+  of their credit assignment paths, which are chains of possibly learnable,
+  causal links between actions and effects. I review deep supervised learning
+  (also recapitulating the history of backpropagation), unsupervised learning,
+  reinforcement learning & evolutionary computation, and indirect search for
+  short programs encoding deep and large networks.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neunet.2014.09.003
+    \endverb
+    \field{issn}{0893-6080}
+    \field{pages}{85 \bibrangedash  117}
+    \field{title}{Deep learning in neural networks: An overview}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0893608014002135
+    \endverb
+    \field{volume}{61}
+    \field{journaltitle}{Neural Networks}
+    \field{year}{2015}
+  \endentry
+
   \entry{Silver:2017aa}{article}{}
     \name{author}{17}{}{%
       {{hash=SD}{%
@@ -1732,6 +1814,68 @@
     \field{year}{2014}
   \endentry
 
+  \entry{5524599}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SM}{%
+         family={Stoica},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CGA}{%
+         family={Calangiu},
+         familyi={C\bibinitperiod},
+         given={G.\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Sisak},
+         familyi={S\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{NN; graph theory;learning (artificial intelligence);neural nets;robot
+  programming;neural network training;training steps;artificial neural
+  networks;robot programming;unidirectional multi-layer neural
+  network;graph;Time measurement;Neural networks;Robot kinematics;Service
+  robots;Sliding mode control;Control systems;Biological system
+  modeling;Humans;Biological neural networks;Artificial neural networks}
+    \strng{namehash}{SMCGASF1}
+    \strng{fullhash}{SMCGASF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Artificial neural networks play an important role in robot programming by
+  demonstration. In this paper we present a method for artificial neural
+  network training. The main idea of this method is to train the artificial
+  neural network with all of the data, before the current training step, and at
+  a certain step the network is already trained a huge number of times. Some
+  features of the quality of neural network training, using this method, were
+  presented in. Because the method uses all of the data before the current
+  training step, in this paper, we are concerned about training time and
+  computing time comportment of the neural network. A software application for
+  obtaining training time based on the number of training steps was designed.
+  This software application implements the training method on an unidirectional
+  multi-layer neural network and prints into a graph the training time and
+  computing time. The results obtained using the software application and
+  important conclusions towards the training and computing time comportment are
+  also presented.%
+    }
+    \field{booktitle}{19th International Workshop on Robotics in
+  Alpe-Adria-Danube Region (RAAD 2010)}
+    \verb{doi}
+    \verb 10.1109/RAAD.2010.5524599
+    \endverb
+    \field{pages}{109\bibrangedash 113}
+    \field{title}{Measuring the time needed for training a neural network based
+  on the number of training steps}
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Sun:2018:FPR:3201607.3201741}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=SX}{%
@@ -1795,6 +1939,32 @@
     }
     \field{year}{2018}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{AppleFaceDetectionURL}{online}{}
+    \name{author}{1}{}{%
+      {{hash=TCVML}{%
+         family={Team},
+         familyi={T\bibinitperiod},
+         given={Computer Vision Machine\bibnamedelima Learning},
+         giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod
+  M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \keyw{Neural Network, Vision Framework, Face recognition}
+    \strng{namehash}{TCVML1}
+    \strng{fullhash}{TCVML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{An On-device Deep Neural Network for Face Detection}
+    \verb{url}
+    \verb https://machinelearning.apple.com/2017/11/16/face-detection.html
+    \endverb
+    \field{month}{11}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{2009arXiv0904.4587T}{article}{}

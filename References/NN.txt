@@ -161,3 +161,9 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5380141
 
 Study of underlying repeats in genomic DNA sequences with neural networks
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/480879
+
+Hybrid Neural Networks for Learning the Trend in Time Series
+https://www.ijcai.org/proceedings/2017/316
+
+Measuring the time needed for training a neural network based on the number of training steps
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5524599

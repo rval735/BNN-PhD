@@ -511,6 +511,13 @@ High Performance Binary Neural Networks on the Xeon-FPGA Platform
 -
 -
 
+NeuFlow- A Runtime Reconfigurable Dataflow Processor for Vision
+- Uses Xilinx Virtex6 to  create a scalable dataflow architecture for GP vision algorithms
+- Realtime detection, categorization and localization of objects in complex escenes
+- 10Watts, 20 categories, 12 FPS with LuaFlow compiler
+- Street scene parsing, a convolutional network was trained on the LabelMe spanish dataset
+- 83ms vs 8s on a laptop
+
 < CNN-FPGA
 ------> Haskell
 
@@ -940,6 +947,16 @@ Study of underlying repeats in genomic DNA sequences with neural networks
 - Modeling quasi-random replacements using with multi-symbol extension of energy-minimizing neural networks
 - Genomes datasets of PHIX174 and MIG4XX 
 - The distance between two sequences of arbitrary length is determined as the number of non-coincident nucleotides in the same sites (Hamming distance)
+
+Hybrid Neural Networks for Learning the Trend in Time Series
+- Uses a hybrid CNN-LSTM to calculate time series trends
+- Compared against other CNN, LSTM, SVR, Pattern-based Hidden Markov Model and naive NN implementations
+- Tested on datasets of power consumption, gas sensor and stock transaction 
+
+Measuring the time needed for training a neural network based on the number of training steps
+-
+-
+-
 
 < NN
 -------> DCGAN
