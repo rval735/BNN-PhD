@@ -465,6 +465,46 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{2016arXiv160507678C}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={{Canziani}},
+         familyi={C\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={{Paszke}},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CE}{%
+         family={{Culurciello}},
+         familyi={C\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \strng{namehash}{CAPACE1}
+    \strng{fullhash}{CAPACE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{eprint}
+    \verb 1605.07678
+    \endverb
+    \field{title}{{An Analysis of Deep Neural Network Models for Practical
+  Applications}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{05}
+    \field{year}{2016}
+  \endentry
+
   \entry{5159360}{article}{}
     \name{author}{5}{}{%
       {{hash=CF}{%
@@ -733,7 +773,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{CNN, image classification; AI; neural nets;object detection}
+    \keyw{CNN, image classification; AI; neural nets;object detection, RESNET}
     \strng{namehash}{HK+1}
     \strng{fullhash}{HKZXRSSJ1}
     \field{labelnamesource}{author}
@@ -1088,6 +1128,53 @@
     \field{eprinttype}{arXiv}
     \field{month}{08}
     \field{year}{2018}
+  \endentry
+
+  \entry{Krizhevsky2999257}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Krizhevsky},
+         familyi={K\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HGE}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates Inc.}%
+    }
+    \keyw{CNN, ImageNet, ILSVRC, Convolution, AlexNet}
+    \strng{namehash}{KASIHGE1}
+    \strng{fullhash}{KASIHGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Proceedings of the 25th International Conference on
+  Neural Information Processing Systems - Volume 1}
+    \field{pages}{1097\bibrangedash 1105}
+    \field{series}{NIPS'12}
+    \field{title}{ImageNet Classification with Deep Convolutional Neural
+  Networks}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=2999134.2999257
+    \endverb
+    \list{location}{1}{%
+      {Lake Tahoe, Nevada}%
+    }
+    \field{year}{2012}
+    \warn{\item Can't use 'location' + 'address'}
   \endentry
 
   \entry{726791}{article}{}
@@ -1751,6 +1838,35 @@
   'date'}
   \endentry
 
+  \entry{Simonyan14c}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZA}{%
+         family={Zisserman},
+         familyi={Z\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{CNN; image classification, VGG network}
+    \strng{namehash}{SKZA1}
+    \strng{fullhash}{SKZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Very Deep Convolutional Networks for Large-Scale Image
+  Recognition}
+    \field{volume}{abs/1409.1556}
+    \field{journaltitle}{ILSVRC - CoRR}
+    \field{year}{2014}
+  \endentry
+
   \entry{Soudry2014ExpectationBP}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=SD}{%
@@ -1939,6 +2055,55 @@
     }
     \field{year}{2018}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{2017arXiv170309039S}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SV}{%
+         family={{Sze}},
+         familyi={S\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CYH}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={Y.-H.},
+         giveni={Y\bibinitperiod-H\bibinitperiod},
+      }}%
+      {{hash=YTJ}{%
+         family={{Yang}},
+         familyi={Y\bibinitperiod},
+         given={T.-J.},
+         giveni={T\bibinitperiod-J\bibinitperiod},
+      }}%
+      {{hash=EJ}{%
+         family={{Emer}},
+         familyi={E\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Computer Science; Computer Vision; Pattern Recognition}
+    \strng{namehash}{SV+1}
+    \strng{fullhash}{SVCYHYTJEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the IEEE}
+    \verb{eprint}
+    \verb 1703.09039
+    \endverb
+    \field{number}{12}
+    \field{title}{Efficient Processing of Deep Neural Networks: A Tutorial and
+  Survey}
+    \field{volume}{105}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{12}
+    \field{year}{2017}
   \endentry
 
   \entry{AppleFaceDetectionURL}{online}{}

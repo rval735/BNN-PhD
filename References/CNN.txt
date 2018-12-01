@@ -93,3 +93,11 @@ https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Cheng_BING_Binar
 On Face Segmentation, Face Swapping, and Face Perception
 https://arxiv.org/abs/1704.06729
 https://github.com/YuvalNirkin/face_swap
+
+Very deep convolutional networks for large-scale image recognition
+https://arxiv.org/abs/1409.1556
+http://www.robots.ox.ac.uk/~vgg/research/very_deep/
+
+Densely Connected Convolutional Networks
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8099726
+https://arxiv.org/abs/1608.06993

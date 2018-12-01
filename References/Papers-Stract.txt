@@ -129,6 +129,16 @@ On Face Segmentation, Face Swapping, and Face Perception
 - Uses a CNN to make fast and accurate segmentations, then swap faces
 - Base their technique on generative models to make 3D face shape blend estimation
 
+Very deep convolutional networks for large-scale image recognition
+-
+-
+-
+
+Densely Connected Convolutional Networks
+-
+-
+-
+
 < CNN
 
 ------> CNN-Fin
@@ -954,6 +964,11 @@ Hybrid Neural Networks for Learning the Trend in Time Series
 - Tested on datasets of power consumption, gas sensor and stock transaction 
 
 Measuring the time needed for training a neural network based on the number of training steps
+-
+-
+-
+
+An analysis of deep neural network models for practical applications
 -
 -
 -

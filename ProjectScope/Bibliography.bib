@@ -1,12 +1,52 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-11-29 21:07:30 +1300 
+%% Created for RHVT at 2018-12-01 20:13:23 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{2016arXiv160507678C,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160507678C},
+	Archiveprefix = {arXiv},
+	Author = {{Canziani}, A. and {Paszke}, A. and {Culurciello}, E.},
+	Date-Added = {2018-12-01 20:05:07 +1300},
+	Date-Modified = {2018-12-01 20:05:07 +1300},
+	Eprint = {1605.07678},
+	Journal = {ArXiv e-prints},
+	Keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	Month = may,
+	Primaryclass = {cs.CV},
+	Title = {{An Analysis of Deep Neural Network Models for Practical Applications}},
+	Year = 2016}
+
+@inproceedings{8099726,
+	Abstract = {Recent work has shown that convolutional networks can be substantially deeper, more accurate, and efficient to train if they contain shorter connections between layers close to the input and those close to the output. In this paper, we embrace this observation and introduce the Dense Convolutional Network (DenseNet), which connects each layer to every other layer in a feed-forward fashion. Whereas traditional convolutional networks with L layers have L connections-one between each layer and its subsequent layer-our network has L(L+1)/2 direct connections. For each layer, the feature-maps of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers. DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters. We evaluate our proposed architecture on four highly competitive object recognition benchmark tasks (CIFAR-10, CIFAR-100, SVHN, and ImageNet). DenseNets obtain significant improvements over the state-of-the-art on most of them, whilst requiring less memory and computation to achieve high performance. Code and pre-trained models are available at https://github.com/liuzhuang13/DenseNet.},
+	Author = {G. Huang and Z. Liu and L. v. d. Maaten and K. Q. Weinberger},
+	Booktitle = {2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	Date-Added = {2018-12-01 19:33:27 +1300},
+	Date-Modified = {2018-12-01 19:33:50 +1300},
+	Doi = {10.1109/CVPR.2017.243},
+	Issn = {1063-6919},
+	Keywords = {CNN; convolution;feedforward neural nets;learning (artificial intelligence);DenseNet;traditional convolutional networks;feature propagation;feature reuse;object recognition benchmark tasks;dense convolutional network;vanishing-gradient problem;Training;Convolution;Network architecture;Convolutional codes;Neural networks;Road transportation; DenseNet},
+	Month = {July},
+	Pages = {2261-2269},
+	Title = {Densely Connected Convolutional Networks},
+	Year = {2017},
+	Bdsk-Url-1 = {https://doi.org/10.1109/CVPR.2017.243}}
+
+@article{Simonyan14c,
+	Author = {Simonyan, K. and Zisserman, A.},
+	Date-Added = {2018-12-01 13:32:36 +1300},
+	Date-Modified = {2018-12-01 13:33:51 +1300},
+	Journal = {ILSVRC - CoRR},
+	Keywords = {CNN; image classification, VGG network},
+	Title = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+	Volume = {abs/1409.1556},
+	Year = {2014}}
 
 @electronic{AppleFaceDetectionURL,
 	Author = {Computer Vision Machine Learning Team},
@@ -860,10 +900,10 @@
 	Author = {K. He and X. Zhang and S. Ren and J. Sun},
 	Booktitle = {2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 	Date-Added = {2018-10-25 23:41:31 +0000},
-	Date-Modified = {2018-10-26 00:00:25 +0000},
+	Date-Modified = {2018-12-01 13:39:34 +1300},
 	Doi = {10.1109/CVPR.2016.90},
 	Issn = {1063-6919},
-	Keywords = {CNN, image classification; AI; neural nets;object detection},
+	Keywords = {CNN, image classification; AI; neural nets;object detection, RESNET},
 	Month = {June},
 	Pages = {770-778},
 	Title = {Deep Residual Learning for Image Recognition},
@@ -1492,7 +1532,8 @@ https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-tra
 	Primaryclass = {cs.CV},
 	Title = {{Training Compact Neural Networks with Binary Weights and Low Precision Activations}},
 	Year = 2018,
-	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBkLi4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvRXZvbHV0aW9uYXJ5L0RFTlNFUi0gRGVlcCBFdm9sdXRpb25hcnkgTmV0d29yayBTdHJ1Y3R1cmVkIFJlcHJlc2VudGF0aW9uLmJpYk8RAkwAAAAAAkwAAgAACU1hY2ludG9zaAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9ERU5TRVItIERlZXAgRXZvbHUjRkZGRkZGRkYuYmliAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAMRXZvbHV0aW9uYXJ5AAIAei86VXNlcnM6cmh2dDpEZXY6Q05OLVBoZDpSZWZlcmVuY2VzOkNpdGF0aW9uczpFdm9sdXRpb25hcnk6REVOU0VSLSBEZWVwIEV2b2x1dGlvbmFyeSBOZXR3b3JrIFN0cnVjdHVyZWQgUmVwcmVzZW50YXRpb24uYmliAA4AgAA/AEQARQBOAFMARQBSAC0AIABEAGUAZQBwACAARQB2AG8AbAB1AHQAaQBvAG4AYQByAHkAIABOAGUAdAB3AG8AcgBrACAAUwB0AHIAdQBjAHQAdQByAGUAZAAgAFIAZQBwAHIAZQBzAGUAbgB0AGEAdABpAG8AbgAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAeFVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvRXZvbHV0aW9uYXJ5L0RFTlNFUi0gRGVlcCBFdm9sdXRpb25hcnkgTmV0d29yayBTdHJ1Y3R1cmVkIFJlcHJlc2VudGF0aW9uLmJpYgATAAEvAAAVAAIAC///AAAACAANABoAJACLAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAts=}}
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBkLi4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvRXZvbHV0aW9uYXJ5L0RFTlNFUi0gRGVlcCBFdm9sdXRpb25hcnkgTmV0d29yayBTdHJ1Y3R1cmVkIFJlcHJlc2VudGF0aW9uLmJpYk8RAkwAAAAAAkwAAgAACU1hY2ludG9zaAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9ERU5TRVItIERlZXAgRXZvbHUjRkZGRkZGRkYuYmliAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAMRXZvbHV0aW9uYXJ5AAIAei86VXNlcnM6cmh2dDpEZXY6Q05OLVBoZDpSZWZlcmVuY2VzOkNpdGF0aW9uczpFdm9sdXRpb25hcnk6REVOU0VSLSBEZWVwIEV2b2x1dGlvbmFyeSBOZXR3b3JrIFN0cnVjdHVyZWQgUmVwcmVzZW50YXRpb24uYmliAA4AgAA/AEQARQBOAFMARQBSAC0AIABEAGUAZQBwACAARQB2AG8AbAB1AHQAaQBvAG4AYQByAHkAIABOAGUAdAB3AG8AcgBrACAAUwB0AHIAdQBjAHQAdQByAGUAZAAgAFIAZQBwAHIAZQBzAGUAbgB0AGEAdABpAG8AbgAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAeFVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvRXZvbHV0aW9uYXJ5L0RFTlNFUi0gRGVlcCBFdm9sdXRpb25hcnkgTmV0d29yayBTdHJ1Y3R1cmVkIFJlcHJlc2VudGF0aW9uLmJpYgATAAEvAAAVAAIAC///AAAACAANABoAJACLAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAts=},
+	Bdsk-File-2 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBiLi4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvQ05OL1ZlcnkgZGVlcCBjb252b2x1dGlvbmFsIG5ldHdvcmtzIGZvciBsYXJnZS1zY2FsZSBpbWFnZSByZWNvZ25pdGlvbi5iaWJPEQJOAAAAAAJOAAIAAAlNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fVmVyeSBkZWVwIGNvbnZvbHV0I0ZGRkZGRkZGLmJpYgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAAA0NOTgAAAgB4LzpVc2VyczpyaHZ0OkRldjpDTk4tUGhkOlJlZmVyZW5jZXM6Q2l0YXRpb25zOkNOTjpWZXJ5IGRlZXAgY29udm9sdXRpb25hbCBuZXR3b3JrcyBmb3IgbGFyZ2Utc2NhbGUgaW1hZ2UgcmVjb2duaXRpb24uYmliAA4AjgBGAFYAZQByAHkAIABkAGUAZQBwACAAYwBvAG4AdgBvAGwAdQB0AGkAbwBuAGEAbAAgAG4AZQB0AHcAbwByAGsAcwAgAGYAbwByACAAbABhAHIAZwBlAC0AcwBjAGEAbABlACAAaQBtAGEAZwBlACAAcgBlAGMAbwBnAG4AaQB0AGkAbwBuAC4AYgBpAGIADwAUAAkATQBhAGMAaQBuAHQAbwBzAGgAEgB2VXNlcnMvcmh2dC9EZXYvQ05OLVBoZC9SZWZlcmVuY2VzL0NpdGF0aW9ucy9DTk4vVmVyeSBkZWVwIGNvbnZvbHV0aW9uYWwgbmV0d29ya3MgZm9yIGxhcmdlLXNjYWxlIGltYWdlIHJlY29nbml0aW9uLmJpYgATAAEvAAAVAAIAC///AAAACAANABoAJACJAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAts=}}
 
 @article{2018arXiv180810631K,
 	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
@@ -1806,8 +1847,8 @@ https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-tra
 	Author = {Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E.},
 	Booktitle = {Proceedings of the 25th International Conference on Neural Information Processing Systems - Volume 1},
 	Date-Added = {2018-09-25 11:16:05 +0000},
-	Date-Modified = {2018-09-25 11:17:02 +0000},
-	Keywords = {CNN, ImageNet, ILSVRC, Convolution},
+	Date-Modified = {2018-12-01 13:40:11 +1300},
+	Keywords = {CNN, ImageNet, ILSVRC, Convolution, AlexNet},
 	Location = {Lake Tahoe, Nevada},
 	Numpages = {9},
 	Pages = {1097--1105},

@@ -167,3 +167,6 @@ https://www.ijcai.org/proceedings/2017/316
 
 Measuring the time needed for training a neural network based on the number of training steps
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5524599
+
+An analysis of deep neural network models for practical applications
+https://arxiv.org/abs/1605.07678
