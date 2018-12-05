@@ -202,6 +202,89 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{7878541}{article}{}
+    \name{author}{4}{}{%
+      {{hash=AR}{%
+         family={Andri},
+         familyi={A\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CL}{%
+         family={Cavigelli},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=RD}{%
+         family={Rossi},
+         familyi={R\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Benini},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; CMOS logic circuits;computer
+  vision;convolution;coprocessors;embedded systems;image
+  classification;integrated circuit design;low-power electronics;neural
+  nets;optimisation;power aware computing;system-on-chip;I/O storage;I/O
+  bandwidth;algorithmic advancements;binary weights;competitive classification
+  accuracy;hard limitations;deeply embedded applications;mobile embedded
+  applications;power envelope;energy consumption;system-on-chip integration;CNN
+  accelerators;GP-GPUs;power-hungry parallel processors;computational
+  effort;human accuracy;image classification;computer vision;convolutional
+  neural networks;ultralow power binary-weight CNN acceleration;power
+  dissipation;binary-weight CNNs;accelerator;optimization
+  opportunities;ASIC;binary weights;convolutional neural networks
+  (CNNs);hardware accelerator;Internet of Things (IoT)}
+    \strng{namehash}{AR+1}
+    \strng{fullhash}{ARCLRDBL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Convolutional neural networks (CNNs) have revolutionized the world of
+  computer vision over the last few years, pushing image classification beyond
+  human accuracy. The computational effort of today's CNNs requires
+  power-hungry parallel processors or GP-GPUs. Recent developments in CNN
+  accelerators for system-on-chip integration have reduced energy consumption
+  significantly. Unfortunately, even these highly optimized devices are above
+  the power envelope imposed by mobile and deeply embedded applications and
+  face hard limitations caused by CNN weight I/O and storage. This prevents the
+  adoption of CNNs in future ultralow power Internet of Things end-nodes for
+  near-sensor analytics. Recent algorithmic and theoretical advancements enable
+  competitive classification accuracy even when limiting CNNs to binary (+1/-1)
+  weights during training. These new findings bring major optimization
+  opportunities in the arithmetic core by removing the need for expensive
+  multiplications, as well as reducing I/O bandwidth and storage. In this
+  paper, we present an accelerator optimized for binary-weight CNNs that
+  achieves 1.5 TOp/s at 1.2 V on a core area of only 1.33 million gate
+  equivalent (MGE) or 1.9 mm<sup>2</sup>and with a power dissipation of 895 μW
+  in UMC 65-nm technology at 0.6 V. Our accelerator significantly outperforms
+  the state-of-the-art in terms of energy and area efficiency achieving 61.2
+  TOp/s/W@0.6 V and 1.1 TOp/s/MGE@1.2 V, respectively.%
+    }
+    \verb{doi}
+    \verb 10.1109/TCAD.2017.2682138
+    \endverb
+    \field{issn}{0278-0070}
+    \field{number}{1}
+    \field{pages}{48\bibrangedash 60}
+    \field{title}{YodaNN: An Architecture for Ultralow Power Binary-Weight CNN
+  Acceleration}
+    \field{volume}{37}
+    \field{journaltitle}{IEEE Transactions on Computer-Aided Design of
+  Integrated Circuits and Systems}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8373076}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=BAA}{%
@@ -499,6 +582,10 @@
     \field{title}{{An Analysis of Deep Neural Network Models for Practical
   Applications}}
     \field{journaltitle}{ArXiv e-prints}
+    \field{annotation}{%
+  https://medium.com/@culurciello/analysis-of-deep-neural-networks-dcf398e71aae
+  https://towardsdatascience.com/neural-network-architectures-156e5bad51ba%
+    }
     \field{eprinttype}{arXiv}
     \field{eprintclass}{cs.CV}
     \field{month}{05}
@@ -628,6 +715,133 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{714090}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CCH}{%
+         family={Chu},
+         familyi={C\bibinitperiod},
+         given={C.\bibnamedelima H.},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KJH}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima H.},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; feedforward neural nets;pattern classification;learning
+  (artificial intelligence);medical diagnostic computing;geometrical
+  learning;binary neural networks;pattern classification;expand-and-truncate
+  learning algorithm;connecting weights;three-layered feedforward
+  network;binary-to-binary mappings;breast cancer database;Pattern
+  classification;Neural networks;Neurons;Machine learning
+  algorithms;Testing;Breast cancer;Databases;Hamming distance;Computer
+  networks;Joining processes}
+    \strng{namehash}{CCHKJH1}
+    \strng{fullhash}{CCHKJH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    This paper considers the use of binary neural networks for pattern
+  classification. An expand-and-truncate learning (ETL) algorithm is used to
+  determine the required number of neurons as well as the connecting weights in
+  a three-layered feedforward network for classifying input patterns. The ETL
+  algorithm is guaranteed to find a network for any binary-to-binary mappings.
+  The ETL algorithm's performance in pattern classification is tested using a
+  breast cancer database that have been used for benchmarking performance other
+  machine learning methods.%
+    }
+    \field{booktitle}{Proceedings of 1993 International Conference on Neural
+  Networks (IJCNN-93-Nagoya, Japan)}
+    \verb{doi}
+    \verb 10.1109/IJCNN.1993.714090
+    \endverb
+    \field{pages}{1039\bibrangedash 1042 vol.1}
+    \field{title}{Pattern classification by geometrical learning of binary
+  neural networks}
+    \field{volume}{1}
+    \field{year}{1993}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{NIPS2015_5647}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=DJP}{%
+         family={David},
+         familyi={D\bibinitperiod},
+         given={Jean-Pierre},
+         giveni={J\bibinitperiod-P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LND}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={N.\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LDD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiyama},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \keyw{BNN; Machine Learning; Computer Vision; Pattern Recognition; Neural
+  and Evolutionary Computing}
+    \strng{namehash}{CMBYDJP1}
+    \strng{fullhash}{CMBYDJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Advances in Neural Information Processing Systems 28}
+    \field{pages}{3123\bibrangedash 3131}
+    \field{title}{BinaryConnect: Training Deep Neural Networks with binary
+  weights during propagations}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-n
+    \verb etworks-with-binary-weights-during-propagations.pdf
+    \endverb
+    \field{year}{2015}
+  \endentry
+
   \entry{doi:10.1177/1555343417695197}{article}{}
     \name{author}{1}{}{%
       {{hash=EMR}{%
@@ -743,6 +957,74 @@
   problems}
     \field{volume}{2}
     \field{year}{1997}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{5607329}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GA}{%
+         family={Gomperts},
+         familyi={G\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=UA}{%
+         family={Ukil},
+         familyi={U\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zurfluh},
+         familyi={Z\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{backpropagation;field programmable gate arrays;hardware description
+  languages;multilayer perceptrons;FPGA;VLSI hardware description
+  language;arithmetic operation;artificial neural network;backpropagation
+  multilayer perceptron;fast prototyping;field programmable gate array;general
+  purpose neural network;hardware-based MLP;learning capability;online
+  application;space exploration;Backpropagation;NIR spectra
+  calibration;VHDL;Xilinx FPGA;field programmable gate array (FPGA);hardware
+  implementation;multilayer perceptron;neural network;spectroscopy}
+    \strng{namehash}{GAUAZF1}
+    \strng{fullhash}{GAUAZF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    This paper presents the development and implementation of a generalized
+  backpropagation multilayer perceptron (MLP) architecture described in VLSI
+  hardware description language (VHDL). The development of hardware platforms
+  has been complicated by the high hardware cost and quantity of the arithmetic
+  operations required in online artificial neural networks (ANNs), i.e.,
+  general purpose ANNs with learning capability. Besides, there remains a
+  dearth of hardware platforms for design space exploration, fast prototyping,
+  and testing of these networks. Our general purpose architecture seeks to fill
+  that gap and at the same time serve as a tool to gain a better understanding
+  of issues unique to ANNs implemented in hardware, particularly using field
+  programmable gate array (FPGA). The challenge is thus to find an architecture
+  that minimizes hardware costs, while maximizing performance, accuracy, and
+  parameterization. This work describes a platform that offers a high degree of
+  parameterization, while maintaining generalized network design with
+  performance comparable to other hardware-based MLP implementations.
+  Application of the hardware implementation of ANN with backpropagation
+  learning algorithm for a realistic application is also presented.%
+    }
+    \verb{doi}
+    \verb 10.1109/TII.2010.2085006
+    \endverb
+    \field{issn}{1551-3203}
+    \field{number}{1}
+    \field{pages}{78\bibrangedash 89}
+    \field{title}{Development and Implementation of Parameterized FPGA-Based
+  General Purpose Neural Networks for Online Applications}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE Transactions on Industrial Informatics}
+    \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -1538,6 +1820,57 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Raina:2009:LDU:1553374.1553486}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=RR}{%
+         family={Raina},
+         familyi={R\bibinitperiod},
+         given={Rajat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Madhavan},
+         familyi={M\bibinitperiod},
+         given={Anand},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NAY}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Andrew\bibnamedelima Y.},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{NN; GPU, Neural Network}
+    \strng{namehash}{RRMANAY1}
+    \strng{fullhash}{RRMANAY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Proceedings of the 26th Annual International Conference
+  on Machine Learning}
+    \verb{doi}
+    \verb 10.1145/1553374.1553486
+    \endverb
+    \field{isbn}{978-1-60558-516-1}
+    \field{pages}{873\bibrangedash 880}
+    \field{series}{ICML '09}
+    \field{title}{Large-scale Deep Unsupervised Learning Using Graphics
+  Processors}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/1553374.1553486
+    \endverb
+    \list{location}{1}{%
+      {Montreal, Quebec, Canada}%
+    }
+    \field{year}{2009}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{2016arXiv160305279R}{article}{}
     \name{author}{4}{}{%
       {{hash=RM}{%
@@ -2106,6 +2439,61 @@
     \field{year}{2017}
   \endentry
 
+  \entry{2016arXiv160207261S}{proceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SC}{%
+         family={{Szegedy}},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={{Ioffe}},
+         familyi={I\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={{Vanhoucke}},
+         familyi={V\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={{Alemi}},
+         familyi={A\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {AAAI}%
+    }
+    \list{publisher}{1}{%
+      {AAAI}%
+    }
+    \keyw{CNN; Computer Vision; Pattern Recognition; Inception}
+    \strng{namehash}{SC+2}
+    \strng{fullhash}{SCISVVAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1602.07261
+    \endverb
+    \field{number}{31}
+    \field{title}{{Inception-v4, Inception-ResNet and the Impact of Residual
+  Connections on Learning}}
+    \field{volume}{31}
+    \field{journaltitle}{Prceedings of the 31st AAAI Conference on Artificial
+  Intelligence}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CV}
+    \field{month}{02}
+    \field{year}{2017}
+  \endentry
+
   \entry{AppleFaceDetectionURL}{online}{}
     \name{author}{1}{}{%
       {{hash=TCVML}{%
@@ -2132,38 +2520,63 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
-  \entry{2009arXiv0904.4587T}{article}{}
-    \name{author}{2}{}{%
-      {{hash=TJM}{%
-         family={{Torres-Moreno}},
-         familyi={T\bibinitperiod},
-         given={J.-M.},
-         giveni={J\bibinitperiod-M\bibinitperiod},
+  \entry{Yamada1992}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YM}{%
+         family={Yamada},
+         familyi={Y\bibinitperiod},
+         given={Manabu},
+         giveni={M\bibinitperiod},
       }}%
-      {{hash=GMB}{%
-         family={{Gordon}},
-         familyi={G\bibinitperiod},
-         given={M.\bibnamedelima B.},
-         giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+      {{hash=NT}{%
+         family={Nakagawa},
+         familyi={N\bibinitperiod},
+         given={Tohru},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kitagawa},
+         familyi={K\bibinitperiod},
+         given={Hajime},
+         giveni={H\bibinitperiod},
       }}%
     }
-    \keyw{BNN; Computer Science; Artificial Intelligence; Neural and
-  Evolutionary Computing}
-    \strng{namehash}{TJMGMB1}
-    \strng{fullhash}{TJMGMB1}
+    \keyw{BNN; Parallel processing; Sorting Algorithm}
+    \strng{namehash}{YMNTKH1}
+    \strng{fullhash}{YMNTKH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \verb{eprint}
-    \verb 0904.4587
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    This paper presents an ultra-high-speed sorter based upon a simplified
+  parallel sorting algorithm using a binary neural network which consists both
+  of binary neurons and of AND-OR synaptic connections to solve sorting
+  problems at two and only two clock cycles. Our simplified algorithm is based
+  on the super parallel sorting algorithm proposed by Takefuji and Lee.
+  Nevertheless, our algorithm does not need any adders, while Takefuji's
+  algorithm needs n{\texttimes}(n−1) analog adders of which each has multiple
+  input ports. For an example of the simplified parallel sorter, a hardware
+  design and its implementation will be introduced in this paper, which
+  performs a sorting operation at two clock cycles. Both results of a logic
+  circuit simulation and of an algorithm simulation show the justice of our
+  hardware implementation even if in the practical size of the problem.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF00228719
     \endverb
-    \field{title}{{Adaptive Learning with Binary Neurons}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.AI}
-    \field{month}{04}
-    \field{year}{2009}
+    \field{issn}{1573-1979}
+    \field{number}{4}
+    \field{pages}{389\bibrangedash 393}
+    \field{title}{A super parallel sorter using a binary neural network with
+  AND-OR synaptic connections}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF00228719
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{Analog Integrated Circuits and Signal Processing}
+    \field{year}{1992}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{bmxnet}{inproceedings}{}
@@ -2396,64 +2809,6 @@
     }
     \field{year}{2017}
     \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{2016arXiv160606160Z}{article}{}
-    \name{author}{6}{}{%
-      {{hash=ZS}{%
-         family={{Zhou}},
-         familyi={Z\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=WY}{%
-         family={{Wu}},
-         familyi={W\bibinitperiod},
-         given={Y.},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=NZ}{%
-         family={{Ni}},
-         familyi={N\bibinitperiod},
-         given={Z.},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=ZX}{%
-         family={{Zhou}},
-         familyi={Z\bibinitperiod},
-         given={X.},
-         giveni={X\bibinitperiod},
-      }}%
-      {{hash=WH}{%
-         family={{Wen}},
-         familyi={W\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=ZY}{%
-         family={{Zou}},
-         familyi={Z\bibinitperiod},
-         given={Y.},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN, Computer Science - Neural and Evolutionary Computing, Computer
-  Science - Learning}
-    \strng{namehash}{ZS+1}
-    \strng{fullhash}{ZSWYNZZXWHZY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \verb{eprint}
-    \verb 1606.06160
-    \endverb
-    \field{title}{{DoReFa-Net: Training Low Bitwidth Convolutional Neural
-  Networks with Low Bitwidth Gradients}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{month}{06}
-    \field{year}{2016}
   \endentry
 
   \entry{8052915}{inproceedings}{}

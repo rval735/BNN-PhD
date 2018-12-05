@@ -151,6 +151,7 @@ https://arxiv.org/abs/1808.02631
 
 Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
 https://arxiv.org/abs/1712.05877
+http://openaccess.thecvf.com/content_cvpr_2018/papers/Jacob_Quantization_and_Training_CVPR_2018_paper.pdf
 
 Universal Perceptron and DNA-Like Learning Algorithm for Binary Neural Networks- Non-LSBF Implementation
 https://ieeexplore.ieee.org/document/5159360/
@@ -266,3 +267,19 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-42042
 
 Analysis for Characteristics of GA-Based Learning Method of Binary Neural Networks
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11550822_51
+
+Sensitivity-Based Adaptive Learning Rules for Binary Feedforward Neural Networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6134678
+
+Towards Effective Low-bitwidth Convolutional Neural Networks
+https://arxiv.org/abs/1711.00205
+http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhuang_Towards_Effective_Low-Bitwidth_CVPR_2018_paper.pdf
+
+Two-Step Quantization for Low-bit Neural Networks
+http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Two-Step_Quantization_for_CVPR_2018_paper.pdf
+
+Explicit Loss-Error-Aware Quantization for Low-Bit Deep Neural Networks
+http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_Explicit_Loss-Error-Aware_Quantization_CVPR_2018_paper.pdf
+
+SYQ- Learning Symmetric Quantization For Efficient Deep Neural Networks
+http://openaccess.thecvf.com/content_cvpr_2018/papers/Faraone_SYQ_Learning_Symmetric_CVPR_2018_paper.pdf

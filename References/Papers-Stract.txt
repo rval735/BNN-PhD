@@ -66,11 +66,12 @@ Designing Energy-Efficient Convolutional Neural Networks using Energy-Aware Prun
 - Accuracy after pruning, less than 1% loss
 
 Genetic CNN
-- Proposed possibility of learning DNN structures automatically
 - Encoding method to represent each network structure in a fixed-length binary string
-- Genetic algorithm is only used to propose new network structures
+- Genetic algorithm is only used to modify structures like VGGNet, ResNet and DenseNet
 - Tested on ILSVRC(50i, 76.58%), MNIST (50i, 99.62%a) and CIFAR (i= iteration, %a= average)
-- Large fraction of network structures are still unexplored
+- Improves marginally on state of the art publications with genetically generated CNNs
+- Training CNNs still happens using traditional BP
+- Fitness function of each individual is determined by its recognition accuracy on a reference dataset
 
 Designing architectures of convolutional neural networks to solve practical problems
 - Propose mechanisms to estimate effective CNN configurations based on FNN
@@ -135,6 +136,11 @@ Very deep convolutional networks for large-scale image recognition
 -
 
 Densely Connected Convolutional Networks
+-
+-
+-
+
+Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning
 -
 -
 -
@@ -391,6 +397,16 @@ Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
 - Limited bandwidth is one of the acceleration bottlenecks of CNN models in embedded systems
 - CONV layers are computation centric and Fully connected memory centric
 - Used VGG16-SVD with 86.66% top-5 accuracy (137 GOP/s) under 150Mhz
+
+Reconfigurable FPGA implementation of neural networks
+-
+-
+-
+
+Throughput optimizations for FPGA-based deep neural network inference
+-
+-
+-
 
 < FPGA-NN
 ------> FPGA-Fin
@@ -973,6 +989,11 @@ An analysis of deep neural network models for practical applications
 -
 -
 
+Large-scale Deep Unsupervised Learning using Graphics Processors
+-
+-
+-
+
 < NN
 -------> DCGAN
 
@@ -1359,9 +1380,12 @@ Training Compact Neural Networks with Binary Weights and Low Precision Activatio
 -
 
 Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
--
--
--
+- Quantization scheme that allows inference to be carried out using integer-only arithmetic
+- Co-designs a training procedure to preserve end-to-end model accuracy post quantization
+- Tested on ImageNet and COCO with CPU
+- Weights are quantized before they are convolved with the input
+- Activations are quantized at points where they would be during inference
+
 
 Universal Perceptron and DNA-Like Learning Algorithm for Binary Neural Networks- Non-LSBF Implementation
 - Use genetic algorithm ideas to train BNN
@@ -1547,6 +1571,37 @@ Analysis for Characteristics of GA-Based Learning Method of Binary Neural Networ
 - Learning characteristics of GAETL for the three-layer BNN
 - Elitism and inverse-elitism can reduce the number of hidden layer neurons
 
+Sensitivity-Based Adaptive Learning Rules for Binary Feedforward Neural Networks
+-
+-
+-
+
+Towards Effective Low-bitwidth Convolutional Neural Networks
+- Proposes a two-stage optimization strategy to progressively find good local minima.
+- First optimize with quantized weights and then quantized activations
+- Secondly progressively decrease bit-width from high to low precision during training
+- Finally use a novel learning scheme to jointly train a full-precision model alongside the low-precision one
+- Experiments on CIFAR-100 and ImageNet that a 4-bit precision network has no performance decrease vs AlexNet and ResNet-50
+
+Two-Step Quantization for Low-bit Neural Networks
+- The TSQ framework decomposes the network quantization problem into two steps: code learning and transformation function learning based on learned codes
+- 1st step: sparse quantization method for code learning
+- 2nd step: non-linear least square regression problem with low-bit constraints, solved iteratively
+- Experiments on CIFAR-10 and ILSVRC-12 
+- 2-bit activation and ternary weight quantization (AlexNet), TSQ accuracy drops by ~0.5 points
+
+Explicit Loss-Error-Aware Quantization for Low-Bit Deep Neural Networks
+- ELQ bridges perturbation loss from weight quantization explicitly regularizing it
+- Tested on ImageNet with AlexNet and ResNet-18
+- Error decrease is minimal compared to other BNN
+
+SYQ- Learning Symmetric Quantization For Efficient Deep Neural Networks
+- Reduce BNN loss by learning a symmetric codebook for particular weight subgroups
+- Open source code: github.com/julianfaraone/SYQ
+- This method improves accuracy for 1-2 bit weights and 2-8 bit activations
+- AlexNet, ResNet and VGG models and compared to QNN, Dorefa or TTQ
+- Considers DSP/LUT utilization in Xilinx ZU3 FPGA 
+
 < BNN
 
 ------> Other
@@ -1714,5 +1769,10 @@ Evolving Neural Networks through Augmenting Topologies
 - Protects structural innovation using speciation
 - Incrementally growing from minimal structure
 - Increasingly sophisticated strategies are evolved by allowing networks to compete
+
+A Genetic Algorithm-Based Solver for Very Large Jigsaw Puzzles
+- Solve puzzles up to 22,000 pieces
+- Detects, extracts and combine segments from parents to create improved children 
+- Create and shares benchmark images for future testing
 
 < Evolutionary

@@ -170,3 +170,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5524599
 
 An analysis of deep neural network models for practical applications
 https://arxiv.org/abs/1605.07678
+
+Large-scale Deep Unsupervised Learning using Graphics Processors
+https://dl.acm.org/citation.cfm?id=1553486r

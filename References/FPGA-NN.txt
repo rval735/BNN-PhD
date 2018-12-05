@@ -48,3 +48,9 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021698
 
 Going Deeper with Embedded FPGA Platform for Convolutional Neural Network
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847265
+
+Reconfigurable FPGA implementation of neural networks
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0925231218305393
+
+Throughput optimizations for FPGA-based deep neural network inference
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S014193311730296X
