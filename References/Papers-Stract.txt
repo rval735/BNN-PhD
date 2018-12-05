@@ -1602,6 +1602,16 @@ SYQ- Learning Symmetric Quantization For Efficient Deep Neural Networks
 - AlexNet, ResNet and VGG models and compared to QNN, Dorefa or TTQ
 - Considers DSP/LUT utilization in Xilinx ZU3 FPGA 
 
+A Ternary Weight Binary Input Convolutional Neural Network: Realization on the Embedded Processor
+- Trains CNNs using the AdaDelta optimizer
+- Proposes a 2D convolutional operation suitable for ARM processors (RPi 3)
+- Better recognition accuracy and faster (8.13x) than binary weight CNN
+
+VLSI implementation of a binary neural network-two case studies
+- VLSI digital design for Correlation Matrix Memory networks
+- Drawback is the demand for a high number of adders when dealing with large inputs
+- Memory size is only limited by the maximum chip size
+
 < BNN
 
 ------> Other

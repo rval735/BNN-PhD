@@ -283,3 +283,9 @@ http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhou_Explicit_Loss-Error-A
 
 SYQ- Learning Symmetric Quantization For Efficient Deep Neural Networks
 http://openaccess.thecvf.com/content_cvpr_2018/papers/Faraone_SYQ_Learning_Symmetric_CVPR_2018_paper.pdf
+
+A Ternary Weight Binary Input Convolutional Neural Network: Realization on the Embedded Processor
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8416941
+
+VLSI implementation of a binary neural network-two case studies
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/758889

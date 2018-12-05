@@ -842,6 +842,63 @@
     \field{year}{2015}
   \endentry
 
+  \entry{DENG201849}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DL}{%
+         family={Deng},
+         familyi={D\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JP}{%
+         family={Jiao},
+         familyi={J\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pei},
+         familyi={P\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Zhenzhi},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Guoqi},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, GXNOR-Net, Discrete state transition, Ternary neural networks,
+  Sparse binary networks}
+    \strng{namehash}{DL+1}
+    \strng{fullhash}{DLJPPJWZLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neunet.2018.01.010
+    \endverb
+    \field{issn}{0893-6080}
+    \field{pages}{49 \bibrangedash  58}
+    \field{title}{GXNOR-Net: Training deep neural networks with ternary weights
+  and activations without full-precision memory under a unified discretization
+  framework}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0893608018300108
+    \endverb
+    \field{volume}{100}
+    \field{journaltitle}{Neural Networks}
+    \field{year}{2018}
+  \endentry
+
   \entry{doi:10.1177/1555343417695197}{article}{}
     \name{author}{1}{}{%
       {{hash=EMR}{%
@@ -894,6 +951,48 @@
     \field{volume}{11}
     \field{journaltitle}{Journal of Cognitive Engineering and Decision Making}
     \field{year}{2017}
+  \endentry
+
+  \entry{Faraone_2018_CVPR}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=FJ}{%
+         family={Faraone},
+         familyi={F\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Fraser},
+         familyi={F\bibinitperiod},
+         given={Nicholas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Blott},
+         familyi={B\bibinitperiod},
+         given={Michaela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LPH}{%
+         family={Leong},
+         familyi={L\bibinitperiod},
+         given={Philip\bibnamedelima H.W.},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Quantization, FPGA, LUT}
+    \strng{namehash}{FJ+1}
+    \strng{fullhash}{FJFNBMLPH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}
+    \field{title}{SYQ: Learning Symmetric Quantization for Efficient Deep
+  Neural Networks}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{616215}{inproceedings}{}
@@ -1026,6 +1125,61 @@
     \field{journaltitle}{IEEE Transactions on Industrial Informatics}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Guo2018FBNAAF}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=GP}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Ruizhi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Pin},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=XS}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={Shaolin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Donglin},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Trinity College, Dublin}%
+    }
+    \keyw{BNN, Neural Network, FPGA, Accelerator}
+    \strng{namehash}{GP+1}
+    \strng{fullhash}{GPMHCRLPXSWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{FPL 2018}
+    \field{title}{FBNA: A Fully Binarized Neural Network Accelerator}
+    \field{volume}{1}
+    \field{year}{2018}
   \endentry
 
   \entry{7780459}{inproceedings}{}
@@ -1370,46 +1524,6 @@
     \field{title}{On the State Space of the Binary Neural Network}
     \field{year}{1988}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{2018arXiv180810631K}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KO}{%
-         family={{Krestinskaya}},
-         familyi={K\bibinitperiod},
-         given={O.},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=SKN}{%
-         family={{Salama}},
-         familyi={S\bibinitperiod},
-         given={K.\bibnamedelima N.},
-         giveni={K\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={{Pappachen James}},
-         familyi={P\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN;Computer Science - Emerging Technologies, Computer Science -
-  Artificial Intelligence}
-    \strng{namehash}{KOSKNPA1}
-    \strng{fullhash}{KOSKNPA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \verb{eprint}
-    \verb 1808.10631
-    \endverb
-    \field{title}{{Learning in Memristive Neural Network Architectures using
-  Analog Backpropagation Circuits}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{month}{08}
-    \field{year}{2018}
   \endentry
 
   \entry{Krizhevsky2999257}{inproceedings}{}
@@ -1869,6 +1983,32 @@
     }
     \field{year}{2009}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{xnor.ai-webpage}{online}{}
+    \name{author}{1}{}{%
+      {{hash=RAFM}{%
+         family={Rastegari},
+         familyi={R\bibinitperiod},
+         given={Ali Farhadi;\bibnamedelima Mohammad},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, XNOR, Yolo}
+    \strng{namehash}{RAFM1}
+    \strng{fullhash}{RAFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{title}{xnor.ai Company}
+    \verb{url}
+    \verb https://www.xnor.ai/
+    \endverb
+    \field{year}{2018}
+    \field{urlyear}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{2016arXiv160305279R}{article}{}
@@ -2639,93 +2779,50 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{7838429}{inproceedings}{}
-    \name{author}{8}{}{%
-      {{hash=YS}{%
-         family={Yu},
+  \entry{8416941}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=YH}{%
+         family={Yonekawa},
          familyi={Y\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=LZ}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Z.},
-         giveni={Z\bibinitperiod},
-      }}%
-      {{hash=CP}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=WH}{%
-         family={Wu},
-         familyi={W\bibinitperiod},
          given={H.},
          giveni={H\bibinitperiod},
       }}%
-      {{hash=GB}{%
-         family={Gao},
-         familyi={G\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
+      {{hash=SS}{%
+         family={Sato},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
       }}%
-      {{hash=WD}{%
-         family={Wang},
-         familyi={W\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=WW}{%
-         family={Wu},
-         familyi={W\bibinitperiod},
-         given={W.},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=QH}{%
-         family={Qian},
-         familyi={Q\bibinitperiod},
+      {{hash=NH}{%
+         family={Nakahara},
+         familyi={N\bibinitperiod},
          given={H.},
          giveni={H\bibinitperiod},
       }}%
     }
-    \keyw{BNN; CMOS integrated circuits;electronic engineering computing;image
-  recognition;neural nets;resistive RAM;MNIST handwritten digit dataset;CMOS
-  process;Tsinghua;BNN;image recognition;binary RRAM macrochip device;resistive
-  memory technology;pre-mature analog property;synaptic device;large-scale
-  binary neural network;word length 1 bit;storage capacity 16 Mbit;size 130 nm}
-    \strng{namehash}{YS+1}
-    \strng{fullhash}{YSLZCPWHGBWDWWQH1}
+    \keyw{BNN; Neurons;Training;Two dimensional displays;Embedded
+  systems;Character recognition;Computational modeling;Convolutional neural
+  networks}
+    \strng{namehash}{YHSSNH1}
+    \strng{fullhash}{YHSSNH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Y}
     \field{sortinithash}{Y}
-    \field{abstract}{%
-    On-chip implementation of large-scale neural networks with emerging
-  synaptic devices is attractive but challenging, primarily due to the
-  pre-mature analog properties of today's resistive memory technologies. This
-  work aims to realize a large-scale neural network using today's available
-  binary RRAM devices for image recognition. We propose a methodology to
-  binarize the neural network parameters with a goal of reducing the precision
-  of weights and neurons to 1-bit for classification and &lt;;8-bit for online
-  training. We experimentally demonstrate the binary neural network (BNN) on
-  Tsinghua's 16 Mb RRAM macro chip fabricated in 130 nm CMOS process. Even
-  under finite bit yield and endurance cycles, the system performance on MNIST
-  handwritten digit dataset achieves ~96.5% accuracy for both classification
-  and online training, close to ~97% accuracy by the ideal software
-  implementation. This work reports the largest scale of the synaptic arrays
-  and achieved the highest accuracy so far.%
-    }
-    \field{booktitle}{2016 IEEE International Electron Devices Meeting (IEDM)}
+    \field{booktitle}{2018 IEEE 48th International Symposium on Multiple-Valued
+  Logic (ISMVL)}
     \verb{doi}
-    \verb 10.1109/IEDM.2016.7838429
+    \verb 10.1109/ISMVL.2018.00038
     \endverb
-    \field{issn}{2156-017X}
-    \field{pages}{16.2.1\bibrangedash 16.2.4}
-    \field{title}{Binary neural network with 16 Mb RRAM macro chip for
-  classification and online training}
-    \field{year}{2016}
+    \field{issn}{2378-2226}
+    \field{pages}{174\bibrangedash 179}
+    \field{title}{A Ternary Weight Binary Input Convolutional Neural Network:
+  Realization on the Embedded Processor}
+    \verb{url}
+    \verb doi.ieeecomputersociety.org/10.1109/ISMVL.2018.00038
+    \endverb
+    \field{volume}{00}
+    \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -2877,46 +2974,6 @@
     \field{title}{Deep learning binary neural network on an FPGA}
     \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{2018arXiv180802631Z}{article}{}
-    \name{author}{3}{}{%
-      {{hash=ZB}{%
-         family={{Zhuang}},
-         familyi={Z\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=SC}{%
-         family={{Shen}},
-         familyi={S\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=RI}{%
-         family={{Reid}},
-         familyi={R\bibinitperiod},
-         given={I.},
-         giveni={I\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN;Computer Science - Computer Vision and Pattern Recognition}
-    \strng{namehash}{ZBSCRI1}
-    \strng{fullhash}{ZBSCRI1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \verb{eprint}
-    \verb 1808.02631
-    \endverb
-    \field{title}{{Training Compact Neural Networks with Binary Weights and Low
-  Precision Activations}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CV}
-    \field{month}{08}
-    \field{year}{2018}
   \endentry
 \endsortlist
 \endinput
