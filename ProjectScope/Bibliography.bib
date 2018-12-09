@@ -1,12 +1,89 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-12-06 11:17:25 +1300 
+%% Created for RHVT at 2018-12-09 17:10:02 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{shayer2018learning,
+	Author = {Oran Shayer and Dan Levi and Ethan Fetaya},
+	Booktitle = {International Conference on Learning Representations},
+	Date-Added = {2018-12-09 16:39:21 +1300},
+	Date-Modified = {2018-12-09 16:39:50 +1300},
+	Keywords = {BNN, Discrete, MNIST, CIFAR, ImageNet},
+	Title = {Learning Discrete Weights Using the Local Reparameterization Trick},
+	Url = {https://openreview.net/forum?id=BySRH6CpW},
+	Year = {2018},
+	Bdsk-Url-1 = {https://openreview.net/forum?id=BySRH6CpW}}
+
+@inproceedings{wu2018training,
+	Author = {Shuang Wu and Guoqi Li and Feng Chen and Luping Shi},
+	Booktitle = {International Conference on Learning Representations},
+	Date-Added = {2018-12-09 16:29:45 +1300},
+	Date-Modified = {2018-12-09 17:10:02 +1300},
+	Keywords = {BNN; Binary, MNIST, CIFAR, ImageNet},
+	Month = {Feb},
+	Title = {Training and Inference with Integers in Deep Neural Networks},
+	Url = {https://openreview.net/forum?id=HJGXzmspb},
+	Year = {2018},
+	Bdsk-Url-1 = {https://openreview.net/forum?id=HJGXzmspb}}
+
+@inbook{Moussa2006,
+	Abstract = {Artificial Neural Networks (ANNs) are inherently parallel architectures which represent a natural fit for custom implementation on FPGAs. One important implementation issue is to determine the numerical precision format that allows an optimum tradeoff between precision and implementation areas. Standard single or double precision floating-point representations minimize quantization errors while requiring significant hardware resources. Less precise fixed-point representation may require less hardware resources but add quantization errors that may prevent learning from taking place, especially in regression problems. This chapter examines this issue and reports on a recent experiment where we implemented a Multi-layer perceptron (MLP) on an FPGA using both fixed and floating point precision. Results show that the fixed-point MLP implementation was over 12x greater in speed, over 13x smaller in area, and achieves far greater processing density compared to the floating-point FPGA-based MLP.},
+	Address = {Boston, MA},
+	Author = {Moussa, Medhat and Areibi, Shawki and Nichols, Kristian},
+	Booktitle = {FPGA Implementations of Neural Networks},
+	Date-Added = {2018-12-06 14:20:11 +1300},
+	Date-Modified = {2018-12-06 14:20:23 +1300},
+	Doi = {10.1007/0-387-28487-7_2},
+	Editor = {Omondi, Amos R. and Rajapakse, Jagath C.},
+	Isbn = {978-0-387-28487-3},
+	Keywords = {FPGA-NN, Book Chapter},
+	Pages = {37--61},
+	Publisher = {Springer US},
+	Title = {On the Arithmetic Precision for Implementing Back-Propagation Networks on FPGA: A Case Study},
+	Url = {https://doi.org/10.1007/0-387-28487-7_2},
+	Year = {2006},
+	Bdsk-Url-1 = {https://doi.org/10.1007/0-387-28487-7_2}}
+
+@inbook{Paul2006,
+	Abstract = {Back propagation is a well known technique used in the implementation of artificial neural networks. The algorithm can be described essentially as a sequence of matrix vector multiplications and outer product operations interspersed with the application of a point wise non linear function. The algorithm is compute intensive and lends itself to a high degree of parallelism. These features motivate a systolic design of hardware to implement the Back Propagation algorithm. We present in this chapter a new systolic architecture for the complete back propagation algorithm. For a neural network with N input neurons, P hidden layer neurons and M output neurons, the proposed architecture with P processors, has a running time of (2N + 2M + P + max(M,P)) for each training set vector. This is the first such implementation of the back propagation algorithm which completely parallelizes the entire computation of learning phase. The array has been implemented on an Annapolis FPGA based coprocessor and it achieves very favorable performance with range of 5 GOPS. The proposed new design targets Virtex boards.},
+	Address = {Boston, MA},
+	Author = {Paul, Kolin and Rajopadhye, Sanjay},
+	Booktitle = {FPGA Implementations of Neural Networks},
+	Date-Added = {2018-12-06 14:17:29 +1300},
+	Date-Modified = {2018-12-06 14:17:42 +1300},
+	Doi = {10.1007/0-387-28487-7_5},
+	Editor = {Omondi, Amos R. and Rajapakse, Jagath C.},
+	Isbn = {978-0-387-28487-3},
+	Keywords = {FPGA-NN, Book Chapter},
+	Pages = {137--165},
+	Publisher = {Springer US},
+	Title = {Back-Propagation Algorithm Achieving 5 Gops on the Virtex-E},
+	Url = {https://doi.org/10.1007/0-387-28487-7_5},
+	Year = {2006},
+	Bdsk-Url-1 = {https://doi.org/10.1007/0-387-28487-7_5}}
+
+@inbook{Omondi2006,
+	Abstract = {This introductory chapter reviews the basics of artificial-neural-network theory, discusses various aspects of the hardware implementation of neural networks (in both ASIC and FPGA technologies, with a focus on special features of artificial neural networks), and concludes with a brief note on performance-evaluation. Special points are the exploitation of the parallelism inherent in neural networks and the appropriate implementation of arithmetic functions, especially the sigmoid function. With respect to the sigmoid function, the chapter includes a significant contribution.},
+	Address = {Boston, MA},
+	Author = {Omondi, Amos R. and Rajapakse, Jagath C. and Bajger, Mariusz},
+	Booktitle = {FPGA Implementations of Neural Networks},
+	Date-Added = {2018-12-06 14:08:39 +1300},
+	Date-Modified = {2018-12-06 14:17:53 +1300},
+	Doi = {10.1007/0-387-28487-7_1},
+	Editor = {Omondi, Amos R. and Rajapakse, Jagath C.},
+	Isbn = {978-0-387-28487-3},
+	Keywords = {FPGA-NN, NN, Neurocomputers, Book Chapter},
+	Pages = {1--36},
+	Publisher = {Springer US},
+	Title = {FPGA Neurocomputers},
+	Url = {https://doi.org/10.1007/0-387-28487-7_1},
+	Year = {2006},
+	Bdsk-Url-1 = {https://doi.org/10.1007/0-387-28487-7_1}}
 
 @inproceedings{758889,
 	Abstract = {A comparison between a bit-level and a conventional VLSI implementation of a binary neural network is presented. This network is based on Correlation Matrix Memory (CMM) that stores relationships between pairs of binary vectors. The bit-level architecture consists of an n/spl times/m array of bit-level processors holding the storage and computation elements. The conventional CMM architecture consists of a RAM memory holding the CMM storage and an array of counters. Since we are interested in the VLSI implementation of such networks, hardware complexities and speeds of both bit-level and conventional architecture were compared by using VLSI tools. It is shown that a significant speedup is achieved by using the bit-level architecture since the speed of this last configuration is not limited by the memory addressing delay. Moreover, the bit-level architecture is very simple and reduces the bus/routing, making the architecture suitable for VLSI implementation. The main drawback of such an approach compared to the conventional one is the demand for a high number of adders for dealing with a large number of inputs.},
@@ -1017,10 +1094,10 @@ https://towardsdatascience.com/neural-network-architectures-156e5bad51ba
 	Author = {D. J. M. Moss and E. Nurvitadhi and J. Sim and A. Mishra and D. Marr and S. Subhaschandra and P. H. W. Leong},
 	Booktitle = {2017 27th International Conference on Field Programmable Logic and Applications (FPL)},
 	Date-Added = {2018-11-05 22:28:08 +1300},
-	Date-Modified = {2018-11-05 22:28:30 +1300},
+	Date-Modified = {2018-12-06 14:59:09 +1300},
 	Doi = {10.23919/FPL.2017.8056823},
 	Issn = {1946-1488},
-	Keywords = {CNN-FPGA, BNN, computational complexity;field programmable gate arrays;graphics processing units;image recognition;neural nets;object detection;high performance binary neural networks;convolutional neural networks;CNN;Xeon CPU;Intel Xeon+FPGA platform;FPGA BNN accelerators;Nvidia Titan X Pascal GPU;specialised FPGA architecture;Xeon+FPGA system;high performance BNN accelerator;lower computational complexity;complex topologies;object detection applications;scene segmentation;image recognition;Field programmable gate arrays;Graphics processing units;Topology;Computer architecture;Performance evaluation;Network topology;IP networks},
+	Keywords = {BNN, CNN, FPGA, computational complexity;field programmable gate arrays;graphics processing units;image recognition;neural nets;object detection;high performance binary neural networks;convolutional neural networks;CNN;Xeon CPU;Intel Xeon+FPGA platform;FPGA BNN accelerators;Nvidia Titan X Pascal GPU;specialised FPGA architecture;Xeon+FPGA system;high performance BNN accelerator;lower computational complexity;complex topologies;object detection applications;scene segmentation;image recognition;Field programmable gate arrays;Graphics processing units;Topology;Computer architecture;Performance evaluation;Network topology;IP networks},
 	Month = {Sept},
 	Pages = {1-4},
 	Title = {High performance binary neural networks on the Xeon-FPGA platform},
@@ -1878,9 +1955,9 @@ https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-tra
 	Author = {A. Bermak},
 	Booktitle = {Proceedings of the 2003 International Symposium on Circuits and Systems, 2003. ISCAS '03.},
 	Date-Added = {2018-09-28 10:13:06 +0000},
-	Date-Modified = {2018-09-28 10:13:56 +0000},
+	Date-Modified = {2018-12-06 14:26:04 +1300},
 	Doi = {10.1109/ISCAS.2003.1206405},
-	Keywords = {BNN; neural chips;pattern classification;VLSI;scalable 3D chip;binary neural network classification;VLSI;MCM;on-chip control unit;expansibility;multiprecision neural chip;4 bit;8 bit;16 bit;Neural networks;Very large scale integration;Artificial neural networks;Packaging;Network topology;Hardware;Gas detectors;Costs;Integrated circuit interconnections;Power system interconnection},
+	Keywords = {BNN; pattern classification;VLSI;multiprecision neural chip},
 	Month = {May},
 	Pages = {V-V},
 	Title = {A highly scalable 3D chip for binary neural network classification applications},
@@ -2222,11 +2299,11 @@ https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-tra
 @article{PETERSON1989475,
 	Author = {Carsten Peterson and Eric Hartman},
 	Date-Added = {2018-06-22 10:47:31 +0000},
-	Date-Modified = {2018-06-22 10:47:38 +0000},
+	Date-Modified = {2018-12-06 13:49:53 +1300},
 	Doi = {https://doi.org/10.1016/0893-6080(89)90045-2},
 	Issn = {0893-6080},
 	Journal = {Neural Networks},
-	Keywords = {FPGA-NN, Neural network, Bidirectional, Generalization, Content addressable memory, Mean field theory, Learning algorithm},
+	Keywords = {NN, Neural network, Bidirectional, Generalization, Content addressable memory, Mean field theory, Learning algorithm},
 	Number = {6},
 	Pages = {475 - 494},
 	Title = {Explorations of the mean field theory learning algorithm},
@@ -2513,21 +2590,6 @@ https://papers.nips.cc/paper/5269-expectation-backpropagation-parameter-free-tra
 	Month = jun,
 	Title = {{DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients}},
 	Year = 2016}
-
-@article{2018arXiv180204680W,
-	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
-	Adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180204680W},
-	Archiveprefix = {arXiv},
-	Author = {{Wu}, S. and {Li}, G. and {Chen}, F. and {Shi}, L.},
-	Date-Added = {2018-05-30 01:21:07 +0000},
-	Date-Modified = {2018-05-30 01:21:07 +0000},
-	Eprint = {1802.04680},
-	Journal = {ArXiv e-prints},
-	Keywords = {Computer Science - Learning},
-	Month = feb,
-	Primaryclass = {cs.LG},
-	Title = {{Training and Inference with Integers in Deep Neural Networks}},
-	Year = 2018}
 
 @article{2017arXiv170602379L,
 	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},

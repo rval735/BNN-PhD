@@ -289,3 +289,13 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8416941
 
 VLSI implementation of a binary neural network-two case studies
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/758889
+
+High Performance Binary Neural Networks on the Xeon-FPGA Platform
+http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8056823
+
+Training and Inference with Integers in Deep Neural Networks
+https://openreview.net/forum?id=HJGXzmspb
+https://github.com/boluoweifenda/WAGE
+
+Learning discrete weights using the local reparameterization trick
+https://openreview.net/forum?id=BySRH6CpW

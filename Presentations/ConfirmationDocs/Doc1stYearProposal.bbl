@@ -367,12 +367,7 @@
          giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{BNN; neural chips;pattern classification;VLSI;scalable 3D chip;binary
-  neural network classification;VLSI;MCM;on-chip control
-  unit;expansibility;multiprecision neural chip;4 bit;8 bit;16 bit;Neural
-  networks;Very large scale integration;Artificial neural
-  networks;Packaging;Network topology;Hardware;Gas detectors;Costs;Integrated
-  circuit interconnections;Power system interconnection}
+    \keyw{BNN; pattern classification;VLSI;multiprecision neural chip}
     \strng{namehash}{BA1}
     \strng{fullhash}{BA1}
     \field{labelnamesource}{author}
@@ -1785,6 +1780,182 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{8056823}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=MDJM}{%
+         family={Moss},
+         familyi={M\bibinitperiod},
+         given={D.\bibnamedelima J.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=NE}{%
+         family={Nurvitadhi},
+         familyi={N\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sim},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mishra},
+         familyi={M\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marr},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Subhaschandra},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LPHW}{%
+         family={Leong},
+         familyi={L\bibinitperiod},
+         given={P.\bibnamedelima H.\bibnamedelima W.},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  W\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, CNN, FPGA, computational complexity;field programmable gate
+  arrays;graphics processing units;image recognition;neural nets;object
+  detection;high performance binary neural networks;convolutional neural
+  networks;CNN;Xeon CPU;Intel Xeon+FPGA platform;FPGA BNN accelerators;Nvidia
+  Titan X Pascal GPU;specialised FPGA architecture;Xeon+FPGA system;high
+  performance BNN accelerator;lower computational complexity;complex
+  topologies;object detection applications;scene segmentation;image
+  recognition;Field programmable gate arrays;Graphics processing
+  units;Topology;Computer architecture;Performance evaluation;Network
+  topology;IP networks}
+    \strng{namehash}{MDJM+1}
+    \strng{fullhash}{MDJMNESJMAMDSSLPHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Convolutional neural networks (CNNs) are deployed in a wide range of image
+  recognition, scene segmentation and object detection applications. Achieving
+  state of the art accuracy in CNNs often results in large models and complex
+  topologies that require significant compute resources to complete in a timely
+  manner. Binarised neural networks (BNNs) have been proposed as an optimised
+  variant of CNNs, which constrain the weights and activations to +1 or -1 and
+  thus offer compact models and lower computational complexity per operation.
+  This paper presents a high performance BNN accelerator on the
+  Intel{\textregistered}Xeon+FPGA{\texttrademark} platform. The proposed
+  accelerator is designed to take advantage of the Xeon+FPGA system in a way
+  that a specialised FPGA architecture can be targeted for the most compute
+  intensive parts of the BNN whilst other parts of the topology can be handled
+  by the Xeon{\texttrademark} CPU. The implementation is evaluated by comparing
+  the raw compute performance and energy efficiency for key layers in standard
+  CNN topologies against an Nvidia Titan X Pascal GPU and other published FPGA
+  BNN accelerators. The results show that our single-package integrated
+  Arria{\texttrademark} 10 FPGA accelerator coupled with a high-end Xeon CPU
+  can offer comparable performance and better energy efficiency than a high-end
+  discrete Titan X GPU card. In addition, our solution delivers the best
+  performance compared to previous BNN FPGA implementations.%
+    }
+    \field{booktitle}{2017 27th International Conference on Field Programmable
+  Logic and Applications (FPL)}
+    \verb{doi}
+    \verb 10.23919/FPL.2017.8056823
+    \endverb
+    \field{issn}{1946-1488}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{High performance binary neural networks on the Xeon-FPGA
+  platform}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Moussa2006}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=MM}{%
+         family={Moussa},
+         familyi={M\bibinitperiod},
+         given={Medhat},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Areibi},
+         familyi={A\bibinitperiod},
+         given={Shawki},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={Kristian},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \keyw{FPGA-NN, Book Chapter}
+    \strng{namehash}{MMASNK1}
+    \strng{fullhash}{MMASNK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Artificial Neural Networks (ANNs) are inherently parallel architectures
+  which represent a natural fit for custom implementation on FPGAs. One
+  important implementation issue is to determine the numerical precision format
+  that allows an optimum tradeoff between precision and implementation areas.
+  Standard single or double precision floating-point representations minimize
+  quantization errors while requiring significant hardware resources. Less
+  precise fixed-point representation may require less hardware resources but
+  add quantization errors that may prevent learning from taking place,
+  especially in regression problems. This chapter examines this issue and
+  reports on a recent experiment where we implemented a Multi-layer perceptron
+  (MLP) on an FPGA using both fixed and floating point precision. Results show
+  that the fixed-point MLP implementation was over 12x greater in speed, over
+  13x smaller in area, and achieves far greater processing density compared to
+  the floating-point FPGA-based MLP.%
+    }
+    \field{booktitle}{FPGA Implementations of Neural Networks}
+    \verb{doi}
+    \verb 10.1007/0-387-28487-7_2
+    \endverb
+    \field{isbn}{978-0-387-28487-3}
+    \field{pages}{37\bibrangedash 61}
+    \field{title}{On the Arithmetic Precision for Implementing Back-Propagation
+  Networks on FPGA: A Case Study}
+    \verb{url}
+    \verb https://doi.org/10.1007/0-387-28487-7_2
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{year}{2006}
+  \endentry
+
   \entry{nirkin2018_faceswap}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=NY}{%
@@ -1896,6 +2067,108 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Omondi:2010:FIN:1941654}{book}{}
+    \name{author}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Publishing Company, Incorporated}%
+    }
+    \keyw{FPGA-NN, ASIC, Book by Publications}
+    \strng{namehash}{OARRJC1}
+    \strng{fullhash}{OARRJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{edition}{1st}
+    \field{isbn}{1441939423, 9781441939425}
+    \field{title}{FPGA Implementations of Neural Networks}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Omondi2006}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bajger},
+         familyi={B\bibinitperiod},
+         given={Mariusz},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \keyw{FPGA-NN, NN, Neurocomputers, Book Chapter}
+    \strng{namehash}{OARRJCBM1}
+    \strng{fullhash}{OARRJCBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    This introductory chapter reviews the basics of artificial-neural-network
+  theory, discusses various aspects of the hardware implementation of neural
+  networks (in both ASIC and FPGA technologies, with a focus on special
+  features of artificial neural networks), and concludes with a brief note on
+  performance-evaluation. Special points are the exploitation of the
+  parallelism inherent in neural networks and the appropriate implementation of
+  arithmetic functions, especially the sigmoid function. With respect to the
+  sigmoid function, the chapter includes a significant contribution.%
+    }
+    \field{booktitle}{FPGA Implementations of Neural Networks}
+    \verb{doi}
+    \verb 10.1007/0-387-28487-7_1
+    \endverb
+    \field{isbn}{978-0-387-28487-3}
+    \field{pages}{1\bibrangedash 36}
+    \field{title}{FPGA Neurocomputers}
+    \verb{url}
+    \verb https://doi.org/10.1007/0-387-28487-7_1
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{year}{2006}
+  \endentry
+
   \entry{7033335}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=POP}{%
@@ -1932,6 +2205,79 @@
     \field{title}{Quantum Inspired Binary Neural Network Algorithm}
     \field{year}{2014}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Paul2006}{inbook}{}
+    \name{author}{2}{}{%
+      {{hash=PK}{%
+         family={Paul},
+         familyi={P\bibinitperiod},
+         given={Kolin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rajopadhye},
+         familyi={R\bibinitperiod},
+         given={Sanjay},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \keyw{FPGA-NN, Book Chapter}
+    \strng{namehash}{PKRS1}
+    \strng{fullhash}{PKRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Back propagation is a well known technique used in the implementation of
+  artificial neural networks. The algorithm can be described essentially as a
+  sequence of matrix vector multiplications and outer product operations
+  interspersed with the application of a point wise non linear function. The
+  algorithm is compute intensive and lends itself to a high degree of
+  parallelism. These features motivate a systolic design of hardware to
+  implement the Back Propagation algorithm. We present in this chapter a new
+  systolic architecture for the complete back propagation algorithm. For a
+  neural network with N input neurons, P hidden layer neurons and M output
+  neurons, the proposed architecture with P processors, has a running time of
+  (2N + 2M + P + max(M,P)) for each training set vector. This is the first such
+  implementation of the back propagation algorithm which completely
+  parallelizes the entire computation of learning phase. The array has been
+  implemented on an Annapolis FPGA based coprocessor and it achieves very
+  favorable performance with range of 5 GOPS. The proposed new design targets
+  Virtex boards.%
+    }
+    \field{booktitle}{FPGA Implementations of Neural Networks}
+    \verb{doi}
+    \verb 10.1007/0-387-28487-7_5
+    \endverb
+    \field{isbn}{978-0-387-28487-3}
+    \field{pages}{137\bibrangedash 165}
+    \field{title}{Back-Propagation Algorithm Achieving 5 Gops on the Virtex-E}
+    \verb{url}
+    \verb https://doi.org/10.1007/0-387-28487-7_5
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{year}{2006}
   \endentry
 
   \entry{Raina:2009:LDU:1553374.1553486}{inproceedings}{}
@@ -2006,8 +2352,8 @@
     \verb{url}
     \verb https://www.xnor.ai/
     \endverb
-    \field{year}{2018}
-    \field{urlyear}{2016}
+    \field{year}{2016}
+    \field{urlyear}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -2178,6 +2524,43 @@
     \field{volume}{61}
     \field{journaltitle}{Neural Networks}
     \field{year}{2015}
+  \endentry
+
+  \entry{shayer2018learning}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SO}{%
+         family={Shayer},
+         familyi={S\bibinitperiod},
+         given={Oran},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Levi},
+         familyi={L\bibinitperiod},
+         given={Dan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Fetaya},
+         familyi={F\bibinitperiod},
+         given={Ethan},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, Discrete, MNIST, CIFAR, ImageNet}
+    \strng{namehash}{SOLDFE1}
+    \strng{fullhash}{SOLDFE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{International Conference on Learning Representations}
+    \field{title}{Learning Discrete Weights Using the Local Reparameterization
+  Trick}
+    \verb{url}
+    \verb https://openreview.net/forum?id=BySRH6CpW
+    \endverb
+    \field{year}{2018}
   \endentry
 
   \entry{Silver:2017aa}{article}{}
@@ -2658,6 +3041,49 @@
     \field{month}{11}
     \field{year}{2017}
     \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{wu2018training}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=WS}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Shuang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Guoqi},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Feng},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Luping},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Binary, MNIST, CIFAR, ImageNet}
+    \strng{namehash}{WS+1}
+    \strng{fullhash}{WSLGCFSL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{International Conference on Learning Representations}
+    \field{title}{Training and Inference with Integers in Deep Neural Networks}
+    \verb{url}
+    \verb https://openreview.net/forum?id=HJGXzmspb
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Yamada1992}{article}{}

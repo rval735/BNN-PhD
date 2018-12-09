@@ -532,11 +532,6 @@ Automated Systolic Array Architecture Synthesis for High Throughput CNN Inferenc
 - A "Continuous Integration" scheme was used: from code to deployment
 - AlexNet and VGG16 models were evaluated with 32bit floating points
 
-High Performance Binary Neural Networks on the Xeon-FPGA Platform
--
--
--
-
 NeuFlow- A Runtime Reconfigurable Dataflow Processor for Vision
 - Uses Xilinx Virtex6 to  create a scalable dataflow architecture for GP vision algorithms
 - Realtime detection, categorization and localization of objects in complex escenes
@@ -1611,6 +1606,21 @@ VLSI implementation of a binary neural network-two case studies
 - VLSI digital design for Correlation Matrix Memory networks
 - Drawback is the demand for a high number of adders when dealing with large inputs
 - Memory size is only limited by the maximum chip size
+
+High Performance Binary Neural Networks on the Xeon-FPGA Platform
+-
+-
+-
+
+Training and Inference with Integers in Deep Neural Networks
+- Weights (W), activations (A), gradients (G) and errors (E) among layers are shifted and linearly constrained to low-bitwidth integers
+- MNIST, CIFAR and ImageNet datasets
+- Where there is a MAC operation, there are quantization operators: k-bit linear mapping, distribution shifting and stochastic rounding
+
+Learning discrete weights using the local reparameterization trick
+-
+-
+-
 
 < BNN
 
