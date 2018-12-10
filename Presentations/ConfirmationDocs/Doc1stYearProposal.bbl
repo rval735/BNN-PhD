@@ -3043,6 +3043,82 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
+  \entry{Umuroglu:2017:FFF:3020078.3021744}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=UY}{%
+         family={Umuroglu},
+         familyi={U\bibinitperiod},
+         given={Yaman},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=FNJ}{%
+         family={Fraser},
+         familyi={F\bibinitperiod},
+         given={Nicholas\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Gambardella},
+         familyi={G\bibinitperiod},
+         given={Giulio},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Blott},
+         familyi={B\bibinitperiod},
+         given={Michaela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Leong},
+         familyi={L\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Jahre},
+         familyi={J\bibinitperiod},
+         given={Magnus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VK}{%
+         family={Vissers},
+         familyi={V\bibinitperiod},
+         given={Kees},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{BNN; FPGA, binarized neural network, binary neural network, hardware
+  acceleration, neural networks, reconfigurable logic}
+    \strng{namehash}{UY+1}
+    \strng{fullhash}{UYFNJGGBMLPJMVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/3020078.3021744
+    \endverb
+    \field{isbn}{978-1-4503-4354-1}
+    \field{pages}{65\bibrangedash 74}
+    \field{series}{FPGA '17}
+    \field{title}{FINN: A Framework for Fast, Scalable Binarized Neural Network
+  Inference}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3020078.3021744
+    \endverb
+    \list{location}{1}{%
+      {Monterey, California, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{wu2018training}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=WS}{%
