@@ -1177,6 +1177,82 @@
     \field{year}{2018}
   \endentry
 
+  \entry{Han:2016:EEI:3001136.3001163}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=HS}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xingyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Huizi},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pu},
+         familyi={P\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pedram},
+         familyi={P\bibinitperiod},
+         given={Ardavan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HMA}{%
+         family={Horowitz},
+         familyi={H\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DWJ}{%
+         family={Dally},
+         familyi={D\bibinitperiod},
+         given={William\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Press}%
+    }
+    \keyw{FPGA-NN, ASIC, algorithm-hardware co-design, deep learning, hardware
+  acceleration, model compression}
+    \strng{namehash}{HS+1}
+    \strng{fullhash}{HSLXMHPJPAHMADWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the 43rd International Symposium on
+  Computer Architecture}
+    \verb{doi}
+    \verb 10.1109/ISCA.2016.30
+    \endverb
+    \field{isbn}{978-1-4673-8947-1}
+    \field{pages}{243\bibrangedash 254}
+    \field{series}{ISCA '16}
+    \field{title}{EIE: Efficient Inference Engine on Compressed Deep Neural
+  Network}
+    \verb{url}
+    \verb https://doi.org/10.1109/ISCA.2016.30
+    \endverb
+    \list{location}{1}{%
+      {Seoul, Republic of Korea}%
+    }
+    \field{year}{2016}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{7780459}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=HK}{%
