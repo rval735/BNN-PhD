@@ -1,12 +1,126 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-12-11 11:58:51 +1300 
+%% Created for RHVT at 2018-12-12 20:01:30 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@book{Sher2013NeuroEvol,
+	Abstract = {This chapter discusses the numerous reasons for why one might wish to study the subject of neuroevolution. I cover a number of different applications of such a system, giving examples and scenarios of a neuroevolutionary system being applied within a variety of different fields. A discussion then follows on where all of this research is heading, and what the next step within this field might be. Finally, a whirlwind introduction of the book is given, with a short summary of what is covered in every chapter.},
+	Address = {New York, NY},
+	Author = {Sher, Gene I.},
+	Booktitle = {Handbook of Neuroevolution Through Erlang},
+	Date-Added = {2018-12-12 19:57:45 +1300},
+	Date-Modified = {2018-12-12 19:59:29 +1300},
+	Doi = {10.1007/978-1-4614-4463-3_1},
+	Isbn = {978-1-4614-4463-3},
+	Keywords = {Evolutionary, Neuroevolution, Erlang, Finance},
+	Pages = {1--39},
+	Publisher = {Springer New York},
+	Title = {Handbook of Neuroevolution Through Erlang},
+	Url = {https://doi.org/10.1007/978-1-4614-4463-3_1},
+	Year = {2013},
+	Bdsk-Url-1 = {https://doi.org/10.1007/978-1-4614-4463-3_1}}
+
+@inproceedings{10.1007/978-3-642-33860-1_3,
+	Abstract = {The idea of using evolutionary computation to train artificial neural networks, or neuroevolution (NE), has now been around for over 20 years. The main appeal of this approach is that, because it does not rely on gradient information (e.g. backpropagation), it can potentially harness the universal function approximation capability of neural networks to solve reinforcement learning (RL) tasks, where there is no ``teacher'' (i.e. no targets or examples of correct behavior). Instead of incrementally adjusting the synaptic weights of a single network, the space of network parameters is searched directly according to principles inspired by natural selection: (1) encode a population of networks as strings, or genomes, (2) transform them into networks, (3) evaluate them on the task, (4) generate new, hopefully better, nets by recombining those that are most ``fit'', (5) goto step 2 until a solution is found. By evolving neural networks, NE can cope naturally with tasks that have continuous inputs and outputs, and, by evolving networks with feedback connections (recurrent networks), it can tackle more general tasks that require memory.},
+	Address = {Berlin, Heidelberg},
+	Author = {Gomez, Faustino},
+	Booktitle = {Theory and Practice of Natural Computing},
+	Date-Added = {2018-12-12 18:32:49 +1300},
+	Date-Modified = {2018-12-12 18:33:16 +1300},
+	Editor = {Dediu, Adrian-Horia and Mart{\'\i}n-Vide, Carlos and Truthe, Bianca},
+	Isbn = {978-3-642-33860-1},
+	Keywords = {Evolutionary, Book, Scalable, Reinforcement Learning},
+	Pages = {27--29},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {Scalable Neuroevolution for Reinforcement Learning},
+	Year = {2012}}
+
+@inproceedings{10.1007/11893295_130,
+	Abstract = {This paper addresses the problem of accelerating large artificial neural networks (ANN), whose topology and weights can evolve via the use of a genetic algorithm. The proposed digital hardware architecture is capable of processing any evolved network topology, whilst at the same time providing a good trade off between throughput, area and power consumption. The latter is vital for a longer battery life on mobile devices. The architecture uses multiple parallel arithmetic units in each processing element (PE). Memory partitioning and data caching are used to minimise the effects of PE pipeline stalling. A first order minimax polynomial approximation scheme, tuned via a genetic algorithm, is used for the activation function generator. Efficient arithmetic circuitry, which leverages modified Booth recoding, column compressors and carry save adders, is adopted throughout the design.},
+	Address = {Berlin, Heidelberg},
+	Author = {Larkin, Daniel and Kinane, Andrew and O'Connor, Noel},
+	Booktitle = {Neural Information Processing},
+	Date-Added = {2018-12-12 18:30:15 +1300},
+	Date-Modified = {2018-12-12 18:31:02 +1300},
+	Editor = {King, Irwin and Wang, Jun and Chan, Lai-Wan and Wang, DeLiang},
+	Isbn = {978-3-540-46485-3},
+	Keywords = {Evolutionary, Book, Neuroevolution, Processing Element},
+	Pages = {1178--1188},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {Towards Hardware Acceleration of Neuroevolution for Multimedia Processing Applications on Mobile Devices},
+	Year = {2006}}
+
+@article{7307180,
+	Abstract = {This paper surveys research on applying neuroevolution (NE) to games. In neuroevolution, artificial neural networks are trained through evolutionary algorithms, taking inspiration from the way biological brains evolved. We analyze the application of NE in games along five different axes, which are the role NE is chosen to play in a game, the different types of neural networks used, the way these networks are evolved, how the fitness is determined and what type of input the network receives. The paper also highlights important open research challenges in the field.},
+	Author = {S. Risi and J. Togelius},
+	Date-Added = {2018-12-12 16:15:08 +1300},
+	Date-Modified = {2018-12-12 16:15:18 +1300},
+	Doi = {10.1109/TCIAIG.2015.2494596},
+	Issn = {1943-068X},
+	Journal = {IEEE Transactions on Computational Intelligence and AI in Games},
+	Keywords = {evolutionary; computer games;learning (artificial intelligence);neural nets;neuroevolution;NE;computer game;artificial neural network training;evolutionary algorithm;Games;Artificial intelligence;Evolutionary computation;Genetic algorithms;Biological neural networks;Network topology;Evolutionary algorithms;neural networks;neuroevolution},
+	Month = {March},
+	Number = {1},
+	Pages = {25-41},
+	Title = {Neuroevolution in Games: State of the Art and Open Challenges},
+	Volume = {9},
+	Year = {2017},
+	Bdsk-Url-1 = {https://doi.org/10.1109/TCIAIG.2015.2494596}}
+
+@inproceedings{4250190,
+	Abstract = {Appropriate topology and connection weight are two very important properties a neural network must have in order to successfully perform data classification. In this paper, we propose a hybrid training scheme Learning-NEAT (L-NEAT) for data classification problem. L-NEAT simplifies evolution by dividing the complete problem domain into sub tasks and learn the sub tasks by incorporating back propagation rule into the NeuroEvolution of Augmenting Topologies (NEAT) algorithm. The new algorithm combines the strength of searching for topology and weights from NEAT and back propagation respectively while overcoming problems associated with direct use of NEAT. We claim that L-NEAT can produce neural network for classification problem effectively and efficiently. Empirical evaluation shows that L-NEAT evolves classifying neural network with good generalization ability. Its accuracy outperforms original NEAT.},
+	Author = {L. Chen and D. Alahakoon},
+	Booktitle = {2006 International Conference on Information and Automation},
+	Date-Added = {2018-12-12 16:06:11 +1300},
+	Date-Modified = {2018-12-12 16:06:25 +1300},
+	Doi = {10.1109/ICINFA.2006.374100},
+	Issn = {2151-1802},
+	Keywords = {Evolutionary; backpropagation;neural nets;pattern classification;search problems;topology;neuroevolution of augmenting topologies;augmenting topology;data classification learning;neural network;learning-NEAT training scheme;backpropagation;search problem;Network topology;Artificial neural networks;Neural networks;Supervised learning;Biological cells;Information technology;Evolutionary computation;Unsupervised learning;Technological innovation},
+	Month = {Dec},
+	Pages = {367-371},
+	Title = {NeuroEvolution of Augmenting Topologies with Learning for Data Classification},
+	Year = {2006},
+	Bdsk-Url-1 = {https://doi.org/10.1109/ICINFA.2006.374100}}
+
+@inproceedings{7991745,
+	Abstract = {The article describes the problematic issues of neuroevolution, i.e. a promising approach for solving complex problems of machine learning, neural networks, adaptive management and multi-agent systems, evolutionary robotics, gaming strategies, and computer art. The authors have suggested neuro evolutional algorithm and presented experiment results on a standard task: the balancing trolley with two flagpoles of different lengths.},
+	Author = {S. Rodzin and O. Rodzina and L. Rodzina},
+	Booktitle = {2016 IEEE 10th International Conference on Application of Information and Communication Technologies (AICT)},
+	Date-Added = {2018-12-12 13:20:17 +1300},
+	Date-Modified = {2018-12-12 13:20:28 +1300},
+	Doi = {10.1109/ICAICT.2016.7991745},
+	Issn = {2472-8586},
+	Keywords = {Evolutionary;learning (artificial intelligence);multi-agent systems;neural nets;machine learning;neural networks;adaptive management;multiagent systems;evolutionary robotics;gaming strategies;computer art;neuro evolutional algorithm;balancing trolley;Biological neural networks;Neurons;Encoding;Sociology;Statistics;Topology;Head;Neuroevolution;reinforcement machine learning;optimization;evolutionary computation;fitness function},
+	Month = {Oct},
+	Pages = {1-4},
+	Title = {Neuroevolution: Problems, algorithms, and experiments},
+	Year = {2016},
+	Bdsk-Url-1 = {https://doi.org/10.1109/ICAICT.2016.7991745}}
+
+@inproceedings{8489184,
+	Abstract = {Memetic algorithms have been a promising strategy to enhance neuroevolution in the past. Cooperative coevolution has been combined as memetic cooperative neuroevolution with application to chaotic time series prediction. Although the method has shown promising performance, there are limitations in the balance between global and local search. The previous study used a specific local search strategy for intensification that affected the diversity of solutions. In this study, we address this limitation by information (meme) collection strategies that maintains and refines a pool of memes during global search. We present two strategies where one is sequential and the other is concurrent meme collection implemented at different stages of evolution. In the majority of the given problems, the proposed strategies showed improvement in prediction accuracy over the related methods.},
+	Author = {G. Wong and A. Sharma and R. Chandra},
+	Booktitle = {2018 International Joint Conference on Neural Networks (IJCNN)},
+	Date-Added = {2018-12-12 13:05:44 +1300},
+	Date-Modified = {2018-12-12 13:05:58 +1300},
+	Doi = {10.1109/IJCNN.2018.8489184},
+	Issn = {2161-4407},
+	Keywords = {Evolutionary;search problems;social sciences;time series;memetic algorithms;neuroevolution;coevolution;chaotic time series prediction;global search;specific local search strategy;information collection strategies;concurrent meme collection;prediction accuracy;Memetics;Time series analysis;Neurons;Prediction algorithms;Sociology;Cooperative Coevolution;Memetic Algorithms;Time Series Prediction Global Search;Local Search;Neuroevolution},
+	Month = {July},
+	Pages = {1-6},
+	Title = {Information Collection Strategies In Memetic Cooperative Neuroevolution For Time Series Prediction},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1109/IJCNN.2018.8489184}}
+
+@conference{:aa,
+	Date-Added = {2018-12-12 13:05:20 +1300},
+	Date-Modified = {2018-12-12 13:05:20 +1300},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCILi4vUmVmZXJlbmNlcy9QYXBlcnMvRXZvbHV0aW9uYXJ5L0luZm9ybWF0aW9uIENvbGxlY3Rpb24gU3RyYXRlZ2llcyBJbiBNZW1ldGljIENvb3BlcmF0aXZlIE5ldXJvZXZvbHV0aW9uIEZvciBUaW1lIFNlcmllcyBQcmVkaWN0aW9uLnBkZk8RAuIAAAAAAuIAAgAACU1hY2ludG9zaAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9JbmZvcm1hdGlvbiBDb2xsZWMjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAMRXZvbHV0aW9uYXJ5AAIAni86VXNlcnM6cmh2dDpEZXY6Q05OLVBoZDpSZWZlcmVuY2VzOlBhcGVyczpFdm9sdXRpb25hcnk6SW5mb3JtYXRpb24gQ29sbGVjdGlvbiBTdHJhdGVnaWVzIEluIE1lbWV0aWMgQ29vcGVyYXRpdmUgTmV1cm9ldm9sdXRpb24gRm9yIFRpbWUgU2VyaWVzIFByZWRpY3Rpb24ucGRmAA4AzgBmAEkAbgBmAG8AcgBtAGEAdABpAG8AbgAgAEMAbwBsAGwAZQBjAHQAaQBvAG4AIABTAHQAcgBhAHQAZQBnAGkAZQBzACAASQBuACAATQBlAG0AZQB0AGkAYwAgAEMAbwBvAHAAZQByAGEAdABpAHYAZQAgAE4AZQB1AHIAbwBlAHYAbwBsAHUAdABpAG8AbgAgAEYAbwByACAAVABpAG0AZQAgAFMAZQByAGkAZQBzACAAUAByAGUAZABpAGMAdABpAG8AbgAuAHAAZABmAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAnFVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9QYXBlcnMvRXZvbHV0aW9uYXJ5L0luZm9ybWF0aW9uIENvbGxlY3Rpb24gU3RyYXRlZ2llcyBJbiBNZW1ldGljIENvb3BlcmF0aXZlIE5ldXJvZXZvbHV0aW9uIEZvciBUaW1lIFNlcmllcyBQcmVkaWN0aW9uLnBkZgATAAEvAAAVAAIAC///AAAACAANABoAJACvAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAA5U=}}
 
 @inproceedings{Han:2016:EEI:3001136.3001163,
 	Acmid = {3001163},

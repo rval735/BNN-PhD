@@ -82,3 +82,18 @@ https://dl.acm.org/citation.cfm?id=638554
 
 A Genetic Algorithm-Based Solver for Very Large Jigsaw Puzzles
 http://openaccess.thecvf.com/content_cvpr_2013/papers/Sholomon_A_Genetic_Algorithm-Based_2013_CVPR_paper.pdf
+
+Information Collection Strategies In Memetic Cooperative Neuroevolution For Time Series Prediction
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8489184
+
+Neuroevolution- Problems, algorithms, and experiments
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/stamp/stamp.jsp?tp=&arnumber=7991745
+
+NeuroEvolution of Augmenting Topologies with Learning for Data Classification
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4250190
+
+Neuroevolution in Games: State of the Art and Open Challenges
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7307180
+
+Towards Hardware Acceleration of Neuroevolution for Multimedia Processing Applications on Mobile Devices
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11893295_130

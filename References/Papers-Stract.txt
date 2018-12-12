@@ -1795,4 +1795,34 @@ A Genetic Algorithm-Based Solver for Very Large Jigsaw Puzzles
 - Detects, extracts and combine segments from parents to create improved children 
 - Create and shares benchmark images for future testing
 
+Information Collection Strategies In Memetic Cooperative Neuroevolution For Time Series Prediction 
+- Cooperative coevolution has been combined as memetic cooperative neuroevolution with application to chaotic time series prediction
+- Collection strategies that maintains and refines a pool of memes during global search
+- Two collection strategies: sequential and concurrent
+- Datasets: sunspot, TWI exchange, SantaFe Laser, Mackey Glass and Lorenz
+
+Neuroevolution- Problems, algorithms, and experiments
+- "Reinforcement learning is a compromise between research of unexplored areas and application of existing knowledge"
+- TWEANNs was able to solve the trolley problem, also talking about research centers around neuroevolution
+- In their proposal, TWEANN dismissed the crossover operator in favor of mutation
+- Compares the trolley problem with NEAT
+
+NeuroEvolution of Augmenting Topologies with Learning for Data Classification
+- Proposes a hybrid training scheme Learning-NEAT (L-NEAT) for data classification
+- Incorporating back propagation rule into NEAT
+- "The lack of mechanism to guide the weight update slows down the discovery of a perfect solution"
+- NEAT is good at global search, it is not efficient in fine-tuning local search
+
+Neuroevolution in Games: State of the Art and Open Challenges
+- NE is easily applicable and often high-performing, however the outstanding research question here is: when should one use NE?
+- In many cases, TD-based algorithms learn faster but are more brittle and NE eventually reaches higher performance
+- What is needed is some sort of general theory of what problem characteristics advantage and disadvantage NE
+- Next step, start inventing hybrid algorithms that combine the strengths of both neuroevolution and its alternatives
+
+Towards Hardware Acceleration of Neuroevolution for Multimedia Processing Applications on Mobile Devices
+- Proposed digital hardware architecture capable of processing any evolved network topology
+- Memory partitioning and data caching are used to minimise the effects of PE pipeline stalling
+- XOR problem and the double pole balancing tests problem 
+- Used Verilog with a 90nm TSMC ASIC library
+
 < Evolutionary

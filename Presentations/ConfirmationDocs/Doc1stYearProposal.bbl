@@ -403,51 +403,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{2018arXiv180910463B}{article}{}
-    \name{author}{4}{}{%
-      {{hash=BJ}{%
-         family={{Bethge}},
-         familyi={B\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=YH}{%
-         family={{Yang}},
-         familyi={Y\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=BC}{%
-         family={{Bartz}},
-         familyi={B\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=MC}{%
-         family={{Meinel}},
-         familyi={M\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN;Computer Science; Machine Learning, Computer Science - Computer
-  Vision and Pattern Recognition, Statistics - Machine Learning}
-    \strng{namehash}{BJ+1}
-    \strng{fullhash}{BJYHBCMC1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \verb{eprint}
-    \verb 1809.10463
-    \endverb
-    \field{title}{{Learning to Train a Binary Neural Network}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{month}{09}
-    \field{year}{2018}
-  \endentry
-
   \entry{5726804}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=BSA}{%
@@ -541,50 +496,6 @@
     \field{journaltitle}{Appl. Opt.}
     \field{year}{1993}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{2016arXiv160507678C}{article}{}
-    \name{author}{3}{}{%
-      {{hash=CA}{%
-         family={{Canziani}},
-         familyi={C\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=PA}{%
-         family={{Paszke}},
-         familyi={P\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=CE}{%
-         family={{Culurciello}},
-         familyi={C\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \keyw{Computer Science - Computer Vision and Pattern Recognition}
-    \strng{namehash}{CAPACE1}
-    \strng{fullhash}{CAPACE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \verb{eprint}
-    \verb 1605.07678
-    \endverb
-    \field{title}{{An Analysis of Deep Neural Network Models for Practical
-  Applications}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{annotation}{%
-  https://medium.com/@culurciello/analysis-of-deep-neural-networks-dcf398e71aae
-  https://towardsdatascience.com/neural-network-architectures-156e5bad51ba%
-    }
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CV}
-    \field{month}{05}
-    \field{year}{2016}
   \endentry
 
   \entry{5159360}{article}{}
