@@ -1048,6 +1048,22 @@ Learning to Protect Communications with Adversarial Neural Cryptography
 -
 -
 
+Metropolis-Hastings Generative Adversarial Networks
+- MH-GAN combines aspects of Markov chain Monte Carlo and GAN
+- Draws samples from the distribution implicitly defined by a GAN’s discriminator generator pair
+- Tested on CIFAR-10 and CelebA against using DCGAN and WGAN
+- Their method is based on the premise that D is better at density ratio estimation than G is at sampling data
+
+Strategic Object Oriented Reinforcement Learning
+- SOORL learns simple dynamics model through automatic model selection
+- It performs efficient planning with strategic exploration
+- Tested with Atari's Pitfall, which achieves significantly improved exploration and performance over prior methods
+
+Exploration by Random Network Distillation
+- Exploration bonus for deep reinforcement learning method with minimal overhead to the computation performed
+- Bonus is the NN error predicting features of the observations given by a fixed randomly initialized NN
+- Tested with Montezuma's Revenge with better than average human performance
+
 < DCGAN
 --------> Languages
 

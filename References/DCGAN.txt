@@ -42,3 +42,14 @@ https://arxiv.org/abs/1805.00728
 
 Learning to Protect Communications with Adversarial Neural Cryptography
 https://arxiv.org/abs/1610.06918
+
+Metropolis-Hastings Generative Adversarial Networks
+https://arxiv.org/abs/1811.11357
+https://github.com/uber-research/metropolis-hastings-gans
+
+Strategic Object Oriented Reinforcement Learning
+https://arxiv.org/abs/1806.00175
+
+Exploration by Random Network Distillation
+https://arxiv.org/abs/1810.12894
+https://eng.uber.com/go-explore/
