@@ -540,6 +540,7 @@ NeuFlow- A Runtime Reconfigurable Dataflow Processor for Vision
 - 83ms vs 8s on a laptop
 
 < CNN-FPGA
+
 ------> Haskell
 
 Modeling of dynamic reconfigurable systems with Haskell
@@ -583,6 +584,21 @@ Beautiful Differentiation
 - It explains the details about Automatic Differentiation
 - It gives a high level detail of how AD is implemented in haskell
 - It generalizes for vector spaces
+
+Autobahn- using genetic algorithms to infer strictness annotations
+- Strictness annotations allow programmers to control the laziness of their programs
+- AUTOBAHN is a tool that uses a genetic algorithm to automatically infer annotations
+- improves runtime performance on NoFib benchmark programs an average of 8.5% and
+up to 89%
+- No case was found that degrades performance
+
+A genetic algorithm framework using Haskell
+- Haskell framework designed for the construction of GA
+- Allows a fine control of the stochastic processes underlying the GA
+- Functional programs enables logical reason about their properties.
+- Traveling Salesman Problem (TSP) and inverted pendulum test benchmarks
+
+< Haskell 
 
 ------> Haskell-FPGA
 
@@ -633,6 +649,35 @@ System-level modeling of dynamic reconfigurable designs using functional program
 - Use clash to assign a FPGA section as reconfigurable
 - Run embedded linux on the platform
 
+Hardware Synthesis from a Recursive Functional Language
+- Haskell-to-hardware compilation framework based on a series of semantics-preserving transformations
+- Operate on a common functional intermediate representation and support for recursion
+- Stream-based dialect of this IR models synchronous digital hardware synthesizable to SystemVerilog
+
+Hardware software co-design in Haskell
+- Introduction of "Prog" as an extensible representation of imperative programs
+- The library allows a single program description to be interpreted in many different ways: IO monad or hardware compilation
+- Generates C and VHDL from the imperative software and hardware programs using an extensible compiler
+
+The Reduceron- Widening the von Neumann Bottleneck for Graph Reduction using an FPGA
+- Reduceron could actually be described by pure (non-monadic) Lava functions
+- The combination of wide, parallel memory units and vectorised processing logic
+gives a factor of six speed-up on average across a range of benchmark programs
+- 91.5MHz on a Xilinx Virtex-II FPGA performs better than interpreted bytecode running on a 2.8GHz Pentium-4 PC
+
+A Functional Approach to Hardware Software Co-Design
+- Functional approach to heterogeneous system development, with a staged hardware software co-design language embedded in Haskell
+- Build applications from reusable components and skeletons, while retaining control over much of the generated source code
+- The co-design language is based on a monadic representation of imperative programs
+- Uses AXI4-lite for ARM-FPGA communication
+- Physical address of a hardware component has to be manually incorporated into a software program and memory-mapped
+
+Hardware in Haskell- Implementing Memories in a Stream-Based World
+- Proposes a sequence of abstractions lowering transformations that exposes recursive haskell program
+- Using recursive Stream data type inspired by the Lustre language 
+- Each "stream operator" becomes a hardware register
+- Does not allow streams of streams
+- Simple, syntax-directed translation to SystemVerilog
 
 ------> DNN
 

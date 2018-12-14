@@ -13,7 +13,8 @@ HTCC: Haskell to Handel-C Hardware Compiler
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7723553/
 
 Hardware software co-design in Haskell
-https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3122970&CFID=1015325573&CFTOKEN=40858404
+referaat.cs.utwente.nl/conference/25/paper/7552/haskell-on-the-gpu.pdf
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3122970
 
 Modeling of dynamic reconfigurable systems with Haskell
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/6339201/
@@ -33,10 +34,20 @@ essay.utwente.nl/71550/
 Co-simulation between Clash and traditional HDLs
 http://essay.utwente.nl/70777/
 
-Hardware software co-design in Haskell
-referaat.cs.utwente.nl/conference/25/paper/7552/haskell-on-the-gpu.pdf
-
 Specification of apertif polyphase filter bank in Clash
 https://research.utwente.nl/en/publications/specification-of-apertif-polyphase-filter-bank-in-cλash
 
+Hardware Synthesis from a Recursive Functional Language
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2830850
 
+The Reduceron- Widening the von Neumann Bottleneck for Graph Reduction using an FPGA
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-540-85373-2_8
+https://www.cs.york.ac.uk/fp/reduceron/reduceron.pdf
+
+A Functional Approach to Hardware Software Co-Design
+https://research.chalmers.se/en/publication/505007
+https://github.com/markus-git/co-feldspar/tree/master/src
+
+Hardware in Haskell- Implementing Memories in a Stream-Based World
+https://academiccommons.columbia.edu/doi/10.7916/D8959H05
+http://www.cs.columbia.edu/~sedwards/publications.html

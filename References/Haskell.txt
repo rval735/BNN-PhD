@@ -62,3 +62,11 @@ http://conal.net/papers/beautiful-differentiation/
 
 Haskell Type Constraints Unleashed
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007%2F978-3-642-12251-4_6
+
+Autobahn- using genetic algorithms to infer strictness annotations
+https://dl.acm.org/citation.cfm?id=2976009
+
+A genetic algorithm framework using Haskell
+http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.9849
+https://www.researchgate.net/publication/2411892_A_genetic_algorithm_framework_using_Haskell
+

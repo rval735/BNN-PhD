@@ -1,12 +1,144 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-12-13 22:40:56 +1300 
+%% Created for RHVT at 2018-12-14 12:58:44 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{CUCS-017-15,
+	Author = {Townsend, Richard Morse; Kim, Martha Allen; Edwards, Stephen A.},
+	Date-Added = {2018-12-14 12:56:57 +1300},
+	Date-Modified = {2018-12-14 12:58:42 +1300},
+	Journal = {Columbia University Computer Science Technical Reports},
+	Keywords = {Haskell-FPGA, Memory, Computer programs},
+	Title = {Hardware in Haskell: Implementing Memories in a Stream-Based World},
+	Year = {2015}}
+
+@phdthesis{AronssonHWSWCoDesignThesis,
+	Abstract = {Developing software for embedded systems presents quite the challenge---not only do these systems demand good knowledge of the hardware they run on, but their limited resources also make it difficult to achieve efficiency. For embedded systems with different kinds of processing elements, the challenge is even greater; the presence of heterogeneous elements both raises all of the issues associated with homogeneous systems, and may also cause non-uniform system development and capability.
+
+In this thesis we explore a functional approach to heterogeneous system development, with a staged hardware software co-design language embedded in Haskell, to address many of the modularity problems typically found in such systems. This staged approach enables designers to build their applications from reusable components and skeletons, while retaining control over much of the generated source code. Design exploration also benefits from the functional approach, since Haskell's type classes can be used to ensure that certain operations will be available. As a result, a developer can not only write for hardware and software in the co-design language, but she can also write generic programs that are suitable for both.
+
+Internally, the co-design language is based on a monadic representation of imperative programs that abstracts away from its underlying statement, expression, and predicate types by establishing an interface to their respective interpreters. Programs are thus loosely coupled to their underlying types, giving a clear separation of concerns. The compilation process is expressed as a series of translations between progressively smaller typed languages, which safeguards against many common errors.
+
+In addition to the hardware software co-design language, this thesis also introduces a language for expressing digital signal processing algorithms, using a model of synchronous data-flow that is embedded in Haskell. The language supports definitions in a functional style, reducing the gap between an algorithm's mathematical specification and its implementation. A vector language is also presented, which builds on a functional representation that guarantees fusion for arrays. Both of these languages are intended to be extensions of the co-design language, but neither one is dependent on it and can thus be used to extend other languages as well.},
+	Author = {Markus Aronsson},
+	Date-Added = {2018-12-14 12:38:48 +1300},
+	Date-Modified = {2018-12-14 12:41:47 +1300},
+	Keywords = {Haskell-FPGA, Thesis, Hardware, Software, Co-design},
+	Month = {October},
+	School = {Chalmers, Computer Science and Engineering, Functional Programming},
+	Title = {A Functional Approach to Hardware Software Co-Design},
+	Type = {Licentiate thesis},
+	Year = {2018}}
+
+@inproceedings{10.1007/978-3-540-85373-2_8,
+	Abstract = {For the memory intensive task of graph reduction, modern PCs are limited not by processor speed, but by the rate that data can travel between processor and memory. This limitation is known as the von Neumann bottleneck. We explore the effect of widening this bottleneck using a special-purpose graph reduction machine with wide, parallel memories. Our prototype machine -- the Reduceron -- is implemented using an FPGA, and is based on a simple template-instantiation evaluator. Running at only 91.5MHz on an FPGA, the Reduceron is faster than mature bytecode implementations of Haskell running on a 2.8GHz PC.},
+	Address = {Berlin, Heidelberg},
+	Author = {Naylor, Matthew and Runciman, Colin},
+	Booktitle = {Implementation and Application of Functional Languages},
+	Date-Added = {2018-12-14 11:56:31 +1300},
+	Date-Modified = {2018-12-14 11:56:55 +1300},
+	Editor = {Chitil, Olaf and Horv{\'a}th, Zolt{\'a}n and Zs{\'o}k, Vikt{\'o}ria},
+	Isbn = {978-3-540-85373-2},
+	Keywords = {Haskel-FPGA, Graph reduction, Parallel memory},
+	Pages = {129--146},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {The Reduceron: Widening the von Neumann Bottleneck for Graph Reduction Using an FPGA},
+	Year = {2008}}
+
+@inproceedings{Aronsson:2017:HSC:3122955.3122970,
+	Acmid = {3122970},
+	Address = {New York, NY, USA},
+	Author = {Aronsson, Markus and Sheeran, Mary},
+	Booktitle = {Proceedings of the 10th ACM SIGPLAN International Symposium on Haskell},
+	Date-Added = {2018-12-14 11:42:12 +1300},
+	Date-Modified = {2018-12-14 11:42:22 +1300},
+	Doi = {10.1145/3122955.3122970},
+	Isbn = {978-1-4503-5182-9},
+	Keywords = {Haskel-FPGA, domain specific language, hardware software co-design},
+	Location = {Oxford, UK},
+	Numpages = {12},
+	Pages = {162--173},
+	Publisher = {ACM},
+	Series = {Haskell 2017},
+	Title = {Hardware Software Co-design in Haskell},
+	Url = {http://doi.acm.org/10.1145/3122955.3122970},
+	Year = {2017},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/3122955.3122970},
+	Bdsk-Url-2 = {https://doi.org/10.1145/3122955.3122970}}
+
+@inproceedings{Zhai:2015:HSR:2830840.2830850,
+	Acmid = {2830850},
+	Address = {Piscataway, NJ, USA},
+	Author = {Zhai, Kuangya and Townsend, Richard and Lairmore, Lianne and Kim, Martha A. and Edwards, Stephen A.},
+	Booktitle = {Proceedings of the 10th International Conference on Hardware/Software Codesign and System Synthesis},
+	Date-Added = {2018-12-14 11:23:43 +1300},
+	Date-Modified = {2018-12-14 11:23:52 +1300},
+	Isbn = {978-1-4673-8321-9},
+	Keywords = {Haskell-FPGA, functional hardware, high-level synthesis, recursion},
+	Location = {Amsterdam, The Netherlands},
+	Numpages = {11},
+	Pages = {83--93},
+	Publisher = {IEEE Press},
+	Series = {CODES '15},
+	Title = {Hardware Synthesis from a Recursive Functional Language},
+	Url = {http://dl.acm.org/citation.cfm?id=2830840.2830850},
+	Year = {2015},
+	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=2830840.2830850}}
+
+@book{Yu2008,
+	Abstract = {Deploying Evolutionary Computation (EC) solutions to real-world problems involves a wide spectrum of activities, ranging from framing the business problems and implementing the solutions to the final deployment of the solutions to the field. However, issues related to these activities are not commonly discussed in a typical EC course curriculum. Meanwhile, although the values of applied research are acknowledged by most EC technologists, the perception seems to be very narrow: success stories boost morale and high profile applications can help to secure funding for future research and can help to attract high caliber students.},
+	Address = {Berlin, Heidelberg},
+	Author = {Yu, Tina and Davis, Lawrence},
+	Booktitle = {Evolutionary Computation in Practice},
+	Date-Added = {2018-12-14 11:01:07 +1300},
+	Date-Modified = {2018-12-14 11:02:10 +1300},
+	Doi = {10.1007/978-3-540-75771-9_1},
+	Editor = {Yu, Tina and Davis, Lawrence and Baydar, Cem and Roy, Rajkumar},
+	Isbn = {978-3-540-75771-9},
+	Keywords = {Evolutionary, Book, },
+	Pages = {1--8},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {Evolutionary Computation in Practice},
+	Url = {https://doi.org/10.1007/978-3-540-75771-9_1},
+	Year = {2008},
+	Bdsk-Url-1 = {https://doi.org/10.1007/978-3-540-75771-9_1}}
+
+@inproceedings{Brown00agenetic,
+	Author = {Deryck Brown and A. Beatriz and Beatriz Garmendia-Doval and John A.W. McCall and The Robert},
+	Booktitle = {In Proceedings of 2nd Asia-Pacific Workshop on Genetic Algorithms and their Applications (APGA 2000},
+	Date-Added = {2018-12-14 10:40:55 +1300},
+	Date-Modified = {2018-12-14 10:42:03 +1300},
+	Keywords = {Haskell, Genetic Algorithm, },
+	Pages = {152--163},
+	Publisher = {Global-Link Publishing Company},
+	Title = {A genetic algorithm framework using Haskell},
+	Year = {2000}}
+
+@inproceedings{Wang:2016:AUG:2976002.2976009,
+	Acmid = {2976009},
+	Address = {New York, NY, USA},
+	Author = {Wang, Yisu Remy and Nunez, Diogenes and Fisher, Kathleen},
+	Booktitle = {Proceedings of the 9th International Symposium on Haskell},
+	Date-Added = {2018-12-14 10:34:30 +1300},
+	Date-Modified = {2018-12-14 10:34:30 +1300},
+	Doi = {10.1145/2976002.2976009},
+	Isbn = {978-1-4503-4434-0},
+	Keywords = {Haskell, genetic algorithms, laziness, strictness annotations},
+	Location = {Nara, Japan},
+	Numpages = {13},
+	Pages = {114--126},
+	Publisher = {ACM},
+	Series = {Haskell 2016},
+	Title = {Autobahn: Using Genetic Algorithms to Infer Strictness Annotations},
+	Url = {http://doi.acm.org/10.1145/2976002.2976009},
+	Year = {2016},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2976002.2976009},
+	Bdsk-Url-2 = {https://doi.org/10.1145/2976002.2976009}}
 
 @article{2018arXiv181012894B,
 	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
