@@ -107,3 +107,7 @@ https://arxiv.org/abs/1602.07261
 
 Genetic CNN
 http://openaccess.thecvf.com/content_ICCV_2017/papers/Xie_Genetic_CNN_ICCV_2017_paper.pdf
+
+Visualizing and Understanding Recurrent Networks
+https://arxiv.org/abs/1506.02078
+https://openreview.net/forum?id=71BmK0m6qfAE8VvKUQWB

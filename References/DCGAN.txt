@@ -53,3 +53,6 @@ https://arxiv.org/abs/1806.00175
 Exploration by Random Network Distillation
 https://arxiv.org/abs/1810.12894
 https://eng.uber.com/go-explore/
+
+A Style-Based Generator Architecture for Generative Adversarial Networks
+https://arxiv.org/abs/1812.04948

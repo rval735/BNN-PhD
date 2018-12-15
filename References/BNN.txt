@@ -299,3 +299,17 @@ https://github.com/boluoweifenda/WAGE
 
 Learning discrete weights using the local reparameterization trick
 https://openreview.net/forum?id=BySRH6CpW
+
+The practical application of binary neural networks
+https://www.researchgate.net/publication/2713259_The_Practical_Application_of_Binary_Neural_Networks
+
+Learning Recurrent Binary/Ternary Weights
+https://openreview.net/forum?id=HkNGYjR9FX
+https://arxiv.org/pdf/1809.11086.pdf
+
+A complete mean-field theory for dynamics of binary recurrent neural networks
+https://arxiv.org/abs/1701.07128
+
+Hardware-efficient on-line learning through pipelined truncated-error backpropagation in binary-state networks
+https://www.frontiersin.org/articles/10.3389/fnins.2017.00496/full
+https://arxiv.org/abs/1707.03049

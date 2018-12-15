@@ -173,3 +173,17 @@ https://arxiv.org/abs/1605.07678
 
 Large-scale Deep Unsupervised Learning using Graphics Processors
 https://dl.acm.org/citation.cfm?id=1553486r
+
+CryptoNets- Applying Neural Networks to Encrypted Data with High Throughput and Accuracy
+http://proceedings.mlr.press/v48/gilad-bachrach16.html
+
+CryptoDL- Deep Neural Networks over Encrypted Data
+https://arxiv.org/abs/1711.05189
+https://www.semanticscholar.org/paper/CryptoDL%3A-Deep-Neural-Networks-over-Encrypted-Data-Hesamifard-Takabi/f0fb3662d505536795a7a6a6a9a4459cd868742a
+
+SecureNN- Efficient and Private Neural Network Training
+https://www.semanticscholar.org/paper/SecureNN%3A-Efficient-and-Private-Neural-Network-Wagh-Gupta/2886c81bc3f71b3a9945c8825bbdb4405947a717
+
+Generating and designing DNA with deep generative models
+https://arxiv.org/abs/1712.06148
+https://github.com/co9olguy/Generating-and-designing-DNA

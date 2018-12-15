@@ -1,12 +1,192 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-12-14 12:58:44 +1300 
+%% Created for RHVT at 2018-12-16 00:39:33 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{10.3389/fnins.2017.00496,
+	Abstract = {Artificial neural networks (ANNs) trained using backpropagation are powerful learning architectures that have achieved state-of-the-art performance in various benchmarks. Significant effort has been devoted to developing custom silicon devices to accelerate inference in ANNs. Accelerating the training phase, however, has attracted relatively little attention. In this paper, we describe a hardware-efficient on-line learning technique for feedforward multi-layer ANNs that is based on pipelined backpropagation. Learning is performed in parallel with inference in the forward pass, removing the need for an explicit backward pass and requiring no extra weight lookup. By using binary state variables in the feedforward network and ternary errors in truncated-error backpropagation, the need for any multiplications in the forward and backward passes is removed, and memory requirements for the pipelining are drastically reduced.  Further reduction in addition operations owing to the sparsity in the forward neural and backpropagating error signal paths contributes to highly efficient hardware implementation.  For proof-of-concept validation, we demonstrate on-line learning of MNIST handwritten digit classification on a Spartan 6 FPGA interfacing with an external 1Gb DDR2 DRAM, that shows small degradation in test error performance compared to an equivalently sized binary ANN trained off-line using standard back-propagation and exact errors. Our results highlight an attractive synergy between pipelined backpropagation and binary-state networks in substantially reducing computation and memory requirements, making pipelined on-line learning practical in deep networks.},
+	Author = {Mostafa, Hesham and Pedroni, Bruno and Sheik, Sadique and Cauwenberghs, Gert},
+	Date-Added = {2018-12-16 00:39:15 +1300},
+	Date-Modified = {2018-12-16 00:39:33 +1300},
+	Doi = {10.3389/fnins.2017.00496},
+	Issn = {1662-453X},
+	Journal = {Frontiers in Neuroscience},
+	Keywords = {BNN, FPGA, Back propagation, Quantization},
+	Pages = {496},
+	Title = {Hardware-Efficient On-line Learning through Pipelined Truncated-Error Backpropagation in Binary-State Networks},
+	Url = {https://www.frontiersin.org/article/10.3389/fnins.2017.00496},
+	Volume = {11},
+	Year = {2017},
+	Bdsk-Url-1 = {https://www.frontiersin.org/article/10.3389/fnins.2017.00496},
+	Bdsk-Url-2 = {https://doi.org/10.3389/fnins.2017.00496}}
+
+@article{Shackleford2001,
+	Abstract = {Accelerating a genetic algorithm (GA) by implementing it in a reconfigurable field programmable gate array (FPGA) is described. The implemented GA features: random parent selection, which conserves selection circuitry; a steady-state memory model, which conserves chip area; survival of fitter child chromosomes over their less-fit parent chromosomes, which promotes evolution. A net child chromosome generation rate of one per clock cycle is obtained by pipelining the parent selection, crossover, mutation, and fitness evaluation functions. Complex fitness functions can be further pipelined to maintain a high-speed clock cycle. Fitness functions with a pipeline initiation interval of greater than one can be plurally implemented to maintain a net evaluated-chromosome throughput of one per clock cycle. Two prototypes are described: The first prototype (c. 1996 technology) is a multiple-FPGA chip implementation, running at a 1 MHz clock rate, that solves a 94-row {\texttimes} 520-column set covering problem 2,200{\texttimes} faster than a 100 MHz workstation running the same algorithm in C. The second prototype (Xilinx XVC300) is a single-FPGA chip implementation, running at a 66 MHZ clock rate, that solves a 36-residue protein folding problem in a 2-d lattice 320{\texttimes} faster than a 366 MHz Pentium II. The current largest FPGA (Xilinx XCV3200E) has circuitry available for the implementation of 30 fitness function units which would yield an acceleration of 9,600{\texttimes} for the 36-residue protein folding problem.},
+	Author = {Shackleford, Barry and Snider, Greg and Carter, Richard J. and Okushi, Etsuko and Yasuda, Mitsuhiro and Seo, Katsuhiko and Yasuura, Hiroto},
+	Date-Added = {2018-12-16 00:23:25 +1300},
+	Date-Modified = {2018-12-16 00:23:40 +1300},
+	Day = {01},
+	Doi = {10.1023/A:1010018632078},
+	Issn = {1573-7632},
+	Journal = {Genetic Programming and Evolvable Machines},
+	Keywords = {FPGA, GA, Pipeline, HPC},
+	Month = {Mar},
+	Number = {1},
+	Pages = {33--60},
+	Title = {A High-Performance, Pipelined, FPGA-Based Genetic Algorithm Machine},
+	Url = {https://doi.org/10.1023/A:1010018632078},
+	Volume = {2},
+	Year = {2001},
+	Bdsk-Url-1 = {https://doi.org/10.1023/A:1010018632078}}
+
+@article{Guo:2016:PGA:2927964.2927980,
+	Acmid = {2927980},
+	Address = {New York, NY, USA},
+	Author = {Guo, Liucheng and Funie, Andreea Ingrid and Thomas, David B. and Fu, Haohuan and Luk, Wayne},
+	Date-Added = {2018-12-16 00:15:15 +1300},
+	Date-Modified = {2018-12-16 00:15:36 +1300},
+	Doi = {10.1145/2927964.2927980},
+	Issn = {0163-5964},
+	Issue_Date = {September 2015},
+	Journal = {SIGARCH Comput. Archit. News},
+	Keywords = {FPGA, Parallel, Traveling Salesman Problem},
+	Month = apr,
+	Number = {4},
+	Numpages = {8},
+	Pages = {86--93},
+	Publisher = {ACM},
+	Title = {Parallel Genetic Algorithms on Multiple FPGAs},
+	Url = {http://doi.acm.org/10.1145/2927964.2927980},
+	Volume = {43},
+	Year = {2016},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2927964.2927980},
+	Bdsk-Url-2 = {https://doi.org/10.1145/2927964.2927980}}
+
+@inproceedings{1321812,
+	Abstract = {This paper presents the research work directed regards the synthesis and implementation of a parallel-pipelined hardware genetic algorithm (PPHGA) utilizing very high speed integrated circuit hardware description language (VHDL) for programming field programmable gate arrays (FPGAs). The main design is divided into several modules. The modules are autonomous in operation once the system starts to run. They communicate with each other using a handshaking protocol. Three applications are then experimented using the PPHGA to test its optimization power. These are linear interpolation, thermistor data processing, and vehicle acceleration computation.},
+	Author = {H. E. Mostafa and A. I. Khadragi and Y. Y. Hanafi},
+	Booktitle = {Proceedings of the Twenty-First National Radio Science Conference, 2004. NRSC 2004.},
+	Date-Added = {2018-12-16 00:13:44 +1300},
+	Date-Modified = {2018-12-16 00:13:58 +1300},
+	Doi = {10.1109/NRSC.2004.240504},
+	Keywords = {FPGA; parallel programming;pipeline processing;program testing;hardware description languages;logic testing;genetic algorithms;logic programming;logic design;interpolation;thermistors;protocols;parallel-pipelined hardware genetic algorithm;very high speed integrated circuit hardware description language;VHDL;field programmable gate array;gate arrays programming;FPGA design;handshaking protocol;program testing;optimization power;linear interpolation;thermistor data processing;vehicle acceleration computation;lateral acceleration;Genetic algorithms;Field programmable gate arrays;Integrated circuit synthesis;Very high speed integrated circuits;Hardware design languages;Parallel programming;Protocols;Circuit testing;Interpolation;Thermistors},
+	Month = {March},
+	Pages = {C9-1},
+	Title = {Hardware implementation of genetic algorithm on FPGA},
+	Year = {2004},
+	Bdsk-Url-1 = {https://doi.org/10.1109/NRSC.2004.240504}}
+
+@inproceedings{inproceedings,
+	Author = {Deliparaschos, Kyriakos and Tzafestas, Spyros},
+	Booktitle = {Panhellenic Conference on Electronics and Telecommunications },
+	Date-Added = {2018-12-15 23:47:47 +1300},
+	Date-Modified = {2018-12-15 23:53:06 +1300},
+	Doi = {10.13140/2.1.1543.1689},
+	Keywords = {FPGA, GA, Fuzzy logic, ASIC, Traveling Salesman Problem},
+	Month = {September},
+	Title = {Design Paradigms of Intelligent Control Systems on a Chip},
+	Year = {2009},
+	Bdsk-Url-1 = {https://doi.org/10.13140/2.1.1543.1689}}
+
+@article{Torquato2018HighPerformancePI,
+	Author = {Matheus F. Torquato and Marcelo A. C. Fernandes},
+	Date-Added = {2018-12-15 23:21:11 +1300},
+	Date-Modified = {2018-12-15 23:21:32 +1300},
+	Journal = {CoRR},
+	Keywords = {FPGA, GA, parallel computing, HPC},
+	Title = {High-Performance Parallel Implementation of Genetic Algorithm on FPGA},
+	Volume = {abs/1806.11555},
+	Year = {2018}}
+
+@article{PhysRevLett.119.208301,
+	Author = {Farkhooi, Farzad and Stannat, Wilhelm},
+	Date-Added = {2018-12-15 22:47:16 +1300},
+	Date-Modified = {2018-12-15 22:47:38 +1300},
+	Doi = {10.1103/PhysRevLett.119.208301},
+	Issue = {20},
+	Journal = {Phys. Rev. Lett.},
+	Keywords = {BNN, Mean field theory, Recurrent NN},
+	Month = {Nov},
+	Numpages = {5},
+	Pages = {208301},
+	Publisher = {American Physical Society},
+	Title = {Complete Mean-Field Theory for Dynamics of Binary Recurrent Networks},
+	Url = {https://link.aps.org/doi/10.1103/PhysRevLett.119.208301},
+	Volume = {119},
+	Year = {2017},
+	Bdsk-Url-1 = {https://link.aps.org/doi/10.1103/PhysRevLett.119.208301},
+	Bdsk-Url-2 = {https://doi.org/10.1103/PhysRevLett.119.208301}}
+
+@article{2015arXiv150602078K,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://beta.openreview.net/forum?id=71BmK0m6qfAE8VvKUQWB},
+	Author = {{Karpathy}, A. and {Johnson}, J. and {Fei-Fei}, L.},
+	Date-Added = {2018-12-15 22:23:49 +1300},
+	Date-Modified = {2018-12-15 22:28:23 +1300},
+	Eprint = {1506.02078},
+	Journal = {International Conference on Learning Representations},
+	Keywords = {CNN; Machine Learning, Computation and Language, Neural and Evolutionary Computing},
+	Month = May,
+	Title = {{Visualizing and Understanding Recurrent Networks}},
+	Year = 2016}
+
+@inproceedings{1809.11086,
+	Author = {Arash Ardakani, Sean C. Smithson, Warren J. Gross, Zhengyun Ji, Brett H. Meyer},
+	Booktitle = {International Conference on Learning Representations},
+	Date-Added = {2018-12-15 18:36:35 +1300},
+	Date-Modified = {2018-12-15 18:59:39 +1300},
+	Keywords = {BNN, Recurrent NN, Text analysis, },
+	Note = {under review},
+	Organization = {McGill University},
+	Title = {Learning Recurrent Binary/Ternary Weights},
+	Url = {https://openreview.net/forum?id=HkNGYjR9FX},
+	Year = {2019},
+	Bdsk-Url-1 = {https://openreview.net/forum?id=HkNGYjR9FX}}
+
+@article{Hesamifard2017CryptoDLDN,
+	Author = {Ehsan Hesamifard and Hassan Takabi and Mehdi Ghasemi},
+	Date-Added = {2018-12-15 16:57:47 +1300},
+	Date-Modified = {2018-12-15 16:58:11 +1300},
+	Journal = {CoRR},
+	Keywords = {NN, Cryptography, Homomorphic encryption, MNIST},
+	Title = {CryptoDL: Deep Neural Networks over Encrypted Data},
+	Volume = {abs/1711.05189},
+	Year = {2017}}
+
+@inproceedings{pmlr-v48-gilad-bachrach16,
+	Abstract = {Applying machine learning to a problem which involves medical, financial, or other types of sensitive data, not only requires accurate predictions but also careful attention to maintaining data privacy and security. Legal and ethical requirements may prevent the use of cloud-based machine learning solutions for such tasks. In this work, we will present a method to convert learned neural networks to CryptoNets, neural networks that can be applied to encrypted data. This allows a data owner to send their data in an encrypted form to a cloud service that hosts the network. The encryption ensures that the data remains confidential since the cloud does not have access to the keys needed to decrypt it. Nevertheless, we will show that the cloud service is capable of applying the neural network to the encrypted data to make encrypted predictions, and also return them in encrypted form. These encrypted predictions can be sent back to the owner of the secret key who can decrypt them. Therefore, the cloud service does not gain any information about the raw data nor about the prediction it made. We demonstrate CryptoNets on the MNIST optical character recognition tasks. CryptoNets achieve 99% accuracy and can make around 59000 predictions per hour on a single PC. Therefore, they allow high throughput, accurate, and private predictions.},
+	Address = {New York, New York, USA},
+	Author = {Ran Gilad-Bachrach and Nathan Dowlin and Kim Laine and Kristin Lauter and Michael Naehrig and John Wernsing},
+	Booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+	Date-Added = {2018-12-15 16:14:29 +1300},
+	Date-Modified = {2018-12-15 16:15:28 +1300},
+	Editor = {Maria Florina Balcan and Kilian Q. Weinberger},
+	Keywords = {NN; Cryptography, Neural Network, Homomorphic encryption },
+	Month = {20--22 Jun},
+	Pages = {201--210},
+	Pdf = {http://proceedings.mlr.press/v48/gilad-bachrach16.pdf},
+	Publisher = {PMLR},
+	Series = {Proceedings of Machine Learning Research},
+	Title = {CryptoNets: Applying Neural Networks to Encrypted Data with High Throughput and Accuracy},
+	Url = {http://proceedings.mlr.press/v48/gilad-bachrach16.html},
+	Volume = {48},
+	Year = {2016},
+	Bdsk-Url-1 = {http://proceedings.mlr.press/v48/gilad-bachrach16.html}}
+
+@article{article,
+	Author = {Austin, Jim},
+	Date-Added = {2018-12-14 20:34:29 +1300},
+	Date-Modified = {2018-12-14 20:36:02 +1300},
+	Journal = {Adaptive computing and Information processing conference},
+	Keywords = {BNN, ADAM, Associative Memory, Image Segmentation},
+	Month = {07},
+	Title = {The Practical Application of Binary Neural Networks.},
+	Year = {1994}}
 
 @article{CUCS-017-15,
 	Author = {Townsend, Richard Morse; Kim, Martha Allen; Edwards, Stephen A.},
@@ -100,7 +280,7 @@ In addition to the hardware software co-design language, this thesis also introd
 	Doi = {10.1007/978-3-540-75771-9_1},
 	Editor = {Yu, Tina and Davis, Lawrence and Baydar, Cem and Roy, Rajkumar},
 	Isbn = {978-3-540-75771-9},
-	Keywords = {Evolutionary, Book, },
+	Keywords = {Evolutionary, Book,},
 	Pages = {1--8},
 	Publisher = {Springer Berlin Heidelberg},
 	Title = {Evolutionary Computation in Practice},
@@ -113,7 +293,7 @@ In addition to the hardware software co-design language, this thesis also introd
 	Booktitle = {In Proceedings of 2nd Asia-Pacific Workshop on Genetic Algorithms and their Applications (APGA 2000},
 	Date-Added = {2018-12-14 10:40:55 +1300},
 	Date-Modified = {2018-12-14 10:42:03 +1300},
-	Keywords = {Haskell, Genetic Algorithm, },
+	Keywords = {Haskell, Genetic Algorithm,},
 	Pages = {152--163},
 	Publisher = {Global-Link Publishing Company},
 	Title = {A genetic algorithm framework using Haskell},
@@ -309,11 +489,6 @@ In addition to the hardware software co-design language, this thesis also introd
 	Year = {2018},
 	Bdsk-Url-1 = {https://doi.org/10.1109/IJCNN.2018.8489184}}
 
-@conference{:aa,
-	Date-Added = {2018-12-12 13:05:20 +1300},
-	Date-Modified = {2018-12-12 13:05:20 +1300},
-	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCILi4vUmVmZXJlbmNlcy9QYXBlcnMvRXZvbHV0aW9uYXJ5L0luZm9ybWF0aW9uIENvbGxlY3Rpb24gU3RyYXRlZ2llcyBJbiBNZW1ldGljIENvb3BlcmF0aXZlIE5ldXJvZXZvbHV0aW9uIEZvciBUaW1lIFNlcmllcyBQcmVkaWN0aW9uLnBkZk8RAuIAAAAAAuIAAgAACU1hY2ludG9zaAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////x9JbmZvcm1hdGlvbiBDb2xsZWMjRkZGRkZGRkYucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEABAAACiBjdQAAAAAAAAAAAAAAAAAMRXZvbHV0aW9uYXJ5AAIAni86VXNlcnM6cmh2dDpEZXY6Q05OLVBoZDpSZWZlcmVuY2VzOlBhcGVyczpFdm9sdXRpb25hcnk6SW5mb3JtYXRpb24gQ29sbGVjdGlvbiBTdHJhdGVnaWVzIEluIE1lbWV0aWMgQ29vcGVyYXRpdmUgTmV1cm9ldm9sdXRpb24gRm9yIFRpbWUgU2VyaWVzIFByZWRpY3Rpb24ucGRmAA4AzgBmAEkAbgBmAG8AcgBtAGEAdABpAG8AbgAgAEMAbwBsAGwAZQBjAHQAaQBvAG4AIABTAHQAcgBhAHQAZQBnAGkAZQBzACAASQBuACAATQBlAG0AZQB0AGkAYwAgAEMAbwBvAHAAZQByAGEAdABpAHYAZQAgAE4AZQB1AHIAbwBlAHYAbwBsAHUAdABpAG8AbgAgAEYAbwByACAAVABpAG0AZQAgAFMAZQByAGkAZQBzACAAUAByAGUAZABpAGMAdABpAG8AbgAuAHAAZABmAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAnFVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9QYXBlcnMvRXZvbHV0aW9uYXJ5L0luZm9ybWF0aW9uIENvbGxlY3Rpb24gU3RyYXRlZ2llcyBJbiBNZW1ldGljIENvb3BlcmF0aXZlIE5ldXJvZXZvbHV0aW9uIEZvciBUaW1lIFNlcmllcyBQcmVkaWN0aW9uLnBkZgATAAEvAAAVAAIAC///AAAACAANABoAJACvAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAA5U=}}
-
 @inproceedings{Han:2016:EEI:3001136.3001163,
 	Acmid = {3001163},
 	Address = {Piscataway, NJ, USA},
@@ -435,7 +610,8 @@ In addition to the hardware software co-design language, this thesis also introd
 	Title = {xnor.ai Company},
 	Url = {https://www.xnor.ai/},
 	Urldate = {2018},
-	Year = {2016}}
+	Year = {2016},
+	Bdsk-Url-1 = {https://www.xnor.ai/}}
 
 @inproceedings{8416941,
 	Author = {H. Yonekawa and S. Sato and H. Nakahara},

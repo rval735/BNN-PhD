@@ -145,6 +145,11 @@ Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learnin
 -
 -
 
+Visualizing and Understanding Recurrent Networks
+- Proves an analysis of their representations, predictions and error types
+- Reveal the existence of interpretable cells that keep track of long-range dependencies such as line lengths, quotes and brackets
+- Penn Treebank, War and Piece, Linux Kernel and Hutter Price datasets
+
 < CNN
 
 ------> CNN-Fin
@@ -295,6 +300,36 @@ Floating-Point DSP Block Architecture for FPGAs
 - Proposes a new DSP that provides fixed and FP functions integrated into the FPGA fabric
 - High density of over 1600 single precision FP DSP block (20nm) adn 1.6 TFLOP
 - 700K LUT device will require 17% for the equivalent of 1600 DSP blocks
+
+High-Performance Parallel Implementation of Genetic Algorithm on FPGA
+- Optimization of the system’s processing time and area occupancy for various population sizes are analyzed
+- Focus on high-performance and critical applications that require nanoseconds time constraints to be satisfied
+- Population of 64. 6598 FF, 58 875 (16%) LUT at 34.56MHz, 161700 Gen/sec
+- Tests with math functions, different populations and Virtex 7 FPGA
+
+Design Paradigms of Intelligent Control Systems on a Chip
+- Functionality verification of a parameterized fuzzy logic processor core followed by a
+modified architecture for faster data processing
+- Scalable genetic algorithm processor core is presented and evaluated using the Traveling Salesman Problem (TSP)
+- TSP in hardware takes 1.7ms vs 18 783ms (11035x)
+
+Parallel Genetic Algorithms on Multiple FPGAs
+- Steady-state GA which can be configured using run-time parameters, removing the need for expensive recompilation
+- 30x speedup achieved compared to a multi-core CPU-based implementation
+- Applied to Function 11, the Locating problem and the Travelling Salesman Problem
+- A system with more FPGAs takes fewer generations to obtain satisfactory fitness
+
+Hardware implementation of genetic algorithm on FPGA
+- parallel-pipelined hardware genetic algorithm (PPHGA) utilizing very high speed integrated circuit hardware
+- Modules are autonomous in operation once the system starts; communication with each other uses a handshaking protocol
+- Applied to Thermistor data processing, linear function interpolation and vehicle lateral acceleration
+
+A High-Performance, Pipelined, FPGA-Based Genetic Algorithm Machine
+- GA features: random parent selection (conserves circuitry); steady-state memory model (conserves chip area); survival of fitter (promotes evolution)
+- Pipelining parent selection, crossover, mutation, and fitness evaluation functions
+- 1Mhz FPGA is 2,200× faster than a 100 MHz workstation running the same algorithm in C
+- 66 MHZ FPGA solves a 36-residue protein folding problem 320× faster than a 366 MHz Pentium II
+
 
 < FPGA
 
@@ -1034,6 +1069,30 @@ Large-scale Deep Unsupervised Learning using Graphics Processors
 -
 -
 
+CryptoNets- Applying Neural Networks to Encrypted Data with High Throughput and Accuracy
+- Method to convert learned neural networks to CryptoNets, NN that can be applied to encrypted data
+- Send their data in an encrypted form to a cloud service that hosts the network (homomorphic encryption)
+- CryptoNets on the MNIST optical character recognition tasks (99% accuracy) and makes 59000 predictions per hour
+- The encryption scheme does not support floating-point numbers. Instead, it uses fixed precision real numbers by converting them to integers with proper scaling
+
+CryptoDL- Deep Neural Networks over Encrypted Data
+- CNN with the approximation polynomials instead of original activation functions and it
+analyzes the performance of their models
+- MNIST (99.52%) and 164000 predictions/hour. CIFAR-10 (91.5%) 
+- In theory, it is possible to train neural networks over encrypted data: replacing activation functions with polynomials, BP can be computed
+
+SecureNN- Efficient and Private Neural Network Training
+- Provides a novel three-party and four-party secure computation protocols for various NN
+- NN training and inference such that no single party learns any information about the data
+- Overhead of executing secure training protocols is only between 17-33X of the cleartext implementation even for networks that achieve > 99% accuracy
+- MNIST dataset with 99.15% accuracy in 42.51hours vs 2.11h in clear text
+
+Generating and designing DNA with deep generative models
+- Creates synthetic DNA sequences using a GANs
+- DNA-based variant of the activation maximization ("deep dream") design method
+- Applied to designing probes for protein binding microarrays
+- Generative tools learn important structure from DNA sequences
+
 < NN
 -------> DCGAN
 
@@ -1108,6 +1167,11 @@ Exploration by Random Network Distillation
 - Exploration bonus for deep reinforcement learning method with minimal overhead to the computation performed
 - Bonus is the NN error predicting features of the observations given by a fixed randomly initialized NN
 - Tested with Montezuma's Revenge with better than average human performance
+
+A Style-Based Generator Architecture for Generative Adversarial Networks
+- Automatically learned, unsupervised separation of high-level attributes and stochastic variation in the generated images
+- Introduces a new, highly varied and high-quality dataset of human faces
+- Used FlickrFaces-HQ (FFHQ), consisting of 70,000 high-quality images at 1024 resolution
 
 < DCGAN
 --------> Languages
@@ -1682,6 +1746,31 @@ Learning discrete weights using the local reparameterization trick
 -
 -
 -
+
+The practical application of binary neural networks
+- Advanced Distributed Associative Memory (ADAM) to the recognition of features in images
+- Hierarchical organization of BNN can be used to quickly locate specific points in infrared images
+- Images used to recognize road and intersection in satellite scans
+
+Learning Recurrent Binary/Ternary Weights
+- Proposes the use of batch normalization during the quantization process
+- LSTMs trained with binary/ternary can only perform the inference computations with binary/ternary weights
+- Binary/ternary-precision models in TSMC 65-nm CMOS technology 9× lower power and 10.6× lower silicon area at 400Mhz
+- Tested on Penn Treebank (PTB), Text8, War and Peace, Linux and sequencial MNIST datasets reaching comparable perplexity and memory size
+
+A complete mean-field theory for dynamics of binary recurrent neural networks
+- It derives a novel MFT that captures the dynamic behavior of recurrent networks with binary units
+- Guarantees the convergence of the average population activity to a deterministic limit
+- Studied a simplified model that captures the essential nonequilibrium aspects of cortical asynchronous state
+
+Hardware-efficient on-line learning through pipelined truncated-error backpropagation in binary-state networks
+- Hardware-efficient on-line learning technique for feedforward (FF) multi-layer ANNs that is based on pipelined backpropagation
+- Learning is performed in parallel with inference in the forward pass, removing the need for an explicit backward pass and requiring no extra weight lookup
+- Binary state variables in the FF network and ternary errors in truncated-error backpropagation
+- No need for multiplications in the forward and backward passes and memory requirements for the pipelining are drastically reduced
+- Learning of MNIST handwritten digit classification on a Spartan 6 FPGA interfacing with an external 1Gb DDR2 DRAM
+- Network history can be compactly represented in binary state networks (BSN)
+
 
 < BNN
 

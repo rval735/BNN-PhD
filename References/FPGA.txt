@@ -45,3 +45,20 @@ https://arxiv.org/abs/1602.04283
 
 Floating-Point DSP Block Architecture for FPGAs
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2689071
+
+High-Performance Parallel Implementation of Genetic Algorithm on FPGA
+https://www.semanticscholar.org/paper/High-Performance-Parallel-Implementation-of-Genetic-Torquato-Fernandes/e3f4a2bd3040a1e47319180fce0ea36dceec0dee
+https://arxiv.org/abs/1806.11555
+
+Design Paradigms of Intelligent Control Systems on a Chip
+https://arxiv.org/abs/1811.08426
+https://www.researchgate.net/publication/267332803_Design_Paradigms_of_Intelligent_Control_Systems_on_a_Chip
+
+Parallel Genetic Algorithms on Multiple FPGAs
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?doid=2927964.2927980
+
+Hardware implementation of genetic algorithm on FPGA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1321812
+
+A High-Performance, Pipelined, FPGA-Based Genetic Algorithm Machine
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1023/A:1010018632078
