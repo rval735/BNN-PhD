@@ -111,3 +111,6 @@ http://openaccess.thecvf.com/content_ICCV_2017/papers/Xie_Genetic_CNN_ICCV_2017_
 Visualizing and Understanding Recurrent Networks
 https://arxiv.org/abs/1506.02078
 https://openreview.net/forum?id=71BmK0m6qfAE8VvKUQWB
+
+Convolutional networks for fast, energy efficient neuromorphic computing
+https://www.pnas.org/content/113/41/11441

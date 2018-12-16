@@ -313,3 +313,5 @@ https://arxiv.org/abs/1701.07128
 Hardware-efficient on-line learning through pipelined truncated-error backpropagation in binary-state networks
 https://www.frontiersin.org/articles/10.3389/fnins.2017.00496/full
 https://arxiv.org/abs/1707.03049
+
+FINN-R- An End-to-End Deep-Learning Framework for Fast Exploration of Quantized Neural Networks

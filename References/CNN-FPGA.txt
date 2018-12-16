@@ -89,3 +89,6 @@ https://dl.acm.org/citation.cfm?id=3062207
 
 NeuFlow- A Runtime Reconfigurable Dataflow Processor for Vision
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5981829
+
+Quad-multiplier packing based on customized floating point for convolutional neural networks on FPGA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8297303

@@ -97,3 +97,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7307180
 
 Towards Hardware Acceleration of Neuroevolution for Multimedia Processing Applications on Mobile Devices
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11893295_130
+
+A Public Key Compression Method for Fully Homomorphic Encryption using Genetic Algorithms
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7528127

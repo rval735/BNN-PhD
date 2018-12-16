@@ -62,3 +62,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1321812
 
 A High-Performance, Pipelined, FPGA-Based Genetic Algorithm Machine
 https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1023/A:1010018632078
+
+FPGA-Based System for the Acceleration of Cloud Microservices
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8436912

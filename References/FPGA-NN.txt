@@ -54,3 +54,6 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S092523
 
 Throughput optimizations for FPGA-based deep neural network inference
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S014193311730296X
+
+A High-Performance Reconfigurable Accelerator for Convolutional Neural Networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3220178

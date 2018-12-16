@@ -1230,6 +1230,62 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{He:2015:DDR:2919332.2919814}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HK}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Kaiming},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Xiangyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Shaoqing},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \keyw{NN; ReLu, ImageNet, Microsoft}
+    \strng{namehash}{HK+2}
+    \strng{fullhash}{HKZXRSSJ2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the 2015 IEEE International Conference on
+  Computer Vision (ICCV)}
+    \verb{doi}
+    \verb 10.1109/ICCV.2015.123
+    \endverb
+    \field{isbn}{978-1-4673-8391-2}
+    \field{pages}{1026\bibrangedash 1034}
+    \field{series}{ICCV '15}
+    \field{title}{Delving Deep into Rectifiers: Surpassing Human-Level
+  Performance on ImageNet Classification}
+    \verb{url}
+    \verb http://dx.doi.org/10.1109/ICCV.2015.123
+    \endverb
+    \list{location}{1}{%
+      {Washington, DC, USA}%
+    }
+    \field{year}{2015}
+  \endentry
+
   \entry{Hertz:1991:ITN:104000}{book}{}
     \name{author}{3}{}{%
       {{hash=HJ}{%
@@ -1451,6 +1507,46 @@
     \verb http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf
     \endverb
     \field{year}{2016}
+  \endentry
+
+  \entry{Ioffe:2015:BNA:3045118.3045167}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=IS}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JMLR.org}%
+    }
+    \keyw{NN, batch normalization operation, Google}
+    \strng{namehash}{ISSC1}
+    \strng{fullhash}{ISSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{Proceedings of the 32Nd International Conference on
+  International Conference on Machine Learning - Volume 37}
+    \field{pages}{448\bibrangedash 456}
+    \field{series}{ICML'15}
+    \field{title}{Batch Normalization: Accelerating Deep Network Training by
+  Reducing Internal Covariate Shift}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=3045118.3045167
+    \endverb
+    \list{location}{1}{%
+      {Lille, France}%
+    }
+    \field{year}{2015}
   \endentry
 
   \entry{4790104}{inproceedings}{}
