@@ -315,3 +315,6 @@ https://www.frontiersin.org/articles/10.3389/fnins.2017.00496/full
 https://arxiv.org/abs/1707.03049
 
 FINN-R- An End-to-End Deep-Learning Framework for Fast Exploration of Quantized Neural Networks
+
+Accelerating low bit-width convolutional neural networks with embedded FPGA
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8056820

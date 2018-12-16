@@ -458,6 +458,11 @@ A High-Performance Reconfigurable Accelerator for Convolutional Neural Networks
 -
 -
 
+A survey of FPGA-based accelerators for convolutional neural networks
+-
+-
+-
+
 < FPGA-NN
 ------> FPGA-Fin
 
@@ -1792,6 +1797,11 @@ Hardware-efficient on-line learning through pipelined truncated-error backpropag
 - Network history can be compactly represented in binary state networks (BSN)
 
 FINN-R- An End-to-End Deep-Learning Framework for Fast Exploration of Quantized Neural Networks
+-
+-
+-
+
+Accelerating low bit-width convolutional neural networks with embedded FPGA
 -
 -
 -

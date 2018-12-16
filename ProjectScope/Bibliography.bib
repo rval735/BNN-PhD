@@ -1,12 +1,43 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2018-12-16 22:57:59 +1300 
+%% Created for RHVT at 2018-12-17 00:07:53 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Mittal2018,
+	Abstract = {Deep convolutional neural networks (CNNs) have recently shown very high accuracy in a wide range of cognitive tasks, and due to this, they have received significant interest from the researchers. Given the high computational demands of CNNs, custom hardware accelerators are vital for boosting their performance. The high energy efficiency, computing capabilities and reconfigurability of FPGA make it a promising platform for hardware acceleration of CNNs. In this paper, we present a survey of techniques for implementing and optimizing CNN algorithms on FPGA. We organize the works in several categories to bring out their similarities and differences. This paper is expected to be useful for researchers in the area of artificial intelligence, hardware architecture and system design.},
+	Author = {Mittal, Sparsh},
+	Date-Added = {2018-12-17 00:07:23 +1300},
+	Date-Modified = {2018-12-17 00:07:52 +1300},
+	Day = {06},
+	Doi = {10.1007/s00521-018-3761-1},
+	Issn = {1433-3058},
+	Journal = {Neural Computing and Applications},
+	Keywords = {FPGA-NN, Binary neural network, Batch processing},
+	Month = {Oct},
+	Title = {A survey of FPGA-based accelerators for convolutional neural networks},
+	Url = {https://doi.org/10.1007/s00521-018-3761-1},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s00521-018-3761-1}}
+
+@inproceedings{8056820,
+	Abstract = {Convolutional Neural Networks (CNNs) can achieve high classification accuracy while they require complex computation. Binarized Neural Networks (BNNs) with binarized weights and activations can simplify computation but suffer from obvious accuracy loss. In this paper, low bit-width CNNs, BNNs and standard CNNs are compared to show that low bit-width CNNs is better suited for embedded systems. An architecture based on the two-stage arithmetic unit (TSAU) as the basic processing element is proposed to process each layer iteratively for low bit-width CNN accelerators. Then the DoReFa-Net which is trained with weights and activations represented in 1 bit and 2 bits respectively is implemented on Zynq XC7Z020 FPGA with a 410.2 GOPS performance. The accelerator can meet the real-time requirement of embedded applications with a 106 FPS throughput and a 73.1% top-5 accuracy on the ImageNet dataset. The accelerator outperforms existing FPGA-based CNN accelerators in the tradeoff among accuracy, energy and resource efficiency.},
+	Author = {L. Jiao and C. Luo and W. Cao and X. Zhou and L. Wang},
+	Booktitle = {2017 27th International Conference on Field Programmable Logic and Applications (FPL)},
+	Date-Added = {2018-12-16 23:41:56 +1300},
+	Date-Modified = {2018-12-16 23:42:05 +1300},
+	Doi = {10.23919/FPL.2017.8056820},
+	Issn = {1946-1488},
+	Keywords = {BNN; digital arithmetic;embedded systems;field programmable gate arrays;neural nets;low bit-width CNN accelerators;Zynq XC7Z020 FPGA;DoReFa-Net neural nets;two-stage arithmetic unit;embedded systems;embedded systems;binarized activations;binarized weights;Binarized Neural Networks;complex computation;high classification accuracy;embedded FPGA;low bit-width convolutional neural networks;Kernel;Field programmable gate arrays;Table lookup;Neural networks;Computational modeling;Quantization (signal);Convolution},
+	Month = {Sept},
+	Pages = {1-4},
+	Title = {Accelerating low bit-width convolutional neural networks with embedded FPGA},
+	Year = {2017},
+	Bdsk-Url-1 = {https://doi.org/10.23919/FPL.2017.8056820}}
 
 @inproceedings{8297303,
 	Abstract = {Deep convolutional neural networks (CNNs) are widely used in many computer vision tasks. Since CNNs involve billions of computations, it is critical to reduce the resource /power consumption and improve parallelism. Compared with extensive researches on fixed point conversion for cost reduction, floating point customization has not been paid enough attention due to its higher cost than fixed point. This paper explores the customized floating point for both the training and inference of CNNs. 9-bit customized floating point is found sufficient for the training of ResNet-20 on CIFAR-10 dataset with less than 1% accuracy loss, which can also be applied to the inference of CNNs. With reduced bit-width, a computational unit (CU) based on Quad-Multiplier Packing is proposed to improve the resource efficiency of CNNs on FPGA. This design can save 87.5% DSP slices and 62.5% LUTs on Xilinx Kintex-7 platform compared to CU using 32-bit floating point. More CUs can be arranged on FPGA and higher throughput can be expected accordingly.},

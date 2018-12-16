@@ -965,6 +965,110 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{pmlr-v48-gilad-bachrach16}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=GBR}{%
+         family={Gilad-Bachrach},
+         familyi={G\bibinitperiod-B\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DN}{%
+         family={Dowlin},
+         familyi={D\bibinitperiod},
+         given={Nathan},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Laine},
+         familyi={L\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lauter},
+         familyi={L\bibinitperiod},
+         given={Kristin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Naehrig},
+         familyi={N\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wernsing},
+         familyi={W\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=BMF}{%
+         family={Balcan},
+         familyi={B\bibinitperiod},
+         given={Maria\bibnamedelima Florina},
+         giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=WKQ}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={Kilian\bibnamedelima Q.},
+         giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PMLR}%
+    }
+    \keyw{NN; Cryptography, Neural Network, Homomorphic encryption}
+    \strng{namehash}{GBR+1}
+    \strng{fullhash}{GBRDNLKLKNMWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Applying machine learning to a problem which involves medical, financial,
+  or other types of sensitive data, not only requires accurate predictions but
+  also careful attention to maintaining data privacy and security. Legal and
+  ethical requirements may prevent the use of cloud-based machine learning
+  solutions for such tasks. In this work, we will present a method to convert
+  learned neural networks to CryptoNets, neural networks that can be applied to
+  encrypted data. This allows a data owner to send their data in an encrypted
+  form to a cloud service that hosts the network. The encryption ensures that
+  the data remains confidential since the cloud does not have access to the
+  keys needed to decrypt it. Nevertheless, we will show that the cloud service
+  is capable of applying the neural network to the encrypted data to make
+  encrypted predictions, and also return them in encrypted form. These
+  encrypted predictions can be sent back to the owner of the secret key who can
+  decrypt them. Therefore, the cloud service does not gain any information
+  about the raw data nor about the prediction it made. We demonstrate
+  CryptoNets on the MNIST optical character recognition tasks. CryptoNets
+  achieve 99% accuracy and can make around 59000 predictions per hour on a
+  single PC. Therefore, they allow high throughput, accurate, and private
+  predictions.%
+    }
+    \field{booktitle}{Proceedings of The 33rd International Conference on
+  Machine Learning}
+    \field{pages}{201\bibrangedash 210}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{CryptoNets: Applying Neural Networks to Encrypted Data with
+  High Throughput and Accuracy}
+    \verb{url}
+    \verb http://proceedings.mlr.press/v48/gilad-bachrach16.html
+    \endverb
+    \field{volume}{48}
+    \list{location}{1}{%
+      {New York, New York, USA}%
+    }
+    \verb{file}
+    \verb http://proceedings.mlr.press/v48/gilad-bachrach16.pdf
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{5607329}{article}{}
     \name{author}{3}{}{%
       {{hash=GA}{%
@@ -1547,6 +1651,82 @@
       {Lille, France}%
     }
     \field{year}{2015}
+  \endentry
+
+  \entry{8056820}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=JL}{%
+         family={Jiao},
+         familyi={J\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Cao},
+         familyi={C\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZX}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; digital arithmetic;embedded systems;field programmable gate
+  arrays;neural nets;low bit-width CNN accelerators;Zynq XC7Z020
+  FPGA;DoReFa-Net neural nets;two-stage arithmetic unit;embedded
+  systems;embedded systems;binarized activations;binarized weights;Binarized
+  Neural Networks;complex computation;high classification accuracy;embedded
+  FPGA;low bit-width convolutional neural networks;Kernel;Field programmable
+  gate arrays;Table lookup;Neural networks;Computational modeling;Quantization
+  (signal);Convolution}
+    \strng{namehash}{JL+1}
+    \strng{fullhash}{JLLCCWZXWL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    Convolutional Neural Networks (CNNs) can achieve high classification
+  accuracy while they require complex computation. Binarized Neural Networks
+  (BNNs) with binarized weights and activations can simplify computation but
+  suffer from obvious accuracy loss. In this paper, low bit-width CNNs, BNNs
+  and standard CNNs are compared to show that low bit-width CNNs is better
+  suited for embedded systems. An architecture based on the two-stage
+  arithmetic unit (TSAU) as the basic processing element is proposed to process
+  each layer iteratively for low bit-width CNN accelerators. Then the
+  DoReFa-Net which is trained with weights and activations represented in 1 bit
+  and 2 bits respectively is implemented on Zynq XC7Z020 FPGA with a 410.2 GOPS
+  performance. The accelerator can meet the real-time requirement of embedded
+  applications with a 106 FPS throughput and a 73.1% top-5 accuracy on the
+  ImageNet dataset. The accelerator outperforms existing FPGA-based CNN
+  accelerators in the tradeoff among accuracy, energy and resource efficiency.%
+    }
+    \field{booktitle}{2017 27th International Conference on Field Programmable
+  Logic and Applications (FPL)}
+    \verb{doi}
+    \verb 10.23919/FPL.2017.8056820
+    \endverb
+    \field{issn}{1946-1488}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{Accelerating low bit-width convolutional neural networks with
+  embedded FPGA}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{4790104}{inproceedings}{}
@@ -2609,43 +2789,6 @@
     \field{year}{2015}
   \endentry
 
-  \entry{shayer2018learning}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=SO}{%
-         family={Shayer},
-         familyi={S\bibinitperiod},
-         given={Oran},
-         giveni={O\bibinitperiod},
-      }}%
-      {{hash=LD}{%
-         family={Levi},
-         familyi={L\bibinitperiod},
-         given={Dan},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=FE}{%
-         family={Fetaya},
-         familyi={F\bibinitperiod},
-         given={Ethan},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN, Discrete, MNIST, CIFAR, ImageNet}
-    \strng{namehash}{SOLDFE1}
-    \strng{fullhash}{SOLDFE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{booktitle}{International Conference on Learning Representations}
-    \field{title}{Learning Discrete Weights Using the Local Reparameterization
-  Trick}
-    \verb{url}
-    \verb https://openreview.net/forum?id=BySRH6CpW
-    \endverb
-    \field{year}{2018}
-  \endentry
-
   \entry{Silver:2017aa}{article}{}
     \name{author}{17}{}{%
       {{hash=SD}{%
@@ -3200,49 +3343,6 @@
     }
     \field{year}{2017}
     \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{wu2018training}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=WS}{%
-         family={Wu},
-         familyi={W\bibinitperiod},
-         given={Shuang},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=LG}{%
-         family={Li},
-         familyi={L\bibinitperiod},
-         given={Guoqi},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=CF}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Feng},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=SL}{%
-         family={Shi},
-         familyi={S\bibinitperiod},
-         given={Luping},
-         giveni={L\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN; Binary, MNIST, CIFAR, ImageNet}
-    \strng{namehash}{WS+1}
-    \strng{fullhash}{WSLGCFSL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{booktitle}{International Conference on Learning Representations}
-    \field{title}{Training and Inference with Integers in Deep Neural Networks}
-    \verb{url}
-    \verb https://openreview.net/forum?id=HJGXzmspb
-    \endverb
-    \field{year}{2018}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Yamada1992}{article}{}
