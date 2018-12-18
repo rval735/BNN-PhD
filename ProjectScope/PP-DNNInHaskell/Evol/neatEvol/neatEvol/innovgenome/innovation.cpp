@@ -46,8 +46,8 @@ static int cmp(const InnovationId &x, const InnovationId &y) {
 #undef __cmp
 }
 
-InnovationId::InnovationId(int nin,
-                           int nout,
+InnovationId::InnovationId(size_t nin,
+                           size_t nout,
                            int oldinnov)
     : innovation_type(NEWNODE)
     , node_in_id(nin)
@@ -56,8 +56,8 @@ InnovationId::InnovationId(int nin,
     , recur_flag(false) { // unused
 }
 
-InnovationId::InnovationId(int nin,
-                           int nout,
+InnovationId::InnovationId(size_t nin,
+                           size_t nout,
                            bool recur)
     : innovation_type(NEWLINK)
     , node_in_id(nin)
@@ -79,13 +79,12 @@ InnovationParms::InnovationParms()
     , new_trait_id(-1) {
 }
 
-InnovationParms::InnovationParms(real_t w,
-                                 int t)
+InnovationParms::InnovationParms(real_t w, size_t t)
     : new_weight(w)
     , new_trait_id(t) {
 }
 
-IndividualInnovation::IndividualInnovation(int population_index_,
+IndividualInnovation::IndividualInnovation(size_t population_index_,
                                            InnovationId id_,
                                            InnovationParms parms_,
                                            ApplyFunc apply_) 

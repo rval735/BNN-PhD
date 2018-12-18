@@ -79,8 +79,8 @@ InnovGenome::InnovGenome(rng_t rng_,
 
     const int node_id_bias = 1;
     const int node_id_input = node_id_bias + 1;
-    const int node_id_output = node_id_input + ninputs;
-    const int node_id_hidden = node_id_output + noutputs;
+    const size_t node_id_output = node_id_input + ninputs;
+    const size_t node_id_hidden = node_id_output + noutputs;
 
     assert(nhidden > 0);
 
@@ -213,7 +213,7 @@ void InnovGenome::mutate_random_trait() {
 
 void InnovGenome::mutate_link_trait(int times) {
     for(int i = 0; i < times; i++) {
-        int trait_id = 1 + rng.index(traits);
+        size_t trait_id = 1 + rng.index(traits);
         InnovLinkGene &gene = rng.element(links);
         
         if(!gene.frozen) {
@@ -224,7 +224,7 @@ void InnovGenome::mutate_link_trait(int times) {
 
 void InnovGenome::mutate_node_trait(int times) {
     for(int i = 0; i < times; i++) {
-        int trait_id = 1 + rng.index(traits);
+        size_t trait_id = 1 + rng.index(traits);
         InnovNodeGene &node = rng.element(nodes);
 
         if(!node.frozen) {
@@ -515,7 +515,7 @@ bool InnovGenome::mutate_add_link(CreateInnovationFunc create_innov,
         //These two values may or may not take effect in the new innovation.
         //It depends on whether this genome is the first to create the innovation,
         //but it's impossible to know at this point who is first.
-        int trait_id = 1 + rng.index(traits);
+        size_t trait_id = 1 + rng.index(traits);
         real_t newweight = rng.posneg() * rng.prob() * 1.0;
 
         InnovationParms innov_parms(newweight, trait_id);
@@ -1170,7 +1170,7 @@ void InnovGenome::randomize_traits() {
 	}
 }
 
-inline Trait &get_trait(vector<Trait> &traits, int trait_id) {
+inline Trait &get_trait(vector<Trait> &traits, size_t trait_id) {
     Trait &t = traits[trait_id - 1];
     assert(t.trait_id == trait_id);
     return t;
@@ -1287,22 +1287,22 @@ InnovLinkGene *InnovGenome::find_link(int in_node_id, int out_node_id, bool is_r
     return nullptr;
 }
 
-InnovNodeGene *InnovGenome::get_node(int id) {
+InnovNodeGene *InnovGenome::get_node(size_t id) {
     return node_lookup.find(id);
 }
 
-node_size_t InnovGenome::get_node_index(int id) {
+node_size_t InnovGenome::get_node_index(size_t id) {
     node_size_t i = get_node(id) - nodes.data();
     assert(nodes[i].node_id == id);
     return i;
 }
 
-void InnovGenome::delete_if_orphaned_hidden_node(int node_id) {
+void InnovGenome::delete_if_orphaned_hidden_node(size_t node_id) {
     InnovNodeGene *node = get_node(node_id);
     if( (node == nullptr) || (node->type != NT_HIDDEN) )
         return;
 
-    bool found_link;
+    bool found_link = false;
     for(InnovLinkGene &link: links) {
         if(link.in_node_id() == node_id || link.out_node_id() == node_id) {
             found_link = true;

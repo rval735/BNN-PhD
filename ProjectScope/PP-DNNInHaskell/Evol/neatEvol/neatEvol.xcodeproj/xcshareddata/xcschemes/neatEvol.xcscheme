@@ -79,7 +79,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "seq-1bit-2el"
+            argument = "xnor"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

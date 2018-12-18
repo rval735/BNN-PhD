@@ -21,7 +21,7 @@
 namespace NEAT {
 
 	class InnovNodeGene {
-		int trait_id;  // identify the trait derived by this node
+		size_t trait_id;  // identify the trait derived by this node
 	public:
 		bool frozen; // When frozen, cannot be mutated (meaning its trait pointer is fixed)
 		nodetype type;
@@ -35,8 +35,8 @@ namespace NEAT {
 
 		~InnovNodeGene();
 
-        inline void set_trait_id(int id) { assert(id > 0); trait_id = id; }
-        inline int get_trait_id() const {return trait_id;}
+        inline void set_trait_id(size_t id) { assert(id > 0); trait_id = id; }
+        inline size_t get_trait_id() const {return trait_id;}
 
 		inline const nodetype get_type() const {return type;}
 		inline void set_type(nodetype t) {type = t;}

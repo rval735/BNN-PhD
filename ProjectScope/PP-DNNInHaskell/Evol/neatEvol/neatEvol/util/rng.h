@@ -21,7 +21,7 @@ namespace NEAT {
 
         template<typename T>
             size_t index(std::vector<T> &v, size_t begin = 0) {
-            std::uniform_int_distribution<int> dist(begin, v.size() - 1);
+            std::uniform_int_distribution<size_t> dist(begin, v.size() - 1);
             return dist(engine);
         }
 

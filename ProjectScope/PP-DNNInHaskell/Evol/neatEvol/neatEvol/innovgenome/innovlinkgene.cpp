@@ -38,10 +38,10 @@ InnovLinkGene::InnovLinkGene(real_t w,
 
 
 //Construct a gene with a trait
-InnovLinkGene::InnovLinkGene(int trait_id,
+InnovLinkGene::InnovLinkGene(size_t trait_id,
                              real_t w,
-                             int inode_id,
-                             int onode_id,
+                             size_t inode_id,
+                             size_t onode_id,
                              bool recur,
                              int innov,
                              real_t mnum) {
@@ -58,9 +58,9 @@ InnovLinkGene::InnovLinkGene(int trait_id,
 }
 
 InnovLinkGene::InnovLinkGene(InnovLinkGene *g,
-                             int trait_id,
-                             int inode_id,
-                             int onode_id) {
+                             size_t trait_id,
+                             size_t inode_id,
+                             size_t onode_id) {
     _weight = g->_weight;
     _in_node_id = inode_id;
     _out_node_id = onode_id;

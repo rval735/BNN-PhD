@@ -142,8 +142,8 @@ namespace NEAT {
         Trait &get_trait(const InnovNodeGene &node);
         Trait &get_trait(const InnovLinkGene &gene);
 
-        InnovNodeGene *get_node(int id);
-        node_size_t get_node_index(int id);
+        InnovNodeGene *get_node(size_t id);
+        node_size_t get_node_index(size_t id);
 
         virtual void init_phenotype(class Network &net) override;
 
@@ -163,7 +163,7 @@ namespace NEAT {
 
     private:
         InnovLinkGene *find_link(int in_node_id, int out_node_id, bool is_recurrent);
-        void delete_if_orphaned_hidden_node(int node_id);
+        void delete_if_orphaned_hidden_node(size_t node_id);
         void delete_link(InnovLinkGene *link);
 
         InnovNodeLookup node_lookup;

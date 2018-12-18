@@ -33,7 +33,7 @@ namespace NEAT {
         }
 
         // This checks a POTENTIAL link between a potential in_node and potential out_node to see if it must be recurrent 
-        bool is_recur(int in_id, int out_id, int &count, int thresh) {
+        bool is_recur(int in_id, int out_id, int &count, size_t thresh) {
             ++count;  //Count the node as visited
             if(count > thresh) {
                 return false;  //Short out the whole thing- loop detected
@@ -46,7 +46,8 @@ namespace NEAT {
                     //But skip links that are already recurrent
                     //(We want to check back through the forward flow of signals only
                     if(!(*gene)->is_recurrent()) {
-                        if( is_recur((*gene)->in_node_id(), out_id, count, thresh) )
+                        int casted = static_cast<int>((*gene)->in_node_id());
+                        if( is_recur(casted, out_id, count, thresh) )
                             return true;
                     }
                 }
@@ -77,7 +78,7 @@ namespace NEAT {
             //Note that we check for recursion to control the frequency of
             //adding recurrent links rather than to prevent any paricular
             //kind of error
-            int thresh=nnodes*nnodes;
+            size_t thresh= nnodes * nnodes;
             int count = 0;
 
             if(is_recur(in_node_id, out_node_id, count, thresh)) {

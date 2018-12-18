@@ -116,17 +116,17 @@ void SpeciesPopulation::next_generation() {
 	//Offspring
 	real_t skim; 
 	int total_expected;  //precision checking
-	int total_organisms = norgs; // todo: get rid of this variable
+	size_t total_organisms = norgs; // todo: get rid of this variable
     assert(total_organisms == env->pop_size);
-	int max_expected;
+	size_t max_expected;
 	Species *best_species = nullptr;
 	int final_expected;
 
 	std::vector<Species*> sorted_species;  //Species sorted by max fit org in Species
-	int half_pop;
+	size_t half_pop;
 
 	//We can try to keep the number of species constant at this number
-	int num_species=species.size();
+	size_t num_species = species.size();
 
     for(Species *s: species) {
         s->compute_average_fitness();

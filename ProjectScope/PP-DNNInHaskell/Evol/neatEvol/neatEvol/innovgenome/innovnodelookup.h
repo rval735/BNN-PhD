@@ -19,7 +19,7 @@ namespace NEAT {
         : nodes(nodes_) {
         }
 
-        InnovNodeGene *find(int node_id) {
+        InnovNodeGene *find(size_t node_id) {
             auto it = std::lower_bound(nodes.begin(), nodes.end(), node_id, nodelist_cmp_key);
             if(it == nodes.end())
                 return nullptr;

@@ -25,22 +25,22 @@ namespace NEAT {
 
 	class InnovLinkGene {
 		real_t _weight; // Weight of connection
-		int _in_node_id; // NNode inputting into the link
-		int _out_node_id; // NNode that the link affects
+		size_t _in_node_id; // NNode inputting into the link
+		size_t _out_node_id; // NNode that the link affects
 		bool _is_recurrent;
-		int _trait_id;  // identify the trait derived by this link
+		size_t _trait_id;  // identify the trait derived by this link
 
 	public:
-        inline int out_node_id() const { return _out_node_id; }
+        inline size_t out_node_id() const { return _out_node_id; }
         inline void set_out_node_id(int id) { _out_node_id = id; }
 
-        inline int in_node_id() const { return _in_node_id; }
+        inline size_t in_node_id() const { return _in_node_id; }
         inline void set_in_node_id(int id) { _in_node_id = id; }
 
         inline real_t &weight() { return _weight; }
 
-        inline int trait_id() const { return _trait_id; }
-        inline void set_trait_id(int tid) { _trait_id = tid; }
+        inline size_t trait_id() const { return _trait_id; }
+        inline void set_trait_id(size_t tid) { _trait_id = tid; }
 
         inline bool is_recurrent() const { return _is_recurrent; }
         inline void set_recurrent(bool r) { _is_recurrent = r; }
@@ -63,19 +63,19 @@ namespace NEAT {
                  real_t mnum);
 
 		//Construct a gene with a trait
-		InnovLinkGene(int trait_id,
+		InnovLinkGene(size_t trait_id,
                  real_t w,
-                 int inode_id,
-                 int onode_id,
+                 size_t inode_id,
+                 size_t onode_id,
                  bool recur,
                  int innov,
                  real_t mnum);
 
 		//Construct a gene off of another gene as a duplicate
 		InnovLinkGene(InnovLinkGene *g,
-                 int trait_id,
-                 int inode_id,
-                 int onode_id);
+                 size_t trait_id,
+                 size_t inode_id,
+                 size_t onode_id);
 
 		//Construct a gene from a file spec given traits and nodes
 		InnovLinkGene(const char *argline);

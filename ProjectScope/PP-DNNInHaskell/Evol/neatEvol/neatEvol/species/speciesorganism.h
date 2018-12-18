@@ -11,7 +11,7 @@ namespace NEAT {
 		real_t expected_offspring; //Number of children this Organism may have
 		bool eliminate;  //Marker for destruction of inferior Organisms
 		bool champion; //Marks the species champ
-		int super_champ_offspring;  //Number of reserved offspring for a population leader
+		size_t super_champ_offspring;  //Number of reserved offspring for a population leader
 
         SpeciesOrganism(const SpeciesOrganism &other);
 		SpeciesOrganism(const Genome &genome);

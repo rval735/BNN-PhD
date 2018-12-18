@@ -36,7 +36,7 @@ namespace NEAT {
 		real_t ave_fitness; //The average fitness of the Species
 		real_t max_fitness; //Max fitness of the Species
 		real_t max_fitness_ever; //The max it ever had
-		int expected_offspring;
+		size_t expected_offspring;
 		bool novel;
 		bool checked;
 		bool obliterate;  //Allows killing off in competitive coevolution stagnation

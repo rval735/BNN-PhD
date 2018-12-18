@@ -28,15 +28,15 @@ namespace NEAT {
     class InnovationId {
     public:
 		innovtype innovation_type;
-		int node_in_id;
-		int node_out_id;
+		size_t node_in_id;
+		size_t node_out_id;
 		int old_innov_num;
 		bool recur_flag;
 
         // Node
-        InnovationId(int nin, int nout, int oldinnov);
+        InnovationId(size_t nin, size_t nout, int oldinnov);
         // Link
-        InnovationId(int nin, int nout, bool recur);
+        InnovationId(size_t nin, size_t nout, bool recur);
 
         bool operator<(const InnovationId &other) const;
         bool operator==(const InnovationId &other) const;
@@ -45,22 +45,22 @@ namespace NEAT {
     class InnovationParms {
     public:
 		real_t new_weight;
-		int new_trait_id;
+		size_t new_trait_id;
 
         InnovationParms();
-        InnovationParms(real_t w, int t);
+        InnovationParms(real_t w, size_t t);
     };
 
     class IndividualInnovation {
     public:
         typedef std::function<void (const class Innovation *innov)> ApplyFunc;
 
-        int population_index;
+        size_t population_index;
         InnovationId id;
         InnovationParms parms;
         ApplyFunc apply;
 
-        IndividualInnovation(int population_index_,
+        IndividualInnovation(size_t population_index_,
                              InnovationId id_,
                              InnovationParms parms_,
                              ApplyFunc apply_);

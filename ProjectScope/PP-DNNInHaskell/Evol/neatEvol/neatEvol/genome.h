@@ -22,7 +22,7 @@ namespace NEAT {
     class Genome {
     public:
         rng_t rng;
-		int genome_id;
+		size_t genome_id;
         
         virtual ~Genome() {}
 

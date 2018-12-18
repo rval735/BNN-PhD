@@ -30,7 +30,7 @@ struct Config {
     real_t max_err;
     node_size_t ninputs;
     node_size_t noutputs;
-    int nsteps;
+    size_t nsteps;
     uchar steps[];
 
     __net_eval_decl static size_t sizeof_step(node_size_t ninputs, node_size_t noutputs) {
