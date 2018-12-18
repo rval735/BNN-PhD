@@ -1198,7 +1198,13 @@ A Style-Based Generator Architecture for Generative Adversarial Networks
 - Introduces a new, highly varied and high-quality dataset of human faces
 - Used FlickrFaces-HQ (FFHQ), consisting of 70,000 high-quality images at 1024 resolution
 
+Progressive Growing of GANs for Improved Quality, Stability, and Variation
+- Grow both the generator and discriminator progressively: add new layers that model increasingly fine details as training progresses
+- Increase the variation in generated images, achieving a record inception score of 8.80 in unsupervised CIFAR10
+- Dataset, implementation in github, along with shared trained networks, datasets and results in their webpage
+
 < DCGAN
+
 --------> Languages
 
 A Comparative Study of Programming Languages in Rosetta Code
@@ -1835,6 +1841,11 @@ A performance benchmarking analysis of Hypervisors Containers and Unikernels on 
 - Lack of stable support for ARMv8
 - Unikernels combine the best of containers and VMs and this makes them lightweight and secure at the same time
 
+The Dataset Nutrition Label- A Framework To Drive Higher Data Quality Standards
+- Diagnostic framework that lowers the barrier to standardized data analysis
+- Providing a distilled yet comprehensive overview of dataset "ingredients" before AI model development
+- For those building and publishing datasets, the Label creates an expectation of explanation
+
 < Other
 
 ------> SNN
@@ -2026,5 +2037,20 @@ A Public Key Compression Method for Fully Homomorphic Encryption using Genetic A
 - Optimizes public keys compression techniques using Genetic Algorithms
 - Used a  variant runtime primitive cryptographic model of Coron
 - From 18MB to 630KB vs 784MB previous work
+
+Evolutionary Neuro-Fuzzy Systems and Applications
+- Neural fuzzy system and an evolutionary fuzzy system hybridises the approximate reasoning mechanism of fuzzy systems
+- Hybridise the neurocomputing approach with the solution-searching ability of evolutionary computing
+- Attention to the combined use of evolutionary algorithms and neural networks in order to endow fuzzy systems with learning and adaptive capabilities
+
+Dynamic High Frequency Trading- A Neuro-Evolutionary Approach
+- NEAT evolve of dynamic trading agents for the German Bond Futures Market
+- Four fitness functions are tested and their out of sample performance is presented
+- Fail to yield positive returns when realistic transaction costs are included
+
+Artificial evolution using neuroevolution of augmenting topologies (NEAT) for kinetics study in diverse viscous mediums
+- Evolution of artificial creatures which moves in a 3D virtual environment
+- Creatures with similar morphological traits are grouped into the same species to limit the complexity of the search space
+- Crossover of the neural networks is conducted by the NEAT algorithm
 
 < Evolutionary

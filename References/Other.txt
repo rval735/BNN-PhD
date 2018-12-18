@@ -15,3 +15,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8567366
 
 A Performance Benchmarking Analysis of Hypervisors Containers and Unikernels on ARMv8 and x86 CPUs
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8443248
+
+The Dataset Nutrition Label- A Framework To Drive Higher Data Quality Standards
+https://arxiv.org/abs/1805.03677

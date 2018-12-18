@@ -100,3 +100,12 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11893295_130
 
 A Public Key Compression Method for Fully Homomorphic Encryption using Genetic Algorithms
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7528127
+
+Evolutionary Neuro-Fuzzy Systems and Applications
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-540-72377-6_2
+
+Dynamic High Frequency Trading- A Neuro-Evolutionary Approach
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-01129-0_27
+
+Artificial evolution using neuroevolution of augmenting topologies (NEAT) for kinetics study in diverse viscous mediums
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/s00521-016-2664-2

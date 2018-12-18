@@ -56,3 +56,6 @@ https://eng.uber.com/go-explore/
 
 A Style-Based Generator Architecture for Generative Adversarial Networks
 https://arxiv.org/abs/1812.04948
+
+Progressive Growing of GANs for Improved Quality, Stability, and Variation
+https://research.nvidia.com/publication/2017-10_Progressive-Growing-of
