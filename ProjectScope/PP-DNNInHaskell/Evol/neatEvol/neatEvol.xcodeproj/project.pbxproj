@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CE1F92121C8F350008D838B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F92021C8F350008D838B /* main.cpp */; };
+		2CE1F93721C8F3C9008D838B /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F92821C8F3C9008D838B /* util.cpp */; };
+		2CE1F93821C8F3C9008D838B /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F92A21C8F3C9008D838B /* resource.cpp */; };
+		2CE1F93921C8F3C9008D838B /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F92B21C8F3C9008D838B /* rng.cpp */; };
+		2CE1F93A21C8F3C9008D838B /* timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F92C21C8F3C9008D838B /* timer.cpp */; };
+		2CE1F93B21C8F3C9008D838B /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F93021C8F3C9008D838B /* map.cpp */; };
+		2CE1F94221C8F6E5008D838B /* neat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F94121C8F6E5008D838B /* neat.cpp */; };
+		2CE1F94521C90E23008D838B /* organism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F94321C90E23008D838B /* organism.cpp */; };
+		2CE1F94821C9108A008D838B /* genomemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F94721C9108A008D838B /* genomemanager.cpp */; };
+		2CE1F95721C910B6008D838B /* cpunetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F94C21C910B6008D838B /* cpunetwork.cpp */; };
+		2CE1F96921C910FB008D838B /* trait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F95C21C910FB008D838B /* trait.cpp */; };
+		2CE1F96A21C910FB008D838B /* innovnodegene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F95D21C910FB008D838B /* innovnodegene.cpp */; };
+		2CE1F96B21C910FB008D838B /* innovation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F95E21C910FB008D838B /* innovation.cpp */; };
+		2CE1F96C21C910FB008D838B /* innovgenome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F95F21C910FB008D838B /* innovgenome.cpp */; };
+		2CE1F96D21C910FB008D838B /* innovgenomemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F96221C910FB008D838B /* innovgenomemanager.cpp */; };
+		2CE1F96E21C910FB008D838B /* innovlinkgene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F96321C910FB008D838B /* innovlinkgene.cpp */; };
+		2CE1F97121C913D3008D838B /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE1F97021C913D3008D838B /* libomp.dylib */; };
+		2CE1F97421C91625008D838B /* population.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F97221C91624008D838B /* population.cpp */; };
+		2CE1F97C21C9164F008D838B /* species.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F97621C9164F008D838B /* species.cpp */; };
+		2CE1F97D21C9164F008D838B /* speciesorganism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F97821C9164F008D838B /* speciesorganism.cpp */; };
+		2CE1F97E21C9164F008D838B /* speciespopulation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F97B21C9164F008D838B /* speciespopulation.cpp */; };
+		2CE1F99021C9167E008D838B /* experiment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98221C9167E008D838B /* experiment.cpp */; };
+		2CE1F99121C9167E008D838B /* maze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98521C9167E008D838B /* maze.cpp */; };
+		2CE1F99221C9167E008D838B /* mazeevaluator.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98621C9167E008D838B /* mazeevaluator.cxx */; };
+		2CE1F99321C9167E008D838B /* cfg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98821C9167E008D838B /* cfg.cpp */; };
+		2CE1F99421C9167E008D838B /* staticevaluator.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98921C9167E008D838B /* staticevaluator.cxx */; };
+		2CE1F99521C9167E008D838B /* xnor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98A21C9167E008D838B /* xnor.cpp */; };
+		2CE1F99621C9167E008D838B /* sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98B21C9167E008D838B /* sequence.cpp */; };
+		2CE1F99721C9167E008D838B /* xor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98D21C9167E008D838B /* xor.cpp */; };
+		2CE1F99821C9167E008D838B /* regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98F21C9167E008D838B /* regex.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CE1F91B21C8F350008D838B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2CE1F91D21C8F350008D838B /* neatEvol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = neatEvol; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE1F92021C8F350008D838B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2CE1F92821C8F3C9008D838B /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		2CE1F92921C8F3C9008D838B /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		2CE1F92A21C8F3C9008D838B /* resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resource.cpp; sourceTree = "<group>"; };
+		2CE1F92B21C8F3C9008D838B /* rng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rng.cpp; sourceTree = "<group>"; };
+		2CE1F92C21C8F3C9008D838B /* timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timer.cpp; sourceTree = "<group>"; };
+		2CE1F92D21C8F3C9008D838B /* rng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rng.h; sourceTree = "<group>"; };
+		2CE1F92E21C8F3C9008D838B /* organismsbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = organismsbuffer.h; sourceTree = "<group>"; };
+		2CE1F92F21C8F3C9008D838B /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		2CE1F93021C8F3C9008D838B /* map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
+		2CE1F93121C8F3C9008D838B /* std.h.gch */ = {isa = PBXFileReference; lastKnownFileType = file; path = std.h.gch; sourceTree = "<group>"; };
+		2CE1F93221C8F3C9008D838B /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		2CE1F93321C8F3C9008D838B /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		2CE1F93421C8F3C9008D838B /* std.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = std.hxx; sourceTree = "<group>"; };
+		2CE1F93521C8F3C9008D838B /* stats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stats.h; sourceTree = "<group>"; };
+		2CE1F93621C8F3C9008D838B /* std.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = std.h; sourceTree = "<group>"; };
+		2CE1F93F21C8F69F008D838B /* neat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neat.h; sourceTree = "<group>"; };
+		2CE1F94021C8F6C9008D838B /* neattypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neattypes.h; sourceTree = "<group>"; };
+		2CE1F94121C8F6E5008D838B /* neat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = neat.cpp; sourceTree = "<group>"; };
+		2CE1F94321C90E23008D838B /* organism.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = organism.cpp; sourceTree = "<group>"; };
+		2CE1F94421C90E23008D838B /* organism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = organism.h; sourceTree = "<group>"; };
+		2CE1F94621C9108A008D838B /* genomemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genomemanager.h; sourceTree = "<group>"; };
+		2CE1F94721C9108A008D838B /* genomemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = genomemanager.cpp; sourceTree = "<group>"; };
+		2CE1F94B21C910B6008D838B /* cpunetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpunetwork.h; sourceTree = "<group>"; };
+		2CE1F94C21C910B6008D838B /* cpunetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cpunetwork.cpp; sourceTree = "<group>"; };
+		2CE1F94D21C910B6008D838B /* cpunetworkexecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpunetworkexecutor.h; sourceTree = "<group>"; };
+		2CE1F95521C910B6008D838B /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
+		2CE1F95621C910B6008D838B /* networkexecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = networkexecutor.h; sourceTree = "<group>"; };
+		2CE1F95821C910E1008D838B /* genome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genome.h; sourceTree = "<group>"; };
+		2CE1F95A21C910FB008D838B /* innovlinkgene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innovlinkgene.h; sourceTree = "<group>"; };
+		2CE1F95B21C910FB008D838B /* recurrencychecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recurrencychecker.h; sourceTree = "<group>"; };
+		2CE1F95C21C910FB008D838B /* trait.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trait.cpp; sourceTree = "<group>"; };
+		2CE1F95D21C910FB008D838B /* innovnodegene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innovnodegene.cpp; sourceTree = "<group>"; };
+		2CE1F95E21C910FB008D838B /* innovation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innovation.cpp; sourceTree = "<group>"; };
+		2CE1F95F21C910FB008D838B /* innovgenome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innovgenome.cpp; sourceTree = "<group>"; };
+		2CE1F96021C910FB008D838B /* innovnodegene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innovnodegene.h; sourceTree = "<group>"; };
+		2CE1F96121C910FB008D838B /* protoinnovlinkgene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = protoinnovlinkgene.h; sourceTree = "<group>"; };
+		2CE1F96221C910FB008D838B /* innovgenomemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innovgenomemanager.cpp; sourceTree = "<group>"; };
+		2CE1F96321C910FB008D838B /* innovlinkgene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = innovlinkgene.cpp; sourceTree = "<group>"; };
+		2CE1F96421C910FB008D838B /* innovgenome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innovgenome.h; sourceTree = "<group>"; };
+		2CE1F96521C910FB008D838B /* trait.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trait.h; sourceTree = "<group>"; };
+		2CE1F96621C910FB008D838B /* innovation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innovation.h; sourceTree = "<group>"; };
+		2CE1F96721C910FB008D838B /* innovgenomemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innovgenomemanager.h; sourceTree = "<group>"; };
+		2CE1F96821C910FB008D838B /* innovnodelookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = innovnodelookup.h; sourceTree = "<group>"; };
+		2CE1F97021C913D3008D838B /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../../../../../usr/local/Cellar/libomp/7.0.0/lib/libomp.dylib; sourceTree = "<group>"; };
+		2CE1F97221C91624008D838B /* population.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = population.cpp; sourceTree = "<group>"; };
+		2CE1F97321C91624008D838B /* population.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = population.h; sourceTree = "<group>"; };
+		2CE1F97621C9164F008D838B /* species.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = species.cpp; sourceTree = "<group>"; };
+		2CE1F97721C9164F008D838B /* speciespopulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speciespopulation.h; sourceTree = "<group>"; };
+		2CE1F97821C9164F008D838B /* speciesorganism.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = speciesorganism.cpp; sourceTree = "<group>"; };
+		2CE1F97921C9164F008D838B /* species.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = species.h; sourceTree = "<group>"; };
+		2CE1F97A21C9164F008D838B /* speciesorganism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speciesorganism.h; sourceTree = "<group>"; };
+		2CE1F97B21C9164F008D838B /* speciespopulation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = speciespopulation.cpp; sourceTree = "<group>"; };
+		2CE1F98021C9167E008D838B /* evaluatorexperiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evaluatorexperiment.h; sourceTree = "<group>"; };
+		2CE1F98121C9167E008D838B /* experiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = experiment.h; sourceTree = "<group>"; };
+		2CE1F98221C9167E008D838B /* experiment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = experiment.cpp; sourceTree = "<group>"; };
+		2CE1F98421C9167E008D838B /* mazeevaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mazeevaluator.h; sourceTree = "<group>"; };
+		2CE1F98521C9167E008D838B /* maze.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
+		2CE1F98621C9167E008D838B /* mazeevaluator.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mazeevaluator.cxx; sourceTree = "<group>"; };
+		2CE1F98821C9167E008D838B /* cfg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cfg.cpp; sourceTree = "<group>"; };
+		2CE1F98921C9167E008D838B /* staticevaluator.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = staticevaluator.cxx; sourceTree = "<group>"; };
+		2CE1F98A21C9167E008D838B /* xnor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xnor.cpp; sourceTree = "<group>"; };
+		2CE1F98B21C9167E008D838B /* sequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sequence.cpp; sourceTree = "<group>"; };
+		2CE1F98C21C9167E008D838B /* staticevaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticevaluator.h; sourceTree = "<group>"; };
+		2CE1F98D21C9167E008D838B /* xor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xor.cpp; sourceTree = "<group>"; };
+		2CE1F98E21C9167E008D838B /* staticexperiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticexperiment.h; sourceTree = "<group>"; };
+		2CE1F98F21C9167E008D838B /* regex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regex.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CE1F91A21C8F350008D838B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE1F97121C913D3008D838B /* libomp.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CE1F91421C8F350008D838B = {
+			isa = PBXGroup;
+			children = (
+				2CE1F91F21C8F350008D838B /* neatEvol */,
+				2CE1F91E21C8F350008D838B /* Products */,
+				2CE1F96F21C913D3008D838B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2CE1F91E21C8F350008D838B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F91D21C8F350008D838B /* neatEvol */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CE1F91F21C8F350008D838B /* neatEvol */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F97F21C9167E008D838B /* experiments */,
+				2CE1F97521C9164F008D838B /* species */,
+				2CE1F95921C910FB008D838B /* innovgenome */,
+				2CE1F94921C910B6008D838B /* network */,
+				2CE1F92721C8F3C9008D838B /* util */,
+				2CE1F92021C8F350008D838B /* main.cpp */,
+				2CE1F93F21C8F69F008D838B /* neat.h */,
+				2CE1F94121C8F6E5008D838B /* neat.cpp */,
+				2CE1F94021C8F6C9008D838B /* neattypes.h */,
+				2CE1F94321C90E23008D838B /* organism.cpp */,
+				2CE1F94421C90E23008D838B /* organism.h */,
+				2CE1F95821C910E1008D838B /* genome.h */,
+				2CE1F94721C9108A008D838B /* genomemanager.cpp */,
+				2CE1F94621C9108A008D838B /* genomemanager.h */,
+				2CE1F97221C91624008D838B /* population.cpp */,
+				2CE1F97321C91624008D838B /* population.h */,
+			);
+			path = neatEvol;
+			sourceTree = "<group>";
+		};
+		2CE1F92721C8F3C9008D838B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F92821C8F3C9008D838B /* util.cpp */,
+				2CE1F92921C8F3C9008D838B /* map.h */,
+				2CE1F92A21C8F3C9008D838B /* resource.cpp */,
+				2CE1F92B21C8F3C9008D838B /* rng.cpp */,
+				2CE1F92C21C8F3C9008D838B /* timer.cpp */,
+				2CE1F92D21C8F3C9008D838B /* rng.h */,
+				2CE1F92E21C8F3C9008D838B /* organismsbuffer.h */,
+				2CE1F92F21C8F3C9008D838B /* timer.h */,
+				2CE1F93021C8F3C9008D838B /* map.cpp */,
+				2CE1F93121C8F3C9008D838B /* std.h.gch */,
+				2CE1F93221C8F3C9008D838B /* util.h */,
+				2CE1F93321C8F3C9008D838B /* resource.h */,
+				2CE1F93421C8F3C9008D838B /* std.hxx */,
+				2CE1F93521C8F3C9008D838B /* stats.h */,
+				2CE1F93621C8F3C9008D838B /* std.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		2CE1F94921C910B6008D838B /* network */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F94A21C910B6008D838B /* cpu */,
+				2CE1F94E21C910B6008D838B /* cuda */,
+				2CE1F95521C910B6008D838B /* network.h */,
+				2CE1F95621C910B6008D838B /* networkexecutor.h */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		2CE1F94A21C910B6008D838B /* cpu */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F94B21C910B6008D838B /* cpunetwork.h */,
+				2CE1F94C21C910B6008D838B /* cpunetwork.cpp */,
+				2CE1F94D21C910B6008D838B /* cpunetworkexecutor.h */,
+			);
+			path = cpu;
+			sourceTree = "<group>";
+		};
+		2CE1F94E21C910B6008D838B /* cuda */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cuda;
+			sourceTree = "<group>";
+		};
+		2CE1F95921C910FB008D838B /* innovgenome */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F95A21C910FB008D838B /* innovlinkgene.h */,
+				2CE1F95B21C910FB008D838B /* recurrencychecker.h */,
+				2CE1F95C21C910FB008D838B /* trait.cpp */,
+				2CE1F95D21C910FB008D838B /* innovnodegene.cpp */,
+				2CE1F95E21C910FB008D838B /* innovation.cpp */,
+				2CE1F95F21C910FB008D838B /* innovgenome.cpp */,
+				2CE1F96021C910FB008D838B /* innovnodegene.h */,
+				2CE1F96121C910FB008D838B /* protoinnovlinkgene.h */,
+				2CE1F96221C910FB008D838B /* innovgenomemanager.cpp */,
+				2CE1F96321C910FB008D838B /* innovlinkgene.cpp */,
+				2CE1F96421C910FB008D838B /* innovgenome.h */,
+				2CE1F96521C910FB008D838B /* trait.h */,
+				2CE1F96621C910FB008D838B /* innovation.h */,
+				2CE1F96721C910FB008D838B /* innovgenomemanager.h */,
+				2CE1F96821C910FB008D838B /* innovnodelookup.h */,
+			);
+			path = innovgenome;
+			sourceTree = "<group>";
+		};
+		2CE1F96F21C913D3008D838B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F97021C913D3008D838B /* libomp.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2CE1F97521C9164F008D838B /* species */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F97621C9164F008D838B /* species.cpp */,
+				2CE1F97721C9164F008D838B /* speciespopulation.h */,
+				2CE1F97821C9164F008D838B /* speciesorganism.cpp */,
+				2CE1F97921C9164F008D838B /* species.h */,
+				2CE1F97A21C9164F008D838B /* speciesorganism.h */,
+				2CE1F97B21C9164F008D838B /* speciespopulation.cpp */,
+			);
+			path = species;
+			sourceTree = "<group>";
+		};
+		2CE1F97F21C9167E008D838B /* experiments */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F98021C9167E008D838B /* evaluatorexperiment.h */,
+				2CE1F98121C9167E008D838B /* experiment.h */,
+				2CE1F98221C9167E008D838B /* experiment.cpp */,
+				2CE1F98321C9167E008D838B /* maze */,
+				2CE1F98721C9167E008D838B /* static */,
+			);
+			path = experiments;
+			sourceTree = "<group>";
+		};
+		2CE1F98321C9167E008D838B /* maze */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F98421C9167E008D838B /* mazeevaluator.h */,
+				2CE1F98521C9167E008D838B /* maze.cpp */,
+				2CE1F98621C9167E008D838B /* mazeevaluator.cxx */,
+			);
+			path = maze;
+			sourceTree = "<group>";
+		};
+		2CE1F98721C9167E008D838B /* static */ = {
+			isa = PBXGroup;
+			children = (
+				2CE1F98821C9167E008D838B /* cfg.cpp */,
+				2CE1F98921C9167E008D838B /* staticevaluator.cxx */,
+				2CE1F98A21C9167E008D838B /* xnor.cpp */,
+				2CE1F98B21C9167E008D838B /* sequence.cpp */,
+				2CE1F98C21C9167E008D838B /* staticevaluator.h */,
+				2CE1F98D21C9167E008D838B /* xor.cpp */,
+				2CE1F98E21C9167E008D838B /* staticexperiment.h */,
+				2CE1F98F21C9167E008D838B /* regex.cpp */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CE1F91C21C8F350008D838B /* neatEvol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE1F92421C8F350008D838B /* Build configuration list for PBXNativeTarget "neatEvol" */;
+			buildPhases = (
+				2CE1F91921C8F350008D838B /* Sources */,
+				2CE1F91A21C8F350008D838B /* Frameworks */,
+				2CE1F91B21C8F350008D838B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = neatEvol;
+			productName = neatEvol;
+			productReference = 2CE1F91D21C8F350008D838B /* neatEvol */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CE1F91521C8F350008D838B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = RHVT;
+				TargetAttributes = {
+					2CE1F91C21C8F350008D838B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2CE1F91821C8F350008D838B /* Build configuration list for PBXProject "neatEvol" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2CE1F91421C8F350008D838B;
+			productRefGroup = 2CE1F91E21C8F350008D838B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CE1F91C21C8F350008D838B /* neatEvol */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CE1F91921C8F350008D838B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE1F99321C9167E008D838B /* cfg.cpp in Sources */,
+				2CE1F96D21C910FB008D838B /* innovgenomemanager.cpp in Sources */,
+				2CE1F99521C9167E008D838B /* xnor.cpp in Sources */,
+				2CE1F99221C9167E008D838B /* mazeevaluator.cxx in Sources */,
+				2CE1F93B21C8F3C9008D838B /* map.cpp in Sources */,
+				2CE1F95721C910B6008D838B /* cpunetwork.cpp in Sources */,
+				2CE1F92121C8F350008D838B /* main.cpp in Sources */,
+				2CE1F93A21C8F3C9008D838B /* timer.cpp in Sources */,
+				2CE1F93721C8F3C9008D838B /* util.cpp in Sources */,
+				2CE1F93821C8F3C9008D838B /* resource.cpp in Sources */,
+				2CE1F96921C910FB008D838B /* trait.cpp in Sources */,
+				2CE1F99021C9167E008D838B /* experiment.cpp in Sources */,
+				2CE1F99421C9167E008D838B /* staticevaluator.cxx in Sources */,
+				2CE1F99721C9167E008D838B /* xor.cpp in Sources */,
+				2CE1F94521C90E23008D838B /* organism.cpp in Sources */,
+				2CE1F99121C9167E008D838B /* maze.cpp in Sources */,
+				2CE1F96E21C910FB008D838B /* innovlinkgene.cpp in Sources */,
+				2CE1F97C21C9164F008D838B /* species.cpp in Sources */,
+				2CE1F97D21C9164F008D838B /* speciesorganism.cpp in Sources */,
+				2CE1F99821C9167E008D838B /* regex.cpp in Sources */,
+				2CE1F94821C9108A008D838B /* genomemanager.cpp in Sources */,
+				2CE1F97E21C9164F008D838B /* speciespopulation.cpp in Sources */,
+				2CE1F96A21C910FB008D838B /* innovnodegene.cpp in Sources */,
+				2CE1F99621C9167E008D838B /* sequence.cpp in Sources */,
+				2CE1F94221C8F6E5008D838B /* neat.cpp in Sources */,
+				2CE1F97421C91625008D838B /* population.cpp in Sources */,
+				2CE1F93921C8F3C9008D838B /* rng.cpp in Sources */,
+				2CE1F96B21C910FB008D838B /* innovation.cpp in Sources */,
+				2CE1F96C21C910FB008D838B /* innovgenome.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2CE1F92221C8F350008D838B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CE1F92321C8F350008D838B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2CE1F92521C8F350008D838B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAA826F5K4;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/libomp/7.0.0/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/libomp/7.0.0/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2CE1F92621C8F350008D838B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UAA826F5K4;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/libomp/7.0.0/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/libomp/7.0.0/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CE1F91821C8F350008D838B /* Build configuration list for PBXProject "neatEvol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE1F92221C8F350008D838B /* Debug */,
+				2CE1F92321C8F350008D838B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CE1F92421C8F350008D838B /* Build configuration list for PBXNativeTarget "neatEvol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE1F92521C8F350008D838B /* Debug */,
+				2CE1F92621C8F350008D838B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CE1F91521C8F350008D838B /* Project object */;
+}
