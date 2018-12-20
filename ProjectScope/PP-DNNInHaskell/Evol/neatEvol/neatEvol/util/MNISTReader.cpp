@@ -7,6 +7,7 @@
 //
 // Source:
 // https://stackoverflow.com/questions/8286668/how-to-read-mnist-data-in-c
+// http://yann.lecun.com/exdb/mnist/
 
 #include "MNISTReader.hpp"
 
@@ -52,13 +53,14 @@ uint **read_mnist_images(string full_path, int &number_of_images, int &image_siz
         
         uint **dataset = new uint *[number_of_images];
         unsigned char img[image_size];
-
+// 0,203:185
         for(int i = 0; i < number_of_images; i++) {
             dataset[i] = new uint[image_size];
             file.read((char *)img, image_size);
             
             for(int j = 0; j < image_size; j++){
                 dataset[i][j] = static_cast<uint>(img[j]);
+//                cout << i << "," << j << ":" << dataset[i][j] << "\n";
             }
         }
         
