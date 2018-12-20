@@ -37,6 +37,8 @@
 		2CE1F99621C9167E008D838B /* sequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98B21C9167E008D838B /* sequence.cpp */; };
 		2CE1F99721C9167E008D838B /* xor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98D21C9167E008D838B /* xor.cpp */; };
 		2CE1F99821C9167E008D838B /* regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98F21C9167E008D838B /* regex.cpp */; };
+		2CE1F99A21CB10E3008D838B /* MNIST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F99921CB10E3008D838B /* MNIST.cpp */; };
+		2CE1F99D21CB2189008D838B /* MNISTReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F99B21CB2189008D838B /* MNISTReader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +65,6 @@
 		2CE1F92E21C8F3C9008D838B /* organismsbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = organismsbuffer.h; sourceTree = "<group>"; };
 		2CE1F92F21C8F3C9008D838B /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		2CE1F93021C8F3C9008D838B /* map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; };
-		2CE1F93121C8F3C9008D838B /* std.h.gch */ = {isa = PBXFileReference; lastKnownFileType = file; path = std.h.gch; sourceTree = "<group>"; };
 		2CE1F93221C8F3C9008D838B /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		2CE1F93321C8F3C9008D838B /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
 		2CE1F93421C8F3C9008D838B /* std.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = std.hxx; sourceTree = "<group>"; };
@@ -120,6 +121,9 @@
 		2CE1F98D21C9167E008D838B /* xor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xor.cpp; sourceTree = "<group>"; };
 		2CE1F98E21C9167E008D838B /* staticexperiment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticexperiment.h; sourceTree = "<group>"; };
 		2CE1F98F21C9167E008D838B /* regex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = regex.cpp; sourceTree = "<group>"; };
+		2CE1F99921CB10E3008D838B /* MNIST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MNIST.cpp; sourceTree = "<group>"; };
+		2CE1F99B21CB2189008D838B /* MNISTReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MNISTReader.cpp; sourceTree = "<group>"; };
+		2CE1F99C21CB2189008D838B /* MNISTReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MNISTReader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,12 +190,13 @@
 				2CE1F92E21C8F3C9008D838B /* organismsbuffer.h */,
 				2CE1F92F21C8F3C9008D838B /* timer.h */,
 				2CE1F93021C8F3C9008D838B /* map.cpp */,
-				2CE1F93121C8F3C9008D838B /* std.h.gch */,
 				2CE1F93221C8F3C9008D838B /* util.h */,
 				2CE1F93321C8F3C9008D838B /* resource.h */,
 				2CE1F93421C8F3C9008D838B /* std.hxx */,
 				2CE1F93521C8F3C9008D838B /* stats.h */,
 				2CE1F93621C8F3C9008D838B /* std.h */,
+				2CE1F99B21CB2189008D838B /* MNISTReader.cpp */,
+				2CE1F99C21CB2189008D838B /* MNISTReader.hpp */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -200,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				2CE1F94A21C910B6008D838B /* cpu */,
-				2CE1F94E21C910B6008D838B /* cuda */,
 				2CE1F95521C910B6008D838B /* network.h */,
 				2CE1F95621C910B6008D838B /* networkexecutor.h */,
 			);
@@ -215,13 +219,6 @@
 				2CE1F94D21C910B6008D838B /* cpunetworkexecutor.h */,
 			);
 			path = cpu;
-			sourceTree = "<group>";
-		};
-		2CE1F94E21C910B6008D838B /* cuda */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = cuda;
 			sourceTree = "<group>";
 		};
 		2CE1F95921C910FB008D838B /* innovgenome */ = {
@@ -292,12 +289,13 @@
 		2CE1F98721C9167E008D838B /* static */ = {
 			isa = PBXGroup;
 			children = (
+				2CE1F99921CB10E3008D838B /* MNIST.cpp */,
 				2CE1F98821C9167E008D838B /* cfg.cpp */,
 				2CE1F98921C9167E008D838B /* staticevaluator.cxx */,
-				2CE1F98A21C9167E008D838B /* xnor.cpp */,
 				2CE1F98B21C9167E008D838B /* sequence.cpp */,
 				2CE1F98C21C9167E008D838B /* staticevaluator.h */,
 				2CE1F98D21C9167E008D838B /* xor.cpp */,
+				2CE1F98A21C9167E008D838B /* xnor.cpp */,
 				2CE1F98E21C9167E008D838B /* staticexperiment.h */,
 				2CE1F98F21C9167E008D838B /* regex.cpp */,
 			);
@@ -361,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CE1F99321C9167E008D838B /* cfg.cpp in Sources */,
+				2CE1F99A21CB10E3008D838B /* MNIST.cpp in Sources */,
 				2CE1F96D21C910FB008D838B /* innovgenomemanager.cpp in Sources */,
 				2CE1F99521C9167E008D838B /* xnor.cpp in Sources */,
 				2CE1F99221C9167E008D838B /* mazeevaluator.cxx in Sources */,
@@ -370,6 +369,7 @@
 				2CE1F93A21C8F3C9008D838B /* timer.cpp in Sources */,
 				2CE1F93721C8F3C9008D838B /* util.cpp in Sources */,
 				2CE1F93821C8F3C9008D838B /* resource.cpp in Sources */,
+				2CE1F99D21CB2189008D838B /* MNISTReader.cpp in Sources */,
 				2CE1F96921C910FB008D838B /* trait.cpp in Sources */,
 				2CE1F99021C9167E008D838B /* experiment.cpp in Sources */,
 				2CE1F99421C9167E008D838B /* staticevaluator.cxx in Sources */,

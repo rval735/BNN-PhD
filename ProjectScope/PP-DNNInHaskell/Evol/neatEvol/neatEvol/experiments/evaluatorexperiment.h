@@ -34,7 +34,7 @@ namespace NEAT {
 
     public:
         typedef std::function<NetworkEvaluator *()> CreateEvaluatorFunc;
-        typedef std::function< std::vector<std::unique_ptr<Genome>> (rng_t rng)> CreateSeedsFunc;
+        typedef std::function<std::vector<std::unique_ptr<Genome>> (rng_t rng)> CreateSeedsFunc;
 
         CreateEvaluatorFunc create_evaluator;
         CreateSeedsFunc create_seeds;
