@@ -6,8 +6,8 @@ using namespace NEAT;
 using namespace std;
 
 struct ImgM {
-    int lbl;
-    vector<uint> img;
+    real_t lbl;
+    vector<real_t> img;
 };
 
 vector<ImgM> loadMNIST() {
@@ -26,19 +26,22 @@ vector<ImgM> loadMNIST() {
     }
     
     vector<ImgM> dataset = vector<ImgM>(numLabels);
+    uint dataSetReduction = 4;
     
     for (int i = 0; i < numLabels; i++) {
-        vector<uint> vals = vector<uint>(imgSize);
         
-        for (int j = 0; j < imgSize; j++) {
-            vals[j] = imgs[i][j];
+        vector<real_t> vals = vector<real_t>(imgSize / dataSetReduction);
+        
+        for (uint j = 0; j < imgSize / dataSetReduction; j++) {
+            real_t val = (imgs[i][j] + imgs[i][j + 1] + imgs[i][j + 2] + imgs[i][j + 3]) / dataSetReduction;
+            vals[j] = val;
 //            cout << i << "," << j << ":" << vals[j] << "\n";
         }
         
         ImgM elem;
-        elem.lbl = lbls[i];
+        elem.lbl = static_cast<real_t>(lbls[i]);
         elem.img = vals;
-        dataset.push_back(elem);
+        dataset[i] = elem;
     }
     
     delete lbls;
@@ -55,8 +58,6 @@ static struct MNISTInit {
             static vector<ImgM> fullDataset = vector<ImgM>();
             
             const real_t weight = 1.0;
-            const real_t T = 1;
-            const real_t F = 0;
             const uint batchSize = 50;
             
             if (fullDataset.empty()) {
@@ -66,30 +67,39 @@ static struct MNISTInit {
             vector<ImgM>::const_iterator subBegin = fullDataset.begin() + (batchSize * batch);
             vector<ImgM>::const_iterator subEnd = fullDataset.begin() + (batchSize + batchSize * batch);
             vector<ImgM> subDataset(subBegin, subEnd);
-//            vector<Test> tests = vector<Test>(batchSize);
+//            vector<Step> steps = vector<Step>(batchSize);
+            vector<Test> tests; // = vector<Test>(batchSize);
+            std::ostringstream nameSt;
             
-//            for (int i = 0; i < batchSize; i++) {
-//                Step stp = Step(
-//
-//                tests[i] = {{
-//                    {{1, 1}, {1}, weight},
-//                }};
-//            }
+            nameSt << "MNIST-Batch:" << batchSize * batch;
             
-            vector<Test> tests = {
-                {{
-                    {{F, F}, {F}, weight},
-                }},
-                {{
-                    {{F, T}, {T}, weight},
-                }},
-                {{
-                    {{T, F}, {T}, weight},
-                }},
-                {{
-                    {{T, T}, {F}, weight}
-                }}
-            };
+            for (uint i = 0; i < batchSize; i++) {
+                ImgM elem = subDataset[i];
+                vector<real_t> oneLbl = vector<real_t>(1);
+                oneLbl[0] = elem.lbl;
+                vector<Step> stp;
+                stp.push_back(Step(elem.img, oneLbl, weight));
+//                cout.setf(ios::fixed);
+//                cout << stp[0].input[0] << "--" << stp[0].output[0] << "--" << stp[0].weight;
+                tests.push_back(Test(nameSt.str(), stp));
+            }
+            
+//            const real_t T = 1.0;
+//            const real_t F = 1.0;
+//            vector<Test> tests0 = {
+//                {{
+//                    {{F, F}, {F}, weight},
+//                }},
+//                {{
+//                    {{F, T}, {T}, weight},
+//                }},
+//                {{
+//                    {{T, F}, {T}, weight},
+//                }},
+//                {{
+//                    {{T, T}, {F}, weight}
+//                }}
+//            };
             
             cout << "--------";
             cout << "Batch: " << batch;
@@ -99,5 +109,4 @@ static struct MNISTInit {
         });
     }
 } init;
-
 

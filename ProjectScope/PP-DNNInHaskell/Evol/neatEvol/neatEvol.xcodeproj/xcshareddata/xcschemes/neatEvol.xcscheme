@@ -67,15 +67,19 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-c 10"
+            argument = "-c 100"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "-n 5000"
+            argument = "-n 50"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "-s complexify"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-s phased"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
