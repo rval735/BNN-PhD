@@ -1,0 +1,23 @@
+:set +s
+:set +t
+:set -DGHCI
+:set prompt ">>="
+:set -XOverloadedStrings
+:set -XFlexibleContexts
+:set -XDeriveGeneric
+:set -XDataKinds
+:set -XTypeApplications
+:set -XTypeOperators
+
+import           Control.Applicative
+import           Control.Arrow
+import           Control.Monad
+import           Control.Monad.Random
+import           Data.Function
+import           Data.List
+import           Data.Ord
+import           Text.Printf
+import           Test.HUnit              hiding (assert)
+import           Test.QuickCheck
+import           Test.QuickCheck.Monadic
+import           System.IO.Unsafe
