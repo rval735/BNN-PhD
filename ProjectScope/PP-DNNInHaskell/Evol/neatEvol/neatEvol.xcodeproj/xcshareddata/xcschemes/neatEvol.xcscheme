@@ -83,8 +83,12 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "MNIST"
+            argument = "cosF"
             isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "MNIST"
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "cfg-XSX"

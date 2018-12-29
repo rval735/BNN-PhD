@@ -13,4 +13,4 @@ module Main where
 import           CANMNIST
 
 main :: IO ()
-main = runMNIST
+main = runMNIST >>= print

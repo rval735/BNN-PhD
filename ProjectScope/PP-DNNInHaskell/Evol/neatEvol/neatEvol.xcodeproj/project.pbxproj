@@ -39,6 +39,7 @@
 		2CE1F99821C9167E008D838B /* regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F98F21C9167E008D838B /* regex.cpp */; };
 		2CE1F99A21CB10E3008D838B /* MNIST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F99921CB10E3008D838B /* MNIST.cpp */; };
 		2CE1F99D21CB2189008D838B /* MNISTReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CE1F99B21CB2189008D838B /* MNISTReader.cpp */; };
+		2CEE298D21D713BA00109D57 /* sinF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CEE298C21D713BA00109D57 /* sinF.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,6 +125,7 @@
 		2CE1F99921CB10E3008D838B /* MNIST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MNIST.cpp; sourceTree = "<group>"; };
 		2CE1F99B21CB2189008D838B /* MNISTReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MNISTReader.cpp; sourceTree = "<group>"; };
 		2CE1F99C21CB2189008D838B /* MNISTReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MNISTReader.hpp; sourceTree = "<group>"; };
+		2CEE298C21D713BA00109D57 /* sinF.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sinF.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 		2CE1F98721C9167E008D838B /* static */ = {
 			isa = PBXGroup;
 			children = (
+				2CEE298C21D713BA00109D57 /* sinF.cpp */,
 				2CE1F99921CB10E3008D838B /* MNIST.cpp */,
 				2CE1F98821C9167E008D838B /* cfg.cpp */,
 				2CE1F98921C9167E008D838B /* staticevaluator.cxx */,
@@ -367,6 +370,7 @@
 				2CE1F95721C910B6008D838B /* cpunetwork.cpp in Sources */,
 				2CE1F92121C8F350008D838B /* main.cpp in Sources */,
 				2CE1F93A21C8F3C9008D838B /* timer.cpp in Sources */,
+				2CEE298D21D713BA00109D57 /* sinF.cpp in Sources */,
 				2CE1F93721C8F3C9008D838B /* util.cpp in Sources */,
 				2CE1F93821C8F3C9008D838B /* resource.cpp in Sources */,
 				2CE1F99D21CB2189008D838B /* MNISTReader.cpp in Sources */,

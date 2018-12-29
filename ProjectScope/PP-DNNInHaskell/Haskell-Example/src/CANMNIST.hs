@@ -30,6 +30,8 @@ import           Data.Maybe          (fromJust)
 import           Data.Time.Clock     (UTCTime, diffUTCTime, getCurrentTime)
 import qualified Data.Vector.Unboxed as V
 import           ListExtras          (num2Bin', replaceElem)
+-- import qualified Prelude             as P
+import           CANExtras           (createZNTTVU)
 import           System.Random       (mkStdGen, split)
 
 runMNIST :: IO [CANNeuron]
@@ -130,6 +132,6 @@ trainSnd inputSize outputSize trainingN testingN dta nnSize llSize epochs startT
 
 trainCollapse :: [[CANNeuron]] -> [TrainElem] -> [TrainElem]
 trainCollapse nns trainSet = undefined
-    where qCs = P.map (`queryCANNN'` trainSet) nns
-          empty = createZNTTVU 0
-          trans = P.foldl (\(TrainElem _ x) y -> append y x) empty qCs
+    -- where qCs = map (`queryCANNN'` trainSet) nns
+    --       empty = createZNTTVU 0
+    --       trans = foldl (\(TrainElem _ x) y -> TrainElem y x) empty qCs
