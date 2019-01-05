@@ -1429,6 +1429,40 @@
     \field{year}{1991}
   \endentry
 
+  \entry{Hesamifard2017CryptoDLDN}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HE}{%
+         family={Hesamifard},
+         familyi={H\bibinitperiod},
+         given={Ehsan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Takabi},
+         familyi={T\bibinitperiod},
+         given={Hassan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Ghasemi},
+         familyi={G\bibinitperiod},
+         given={Mehdi},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Cryptography, Homomorphic encryption, MNIST}
+    \strng{namehash}{HETHGM1}
+    \strng{fullhash}{HETHGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{CryptoDL: Deep Neural Networks over Encrypted Data}
+    \field{volume}{abs/1711.05189}
+    \field{journaltitle}{CoRR}
+    \field{year}{2017}
+  \endentry
+
   \entry{8425178}{inproceedings}{}
     \name{author}{8}{}{%
       {{hash=HY}{%
