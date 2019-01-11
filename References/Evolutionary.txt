@@ -109,3 +109,10 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-01129
 
 Artificial evolution using neuroevolution of augmenting topologies (NEAT) for kinetics study in diverse viscous mediums
 https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/s00521-016-2664-2
+
+Large-Scale Evolution of Image Classifiers
+http://proceedings.mlr.press/v70/real17a.html
+https://blog.acolyer.org/2017/03/28/large-scale-evolution-of-image-classifiers/
+
+Regularized Evolution for Image Classifier Architecture Search
+https://arxiv.org/abs/1802.01548

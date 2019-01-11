@@ -1118,6 +1118,26 @@ Generating and designing DNA with deep generative models
 - Applied to designing probes for protein binding microarrays
 - Generative tools learn important structure from DNA sequences
 
+An Asynchronous Encryption Arithmetic Based on Laguerre Chaotic Neural Networks
+-
+-
+-
+
+Cache Friendly Parallelization of Neural Encoder-Decoder Models Without Padding on Multi-core Architecture
+-
+-
+-
+
+Generalized synchronization theorems for a kind of Neural Network with application in data encryption
+-
+-
+- 
+
+A chaotic encryption system using PCA neural networks
+-
+-
+-
+
 < NN
 -------> DCGAN
 
@@ -1173,9 +1193,10 @@ Evolving Mario Levels in the Latent Space of a Deep Convolutional Generative Adv
 -
 
 Learning to Protect Communications with Adversarial Neural Cryptography
--
--
--
+- Alice, Bob, and Eve networks that take N-bit random plaintext and key values, and produce N-entry floating-point ciphertexts
+- Dynamics of this adversarial training appear somewhat more reminiscent of evolutionary processes
+- Demonstrates that neural networks can learn to protect communications
+- An extra on the paper shows an example of using public keys to encrypt communications
 
 Metropolis-Hastings Generative Adversarial Networks
 - MH-GAN combines aspects of Markov chain Monte Carlo and GAN
@@ -1202,6 +1223,19 @@ Progressive Growing of GANs for Improved Quality, Stability, and Variation
 - Grow both the generator and discriminator progressively: add new layers that model increasingly fine details as training progresses
 - Increase the variation in generated images, achieving a record inception score of 8.80 in unsupervised CIFAR10
 - Dataset, implementation in github, along with shared trained networks, datasets and results in their webpage
+
+Binary Generative Adversarial Networks for Image Retrieval
+- BGAN can simultaneously learn a binary representation per image, and generate an image plausibly similar to the original one
+- BGAN significantly outperforms existing hashing methods by up to 107%
+- Back-propagation (BP) for learning and stochastic gradient descent (SGD) to minimize loss
+- Datasets: CIFAR-10, NUS-Wide, Flickr, hamming ranking as evaluation metrice
+
+Learning Perfectly Secure Cryptography to Protect Communications with Adversarial Neural Cryptography
+- ANC agents can learn the unbreakable One-Time Pad (OTP) algorithm
+- Communicate securely through an insecure communication channel without human knowledge
+- Propose an improvement to the ANC methodology using the concept of the Chosen-Plaintext Attack (CPA)
+- ANC is an unsupervised learning technique
+- This work presents the first Artificial Neural Network able to learn an unbreakable cryptographic technique, namely OTP
 
 < DCGAN
 
@@ -1812,6 +1846,11 @@ Accelerating low bit-width convolutional neural networks with embedded FPGA
 -
 -
 
+Training Generative Adversarial Networks with Binary Neurons by End-to-end Backpropagation
+- Binary neurons (deterministic or stochastic) at the output layer (i.e., the final layer) of the generator
+- Employ the sigmoid-adjusted straight-through estimators to estimate the gradients for binary neurons and train the whole network by end-to-end backpropagation.
+- Use the binarized version of the MNIST handwritten digit database (i >=0 ~ 1)
+
 < BNN
 
 ------> Other
@@ -2052,5 +2091,17 @@ Artificial evolution using neuroevolution of augmenting topologies (NEAT) for ki
 - Evolution of artificial creatures which moves in a 3D virtual environment
 - Creatures with similar morphological traits are grouped into the same species to limit the complexity of the search space
 - Crossover of the neural networks is conducted by the NEAT algorithm
+
+Large-Scale Evolution of Image Classifiers
+- Start with a population of 1000 very simple linear regression models, and then use tournament selection
+- Each evolutionary step, a worker process (250 of them running in parallel) chooses two individuals at random and compares their fitness
+- Using this strategy to search large spaces of complex image models requires considerable computation
+- Authors developed a massively-parallel, lock-free infrastructure
+- Children to inherit the parents’ weights whenever possible.
+
+Regularized Evolution for Image Classifier Architecture Search
+- Applying evolutionary algorithms to the search space like mutations that modify the cell by randomly reconnecting the inputs or randomly replacing the operations
+- Evolution can indeed find state-of-the-art models that either match or outperform hand-designs
+- Compares evolution with reinforcement learning and random search with ImageNet (82.8%)
 
 < Evolutionary

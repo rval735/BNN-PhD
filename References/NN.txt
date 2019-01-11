@@ -188,3 +188,15 @@ https://www.semanticscholar.org/paper/SecureNN%3A-Efficient-and-Private-Neural-N
 Generating and designing DNA with deep generative models
 https://arxiv.org/abs/1712.06148
 https://github.com/co9olguy/Generating-and-designing-DNA
+
+An Asynchronous Encryption Arithmetic Based on Laguerre Chaotic Neural Networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5209334
+
+Cache Friendly Parallelization of Neural Encoder-Decoder Models Without Padding on Multi-core Architecture
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7965079
+
+Generalized synchronization theorems for a kind of Neural Network with application in data encryption
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4582655
+
+A chaotic encryption system using PCA neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4670938

@@ -318,3 +318,6 @@ FINN-R- An End-to-End Deep-Learning Framework for Fast Exploration of Quantized 
 
 Accelerating low bit-width convolutional neural networks with embedded FPGA
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8056820
+
+Training Generative Adversarial Networks with Binary Neurons by End-to-end Backpropagation
+https://arxiv.org/abs/1810.04714
