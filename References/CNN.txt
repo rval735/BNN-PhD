@@ -114,3 +114,7 @@ https://openreview.net/forum?id=71BmK0m6qfAE8VvKUQWB
 
 Convolutional networks for fast, energy efficient neuromorphic computing
 https://www.pnas.org/content/113/41/11441
+
+Progressive Neural Architecture Search
+http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf
+http://openaccess.thecvf.com/ECCV2018.py

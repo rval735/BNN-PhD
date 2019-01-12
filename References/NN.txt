@@ -200,3 +200,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4582655
 
 A chaotic encryption system using PCA neural networks
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4670938
+
+QSGD- Communication-Efficient SGD via Gradient Quantization and Encoding
+https://papers.nips.cc/paper/6768-qsgd-communication-efficient-sgd-via-gradient-quantization-and-encoding

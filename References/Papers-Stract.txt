@@ -155,6 +155,11 @@ Convolutional Networks for Fast, Energy-Efficient Neuromorphic Computing
 - Uses a variant of an integrate-and-fire model with 23 configurable parameters 
 - Tests with CIFAR. SVHN, GTSRB, FlickrLogos, VAD and TIMIT
 
+Progressive Neural Architecture Search
+- Search the space in a progressive order, simplest models first
+- A learned predictor function is trained based on the measured performance of the cells we have visited so far, picking the K most promising ones
+- Tested on CIFAR-10(96.59) and ImageNet (82.9)
+
 < CNN
 
 ------> CNN-Fin
@@ -1138,6 +1143,12 @@ A chaotic encryption system using PCA neural networks
 -
 -
 
+QSGD- Communication-Efficient SGD via Gradient Quantization and Encoding
+- Quantized SGD (QSGD): a family of compression schemes for gradient updates which provides convergence guarantees
+- Smoothly trade off communication bandwidth and convergence time: nodes can adjust the number of bits sent per iteration, at the cost of possibly higher variance
+- Significant reductions in end-to-end training time
+- With 16GPUs, they can train the ResNet-152 network to full accuracy on ImageNet 1.8× faster than the full-precision variant
+
 < NN
 -------> DCGAN
 
@@ -2103,5 +2114,10 @@ Regularized Evolution for Image Classifier Architecture Search
 - Applying evolutionary algorithms to the search space like mutations that modify the cell by randomly reconnecting the inputs or randomly replacing the operations
 - Evolution can indeed find state-of-the-art models that either match or outperform hand-designs
 - Compares evolution with reinforcement learning and random search with ImageNet (82.8%)
+
+Intelligent decision-making through a simulation of evolution
+-
+-
+-
 
 < Evolutionary

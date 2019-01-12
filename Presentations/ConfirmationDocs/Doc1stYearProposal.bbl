@@ -17,6 +17,32 @@
 \endgroup
 
 \sortlist[entry]{nty/global/}
+  \entry{EvolStraOAI}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=AO}{%
+         family={AI},
+         familyi={A\bibinitperiod},
+         given={Open},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \keyw{evolution strategies, OpenAI, Atari, Videogames, Reinforcement
+  learning}
+    \strng{namehash}{AO1}
+    \strng{fullhash}{AO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Evolution Strategies as a Scalable Alternative to
+  Reinforcement Learning}
+    \verb{url}
+    \verb https://blog.openai.com/evolution-strategies/
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8226999}{article}{}
     \name{author}{11}{}{%
       {{hash=AK}{%
@@ -283,6 +309,82 @@
   Integrated Circuits and Systems}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{10.1007/3-540-61108-8_27}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BT}{%
+         family={B{\"a}ck},
+         familyi={B\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=AJM}{%
+         family={Alliot},
+         familyi={A\bibinitperiod},
+         given={Jean-Marc},
+         giveni={J\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Lutton},
+         familyi={L\bibinitperiod},
+         given={Evelyne},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Ronald},
+         familyi={R\bibinitperiod},
+         given={Edmund},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Schoenauer},
+         familyi={S\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Snyers},
+         familyi={S\bibinitperiod},
+         given={Dominique},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Evolutionary, evolution strategies, Genetic Algorithm}
+    \strng{namehash}{BT1}
+    \strng{fullhash}{BT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this paper, evolution strategies (ESs) --- a class of evolutionary
+  algorithms using normally distributed mutations, recombination, deterministic
+  selection of the $\mu$>1 best offspring individuals, and the principle of
+  self-adaptation for the collective on-line learning of strategy parameters
+  --- are described by demonstrating their differences to genetic algorithms.
+  By comparison of the algorithms, it is argued that the application of
+  canonical genetic algorithms for continuous parameter optimization problems
+  implies some difficulties caused by the encoding of continuous object
+  variables by binary strings and the constant mutation rate used in genetic
+  algorithms. Because they utilize a problem-adequate representation and a
+  suitable self-adaptive step size control guaranteeing linear convergence for
+  strictly convex problems, evolution strategies are argued to be more adequate
+  for continuous problems.%
+    }
+    \field{booktitle}{Artificial Evolution}
+    \field{isbn}{978-3-540-49948-0}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{Evolution strategies: An alternative evolutionary algorithm}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{1996}
   \endentry
 
   \entry{8373076}{inproceedings}{}
@@ -575,6 +677,62 @@
     \field{volume}{20}
     \field{journaltitle}{IEEE Transactions on Neural Networks}
     \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{4250190}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CL}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Alahakoon},
+         familyi={A\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary; backpropagation;neural nets;pattern
+  classification;search problems;topology;neuroevolution of augmenting
+  topologies;augmenting topology;data classification learning;neural
+  network;learning-NEAT training scheme;backpropagation;search problem;Network
+  topology;Artificial neural networks;Neural networks;Supervised
+  learning;Biological cells;Information technology;Evolutionary
+  computation;Unsupervised learning;Technological innovation}
+    \strng{namehash}{CLAD1}
+    \strng{fullhash}{CLAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Appropriate topology and connection weight are two very important
+  properties a neural network must have in order to successfully perform data
+  classification. In this paper, we propose a hybrid training scheme
+  Learning-NEAT (L-NEAT) for data classification problem. L-NEAT simplifies
+  evolution by dividing the complete problem domain into sub tasks and learn
+  the sub tasks by incorporating back propagation rule into the NeuroEvolution
+  of Augmenting Topologies (NEAT) algorithm. The new algorithm combines the
+  strength of searching for topology and weights from NEAT and back propagation
+  respectively while overcoming problems associated with direct use of NEAT. We
+  claim that L-NEAT can produce neural network for classification problem
+  effectively and efficiently. Empirical evaluation shows that L-NEAT evolves
+  classifying neural network with good generalization ability. Its accuracy
+  outperforms original NEAT.%
+    }
+    \field{booktitle}{2006 International Conference on Information and
+  Automation}
+    \verb{doi}
+    \verb 10.1109/ICINFA.2006.374100
+    \endverb
+    \field{issn}{2151-1802}
+    \field{pages}{367\bibrangedash 371}
+    \field{title}{NeuroEvolution of Augmenting Topologies with Learning for
+  Data Classification}
+    \field{year}{2006}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -975,6 +1133,76 @@
     \field{title}{SYQ: Learning Symmetric Quantization for Efficient Deep
   Neural Networks}
     \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{6591252}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FLJ}{%
+         family={Fogel},
+         familyi={F\bibinitperiod},
+         given={L.\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=OAJ}{%
+         family={Owens},
+         familyi={O\bibinitperiod},
+         given={A.\bibnamedelima J.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WMJ}{%
+         family={Walsh},
+         familyi={W\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary; Noise;Automata;Decision making;Markov
+  processes;Prediction algorithms;Shape;Springs}
+    \strng{namehash}{FLJOAJWMJ1}
+    \strng{fullhash}{FLJOAJWMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    Artificial intelligence can be approached through the fast-time evolution
+  of finite-state machines. Random mutation of an arbitrary machine yields an
+  ``offspring.'' Both machines are driven by the available history and
+  evaluated in terms of the given goal, and the machine having the higher score
+  is selected to serve as the new parent. Such fast-time mutation and selection
+  is continued with real-time decisions being based on the logic of the
+  surviving machine. Saving the best few machines increases the security
+  against gross nonstationarity of the environment. The efficiency of the
+  evolutionary program is improved by introducing a cost-for-complexity
+  weighting on each machine. An ability to predict one's environment is
+  prerequisite to purposeful behavior. With this in mind, IBM7094 experiments
+  were conducted to examine evolutionary prediction. As expected, cyclic
+  signals in various degrees of noise were soon characterized by the
+  predictor-machines. The transition probabilities within the sequence of
+  predictions of low-order Markov processes were in close correspondence with
+  those of the environment. The evolutionary program was also required to
+  predict the (4-symbol) output sequence of an arbitrary machine that was
+  driven by random binary noise. After 160 predictions the percent correct
+  reached 51.5. When the evolutionary program was also given, the input binary
+  variable this score reached 80 percent, showing a rapid approach toward the
+  100 percent asymptote. In contrast, providing an uncorrelated binary variable
+  degraded the performance to 40.5 percent by requiring an attempt to extract
+  nonexistent information. A formal technique was devised which translates a
+  predictor machine into a set of hypotheses concerning the logic of the
+  environment.%
+    }
+    \verb{doi}
+    \verb 10.1109/THFE.1965.6591252
+    \endverb
+    \field{issn}{0096-249X}
+    \field{number}{1}
+    \field{pages}{13\bibrangedash 23}
+    \field{title}{Intelligent decision-making through a simulation of
+  evolution}
+    \field{volume}{HFE-6}
+    \field{journaltitle}{IEEE Transactions on Human Factors in Electronics}
+    \field{year}{1965}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -1465,45 +1693,6 @@
       {Washington, DC, USA}%
     }
     \field{year}{2015}
-  \endentry
-
-  \entry{Hertz:1991:ITN:104000}{book}{}
-    \name{author}{3}{}{%
-      {{hash=HJ}{%
-         family={Hertz},
-         familyi={H\bibinitperiod},
-         given={John},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=KA}{%
-         family={Krogh},
-         familyi={K\bibinitperiod},
-         given={Anders},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=PRG}{%
-         family={Palmer},
-         familyi={P\bibinitperiod},
-         given={Richard\bibnamedelima G.},
-         giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Addison-Wesley Longman Publishing Co., Inc.}%
-    }
-    \keyw{NN; Book, Neural Computation}
-    \strng{namehash}{HJKAPRG1}
-    \strng{fullhash}{HJKAPRG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{isbn}{0-201-50395-6}
-    \field{title}{Introduction to the Theory of Neural Computation}
-    \list{location}{1}{%
-      {Boston, MA, USA}%
-    }
-    \field{year}{1991}
   \endentry
 
   \entry{Hesamifard2017CryptoDLDN}{article}{}
@@ -2103,6 +2292,82 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Liu_2018_ECCV}{inproceedings}{}
+    \name{author}{10}{}{%
+      {{hash=LC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Chenxi},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zoph},
+         familyi={Z\bibinitperiod},
+         given={Barret},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Neumann},
+         familyi={N\bibinitperiod},
+         given={Maxim},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shlens},
+         familyi={S\bibinitperiod},
+         given={Jonathon},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LLJ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Li-Jia},
+         giveni={L\bibinitperiod-J\bibinitperiod},
+      }}%
+      {{hash=FFL}{%
+         family={Fei-Fei},
+         familyi={F\bibinitperiod-F\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YA}{%
+         family={Yuille},
+         familyi={Y\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Murphy},
+         familyi={M\bibinitperiod},
+         given={Kevin},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{CNN; search problem, Reinforcement learning,}
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCZBNMSJHWLLJFFLYAHJMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{The European Conference on Computer Vision (ECCV)}
+    \field{title}{Progressive Neural Architecture Search}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{McCulloch1943}{article}{}
     \name{author}{2}{}{%
       {{hash=MWS}{%
@@ -2151,104 +2416,6 @@
     \field{volume}{5}
     \field{journaltitle}{The bulletin of mathematical biophysics}
     \field{year}{1943}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{8056823}{inproceedings}{}
-    \name{author}{7}{}{%
-      {{hash=MDJM}{%
-         family={Moss},
-         familyi={M\bibinitperiod},
-         given={D.\bibnamedelima J.\bibnamedelima M.},
-         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-      {{hash=NE}{%
-         family={Nurvitadhi},
-         familyi={N\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-      {{hash=SJ}{%
-         family={Sim},
-         familyi={S\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Mishra},
-         familyi={M\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=MD}{%
-         family={Marr},
-         familyi={M\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Subhaschandra},
-         familyi={S\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=LPHW}{%
-         family={Leong},
-         familyi={L\bibinitperiod},
-         given={P.\bibnamedelima H.\bibnamedelima W.},
-         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
-  W\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN, CNN, FPGA, computational complexity;field programmable gate
-  arrays;graphics processing units;image recognition;neural nets;object
-  detection;high performance binary neural networks;convolutional neural
-  networks;CNN;Xeon CPU;Intel Xeon+FPGA platform;FPGA BNN accelerators;Nvidia
-  Titan X Pascal GPU;specialised FPGA architecture;Xeon+FPGA system;high
-  performance BNN accelerator;lower computational complexity;complex
-  topologies;object detection applications;scene segmentation;image
-  recognition;Field programmable gate arrays;Graphics processing
-  units;Topology;Computer architecture;Performance evaluation;Network
-  topology;IP networks}
-    \strng{namehash}{MDJMNESJMAMDSSLPHW1}
-    \strng{fullhash}{MDJMNESJMAMDSSLPHW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Convolutional neural networks (CNNs) are deployed in a wide range of image
-  recognition, scene segmentation and object detection applications. Achieving
-  state of the art accuracy in CNNs often results in large models and complex
-  topologies that require significant compute resources to complete in a timely
-  manner. Binarised neural networks (BNNs) have been proposed as an optimised
-  variant of CNNs, which constrain the weights and activations to +1 or -1 and
-  thus offer compact models and lower computational complexity per operation.
-  This paper presents a high performance BNN accelerator on the
-  Intel{\textregistered}Xeon+FPGA{\texttrademark} platform. The proposed
-  accelerator is designed to take advantage of the Xeon+FPGA system in a way
-  that a specialised FPGA architecture can be targeted for the most compute
-  intensive parts of the BNN whilst other parts of the topology can be handled
-  by the Xeon{\texttrademark} CPU. The implementation is evaluated by comparing
-  the raw compute performance and energy efficiency for key layers in standard
-  CNN topologies against an Nvidia Titan X Pascal GPU and other published FPGA
-  BNN accelerators. The results show that our single-package integrated
-  Arria{\texttrademark} 10 FPGA accelerator coupled with a high-end Xeon CPU
-  can offer comparable performance and better energy efficiency than a high-end
-  discrete Titan X GPU card. In addition, our solution delivers the best
-  performance compared to previous BNN FPGA implementations.%
-    }
-    \field{booktitle}{2017 27th International Conference on Field Programmable
-  Logic and Applications (FPL)}
-    \verb{doi}
-    \verb 10.23919/FPL.2017.8056823
-    \endverb
-    \field{issn}{1946-1488}
-    \field{pages}{1\bibrangedash 4}
-    \field{title}{High performance binary neural networks on the Xeon-FPGA
-  platform}
-    \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -3380,6 +3547,85 @@
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
+  \entry{Tettamanzi2001}{inbook}{}
+    \name{author}{2}{}{%
+      {{hash=TA}{%
+         family={Tettamanzi},
+         familyi={T\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tomassini},
+         familyi={T\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Evolutionary, Neural Network, Book}
+    \strng{namehash}{TATM1}
+    \strng{fullhash}{TATM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    WE saw in Chapter 2 that artificial neural networks are
+  biologically-inspired computational models that have the capability of
+  somehow ``learning'' or ``self-organizing'' to accomplish a given task. They
+  are particularly efficient when the nature of the task is ill-defined and the
+  input/output mapping largely unknown. However, many aspects may affect the
+  performance of an ANN on a given problem. Among them, the most important is
+  the structure of the neuron connections i.e., the topology of the net, the
+  connection weights, the details of the learning rules and of the neural
+  activation function, and the data sets to be used for learning. There are
+  guidelines for picking or finding reasonable values for all of these network
+  parameters but most are rules of thumb with little theoretical background and
+  without any relationship with each other.%
+    }
+    \field{booktitle}{Soft Computing: Integrating Evolutionary, Neural, and
+  Fuzzy Systems}
+    \verb{doi}
+    \verb 10.1007/978-3-662-04335-6_4
+    \endverb
+    \field{isbn}{978-3-662-04335-6}
+    \field{pages}{123\bibrangedash 159}
+    \field{title}{Evolutionary Design of Artificial Neural Networks}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-662-04335-6_4
+    \endverb
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2001}
+  \endentry
+
+  \entry{DeepNeuroEvol}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=U}{%
+         family={Uber},
+         familyi={U\bibinitperiod},
+      }}%
+    }
+    \keyw{Neuroevolution; Atari, Videogames; evolution strategies; uber}
+    \strng{namehash}{U1}
+    \strng{fullhash}{U1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{title}{Accelerating Deep Neuroevolution: Train Atari in Hours on a
+  Single Personal Computer}
+    \verb{url}
+    \verb https://eng.uber.com/accelerated-neuroevolution/
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Umuroglu:2017:FFF:3020078.3021744}{inproceedings}{}
     \name{author}{7}{}{%
       {{hash=UY}{%
@@ -3476,6 +3722,57 @@
     \verb{url}
     \verb https://www.techpowerup.com/gpu-specs/titan-rtx.c3311
     \endverb
+  \endentry
+
+  \entry{Williams1992}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WRJ}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Ronald\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary, Gradient Methods, Reinforcement Learning, REINFORCE}
+    \strng{namehash}{WRJ1}
+    \strng{fullhash}{WRJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    This article presents a general class of associative reinforcement learning
+  algorithms for connectionist networks containing stochastic units. These
+  algorithms, called REINFORCE algorithms, are shown to make weight adjustments
+  in a direction that lies along the gradient of expected reinforcement in both
+  immediate-reinforcement tasks and certain limited forms of
+  delayed-reinforcement tasks, and they do this without explicitly computing
+  gradient estimates or even storing information from which such estimates
+  could be computed. Specific examples of such algorithms are presented, some
+  of which bear a close relationship to certain existing algorithms while
+  others are novel but potentially interesting in their own right. Also given
+  are results that show how such algorithms can be naturally integrated with
+  backpropagation. We close with a brief discussion of a number of additional
+  issues surrounding the use of such algorithms, including what is known about
+  their limiting behaviors as well as further considerations that might be used
+  to help develop similar but potentially more powerful reinforcement learning
+  algorithms.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF00992696
+    \endverb
+    \field{issn}{1573-0565}
+    \field{number}{3}
+    \field{pages}{229\bibrangedash 256}
+    \field{title}{Simple statistical gradient-following algorithms for
+  connectionist reinforcement learning}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF00992696
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{Machine Learning}
+    \field{year}{1992}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Yamada1992}{article}{}
@@ -3595,203 +3892,6 @@
     }
     \field{year}{2017}
     \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{8416941}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=YH}{%
-         family={Yonekawa},
-         familyi={Y\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=SS}{%
-         family={Sato},
-         familyi={S\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=NH}{%
-         family={Nakahara},
-         familyi={N\bibinitperiod},
-         given={H.},
-         giveni={H\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN; Neurons;Training;Two dimensional displays;Embedded
-  systems;Character recognition;Computational modeling;Convolutional neural
-  networks}
-    \strng{namehash}{YHSSNH1}
-    \strng{fullhash}{YHSSNH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{booktitle}{2018 IEEE 48th International Symposium on Multiple-Valued
-  Logic (ISMVL)}
-    \verb{doi}
-    \verb 10.1109/ISMVL.2018.00038
-    \endverb
-    \field{issn}{2378-2226}
-    \field{pages}{174\bibrangedash 179}
-    \field{title}{A Ternary Weight Binary Input Convolutional Neural Network:
-  Realization on the Embedded Processor}
-    \verb{url}
-    \verb doi.ieeecomputersociety.org/10.1109/ISMVL.2018.00038
-    \endverb
-    \field{volume}{00}
-    \field{year}{2018}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{Zhao:2017:ABC:3020078.3021741}{inproceedings}{}
-    \name{author}{8}{}{%
-      {{hash=ZR}{%
-         family={Zhao},
-         familyi={Z\bibinitperiod},
-         given={Ritchie},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=SW}{%
-         family={Song},
-         familyi={S\bibinitperiod},
-         given={Weinan},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=ZW}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Wentao},
-         giveni={W\bibinitperiod},
-      }}%
-      {{hash=XT}{%
-         family={Xing},
-         familyi={X\bibinitperiod},
-         given={Tianwei},
-         giveni={T\bibinitperiod},
-      }}%
-      {{hash=LJH}{%
-         family={Lin},
-         familyi={L\bibinitperiod},
-         given={Jeng-Hau},
-         giveni={J\bibinitperiod-H\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Srivastava},
-         familyi={S\bibinitperiod},
-         given={Mani},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=GR}{%
-         family={Gupta},
-         familyi={G\bibinitperiod},
-         given={Rajesh},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=ZZ}{%
-         family={Zhang},
-         familyi={Z\bibinitperiod},
-         given={Zhiru},
-         giveni={Z\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {ACM}%
-    }
-    \keyw{FPGAs, binarized, binarized convolutional networks, deep learning,
-  high-level synthesis, reconfigurable computing}
-    \strng{namehash}{ZRSWZWXTLJHSMGRZZ1}
-    \strng{fullhash}{ZRSWZWXTLJHSMGRZZ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
-  on Field-Programmable Gate Arrays}
-    \verb{doi}
-    \verb 10.1145/3020078.3021741
-    \endverb
-    \field{isbn}{978-1-4503-4354-1}
-    \field{pages}{15\bibrangedash 24}
-    \field{series}{FPGA '17}
-    \field{title}{Accelerating Binarized Convolutional Neural Networks with
-  Software-Programmable FPGAs}
-    \verb{url}
-    \verb http://doi.acm.org/10.1145/3020078.3021741
-    \endverb
-    \list{location}{1}{%
-      {Monterey, California, USA}%
-    }
-    \field{year}{2017}
-    \warn{\item Can't use 'location' + 'address'}
-  \endentry
-
-  \entry{8052915}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=ZY}{%
-         family={Zhou},
-         familyi={Z\bibinitperiod},
-         given={Y.},
-         giveni={Y\bibinitperiod},
-      }}%
-      {{hash=RS}{%
-         family={Redkar},
-         familyi={R\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=HX}{%
-         family={Huang},
-         familyi={H\bibinitperiod},
-         given={X.},
-         giveni={X\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN;field programmable gate arrays;fixed point arithmetic;image
-  classification;learning (artificial intelligence);neural nets;object
-  recognition;quantisation (signal);1-bit XNOR operation;CIFAR-10
-  benchmark;FPGA platform;batch normalization operation;computational
-  complexity reduction;convolutional neural network;deep learning binary neural
-  network;fixed point multiplication operation;local receptive fields;low-power
-  embedded applications;memory requirement reduction;on-chip memories;spatial
-  correlation;Biological neural networks;Convolution;Field programmable gate
-  arrays;Hardware;Memory management;Training}
-    \strng{namehash}{ZYRSHX1}
-    \strng{fullhash}{ZYRSHX1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Z}
-    \field{sortinithash}{Z}
-    \field{abstract}{%
-    As a popular deep learning technique, convolutional neural network has been
-  widely used in many tasks such as image classification and object
-  recognition. Convolutional neural network exploits spatial correlations in
-  the images by performing convolution operations in local receptive fields.
-  Convolutional neural networks are preferred over fully connected neural
-  networks because they have fewer weights and are easier to train. Many
-  research works have been conducted to reduce the computational complexity and
-  memory requirements of convolutional neural network, to make it applicable to
-  the low-power embedded applications with limited memories. This paper
-  presents the architecture design of convolutional neural network with binary
-  weights and activations, also known as binary neural network, on an FPGA
-  platform. Weights and input activations are binarized with only two values,
-  +1 and -1. This reduces all the fixed point multiplication operations in
-  convolutional layers and fully connected layers to 1-bit XNOR operations. The
-  proposed design uses only on-chip memories. Furthermore, an efficient
-  implementation of batch normalization operation is introduced. When
-  evaluating the CIFAR-10 benchmark, the proposed FPGA design can achieve a
-  processing rate of 332,158 images per second with with accuracy of 86.06%
-  using 1-bit quantized weights and activations.%
-    }
-    \field{booktitle}{2017 IEEE 60th International Midwest Symposium on
-  Circuits and Systems (MWSCAS)}
-    \verb{doi}
-    \verb 10.1109/MWSCAS.2017.8052915
-    \endverb
-    \field{pages}{281\bibrangedash 284}
-    \field{title}{Deep learning binary neural network on an FPGA}
-    \field{year}{2017}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 \endsortlist
 \endinput

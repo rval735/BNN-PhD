@@ -116,3 +116,6 @@ https://blog.acolyer.org/2017/03/28/large-scale-evolution-of-image-classifiers/
 
 Regularized Evolution for Image Classifier Architecture Search
 https://arxiv.org/abs/1802.01548
+
+Intelligent decision-making through a simulation of evolution
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6591252
