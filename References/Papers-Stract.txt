@@ -1149,6 +1149,11 @@ QSGD- Communication-Efficient SGD via Gradient Quantization and Encoding
 - Significant reductions in end-to-end training time
 - With 16GPUs, they can train the ResNet-152 network to full accuracy on ImageNet 1.8× faster than the full-precision variant
 
+Neural Cryptography- From Symmetric Encryption to Adversarial Steganography
+- Shows how NN are capable of performing symmetric encryption in an adversarial setting 
+- NN capable of detecting insecure communications based on Ciphertext Indistinguishability
+- Shows futher research on Neural Steganography in the context of developing neural end-to-end stegonographic algorithms
+
 < NN
 -------> DCGAN
 

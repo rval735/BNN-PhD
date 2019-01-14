@@ -203,3 +203,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4670938
 
 QSGD- Communication-Efficient SGD via Gradient Quantization and Encoding
 https://papers.nips.cc/paper/6768-qsgd-communication-efficient-sgd-via-gradient-quantization-and-encoding
+
+Neural Cryptography- From Symmetric Encryption to Adversarial Steganography
+https://www.semanticscholar.org/paper/Neural-Cryptography-%3A-From-Symmetric-Encryption-to-Modesitt-Henry/63e2d6e2e467d2640765eace46885cb5c27530dc?navId=extracted
