@@ -70,3 +70,5 @@ A genetic algorithm framework using Haskell
 http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.9849
 https://www.researchgate.net/publication/2411892_A_genetic_algorithm_framework_using_Haskell
 
+Cartesian closed 2-categories and permutation equivalence in higher-order rewriting
+https://lmcs.episciences.org/1132

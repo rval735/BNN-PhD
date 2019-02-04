@@ -663,6 +663,11 @@ A genetic algorithm framework using Haskell
 - Functional programs enables logical reason about their properties.
 - Traveling Salesman Problem (TSP) and inverted pendulum test benchmarks
 
+Cartesian closed 2-categories and permutation equivalence in higher-order rewriting
+-
+-
+-
+
 < Haskell 
 
 ------> Haskell-FPGA
@@ -2124,5 +2129,10 @@ Intelligent decision-making through a simulation of evolution
 -
 -
 -
+
+Adjusting Weights in Artificial Neural Networks using Evolutionary Algorithms
+- Use GA, EDA, ES to estimate NN weights with/without BP
+- Tested on KILN, ECOLI and breast cancer datasets
+- It concludes that EA remain competitive given their simplicity
 
 < Evolutionary
