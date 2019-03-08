@@ -18,3 +18,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8443248
 
 The Dataset Nutrition Label- A Framework To Drive Higher Data Quality Standards
 https://arxiv.org/abs/1805.03677
+
+Survey of Stochastic Computing
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2465794

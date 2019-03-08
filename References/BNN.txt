@@ -183,6 +183,9 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8373076
 True Gradient-Based Training of Deep Binary Activated Neural Networks Via Continuous Binarization
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8461456
 
+Self-binarizing networks
+https://arxiv.org/abs/1902.00730
+
 Fully parallel RRAM synaptic array for implementing binary neural network with (+1, −1) weights and (+1, 0) neurons
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8297384
 

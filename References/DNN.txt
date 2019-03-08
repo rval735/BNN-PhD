@@ -34,3 +34,6 @@ https://arxiv.org/abs/1502.05477
 
 Differentiable plasticity- training plastic neural networks with backpropagation
 https://arxiv.org/abs/1804.02464
+
+On the Learning Capabilities of Recurrent Neural Networks- A Cryptographic Perspective
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8588788

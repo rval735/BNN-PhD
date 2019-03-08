@@ -122,3 +122,15 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6591252
 
 Adjusting Weights in Artificial Neural Networks using Evolutionary Algorithms
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-1-4615-1539-5_18
+
+A symmetric key cryptography using genetic algorithm and error back propagation neural network
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7100476
+
+Neural Cryptography Based on the Topology Evolving Neural Networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8590945
+
+Spectrum-Diverse Neuroevolution With Unified Neural Models
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7460958
+
+EvoNN - A Customizable Evolutionary Neural Network with Heterogenous Activation Functions
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3208282

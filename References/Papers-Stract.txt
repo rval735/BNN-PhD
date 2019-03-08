@@ -160,6 +160,17 @@ Progressive Neural Architecture Search
 - A learned predictor function is trained based on the measured performance of the cells we have visited so far, picking the K most promising ones
 - Tested on CIFAR-10(96.59) and ImageNet (82.9)
 
+Encrypted Traffic Classification with a Convolutional Long Short-Term Memory Neural Network
+- This model extracts features in both the packet level and the flow level automatically
+- Can improve the accuracy of traffic classification by 5% in comparison with the
+state-of-art work, with VPN traffic dataset
+- Chooses any three consecutive packets in a flow and even if basic flow information is removed, their model can still achieve excellent results
+
+MSCryptoNet- Multi-Scheme privacy-preserving deep learning in cloud computing
+- Collaborative privacy-preserved DNN architecture based on a fully homomorphic cryptosystem
+- NNs are free from loss of accuracy and efficient while training on different encrypted datasets
+- Communication overhead is reduced along with the amount of data needed to transfer
+
 < CNN
 
 ------> CNN-Fin
@@ -797,6 +808,12 @@ Differentiable plasticity- training plastic neural networks with backpropagation
 - In an image reconstruction task, a network memorizes a set of natural images that it has never seen before, then the network reconstructs the missing half from memory
 - Highly flexible, providing gradient descent with an elementary building block: plastic connection
 - Offer a more efficient form of memory than recurrence alone 
+
+On the Learning Capabilities of Recurrent Neural Networks- A Cryptographic Perspective
+- Training RNN based models to learn various cryptographic tasks
+- Quantify algorithm complexity properties by borrowing confusion and diffusion concepts
+- Confusion: complexification between the ciphertext and clear text using a key
+- Diffusion: dissipate the statistical structure of P which causes redundancy, into long range statistics
 
 < DNN
 -------> NN
@@ -1639,9 +1656,15 @@ XNORBIN- A 95 TOp-s-W hardware accelerator for binary convolutional neural netwo
 -
 
 True Gradient-Based Training of Deep Binary Activated Neural Networks Via Continuous Binarization
--
--
--
+- Train binary activated neural networks using true gradient-based learning, exploiting similarities between clipping and binary activation functions
+- Datasets: MNIST, CIFAR-10 and SVHN
+- Achieves an accuracy within 1.5% of the floating-point baseline
+
+Self-binarizing networks
+- Refloat the idea on paper: True Gradient-Based Training of Deep Binary Activated Neural Networks Via Continuous Binarization (https://openreview.net/forum?id=HJxKajC5t7)
+- Binarization task by training on a unique representation involving a smooth activation function
+- During training, a set of constrained floating-point weight is used
+- CIFAR10 with Binaryconnect, BNN, Binary Weight Networks and XNORNet models
 
 Fully parallel RRAM synaptic array for implementing binary neural network with (+1, −1) weights and (+1, 0) neurons
 -
@@ -1906,6 +1929,12 @@ The Dataset Nutrition Label- A Framework To Drive Higher Data Quality Standards
 - Providing a distilled yet comprehensive overview of dataset "ingredients" before AI model development
 - For those building and publishing datasets, the Label creates an expectation of explanation
 
+Survey of Stochastic Computing
+- Stochastic computing proposed in the 1960's with the advantage of low hardware cost and high error tolerance
+- It has an effective replacement for conventional analog or hybrid controllers
+- It's biggest drawback are: long computation time (grows with necessary precision); stochastic number generation.
+- Can be used in LPDC decoding, AI, low precision environments.
+
 < Other
 
 ------> SNN
@@ -2134,5 +2163,29 @@ Adjusting Weights in Artificial Neural Networks using Evolutionary Algorithms
 - Use GA, EDA, ES to estimate NN weights with/without BP
 - Tested on KILN, ECOLI and breast cancer datasets
 - It concludes that EA remain competitive given their simplicity
+
+A symmetric key cryptography using genetic algorithm and error back propagation neural network
+- Symmetric key algorithm based on genetic algorithm (GA) and error back propagation neural network (EBP-NN)
+- Genetic algorithm has been used for encryption and neural network has been used for decryption process
+- Does not use a key to scramble data
+- The NN can only learn one pattern at the time
+
+Neural Cryptography Based on the Topology Evolving Neural Networks
+- Create neural cryptography scheme on a new topology evolving NN architecture called Spectrum-diverse unified neuroevolution architecture
+- Achieve the neural symmetric cryptosystem by using adversarial training
+- Creates several areas in each neuron and divided the whole network into 3 parts: connection nodes(CN), encryption nodes(EN) and decryption nodes
+-
+
+Spectrum-Diverse Neuroevolution With Unified Neural Models
+- A new TWEANN that joins most of the NN features into one unified representation
+- The proposed algorithm outperformed NEAT on most of the problems
+- Spectrum diversity allows the chromosomes that are novel enough to be kept even when their fitness is abysmally poor
+- Spectrum diversity scales better with the size of chromosome than speciation
+
+EvoNN - A Customizable Evolutionary Neural Network with Heterogenous Activation Functions
+- Focuses on simultaneous evolution of weights and the activation functions within hidden layers
+- Additional run time cost with superior performance to traditional standard NN
+- Iris, Breast cancer and wine datasets
+- EvoNN does not use gradient directly it does not require for the activation functions, or the fitness function, to be differentiable
 
 < Evolutionary

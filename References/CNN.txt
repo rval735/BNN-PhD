@@ -118,3 +118,9 @@ https://www.pnas.org/content/113/41/11441
 Progressive Neural Architecture Search
 http://openaccess.thecvf.com/content_ECCV_2018/papers/Chenxi_Liu_Progressive_Neural_Architecture_ECCV_2018_paper.pdf
 http://openaccess.thecvf.com/ECCV2018.py
+
+Encrypted Traffic Classification with a Convolutional Long Short-Term Memory Neural Network
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8622812
+
+MSCryptoNet- Multi-Scheme privacy-preserving deep learning in cloud computing
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8651459
