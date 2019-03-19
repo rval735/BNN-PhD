@@ -21,3 +21,6 @@ https://arxiv.org/abs/1805.03677
 
 Survey of Stochastic Computing
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2465794
+
+OpenAI Gym
+https://arxiv.org/abs/1606.01540

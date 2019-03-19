@@ -134,3 +134,18 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7460958
 
 EvoNN - A Customizable Evolutionary Neural Network with Heterogenous Activation Functions
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3208282
+
+Recurrent Cartesian Genetic Programming of Artificial
+https://link.springer.com/article/10.1007/s10710-016-9276-6
+
+Foreign Currency Exchange Rates Prediction Using CGP and Recurrent Neural Network
+https://www.sciencedirect.com/science/article/pii/S2212667814001312
+
+Novelty-organizing team of classifiers in noisy and dynamic environments
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7257254
+
+Designing neural networks through neuroevolution
+https://www.nature.com/articles/s42256-018-0006-z?WT.feed_name=subjects_software
+
+Evolutionary architecture search for deep multitask networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3205455.3205489

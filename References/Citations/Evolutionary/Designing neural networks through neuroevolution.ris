@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Stanley, Kenneth O.
+AU  - Clune, Jeff
+AU  - Lehman, Joel
+AU  - Miikkulainen, Risto
+PY  - 2019
+DA  - 2019/01/01
+TI  - Designing neural networks through neuroevolution
+JO  - Nature Machine Intelligence
+SP  - 24
+EP  - 35
+VL  - 1
+IS  - 1
+AB  - Much of recent machine learning has focused on deep learning, in which neural network weights are trained through variants of stochastic gradient descent. An alternative approach comes from the field of neuroevolution, which harnesses evolutionary algorithms to optimize neural networks, inspired by the fact that natural brains themselves are the products of an evolutionary process. Neuroevolution enables important capabilities that are typically unavailable to gradient-based approaches, including learning neural network building blocks (for example activation functions), hyperparameters, architectures and even the algorithms for learning themselves. Neuroevolution also differs from deep learning (and deep reinforcement learning) by maintaining a population of solutions during search, enabling extreme exploration and massive parallelization. Finally, because neuroevolution research has (until recently) developed largely in isolation from gradient-based neural network research, it has developed many unique and effective techniques that should be effective in other machine learning areas too. This Review looks at several key aspects of modern neuroevolution, including large-scale computing, the benefits of novelty and diversity, the power of indirect encoding, and the field’s contributions to meta-learning and architecture search. Our hope is to inspire renewed interest in the field as it meets the potential of the increasing computation available today, to highlight how many of its ideas can provide an exciting resource for inspiration and hybridization to the deep learning, deep reinforcement learning and machine learning communities, and to explain how neuroevolution could prove to be a critical tool in the long-term pursuit of artificial general intelligence.
+SN  - 2522-5839
+UR  - https://doi.org/10.1038/s42256-018-0006-z
+DO  - 10.1038/s42256-018-0006-z
+ID  - Stanley2019
+ER  - 

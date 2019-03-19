@@ -1935,6 +1935,11 @@ Survey of Stochastic Computing
 - It's biggest drawback are: long computation time (grows with necessary precision); stochastic number generation.
 - Can be used in LPDC decoding, AI, low precision environments.
 
+OpenAI Gym
+- Python environment for reinforcement learning algorithms
+- Includes several topics like: algorithms, control systems, robotics 
+- Open source and accessible here: https://github.com/openai/gym
+
 < Other
 
 ------> SNN
@@ -2174,7 +2179,6 @@ Neural Cryptography Based on the Topology Evolving Neural Networks
 - Create neural cryptography scheme on a new topology evolving NN architecture called Spectrum-diverse unified neuroevolution architecture
 - Achieve the neural symmetric cryptosystem by using adversarial training
 - Creates several areas in each neuron and divided the whole network into 3 parts: connection nodes(CN), encryption nodes(EN) and decryption nodes
--
 
 Spectrum-Diverse Neuroevolution With Unified Neural Models
 - A new TWEANN that joins most of the NN features into one unified representation
@@ -2187,5 +2191,35 @@ EvoNN - A Customizable Evolutionary Neural Network with Heterogenous Activation 
 - Additional run time cost with superior performance to traditional standard NN
 - Iris, Breast cancer and wine datasets
 - EvoNN does not use gradient directly it does not require for the activation functions, or the fitness function, to be differentiable
+
+Recurrent Cartesian Genetic Programming of Artificial
+- Extend CGP to support recurrent connections with applications on time series
+- Tested with Laser, Sunsports, Mackey-Glass datasets  
+- Compared with RWF, MEAN, ETS, aRIMA, MLP, CGP, RCGP, CGPANN
+- RCGPANNs also outperformed all the other methods based on CGP with statistical significance
+
+Foreign Currency Exchange Rates Prediction Using CGP and Recurrent Neural Network
+- Uses RCGPANN to predict forex market 
+- Efficient performance thanks to its ability to select the best possible feature, network architecture and connectivity pattern for prediction
+- Historical data sets of 1000 days for Yen, NZ, CAN, Won and Rupiah with up to 98.5% accuracy.  
+
+Novelty-organizing team of classifiers in noisy and dynamic environments
+- NOTC compared with NEAT with better performance but more time to convergence
+- It used the novelty map and populations to keep track of already visited states using novelty measurements
+- Novelty maps do not depend on input frequency or cell's efficiency
+- Tested with the mountain car with several changes (continuous, noisy and with weather)
+
+Designing neural networks through neuroevolution
+- Survey of the changes in the area of neuroevolution, since 1980's
+- NEAT addressed the problem of crossing over variable topologies through historical marking 
+- Evolving new content in real time while the game is played
+- Evolutionary algorithms can be less sample efficient, but because they are extremely parallelizable, they can run far faster in real (wall clock) time (for example hours instead of days), albeit at the cost of requiring more computing resources
+- A final critical opportunity for neuroevolution is to lead the effort to construct ‘open-ended’ algorithms
+
+Evolutionary architecture search for deep multitask networks
+- Multitask learning (MTL): a neural network is trained simultaneously to perform several different tasks at once
+- CoDeepNEAT begins by initializing two populations, one of modules and one of blueprints, with minimal complexity
+- Tested with Omniglot Character Recognition, with 87.82 test accuracy
+- When evolution is run multiple times, similar topologies for the same alphabet result
 
 < Evolutionary
