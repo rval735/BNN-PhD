@@ -1895,6 +1895,40 @@ Training Generative Adversarial Networks with Binary Neurons by End-to-end Backp
 - Employ the sigmoid-adjusted straight-through estimators to estimate the gradients for binary neurons and train the whole network by end-to-end backpropagation.
 - Use the binarized version of the MNIST handwritten digit database (i >=0 ~ 1)
 
+LQ-Nets- Learned Quantization for HighlyAccurate and Compact Deep Neural Networks
+- LQ-Nets use floating-point network weights which are quantized before convolution and optimized with error back-propagation (BP) and gradient descent. After training, they can be discarded and their binary codes and quantizer bases are kept.
+- Variable size of weights and activations (1 - 32) with a quantizer that adaptively learns during network training
+- Tested on Imagenet and CIFAR-10 with network structures like AlexNet, VGG-Net, GoogLeNet, ResNet, and DenseNet.
+
+Deep Learning with Low Precision by Half-wave Gaussian Quantization
+- Design of two approximators for the ReLUnon-linearity
+- Half-wave Gaussian quantizer in the feed-forward computations
+- A piece-wise continuous function in the backpropagation step
+- Network models: AlexNet, ResNet, VGGNet, GooLenet
+- GoogLeNet Top1, Full precision: 90.5; HWGQ: 84.90
+
+BitSplit-Net- Multi-bit Deep Neural Network with Bitwise Activation Function
+- Improving accuracy by using multi-bit precision using binary activation functions only
+- Each bit of multi-bit activations propagates independently throughout the network before being merged at the end of the network
+- LeNet-5, VGG-9, AlexNet,and ResNet-18 with lower computational cost
+- MNIST (99.32), CIFAR-10 (Top-1 54.8) and ImageNet (T1 - 67.9) datasets
+
+Training Competitive Binary Neural Networks from Scratch
+- Version 2 of BMXNet: increase performance without prior knowledge and a much simpler training strategy
+- Increasing the number of shortcut connections improves classification accuracy
+- MNIST (99% - 202KB), CIFAR10 (90.3% - 1.39MB) and ImageNet (54.3%) datasets
+
+BNN+- Improved Binary Network Training
+- Train BNN with two novel regularization functions along with learnable scaling factors parameters
+- Proposed SignSwish activation to replace Straight Trough Estimator (STE) loss and to remain differentiable at range -1 +1
+- CIFAR-10 (87.4%); AlexNet (83.9%) withDoReFa network
+
+Accuracy to Throughput Trade-Offs for Reduced Precision Neural Networks on Reconfigurable Logic
+- Propose quantitative estimation models to show how parameter precision affects hardware cost
+- MNIST (99%), CIFAR10 with AlexNet
+- Xilinx Kintex UltraScale 115 as the target FPGA device
+- INT2 and INT4 generally provide better trade-offs in small image classification tasks
+
 < BNN
 
 ------> Other

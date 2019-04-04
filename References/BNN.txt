@@ -324,3 +324,18 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8056820
 
 Training Generative Adversarial Networks with Binary Neurons by End-to-end Backpropagation
 https://arxiv.org/abs/1810.04714
+
+LQ-Nets- Learned Quantization for HighlyAccurate and Compact Deep Neural Networks
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-030-01237-3_23
+
+Deep Learning with Low Precision by Half-wave Gaussian Quantization
+http://openaccess.thecvf.com/content_cvpr_2017/html/Cai_Deep_Learning_With_CVPR_2017_paper.html
+
+BitSplit-Net- Multi-bit Deep Neural Network with Bitwise Activation Function
+https://arxiv.org/abs/1903.09807
+
+Training Competitive Binary Neural Networks from Scratch
+https://arxiv.org/abs/1812.01965
+
+BNN+- Improved Binary Network Training
+https://arxiv.org/abs/1812.11800

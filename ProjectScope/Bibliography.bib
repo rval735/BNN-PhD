@@ -1,12 +1,109 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2019-03-18 22:58:23 +1300 
+%% Created for RHVT at 2019-04-04 23:58:37 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{10.1007/978-3-319-78890-6_3,
+	Abstract = {Modern Convolutional Neural Networks (CNNs) are typically based on floating point linear algebra based implementations. Recently, reduced precision Neural Networks (NNs) have been gaining popularity as they require significantly less memory and computational resources compared to floating point. This is particularly important in power constrained compute environments. However, in many cases a reduction in precision comes at a small cost to the accuracy of the resultant network. In this work, we investigate the accuracy-throughput trade-off for various parameter precision applied to different types of NN models. We firstly propose a quantization training strategy that allows reduced precision NN inference with a lower memory footprint and competitive model accuracy. Then, we quantitatively formulate the relationship between data representation and hardware efficiency. Our experiments finally provide insightful observation. For example, one of our tests show 32-bit floating point is more hardware efficient than 1-bit parameters to achieve 99{\%} MNIST accuracy. In general, 2-bit and 4-bit fixed point parameters show better hardware trade-off on small-scale datasets like MNIST and CIFAR-10 while 4-bit provide the best trade-off in large-scale tasks like AlexNet on ImageNet dataset within our tested problem domain.},
+	Address = {Cham},
+	Author = {Su, Jiang and Fraser, Nicholas J. and Gambardella, Giulio and Blott, Michaela and Durelli, Gianluca and Thomas, David B. and Leong, Philip H. W. and Cheung, Peter Y. K.},
+	Booktitle = {Applied Reconfigurable Computing. Architectures, Tools, and Applications},
+	Date-Added = {2019-04-04 23:58:00 +1300},
+	Date-Modified = {2019-04-04 23:58:37 +1300},
+	Editor = {Voros, Nikolaos and Huebner, Michael and Keramidas, Georgios and Goehringer, Diana and Antonopoulos, Christos and Diniz, Pedro C.},
+	Isbn = {978-3-319-78890-6},
+	Keywords = {Book, BNN, MNIST, CIFAR},
+	Pages = {29--42},
+	Publisher = {Springer International Publishing},
+	Title = {Accuracy to Throughput Trade-Offs for Reduced Precision Neural Networks on Reconfigurable Logic},
+	Year = {2018}}
+
+@article{2018arXiv181211800D,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2018arXiv181211800D},
+	Archiveprefix = {arXiv},
+	Author = {{Darabi}, S. and {Belbahri}, M. and {Courbariaux}, M. and {Partovi Nia}, V.},
+	Date-Added = {2019-04-04 23:44:44 +1300},
+	Date-Modified = {2019-04-04 23:44:56 +1300},
+	Eprint = {1812.11800},
+	Journal = {arXiv e-prints},
+	Keywords = {BNN; Machine Learning, Computer Vision and Pattern Recognition},
+	Month = dec,
+	Title = {{BNN+: Improved Binary Network Training}},
+	Year = 2018}
+
+@inproceedings{10.1007/978-3-319-46493-0_32,
+	Abstract = {We propose two efficient approximations to standard convolutional neural networks: Binary-Weight-Networks and XNOR-Networks. In Binary-Weight-Networks, the filters are approximated with binary values resulting in 32{\$}{\$}{\backslash}times {\$}{\$}{\texttimes}memory saving. In XNOR-Networks, both the filters and the input to convolutional layers are binary. XNOR-Networks approximate convolutions using primarily binary operations. This results in 58{\$}{\$}{\backslash}times {\$}{\$}{\texttimes}faster convolutional operations (in terms of number of the high precision operations) and 32{\$}{\$}{\backslash}times {\$}{\$}{\texttimes}memory savings. XNOR-Nets offer the possibility of running state-of-the-art networks on CPUs (rather than GPUs) in real-time. Our binary networks are simple, accurate, efficient, and work on challenging visual tasks. We evaluate our approach on the ImageNet classification task. The classification accuracy with a Binary-Weight-Network version of AlexNet is the same as the full-precision AlexNet. We compare our method with recent network binarization methods, BinaryConnect and BinaryNets, and outperform these methods by large margins on ImageNet, more than {\$}{\$}16{\backslash},{\backslash}{\%}{\$}{\$}16{\%}in top-1 accuracy. Our code is available at: http://allenai.org/plato/xnornet.},
+	Address = {Cham},
+	Author = {Rastegari, Mohammad and Ordonez, Vicente and Redmon, Joseph and Farhadi, Ali},
+	Booktitle = {Computer Vision -- ECCV 2016},
+	Date-Added = {2019-04-04 23:37:48 +1300},
+	Date-Modified = {2019-04-04 23:38:31 +1300},
+	Editor = {Leibe, Bastian and Matas, Jiri and Sebe, Nicu and Welling, Max},
+	Isbn = {978-3-319-46493-0},
+	Keywords = {BNN, XNOR, ImageNet, CNN, AlexNet},
+	Pages = {525--542},
+	Publisher = {Springer International Publishing},
+	Title = {XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks},
+	Year = {2016}}
+
+@article{2018arXiv181201965B,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2018arXiv181201965B},
+	Archiveprefix = {arXiv},
+	Author = {{Bethge}, J. and {Bornstein}, M. and {Loy}, A. and {Yang}, H. and {Meinel}, C.},
+	Date-Added = {2019-04-04 23:09:42 +1300},
+	Date-Modified = {2019-04-04 23:10:00 +1300},
+	Eprint = {1812.01965},
+	Journal = {arXiv e-prints},
+	Keywords = {BNN; Machine Learning, Computer Vision and Pattern Recognition, Machine Learning},
+	Month = dec,
+	Title = {{Training Competitive Binary Neural Networks from Scratch}},
+	Year = 2018}
+
+@article{2019arXiv190309807K,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2019arXiv190309807K},
+	Archiveprefix = {arXiv},
+	Author = {{Kim}, H. and {Kim}, Y. and {Ryu}, S. and {Kim}, J.-J.},
+	Date-Added = {2019-04-04 22:42:22 +1300},
+	Date-Modified = {2019-04-04 22:42:40 +1300},
+	Eprint = {1903.09807},
+	Journal = {arXiv e-prints},
+	Keywords = {BNN; Neural and Evolutionary Computing, Computer Vision and Pattern Recognition, Machine Learning},
+	Month = mar,
+	Title = {{BitSplit-Net: Multi-bit Deep Neural Network with Bitwise Activation Function}},
+	Year = 2019}
+
+@inproceedings{Cai_2017_CVPR,
+	Author = {Cai, Zhaowei and He, Xiaodong and Sun, Jian and Vasconcelos, Nuno},
+	Booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	Date-Added = {2019-04-04 22:25:05 +1300},
+	Date-Modified = {2019-04-04 22:25:44 +1300},
+	Keywords = {BNN, Guassian, HWGQ, VGGNet, GoogLeNet},
+	Month = {July},
+	Title = {Deep Learning With Low Precision by Half-Wave Gaussian Quantization},
+	Year = {2017}}
+
+@inproceedings{10.1007/978-3-030-01237-3_23,
+	Abstract = {Although weight and activation quantization is an effective approach for Deep Neural Network (DNN) compression and has a lot of potentials to increase inference speed leveraging bit-operations, there is still a noticeable gap in terms of prediction accuracy between the quantized model and the full-precision model. To address this gap, we propose to jointly train a quantized, bit-operation-compatible DNN and its associated quantizers, as opposed to using fixed, handcrafted quantization schemes such as uniform or logarithmic quantization. Our method for learning the quantizers applies to both network weights and activations with arbitrary-bit precision, and our quantizers are easy to train. The comprehensive experiments on CIFAR-10 and ImageNet datasets show that our method works consistently well for various network structures such as AlexNet, VGG-Net, GoogLeNet, ResNet, and DenseNet, surpassing previous quantization methods in terms of accuracy by an appreciable margin. Code available at https://github.com/Microsoft/LQ-Nets.},
+	Address = {Cham},
+	Author = {Zhang, Dongqing and Yang, Jiaolong and Ye, Dongqiangzi and Hua, Gang},
+	Booktitle = {Computer Vision -- ECCV 2018},
+	Date-Added = {2019-04-04 19:51:38 +1300},
+	Date-Modified = {2019-04-04 19:52:17 +1300},
+	Editor = {Ferrari, Vittorio and Hebert, Martial and Sminchisescu, Cristian and Weiss, Yair},
+	Isbn = {978-3-030-01237-3},
+	Keywords = {BNN, LQ-Net, Quantization, CIFAR, ImageNet},
+	Pages = {373--390},
+	Publisher = {Springer International Publishing},
+	Title = {LQ-Nets: Learned Quantization for Highly Accurate and Compact Deep Neural Networks},
+	Year = {2018}}
 
 @inproceedings{Liang:2018:EAS:3205455.3205489,
 	Acmid = {3205489},
@@ -4406,21 +4503,6 @@ https://www.padl.ws/papers/Paper%2016.pdf},
 	Year = {2017},
 	Bdsk-Url-1 = {http://doi.acm.org/10.1145/3020078.3021741},
 	Bdsk-Url-2 = {https://doi.org/10.1145/3020078.3021741}}
-
-@article{2016arXiv160305279R,
-	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
-	Adsurl = {http://adsabs.harvard.edu/abs/2016arXiv160305279R},
-	Archiveprefix = {arXiv},
-	Author = {{Rastegari}, M. and {Ordonez}, V. and {Redmon}, J. and {Farhadi}, A.},
-	Date-Added = {2018-05-06 05:43:43 +0000},
-	Date-Modified = {2018-10-25 23:49:22 +0000},
-	Eprint = {1603.05279},
-	Journal = {European Conference on Computer Vision},
-	Keywords = {BNN; Computer Vision; Pattern Recognition},
-	Month = October,
-	Primaryclass = {cs.CV},
-	Title = {{XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks}},
-	Year = 2016}
 
 @article{2016arXiv160106071K,
 	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
