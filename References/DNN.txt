@@ -40,3 +40,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8588788
 
 GAZELLE- a low latency framework for secure neural network inference
 https://dl.acm.org/citation.cfm?id=3277326
+
+Unsupervised learning by competing hidden units
+https://www.pnas.org/content/early/2019/03/27/1820458116

@@ -822,6 +822,11 @@ GAZELLE- a low latency framework for secure neural network inference
 - Tested on MNIST and CIFAR-10
 - reduction of 20-80× in the online bandwidth per inference
 
+Unsupervised learning by competing hidden units
+- Network with one hidden layer that generate codes for input images trained in a unsupervised way, then the output is fed into another SGD NN
+- No top–down propagation of information, the synaptic weights are learned using only bottom–up signals.
+- Algorithm is agnostic about the task that the network will have to solve eventually in the top layer
+- Tested with MNIST (98.54%) and CIFAR (50.75%) datasets 
 
 < DNN
 -------> NN
