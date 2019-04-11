@@ -11,7 +11,7 @@ Binarized Neural Networks- Training Neural Networks with Weights and Activations
 https://arxiv.org/abs/1602.02830
 
 Embedded Binarized Neural Networks
-https://dl.acm.org/citation.cfm?id=3108031
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3108031
 
 ReBNet- Residual Binarized Neural Network
 https://arxiv.org/abs/1711.01243
@@ -339,3 +339,6 @@ https://arxiv.org/abs/1812.01965
 
 BNN+- Improved Binary Network Training
 https://arxiv.org/abs/1812.11800
+
+MOBIUS- Model-Oblivious Binarized Neural Networks
+https://arxiv.org/abs/1811.12028

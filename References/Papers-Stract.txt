@@ -815,6 +815,14 @@ On the Learning Capabilities of Recurrent Neural Networks- A Cryptographic Persp
 - Confusion: complexification between the ciphertext and clear text using a key
 - Diffusion: dissipate the statistical structure of P which causes redundancy, into long range statistics
 
+GAZELLE- a low latency framework for secure neural network inference
+- Scalable and low-latency system for secure NN inference, using an intricate combination of homomorphic encryption and traditional two-party computation techniques
+- GAZELLE is a homomorphic encryption library that uses SIMD addition, multiplication and ciphertext permutation
+- GAZELLE also implements algebra kernels to map NN to optimized homomorphic matrix-vector multiplication and convolution routines
+- Tested on MNIST and CIFAR-10
+- reduction of 20-80× in the online bandwidth per inference
+
+
 < DNN
 -------> NN
 
@@ -1928,6 +1936,11 @@ Accuracy to Throughput Trade-Offs for Reduced Precision Neural Networks on Recon
 - MNIST (99%), CIFAR10 with AlexNet
 - Xilinx Kintex UltraScale 115 as the target FPGA device
 - INT2 and INT4 generally provide better trade-offs in small image classification tasks
+
+MOBIUS- Model-Oblivious Binarized Neural Networks
+- Enables scalable encrypted prediction and encryption of a trained model using BNN and secure computation based on secret sharing
+- Composed of protocols we call secure full connection, secure batch normalization, and secure activation
+- 2 EC2 c4.8xlarge with MNIST (95.9% and 0.76sec)
 
 < BNN
 

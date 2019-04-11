@@ -37,3 +37,6 @@ https://arxiv.org/abs/1804.02464
 
 On the Learning Capabilities of Recurrent Neural Networks- A Cryptographic Perspective
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8588788
+
+GAZELLE- a low latency framework for secure neural network inference
+https://dl.acm.org/citation.cfm?id=3277326
