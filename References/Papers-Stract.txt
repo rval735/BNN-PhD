@@ -1189,6 +1189,19 @@ Neural Cryptography- From Symmetric Encryption to Adversarial Steganography
 - NN capable of detecting insecure communications based on Ciphertext Indistinguishability
 - Shows futher research on Neural Steganography in the context of developing neural end-to-end stegonographic algorithms
 
+A Bayesian Framework for Reinforcement Learning
+- Uses a posterior distribution over process parameters with a greedy behavior with respect to a sample of such posterior
+- Each hypothesis is retained over a period of time, ensuring goal-directed exploratory behavior without the need to use approximate measures
+- Obtain behavior which moves gradually from exploration to exploitation, without making heuristic design decisions
+- Proposes the OpenAI Gym environment "NChain-v0", along with description for other Reinforcement problems like "Loop" and "Maze"
+
+Learning simple algorithms from examples
+- The bottleneck is in the capabilities of the controller rather than in the search incurred by Q-learning
+- Environments: Copy, reverse, walk, addition, 3 number addition, single digit multiplication
+- Q-learning: a standard reinforcement learning algorithm to learn a sequence of discrete
+actions that solves a problem for the supervised case in this paper
+- Not able to find a single controller that could solve all tasks
+
 < NN
 -------> DCGAN
 

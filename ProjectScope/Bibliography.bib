@@ -1,12 +1,50 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2019-04-11 22:24:04 +1200 
+%% Created for RHVT at 2019-04-14 22:55:22 +1200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{pmlr-v48-zaremba16,
+	Abstract = {We present an approach for learning simple algorithms such as copying, multi-digit addition and single digit multiplication directly from examples. Our framework consists of a set of interfaces, accessed by a controller. Typical interfaces are 1-D tapes or 2-D grids that hold the input and output data. For the controller, we explore a range of neural network-based models which vary in their ability to abstract the underlying algorithm from training instances and generalize to test examples with many thousands of digits. The controller is trained using Q-learning with several enhancements and we show that the bottleneck is in the capabilities of the controller rather than in the search incurred by Q-learning.},
+	Address = {New York, New York, USA},
+	Author = {Wojciech Zaremba and Tomas Mikolov and Armand Joulin and Rob Fergus},
+	Booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+	Date-Added = {2019-04-14 21:01:09 +1200},
+	Date-Modified = {2019-04-14 21:01:31 +1200},
+	Editor = {Maria Florina Balcan and Kilian Q. Weinberger},
+	Keywords = {NN, Reinforcement Learning, OpenAI Gym, Q-Learning},
+	Month = {20--22 Jun},
+	Pages = {421--429},
+	Pdf = {http://proceedings.mlr.press/v48/zaremba16.pdf},
+	Publisher = {PMLR},
+	Series = {Proceedings of Machine Learning Research},
+	Title = {Learning Simple Algorithms from Examples},
+	Url = {http://proceedings.mlr.press/v48/zaremba16.html},
+	Volume = {48},
+	Year = {2016},
+	Bdsk-Url-1 = {http://proceedings.mlr.press/v48/zaremba16.html}}
+
+@inproceedings{Strens:2000:BFR:645529.658114,
+	Acmid = {658114},
+	Address = {San Francisco, CA, USA},
+	Author = {Strens, Malcolm J. A.},
+	Booktitle = {Proceedings of the Seventeenth International Conference on Machine Learning},
+	Date-Added = {2019-04-14 16:42:28 +1200},
+	Date-Modified = {2019-04-14 16:43:57 +1200},
+	Isbn = {1-55860-707-2},
+	Keywords = {NN, Reinforcement Learning, OpenAI Gym},
+	Numpages = {8},
+	Pages = {943--950},
+	Publisher = {Morgan Kaufmann Publishers Inc.},
+	Series = {ICML '00},
+	Title = {A Bayesian Framework for Reinforcement Learning},
+	Url = {http://dl.acm.org/citation.cfm?id=645529.658114},
+	Year = {2000},
+	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=645529.658114}}
 
 @article{Krotov201820458,
 	Abstract = {Despite great success of deep learning a question remains to what extent the computational properties of deep neural networks are similar to those of the human brain. The particularly nonbiological aspect of deep learning is the supervised training process with the backpropagation algorithm, which requires massive amounts of labeled data, and a nonlocal learning rule for changing the synapse strengths. This paper describes a learning algorithm that does not suffer from these two problems. It learns the weights of the lower layer of neural networks in a completely unsupervised fashion. The entire algorithm utilizes local learning rules which have conceptual biological plausibility.It is widely believed that end-to-end training with the backpropagation algorithm is essential for learning good feature detectors in early layers of artificial neural networks, so that these detectors are useful for the task performed by the higher layers of that neural network. At the same time, the traditional form of backpropagation is biologically implausible. In the present paper we propose an unusual learning rule, which has a degree of biological plausibility and which is motivated by Hebb{\textquoteright}s idea that change of the synapse strength should be local{\textemdash}i.e., should depend only on the activities of the pre- and postsynaptic neurons. We design a learning algorithm that utilizes global inhibition in the hidden layer and is capable of learning early feature detectors in a completely unsupervised way. These learned lower-layer feature detectors can be used to train higher-layer weights in a usual supervised way so that the performance of the full network is comparable to the performance of standard feedforward networks trained end-to-end with a backpropagation algorithm on simple tasks.},
