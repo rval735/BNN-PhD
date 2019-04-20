@@ -1202,6 +1202,11 @@ Learning simple algorithms from examples
 actions that solves a problem for the supervised case in this paper
 - Not able to find a single controller that could solve all tasks
 
+Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition
+- Describes the theory of MaxQ algorithm where policies and value functions become context free
+- MAXQ relies on programmers to design the hierarchy of termination conditions, pseudo-reward functions and state abstractions
+- Applied to Taxi and HDG tasks􏰀
+
 < NN
 -------> DCGAN
 

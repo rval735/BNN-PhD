@@ -213,3 +213,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=658114
 Learning simple algorithms from examples
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3045436
 http://proceedings.mlr.press/v48/zaremba16.html
+
+Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition
+https://dl.acm.org/citation.cfm?id=1622268

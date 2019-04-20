@@ -1,0 +1,25 @@
+digraph G {
+ node[shape = circle]
+0 [label="0_fire1",shape=doublecircle]
+1 [label="1_fire1",shape=doublecircle, style=filled, fillcolor=gray]
+2 [label="2_fire49",shape=diamond]
+3 [label="3_fire7",shape=diamond]
+4 [label="4_fire49",style=filled, fillcolor=coral]
+5 [label="5_fire7",shape=diamond]
+6 [label="6_fire7",shape=diamond]
+7 [label="7_fire49",style=filled, fillcolor=gold]
+0 -> 6 [label="1.854737"]
+10 [shape=point, label=""]
+4 -> 10 [style=dashed] 
+2 -> 10 [dir=none]
+10 -> 6 
+5 -> 2 [label="0.948342"]
+11 [shape=point, label=""]
+3 -> 11 [style=dashed] 
+4 -> 11 [dir=none]
+11 -> 3 
+6 -> 5 [label="-2.843412"]
+6 -> 5 [label="1.000000"]
+5 -> 6 [label="-1.813685"]
+2 -> 0 [label="1.831379"]
+}
