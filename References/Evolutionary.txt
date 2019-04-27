@@ -149,3 +149,10 @@ https://www.nature.com/articles/s42256-018-0006-z?WT.feed_name=subjects_software
 
 Evolutionary architecture search for deep multitask networks
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3205455.3205489
+
+Limited Evaluation Evolutionary Optimization of Large Neural Networks
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-030-00111-7_23
+
+Limited evaluation cooperative co-evolutionary differential evolution for large-scale neuroevolution
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3205455.3205555
+

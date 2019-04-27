@@ -2292,4 +2292,16 @@ Evolutionary architecture search for deep multitask networks
 - Tested with Omniglot Character Recognition, with 87.82 test accuracy
 - When evolution is run multiple times, similar topologies for the same alphabet result
 
+Limited Evaluation Evolutionary Optimization of Large Neural Networks
+- Efficient batch fitness evaluation of a population of neural networks on GPUs
+- Use low selective pressure as an alternative
+- Uniform crossover works best among different mutation strength adaptation schemes
+- Train a network of 92k parameters on MNIST using an EA and reach an average test accuracy of 97.6%
+
+Limited evaluation cooperative co-evolutionary differential evolution for large-scale neuroevolution
+- Cooperation co-evolution: subcomponents are merged together to assign a global fitness score to a candidate solution
+- LE and CC schemes to improve the accuracy and runtime of standard DE algorithm for large-scale NE with direct encoding
+- MNIST dataset with 96.60, 93.84, and 93.38 on training
+- LE scheme reduces the runtime of the algorithms, without affecting the performance
+
 < Evolutionary
