@@ -216,3 +216,7 @@ http://proceedings.mlr.press/v48/zaremba16.html
 
 Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition
 https://dl.acm.org/citation.cfm?id=1622268
+
+Efficient Memory-based Learning for Robot Control
+https://www.ri.cmu.edu/publications/efficient-memory-based-learning-for-robot-control/
+

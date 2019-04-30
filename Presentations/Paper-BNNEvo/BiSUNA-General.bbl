@@ -81,6 +81,21 @@
 \url{https://doi.org/10.1145/3242897}}
 
 
+\bibitem[\protect\citeauthoryear{{Brockman}, {Cheung}, {Pettersson},
+  {Schneider}, {Schulman}, {Tang}, and {Zaremba}}{{Brockman}
+  et~al\mbox{.}}{2016}]%
+        {2016arXiv160601540B}
+\bibfield{author}{\bibinfo{person}{G. {Brockman}}, \bibinfo{person}{V.
+  {Cheung}}, \bibinfo{person}{L. {Pettersson}}, \bibinfo{person}{J.
+  {Schneider}}, \bibinfo{person}{J. {Schulman}}, \bibinfo{person}{J. {Tang}},
+  {and} \bibinfo{person}{W. {Zaremba}}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{OpenAI Gym}}.
+\newblock \bibinfo{journal}{{\em arXiv e-prints\/}} (\bibinfo{date}{June}
+  \bibinfo{year}{2016}).
+\newblock
+\showeprint[arxiv]{1606.01540}
+
+
 \bibitem[\protect\citeauthoryear{Brodsky and Guest}{Brodsky and Guest}{1990}]%
         {5726804}
 \bibfield{author}{\bibinfo{person}{S.~A. Brodsky} {and} \bibinfo{person}{C.~C.
@@ -122,6 +137,17 @@
 \showISSN{2151-1802}
 \showDOI{%
 \url{https://doi.org/10.1109/ICINFA.2006.374100}}
+
+
+\bibitem[\protect\citeauthoryear{colinmorris}{colinmorris}{2016}]%
+        {duplicatedOpenAIGym}
+\bibfield{author}{\bibinfo{person}{colinmorris}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Algorithm on DuplicatedInput-v0}.
+\newblock   (\bibinfo{year}{2016}).
+\newblock
+\showURL{%
+\url{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}}
 
 
 \bibitem[\protect\citeauthoryear{Courbariaux, Bengio, and David}{Courbariaux
@@ -301,6 +327,32 @@
 \showISBNx{0-262-63111-3}
 
 
+\bibitem[\protect\citeauthoryear{Moore}{Moore}{1991}]%
+        {Moore-1991-13223}
+\bibfield{author}{\bibinfo{person}{Andrew Moore}.}
+  \bibinfo{year}{1991}\natexlab{}.
+\newblock {\em \bibinfo{title}{Efficient Memory-based Learning for Robot
+  Control}}.
+\newblock \bibinfo{thesistype}{Ph.D. Dissertation}. \bibinfo{school}{Carnegie
+  Mellon University}, \bibinfo{address}{Pittsburgh, PA}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Morse and Stanley}{Morse and Stanley}{2016}]%
+        {Morse:2016:SEO:2908812.2908916}
+\bibfield{author}{\bibinfo{person}{Gregory Morse} {and}
+  \bibinfo{person}{Kenneth~O. Stanley}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Simple Evolutionary Optimization Can Rival
+  Stochastic Gradient Descent in Neural Networks}. In \bibinfo{booktitle}{{\em
+  Proceedings of the Genetic and Evolutionary Computation Conference 2016}}
+  {\em (\bibinfo{series}{GECCO '16})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{477--484}.
+\newblock
+\showISBNx{978-1-4503-4206-3}
+\showDOI{%
+\url{https://doi.org/10.1145/2908812.2908916}}
+
+
 \bibitem[\protect\citeauthoryear{{Oluigbo} and {Rezai}}{{Oluigbo} and
   {Rezai}}{2011}]%
         {5678632}
@@ -393,6 +445,31 @@
 \newblock
 \showDOI{%
 \url{https://doi.org/10.1109/RAAD.2010.5524599}}
+
+
+\bibitem[\protect\citeauthoryear{Strens}{Strens}{2000}]%
+        {Strens:2000:BFR:645529.658114}
+\bibfield{author}{\bibinfo{person}{Malcolm J.~A. Strens}.}
+  \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{A Bayesian Framework for Reinforcement Learning}.
+  In \bibinfo{booktitle}{{\em Proceedings of the Seventeenth International
+  Conference on Machine Learning}} {\em (\bibinfo{series}{ICML '00})}.
+  \bibinfo{publisher}{Morgan Kaufmann Publishers Inc.}, \bibinfo{address}{San
+  Francisco, CA, USA}, \bibinfo{pages}{943--950}.
+\newblock
+\showISBNx{1-55860-707-2}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=645529.658114}}
+
+
+\bibitem[\protect\citeauthoryear{tanemaki}{tanemaki}{2016}]%
+        {rouletteV0OpenAI}
+\bibfield{author}{\bibinfo{person}{tanemaki}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Algorithm on Roulette-v0}.
+\newblock   (\bibinfo{year}{2016}).
+\newblock
+\showURL{%
+\url{https://gym.openai.com/evaluations/eval_DFWdtrdSCikuZWwf8HN8A/}}
 
 
 \bibitem[\protect\citeauthoryear{{Torres-Moreno} and {Gordon}}{{Torres-Moreno}
