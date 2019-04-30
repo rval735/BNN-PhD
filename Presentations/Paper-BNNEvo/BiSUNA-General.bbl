@@ -1,0 +1,443 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Bermak}{Bermak}{2003}]%
+        {1206405}
+\bibfield{author}{\bibinfo{person}{A. Bermak}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{A highly scalable 3D chip for binary neural network
+  classification applications}. In \bibinfo{booktitle}{{\em Proceedings of the
+  2003 International Symposium on Circuits and Systems, 2003. ISCAS '03.}},
+  Vol.~\bibinfo{volume}{5}. \bibinfo{pages}{V--V}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/ISCAS.2003.1206405}}
+
+
+\bibitem[\protect\citeauthoryear{{Bhargavaram} and {Pillai}}{{Bhargavaram} and
+  {Pillai}}{2012}]%
+        {6215974}
+\bibfield{author}{\bibinfo{person}{D. {Bhargavaram}} {and}
+  \bibinfo{person}{M.~G.~K. {Pillai}}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Low power dual edge triggered flip-flop}. In
+  \bibinfo{booktitle}{{\em IEEE-International Conference On Advances In
+  Engineering, Science And Management (ICAESM -2012)}}.
+  \bibinfo{pages}{63--67}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Blott, Preusser, Fraser, Gambardella, O'brien,
+  Umuroglu, Leeser, and Vissers}{Blott et~al\mbox{.}}{2018}]%
+        {Blott:2018:FRE:3299999.3242897}
+\bibfield{author}{\bibinfo{person}{Michaela Blott}, \bibinfo{person}{Thomas~B.
+  Preusser}, \bibinfo{person}{Nicholas~J. Fraser}, \bibinfo{person}{Giulio
+  Gambardella}, \bibinfo{person}{Kenneth O'brien}, \bibinfo{person}{Yaman
+  Umuroglu}, \bibinfo{person}{Miriam Leeser}, {and} \bibinfo{person}{Kees
+  Vissers}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{FINN-R: An End-to-End Deep-Learning Framework for
+  Fast Exploration of Quantized Neural Networks}.
+\newblock \bibinfo{journal}{{\em ACM Trans. Reconfigurable Technol. Syst.\/}}
+  \bibinfo{volume}{11}, \bibinfo{number}{3}, Article \bibinfo{articleno}{16}
+  (\bibinfo{date}{Dec.} \bibinfo{year}{2018}), \bibinfo{numpages}{23}~pages.
+\newblock
+\showISSN{1936-7406}
+\showDOI{%
+\url{https://doi.org/10.1145/3242897}}
+
+
+\bibitem[\protect\citeauthoryear{Brodsky and Guest}{Brodsky and Guest}{1990}]%
+        {5726804}
+\bibfield{author}{\bibinfo{person}{S.~A. Brodsky} {and} \bibinfo{person}{C.~C.
+  Guest}.} \bibinfo{year}{1990}\natexlab{}.
+\newblock \showarticletitle{Binary backpropagation in content addressable
+  memory}. In \bibinfo{booktitle}{{\em 1990 IJCNN International Joint
+  Conference on Neural Networks}}. \bibinfo{pages}{205--210 vol.3}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/IJCNN.1990.137846}}
+
+
+\bibitem[\protect\citeauthoryear{Brodsky, Marsden, and Guest}{Brodsky
+  et~al\mbox{.}}{1993}]%
+        {Brodsky:93}
+\bibfield{author}{\bibinfo{person}{Stephen~A. Brodsky},
+  \bibinfo{person}{Gary~C. Marsden}, {and} \bibinfo{person}{Clark~C. Guest}.}
+  \bibinfo{year}{1993}\natexlab{}.
+\newblock \showarticletitle{Optical matrix--vector implementation of the
+  content-addressable network}.
+\newblock \bibinfo{journal}{{\em Appl. Opt.\/}} \bibinfo{volume}{32},
+  \bibinfo{number}{8} (\bibinfo{date}{Mar} \bibinfo{year}{1993}),
+  \bibinfo{pages}{1338--1345}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1364/AO.32.001338}}
+
+
+\bibitem[\protect\citeauthoryear{Chen and Alahakoon}{Chen and
+  Alahakoon}{2006}]%
+        {4250190}
+\bibfield{author}{\bibinfo{person}{L. Chen} {and} \bibinfo{person}{D.
+  Alahakoon}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{NeuroEvolution of Augmenting Topologies with
+  Learning for Data Classification}. In \bibinfo{booktitle}{{\em 2006
+  International Conference on Information and Automation}}.
+  \bibinfo{pages}{367--371}.
+\newblock
+\showISSN{2151-1802}
+\showDOI{%
+\url{https://doi.org/10.1109/ICINFA.2006.374100}}
+
+
+\bibitem[\protect\citeauthoryear{Courbariaux, Bengio, and David}{Courbariaux
+  et~al\mbox{.}}{2015}]%
+        {NIPS2015_5647}
+\bibfield{author}{\bibinfo{person}{Matthieu Courbariaux},
+  \bibinfo{person}{Yoshua Bengio}, {and} \bibinfo{person}{Jean-Pierre David}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{BinaryConnect: Training Deep Neural Networks with
+  binary weights during propagations}.
+\newblock In \bibinfo{booktitle}{{\em Advances in Neural Information Processing
+  Systems 28}}, \bibfield{editor}{\bibinfo{person}{C.~Cortes},
+  \bibinfo{person}{N.~D. Lawrence}, \bibinfo{person}{D.~D. Lee},
+  \bibinfo{person}{M.~Sugiyama}, {and} \bibinfo{person}{R.~Garnett}} (Eds.).
+  \bibinfo{publisher}{Curran Associates, Inc.}, \bibinfo{pages}{3123--3131}.
+\newblock
+\showURL{%
+\url{http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-networks-with-binary-weights-during-propagations.pdf}}
+
+
+\bibitem[\protect\citeauthoryear{Danilo~{Vargas}}{Danilo~{Vargas}}{2017}]%
+        {7460958}
+\bibfield{author}{\bibinfo{person}{Junichi~{Murata} Danilo~{Vargas}}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Spectrum-Diverse Neuroevolution With Unified Neural
+  Models}.
+\newblock \bibinfo{journal}{{\em IEEE Transactions on Neural Networks and
+  Learning Systems\/}} \bibinfo{volume}{28}, \bibinfo{number}{8}
+  (\bibinfo{date}{Aug} \bibinfo{year}{2017}), \bibinfo{pages}{1759--1773}.
+\newblock
+\showISSN{2162-237X}
+\showDOI{%
+\url{https://doi.org/10.1109/TNNLS.2016.2551748}}
+
+
+\bibitem[\protect\citeauthoryear{Gomez}{Gomez}{2012}]%
+        {10.1007/978-3-642-33860-1_3}
+\bibfield{author}{\bibinfo{person}{Faustino Gomez}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Scalable Neuroevolution for Reinforcement
+  Learning}. In \bibinfo{booktitle}{{\em Theory and Practice of Natural
+  Computing}}, \bibfield{editor}{\bibinfo{person}{Adrian-Horia Dediu},
+  \bibinfo{person}{Carlos Mart{\'\i}n-Vide}, {and} \bibinfo{person}{Bianca
+  Truthe}} (Eds.). \bibinfo{publisher}{Springer Berlin Heidelberg},
+  \bibinfo{address}{Berlin, Heidelberg}, \bibinfo{pages}{27--29}.
+\newblock
+\showISBNx{978-3-642-33860-1}
+
+
+\bibitem[\protect\citeauthoryear{Gruau, Whitley, and Pyeatt}{Gruau
+  et~al\mbox{.}}{1996}]%
+        {Gruau:1996:CCE:1595536.1595547}
+\bibfield{author}{\bibinfo{person}{Fr{\'e}d{\'e}ric Gruau},
+  \bibinfo{person}{Darrell Whitley}, {and} \bibinfo{person}{Larry Pyeatt}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{A Comparison Between Cellular Encoding and Direct
+  Encoding for Genetic Neural Networks}. In \bibinfo{booktitle}{{\em
+  Proceedings of the 1st Annual Conference on Genetic Programming}}.
+  \bibinfo{publisher}{MIT Press}, \bibinfo{address}{Cambridge, MA, USA},
+  \bibinfo{pages}{81--89}.
+\newblock
+\showISBNx{0-262-61127-9}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=1595536.1595547}}
+
+
+\bibitem[\protect\citeauthoryear{Han, Liu, Mao, Pu, Pedram, Horowitz, and
+  Dally}{Han et~al\mbox{.}}{2016}]%
+        {Han:2016:EEI:3001136.3001163}
+\bibfield{author}{\bibinfo{person}{Song Han}, \bibinfo{person}{Xingyu Liu},
+  \bibinfo{person}{Huizi Mao}, \bibinfo{person}{Jing Pu},
+  \bibinfo{person}{Ardavan Pedram}, \bibinfo{person}{Mark~A. Horowitz}, {and}
+  \bibinfo{person}{William~J. Dally}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{EIE: Efficient Inference Engine on Compressed Deep
+  Neural Network}. In \bibinfo{booktitle}{{\em Proceedings of the 43rd
+  International Symposium on Computer Architecture}} {\em
+  (\bibinfo{series}{ISCA '16})}. \bibinfo{publisher}{IEEE Press},
+  \bibinfo{address}{Piscataway, NJ, USA}, \bibinfo{pages}{243--254}.
+\newblock
+\showISBNx{978-1-4673-8947-1}
+\showDOI{%
+\url{https://doi.org/10.1109/ISCA.2016.30}}
+
+
+\bibitem[\protect\citeauthoryear{Kam, Cheng, and Guez}{Kam
+  et~al\mbox{.}}{1988}]%
+        {4790104}
+\bibfield{author}{\bibinfo{person}{M. Kam}, \bibinfo{person}{R. Cheng}, {and}
+  \bibinfo{person}{A. Guez}.} \bibinfo{year}{1988}\natexlab{}.
+\newblock \showarticletitle{On the State Space of the Binary Neural Network}.
+  In \bibinfo{booktitle}{{\em 1988 American Control Conference}}.
+  \bibinfo{pages}{2276--2281}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.23919/ACC.1988.4790104}}
+
+
+\bibitem[\protect\citeauthoryear{Krizhevsky, Sutskever, and Hinton}{Krizhevsky
+  et~al\mbox{.}}{2012}]%
+        {Krizhevsky2999257}
+\bibfield{author}{\bibinfo{person}{Alex Krizhevsky}, \bibinfo{person}{Ilya
+  Sutskever}, {and} \bibinfo{person}{Geoffrey~E. Hinton}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{ImageNet Classification with Deep Convolutional
+  Neural Networks}. In \bibinfo{booktitle}{{\em Proceedings of the 25th
+  International Conference on Neural Information Processing Systems - Volume
+  1}} {\em (\bibinfo{series}{NIPS'12})}. \bibinfo{publisher}{Curran Associates
+  Inc.}, \bibinfo{address}{USA}, \bibinfo{pages}{1097--1105}.
+\newblock
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=2999134.2999257}}
+
+
+\bibitem[\protect\citeauthoryear{Kurenkov}{Kurenkov}{2018}]%
+        {AIWinter-Andrey}
+\bibfield{author}{\bibinfo{person}{Andrey Kurenkov}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{A 'Brief' History of Neural Nets and Deep Learning}.
+\newblock   (\bibinfo{date}{September} \bibinfo{year}{2018}).
+\newblock
+\showURL{%
+\url{http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-nets-and-deep-learning}}
+
+
+\bibitem[\protect\citeauthoryear{Lin, Guo, and Aberer}{Lin
+  et~al\mbox{.}}{2017}]%
+        {ijcai2017-316}
+\bibfield{author}{\bibinfo{person}{Tao Lin}, \bibinfo{person}{Tian Guo}, {and}
+  \bibinfo{person}{Karl Aberer}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Hybrid Neural Networks for Learning the Trend in
+  Time Series}. In \bibinfo{booktitle}{{\em Proceedings of the Twenty-Sixth
+  International Joint Conference on Artificial Intelligence, {IJCAI-17}}}.
+  \bibinfo{pages}{2273--2279}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.24963/ijcai.2017/316}}
+
+
+\bibitem[\protect\citeauthoryear{Linnainmaa}{Linnainmaa}{1976}]%
+        {Linnainmaa1976}
+\bibfield{author}{\bibinfo{person}{Seppo Linnainmaa}.}
+  \bibinfo{year}{1976}\natexlab{}.
+\newblock \showarticletitle{Taylor expansion of the accumulated rounding
+  error}.
+\newblock \bibinfo{journal}{{\em BIT Numerical Mathematics\/}}
+  \bibinfo{volume}{16}, \bibinfo{number}{2} (\bibinfo{date}{01 Jun}
+  \bibinfo{year}{1976}), \bibinfo{pages}{146--160}.
+\newblock
+\showISSN{1572-9125}
+\showDOI{%
+\url{https://doi.org/10.1007/BF01931367}}
+
+
+\bibitem[\protect\citeauthoryear{{Liu}, {Liao}, and {Ding}}{{Liu}
+  et~al\mbox{.}}{2018}]%
+        {8398183}
+\bibfield{author}{\bibinfo{person}{S. {Liu}}, \bibinfo{person}{G. {Liao}},
+  {and} \bibinfo{person}{Y. {Ding}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Stock transaction prediction modeling and analysis
+  based on LSTM}. In \bibinfo{booktitle}{{\em 2018 13th IEEE Conference on
+  Industrial Electronics and Applications (ICIEA)}}.
+  \bibinfo{pages}{2787--2790}.
+\newblock
+\showISSN{2158-2297}
+\showDOI{%
+\url{https://doi.org/10.1109/ICIEA.2018.8398183}}
+
+
+\bibitem[\protect\citeauthoryear{Minsky and Papert}{Minsky and Papert}{1988}]%
+        {Minsky:1988:PEE:50066}
+\bibfield{author}{\bibinfo{person}{Marvin~L. Minsky} {and}
+  \bibinfo{person}{Seymour~A. Papert}.} \bibinfo{year}{1988}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Perceptrons: Expanded Edition}}.
+\newblock \bibinfo{publisher}{MIT Press}, \bibinfo{address}{Cambridge, MA,
+  USA}.
+\newblock
+\showISBNx{0-262-63111-3}
+
+
+\bibitem[\protect\citeauthoryear{{Oluigbo} and {Rezai}}{{Oluigbo} and
+  {Rezai}}{2011}]%
+        {5678632}
+\bibfield{author}{\bibinfo{person}{C.~O. {Oluigbo}} {and}
+  \bibinfo{person}{A.~R. {Rezai}}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Addressing Neurological Disorders With
+  Neuromodulation}.
+\newblock \bibinfo{journal}{{\em IEEE Transactions on Biomedical
+  Engineering\/}} \bibinfo{volume}{58}, \bibinfo{number}{7}
+  (\bibinfo{date}{July} \bibinfo{year}{2011}), \bibinfo{pages}{1907--1917}.
+\newblock
+\showISSN{0018-9294}
+\showDOI{%
+\url{https://doi.org/10.1109/TBME.2010.2102758}}
+
+
+\bibitem[\protect\citeauthoryear{{Rahimi Azghadi}, {Iannella}, {Al-Sarawi},
+  {Indiveri}, and {Abbott}}{{Rahimi Azghadi} et~al\mbox{.}}{2014}]%
+        {6804688}
+\bibfield{author}{\bibinfo{person}{M. {Rahimi Azghadi}}, \bibinfo{person}{N.
+  {Iannella}}, \bibinfo{person}{S.~F. {Al-Sarawi}}, \bibinfo{person}{G.
+  {Indiveri}}, {and} \bibinfo{person}{D. {Abbott}}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Spike-Based Synaptic Plasticity in Silicon: Design,
+  Implementation, Application, and Challenges}.
+\newblock \bibinfo{journal}{{\it Proc. IEEE}} \bibinfo{volume}{102},
+  \bibinfo{number}{5} (\bibinfo{date}{May} \bibinfo{year}{2014}),
+  \bibinfo{pages}{717--737}.
+\newblock
+\showISSN{0018-9219}
+\showDOI{%
+\url{https://doi.org/10.1109/JPROC.2014.2314454}}
+
+
+\bibitem[\protect\citeauthoryear{Rastegari, Ordonez, Redmon, and
+  Farhadi}{Rastegari et~al\mbox{.}}{2016}]%
+        {10.1007/978-3-319-46493-0_32}
+\bibfield{author}{\bibinfo{person}{Mohammad Rastegari},
+  \bibinfo{person}{Vicente Ordonez}, \bibinfo{person}{Joseph Redmon}, {and}
+  \bibinfo{person}{Ali Farhadi}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{XNOR-Net: ImageNet Classification Using Binary
+  Convolutional Neural Networks}. In \bibinfo{booktitle}{{\em Computer Vision
+  -- ECCV 2016}}, \bibfield{editor}{\bibinfo{person}{Bastian Leibe},
+  \bibinfo{person}{Jiri Matas}, \bibinfo{person}{Nicu Sebe}, {and}
+  \bibinfo{person}{Max Welling}} (Eds.). \bibinfo{publisher}{Springer
+  International Publishing}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{525--542}.
+\newblock
+\showISBNx{978-3-319-46493-0}
+
+
+\bibitem[\protect\citeauthoryear{Sher}{Sher}{2013}]%
+        {Sher2013NeuroEvol}
+\bibfield{author}{\bibinfo{person}{Gene~I. Sher}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Handbook of Neuroevolution Through Erlang}}.
+\newblock \bibinfo{publisher}{Springer New York}, \bibinfo{address}{New York,
+  NY}. 1--39 pages.
+\newblock
+\showISBNx{978-1-4614-4463-3}
+\showDOI{%
+\url{https://doi.org/10.1007/978-1-4614-4463-3_1}}
+
+
+\bibitem[\protect\citeauthoryear{Siebel and Sommer}{Siebel and Sommer}{2007}]%
+        {Siebel:2007:ERL:1367012.1367016}
+\bibfield{author}{\bibinfo{person}{Nils~T. Siebel} {and}
+  \bibinfo{person}{Gerald Sommer}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Evolutionary Reinforcement Learning of Artificial
+  Neural Networks}.
+\newblock \bibinfo{journal}{{\em Int. J. Hybrid Intell. Syst.\/}}
+  \bibinfo{volume}{4}, \bibinfo{number}{3} (\bibinfo{date}{Aug.}
+  \bibinfo{year}{2007}), \bibinfo{pages}{171--183}.
+\newblock
+\showISSN{1448-5869}
+\showURL{%
+\url{http://dl.acm.org/citation.cfm?id=1367012.1367016}}
+
+
+\bibitem[\protect\citeauthoryear{Stoica, Calangiu, and Sisak}{Stoica
+  et~al\mbox{.}}{2010}]%
+        {5524599}
+\bibfield{author}{\bibinfo{person}{M. Stoica}, \bibinfo{person}{G.~A.
+  Calangiu}, {and} \bibinfo{person}{F. Sisak}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Measuring the time needed for training a neural
+  network based on the number of training steps}. In \bibinfo{booktitle}{{\em
+  19th International Workshop on Robotics in Alpe-Adria-Danube Region (RAAD
+  2010)}}. \bibinfo{pages}{109--113}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/RAAD.2010.5524599}}
+
+
+\bibitem[\protect\citeauthoryear{{Torres-Moreno} and {Gordon}}{{Torres-Moreno}
+  and {Gordon}}{2009}]%
+        {2009arXiv0904.4587T}
+\bibfield{author}{\bibinfo{person}{J.-M. {Torres-Moreno}} {and}
+  \bibinfo{person}{M.~B. {Gordon}}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{{Adaptive Learning with Binary Neurons}}.
+\newblock \bibinfo{journal}{{\em ArXiv e-prints\/}} (\bibinfo{date}{April}
+  \bibinfo{year}{2009}).
+\newblock
+\showeprint[arxiv]{cs.AI/0904.4587}
+
+
+\bibitem[\protect\citeauthoryear{Umuroglu, Fraser, Gambardella, Blott, Leong,
+  Jahre, and Vissers}{Umuroglu et~al\mbox{.}}{2017}]%
+        {Umuroglu:2017:FFF:3020078.3021744}
+\bibfield{author}{\bibinfo{person}{Yaman Umuroglu},
+  \bibinfo{person}{Nicholas~J. Fraser}, \bibinfo{person}{Giulio Gambardella},
+  \bibinfo{person}{Michaela Blott}, \bibinfo{person}{Philip Leong},
+  \bibinfo{person}{Magnus Jahre}, {and} \bibinfo{person}{Kees Vissers}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{FINN: A Framework for Fast, Scalable Binarized
+  Neural Network Inference}. In \bibinfo{booktitle}{{\em Proceedings of the
+  2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays}}
+  {\em (\bibinfo{series}{FPGA '17})}. \bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{65--74}.
+\newblock
+\showISBNx{978-1-4503-4354-1}
+\showDOI{%
+\url{https://doi.org/10.1145/3020078.3021744}}
+
+
+\bibitem[\protect\citeauthoryear{{Zhu}, {Vargas}, and {Sakurai}}{{Zhu}
+  et~al\mbox{.}}{2018}]%
+        {8590945}
+\bibfield{author}{\bibinfo{person}{Y. {Zhu}}, \bibinfo{person}{D.~V. {Vargas}},
+  {and} \bibinfo{person}{K. {Sakurai}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Neural Cryptography Based on the Topology Evolving
+  Neural Networks}. In \bibinfo{booktitle}{{\em 2018 Sixth International
+  Symposium on Computing and Networking Workshops (CANDARW)}}.
+  \bibinfo{pages}{472--478}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/CANDARW.2018.00091}}
+
+
+\end{thebibliography}
