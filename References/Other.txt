@@ -24,3 +24,12 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2465794
 
 OpenAI Gym
 https://arxiv.org/abs/1606.01540
+
+Spike-Based Synaptic Plasticity in Silicon: Design, Implementation, Application, and Challenges
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6804688
+
+Addressing Neurological Disorders With Neuromodulation
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5678632
+
+Low power dual edge triggered flip-flop
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6215974

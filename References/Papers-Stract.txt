@@ -231,6 +231,7 @@ Finance time series prediction using complex-valued flexible neural tree model
 -
 
 < CNN-Fin
+
 ------> NN-Fin
 
 A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters 
@@ -282,6 +283,13 @@ Functional data learning by Hilbert feedforward neural networks
 - The "Hilbert parallel overrelaxation backpropagation (HPORBP) algorithm" is proposed
 - Mentioned that HPORBP has better accuracy than the Hilbert backpropagation algorithm
 - It has embedded considerations for parallel execution
+
+Stock Transaction Prediction Modeling and Analysis Based on LSTM
+-
+-
+-
+
+< NN-Fin
 
 ------> FPGA
 
@@ -1965,6 +1973,12 @@ MOBIUS- Model-Oblivious Binarized Neural Networks
 - Composed of protocols we call secure full connection, secure batch normalization, and secure activation
 - 2 EC2 c4.8xlarge with MNIST (95.9% and 0.76sec)
 
+Efficient Object Detection Using Embedded Binarized Neural Networks
+- Identifies human subjects in infrared images by using BNN
+- 98% without any noise and over 96% even with noise in IR images
+- BNN system has much less processing elements, the energy efficiency improves by three orders of magnitude
+- Implementation onto an FPGA with 4x speedup compared to a GPU
+
 < BNN
 
 ------> Other
@@ -2009,6 +2023,21 @@ OpenAI Gym
 - Python environment for reinforcement learning algorithms
 - Includes several topics like: algorithms, control systems, robotics 
 - Open source and accessible here: https://github.com/openai/gym
+
+Spike-Based Synaptic Plasticity in Silicon: Design, Implementation, Application, and Challenges
+-
+-
+-
+
+Addressing Neurological Disorders With Neuromodulation
+-
+-
+-
+
+Low power dual edge triggered flip-flop 
+-
+-
+-
 
 < Other
 
@@ -2303,5 +2332,20 @@ Limited evaluation cooperative co-evolutionary differential evolution for large-
 - LE and CC schemes to improve the accuracy and runtime of standard DE algorithm for large-scale NE with direct encoding
 - MNIST dataset with 96.60, 93.84, and 93.38 on training
 - LE scheme reduces the runtime of the algorithms, without affecting the performance
+
+A comparison between cellular encoding and direct encoding for genetic neural networks
+- Compares the efficiency of two encoding schemes: direct and cellular encoding
+- RL problem of balancing one or more poles on a cart moving on a fixed track
+- Solutions found by Cellular Encoding are smaller than those obtained using methods and architectures developed
+
+Evolutionary reinforcement learning of artificial neural networks
+- Structure of the networks is developed using mutation operators, starting from a minimal structure
+- Parameters are optimised using CMA-ES, Covariance Matrix Adaptation Evolution Strategy
+- Simulated visual servoing scenario with 1023 start poses
+
+Efficient Evolution of Neural Networks through Complexification
+- Starting minimally, NEAT is more likely to find efficient and robust solutions than neuroevolution methods that begin with large fixed or randomized topologies
+- NEAT is used to successfully discover complex behavior in three challenging domains
+- Game of Go, an automobile warning system, and a real-time interactive video game
 
 < Evolutionary

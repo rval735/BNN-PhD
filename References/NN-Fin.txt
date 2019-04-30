@@ -90,3 +90,6 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/5234726/
 
 An Efficient Neural Network Model with Taylor Series-Based Data Pre-processing for Stock Price Forecast
 https://www.scientific.net/AMM.284-287.3020
+
+Stock Transaction Prediction Modeling and Analysis Based on LSTM
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8398183

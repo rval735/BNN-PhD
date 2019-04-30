@@ -156,3 +156,11 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-030-00111
 Limited evaluation cooperative co-evolutionary differential evolution for large-scale neuroevolution
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3205455.3205555
 
+A comparison between cellular encoding and direct encoding for genetic neural networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1595547
+
+Evolutionary reinforcement learning of artificial neural networks
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=1367016
+
+Efficient Evolution of Neural Networks through Complexification
+http://nn.cs.utexas.edu/keyword?stanley:phd04
