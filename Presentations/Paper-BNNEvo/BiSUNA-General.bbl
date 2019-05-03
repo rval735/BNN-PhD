@@ -62,6 +62,16 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{blole}{blole}{2016}]%
+        {nchainv0OpenAI}
+\bibfield{author}{\bibinfo{person}{blole}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Algorithm on NChain-v0}.
+\newblock   (\bibinfo{year}{2016}).
+\newblock
+\showURL{%
+\url{https://gym.openai.com/evaluations/eval_8KB72MuwRqqdbRG4UMs1w/}}
+
+
 \bibitem[\protect\citeauthoryear{Blott, Preusser, Fraser, Gambardella, O'brien,
   Umuroglu, Leeser, and Vissers}{Blott et~al\mbox{.}}{2018}]%
         {Blott:2018:FRE:3299999.3242897}
@@ -137,17 +147,6 @@
 \showISSN{2151-1802}
 \showDOI{%
 \url{https://doi.org/10.1109/ICINFA.2006.374100}}
-
-
-\bibitem[\protect\citeauthoryear{colinmorris}{colinmorris}{2016}]%
-        {duplicatedOpenAIGym}
-\bibfield{author}{\bibinfo{person}{colinmorris}.}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \bibinfo{title}{Algorithm on DuplicatedInput-v0}.
-\newblock   (\bibinfo{year}{2016}).
-\newblock
-\showURL{%
-\url{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}}
 
 
 \bibitem[\protect\citeauthoryear{Courbariaux, Bengio, and David}{Courbariaux
