@@ -149,6 +149,17 @@
 \url{https://doi.org/10.1109/ICINFA.2006.374100}}
 
 
+\bibitem[\protect\citeauthoryear{colinmorris}{colinmorris}{2016}]%
+        {duplicatedOpenAIGym}
+\bibfield{author}{\bibinfo{person}{colinmorris}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{title}{Algorithm on DuplicatedInput-v0}.
+\newblock   (\bibinfo{year}{2016}).
+\newblock
+\showURL{%
+\url{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}}
+
+
 \bibitem[\protect\citeauthoryear{Courbariaux, Bengio, and David}{Courbariaux
   et~al\mbox{.}}{2015}]%
         {NIPS2015_5647}
@@ -500,6 +511,23 @@
 \showISBNx{978-1-4503-4354-1}
 \showDOI{%
 \url{https://doi.org/10.1145/3020078.3021744}}
+
+
+\bibitem[\protect\citeauthoryear{Zhang, Yang, Ye, and Hua}{Zhang
+  et~al\mbox{.}}{2018}]%
+        {10.1007/978-3-030-01237-3_23}
+\bibfield{author}{\bibinfo{person}{Dongqing Zhang}, \bibinfo{person}{Jiaolong
+  Yang}, \bibinfo{person}{Dongqiangzi Ye}, {and} \bibinfo{person}{Gang Hua}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{LQ-Nets: Learned Quantization for Highly Accurate
+  and Compact Deep Neural Networks}. In \bibinfo{booktitle}{{\em Computer
+  Vision -- ECCV 2018}}, \bibfield{editor}{\bibinfo{person}{Vittorio Ferrari},
+  \bibinfo{person}{Martial Hebert}, \bibinfo{person}{Cristian Sminchisescu},
+  {and} \bibinfo{person}{Yair Weiss}} (Eds.). \bibinfo{publisher}{Springer
+  International Publishing}, \bibinfo{address}{Cham},
+  \bibinfo{pages}{373--390}.
+\newblock
+\showISBNx{978-3-030-01237-3}
 
 
 \bibitem[\protect\citeauthoryear{{Zhu}, {Vargas}, and {Sakurai}}{{Zhu}
