@@ -220,3 +220,6 @@ https://dl.acm.org/citation.cfm?id=1622268
 Efficient Memory-based Learning for Robot Control
 https://www.ri.cmu.edu/publications/efficient-memory-based-learning-for-robot-control/
 
+Interpretability Beyond Feature Attribution- Quantitative Testing with Concept Activation Vectors
+https://arxiv.org/abs/1711.11279
+https://github.com/tensorflow/tcav

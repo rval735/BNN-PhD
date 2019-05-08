@@ -1220,6 +1220,11 @@ Hierarchical Reinforcement Learning with the MAXQ Value Function Decomposition
 - MAXQ relies on programmers to design the hierarchy of termination conditions, pseudo-reward functions and state abstractions
 - Applied to Taxi and HDG tasks􏰀
 
+Interpretability Beyond Feature Attribution- Quantitative Testing with Concept Activation Vectors
+- Shows importance of high level concepts for a prediction class
+- TCAV gives an explanation that is generally true for a class of interest, beyond one image (global explanation)
+- Tested a variety of concepts: color, gender, race, textures and many others
+
 < NN
 -------> DCGAN
 
@@ -2043,6 +2048,18 @@ Low power dual edge triggered flip-flop
 -
 -
 -
+
+Benchmarking Deep Reinforcement Learning for Continuous Control
+- Benchmark suite of continuous control tasks, systematic evaluation of a
+range of implemented reinforcement learning algorithms
+- Applied to basic tasks, locomotion tasks, partially observable tasks, and hierarchical tasks.
+- Algorithms:  gradient-based policy search methods, as well as two gradient-free methods
+
+Structured Control Nets for Deep Reinforcement Learning
+- Proposed Structured Control Net (SCN) splits the generic MLP into two separate submodules: a nonlinear control module and a linear control module
+- Improves training sampling efficiency, final episodic reward, and generalization of learned policy
+- OpenAI MuJoCo, Roboschool, Atari, and a custom 2D urban driving environment
+- Incorporates problem specific priors into the architecture
 
 < Other
 
