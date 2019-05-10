@@ -1225,6 +1225,28 @@ Interpretability Beyond Feature Attribution- Quantitative Testing with Concept A
 - TCAV gives an explanation that is generally true for a class of interest, beyond one image (global explanation)
 - Tested a variety of concepts: color, gender, race, textures and many others
 
+DeepZip- Lossless Data Compression using Recurrent Neural Networks
+- Combine recurrent neural network predictors with an arithmetic coder and losslessly compress a variety of synthetic, text and genomic datasets
+- Outperforms Gzip on the real datasets and achieves near-optimal compression for the synthetic datasets
+- DeepZip has the three probability predictor blocks FC, biGRU and LSTM-multi
+- Tested on Real: Human Chr1 dataset, C Elegans, PhyX virus, text8; Synthetic:k-order Markov, Hidden Markov Model
+
+Public Key Cryptography using Neural Networks and Genetic Algorithms
+-
+-
+-
+
+Survey Report on Cryptography Based on Neural Network
+-
+-
+-
+
+Elliptic Curve Diffie-Hellman Random Keys Using Artificial Neural Network and Genetic Algorithm for Secure Data over Private Cloud
+-
+-
+-
+
+
 < NN
 -------> DCGAN
 

@@ -223,3 +223,15 @@ https://www.ri.cmu.edu/publications/efficient-memory-based-learning-for-robot-co
 Interpretability Beyond Feature Attribution- Quantitative Testing with Concept Activation Vectors
 https://arxiv.org/abs/1711.11279
 https://github.com/tensorflow/tcav
+
+DeepZip- Lossless Data Compression using Recurrent Neural Networks
+https://arxiv.org/abs/1811.08162
+
+Public Key Cryptography using Neural Networks and Genetic Algorithms
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/abstract/document/6612177
+
+Survey Report on Cryptography Based on Neural Network
+https://www.researchgate.net/publication/306443179_Survey_Report_on_Cryptography_Based_on_Neural_Network
+
+Elliptic Curve Diffie-Hellman Random Keys Using Artificial Neural Network and Genetic Algorithm for Secure Data over Private Cloud
+https://scialert.net/fulltext/?doi=itj.2016.77.83
