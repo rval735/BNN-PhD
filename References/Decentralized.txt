@@ -1,0 +1,22 @@
+BitWorker, a Decentralized Distributed Computing System Based on BitTorrent
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-22572-2_11
+https://github.com/DurandA/bitworker
+
+Distributed/Decentralized and Asynchronous Algorithms
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-1-4899-2696-8_12
+
+Synthesis of Distributed Control through Knowledge Accumulation
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-22110-1_41
+
+A Heuristic Algorithm for Workflow-Based Job Scheduling in Decentralized Distributed Systems with Heterogeneous Resources
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-10509-3_8
+
+Advanced air traffic automation- A case study in distributed decentralized control
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/BFb0015088
+
+Comingle- Distributed Logic Programming for Decentralized Mobile Ensembles
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-19282-6_4
+https://github.com/sllam/comingle
+
+Parallel and Distributed Particle Collision Simulation with Decentralized Control
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-540-68083-3_25

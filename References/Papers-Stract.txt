@@ -1248,6 +1248,46 @@ Elliptic Curve Diffie-Hellman Random Keys Using Artificial Neural Network and Ge
 
 
 < NN
+
+-------> Decentralized
+
+BitWorker, a Decentralized Distributed Computing System Based on BitTorrent
+-
+-
+-
+
+Distributed/Decentralized and Asynchronous Algorithms
+-
+-
+-
+
+Synthesis of Distributed Control through Knowledge Accumulation
+-
+-
+-
+
+A Heuristic Algorithm for Workflow-Based Job Scheduling in Decentralized Distributed Systems with Heterogeneous Resources
+-
+-
+-
+
+Advanced air traffic automation- A case study in distributed decentralized control
+-
+-
+-
+
+Comingle- Distributed Logic Programming for Decentralized Mobile Ensembles
+-
+-
+-
+
+Parallel and Distributed Particle Collision Simulation with Decentralized Control
+-
+-
+-
+
+< Decentralized
+
 -------> DCGAN
 
 Generative Adversarial Networks
