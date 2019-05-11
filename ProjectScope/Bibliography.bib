@@ -1,12 +1,159 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2019-05-10 20:00:42 +1200 
+%% Created for RHVT at 2019-05-12 00:57:19 +1200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{7604133,
+	Abstract = {In this paper we report on our advances designing and implementing an FPGA-based computation accelerator as part of a Homomorphic Encryption Processing Unit (HEPU) co-processor. This hardware accelerator technology improves the practicality of computing on encrypted data by reducing the computational bottlenecks of lattice encryption primitives that support homomorphic encryption schemes. We focus on accelerating the Chinese Remainder Transform (CRT) and inverse Chinese Remainder Transform (iCRT) for power-of-2 cyclotomic rings, but also accelerate other basic ring arithmetic such as Ring Addition, Ring Subtraction and Ring Multiplication. We instantiate this capability in a Xilinx Virtex-7 FPGA that can attach to a host computer through either a PCI-Express port or Ethernet. We focus our experimental performance analysis on the NTRU-based LTV Homomorphic Encryption scheme. This is a leveled homomorphic encryption scheme, but our accelerator is compatible with other lattice-based schemes and recent improved bootstrapping designs to support arbitrary depth computation. We experimentally compare performance with a reference software implementations of the CRT and iCRT bottlenecks and when used in a practical application of encrypted string comparison.},
+	Author = {D. B. {Cousins} and K. {Rohloff} and D. {Sumorok}},
+	Date-Added = {2019-05-12 00:57:09 +1200},
+	Date-Modified = {2019-05-12 00:57:19 +1200},
+	Doi = {10.1109/TETC.2016.2619669},
+	Issn = {2168-6750},
+	Journal = {IEEE Transactions on Emerging Topics in Computing},
+	Keywords = {Crypto; coprocessors;cryptography;field programmable gate arrays;local area networks;logic design;peripheral interfaces;transforms;FPGA designing;homomorphic encryption processing unit coprocessor;HEPU coprocessor;hardware accelerator;inverse Chinese remainder transform;iCRT;ring arithmetic;Xilinx Virtex-7 FPGA;PCI-Express port;Ethernet;Encryption;Cathode ray tubes;Acceleration;Hardware;Field programmable gate arrays;Applied cryptography;hardware acceleration;homomorphic encryption},
+	Month = {April},
+	Number = {2},
+	Pages = {193-206},
+	Title = {Designing an FPGA-Accelerated Homomorphic Encryption Co-Processor},
+	Volume = {5},
+	Year = {2017},
+	Bdsk-Url-1 = {https://doi.org/10.1109/TETC.2016.2619669}}
+
+@article{8318681,
+	Abstract = {In this paper, we present an FPGA based hardware accelerator `$\mathsf{HEPCloud}$' for homomorphic evaluations of medium depth functions which has applications in cloud computing. Our$\mathsf{HEPCloud}$architecture supports the polynomial ring based homomorphic encryption scheme FV for a ring-LWE parameter set of dimension$2^{15}$, modulus size 1,228-bit, and a standard deviation 50. This parameter-set offers a multiplicative depth 36 and at least 85 bit security. The processor of$\mathsf{HEPCloud}$is composed of multiple parallel cores. To achieve fast computation time for such a large parameter-set, various optimizations in both algorithm and architecture levels are performed. For fast polynomial multiplications, we use CRT with NTT and achieve two dimensional parallelism in$\mathsf{HEPCloud}$. We optimize the BRAM access, use a fast Barrett like polynomial reduction method, optimize the cost of CRT, and design a fast divide-and-round unit. Beside parallel processing, we apply pipelining strategy in several of the sequential building blocks to reduce the impact of sequential computations. Finally, we implement$\mathsf{HEPCloud}$on a medium-size Xilinx Virtex 6 FPGA board ML605 board and measure its on-board performance. To store the ciphertexts during a homomorphic function evaluation, we use the large DDR3 memory of the ML605 board. Our FPGA-based implementation of$\mathsf{HEPCloud}$computes a homomorphic multiplication in 26.67 s, of which the actual computation takes only 3.36 s and the rest is spent for off-chip memory access. It requires about 37,551 s to evaluate the SIMON-64/128 block cipher, but the per-block timing is only about 18 s because$\mathsf{HEPCloud}$processes 2,048 blocks simultaneously. The results show that FPGA-based acceleration of homomorphic function evaluations is feasible, but fast memory interface is crucial for the performance.},
+	Author = {S. {Sinha Roy} and K. {J{\"a}rvinen} and J. {Vliegen} and F. {Vercauteren} and I. {Verbauwhede}},
+	Date-Added = {2019-05-12 00:55:19 +1200},
+	Date-Modified = {2019-05-12 00:55:33 +1200},
+	Doi = {10.1109/TC.2018.2816640},
+	Issn = {0018-9340},
+	Journal = {IEEE Transactions on Computers},
+	Keywords = {Crypto; Hardware;Encryption;Computer architecture;Cloud computing;Acceleration;Homomorphic encryption;FV;lattice-based cryptography;ring-LWE;polynomial multiplication;number theoretic transform;hardware implementation},
+	Month = {Nov},
+	Number = {11},
+	Pages = {1637-1650},
+	Title = {HEPCloud: An FPGA-Based Multicore Processor for FV Somewhat Homomorphic Function Evaluation},
+	Volume = {67},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1109/TC.2018.2816640}}
+
+@misc{TFHE,
+	Author = {Ilaria Chillotti and Nicolas Gama and Mariya Georgieva and Malika Izabach{\`e}ne},
+	Date-Added = {2019-05-12 00:39:10 +1200},
+	Date-Modified = {2019-05-12 00:39:22 +1200},
+	Keywords = {Crypto, Library, Homomorphic encryption},
+	Note = {https://tfhe.github.io/tfhe/},
+	Title = {{TFHE}: Fast Fully Homomorphic Encryption Library},
+	Year = {August 2016}}
+
+@article{Roy2019FPGABasedHP,
+	Author = {Sujoy Sinha Roy and Furkan Turan and Kimmo J{\"a}rvinen and Frederik Vercauteren and Ingrid Verbauwhede},
+	Date-Added = {2019-05-12 00:31:44 +1200},
+	Date-Modified = {2019-05-12 00:31:58 +1200},
+	Journal = {2019 IEEE International Symposium on High Performance Computer Architecture (HPCA)},
+	Keywords = {Crypto, Homomorphic encryption, FPGA},
+	Pages = {387-398},
+	Title = {FPGA-Based High-Performance Parallel Architecture for Homomorphic Computing on Encrypted Data},
+	Year = {2019}}
+
+@article{Barcau2018BoundedFH,
+	Author = {Mugurel Barcau and Vicentiu Pasol},
+	Date-Added = {2019-05-12 00:14:22 +1200},
+	Date-Modified = {2019-05-12 00:14:36 +1200},
+	Journal = {IACR Cryptology ePrint Archive},
+	Keywords = {Crypto, Patented, Monoid},
+	Pages = {584},
+	Title = {Bounded Fully Homomorphic Encryption from Monoid Algebras},
+	Volume = {2018},
+	Year = {2018}}
+
+@article{journals/iacr/BouraGG18,
+	Added-At = {2018-09-12T00:00:00.000+0200},
+	Author = {Boura, Christina and Gama, Nicolas and Georgieva, Mariya},
+	Biburl = {https://www.bibsonomy.org/bibtex/23a26ad6c2b19b760421d9d209b35db7b/dblp},
+	Date-Added = {2019-05-12 00:02:23 +1200},
+	Date-Modified = {2019-05-12 00:13:27 +1200},
+	Ee = {https://eprint.iacr.org/2018/758},
+	Interhash = {6fdde7eaad29a2d2e98bf0a44d60cea2},
+	Intrahash = {3a26ad6c2b19b760421d9d209b35db7b},
+	Journal = {IACR Cryptology ePrint Archive},
+	Keywords = {Crypto, Homomorphic encryption},
+	Pages = 758,
+	Timestamp = {2018-09-13T11:37:07.000+0200},
+	Title = {Chimera: a unified framework for B/FV, TFHE and HEAAN fully homomorphic encryption and predictions for deep learning.},
+	Url = {http://dblp.uni-trier.de/db/journals/iacr/iacr2018.html#BouraGG18},
+	Volume = 2018,
+	Year = 2018,
+	Bdsk-Url-1 = {http://dblp.uni-trier.de/db/journals/iacr/iacr2018.html#BouraGG18}}
+
+@article{2019arXiv190207342S,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2019arXiv190207342S},
+	Archiveprefix = {arXiv},
+	Author = {{Sadegh Riazi}, M. and {Samragh}, M. and {Chen}, H. and {Laine}, K. and {Lauter}, K. and {Koushanfar}, F.},
+	Date-Added = {2019-05-11 23:54:01 +1200},
+	Date-Modified = {2019-05-11 23:54:39 +1200},
+	Eprint = {1902.07342},
+	Journal = {arXiv e-prints},
+	Keywords = {Crypto, Homomorphic encryption, BNN, Cryptography and Security},
+	Month = feb,
+	Primaryclass = {cs.CR},
+	Title = {{XONN: XNOR-based Oblivious Deep Neural Network Inference}},
+	Year = 2019}
+
+@inproceedings{pmlr-v80-sanyal18a,
+	Abstract = {Machine learning methods are widely used for a variety of prediction problems. Prediction as a service is a paradigm in which service providers with technological expertise and computational resources may perform predictions for clients. However, data privacy severely restricts the applicability of such services, unless measures to keep client data private (even from the service provider) are designed. Equally important is to minimize the nature of computation and amount of communication required between client and server. Fully homomorphic encryption offers a way out, whereby clients may encrypt their data, and on which the server may perform arithmetic computations. The one drawback of using fully homomorphic encryption is the amount of time required to evaluate large machine learning models on encrypted data. We combine several ideas from the machine learning literature, particularly work on quantization and sparsification of neural networks, together with algorithmic tools to speed-up and parallelize computation using encrypted data.},
+	Address = {Stockholmsm{\"a}ssan, Stockholm Sweden},
+	Author = {Sanyal, Amartya and Kusner, Matt and Gascon, Adria and Kanade, Varun},
+	Booktitle = {Proceedings of the 35th International Conference on Machine Learning},
+	Date-Added = {2019-05-11 23:51:50 +1200},
+	Date-Modified = {2019-05-11 23:52:20 +1200},
+	Editor = {Dy, Jennifer and Krause, Andreas},
+	Keywords = {Crypto, Homomorphic encryption, PaaS},
+	Month = {10--15 Jul},
+	Pages = {4490--4499},
+	Pdf = {http://proceedings.mlr.press/v80/sanyal18a/sanyal18a.pdf},
+	Publisher = {PMLR},
+	Series = {Proceedings of Machine Learning Research},
+	Title = {{TAPAS}: Tricks to Accelerate (encrypted) Prediction As a Service},
+	Url = {http://proceedings.mlr.press/v80/sanyal18a.html},
+	Volume = {80},
+	Year = {2018},
+	Bdsk-Url-1 = {http://proceedings.mlr.press/v80/sanyal18a.html}}
+
+@article{2018arXiv181000845D,
+	Adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+	Adsurl = {http://adsabs.harvard.edu/abs/2018arXiv181000845D},
+	Archiveprefix = {arXiv},
+	Author = {{Dathathri}, R. and {Saarikivi}, O. and {Chen}, H. and {Laine}, K. and {Lauter}, K. and {Maleki}, S. and {Musuvathi}, M. and {Mytkowicz}, T.},
+	Date-Added = {2019-05-11 23:38:53 +1200},
+	Date-Modified = {2019-05-11 23:40:32 +1200},
+	Eprint = {1810.00845},
+	Journal = {Privacy Preserving Machine Learning},
+	Keywords = {Crypto, Machine Learning, Computer Science - Cryptography and Security, Computer Science - Programming Languages, Statistics - Machine Learning},
+	Month = Dec,
+	Title = {{CHET: Compiler and Runtime for Homomorphic Evaluation of Tensor Programs}},
+	Year = 2018}
+
+@inproceedings{crypto-2018-28796,
+	Author = {Florian Bourse and Michele Minelli and Matthias Minihold and Pascal Paillier},
+	Booktitle = {Advances in Cryptology -- CRYPTO 2018},
+	Date-Added = {2019-05-11 22:29:00 +1200},
+	Date-Modified = {2019-05-11 23:16:46 +1200},
+	Doi = {10.1007/978-3-319-96878-0_17},
+	Keywords = {Crypto, Homomorphic encryption, Git, MNIST},
+	Pages = {483-512},
+	Publisher = {Springer},
+	Series = {Lecture Notes in Computer Science},
+	Title = {Fast Homomorphic Evaluation of Deep Discretized Neural Networks},
+	Volume = {10993},
+	Year = 2018,
+	Bdsk-Url-1 = {https://doi.org/10.1007/978-3-319-96878-0_17}}
 
 @inproceedings{10.1007/978-3-540-68083-3_25,
 	Abstract = {Scientific computing applications with highly demanding data capacity and computation power drive a computing platform migration from shared memory machines to multi-core/multiprocessor computer clusters. However, overheads in coordinating operations across computing nodes could counteract the benefit of having extra machines. Furthermore, the hidden dependency in applications slows down the simulation over non-shared memory machines. This paper proposed a framework to utilize multi-core/multiprocessor clusters for distributed simulation. Among several coordination schemes, decentralized control approach has demonstrated its effectiveness in reducing the communication overheads. A speculative execution strategy is applied to exploit parallelism thoroughly and overcome strong data dependency. Performance analysis and experiments are provided to demonstrate the performance gains.},
@@ -102,7 +249,7 @@
 	Date-Modified = {2019-05-10 19:10:39 +1200},
 	Editor = {Aguayo-Torres, Mari Carmen and G{\'o}mez, Gerardo and Poncela, Javier},
 	Isbn = {978-3-319-22572-2},
-	Keywords = {Book, Decentralized, },
+	Keywords = {Book, Decentralized,},
 	Pages = {151--164},
 	Publisher = {Springer International Publishing},
 	Title = {BitWorker, a Decentralized Distributed Computing System Based on BitTorrent},
@@ -2214,7 +2361,8 @@ In addition to the hardware software co-design language, this thesis also introd
 	Volume = {308},
 	Year = {2018},
 	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S0925231218305393},
-	Bdsk-Url-2 = {https://doi.org/10.1016/j.neucom.2018.04.077}}
+	Bdsk-Url-2 = {https://doi.org/10.1016/j.neucom.2018.04.077},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBrLi4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvQ3J5cHRvL0NIRVQtIENvbXBpbGVyIGFuZCBSdW50aW1lIGZvciBIb21vbW9ycGhpYyBFdmFsdWF0aW9uIG9mIFRlbnNvciBQcm9ncmFtcy5iaWJPEQJwAAAAAAJwAAIAAAlNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fQ0hFVC0gQ29tcGlsZXIgYW5kI0ZGRkZGRkZGLmJpYgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAABkNyeXB0bwACAIEvOlVzZXJzOnJodnQ6RGV2OkNOTi1QaGQ6UmVmZXJlbmNlczpDaXRhdGlvbnM6Q3J5cHRvOkNIRVQtIENvbXBpbGVyIGFuZCBSdW50aW1lIGZvciBIb21vbW9ycGhpYyBFdmFsdWF0aW9uIG9mIFRlbnNvciBQcm9ncmFtcy5iaWIAAA4AmgBMAEMASABFAFQALQAgAEMAbwBtAHAAaQBsAGUAcgAgAGEAbgBkACAAUgB1AG4AdABpAG0AZQAgAGYAbwByACAASABvAG0AbwBtAG8AcgBwAGgAaQBjACAARQB2AGEAbAB1AGEAdABpAG8AbgAgAG8AZgAgAFQAZQBuAHMAbwByACAAUAByAG8AZwByAGEAbQBzAC4AYgBpAGIADwAUAAkATQBhAGMAaQBuAHQAbwBzAGgAEgB/VXNlcnMvcmh2dC9EZXYvQ05OLVBoZC9SZWZlcmVuY2VzL0NpdGF0aW9ucy9DcnlwdG8vQ0hFVC0gQ29tcGlsZXIgYW5kIFJ1bnRpbWUgZm9yIEhvbW9tb3JwaGljIEV2YWx1YXRpb24gb2YgVGVuc29yIFByb2dyYW1zLmJpYgAAEwABLwAAFQACAAv//wAAAAgADQAaACQAkgAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAMG}}
 
 @book{Omondi:2010:FIN:1941654,
 	Author = {Omondi, Amos R. and Rajapakse, Jagath C.},
@@ -5997,8 +6145,8 @@ https://www.padl.ws/papers/Paper%2016.pdf},
 	Title = {Grenade},
 	Url = {https://github.com/HuwCampbell/grenade},
 	Year = {2016},
-	Bdsk-Url-1 = {https://github.com/HuwCampbell/grenade},
-	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxB1Li4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvRGVjZW50cmFsaXplZC9CaXRXb3JrZXIsIGEgRGVjZW50cmFsaXplZCBEaXN0cmlidXRlZCBDb21wdXRpbmcgU3lzdGVtIEJhc2VkIG9uIEJpdFRvcnJlbnQuYmliTxECkgAAAAACkgACAAAJTWFjaW50b3NoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0JpdFdvcmtlciwgYSBEZWNlbiNGRkZGRkZGRi5iaWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQAEAAAKIGN1AAAAAAAAAAAAAAAAAA1EZWNlbnRyYWxpemVkAAACAIsvOlVzZXJzOnJodnQ6RGV2OkNOTi1QaGQ6UmVmZXJlbmNlczpDaXRhdGlvbnM6RGVjZW50cmFsaXplZDpCaXRXb3JrZXIsIGEgRGVjZW50cmFsaXplZCBEaXN0cmlidXRlZCBDb21wdXRpbmcgU3lzdGVtIEJhc2VkIG9uIEJpdFRvcnJlbnQuYmliAAAOAKAATwBCAGkAdABXAG8AcgBrAGUAcgAsACAAYQAgAEQAZQBjAGUAbgB0AHIAYQBsAGkAegBlAGQAIABEAGkAcwB0AHIAaQBiAHUAdABlAGQAIABDAG8AbQBwAHUAdABpAG4AZwAgAFMAeQBzAHQAZQBtACAAQgBhAHMAZQBkACAAbwBuACAAQgBpAHQAVABvAHIAcgBlAG4AdAAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAiVVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvRGVjZW50cmFsaXplZC9CaXRXb3JrZXIsIGEgRGVjZW50cmFsaXplZCBEaXN0cmlidXRlZCBDb21wdXRpbmcgU3lzdGVtIEJhc2VkIG9uIEJpdFRvcnJlbnQuYmliAAATAAEvAAAVAAIAC///AAAACAANABoAJACcAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAzI=}}
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxB1Li4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvRGVjZW50cmFsaXplZC9CaXRXb3JrZXIsIGEgRGVjZW50cmFsaXplZCBEaXN0cmlidXRlZCBDb21wdXRpbmcgU3lzdGVtIEJhc2VkIG9uIEJpdFRvcnJlbnQuYmliTxECkgAAAAACkgACAAAJTWFjaW50b3NoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0JpdFdvcmtlciwgYSBEZWNlbiNGRkZGRkZGRi5iaWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQAEAAAKIGN1AAAAAAAAAAAAAAAAAA1EZWNlbnRyYWxpemVkAAACAIsvOlVzZXJzOnJodnQ6RGV2OkNOTi1QaGQ6UmVmZXJlbmNlczpDaXRhdGlvbnM6RGVjZW50cmFsaXplZDpCaXRXb3JrZXIsIGEgRGVjZW50cmFsaXplZCBEaXN0cmlidXRlZCBDb21wdXRpbmcgU3lzdGVtIEJhc2VkIG9uIEJpdFRvcnJlbnQuYmliAAAOAKAATwBCAGkAdABXAG8AcgBrAGUAcgAsACAAYQAgAEQAZQBjAGUAbgB0AHIAYQBsAGkAegBlAGQAIABEAGkAcwB0AHIAaQBiAHUAdABlAGQAIABDAG8AbQBwAHUAdABpAG4AZwAgAFMAeQBzAHQAZQBtACAAQgBhAHMAZQBkACAAbwBuACAAQgBpAHQAVABvAHIAcgBlAG4AdAAuAGIAaQBiAA8AFAAJAE0AYQBjAGkAbgB0AG8AcwBoABIAiVVzZXJzL3JodnQvRGV2L0NOTi1QaGQvUmVmZXJlbmNlcy9DaXRhdGlvbnMvRGVjZW50cmFsaXplZC9CaXRXb3JrZXIsIGEgRGVjZW50cmFsaXplZCBEaXN0cmlidXRlZCBDb21wdXRpbmcgU3lzdGVtIEJhc2VkIG9uIEJpdFRvcnJlbnQuYmliAAATAAEvAAAVAAIAC///AAAACAANABoAJACcAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAzI=},
+	Bdsk-Url-1 = {https://github.com/HuwCampbell/grenade}}
 
 @inproceedings{Zhang:2015:OFA:2684746.2689060,
 	Acmid = {2689060},
@@ -6044,7 +6192,8 @@ https://www.padl.ws/papers/Paper%2016.pdf},
 	Title = {Wavelet Pooling for Convolutional Neural Networks},
 	Url = {https://openreview.net/forum?id=rkhlb8lCZ},
 	Year = {2018},
-	Bdsk-Url-1 = {https://openreview.net/forum?id=rkhlb8lCZ}}
+	Bdsk-Url-1 = {https://openreview.net/forum?id=rkhlb8lCZ},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxCALi4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvQ3J5cHRvL0ZQR0EtQmFzZWQgSGlnaC1QZXJmb3JtYW5jZSBQYXJhbGxlbCBBcmNoaXRlY3R1cmUgZm9yIEhvbW9tb3JwaGljIENvbXB1dGluZyBvbiBFbmNyeXB0ZWQgRGF0YS5iaWJPEQLCAAAAAALCAAIAAAlNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fRlBHQS1CYXNlZCBIaWdoLVBlI0ZGRkZGRkZGLmJpYgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAQAAAogY3UAAAAAAAAAAAAAAAAABkNyeXB0bwACAJYvOlVzZXJzOnJodnQ6RGV2OkNOTi1QaGQ6UmVmZXJlbmNlczpDaXRhdGlvbnM6Q3J5cHRvOkZQR0EtQmFzZWQgSGlnaC1QZXJmb3JtYW5jZSBQYXJhbGxlbCBBcmNoaXRlY3R1cmUgZm9yIEhvbW9tb3JwaGljIENvbXB1dGluZyBvbiBFbmNyeXB0ZWQgRGF0YS5iaWIADgDEAGEARgBQAEcAQQAtAEIAYQBzAGUAZAAgAEgAaQBnAGgALQBQAGUAcgBmAG8AcgBtAGEAbgBjAGUAIABQAGEAcgBhAGwAbABlAGwAIABBAHIAYwBoAGkAdABlAGMAdAB1AHIAZQAgAGYAbwByACAASABvAG0AbwBtAG8AcgBwAGgAaQBjACAAQwBvAG0AcAB1AHQAaQBuAGcAIABvAG4AIABFAG4AYwByAHkAcAB0AGUAZAAgAEQAYQB0AGEALgBiAGkAYgAPABQACQBNAGEAYwBpAG4AdABvAHMAaAASAJRVc2Vycy9yaHZ0L0Rldi9DTk4tUGhkL1JlZmVyZW5jZXMvQ2l0YXRpb25zL0NyeXB0by9GUEdBLUJhc2VkIEhpZ2gtUGVyZm9ybWFuY2UgUGFyYWxsZWwgQXJjaGl0ZWN0dXJlIGZvciBIb21vbW9ycGhpYyBDb21wdXRpbmcgb24gRW5jcnlwdGVkIERhdGEuYmliABMAAS8AABUAAgAL//8AAAAIAA0AGgAkAKcAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAADbQ==}}
 
 @book{Nayak:2017aa,
 	Author = {Nayak, Sarat and Bihari Misra, Bijan and Behera, Dr. H.},

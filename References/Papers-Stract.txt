@@ -2053,6 +2053,72 @@ Efficient Object Detection Using Embedded Binarized Neural Networks
 
 < BNN
 
+------> Crypto
+
+Fast Homomorphic Evaluation of Deep Discretized Neural Networks
+- FHE–DiNN complexity is strictly linear in the depth of the network and whose parameters can be set beforehand
+- Modified BNN to do Homomorphic encryptions, based on the library tfhe (both open source)
+- Test over MNIST >97% in 1.7s
+- Bootstrapping technique that offer an improvement in efficiency at the cost of increasing the storage requirements
+
+The AlexNet Moment for Homomorphic Encryption- HCNN, the First Homomorphic CNN on Encrypted Data with GPUs
+- Runs a pre-learned model on encrypted data from the MNIST dataset
+- Achieved high security level (> 80 bit) and reasonable classification accuracy (99%) and (77.55%) for MNIST and CIFAR-10
+- Execute FHE on GPUs and classifies the entire testing datasets in 6.46 seconds (resp. 3044 seconds), with per-image amortized time (0.788 milliseconds) (resp. 371 milliseconds) for MNIST and CIFAR-10.
+
+CHET- Compiler and Runtime for Homomorphic Evaluation of Tensor Programs
+-
+-
+-
+
+TAPAS- Tricks to Accelerate (encrypted) Prediction As a Service
+-
+-
+-
+
+XONN- XNOR-based Oblivious Deep Neural Network Inference
+- XONN requires a constant round of interactions for any number of layers in the model, N inference with a constant round complexity that does not need expensive matrix multiplications
+- Novel conditional addition protocol based on Oblivious Transfer
+- The datasets include breast cancer, diabetes, liver disease, and Malaria
+
+Chimera- a unified framework for B/FV, TFHE and HEAAN fully homomorphic encryption and predictions for deep learning
+- It's modeled the noise generated during the homomorphic operations and the loss of precision by adding a Gaussian error
+to the output of each non-linear function
+- Only 4 bits of precision (instead of 20 to 40 bits usually) are needed on all fixed point operations throughout the network
+- NN of small (LeNet-5), medium (cat-and-dog-9) and large (ResNet-34) size with large relative errors of at least 10%
+
+Bounded Fully Homomorphic Encryption from Monoid Algebras
+- Patented
+-
+-
+
+TFHE: Fast Fully Homomorphic Encryption over the Torus
+- Shows that FHEW  can be expressed only in terms of external product between a GSW and
+a LWE ciphertext
+- Running time of their bootstrapping from 690ms to 13ms single core, using 16MB bootstrapping key instead of 1GB, and preserving the security parameter
+- New homomorphic counter called TBSR, that supports all the elementary operations that
+occur in a multiplication
+
+FPGA-based High-Performance Parallel Architecture for Homomorphic Computing on Encrypted Data
+- Heterogeneous Arm+FPGA platform to accelerate homomorphic computing on encrypted data
+- Fan-Vercauteren (FV) homomorphic encryption scheme on the FPGA
+- Apply circuit-level and block-level pipeline strategies to boost the clock frequency and increase the throughput respectively
+- Xilinx Zynq UltraScale+ MPSoC ZCU102 200MHz 13x speedup over Inter i5 1.8GHz
+
+HEPCloud- An FPGA-based Multicore Processor for FV Somewhat Homomorphic Function
+- FPGA-based hardware accelerator for homomorphic evaluations of medium depth functions, which supports the FV SHE scheme
+- Based on the SHE accelerator architecture for the YASHE scheme
+- Xilinx Virtex-6 ML605 at 100MHz with DDR at 200MHz. 16 cores performing polynomial arithmetic and 2 for lifting operations
+- Obstacles, with the speed of the memory interface; despite that, FPGA-based is
+a feasible solutions for reducing the large overhead in cloud computing environments
+
+Designing an FPGA-Accelerated Homomorphic Encryption Co-Processor
+- Focus on accelerating the Chinese Remainder Transform (CRT) and inverse Chinese Remainder Transform (iCRT) for power-of-2 cyclotomic rings
+- Xilinx Virtex-7 FPGA experimental performance analysis on the NTRU-based LTV Homomorphic Encryption scheme
+- FPGA-accelerated implementation is more than two orders of magnitude faster than the other implementations
+
+< Crypto
+
 ------> Other
 
 Physics, Topology, Logic and Computation- A Rosetta Stone
