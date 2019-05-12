@@ -2507,4 +2507,9 @@ Efficient Evolution of Neural Networks through Complexification
 - NEAT is used to successfully discover complex behavior in three challenging domains
 - Game of Go, an automobile warning system, and a real-time interactive video game
 
+An Implementation of Evolutionary Computation Operators in OpenCL
+- Multiple evolutionary operators are tested: tournament, roulette wheel selection, uniform and Gaussian mutation, crossover, recombination
+- Computing the inner loops of the evolutionary algorithms inside the kernel gives the best performance
+- OpenCL executed on NVidia GeForce GTX 560Ti and AMD Radeon 6950
+
 < Evolutionary
