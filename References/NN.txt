@@ -235,3 +235,6 @@ https://www.researchgate.net/publication/306443179_Survey_Report_on_Cryptography
 
 Elliptic Curve Diffie-Hellman Random Keys Using Artificial Neural Network and Genetic Algorithm for Secure Data over Private Cloud
 https://scialert.net/fulltext/?doi=itj.2016.77.83
+
+The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks
+https://openreview.net/forum?id=rJl-b3RcF7

@@ -1246,6 +1246,15 @@ Elliptic Curve Diffie-Hellman Random Keys Using Artificial Neural Network and Ge
 -
 -
 
+The Lottery Ticket Hypothesis- Finding Sparse, Trainable Neural Networks
+- Llottery ticket hypothesis: dense, randomly-initialized, feed-forward
+networks contain subnetworks (winning tickets) that—when trained in isolation—
+reach test accuracy comparable to the original network in a similar number of
+iterations
+- An algorithm to identify winning tickets and a series of experiments
+that support the lottery ticket hypothesis and the importance of these fortuitous
+initializations
+- Winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10
 
 < NN
 
