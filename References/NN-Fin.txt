@@ -93,3 +93,9 @@ https://www.scientific.net/AMM.284-287.3020
 
 Stock Transaction Prediction Modeling and Analysis Based on LSTM
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8398183
+
+Working with OpenCL to Speed Up a Genetic Programming Financial Forecasting Algorithm- Initial Results
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2598394.2605689
+
+EDDIE-Automation, a decision support tool for financial forecasting
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0167923603000873

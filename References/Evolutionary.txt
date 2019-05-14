@@ -167,3 +167,9 @@ http://nn.cs.utexas.edu/keyword?stanley:phd04
 
 An Implementation of Evolutionary Computation Operators in OpenCL
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-24013-3_11
+
+Intrinsic evolvable hardware for combinatorial synthesis based on soc+fpga and gpu platforms
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2001964
+
+Implementation of Parallel Genetic Algorithm Based on CUDA
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-04843-2_4

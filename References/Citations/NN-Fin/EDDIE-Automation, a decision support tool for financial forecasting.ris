@@ -1,0 +1,20 @@
+TY  - JOUR
+T1  - EDDIE-Automation, a decision support tool for financial forecasting
+AU  - Tsang, Edward
+AU  - Yung, Paul
+AU  - Li, Jin
+JO  - Decision Support Systems
+VL  - 37
+IS  - 4
+SP  - 559
+EP  - 565
+PY  - 2004
+DA  - 2004/09/01/
+T2  - Data mining for financial decision making
+SN  - 0167-9236
+DO  - https://doi.org/10.1016/S0167-9236(03)00087-3
+UR  - http://www.sciencedirect.com/science/article/pii/S0167923603000873
+KW  - Financial forecasting tools
+KW  - Genetic programming
+AB  - Evolutionary Dynamic Data Investment Evaluator (EDDIE) is a genetic programming (GP)-based decision support tool for financial forecasting. EDDIE itself does not replace forecasting experts. It serves to improve the productivity of experts in searching the space of decision trees, with the aim to improve the odds in its user's favour. The efficacy of EDDIE has been reported in the literature. However, discovering patterns in historical data is only the first step towards building a practical financial forecasting tool. Data preparation, rules organization and application are all important issues. This paper describes an architecture that embeds EDDIE for learning from and monitoring the stock market.
+ER  - 

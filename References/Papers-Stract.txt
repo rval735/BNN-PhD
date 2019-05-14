@@ -294,6 +294,21 @@ Efficient Memory-based Learning for Robot Control
 -
 -
 
+Designing Safe,  Profitable Automated Stock Trading Agents Using Evolutionary Algorithms
+-
+-
+-
+
+Working with OpenCL to Speed Up a Genetic Programming Financial Forecasting Algorithm- Initial Results
+- EDDIE financial forecasting tool executed on GPUs
+- Speed ups up to 21 times faster than the original EDDIE algorithm
+- GPUs were slower in their implementation tahn CPU
+
+EDDIE-Automation, a decision support tool for financial forecasting
+- Evolutionary Dynamic Data Investment Evaluator (EDDIE) is a genetic programming (GP)-based decision support tool for financial forecasting
+- Improve the productivity of experts in searching the space of decision trees
+- EDDIE-Automation 1.0 enables the users to conduct large-scale learning to fill the good-rules bank, the more rule sets one generates, the more chance that one could spot in- vestment opportunities or combine recommendations 
+
 < NN-Fin
 
 ------> FPGA
@@ -2511,5 +2526,15 @@ An Implementation of Evolutionary Computation Operators in OpenCL
 - Multiple evolutionary operators are tested: tournament, roulette wheel selection, uniform and Gaussian mutation, crossover, recombination
 - Computing the inner loops of the evolutionary algorithms inside the kernel gives the best performance
 - OpenCL executed on NVidia GeForce GTX 560Ti and AMD Radeon 6950
+
+Intrinsic evolvable hardware for combinatorial synthesis based on soc+fpga and gpu platforms
+- Genetic Programming was implemented in a GPU and High Performance Computers
+- Pseudo random number generation, a Mersenne-Twister-based coprocessor was inserted 
+- HPC (512 processors) and GPU (192 CUDA cores)
+
+Implementation of Parallel Genetic Algorithm Based on CUDA
+- PGA running on a GeForce 8
+- Distribute subpopulation to each shared memory of thread block
+- Each grid exchanges best individuals using stepping stone model
 
 < Evolutionary
