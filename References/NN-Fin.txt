@@ -99,3 +99,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2598394.2605689
 
 EDDIE-Automation, a decision support tool for financial forecasting
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0167923603000873
+
+Empirical Asset Pricing via Machine Learning
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3159577

@@ -1,12 +1,111 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2019-05-14 18:46:50 +1200 
+%% Created for RHVT at 2019-05-30 18:07:30 +1200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{7561676,
+	Abstract = {Neural networks (NNs) have been widely used in microwave device modeling. One of the greatest challenges is how to speed up the model training process and reduce the development cost. To address the issue, this paper exploits FPGAs to accelerate NN training. Experimental results demonstrate that the model training time can be reduced by up to 99.1%, compared to the traditional software implementation.},
+	Author = {R. {Sang} and Q. {Liu} and Q. {Zhang}},
+	Booktitle = {2016 IEEE MTT-S International Conference on Numerical Electromagnetic and Multiphysics Modeling and Optimization (NEMO)},
+	Date-Added = {2019-05-30 17:33:25 +1200},
+	Date-Modified = {2019-05-30 17:33:34 +1200},
+	Doi = {10.1109/NEMO.2016.7561676},
+	Keywords = {FPGA-NN, cost reduction;field programmable gate arrays;learning (artificial intelligence);microwave devices;FPGA-based acceleration;neural network training;microwave device modeling;model training process;development cost reduction;Training;Field programmable gate arrays;Artificial neural networks;Software;Random access memory;Hardware;neural network;quasi-Newton method;FPGA;hardware acceleration},
+	Month = {July},
+	Pages = {1-2},
+	Title = {FPGA-based acceleration of neural network training},
+	Year = {2016},
+	Bdsk-Url-1 = {https://doi.org/10.1109/NEMO.2016.7561676}}
+
+@inproceedings{Conti:2018:IEE:3327345.3327410,
+	Acmid = {3327410},
+	Address = {USA},
+	Author = {Conti, Edoardo and Madhavan, Vashisht and Such, Felipe Petroski and Lehman, Joel and Stanley, Kenneth O. and Clune, Jeff},
+	Booktitle = {Proceedings of the 32Nd International Conference on Neural Information Processing Systems},
+	Date-Added = {2019-05-30 13:56:09 +1200},
+	Date-Modified = {2019-05-30 13:57:58 +1200},
+	Keywords = {Evolutionary, evolution strategies, Uber, Mujoco, Atari},
+	Location = {Montr\&\#233;al, Canada},
+	Numpages = {12},
+	Pages = {5032--5043},
+	Publisher = {Curran Associates Inc.},
+	Series = {NIPS'18},
+	Title = {Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-seeking Agents},
+	Url = {http://dl.acm.org/citation.cfm?id=3327345.3327410},
+	Year = {2018},
+	Bdsk-Url-1 = {http://dl.acm.org/citation.cfm?id=3327345.3327410}}
+
+@inproceedings{Cong:2018:UPD:3174243.3174970,
+	Acmid = {3174970},
+	Address = {New York, NY, USA},
+	Author = {Cong, Jason and Fang, Zhenman and Lo, Michael and Wang, Hanrui and Xu, Jingxian and Zhang, Shaochong},
+	Booktitle = {Proceedings of the 2018 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+	Date-Added = {2019-05-30 13:29:20 +1200},
+	Date-Modified = {2019-05-30 13:30:40 +1200},
+	Doi = {10.1145/3174243.3174970},
+	Isbn = {978-1-4503-5614-5},
+	Keywords = {FPGA, accelerator, gpu, rodinia},
+	Location = {Monterey, CALIFORNIA, USA},
+	Numpages = {1},
+	Pages = {288--288},
+	Publisher = {ACM},
+	Series = {FPGA '18},
+	Title = {Understanding Performance Differences of FPGAs and GPUs: (Abtract Only)},
+	Url = {http://doi.acm.org/10.1145/3174243.3174970},
+	Year = {2018},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/3174243.3174970},
+	Bdsk-Url-2 = {https://doi.org/10.1145/3174243.3174970}}
+
+@inproceedings{10.1007/3-540-44614-1_27,
+	Abstract = {In this paper, we show that a co-processor system with a Virtex FPGA can achieve high performance in evolutionary computations by utilizing the two features of the FPGA. First, agents in evolutionary computation models which are usually expressed using short bit-strings can be stored in distributed select RAMs of Virtex FPGAs very efficiently. Second, the partial reconfiguration and readback functions of the FPGAs make it possible to exploit more parallelism without thinking about circuits for data I/O. The preliminary results of a model base on Iterated Prisoner's Dilemma showed that the system can achieve high performance because of the two features.},
+	Address = {Berlin, Heidelberg},
+	Author = {Yamaguchi, Yoshiki and Miyashita, Akira and Maruyama, Tsutomu and Hoshino, Tsutomu},
+	Booktitle = {Field-Programmable Logic and Applications: The Roadmap to Reconfigurable Computing},
+	Date-Added = {2019-05-29 11:22:10 +1200},
+	Date-Modified = {2019-05-29 11:22:28 +1200},
+	Editor = {Hartenstein, Reiner W. and Gr{\"u}nbacher, Herbert},
+	Isbn = {978-3-540-44614-9},
+	Keywords = {Book, Evolutionary, FPGA, Co-design},
+	Pages = {240--249},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {A Co-processor System with a Virtex FPGA for Evolutionary Computation},
+	Year = {2000}}
+
+@article{Gomez-Pulido2011,
+	Abstract = {Many large combinatorial optimization problems tackled with evolutionary algorithms often require very high computational times, usually due to the fitness evaluation. This fact forces programmers to use clusters of computers, a computational solution very useful for running applications of intensive calculus but having a high acquisition price and operation cost, mainly due to the Central Processing Unit (CPU) power consumption and refrigeration devices. A low-cost and high-performance alternative comes from reconfigurable computing, a hardware technology based on Field Programmable Gate Array devices (FPGAs). The main objective of the work presented in this paper is to compare implementations on FPGAs and CPUs of different fitness functions in evolutionary algorithms in order to study the performance of the floating-point arithmetic in FPGAs and CPUs that is often present in the optimization problems tackled by these algorithms. We have taken advantage of the parallelism at chip-level of FPGAs pursuing the acceleration of the fitness functions (and consequently, of the evolutionary algorithms) and showing the parallel scalability to reach low cost, low power and high performance computational solutions based on FPGA. Finally, the recent popularity of GPUs as computational units has moved us to introduce these devices in our performance comparisons. We analyze performance in terms of computation times and economic cost.},
+	Author = {Gomez-Pulido, Juan A. and Vega-Rodriguez, Miguel A. and Sanchez-Perez, Juan M. and Priem-Mendes, Silvio and Carreira, Vitor},
+	Date-Added = {2019-05-29 11:20:45 +1200},
+	Date-Modified = {2019-05-29 11:21:02 +1200},
+	Day = {01},
+	Doi = {10.1007/s10710-011-9137-2},
+	Issn = {1573-7632},
+	Journal = {Genetic Programming and Evolvable Machines},
+	Keywords = {Evolutionary, FPGA, GPU, floating-point},
+	Month = {Dec},
+	Number = {4},
+	Pages = {403--427},
+	Title = {Accelerating floating-point fitness functions in evolutionary algorithms: a FPGA-CPU-GPU performance comparison},
+	Url = {https://doi.org/10.1007/s10710-011-9137-2},
+	Volume = {12},
+	Year = {2011},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s10710-011-9137-2}}
+
+@article{EmpiricalAssetML,
+	Author = {Gu, Shihao and T. Kelly, Bryan and Xiu, Dacheng},
+	Date-Added = {2019-05-22 13:04:51 +1200},
+	Date-Modified = {2019-05-22 13:05:46 +1200},
+	Doi = {10.2139/ssrn.3159577},
+	Journal = {SSRN Electronic Journal},
+	Keywords = {NN-Fin, Machine Learning, Return Prediction, Cross-Section of Returns, Ridge Regression, (Group) Lasso, Elastic Net, Random Forest, Gradient Boosting, (Deep) Neural Networks, Fintech},
+	Month = {01},
+	Title = {Empirical Asset Pricing Via Machine Learning},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.2139/ssrn.3159577}}
 
 @inproceedings{10.1007/978-3-642-04843-2_4,
 	Abstract = {Genetic Algorithm (GA) is a powerful tool for science computing, while Parallel Genetic Algorithm (PGA) further promotes the performance of computing. However, the traditional parallel computing environment is very difficult to set up, much less the price. This gives rise to the appearance of moving dense computing to graphics hardware, which is inexpensive and more powerful. The paper presents a hierarchical parallel genetic algorithm, implemented by NVIDIA's Compute Unified Device Architecture (CUDA). Mixed with master-slave parallelization method and multiple-demes parallelization method, this algorithm has contributed to better utilization of threads and high-speed shared memory in CUDA.},

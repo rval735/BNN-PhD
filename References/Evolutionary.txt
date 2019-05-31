@@ -173,3 +173,13 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2001964
 
 Implementation of Parallel Genetic Algorithm Based on CUDA
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-04843-2_4
+
+Accelerating floating-point fitness functions in evolutionary algorithms- a FPGA-CPU-GPU performance comparison
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/s10710-011-9137-2
+
+A Co-processor System with a Virtex FPGA for Evolutionary Computation
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/3-540-44614-1_27#Abs1
+
+Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents
+https://papers.nips.cc/paper/7750-improving-exploration-in-evolution-strategies-for-deep-reinforcement-learning-via-a-population-of-novelty-seeking-agents.pdf
+https://dl.acm.org/citation.cfm?id=3327410

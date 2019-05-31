@@ -60,3 +60,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3220178
 
 A survey of FPGA-based accelerators for convolutional neural networks
 https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007%2Fs00521-018-3761-1
+
+FPGA-based acceleration of neural network training
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7561676

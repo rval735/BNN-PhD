@@ -65,3 +65,7 @@ https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1023/A:1010018632078
 
 FPGA-Based System for the Acceleration of Cloud Microservices
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8436912
+
+Understanding Performance Differences of FPGAs and GPUs
+https://vast.cs.ucla.edu/sites/default/files/publications/FCCM2018-paper120-final.pdf
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3174970

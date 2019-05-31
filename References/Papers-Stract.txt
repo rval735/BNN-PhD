@@ -309,6 +309,11 @@ EDDIE-Automation, a decision support tool for financial forecasting
 - Improve the productivity of experts in searching the space of decision trees
 - EDDIE-Automation 1.0 enables the users to conduct large-scale learning to fill the good-rules bank, the more rule sets one generates, the more chance that one could spot in- vestment opportunities or combine recommendations 
 
+Empirical Asset Pricing via Machine Learning
+-
+-
+-
+
 < NN-Fin
 
 ------> FPGA
@@ -384,6 +389,10 @@ FPGA-Based System for the Acceleration of Cloud Microservices
 - Decomposed the FPGA into multiple acceleration slots that are shared among concurrent microservices that run on the server side
 - Hardware can be changed at runtime thanks to the FPGA’s partial reconfiguration capabilities
 
+Understanding Performance Differences of FPGAs and GPUs
+-
+-
+-
 
 < FPGA
 
@@ -503,6 +512,11 @@ A High-Performance Reconfigurable Accelerator for Convolutional Neural Networks
 -
 
 A survey of FPGA-based accelerators for convolutional neural networks
+-
+-
+-
+
+FPGA-based acceleration of neural network training
 -
 -
 -
@@ -2536,5 +2550,22 @@ Implementation of Parallel Genetic Algorithm Based on CUDA
 - PGA running on a GeForce 8
 - Distribute subpopulation to each shared memory of thread block
 - Each grid exchanges best individuals using stepping stone model
+
+Accelerating floating-point fitness functions in evolutionary algorithms- a FPGA-CPU-GPU performance comparison
+- Complexity and configurability of EAs allows for a rapid processing of the time consuming parts in hardware
+- Applied to Radio Network Design Problem (RND), also XRAY and ECC
+- Comparison of fitness times between FPGA and CPU, in RND is 12x faster
+- Xilinx ISE 9.2i, ModelSim 6, VHDL and Handel-C
+- Times power in CPU cluster is greater than FPGA cluster: 114x for RND
+
+A Co-processor System with a Virtex FPGA for Evolutionary Computation
+- Agents expressed as bit-strings can be stored in distributed select RAMs very efficiently
+- FPGA's partial reconfiguration and readback functions make it possible to exploit more parallelism without thinking about circuits for data I/O
+- Speed gain for functions on Virtex XCV1000 is about 200x times compared with Pentium-III 750MHz
+
+Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents
+-
+-
+-
 
 < Evolutionary
