@@ -171,6 +171,18 @@ MSCryptoNet- Multi-Scheme privacy-preserving deep learning in cloud computing
 - NNs are free from loss of accuracy and efficient while training on different encrypted datasets
 - Communication overhead is reduced along with the amount of data needed to transfer
 
+Privacy-Preserving All Convolutional Net Based on Homomorphic Encryption
+- Rectified Linear can have a good low-degree polynomial approximation by combining the Taylor series of the ReLU function with the batch normalization
+- Converting floating-point numbers with fixed precision to integers by proper scaling
+- Make sure the correctness of the calculation, we must control the scale of the number and increase the modulus t to avoid modulo operation
+- Applied over MNIST with prediction over encrypted data with accuracy of 98.97%
+
+Fast Homomorphic Evaluation of Deep Discretized Neural Networks
+- Complexity is strictly linear in the depth of the network and whose parameters can be set beforehand
+- Rely heavily on the bootstrapping procedure that offer an improvement in efficiency at the cost of increasing the storage requirements
+- It discretized an already-trained model
+- MNIST dataset where all images were binarized with a threshold value equal to 128; with more than 96% accuracy in less than 1.7 s.
+
 < CNN
 
 ------> CNN-Fin
@@ -2154,6 +2166,27 @@ Designing an FPGA-Accelerated Homomorphic Encryption Co-Processor
 - Focus on accelerating the Chinese Remainder Transform (CRT) and inverse Chinese Remainder Transform (iCRT) for power-of-2 cyclotomic rings
 - Xilinx Virtex-7 FPGA experimental performance analysis on the NTRU-based LTV Homomorphic Encryption scheme
 - FPGA-accelerated implementation is more than two orders of magnitude faster than the other implementations
+
+Accelerating Homomorphic Evaluation on Reconfigurable Hardware
+- Implement YASHE somewhat homomorphic encryption scheme into an FPGA
+- Efficient double-buffered memory access scheme
+- Polynomial multiplier based on the number theoretic transform
+- Perform a homomorphic addition in 0.94 ms and a homomorphic multiplication in 48.67 ms
+
+HPC on the Intel Xeon Phi: Homomorphic Word Searching
+- Executed on 4 Intel Xeon Phi Coprocessors which was 834x times faster
+- Perform a search over a set of encrypted words and add the results to get the encrypted value of the number of matches
+- Exploiting the fact that the considered cryptosystem relies on matrix multiplication over a specific ring, which is a burdensome operation with a large level of parallelism
+
+FASE- FPGA Acceleration of Secure Function Evaluation
+-
+-
+-
+
+ReDCrypt- Real-Time Privacy-Preserving Deep Learning Inference in Clouds Using FPGAs
+-
+-
+-
 
 < Crypto
 

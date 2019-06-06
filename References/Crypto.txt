@@ -16,6 +16,7 @@ https://github.com/amartya18x/tapas
 
 XONN- XNOR-based Oblivious Deep Neural Network Inference
 https://arxiv.org/abs/1902.07342
+http://aceslab.org/node/1133
 
 Chimera- a unified framework for B/FV, TFHE and HEAAN fully homomorphic encryption and predictions for deep learning
 https://www.bibsonomy.org/bibtex/6fdde7eaad29a2d2e98bf0a44d60cea2
@@ -36,3 +37,16 @@ http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/8318681
 
 Designing an FPGA-Accelerated Homomorphic Encryption Co-Processor
 http://ieeexplore.ieee.org.ezproxy.auckland.ac.nz/document/7604133
+
+Accelerating Homomorphic Evaluation on Reconfigurable Hardware
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-662-48324-4_8
+
+HPC on the Intel Xeon Phi: Homomorphic Word Searching
+https://link.springer.com/chapter/10.1007/978-3-319-61982-8_9
+
+FASE- FPGA Acceleration of Secure Function Evaluation
+http://aceslab.org/node/1136
+
+ReDCrypt- Real-Time Privacy-Preserving Deep Learning Inference in Clouds Using FPGAs
+http://aceslab.org/node/1138
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3242899
