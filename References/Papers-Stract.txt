@@ -2188,6 +2188,16 @@ ReDCrypt- Real-Time Privacy-Preserving Deep Learning Inference in Clouds Using F
 -
 -
 
+Logsum Using Garbled Circuits
+-
+-
+-
+
+Fully Homomorphic Encryption over the Integers with Shorter Public Keys
+-
+-
+-
+
 < Crypto
 
 ------> Other

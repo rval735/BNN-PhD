@@ -50,3 +50,9 @@ http://aceslab.org/node/1136
 ReDCrypt- Real-Time Privacy-Preserving Deep Learning Inference in Clouds Using FPGAs
 http://aceslab.org/node/1138
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3242899
+
+Logsum Using Garbled Circuits
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0122236
+
+Fully Homomorphic Encryption over the Integers with Shorter Public Keys
+https://eprint.iacr.org/2011/441
