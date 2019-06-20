@@ -406,6 +406,11 @@ Understanding Performance Differences of FPGAs and GPUs
 -
 -
 
+Exploring Functional Acceleration of OpenCL on FPGAs and GPUs Through Platform-Independent Optimizations
+-
+-
+-
+
 < FPGA
 
 ------> FPGA-NN

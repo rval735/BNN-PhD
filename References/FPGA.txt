@@ -69,3 +69,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8436912
 Understanding Performance Differences of FPGAs and GPUs
 https://vast.cs.ucla.edu/sites/default/files/publications/FCCM2018-paper120-final.pdf
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3174970
+
+Exploring Functional Acceleration of OpenCL on FPGAs and GPUs Through Platform-Independent Optimizations
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-78890-6_44
