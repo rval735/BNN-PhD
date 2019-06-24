@@ -33,7 +33,7 @@
       }}%
     }
     \keyw{DCGAN; Computer Science - Cryptography and Security, Computer Science
-  - Machine Learning}
+  - Machine Learning, Cryptonet}
     \strng{namehash}{AMADG1}
     \strng{fullhash}{AMADG1}
     \field{labelnamesource}{author}
@@ -252,8 +252,8 @@
   architecture;Quantization (signal);Neural
   networks;System-on-chip;Hardware;Bandwidth;Hardware Accelerator;Binary
   Weights Neural Networks;IoT}
-    \strng{namehash}{AR+2}
-    \strng{fullhash}{ARCLRDBL2}
+    \strng{namehash}{AR+1}
+    \strng{fullhash}{ARCLRDBL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
@@ -288,50 +288,87 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{2016arXiv160605487A}{article}{}
+  \entry{7878541}{article}{}
     \name{author}{4}{}{%
       {{hash=AR}{%
-         family={{Andri}},
+         family={Andri},
          familyi={A\bibinitperiod},
          given={R.},
          giveni={R\bibinitperiod},
       }}%
       {{hash=CL}{%
-         family={{Cavigelli}},
+         family={Cavigelli},
          familyi={C\bibinitperiod},
          given={L.},
          giveni={L\bibinitperiod},
       }}%
       {{hash=RD}{%
-         family={{Rossi}},
+         family={Rossi},
          familyi={R\bibinitperiod},
          given={D.},
          giveni={D\bibinitperiod},
       }}%
       {{hash=BL}{%
-         family={{Benini}},
+         family={Benini},
          familyi={B\bibinitperiod},
          given={L.},
          giveni={L\bibinitperiod},
       }}%
     }
-    \keyw{BNN; Hardware Architecture, Computer Vision; Pattern Recognition,
-  Neural and Evolutionary Computing}
+    \keyw{BNN; CMOS logic circuits;computer
+  vision;convolution;coprocessors;embedded systems;image
+  classification;integrated circuit design;low-power electronics;neural
+  nets;optimisation;power aware computing;system-on-chip;I/O storage;I/O
+  bandwidth;algorithmic advancements;binary weights;competitive classification
+  accuracy;hard limitations;deeply embedded applications;mobile embedded
+  applications;power envelope;energy consumption;system-on-chip integration;CNN
+  accelerators;GP-GPUs;power-hungry parallel processors;computational
+  effort;human accuracy;image classification;computer vision;convolutional
+  neural networks;ultralow power binary-weight CNN acceleration;power
+  dissipation;binary-weight CNNs;accelerator;optimization
+  opportunities;ASIC;binary weights;convolutional neural networks
+  (CNNs);hardware accelerator;Internet of Things (IoT)}
     \strng{namehash}{AR+1}
     \strng{fullhash}{ARCLRDBL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \verb{eprint}
-    \verb 1606.05487
+    \field{abstract}{%
+    Convolutional neural networks (CNNs) have revolutionized the world of
+  computer vision over the last few years, pushing image classification beyond
+  human accuracy. The computational effort of today's CNNs requires
+  power-hungry parallel processors or GP-GPUs. Recent developments in CNN
+  accelerators for system-on-chip integration have reduced energy consumption
+  significantly. Unfortunately, even these highly optimized devices are above
+  the power envelope imposed by mobile and deeply embedded applications and
+  face hard limitations caused by CNN weight I/O and storage. This prevents the
+  adoption of CNNs in future ultralow power Internet of Things end-nodes for
+  near-sensor analytics. Recent algorithmic and theoretical advancements enable
+  competitive classification accuracy even when limiting CNNs to binary (+1/-1)
+  weights during training. These new findings bring major optimization
+  opportunities in the arithmetic core by removing the need for expensive
+  multiplications, as well as reducing I/O bandwidth and storage. In this
+  paper, we present an accelerator optimized for binary-weight CNNs that
+  achieves 1.5 TOp/s at 1.2 V on a core area of only 1.33 million gate
+  equivalent (MGE) or 1.9 mm<sup>2</sup>and with a power dissipation of 895 μW
+  in UMC 65-nm technology at 0.6 V. Our accelerator significantly outperforms
+  the state-of-the-art in terms of energy and area efficiency achieving 61.2
+  TOp/s/W@0.6 V and 1.1 TOp/s/MGE@1.2 V, respectively.%
+    }
+    \verb{doi}
+    \verb 10.1109/TCAD.2017.2682138
     \endverb
-    \field{title}{{YodaNN: An Architecture for Ultra-Low Power Binary-Weight
-  CNN Acceleration}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{month}{06}
-    \field{year}{2016}
+    \field{issn}{0278-0070}
+    \field{number}{1}
+    \field{pages}{48\bibrangedash 60}
+    \field{title}{YodaNN: An Architecture for Ultralow Power Binary-Weight CNN
+  Acceleration}
+    \field{volume}{37}
+    \field{journaltitle}{IEEE Transactions on Computer-Aided Design of
+  Integrated Circuits and Systems}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{8373076}{inproceedings}{}
@@ -416,12 +453,7 @@
          giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{BNN; neural chips;pattern classification;VLSI;scalable 3D chip;binary
-  neural network classification;VLSI;MCM;on-chip control
-  unit;expansibility;multiprecision neural chip;4 bit;8 bit;16 bit;Neural
-  networks;Very large scale integration;Artificial neural
-  networks;Packaging;Network topology;Hardware;Gas detectors;Costs;Integrated
-  circuit interconnections;Power system interconnection}
+    \keyw{BNN; pattern classification;VLSI;multiprecision neural chip}
     \strng{namehash}{BA1}
     \strng{fullhash}{BA1}
     \field{labelnamesource}{author}
@@ -839,26 +871,61 @@
     \field{year}{2018}
   \endentry
 
-  \entry{2015arXiv151100363C}{article}{}
+  \entry{NIPS2015_5647}{incollection}{}
     \name{author}{3}{}{%
       {{hash=CM}{%
-         family={{Courbariaux}},
+         family={Courbariaux},
          familyi={C\bibinitperiod},
-         given={M.},
+         given={Matthieu},
          giveni={M\bibinitperiod},
       }}%
       {{hash=BY}{%
-         family={{Bengio}},
+         family={Bengio},
          familyi={B\bibinitperiod},
-         given={Y.},
+         given={Yoshua},
          giveni={Y\bibinitperiod},
       }}%
       {{hash=DJP}{%
-         family={{David}},
+         family={David},
          familyi={D\bibinitperiod},
-         given={J.-P.},
+         given={Jean-Pierre},
          giveni={J\bibinitperiod-P\bibinitperiod},
       }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LND}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={N.\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LDD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiyama},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
     }
     \keyw{BNN; Machine Learning; Computer Vision; Pattern Recognition; Neural
   and Evolutionary Computing}
@@ -868,67 +935,15 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \verb{eprint}
-    \verb 1511.00363
+    \field{booktitle}{Advances in Neural Information Processing Systems 28}
+    \field{pages}{3123\bibrangedash 3131}
+    \field{title}{BinaryConnect: Training Deep Neural Networks with binary
+  weights during propagations}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/5647-binaryconnect-training-deep-neural-n
+    \verb etworks-with-binary-weights-during-propagations.pdf
     \endverb
-    \field{title}{{BinaryConnect: Training Deep Neural Networks with binary
-  weights during propagations}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{month}{11}
     \field{year}{2015}
-  \endentry
-
-  \entry{2016arXiv160202830C}{article}{}
-    \name{author}{5}{}{%
-      {{hash=CM}{%
-         family={{Courbariaux}},
-         familyi={C\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=HI}{%
-         family={{Hubara}},
-         familyi={H\bibinitperiod},
-         given={I.},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=SD}{%
-         family={{Soudry}},
-         familyi={S\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=ER}{%
-         family={{El-Yaniv}},
-         familyi={E\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=BY}{%
-         family={{Bengio}},
-         familyi={B\bibinitperiod},
-         given={Y.},
-         giveni={Y\bibinitperiod},
-      }}%
-    }
-    \keyw{BNN, Learning}
-    \strng{namehash}{CM+1}
-    \strng{fullhash}{CMHISDERBY1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \verb{eprint}
-    \verb 1602.02830
-    \endverb
-    \field{title}{{Binarized Neural Networks: Training Deep Neural Networks
-  with Weights and Activations Constrained to +1 or -1}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.LG}
-    \field{month}{02}
-    \field{year}{2016}
   \endentry
 
   \entry{8394726}{inproceedings}{}
@@ -1150,49 +1165,70 @@
     \field{year}{2018}
   \endentry
 
-  \entry{2015arXiv151203385H}{article}{}
+  \entry{7780459}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=HK}{%
-         family={{He}},
+         family={He},
          familyi={H\bibinitperiod},
          given={K.},
          giveni={K\bibinitperiod},
       }}%
       {{hash=ZX}{%
-         family={{Zhang}},
+         family={Zhang},
          familyi={Z\bibinitperiod},
          given={X.},
          giveni={X\bibinitperiod},
       }}%
       {{hash=RS}{%
-         family={{Ren}},
+         family={Ren},
          familyi={R\bibinitperiod},
          given={S.},
          giveni={S\bibinitperiod},
       }}%
       {{hash=SJ}{%
-         family={{Sun}},
+         family={Sun},
          familyi={S\bibinitperiod},
          given={J.},
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{CNN; Computer Science - Computer Vision and Pattern Recognition}
+    \keyw{CNN, image classification; AI; neural nets;object detection, RESNET}
     \strng{namehash}{HK+1}
     \strng{fullhash}{HKZXRSSJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \verb{eprint}
-    \verb 1512.03385
+    \field{abstract}{%
+    Deeper neural networks are more difficult to train. We present a residual
+  learning framework to ease the training of networks that are substantially
+  deeper than those used previously. We explicitly reformulate the layers as
+  learning residual functions with reference to the layer inputs, instead of
+  learning unreferenced functions. We provide comprehensive empirical evidence
+  showing that these residual networks are easier to optimize, and can gain
+  accuracy from considerably increased depth. On the ImageNet dataset we
+  evaluate residual nets with a depth of up to 152 layers - 8; deeper than VGG
+  nets [40] but still having lower complexity. An ensemble of these residual
+  nets achieves 3.57% error on the ImageNet test set. This result won the 1st
+  place on the ILSVRC 2015 classification task. We also present analysis on
+  CIFAR-10 with 100 and 1000 layers. The depth of representations is of central
+  importance for many visual recognition tasks. Solely due to our extremely
+  deep representations, we obtain a 28% relative improvement on the COCO object
+  detection dataset. Deep residual nets are foundations of our submissions to
+  ILSVRC; COCO 2015 competitions1, where we also won the 1st places on the
+  tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO
+  segmentation.%
+    }
+    \field{booktitle}{2016 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}
+    \verb{doi}
+    \verb 10.1109/CVPR.2016.90
     \endverb
-    \field{title}{{Deep Residual Learning for Image Recognition}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CV}
-    \field{month}{12}
-    \field{year}{2015}
+    \field{issn}{1063-6919}
+    \field{pages}{770\bibrangedash 778}
+    \field{title}{Deep Residual Learning for Image Recognition}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{8425178}{inproceedings}{}
@@ -1293,6 +1329,90 @@
   Networks on CPU}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{NIPS2016_6573}{incollection}{}
+    \name{author}{5}{}{%
+      {{hash=HI}{%
+         family={Hubara},
+         familyi={H\bibinitperiod},
+         given={Itay},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Courbariaux},
+         familyi={C\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Soudry},
+         familyi={S\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=EYR}{%
+         family={El-Yaniv},
+         familyi={E\bibinitperiod-Y\bibinitperiod},
+         given={Ran},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=LDD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiyama},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LUV}{%
+         family={Luxburg},
+         familyi={L\bibinitperiod},
+         given={U.\bibnamedelima V.},
+         giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=GI}{%
+         family={Guyon},
+         familyi={G\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \keyw{BNN; Neural Network}
+    \strng{namehash}{HI+1}
+    \strng{fullhash}{HICMSDEYRBY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Advances in Neural Information Processing Systems 29}
+    \field{pages}{4107\bibrangedash 4115}
+    \field{title}{Binarized Neural Networks}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf
+    \endverb
+    \field{year}{2016}
   \endentry
 
   \entry{4790104}{inproceedings}{}
@@ -1414,7 +1534,7 @@
     \list{publisher}{1}{%
       {Curran Associates Inc.}%
     }
-    \keyw{CNN, ImageNet, ILSVRC, Convolution}
+    \keyw{CNN, ImageNet, ILSVRC, Convolution, AlexNet}
     \strng{namehash}{KASIHGE1}
     \strng{fullhash}{KASIHGE1}
     \field{labelnamesource}{author}
@@ -1544,7 +1664,7 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{2017arXiv171110761L}{article}{}
+  \entry{8541786}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=LS}{%
          family={{Leroux}},
@@ -1583,6 +1703,9 @@
          giveni={B\bibinitperiod},
       }}%
     }
+    \list{organization}{1}{%
+      {NIPS}%
+    }
     \keyw{BNN; Computer Science; Neural and Evolutionary Computing; Computer
   Vision; Pattern Recognition}
     \strng{namehash}{LS+1}
@@ -1591,13 +1714,15 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
+    \field{booktitle}{31st Conference on Neural Information Processing Systems}
     \verb{eprint}
-    \verb 1711.10761
+    \verb 8541786
     \endverb
+    \field{pages}{1\bibrangedash 4}
     \field{title}{{Transfer Learning with Binary Neural Networks}}
-    \field{journaltitle}{ArXiv e-prints}
+    \field{journaltitle}{NIPS 2017}
     \field{eprinttype}{arXiv}
-    \field{month}{11}
+    \field{month}{12}
     \field{year}{2017}
   \endentry
 
@@ -1657,13 +1782,13 @@
       }}%
     }
     \keyw{Evolutionary; cancer;genetic algorithms;medical image
-  processing;neural nets;artificial neural network;breast cancer
-  diagnosis;women;adaptive genetic algorithm;macro-search capability;global
-  optimization;computational cost;Wisions breast cancer data set;Artificial
-  neural networks;Breast cancer;Genetic algorithms;Genetic
-  mutations;Flowcharts;Economic forecasting;Space technology;Data
-  mining;Conference management;Knowledge management;adaptive genetic
-  algorithm;neural network;weights and thresholds;breast cancer diagnosis}
+  processing;neural nets;artificial neural network;breast cancer;women;adaptive
+  genetic algorithm;macro-search capability;global optimization;computational
+  cost;Wisions breast cancer data set;Artificial neural networks;Breast
+  cancer;Genetic algorithms;Genetic mutations;Flowcharts;Economic
+  forecasting;Space technology;Data mining;Conference management;Knowledge
+  management;adaptive genetic algorithm;neural network;weights and
+  thresholds;breast cancer}
     \strng{namehash}{LLDM1}
     \strng{fullhash}{LLDM1}
     \field{labelnamesource}{author}
@@ -1847,49 +1972,98 @@
     \field{year}{2018}
   \endentry
 
-  \entry{2016arXiv160305279R}{article}{}
+  \entry{10.1007/978-3-319-46493-0_32}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=RM}{%
-         family={{Rastegari}},
+         family={Rastegari},
          familyi={R\bibinitperiod},
-         given={M.},
+         given={Mohammad},
          giveni={M\bibinitperiod},
       }}%
       {{hash=OV}{%
-         family={{Ordonez}},
+         family={Ordonez},
          familyi={O\bibinitperiod},
-         given={V.},
+         given={Vicente},
          giveni={V\bibinitperiod},
       }}%
       {{hash=RJ}{%
-         family={{Redmon}},
+         family={Redmon},
          familyi={R\bibinitperiod},
-         given={J.},
+         given={Joseph},
          giveni={J\bibinitperiod},
       }}%
       {{hash=FA}{%
-         family={{Farhadi}},
+         family={Farhadi},
          familyi={F\bibinitperiod},
-         given={A.},
+         given={Ali},
          giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \name{editor}{4}{}{%
+      {{hash=LB}{%
+         family={Leibe},
+         familyi={L\bibinitperiod},
+         given={Bastian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Matas},
+         familyi={M\bibinitperiod},
+         given={Jiri},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sebe},
+         familyi={S\bibinitperiod},
+         given={Nicu},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \keyw{BNN, XNOR, ImageNet, CNN, AlexNet}
     \strng{namehash}{RM+1}
     \strng{fullhash}{RMOVRJFA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{eprint}
-    \verb 1603.05279
-    \endverb
-    \field{title}{{XNOR-Net: ImageNet Classification Using Binary Convolutional
-  Neural Networks}}
-    \field{journaltitle}{ArXiv e-prints}
-    \field{eprinttype}{arXiv}
-    \field{eprintclass}{cs.CV}
-    \field{month}{03}
+    \field{abstract}{%
+    We propose two efficient approximations to standard convolutional neural
+  networks: Binary-Weight-Networks and XNOR-Networks. In
+  Binary-Weight-Networks, the filters are approximated with binary values
+  resulting in 32{\$}{\$}{\backslash}times {\$}{\$}{\texttimes}memory saving.
+  In XNOR-Networks, both the filters and the input to convolutional layers are
+  binary. XNOR-Networks approximate convolutions using primarily binary
+  operations. This results in 58{\$}{\$}{\backslash}times
+  {\$}{\$}{\texttimes}faster convolutional operations (in terms of number of
+  the high precision operations) and 32{\$}{\$}{\backslash}times
+  {\$}{\$}{\texttimes}memory savings. XNOR-Nets offer the possibility of
+  running state-of-the-art networks on CPUs (rather than GPUs) in real-time.
+  Our binary networks are simple, accurate, efficient, and work on challenging
+  visual tasks. We evaluate our approach on the ImageNet classification task.
+  The classification accuracy with a Binary-Weight-Network version of AlexNet
+  is the same as the full-precision AlexNet. We compare our method with recent
+  network binarization methods, BinaryConnect and BinaryNets, and outperform
+  these methods by large margins on ImageNet, more than
+  {\$}{\$}16{\backslash},{\backslash}{\%}{\$}{\$}16{\%}in top-1 accuracy. Our
+  code is available at: http://allenai.org/plato/xnornet.%
+    }
+    \field{booktitle}{Computer Vision -- ECCV 2016}
+    \field{isbn}{978-3-319-46493-0}
+    \field{pages}{525\bibrangedash 542}
+    \field{title}{XNOR-Net: ImageNet Classification Using Binary Convolutional
+  Neural Networks}
+    \list{location}{1}{%
+      {Cham}%
+    }
     \field{year}{2016}
   \endentry
 
@@ -2175,7 +2349,7 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{2017arXiv170309039S}{article}{}
+  \entry{2017arXiv170309039S}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=SV}{%
          family={{Sze}},
@@ -2209,15 +2383,18 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
     \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the IEEE}
     \verb{eprint}
     \verb 1703.09039
     \endverb
-    \field{title}{{Efficient Processing of Deep Neural Networks: A Tutorial and
-  Survey}}
-    \field{journaltitle}{ArXiv e-prints}
+    \field{number}{12}
+    \field{title}{Efficient Processing of Deep Neural Networks: A Tutorial and
+  Survey}
+    \field{volume}{105}
+    \field{journaltitle}{Proceedings of the IEEE}
     \field{eprinttype}{arXiv}
     \field{eprintclass}{cs.CV}
-    \field{month}{03}
+    \field{month}{12}
     \field{year}{2017}
   \endentry
 
