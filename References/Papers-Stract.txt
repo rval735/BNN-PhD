@@ -2106,6 +2106,16 @@ Efficient Object Detection Using Embedded Binarized Neural Networks
 - BNN system has much less processing elements, the energy efficiency improves by three orders of magnitude
 - Implementation onto an FPGA with 4x speedup compared to a GPU
 
+Back to Simplicity- How to Train Accurate BNNs from Scratch
+-
+-
+-
+
+Matrix and tensor decompositions for training binary neural networks
+-
+-
+-
+
 < BNN
 
 ------> Crypto

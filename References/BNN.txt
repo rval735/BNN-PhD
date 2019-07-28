@@ -345,3 +345,9 @@ https://arxiv.org/abs/1811.12028
 
 Efficient Object Detection Using Embedded Binarized Neural Networks
 https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007%2Fs11265-017-1255-5
+
+Back to Simplicity- How to Train Accurate BNNs from Scratch
+https://arxiv.org/abs/1906.08637
+
+Matrix and tensor decompositions for training binary neural networks
+https://arxiv.org/pdf/1904.07852.pdf
