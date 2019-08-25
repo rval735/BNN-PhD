@@ -81,54 +81,38 @@ G.~I. Sher, \emph{Handbook of Neuroevolution Through Erlang}.\hskip 1em plus
   Available: \url{https://doi.org/10.1007/978-1-4614-4463-3_1}
 \BIBentrySTDinterwordspacing
 
+\bibitem{2017arXiv170303864S}
+T.~{Salimans}, J.~{Ho}, X.~{Chen}, S.~{Sidor}, and I.~{Sutskever}, ``{Evolution
+  Strategies as a Scalable Alternative to Reinforcement Learning},''
+  \emph{ArXiv e-prints}, Mar. 2017.
+
+\bibitem{2017arXiv171206567P}
+F.~{Petroski Such}, V.~{Madhavan}, E.~{Conti}, J.~{Lehman}, K.~O. {Stanley},
+  and J.~{Clune}, ``{Deep Neuroevolution: Genetic Algorithms Are a Competitive
+  Alternative for Training Deep Neural Networks for Reinforcement Learning},''
+  \emph{ArXiv e-prints}, Dec. 2017.
+
 \bibitem{7460958}
 J.~M. Danilo~{Vargas}, ``Spectrum-diverse neuroevolution with unified neural
   models,'' \emph{IEEE Transactions on Neural Networks and Learning Systems},
   vol.~28, no.~8, pp. 1759--1773, Aug 2017.
 
-\bibitem{stanley:phd04}
+\bibitem{duplicatedOpenAIGym}
 \BIBentryALTinterwordspacing
-K.~O. Stanley, ``Efficient evolution of neural networks through
-  complexification,'' Ph.D. dissertation, Department of Computer Sciences, The
-  University of Texas at Austin, 2004. [Online]. Available:
-  \url{http://nn.cs.utexas.edu/?stanley:phd2004}
-\BIBentrySTDinterwordspacing
-
-\bibitem{10.1007/978-3-319-46493-0_32}
-M.~Rastegari, V.~Ordonez, J.~Redmon, and A.~Farhadi, ``Xnor-net: Imagenet
-  classification using binary convolutional neural networks,'' in
-  \emph{Computer Vision -- ECCV 2016}, B.~Leibe, J.~Matas, N.~Sebe, and
-  M.~Welling, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cham: Springer
-  International Publishing, 2016, pp. 525--542.
-
-\bibitem{Han:2016:EEI:3001136.3001163}
-\BIBentryALTinterwordspacing
-S.~Han, X.~Liu, H.~Mao, J.~Pu, A.~Pedram, M.~A. Horowitz, and W.~J. Dally,
-  ``Eie: Efficient inference engine on compressed deep neural network,'' in
-  \emph{Proceedings of the 43rd International Symposium on Computer
-  Architecture}, ser. ISCA '16.\hskip 1em plus 0.5em minus 0.4em\relax
-  Piscataway, NJ, USA: IEEE Press, 2016, pp. 243--254. [Online]. Available:
-  \url{https://doi.org/10.1109/ISCA.2016.30}
-\BIBentrySTDinterwordspacing
-
-\bibitem{2016arXiv160601540B}
-G.~{Brockman}, V.~{Cheung}, L.~{Pettersson}, J.~{Schneider}, J.~{Schulman},
-  J.~{Tang}, and W.~{Zaremba}, ``{OpenAI Gym},'' \emph{arXiv e-prints}, Jun.
-  2016.
-
-\bibitem{Strens:2000:BFR:645529.658114}
-\BIBentryALTinterwordspacing
-M.~J.~A. Strens, ``A bayesian framework for reinforcement learning,'' in
-  \emph{Proceedings of the Seventeenth International Conference on Machine
-  Learning}, ser. ICML '00.\hskip 1em plus 0.5em minus 0.4em\relax San
-  Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 2000, pp. 943--950.
-  [Online]. Available: \url{http://dl.acm.org/citation.cfm?id=645529.658114}
+colinmorris. (2016) Algorithm on duplicatedinput-v0. [Online]. Available:
+  \url{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{nchainv0OpenAI}
 \BIBentryALTinterwordspacing
 blole. (2016) Algorithm on nchain-v0. [Online]. Available:
   \url{https://gym.openai.com/evaluations/eval_8KB72MuwRqqdbRG4UMs1w/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{rouletteV0OpenAI}
+\BIBentryALTinterwordspacing
+tanemaki. (2016) Algorithm on roulette-v0. [Online]. Available:
+  \url{https://gym.openai.com/evaluations/eval_DFWdtrdSCikuZWwf8HN8A/}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
