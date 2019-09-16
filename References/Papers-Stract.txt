@@ -538,6 +538,11 @@ FPGA-based acceleration of neural network training
 -
 -
 
+FPGA-based Accelerators of Deep Learning Networks for Learning and Classification: A Review
+-
+-
+-
+
 < FPGA-NN
 ------> FPGA-Fin
 

@@ -33,9 +33,6 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=2847276&CFID=101532557
 Optimizing Loop Operation and Dataflow in FPGA Acceleration of Deep Convolutional Neural Networks
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021736&CFID=1015325573&CFTOKEN=40858404
 
-Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs
-https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3021741&CFID=1015325573&CFTOKEN=40858404
-
 Why TanH is a Hardware Friendly Activation Function for CNNs
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3131937&CFID=1015325573&CFTOKEN=40858404
 

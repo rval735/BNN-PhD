@@ -63,3 +63,6 @@ https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007%2Fs00521-018-37
 
 FPGA-based acceleration of neural network training
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7561676
+
+FPGA-based Accelerators of Deep Learning Networks for Learning and Classification: A Review
+https://ieeexplore.ieee.org/document/8594633
