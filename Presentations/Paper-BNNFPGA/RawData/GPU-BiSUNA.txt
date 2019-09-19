@@ -1,0 +1,850 @@
+Config file: /Users/rhvt/Dev/BiSUNAOpenCL/resources/BiSUNAConf.ini 
+ ----------------------------------
+  CL_DEVICE_NAME:					AMD Radeon Pro 560 Compute Engine
+  CL_DEVICE_VERSION:				OpenCL 1.2 
+  CL_DEVICE_MAX_COMPUTE_UNITS:		16
+  CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS:3
+  CL_DEVICE_MAX_WORK_ITEM_SIZES:	256 / 256 / 256 
+  CL_DEVICE_MAX_WORK_GROUP_SIZE:	256
+  CL_DEVICE_MAX_MEM_ALLOC_SIZE:		1024 MByte
+  CL_DEVICE_GLOBAL_MEM_SIZE:		4096 MByte
+  CL_DEVICE_LOCAL_MEM_SIZE:			32 KByte
+  CL_DEVICE_PROFILING_TIMER_RESOLUTION:	40 ns
+ ----------------------------------
+ ----------------------------------
+  CL_KERNEL_WORK_GROUP_SIZE:		256
+  CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE:64
+  CL_KERNEL_LOCAL_MEM_SIZE:			0
+  CL_KERNEL_PRIVATE_MEM_SIZE:		1584
+ ----------------------------------
+Generation: 0
+Best in generation: 0, Fitness: -1001.000000
+Counter 1001, TaskSum: 5155785600.0 (5150635.0), OutSum: 2937120.0 (2934.2)
+----------------------------------------
+Generation: 1
+Best in generation: 1, Fitness: -1001.000000
+Counter 1001, TaskSum: 7272354880.0 (7265089.8), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 2
+Best in generation: 2, Fitness: -1001.000000
+Counter 1001, TaskSum: 8430235200.0 (8421813.4), OutSum: 2917440.0 (2914.5)
+----------------------------------------
+Generation: 3
+Best in generation: 3, Fitness: -1001.000000
+Counter 1001, TaskSum: 7959595200.0 (7951643.6), OutSum: 2918880.0 (2916.0)
+----------------------------------------
+Generation: 4
+Best in generation: 4, Fitness: -1001.000000
+Counter 1001, TaskSum: 6759843200.0 (6753090.1), OutSum: 2913920.0 (2911.0)
+----------------------------------------
+Generation: 5
+Best in generation: 5, Fitness: -1001.000000
+Counter 1001, TaskSum: 7083411360.0 (7076335.0), OutSum: 2914400.0 (2911.5)
+----------------------------------------
+Generation: 6
+Best in generation: 6, Fitness: -1001.000000
+Counter 1001, TaskSum: 7353176800.0 (7345831.0), OutSum: 2920000.0 (2917.1)
+----------------------------------------
+Generation: 7
+Best in generation: 7, Fitness: -1001.000000
+Counter 1001, TaskSum: 7289556320.0 (7282274.0), OutSum: 2918240.0 (2915.3)
+----------------------------------------
+Generation: 8
+Best in generation: 8, Fitness: -1001.000000
+Counter 1001, TaskSum: 7748753440.0 (7741012.4), OutSum: 2915680.0 (2912.8)
+----------------------------------------
+Generation: 9
+Best in generation: 9, Fitness: -1001.000000
+Counter 1001, TaskSum: 7441264640.0 (7433830.8), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 10
+Best in generation: 10, Fitness: -1001.000000
+Counter 1001, TaskSum: 6824119200.0 (6817301.9), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 11
+Best in generation: 11, Fitness: -1001.000000
+Counter 1001, TaskSum: 7756948960.0 (7749199.8), OutSum: 2915840.0 (2912.9)
+----------------------------------------
+Generation: 12
+Best in generation: 12, Fitness: -1001.000000
+Counter 1001, TaskSum: 7136011360.0 (7128882.5), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 13
+Best in generation: 13, Fitness: -1001.000000
+Counter 1001, TaskSum: 8233987200.0 (8225761.4), OutSum: 2915040.0 (2912.1)
+----------------------------------------
+Generation: 14
+Best in generation: 14, Fitness: -1001.000000
+Counter 1001, TaskSum: 6915744800.0 (6908836.0), OutSum: 2916320.0 (2913.4)
+----------------------------------------
+Generation: 15
+Best in generation: 15, Fitness: -1001.000000
+Counter 1001, TaskSum: 7459504960.0 (7452052.9), OutSum: 2916160.0 (2913.2)
+----------------------------------------
+Generation: 16
+Best in generation: 16, Fitness: -1001.000000
+Counter 1001, TaskSum: 6731699200.0 (6724974.2), OutSum: 2932640.0 (2929.7)
+----------------------------------------
+Generation: 17
+Best in generation: 17, Fitness: -1001.000000
+Counter 1001, TaskSum: 6722040640.0 (6715325.3), OutSum: 2911040.0 (2908.1)
+----------------------------------------
+Generation: 18
+Best in generation: 18, Fitness: -1001.000000
+Counter 1001, TaskSum: 7232365440.0 (7225140.3), OutSum: 2913280.0 (2910.4)
+----------------------------------------
+Generation: 19
+Best in generation: 19, Fitness: -1001.000000
+Counter 1001, TaskSum: 6950027360.0 (6943084.3), OutSum: 2916160.0 (2913.2)
+----------------------------------------
+Generation: 20
+Best in generation: 20, Fitness: -1001.000000
+Counter 1001, TaskSum: 6705831520.0 (6699132.4), OutSum: 2910880.0 (2908.0)
+----------------------------------------
+Generation: 21
+Best in generation: 21, Fitness: -1001.000000
+Counter 1001, TaskSum: 6885111200.0 (6878233.0), OutSum: 2902880.0 (2900.0)
+----------------------------------------
+Generation: 22
+Best in generation: 22, Fitness: -1001.000000
+Counter 1001, TaskSum: 6596079680.0 (6589490.2), OutSum: 2903200.0 (2900.3)
+----------------------------------------
+Generation: 23
+Best in generation: 23, Fitness: -1001.000000
+Counter 1001, TaskSum: 7133233280.0 (7126107.2), OutSum: 2920000.0 (2917.1)
+----------------------------------------
+Generation: 24
+Best in generation: 24, Fitness: -1001.000000
+Counter 1001, TaskSum: 7084737440.0 (7077659.8), OutSum: 2912800.0 (2909.9)
+----------------------------------------
+Generation: 25
+Best in generation: 25, Fitness: -1001.000000
+Counter 1001, TaskSum: 6824619360.0 (6817801.6), OutSum: 2922720.0 (2919.8)
+----------------------------------------
+Generation: 26
+Best in generation: 26, Fitness: -1001.000000
+Counter 1001, TaskSum: 6943440160.0 (6936503.7), OutSum: 2931680.0 (2928.8)
+----------------------------------------
+Generation: 27
+Best in generation: 27, Fitness: -1001.000000
+Counter 1001, TaskSum: 7525633920.0 (7518115.8), OutSum: 2934720.0 (2931.8)
+----------------------------------------
+Generation: 28
+Best in generation: 28, Fitness: -1001.000000
+Counter 1001, TaskSum: 6994343520.0 (6987356.2), OutSum: 2927200.0 (2924.3)
+----------------------------------------
+Generation: 29
+Best in generation: 29, Fitness: -1001.000000
+Counter 1001, TaskSum: 6982917760.0 (6975941.8), OutSum: 2932800.0 (2929.9)
+----------------------------------------
+Generation: 30
+Best in generation: 30, Fitness: -1001.000000
+Counter 1001, TaskSum: 7066344160.0 (7059284.9), OutSum: 2932800.0 (2929.9)
+----------------------------------------
+Generation: 31
+Best in generation: 31, Fitness: -1001.000000
+Counter 1001, TaskSum: 7767830720.0 (7760070.6), OutSum: 2913120.0 (2910.2)
+----------------------------------------
+Generation: 32
+Best in generation: 32, Fitness: -1001.000000
+Counter 1001, TaskSum: 8833992320.0 (8825167.2), OutSum: 2911040.0 (2908.1)
+----------------------------------------
+Generation: 33
+Best in generation: 33, Fitness: -1001.000000
+Counter 1001, TaskSum: 9421684320.0 (9412272.0), OutSum: 2913600.0 (2910.7)
+----------------------------------------
+Generation: 34
+Best in generation: 34, Fitness: -1001.000000
+Counter 1001, TaskSum: 10169762400.0 (10159602.8), OutSum: 2916160.0 (2913.2)
+----------------------------------------
+Generation: 35
+Best in generation: 35, Fitness: -1001.000000
+Counter 1001, TaskSum: 8911196160.0 (8902293.9), OutSum: 2905920.0 (2903.0)
+----------------------------------------
+Generation: 36
+Best in generation: 36, Fitness: -1001.000000
+Counter 1001, TaskSum: 9179566080.0 (9170395.7), OutSum: 2919040.0 (2916.1)
+----------------------------------------
+Generation: 37
+Best in generation: 37, Fitness: -1001.000000
+Counter 1001, TaskSum: 9031709760.0 (9022687.1), OutSum: 2912320.0 (2909.4)
+----------------------------------------
+Generation: 38
+Best in generation: 38, Fitness: -1001.000000
+Counter 1001, TaskSum: 9063738400.0 (9054683.7), OutSum: 2916320.0 (2913.4)
+----------------------------------------
+Generation: 39
+Best in generation: 39, Fitness: -1001.000000
+Counter 1001, TaskSum: 8639334880.0 (8630704.2), OutSum: 2917920.0 (2915.0)
+----------------------------------------
+Generation: 40
+Best in generation: 40, Fitness: -1001.000000
+Counter 1001, TaskSum: 9017804480.0 (9008795.7), OutSum: 2909920.0 (2907.0)
+----------------------------------------
+Generation: 41
+Best in generation: 41, Fitness: -1001.000000
+Counter 1001, TaskSum: 9456106720.0 (9446660.1), OutSum: 2908000.0 (2905.1)
+----------------------------------------
+Generation: 42
+Best in generation: 42, Fitness: -1001.000000
+Counter 1001, TaskSum: 9058839360.0 (9049789.6), OutSum: 2913120.0 (2910.2)
+----------------------------------------
+Generation: 43
+Best in generation: 43, Fitness: -1001.000000
+Counter 1001, TaskSum: 7754481280.0 (7746734.5), OutSum: 2915840.0 (2912.9)
+----------------------------------------
+Generation: 44
+Best in generation: 44, Fitness: -1001.000000
+Counter 1001, TaskSum: 8525339520.0 (8516822.7), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 45
+Best in generation: 45, Fitness: -1001.000000
+Counter 1001, TaskSum: 7967994720.0 (7960034.7), OutSum: 2918080.0 (2915.2)
+----------------------------------------
+Generation: 46
+Best in generation: 46, Fitness: -1001.000000
+Counter 1001, TaskSum: 8282892480.0 (8274617.9), OutSum: 2919360.0 (2916.4)
+----------------------------------------
+Generation: 47
+Best in generation: 47, Fitness: -1001.000000
+Counter 1001, TaskSum: 9372559680.0 (9363196.5), OutSum: 2911360.0 (2908.5)
+----------------------------------------
+Generation: 48
+Best in generation: 48, Fitness: -1001.000000
+Counter 1001, TaskSum: 8466729600.0 (8458271.3), OutSum: 2913120.0 (2910.2)
+----------------------------------------
+Generation: 49
+Best in generation: 49, Fitness: -1001.000000
+Counter 1001, TaskSum: 9469732480.0 (9460272.2), OutSum: 2913120.0 (2910.2)
+----------------------------------------
+Generation: 50
+Best in generation: 50, Fitness: -1001.000000
+Counter 1001, TaskSum: 9061657600.0 (9052605.0), OutSum: 2918720.0 (2915.8)
+----------------------------------------
+Generation: 51
+Best in generation: 51, Fitness: -1001.000000
+Counter 1001, TaskSum: 7475641120.0 (7468172.9), OutSum: 2909120.0 (2906.2)
+----------------------------------------
+Generation: 52
+Best in generation: 52, Fitness: -1001.000000
+Counter 1001, TaskSum: 7913980480.0 (7906074.4), OutSum: 2916320.0 (2913.4)
+----------------------------------------
+Generation: 53
+Best in generation: 53, Fitness: -1001.000000
+Counter 1001, TaskSum: 9589908800.0 (9580328.5), OutSum: 2915840.0 (2912.9)
+----------------------------------------
+Generation: 54
+Best in generation: 54, Fitness: -1001.000000
+Counter 1001, TaskSum: 10339207840.0 (10328879.0), OutSum: 2918080.0 (2915.2)
+----------------------------------------
+Generation: 55
+Best in generation: 55, Fitness: -1001.000000
+Counter 1001, TaskSum: 9296845920.0 (9287558.4), OutSum: 2915680.0 (2912.8)
+----------------------------------------
+Generation: 56
+Best in generation: 56, Fitness: -1001.000000
+Counter 1001, TaskSum: 10857694240.0 (10846847.4), OutSum: 2915040.0 (2912.1)
+----------------------------------------
+Generation: 57
+Best in generation: 57, Fitness: -1001.000000
+Counter 1001, TaskSum: 10549835840.0 (10539296.5), OutSum: 2919200.0 (2916.3)
+----------------------------------------
+Generation: 58
+Best in generation: 58, Fitness: -1001.000000
+Counter 1001, TaskSum: 9184883840.0 (9175708.1), OutSum: 2914560.0 (2911.6)
+----------------------------------------
+Generation: 59
+Best in generation: 59, Fitness: -1001.000000
+Counter 1001, TaskSum: 9344156320.0 (9334821.5), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 60
+Best in generation: 60, Fitness: -1001.000000
+Counter 1001, TaskSum: 9620477280.0 (9610866.4), OutSum: 2916800.0 (2913.9)
+----------------------------------------
+Generation: 61
+Best in generation: 61, Fitness: -1001.000000
+Counter 1001, TaskSum: 10420618720.0 (10410208.5), OutSum: 2915200.0 (2912.3)
+----------------------------------------
+Generation: 62
+Best in generation: 62, Fitness: -1001.000000
+Counter 1001, TaskSum: 10655914400.0 (10645269.1), OutSum: 2924640.0 (2921.7)
+----------------------------------------
+Generation: 63
+Best in generation: 63, Fitness: -1001.000000
+Counter 1001, TaskSum: 9827759360.0 (9817941.4), OutSum: 2911520.0 (2908.6)
+----------------------------------------
+Generation: 64
+Best in generation: 64, Fitness: -1001.000000
+Counter 1001, TaskSum: 10248001120.0 (10237763.4), OutSum: 2912480.0 (2909.6)
+----------------------------------------
+Generation: 65
+Best in generation: 65, Fitness: -1001.000000
+Counter 1001, TaskSum: 9958758720.0 (9948809.9), OutSum: 2913600.0 (2910.7)
+----------------------------------------
+Generation: 66
+Best in generation: 66, Fitness: -1001.000000
+Counter 1001, TaskSum: 9638414400.0 (9628785.6), OutSum: 2909760.0 (2906.9)
+----------------------------------------
+Generation: 67
+Best in generation: 67, Fitness: -1001.000000
+Counter 1001, TaskSum: 10491950080.0 (10481468.6), OutSum: 2915200.0 (2912.3)
+----------------------------------------
+Generation: 68
+Best in generation: 68, Fitness: -1001.000000
+Counter 1001, TaskSum: 9635994560.0 (9626368.2), OutSum: 2914400.0 (2911.5)
+----------------------------------------
+Generation: 69
+Best in generation: 69, Fitness: -1001.000000
+Counter 1001, TaskSum: 9573337280.0 (9563773.5), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 70
+Best in generation: 70, Fitness: -1001.000000
+Counter 1001, TaskSum: 10089101760.0 (10079022.7), OutSum: 2924800.0 (2921.9)
+----------------------------------------
+Generation: 71
+Best in generation: 71, Fitness: -1001.000000
+Counter 1001, TaskSum: 9185405920.0 (9176229.7), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 72
+Best in generation: 72, Fitness: -1001.000000
+Counter 1001, TaskSum: 7673726880.0 (7666060.8), OutSum: 2907200.0 (2904.3)
+----------------------------------------
+Generation: 73
+Best in generation: 73, Fitness: -1001.000000
+Counter 1001, TaskSum: 8151152800.0 (8143009.8), OutSum: 2906720.0 (2903.8)
+----------------------------------------
+Generation: 74
+Best in generation: 74, Fitness: -1001.000000
+Counter 1001, TaskSum: 8986642560.0 (8977664.9), OutSum: 2910080.0 (2907.2)
+----------------------------------------
+Generation: 75
+Best in generation: 75, Fitness: -1001.000000
+Counter 1001, TaskSum: 9373297280.0 (9363933.3), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 76
+Best in generation: 76, Fitness: -1001.000000
+Counter 1001, TaskSum: 7451496800.0 (7444052.7), OutSum: 2920640.0 (2917.7)
+----------------------------------------
+Generation: 77
+Best in generation: 77, Fitness: -1001.000000
+Counter 1001, TaskSum: 10272608800.0 (10262346.5), OutSum: 2922240.0 (2919.3)
+----------------------------------------
+Generation: 78
+Best in generation: 78, Fitness: -1001.000000
+Counter 1001, TaskSum: 9453936800.0 (9444492.3), OutSum: 2914720.0 (2911.8)
+----------------------------------------
+Generation: 79
+Best in generation: 79, Fitness: -1001.000000
+Counter 1001, TaskSum: 8976629120.0 (8967661.5), OutSum: 2917120.0 (2914.2)
+----------------------------------------
+Generation: 80
+Best in generation: 80, Fitness: -1001.000000
+Counter 1001, TaskSum: 7884589920.0 (7876713.2), OutSum: 2916480.0 (2913.6)
+----------------------------------------
+Generation: 81
+Best in generation: 81, Fitness: -1001.000000
+Counter 1001, TaskSum: 7121946080.0 (7114831.2), OutSum: 2917120.0 (2914.2)
+----------------------------------------
+Generation: 82
+Best in generation: 82, Fitness: -1001.000000
+Counter 1001, TaskSum: 6868668000.0 (6861806.2), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 83
+Best in generation: 83, Fitness: -1001.000000
+Counter 1001, TaskSum: 7009589280.0 (7002586.7), OutSum: 2921440.0 (2918.5)
+----------------------------------------
+Generation: 84
+Best in generation: 84, Fitness: -1001.000000
+Counter 1001, TaskSum: 7064064000.0 (7057007.0), OutSum: 2916160.0 (2913.2)
+----------------------------------------
+Generation: 85
+Best in generation: 85, Fitness: -1001.000000
+Counter 1001, TaskSum: 8436072800.0 (8427645.2), OutSum: 2920800.0 (2917.9)
+----------------------------------------
+Generation: 86
+Best in generation: 86, Fitness: -1001.000000
+Counter 1001, TaskSum: 9169404640.0 (9160244.4), OutSum: 2921120.0 (2918.2)
+----------------------------------------
+Generation: 87
+Best in generation: 87, Fitness: -1001.000000
+Counter 1001, TaskSum: 9265870720.0 (9256614.1), OutSum: 2912640.0 (2909.7)
+----------------------------------------
+Generation: 88
+Best in generation: 88, Fitness: -1001.000000
+Counter 1001, TaskSum: 8051875520.0 (8043831.7), OutSum: 2917280.0 (2914.4)
+----------------------------------------
+Generation: 89
+Best in generation: 89, Fitness: -1001.000000
+Counter 1001, TaskSum: 8544822400.0 (8536286.1), OutSum: 2917920.0 (2915.0)
+----------------------------------------
+Generation: 90
+Best in generation: 90, Fitness: -1001.000000
+Counter 1001, TaskSum: 9145325760.0 (9136189.6), OutSum: 2920640.0 (2917.7)
+----------------------------------------
+Generation: 91
+Best in generation: 91, Fitness: -1001.000000
+Counter 1001, TaskSum: 8318016960.0 (8309707.3), OutSum: 2900480.0 (2897.6)
+----------------------------------------
+Generation: 92
+Best in generation: 92, Fitness: -1001.000000
+Counter 1001, TaskSum: 9216264480.0 (9207057.4), OutSum: 2913280.0 (2910.4)
+----------------------------------------
+Generation: 93
+Best in generation: 93, Fitness: -1001.000000
+Counter 1001, TaskSum: 8469271840.0 (8460811.0), OutSum: 2917920.0 (2915.0)
+----------------------------------------
+Generation: 94
+Best in generation: 94, Fitness: -1001.000000
+Counter 1001, TaskSum: 7169744480.0 (7162581.9), OutSum: 2919200.0 (2916.3)
+----------------------------------------
+Generation: 95
+Best in generation: 95, Fitness: -1001.000000
+Counter 1001, TaskSum: 8197555680.0 (8189366.3), OutSum: 2922720.0 (2919.8)
+----------------------------------------
+Generation: 96
+Best in generation: 96, Fitness: -1001.000000
+Counter 1001, TaskSum: 6880026720.0 (6873153.6), OutSum: 2920000.0 (2917.1)
+----------------------------------------
+Generation: 97
+Best in generation: 97, Fitness: -1001.000000
+Counter 1001, TaskSum: 7581919040.0 (7574344.7), OutSum: 2914400.0 (2911.5)
+----------------------------------------
+Generation: 98
+Best in generation: 98, Fitness: -1001.000000
+Counter 1001, TaskSum: 7412212960.0 (7404808.2), OutSum: 2918400.0 (2915.5)
+----------------------------------------
+Generation: 99
+Best in generation: 99, Fitness: -1001.000000
+Counter 1001, TaskSum: 8322085280.0 (8313771.5), OutSum: 2915360.0 (2912.4)
+----------------------------------------
+TimeDiff: 909 secs
+Last best score: 0.000000
+Program ended with exit code: 0
+
+
+**************************************************************************************
+
+Config file: /Users/rhvt/Dev/BiSUNAOpenCL/resources/BiSUNAConf.ini 
+ ----------------------------------
+  CL_DEVICE_NAME:					AMD Radeon Pro 560 Compute Engine
+  CL_DEVICE_VERSION:				OpenCL 1.2 
+  CL_DEVICE_MAX_COMPUTE_UNITS:		16
+  CL_DEVICE_MAX_WORK_ITEM_DIMENSIONS:3
+  CL_DEVICE_MAX_WORK_ITEM_SIZES:	256 / 256 / 256 
+  CL_DEVICE_MAX_WORK_GROUP_SIZE:	256
+  CL_DEVICE_MAX_MEM_ALLOC_SIZE:		1024 MByte
+  CL_DEVICE_GLOBAL_MEM_SIZE:		4096 MByte
+  CL_DEVICE_LOCAL_MEM_SIZE:			32 KByte
+  CL_DEVICE_PROFILING_TIMER_RESOLUTION:	40 ns
+ ----------------------------------
+ ----------------------------------
+  CL_KERNEL_WORK_GROUP_SIZE:		256
+  CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE:64
+  CL_KERNEL_LOCAL_MEM_SIZE:			0
+  CL_KERNEL_PRIVATE_MEM_SIZE:		1584
+ ----------------------------------
+Generation: 0
+Best in generation: 0, Fitness: -1001.000000
+Counter 1001, TaskSum: 5185216480.0 (5180036.4), OutSum: 2924480.0 (2921.6)
+----------------------------------------
+Generation: 1
+Best in generation: 1, Fitness: -1001.000000
+Counter 1001, TaskSum: 7316551200.0 (7309242.0), OutSum: 2919200.0 (2916.3)
+----------------------------------------
+Generation: 2
+Best in generation: 2, Fitness: -1001.000000
+Counter 1001, TaskSum: 8468795360.0 (8460335.0), OutSum: 2911360.0 (2908.5)
+----------------------------------------
+Generation: 3
+Best in generation: 3, Fitness: -1001.000000
+Counter 1001, TaskSum: 8016264160.0 (8008255.9), OutSum: 2927200.0 (2924.3)
+----------------------------------------
+Generation: 4
+Best in generation: 4, Fitness: -1001.000000
+Counter 1001, TaskSum: 6783645600.0 (6776868.7), OutSum: 2927840.0 (2924.9)
+----------------------------------------
+Generation: 5
+Best in generation: 5, Fitness: -1001.000000
+Counter 1001, TaskSum: 7112054720.0 (7104949.8), OutSum: 2931040.0 (2928.1)
+----------------------------------------
+Generation: 6
+Best in generation: 6, Fitness: -1001.000000
+Counter 1001, TaskSum: 7386352320.0 (7378973.3), OutSum: 2932320.0 (2929.4)
+----------------------------------------
+Generation: 7
+Best in generation: 7, Fitness: -1001.000000
+Counter 1001, TaskSum: 7322150720.0 (7314835.9), OutSum: 2915360.0 (2912.4)
+----------------------------------------
+Generation: 8
+Best in generation: 8, Fitness: -1001.000000
+Counter 1001, TaskSum: 7781899520.0 (7774125.4), OutSum: 2919520.0 (2916.6)
+----------------------------------------
+Generation: 9
+Best in generation: 9, Fitness: -1001.000000
+Counter 1001, TaskSum: 7478790720.0 (7471319.4), OutSum: 2910400.0 (2907.5)
+----------------------------------------
+Generation: 10
+Best in generation: 10, Fitness: -1001.000000
+Counter 1001, TaskSum: 6857189280.0 (6850338.9), OutSum: 2913280.0 (2910.4)
+----------------------------------------
+Generation: 11
+Best in generation: 11, Fitness: -1001.000000
+Counter 1001, TaskSum: 7796475360.0 (7788686.7), OutSum: 2915200.0 (2912.3)
+----------------------------------------
+Generation: 12
+Best in generation: 12, Fitness: -1001.000000
+Counter 1001, TaskSum: 7168066240.0 (7160905.3), OutSum: 2920000.0 (2917.1)
+----------------------------------------
+Generation: 13
+Best in generation: 13, Fitness: -1001.000000
+Counter 1001, TaskSum: 8252448160.0 (8244204.0), OutSum: 2915840.0 (2912.9)
+----------------------------------------
+Generation: 14
+Best in generation: 14, Fitness: -1001.000000
+Counter 1001, TaskSum: 6940650880.0 (6933717.2), OutSum: 2912640.0 (2909.7)
+----------------------------------------
+Generation: 15
+Best in generation: 15, Fitness: -1001.000000
+Counter 1001, TaskSum: 7465848480.0 (7458390.1), OutSum: 2916800.0 (2913.9)
+----------------------------------------
+Generation: 16
+Best in generation: 16, Fitness: -1001.000000
+Counter 1001, TaskSum: 6753693440.0 (6746946.5), OutSum: 2916640.0 (2913.7)
+----------------------------------------
+Generation: 17
+Best in generation: 17, Fitness: -1001.000000
+Counter 1001, TaskSum: 6751535040.0 (6744790.2), OutSum: 2914400.0 (2911.5)
+----------------------------------------
+Generation: 18
+Best in generation: 18, Fitness: -1001.000000
+Counter 1001, TaskSum: 7253073920.0 (7245828.1), OutSum: 2912480.0 (2909.6)
+----------------------------------------
+Generation: 19
+Best in generation: 19, Fitness: -1001.000000
+Counter 1001, TaskSum: 6984348960.0 (6977371.6), OutSum: 2912640.0 (2909.7)
+----------------------------------------
+Generation: 20
+Best in generation: 20, Fitness: -1001.000000
+Counter 1001, TaskSum: 6735962560.0 (6729233.3), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 21
+Best in generation: 21, Fitness: -1001.000000
+Counter 1001, TaskSum: 6907794720.0 (6900893.8), OutSum: 2912000.0 (2909.1)
+----------------------------------------
+Generation: 22
+Best in generation: 22, Fitness: -1001.000000
+Counter 1001, TaskSum: 6621549280.0 (6614934.3), OutSum: 2913920.0 (2911.0)
+----------------------------------------
+Generation: 23
+Best in generation: 23, Fitness: -1001.000000
+Counter 1001, TaskSum: 7147316000.0 (7140175.8), OutSum: 2916640.0 (2913.7)
+----------------------------------------
+Generation: 24
+Best in generation: 24, Fitness: -1001.000000
+Counter 1001, TaskSum: 7108984800.0 (7101882.9), OutSum: 2916000.0 (2913.1)
+----------------------------------------
+Generation: 25
+Best in generation: 25, Fitness: -1001.000000
+Counter 1001, TaskSum: 6852439680.0 (6845594.1), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 26
+Best in generation: 26, Fitness: -1001.000000
+Counter 1001, TaskSum: 6969277600.0 (6962315.3), OutSum: 2917120.0 (2914.2)
+----------------------------------------
+Generation: 27
+Best in generation: 27, Fitness: -1001.000000
+Counter 1001, TaskSum: 7551703680.0 (7544159.5), OutSum: 2915520.0 (2912.6)
+----------------------------------------
+Generation: 28
+Best in generation: 28, Fitness: -1001.000000
+Counter 1001, TaskSum: 7018768320.0 (7011756.6), OutSum: 2920480.0 (2917.6)
+----------------------------------------
+Generation: 29
+Best in generation: 29, Fitness: -1001.000000
+Counter 1001, TaskSum: 7004075200.0 (6997078.1), OutSum: 2916160.0 (2913.2)
+----------------------------------------
+Generation: 30
+Best in generation: 30, Fitness: -1001.000000
+Counter 1001, TaskSum: 7104677600.0 (7097580.0), OutSum: 2917120.0 (2914.2)
+----------------------------------------
+Generation: 31
+Best in generation: 31, Fitness: -1001.000000
+Counter 1001, TaskSum: 7795714400.0 (7787926.5), OutSum: 2913600.0 (2910.7)
+----------------------------------------
+Generation: 32
+Best in generation: 32, Fitness: -1001.000000
+Counter 1001, TaskSum: 8879378400.0 (8870507.9), OutSum: 2915520.0 (2912.6)
+----------------------------------------
+Generation: 33
+Best in generation: 33, Fitness: -1001.000000
+Counter 1001, TaskSum: 9471821440.0 (9462359.1), OutSum: 2920160.0 (2917.2)
+----------------------------------------
+Generation: 34
+Best in generation: 34, Fitness: -1001.000000
+Counter 1001, TaskSum: 10216472640.0 (10206266.4), OutSum: 2915040.0 (2912.1)
+----------------------------------------
+Generation: 35
+Best in generation: 35, Fitness: -1001.000000
+Counter 1001, TaskSum: 8944604160.0 (8935668.5), OutSum: 2927520.0 (2924.6)
+----------------------------------------
+Generation: 36
+Best in generation: 36, Fitness: -1001.000000
+Counter 1001, TaskSum: 9217257440.0 (9208049.4), OutSum: 2913120.0 (2910.2)
+----------------------------------------
+Generation: 37
+Best in generation: 37, Fitness: -1001.000000
+Counter 1001, TaskSum: 9056833280.0 (9047785.5), OutSum: 2917760.0 (2914.8)
+----------------------------------------
+Generation: 38
+Best in generation: 38, Fitness: -1001.000000
+Counter 1001, TaskSum: 9109164320.0 (9100064.3), OutSum: 2911840.0 (2908.9)
+----------------------------------------
+Generation: 39
+Best in generation: 39, Fitness: -1001.000000
+Counter 1001, TaskSum: 8678720640.0 (8670050.6), OutSum: 2915040.0 (2912.1)
+----------------------------------------
+Generation: 40
+Best in generation: 40, Fitness: -1001.000000
+Counter 1001, TaskSum: 9052132000.0 (9043088.9), OutSum: 2914720.0 (2911.8)
+----------------------------------------
+Generation: 41
+Best in generation: 41, Fitness: -1001.000000
+Counter 1001, TaskSum: 9498156000.0 (9488667.3), OutSum: 2914400.0 (2911.5)
+----------------------------------------
+Generation: 42
+Best in generation: 42, Fitness: -1001.000000
+Counter 1001, TaskSum: 9096398080.0 (9087310.8), OutSum: 2910400.0 (2907.5)
+----------------------------------------
+Generation: 43
+Best in generation: 43, Fitness: -1001.000000
+Counter 1001, TaskSum: 7778707520.0 (7770936.6), OutSum: 2916480.0 (2913.6)
+----------------------------------------
+Generation: 44
+Best in generation: 44, Fitness: -1001.000000
+Counter 1001, TaskSum: 8553392000.0 (8544847.2), OutSum: 2933600.0 (2930.7)
+----------------------------------------
+Generation: 45
+Best in generation: 45, Fitness: -1001.000000
+Counter 1001, TaskSum: 8007233600.0 (7999234.4), OutSum: 2912800.0 (2909.9)
+----------------------------------------
+Generation: 46
+Best in generation: 46, Fitness: -1001.000000
+Counter 1001, TaskSum: 8311326400.0 (8303023.4), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 47
+Best in generation: 47, Fitness: -1001.000000
+Counter 1001, TaskSum: 9403518880.0 (9394124.8), OutSum: 2910080.0 (2907.2)
+----------------------------------------
+Generation: 48
+Best in generation: 48, Fitness: -1001.000000
+Counter 1001, TaskSum: 8497559200.0 (8489070.1), OutSum: 2914880.0 (2912.0)
+----------------------------------------
+Generation: 49
+Best in generation: 49, Fitness: -1001.000000
+Counter 1001, TaskSum: 9516396960.0 (9506890.1), OutSum: 2912960.0 (2910.0)
+----------------------------------------
+Generation: 50
+Best in generation: 50, Fitness: -1001.000000
+Counter 1001, TaskSum: 9102468000.0 (9093374.6), OutSum: 2917440.0 (2914.5)
+----------------------------------------
+Generation: 51
+Best in generation: 51, Fitness: -1001.000000
+Counter 1001, TaskSum: 7505924480.0 (7498426.1), OutSum: 2918720.0 (2915.8)
+----------------------------------------
+Generation: 52
+Best in generation: 52, Fitness: -1001.000000
+Counter 1001, TaskSum: 7948703840.0 (7940763.1), OutSum: 2916320.0 (2913.4)
+----------------------------------------
+Generation: 53
+Best in generation: 53, Fitness: -1001.000000
+Counter 1001, TaskSum: 9625513600.0 (9615897.7), OutSum: 2924800.0 (2921.9)
+----------------------------------------
+Generation: 54
+Best in generation: 54, Fitness: -1001.000000
+Counter 1001, TaskSum: 10369667200.0 (10359307.9), OutSum: 2919680.0 (2916.8)
+----------------------------------------
+Generation: 55
+Best in generation: 55, Fitness: -1001.000000
+Counter 1001, TaskSum: 9332089120.0 (9322766.4), OutSum: 2909760.0 (2906.9)
+----------------------------------------
+Generation: 56
+Best in generation: 56, Fitness: -1001.000000
+Counter 1001, TaskSum: 10894158560.0 (10883275.3), OutSum: 2918720.0 (2915.8)
+----------------------------------------
+Generation: 57
+Best in generation: 57, Fitness: -1001.000000
+Counter 1001, TaskSum: 10589872480.0 (10579293.2), OutSum: 2915680.0 (2912.8)
+----------------------------------------
+Generation: 58
+Best in generation: 58, Fitness: -1001.000000
+Counter 1001, TaskSum: 9237524960.0 (9228296.7), OutSum: 2913600.0 (2910.7)
+----------------------------------------
+Generation: 59
+Best in generation: 59, Fitness: -1001.000000
+Counter 1001, TaskSum: 9379203040.0 (9369833.2), OutSum: 2914720.0 (2911.8)
+----------------------------------------
+Generation: 60
+Best in generation: 60, Fitness: -1001.000000
+Counter 1001, TaskSum: 9653231360.0 (9643587.8), OutSum: 2913920.0 (2911.0)
+----------------------------------------
+Generation: 61
+Best in generation: 61, Fitness: -1001.000000
+Counter 1001, TaskSum: 10449473600.0 (10439034.6), OutSum: 2914720.0 (2911.8)
+----------------------------------------
+Generation: 62
+Best in generation: 62, Fitness: -1001.000000
+Counter 1001, TaskSum: 10685402720.0 (10674728.0), OutSum: 2911520.0 (2908.6)
+----------------------------------------
+Generation: 63
+Best in generation: 63, Fitness: -1001.000000
+Counter 1001, TaskSum: 9851053440.0 (9841212.2), OutSum: 2914400.0 (2911.5)
+----------------------------------------
+Generation: 64
+Best in generation: 64, Fitness: -1001.000000
+Counter 1001, TaskSum: 10275823840.0 (10265558.3), OutSum: 2917120.0 (2914.2)
+----------------------------------------
+Generation: 65
+Best in generation: 65, Fitness: -1001.000000
+Counter 1001, TaskSum: 9992304320.0 (9982322.0), OutSum: 2918880.0 (2916.0)
+----------------------------------------
+Generation: 66
+Best in generation: 66, Fitness: -1001.000000
+Counter 1001, TaskSum: 9672102400.0 (9662440.0), OutSum: 2918720.0 (2915.8)
+----------------------------------------
+Generation: 67
+Best in generation: 67, Fitness: -1001.000000
+Counter 1001, TaskSum: 10526303680.0 (10515787.9), OutSum: 2917440.0 (2914.5)
+----------------------------------------
+Generation: 68
+Best in generation: 68, Fitness: -1001.000000
+Counter 1001, TaskSum: 9673751040.0 (9664087.0), OutSum: 2913920.0 (2911.0)
+----------------------------------------
+Generation: 69
+Best in generation: 69, Fitness: -1001.000000
+Counter 1001, TaskSum: 9605554400.0 (9595958.4), OutSum: 2923840.0 (2920.9)
+----------------------------------------
+Generation: 70
+Best in generation: 70, Fitness: -1001.000000
+Counter 1001, TaskSum: 10132774240.0 (10122651.6), OutSum: 2922240.0 (2919.3)
+----------------------------------------
+Generation: 71
+Best in generation: 71, Fitness: -1001.000000
+Counter 1001, TaskSum: 9227110560.0 (9217892.7), OutSum: 2928640.0 (2925.7)
+----------------------------------------
+Generation: 72
+Best in generation: 72, Fitness: -1001.000000
+Counter 1001, TaskSum: 7683206240.0 (7675530.7), OutSum: 2925280.0 (2922.4)
+----------------------------------------
+Generation: 73
+Best in generation: 73, Fitness: -1001.000000
+Counter 1001, TaskSum: 8163391200.0 (8155236.0), OutSum: 2924800.0 (2921.9)
+----------------------------------------
+Generation: 74
+Best in generation: 74, Fitness: -1001.000000
+Counter 1001, TaskSum: 9010587360.0 (9001585.8), OutSum: 2916160.0 (2913.2)
+----------------------------------------
+Generation: 75
+Best in generation: 75, Fitness: -1001.000000
+Counter 1001, TaskSum: 9401749600.0 (9392357.2), OutSum: 2915520.0 (2912.6)
+----------------------------------------
+Generation: 76
+Best in generation: 76, Fitness: -1001.000000
+Counter 1001, TaskSum: 7473951680.0 (7466485.2), OutSum: 2910400.0 (2907.5)
+----------------------------------------
+Generation: 77
+Best in generation: 77, Fitness: -1001.000000
+Counter 1001, TaskSum: 10321386560.0 (10311075.5), OutSum: 2917760.0 (2914.8)
+----------------------------------------
+Generation: 78
+Best in generation: 78, Fitness: -1001.000000
+Counter 1001, TaskSum: 9487467840.0 (9477989.9), OutSum: 2910080.0 (2907.2)
+----------------------------------------
+Generation: 79
+Best in generation: 79, Fitness: -1001.000000
+Counter 1001, TaskSum: 9026721760.0 (9017704.1), OutSum: 2910400.0 (2907.5)
+----------------------------------------
+Generation: 80
+Best in generation: 80, Fitness: -1001.000000
+Counter 1001, TaskSum: 7925863680.0 (7917945.7), OutSum: 2914720.0 (2911.8)
+----------------------------------------
+Generation: 81
+Best in generation: 81, Fitness: -1001.000000
+Counter 1001, TaskSum: 7149759360.0 (7142616.7), OutSum: 2912800.0 (2909.9)
+----------------------------------------
+Generation: 82
+Best in generation: 82, Fitness: -1001.000000
+Counter 1001, TaskSum: 6895610560.0 (6888721.8), OutSum: 2914240.0 (2911.3)
+----------------------------------------
+Generation: 83
+Best in generation: 83, Fitness: -1001.000000
+Counter 1001, TaskSum: 7034886400.0 (7027858.5), OutSum: 2910240.0 (2907.3)
+----------------------------------------
+Generation: 84
+Best in generation: 84, Fitness: -1001.000000
+Counter 1001, TaskSum: 7095410080.0 (7088321.8), OutSum: 2911520.0 (2908.6)
+----------------------------------------
+Generation: 85
+Best in generation: 85, Fitness: -1001.000000
+Counter 1001, TaskSum: 8489249920.0 (8480769.2), OutSum: 2924320.0 (2921.4)
+----------------------------------------
+Generation: 86
+Best in generation: 86, Fitness: -1001.000000
+Counter 1001, TaskSum: 9209487520.0 (9200287.2), OutSum: 2915360.0 (2912.4)
+----------------------------------------
+Generation: 87
+Best in generation: 87, Fitness: -1001.000000
+Counter 1001, TaskSum: 9306899360.0 (9297601.8), OutSum: 2910720.0 (2907.8)
+----------------------------------------
+Generation: 88
+Best in generation: 88, Fitness: -1001.000000
+Counter 1001, TaskSum: 8094194880.0 (8086108.8), OutSum: 2917120.0 (2914.2)
+----------------------------------------
+Generation: 89
+Best in generation: 89, Fitness: -1001.000000
+Counter 1001, TaskSum: 8590911200.0 (8582328.9), OutSum: 2913120.0 (2910.2)
+----------------------------------------
+Generation: 90
+Best in generation: 90, Fitness: -1001.000000
+Counter 1001, TaskSum: 9192979680.0 (9183795.9), OutSum: 2914720.0 (2911.8)
+----------------------------------------
+Generation: 91
+Best in generation: 91, Fitness: -1001.000000
+Counter 1001, TaskSum: 8349675200.0 (8341333.9), OutSum: 2916320.0 (2913.4)
+----------------------------------------
+Generation: 92
+Best in generation: 92, Fitness: -1001.000000
+Counter 1001, TaskSum: 9267131040.0 (9257873.2), OutSum: 2912960.0 (2910.0)
+----------------------------------------
+Generation: 93
+Best in generation: 93, Fitness: -1001.000000
+Counter 1001, TaskSum: 8513607520.0 (8505102.4), OutSum: 2912320.0 (2909.4)
+----------------------------------------
+Generation: 94
+Best in generation: 94, Fitness: -1001.000000
+Counter 1001, TaskSum: 7200844960.0 (7193651.3), OutSum: 2910240.0 (2907.3)
+----------------------------------------
+Generation: 95
+Best in generation: 95, Fitness: -1001.000000
+Counter 1001, TaskSum: 8226129280.0 (8217911.4), OutSum: 2914080.0 (2911.2)
+----------------------------------------
+Generation: 96
+Best in generation: 96, Fitness: -1001.000000
+Counter 1001, TaskSum: 6906525280.0 (6899625.7), OutSum: 2916800.0 (2913.9)
+----------------------------------------
+Generation: 97
+Best in generation: 97, Fitness: -1001.000000
+Counter 1001, TaskSum: 7614144160.0 (7606537.6), OutSum: 2913440.0 (2910.5)
+----------------------------------------
+Generation: 98
+Best in generation: 98, Fitness: -1001.000000
+Counter 1001, TaskSum: 7447092640.0 (7439653.0), OutSum: 2916800.0 (2913.9)
+----------------------------------------
+Generation: 99
+Best in generation: 99, Fitness: -1001.000000
+Counter 1001, TaskSum: 8354220000.0 (8345874.1), OutSum: 2912480.0 (2909.6)
+----------------------------------------
+TimeDiff: 915 secs
+Last best score: 0.000000
+Program ended with exit code: 0
+
+**************************************************************************************

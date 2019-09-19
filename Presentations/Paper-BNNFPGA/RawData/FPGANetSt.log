@@ -1,0 +1,20 @@
+Compiler Command: aoc -c -board=c5p -report -v -I . -o nsk CLSupportFunctions.cl FPGANetSt.cl
+
+!===========================================================================
+! The report below may be inaccurate. A more comprehensive           
+! resource usage report can be found at FPGANetSt/reports/report.html    
+!===========================================================================
+
++--------------------------------------------------------------------+
+; Estimated Resource Usage Summary                                   ;
++----------------------------------------+---------------------------+
+; Resource                               + Usage                     ;
++----------------------------------------+---------------------------+
+; Logic utilization                      ;   47%                     ;
+; ALUTs                                  ;   31%                     ;
+; Dedicated logic registers              ;   19%                     ;
+; Memory blocks                          ;   32%                     ;
+; DSP blocks                             ;    0%                     ;
++----------------------------------------+---------------------------;
+System name: FPGANetSt
+
