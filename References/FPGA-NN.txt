@@ -66,3 +66,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7561676
 
 FPGA-based Accelerators of Deep Learning Networks for Learning and Classification: A Review
 https://ieeexplore.ieee.org/document/8594633
+
+Neural Network Based Reinforcement Learning Acceleration on FPGA Platforms
+https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3039915

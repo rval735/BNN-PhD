@@ -1,12 +1,78 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2019-09-16 19:33:36 +1200 
+%% Created for RHVT at 2019-10-09 14:52:16 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{10.1007/978-3-030-30048-7_24,
+	Abstract = {Binarized Neural Networks (BNNs) are an important class of neural network characterized by weights and activations restricted to the set {\$}{\$}{\backslash}{\{}-1,+1{\backslash}{\}}{\$}{\$}. BNNs provide simple compact descriptions and as such have a wide range of applications in low-power devices. In this paper, we investigate a model-based approach to training BNNs using constraint programming (CP), mixed-integer programming (MIP), and CP/MIP hybrids. We formulate the training problem as finding a set of weights that correctly classify the training set instances while optimizing objective functions that have been proposed in the literature as proxies for generalizability. Our experimental results on the MNIST digit recognition dataset suggest that---when training data is limited---the BNNs found by our hybrid approach generalize better than those obtained from a state-of-the-art gradient descent method. More broadly, this work enables the analysis of neural network performance based on the availability of optimal solutions and optimality bounds.},
+	Address = {Cham},
+	Author = {Toro Icarte, Rodrigo and Illanes, Le{\'o}n and Castro, Margarita P. and Cire, Andre A. and McIlraith, Sheila A. and Beck, J. Christopher},
+	Booktitle = {Principles and Practice of Constraint Programming},
+	Date-Added = {2019-10-09 12:46:42 +1300},
+	Date-Modified = {2019-10-09 12:47:13 +1300},
+	Editor = {Schiex, Thomas and de Givry, Simon},
+	Isbn = {978-3-030-30048-7},
+	Keywords = {BNN, Mixed-Integer Programming, Constraint Programming},
+	Pages = {401--417},
+	Publisher = {Springer International Publishing},
+	Title = {Training Binarized Neural Networks Using MIP and CP},
+	Year = {2019}}
+
+@inproceedings{Ma_2019_CVPR_Workshops,
+	Author = {Ma, Yinglan and Xiong, Hongyu and Hu, Zhe and Ma, Lizhuang},
+	Booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+	Date-Added = {2019-10-09 12:38:51 +1300},
+	Date-Modified = {2019-10-09 12:39:21 +1300},
+	Keywords = {BNN, image processing, CNN},
+	Month = {June},
+	Title = {Efficient Super Resolution Using Binarized Neural Network},
+	Year = {2019}}
+
+@article{Su:2017:NNB:3039902.3039915,
+	Acmid = {3039915},
+	Address = {New York, NY, USA},
+	Author = {Su, Jiang and Liu, Jianxiong and Thomas, David B. and Cheung, Peter Y.K.},
+	Date-Added = {2019-10-08 23:15:02 +1300},
+	Date-Modified = {2019-10-08 23:15:25 +1300},
+	Doi = {10.1145/3039902.3039915},
+	Issn = {0163-5964},
+	Issue_Date = {September 2016},
+	Journal = {SIGARCH Comput. Archit. News},
+	Keywords = {FPGA-NN, DQN, Reinforcement Learning},
+	Month = jan,
+	Number = {4},
+	Numpages = {6},
+	Pages = {68--73},
+	Publisher = {ACM},
+	Title = {Neural Network Based Reinforcement Learning Acceleration on FPGA Platforms},
+	Url = {http://doi.acm.org/10.1145/3039902.3039915},
+	Volume = {44},
+	Year = {2017},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/3039902.3039915},
+	Bdsk-Url-2 = {https://doi.org/10.1145/3039902.3039915}}
+
+@article{electronics8060661,
+	Abstract = {In this work, we review Binarized Neural Networks (BNNs). BNNs are deep neural networks that use binary values for activations and weights, instead of full precision values. With binary values, BNNs can execute computations using bitwise operations, which reduces execution time. Model sizes of BNNs are much smaller than their full precision counterparts. While the accuracy of a BNN model is generally less than full precision models, BNNs have been closing accuracy gap and are becoming more accurate on larger datasets like ImageNet. BNNs are also good candidates for deep learning implementations on FPGAs and ASICs due to their bitwise efficiency. We give a tutorial of the general BNN methodology and review various contributions, implementations and applications of BNNs.},
+	Article-Number = {661},
+	Author = {Simons, Taylor and Lee, Dah-Jye},
+	Date-Added = {2019-10-08 15:58:12 +1300},
+	Date-Modified = {2019-10-08 15:58:34 +1300},
+	Doi = {10.3390/electronics8060661},
+	Issn = {2079-9292},
+	Journal = {Electronics},
+	Keywords = {BNN, Survey, backpropagation},
+	Number = {6},
+	Title = {A Review of Binarized Neural Networks},
+	Url = {https://www.mdpi.com/2079-9292/8/6/661},
+	Volume = {8},
+	Year = {2019},
+	Bdsk-Url-1 = {https://www.mdpi.com/2079-9292/8/6/661},
+	Bdsk-Url-2 = {https://doi.org/10.3390/electronics8060661}}
 
 @electronic{BNN-FPT-Paper-Data,
 	Author = {Raul Valencia},
@@ -15,18 +81,20 @@
 	Keywords = {Paper, Github, FPT, Data},
 	Title = {BNN-FPT Raw Data},
 	Url = {github.com/rval735/BNN-PhD/tree/master/Presentations/Paper-BNNFPGA},
-	Urldate = {Sep 15}}
+	Urldate = {Sep 15},
+	Bdsk-Url-1 = {github.com/rval735/BNN-PhD/tree/master/Presentations/Paper-BNNFPGA}}
 
 @electronic{BiSUNAGithub,
 	Author = {Raul Valencia},
 	Date-Added = {2019-09-14 21:28:31 +1200},
 	Date-Modified = {2019-09-14 21:30:01 +1200},
-	Keywords = {BiSUNA, },
+	Keywords = {BiSUNA,},
 	Month = {Sep},
 	Title = {Binary Spectrum-diverse Unified Neuroevolution Architecture},
 	Url = {https://github.com/rval735/BiSUNA},
 	Urldate = {Sep 14, 2019},
-	Year = {2019}}
+	Year = {2019},
+	Bdsk-Url-1 = {https://github.com/rval735/BiSUNA}}
 
 @article{8594633,
 	Abstract = {Due to recent advances in digital technologies, and availability of credible data, an area of artificial intelligence, deep learning, has emerged and has demonstrated its ability and effectiveness in solving complex learning problems not possible before. In particular, convolutional neural networks (CNNs) have demonstrated their effectiveness in the image detection and recognition applications. However, they require intensive CPU operations and memory bandwidth that make general CPUs fail to achieve the desired performance levels. Consequently, hardware accelerators that use application-specific integrated circuits, field-programmable gate arrays (FPGAs), and graphic processing units have been employed to improve the throughput of CNNs. More precisely, FPGAs have been recently adopted for accelerating the implementation of deep learning networks due to their ability to maximize parallelism and their energy efficiency. In this paper, we review the recent existing techniques for accelerating deep learning networks on FPGAs. We highlight the key features employed by the various techniques for improving the acceleration performance. In addition, we provide recommendations for enhancing the utilization of FPGAs for CNNs acceleration. The techniques investigated in this paper represent the recent trends in the FPGA-based accelerators of deep learning networks. Thus, this paper is expected to direct the future advances on efficient hardware accelerators and to be useful for deep learning researchers.},
@@ -1372,6 +1440,7 @@
 	Pages = {1-1},
 	Title = {MSCryptoNet: Multi-Scheme privacy-preserving deep learning in cloud computing},
 	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxBFLi4vUmVmZXJlbmNlcy9DaXRhdGlvbnMvQk5OL0EgUmV2aWV3IG9mIEJpbmFyaXplZCBOZXVyYWwgTmV0d29ya3MuYmliTxEB3AAAAAAB3AACAAAJTWFjaW50b3NoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////H0EgUmV2aWV3IG9mIEJpbmFyaSNGRkZGRkZGRi5iaWIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQAEAAAKIGN1AAAAAAAAAAAAAAAAAANCTk4AAAIAWy86VXNlcnM6cmh2dDpEZXY6Q05OLVBoZDpSZWZlcmVuY2VzOkNpdGF0aW9uczpCTk46QSBSZXZpZXcgb2YgQmluYXJpemVkIE5ldXJhbCBOZXR3b3Jrcy5iaWIAAA4AVAApAEEAIABSAGUAdgBpAGUAdwAgAG8AZgAgAEIAaQBuAGEAcgBpAHoAZQBkACAATgBlAHUAcgBhAGwAIABOAGUAdAB3AG8AcgBrAHMALgBiAGkAYgAPABQACQBNAGEAYwBpAG4AdABvAHMAaAASAFlVc2Vycy9yaHZ0L0Rldi9DTk4tUGhkL1JlZmVyZW5jZXMvQ2l0YXRpb25zL0JOTi9BIFJldmlldyBvZiBCaW5hcml6ZWQgTmV1cmFsIE5ldHdvcmtzLmJpYgAAEwABLwAAFQACAAv//wAAAAgADQAaACQAbAAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAJM},
 	Bdsk-Url-1 = {https://doi.org/10.1109/ACCESS.2019.2901219}}
 
 @article{7460958,

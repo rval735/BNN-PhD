@@ -543,6 +543,11 @@ FPGA-based Accelerators of Deep Learning Networks for Learning and Classificatio
 -
 -
 
+Neural Network Based Reinforcement Learning Acceleration on FPGA Platforms
+-
+-
+-
+
 < FPGA-NN
 ------> FPGA-Fin
 
@@ -2117,6 +2122,21 @@ Back to Simplicity- How to Train Accurate BNNs from Scratch
 -
 
 Matrix and tensor decompositions for training binary neural networks
+-
+-
+-
+
+A Review of Binarized Neural Networks
+-
+-
+-
+
+Efficient Super Resolution Using Binarized Neural Network
+-
+-
+-
+
+Training Binarized Neural Networks using MIP and CP
 -
 -
 -
