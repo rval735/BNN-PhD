@@ -25,7 +25,6 @@
 \BIBentryALTinterwordspacing
 S.~Linnainmaa, ``Taylor expansion of the accumulated rounding error,''
   \emph{BIT Numerical Mathematics}, vol.~16, no.~2, pp. 146--160, Jun 1976.
-  [Online]. Available: \url{https://doi.org/10.1007/BF01931367}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Blott:2018:FRE:3299999.3242897}
@@ -34,25 +33,22 @@ M.~Blott, T.~B. Preusser, N.~J. Fraser, G.~Gambardella, K.~O'brien,
   Y.~Umuroglu, M.~Leeser, and K.~Vissers, ``Finn-r: An end-to-end deep-learning
   framework for fast exploration of quantized neural networks,'' \emph{ACM
   Trans. Reconfigurable Technol. Syst.}, vol.~11, no.~3, pp. 16:1--16:23, Dec.
-  2018. [Online]. Available: \url{http://doi.acm.org/10.1145/3242897}
+  2018.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Tang2017HowTT}
 W.~Tang, G.~Hua, and L.~Wang, ``How to train a compact binary neural network
   with high accuracy?'' in \emph{AAAI}, 2017.
 
-\bibitem{BiSUNAGithub}
-\BIBentryALTinterwordspacing
-R.~Valencia. (2019, Sep) Binary spectrum-diverse unified neuroevolution
-  architecture. [Online]. Available: \url{https://github.com/rval735/BiSUNA}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Sher2013NeuroEvol}
 \BIBentryALTinterwordspacing
 G.~I. Sher, \emph{Handbook of Neuroevolution Through Erlang}.\hskip 1em plus
-  0.5em minus 0.4em\relax New York, NY: Springer New York, 2013. [Online].
-  Available: \url{https://doi.org/10.1007/978-1-4614-4463-3_1}
+  0.5em minus 0.4em\relax New York, NY: Springer New York, 2013.
 \BIBentrySTDinterwordspacing
+
+\bibitem{BNN-APCCAS}
+R.~Valencia, C.~W. Sham, and O.~Sinnen, ``Using neuroevolved binary neural
+  networks to solve reinforcement learning environments,'' p.~4, Nov 2019.
 
 \bibitem{7460958}
 J.~M. Danilo~{Vargas}, ``Spectrum-diverse neuroevolution with unified neural
@@ -63,8 +59,8 @@ J.~M. Danilo~{Vargas}, ``Spectrum-diverse neuroevolution with unified neural
 \BIBentryALTinterwordspacing
 M.~S. Riazi, M.~Samragh, H.~Chen, K.~Laine, K.~Lauter, and F.~Koushanfar,
   ``Xonn: Xnor-based oblivious deep neural network inference,'' in \emph{USENIX
-  Security}, USENIX.\hskip 1em plus 0.5em minus 0.4em\relax USENIX, 05/2019
-  2019. [Online]. Available: \url{https://arxiv.org/pdf/1902.07342.pdf}
+  Security}.\hskip 1em plus 0.5em minus 0.4em\relax USENIX
+  2019.
 \BIBentrySTDinterwordspacing
 
 \bibitem{10.1007/978-3-319-46493-0_32}
@@ -76,12 +72,17 @@ M.~Rastegari, V.~Ordonez, J.~Redmon, and A.~Farhadi, ``Xnor-net: Imagenet
 
 \bibitem{Han:2016:EEI:3001136.3001163}
 \BIBentryALTinterwordspacing
-S.~Han, X.~Liu, H.~Mao, J.~Pu, A.~Pedram, M.~A. Horowitz, and W.~J. Dally,
+S.~Han, X.~Liu, H.~Mao, et al,
   ``Eie: Efficient inference engine on compressed deep neural network,'' in
   \emph{Proceedings of the 43rd International Symposium on Computer
   Architecture}, ser. ISCA '16.\hskip 1em plus 0.5em minus 0.4em\relax
-  Piscataway, NJ, USA: IEEE Press, 2016, pp. 243--254. [Online]. Available:
-  \url{https://doi.org/10.1109/ISCA.2016.30}
+  IEEE Press, 2016, pp. 243--254.
+\BIBentrySTDinterwordspacing
+
+\bibitem{BNN-FPT-Code}
+\BIBentryALTinterwordspacing
+R.~Valencia. BNN-FPT source code.
+  \url{github.com/rval735/bisunaocl}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Moore-1991-13223}
@@ -90,15 +91,8 @@ A.~Moore, ``Efficient memory-based learning for robot control,'' Ph.D.
 
 \bibitem{NectarCloud}
 \BIBentryALTinterwordspacing
-N.~R.~I. for Australia. (2017, Nov) New zealand nectar cloud. [Online].
-  Available:
+N.~R.~I. for Australia. (2017, Nov) New zealand nectar cloud.
   \url{https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{BNN-FPT-Paper-Data}
-\BIBentryALTinterwordspacing
-R.~Valencia. Bnn-fpt raw data. [Online]. Available:
-  \url{github.com/rval735/BNN-PhD/tree/master/Presentations/Paper-BNNFPGA}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
