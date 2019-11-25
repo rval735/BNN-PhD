@@ -56,3 +56,10 @@ https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0122236
 
 Fully Homomorphic Encryption over the Integers with Shorter Public Keys
 https://eprint.iacr.org/2011/441
+
+GELU-Net- A Globally Encrypted, Locally Unencrypted Deep Neural Network for Privacy-Preserved Learning
+https://www.ijcai.org/proceedings/2018/0547
+
+A Pragmatic Introduction to Secure Multi-Party Computation
+https://www.nowpublishers.com/article/Details/SEC-019
+https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf

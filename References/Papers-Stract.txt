@@ -2238,6 +2238,16 @@ Fully Homomorphic Encryption over the Integers with Shorter Public Keys
 -
 -
 
+GELU-Net- A Globally Encrypted, Locally Unencrypted Deep Neural Network for Privacy-Preserved Learning
+-
+-
+-
+
+A Pragmatic Introduction to Secure Multi-Party Computation
+-
+-
+-
+
 < Crypto
 
 ------> Other
