@@ -63,3 +63,15 @@ https://www.ijcai.org/proceedings/2018/0547
 A Pragmatic Introduction to Secure Multi-Party Computation
 https://www.nowpublishers.com/article/Details/SEC-019
 https://www.cs.virginia.edu/~evans/pragmaticmpc/pragmaticmpc.pdf
+
+A Neural Network Approach for Visual Cryptography
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/861518
+
+Use of Neural Networks in Cryptography- A Review
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7583925
+
+Cryptography Using Neural Network
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1590168
+
+High-speed hardware implementations of Elliptic Curve Cryptography- A survey
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S1383762106001044

@@ -1312,6 +1312,16 @@ that support the lottery ticket hypothesis and the importance of these fortuitou
 initializations
 - Winning tickets that are less than 10-20% of the size of several fully-connected and convolutional feed-forward architectures for MNIST and CIFAR10
 
+Towards resource-frugal deep convolutional neural networks for hyperspectral image segmentation
+-
+-
+-
+
+Neural network based multi-objective evolutionary algorithm for dynamic workflow scheduling in cloud computing
+-
+-
+-
+
 < NN
 
 -------> Decentralized
@@ -2141,6 +2151,11 @@ Training Binarized Neural Networks using MIP and CP
 -
 -
 
+Using Neuroevolved Binary Neural Networks to solve reinforcement learning environments
+-
+-
+-
+
 < BNN
 
 ------> Crypto
@@ -2244,6 +2259,26 @@ GELU-Net- A Globally Encrypted, Locally Unencrypted Deep Neural Network for Priv
 -
 
 A Pragmatic Introduction to Secure Multi-Party Computation
+-
+-
+-
+
+A Neural Network Approach for Visual Cryptography
+-
+-
+-
+
+Use of Neural Networks in Cryptography- A Review
+-
+-
+-
+
+Cryptography Using Neural Network
+-
+-
+-
+
+High-speed hardware implementations of Elliptic Curve Cryptography- A survey
 -
 -
 -
