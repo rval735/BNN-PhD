@@ -37,6 +37,36 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{Alani}{Alani}{2012}]%
+        {10.1007/978-3-642-34500-5_75}
+\bibfield{author}{\bibinfo{person}{Mohammed~M. Alani}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Neuro-Cryptanalysis of DES and Triple-DES}. In
+  \bibinfo{booktitle}{{\em Neural Information Processing}},
+  \bibfield{editor}{\bibinfo{person}{Tingwen Huang}, \bibinfo{person}{Zhigang
+  Zeng}, \bibinfo{person}{Chuandong Li}, {and} \bibinfo{person}{Chi~Sing
+  Leung}} (Eds.). \bibinfo{publisher}{Springer Berlin Heidelberg},
+  \bibinfo{address}{Berlin, Heidelberg}, \bibinfo{pages}{637--646}.
+\newblock
+\showISBNx{978-3-642-34500-5}
+
+
+\bibitem[\protect\citeauthoryear{Baldominos, Saez, and Isasi}{Baldominos
+  et~al\mbox{.}}{2019}]%
+        {scarpiniti_hybridizing_2019}
+\bibfield{author}{\bibinfo{person}{Alejandro Baldominos}, \bibinfo{person}{Yago
+  Saez}, {and} \bibinfo{person}{Pedro Isasi}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Hybridizing {Evolutionary} {Computation} and {Deep}
+  {Neural} {Networks}: {An} {Approach} to {Handwriting} {Recognition} {Using}
+  {Committees} and {Transfer} {Learning}}.
+\newblock \bibinfo{journal}{{\em Complexity\/}}  \bibinfo{volume}{2019}
+  (\bibinfo{date}{March} \bibinfo{year}{2019}), \bibinfo{pages}{2952304}.
+\newblock
+\showISSN{1076-2787}
+\showDOI{%
+\url{https://doi.org/10.1155/2019/2952304}}
+
+
 \bibitem[\protect\citeauthoryear{Coutinho, de~Oliveira~Albuquerque, Borges,
   Garc{\'\i}a~Villalba, and Kim}{Coutinho et~al\mbox{.}}{2018}]%
         {s18051306}
@@ -54,6 +84,102 @@
 \url{https://doi.org/10.3390/s18051306}}
 
 
+\bibitem[\protect\citeauthoryear{de~Dormale and Quisquater}{de~Dormale and
+  Quisquater}{2007}]%
+        {MEURICEDEDORMALE200772}
+\bibfield{author}{\bibinfo{person}{Guerric~Meurice de Dormale} {and}
+  \bibinfo{person}{Jean-Jacques Quisquater}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{High-speed hardware implementations of Elliptic
+  Curve Cryptography: A survey}.
+\newblock \bibinfo{journal}{{\em Journal of Systems Architecture\/}}
+  \bibinfo{volume}{53}, \bibinfo{number}{2} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{72 -- 84}.
+\newblock
+\showISSN{1383-7621}
+\showDOI{%
+\url{https://doi.org/10.1016/j.sysarc.2006.09.002}}
+\newblock
+\shownote{Embedded Hardware for Cryptosystems.}
+
+
+\bibitem[\protect\citeauthoryear{Ismayilov and Topcuoglu}{Ismayilov and
+  Topcuoglu}{2020}]%
+        {ISMAYILOV2020307}
+\bibfield{author}{\bibinfo{person}{Goshgar Ismayilov} {and}
+  \bibinfo{person}{Haluk~Rahmi Topcuoglu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Neural network based multi-objective evolutionary
+  algorithm for dynamic workflow scheduling in cloud computing}.
+\newblock \bibinfo{journal}{{\em Future Generation Computer Systems\/}}
+  \bibinfo{volume}{102} (\bibinfo{year}{2020}), \bibinfo{pages}{307 -- 322}.
+\newblock
+\showISSN{0167-739X}
+\showDOI{%
+\url{https://doi.org/10.1016/j.future.2019.08.012}}
+
+
+\bibitem[\protect\citeauthoryear{Klimov, Mityagin, and Shamir}{Klimov
+  et~al\mbox{.}}{2002}]%
+        {10.1007/3-540-36178-2_18}
+\bibfield{author}{\bibinfo{person}{Alexander Klimov}, \bibinfo{person}{Anton
+  Mityagin}, {and} \bibinfo{person}{Adi Shamir}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Analysis of Neural Cryptography}. In
+  \bibinfo{booktitle}{{\em Advances in Cryptology --- ASIACRYPT 2002}},
+  \bibfield{editor}{\bibinfo{person}{Yuliang Zheng}} (Ed.).
+  \bibinfo{publisher}{Springer Berlin Heidelberg}, \bibinfo{address}{Berlin,
+  Heidelberg}, \bibinfo{pages}{288--298}.
+\newblock
+\showISBNx{978-3-540-36178-7}
+
+
+\bibitem[\protect\citeauthoryear{Nalepa, Antoniak, Myller, Lorenzo, and
+  Marcinkiewicz}{Nalepa et~al\mbox{.}}{2020}]%
+        {NALEPA2020102994}
+\bibfield{author}{\bibinfo{person}{Jakub Nalepa}, \bibinfo{person}{Marek
+  Antoniak}, \bibinfo{person}{Michal Myller}, \bibinfo{person}{Pablo~Ribalta
+  Lorenzo}, {and} \bibinfo{person}{Michal Marcinkiewicz}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Towards resource-frugal deep convolutional neural
+  networks for hyperspectral image segmentation}.
+\newblock \bibinfo{journal}{{\em Microprocessors and Microsystems\/}}
+  \bibinfo{volume}{73} (\bibinfo{year}{2020}), \bibinfo{pages}{102994}.
+\newblock
+\showISSN{0141-9331}
+\showDOI{%
+\url{https://doi.org/10.1016/j.micpro.2020.102994}}
+
+
+\bibitem[\protect\citeauthoryear{{Stanley} and {Miikkulainen}}{{Stanley} and
+  {Miikkulainen}}{2002}]%
+        {1004508}
+\bibfield{author}{\bibinfo{person}{K.~O. {Stanley}} {and} \bibinfo{person}{R.
+  {Miikkulainen}}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Efficient evolution of neural network topologies}.
+  In \bibinfo{booktitle}{{\em Proceedings of the 2002 Congress on Evolutionary
+  Computation. CEC'02 (Cat. No.02TH8600)}}, Vol.~\bibinfo{volume}{2}.
+  \bibinfo{pages}{1757--1762 vol.2}.
+\newblock
+\showISSN{null}
+\showDOI{%
+\url{https://doi.org/10.1109/CEC.2002.1004508}}
+
+
+\bibitem[\protect\citeauthoryear{{Tai-Wen Yue} and {Suchen Chiang}}{{Tai-Wen
+  Yue} and {Suchen Chiang}}{2000}]%
+        {861518}
+\bibfield{author}{\bibinfo{person}{{Tai-Wen Yue}} {and}
+  \bibinfo{person}{{Suchen Chiang}}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{A neural network approach for visual cryptography}.
+  In \bibinfo{booktitle}{{\em Proceedings of the IEEE-INNS-ENNS International
+  Joint Conference on Neural Networks. IJCNN 2000. Neural Computing: New
+  Challenges and Perspectives for the New Millennium}},
+  Vol.~\bibinfo{volume}{5}. \bibinfo{pages}{494--499 vol.5}.
+\newblock
+\showISSN{1098-7576}
+\showDOI{%
+\url{https://doi.org/10.1109/IJCNN.2000.861518}}
+
+
 \bibitem[\protect\citeauthoryear{Valencia}{Valencia}{2019}]%
         {BiSUNAGithub}
 \bibfield{author}{\bibinfo{person}{Raul Valencia}.}
@@ -64,6 +190,20 @@
 \newblock
 \showURL{%
 \url{https://github.com/rval735/BiSUNA}}
+
+
+\bibitem[\protect\citeauthoryear{Yu and Cao}{Yu and Cao}{2006}]%
+        {YU2006333}
+\bibfield{author}{\bibinfo{person}{Wenwu Yu} {and} \bibinfo{person}{Jinde
+  Cao}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Cryptography based on delayed chaotic neural
+  networks}.
+\newblock \bibinfo{journal}{{\em Physics Letters A\/}} \bibinfo{volume}{356},
+  \bibinfo{number}{4} (\bibinfo{year}{2006}), \bibinfo{pages}{333 -- 338}.
+\newblock
+\showISSN{0375-9601}
+\showDOI{%
+\url{https://doi.org/10.1016/j.physleta.2006.03.069}}
 
 
 \end{thebibliography}

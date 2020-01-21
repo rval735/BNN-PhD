@@ -130,3 +130,6 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-98530
 
 Fast Homomorphic Evaluation of Deep Discretized Neural Networks
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-96878-0_17
+
+Hybridizing Evolutionary Computation and Deep Neural Networks- An Approach to Handwriting Recognition Using Committees and Transfer Learning
+https://new.hindawi.com/journals/complexity/2019/2952304/

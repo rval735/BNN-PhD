@@ -183,6 +183,11 @@ Fast Homomorphic Evaluation of Deep Discretized Neural Networks
 - It discretized an already-trained model
 - MNIST dataset where all images were binarized with a threshold value equal to 128; with more than 96% accuracy in less than 1.7 s.
 
+Hybridizing Evolutionary Computation and Deep Neural Networks- An Approach to Handwriting Recognition Using Committees and Transfer Learning
+-
+-
+-
+
 < CNN
 
 ------> CNN-Fin
@@ -2283,6 +2288,21 @@ High-speed hardware implementations of Elliptic Curve Cryptography- A survey
 -
 -
 
+Neuro-Cryptanalysis of DES and Triple-DES
+-
+-
+-
+
+Analysis of Neural Cryptography
+-
+-
+-
+
+Cryptography based on delayed chaotic neural networks
+-
+-
+-
+
 < Crypto
 
 ------> Other
@@ -2692,6 +2712,11 @@ A Co-processor System with a Virtex FPGA for Evolutionary Computation
 - Speed gain for functions on Virtex XCV1000 is about 200x times compared with Pentium-III 750MHz
 
 Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents
+-
+-
+-
+
+Efficient evolution of neural network topologies
 -
 -
 -

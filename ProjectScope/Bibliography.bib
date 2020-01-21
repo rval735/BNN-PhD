@@ -1,12 +1,94 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% http://bibdesk.sourceforge.net/
 
-%% Created for RHVT at 2020-01-20 23:26:16 +1300 
+%% Created for RHVT at 2020-01-21 18:47:40 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{1004508,
+	Abstract = {Neuroevolution, i.e. evolving artificial neural networks with genetic algorithms, has been highly effective in reinforcement learning tasks, particularly those with hidden state information. An important question in neuroevolution is how to gain an advantage from evolving neural network topologies along with weights. We present a method, NeuroEvolution of Augmenting Topologies (NEAT) that outperforms the best fixed-topology methods on a challenging benchmark reinforcement learning task. We claim that the increased efficiency is due to (1) employing a principled method of crossover of different topologies, (2) protecting structural innovation using speciation, and (3) incrementally growing from minimal structure. We test this claim through a series of ablation studies that demonstrate that each component is necessary to the system as a whole and to each other. What results is significantly faster learning. NEAT is also an important contribution to GAs because it shows how it is possible for evolution to both optimize and complexify solutions simultaneously, making it possible to evolve increasingly complex solutions over time, thereby strengthening the analogy with biological evolution.},
+	Author = {K. O. {Stanley} and R. {Miikkulainen}},
+	Booktitle = {Proceedings of the 2002 Congress on Evolutionary Computation. CEC'02 (Cat. No.02TH8600)},
+	Date-Added = {2020-01-21 18:47:21 +1300},
+	Date-Modified = {2020-01-21 18:47:39 +1300},
+	Doi = {10.1109/CEC.2002.1004508},
+	Issn = {null},
+	Keywords = {Evolutionary; AI; neural nets;genetic algorithms;neural network topologies;neuroevolution;evolving artificial neural networks;genetic algorithms;reinforcement learning;hidden state information;neuroevolution of augmenting topologies;fixed-topology methods;ablation studies;Neural networks;Network topology;Evolution (biology);Artificial neural networks;Learning;Genetic algorithms;Benchmark testing;Protection;Technological innovation;System testing},
+	Month = {May},
+	Pages = {1757-1762 vol.2},
+	Title = {Efficient evolution of neural network topologies},
+	Volume = {2},
+	Year = {2002},
+	Bdsk-Url-1 = {https://doi.org/10.1109/CEC.2002.1004508}}
+
+@article{scarpiniti_hybridizing_2019,
+	Abstract = {Neuroevolution is the field of study that uses evolutionary computation in order to optimize certain aspect of the design of neural networks, most often its topology and hyperparameters. The field was introduced in the late-1980s, but only in the latest years the field has become mature enough to enable the optimization of deep learning models, such as convolutional neural networks. In this paper, we rely on previous work to apply neuroevolution in order to optimize the topology of deep neural networks that can be used to solve the problem of handwritten character recognition. Moreover, we take advantage of the fact that evolutionary algorithms optimize a population of candidate solutions, by combining a set of the best evolved models resulting in a committee of convolutional neural networks. This process is enhanced by using specific mechanisms to preserve the diversity of the population. Additionally, in this paper, we address one of the disadvantages of neuroevolution: the process is very expensive in terms of computational time. To lessen this issue, we explore the performance of topology transfer learning: whether the best topology obtained using neuroevolution for a certain domain can be successfully applied to a different domain. By doing so, the expensive process of neuroevolution can be reused to tackle different problems, turning it into a more appealing approach for optimizing the design of neural networks topologies. After evaluating our proposal, results show that both the use of neuroevolved committees and the application of topology transfer learning are successful: committees of convolutional neural networks are able to improve classification results when compared to single models, and topologies learned for one problem can be reused for a different problem and data with a good performance. Additionally, both approaches can be combined by building committees of transferred topologies, and this combination attains results that combine the best of both approaches.},
+	Author = {Baldominos, Alejandro and Saez, Yago and Isasi, Pedro},
+	Date-Added = {2020-01-21 18:37:46 +1300},
+	Date-Modified = {2020-01-21 18:38:36 +1300},
+	Doi = {10.1155/2019/2952304},
+	Editor = {Scarpiniti, Michele},
+	Issn = {1076-2787},
+	Journal = {Complexity},
+	Keywords = {CNN, evolutionary computation, MNIST},
+	Month = mar,
+	Pages = {2952304},
+	Title = {Hybridizing {Evolutionary} {Computation} and {Deep} {Neural} {Networks}: {An} {Approach} to {Handwriting} {Recognition} {Using} {Committees} and {Transfer} {Learning}},
+	Url = {https://doi.org/10.1155/2019/2952304},
+	Volume = {2019},
+	Year = {2019},
+	Bdsk-Url-1 = {https://doi.org/10.1155/2019/2952304}}
+
+@article{YU2006333,
+	Abstract = {In this Letter, a novel approach of encryption based on chaotic Hopfield neural networks with time varying delay is proposed. We use the chaotic neural network to generate binary sequences which will be used for masking plaintext. The plaintext is masked by switching of chaotic neural network maps and permutation of generated binary sequences. Simulation results were given to show the feasibility and effectiveness in the proposed scheme of this Letter. As a result, chaotic cryptography becomes more practical in the secure transmission of large multi-media files over public data communication network.},
+	Author = {Wenwu Yu and Jinde Cao},
+	Date-Added = {2020-01-21 15:41:13 +1300},
+	Date-Modified = {2020-01-21 15:41:23 +1300},
+	Doi = {https://doi.org/10.1016/j.physleta.2006.03.069},
+	Issn = {0375-9601},
+	Journal = {Physics Letters A},
+	Keywords = {Crypto, Synchronization, Time varying delay, Neural network, Chaos, Encryption, Chaotic cryptosystem},
+	Number = {4},
+	Pages = {333 - 338},
+	Title = {Cryptography based on delayed chaotic neural networks},
+	Url = {http://www.sciencedirect.com/science/article/pii/S037596010600510X},
+	Volume = {356},
+	Year = {2006},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S037596010600510X},
+	Bdsk-Url-2 = {https://doi.org/10.1016/j.physleta.2006.03.069}}
+
+@inproceedings{10.1007/3-540-36178-2_18,
+	Abstract = {In this paper we analyse the security of a new key exchange protocol proposed in [3], which is based on mutually learning neural networks. This is a new potential source for public key cryptographic schemes which are not based on number theoretic functions, and have small time and memory complexities. In the first part of the paper we analyse the scheme, explain why the two parties converge to a common key, and why an attacker using a similar neural network is unlikely to converge to the same key. However, in the second part of the paper we show that this key exchange protocol can be broken in three different ways, and thus it is completely insecure.},
+	Address = {Berlin, Heidelberg},
+	Author = {Klimov, Alexander and Mityagin, Anton and Shamir, Adi},
+	Booktitle = {Advances in Cryptology --- ASIACRYPT 2002},
+	Date-Added = {2020-01-21 13:39:49 +1300},
+	Date-Modified = {2020-01-21 13:41:24 +1300},
+	Editor = {Zheng, Yuliang},
+	Isbn = {978-3-540-36178-7},
+	Keywords = {Crypto, Neurocryptography, Public key},
+	Pages = {288--298},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {Analysis of Neural Cryptography},
+	Year = {2002}}
+
+@inproceedings{10.1007/978-3-642-34500-5_75,
+	Abstract = {In this paper, we apply a new cryptanalytic attack on DES and Triple-DES. The implemented attack is a known-plaintext attack based on neural networks. In this attack we trained a neural network to retrieve plaintext from ciphertext without retrieving the key used in encryption.},
+	Address = {Berlin, Heidelberg},
+	Author = {Alani, Mohammed M.},
+	Booktitle = {Neural Information Processing},
+	Date-Added = {2020-01-21 13:18:24 +1300},
+	Date-Modified = {2020-01-21 13:26:13 +1300},
+	Editor = {Huang, Tingwen and Zeng, Zhigang and Li, Chuandong and Leung, Chi Sing},
+	Isbn = {978-3-642-34500-5},
+	Keywords = {Book, Neurocryptography, DES, },
+	Pages = {637--646},
+	Publisher = {Springer Berlin Heidelberg},
+	Title = {Neuro-Cryptanalysis of DES and Triple-DES},
+	Year = {2012}}
 
 @article{MEURICEDEDORMALE200772,
 	Abstract = {For the last decade, Elliptic Curve Cryptography (ECC) has gained increasing acceptance in the industry and the academic community and has been the subject of several standards. This interest is mainly due to the high level of security with relatively small keys provided by ECC. To sustain the high throughput required by applications like network servers, high-speed implementations of public-key cryptosystems are needed. For that purpose, hardware-based accelerators are often the only solution reaching an acceptable performance-cost ratio. The fundamental question that arises is how to choose the appropriate efficiency--flexibility tradeoff. In this survey, techniques for implementing Elliptic Curve Cryptography at a high-speed are explored. A classification of the work available in the open literature in function of the level of efficiency and flexibility is also proposed. In particular, the subjects of reconfigurable, dedicated, generator, versatile and general purpose scalar multipliers are addressed. Finally, some words about future work that should be tackled are provided.},
@@ -327,8 +409,9 @@
 @misc{cryptoeprint:2018:1056,
 	Author = {Ahmad Al Badawi and Jin Chao and Jie Lin and Chan Fook Mun and Jun Jie Sim and Benjamin Hong Meng Tan and Xiao Nan and Khin Mi Mi Aung and Vijay Ramaseshan Chandrasekhar},
 	Date-Added = {2019-06-06 21:06:38 +1200},
-	Date-Modified = {2019-06-06 21:06:38 +1200},
+	Date-Modified = {2020-01-21 18:33:45 +1300},
 	Howpublished = {Cryptology ePrint Archive, Report 2018/1056},
+	Keywords = {Crypto, Homomorphic encryption, CNN},
 	Note = {\url{https://eprint.iacr.org/2018/1056}},
 	Title = {The AlexNet Moment for Homomorphic Encryption: HCNN, the First Homomorphic CNN on Encrypted Data with GPUs},
 	Year = {2018}}
@@ -571,10 +654,10 @@
 @article{EmpiricalAssetML,
 	Author = {Gu, Shihao and T. Kelly, Bryan and Xiu, Dacheng},
 	Date-Added = {2019-05-22 13:04:51 +1200},
-	Date-Modified = {2019-05-22 13:05:46 +1200},
+	Date-Modified = {2020-01-21 18:33:58 +1300},
 	Doi = {10.2139/ssrn.3159577},
 	Journal = {SSRN Electronic Journal},
-	Keywords = {NN-Fin, Machine Learning, Return Prediction, Cross-Section of Returns, Ridge Regression, (Group) Lasso, Elastic Net, Random Forest, Gradient Boosting, (Deep) Neural Networks, Fintech},
+	Keywords = {NN-Fin, Machine Learning, Return Prediction, Cross-Section of Returns, Ridge Regression, Lasso, Elastic Net, Random Forest, Gradient Boosting, Neural Networks, Fintech},
 	Month = {01},
 	Title = {Empirical Asset Pricing Via Machine Learning},
 	Year = {2018},

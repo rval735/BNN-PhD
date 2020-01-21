@@ -183,3 +183,6 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/3-540-44614-1_2
 Improving Exploration in Evolution Strategies for Deep Reinforcement Learning via a Population of Novelty-Seeking Agents
 https://papers.nips.cc/paper/7750-improving-exploration-in-evolution-strategies-for-deep-reinforcement-learning-via-a-population-of-novelty-seeking-agents.pdf
 https://dl.acm.org/citation.cfm?id=3327410
+
+Efficient evolution of neural network topologies
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1004508/

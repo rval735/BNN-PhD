@@ -75,3 +75,12 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1590168
 
 High-speed hardware implementations of Elliptic Curve Cryptography- A survey
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S1383762106001044
+
+Neuro-Cryptanalysis of DES and Triple-DES
+https://link.springer.com/chapter/10.1007/978-3-642-34500-5_75
+
+Analysis of Neural Cryptography
+https://link.springer.com/chapter/10.1007/3-540-36178-2_18
+
+Cryptography based on delayed chaotic neural networks
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S037596010600510X
