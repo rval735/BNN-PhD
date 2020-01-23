@@ -40,3 +40,7 @@ https://arxiv.org/abs/1604.06778
 
 Structured Control Nets for Deep Reinforcement Learning
 proceedings.mlr.press/v80/srouji18a
+
+High-Performance Pseudorandom Number Generator Using Two-Dimensional Cellular Automata
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4459620
+

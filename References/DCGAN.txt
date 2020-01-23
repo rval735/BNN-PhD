@@ -65,3 +65,9 @@ https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17150
 
 Learning Perfectly Secure Cryptography to Protect Communications with Adversarial Neural Cryptography
 https://www.mdpi.com/1424-8220/18/5/1306
+
+Generative Adversarial Nets
+papers.nips.cc/paper/5423-generative-adversarial-nets
+
+Everybody’s Talkin’: Let Me Talk as You Want
+https://arxiv.org/abs/2001.05201

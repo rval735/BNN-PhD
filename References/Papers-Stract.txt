@@ -188,6 +188,16 @@ Hybridizing Evolutionary Computation and Deep Neural Networks- An Approach to Ha
 -
 -
 
+Secure Convolutional Neural Networks using FHE
+-
+-
+- 
+
+A Topological Study of Chaotic Iterations Application to Hash Functions
+-
+-
+-
+
 < CNN
 
 ------> CNN-Fin
@@ -1466,6 +1476,16 @@ Learning Perfectly Secure Cryptography to Protect Communications with Adversaria
 - ANC is an unsupervised learning technique
 - This work presents the first Artificial Neural Network able to learn an unbreakable cryptographic technique, namely OTP
 
+Generative Adversarial Nets
+-
+-
+-
+
+Everybody’s Talkin’: Let Me Talk as You Want
+-
+-
+-
+
 < DCGAN
 
 --------> Languages
@@ -2303,6 +2323,11 @@ Cryptography based on delayed chaotic neural networks
 -
 -
 
+Automatic generation of high-performance multiple-input XOR/XNOR circuits and its application in Advanced Encryption Standard (AES)
+-
+-
+-
+
 < Crypto
 
 ------> Other
@@ -2374,6 +2399,11 @@ Structured Control Nets for Deep Reinforcement Learning
 - Improves training sampling efficiency, final episodic reward, and generalization of learned policy
 - OpenAI MuJoCo, Roboschool, Atari, and a custom 2D urban driving environment
 - Incorporates problem specific priors into the architecture
+
+High-Performance Pseudorandom Number Generator Using Two-Dimensional Cellular Automata
+-
+-
+-
 
 < Other
 

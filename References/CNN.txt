@@ -133,3 +133,9 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-96878
 
 Hybridizing Evolutionary Computation and Deep Neural Networks- An Approach to Handwriting Recognition Using Committees and Transfer Learning
 https://new.hindawi.com/journals/complexity/2019/2952304/
+
+Secure Convolutional Neural Networks using FHE
+https://arxiv.org/abs/1808.03819
+
+A Topological Study of Chaotic Iterations Application to Hash Functions
+https://arxiv.org/abs/1608.05920

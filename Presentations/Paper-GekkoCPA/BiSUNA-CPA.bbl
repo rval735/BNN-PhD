@@ -67,6 +67,21 @@
 \url{https://doi.org/10.1155/2019/2952304}}
 
 
+\bibitem[\protect\citeauthoryear{{Brockman}, {Cheung}, {Pettersson},
+  {Schneider}, {Schulman}, {Tang}, and {Zaremba}}{{Brockman}
+  et~al\mbox{.}}{2016}]%
+        {2016arXiv160601540B}
+\bibfield{author}{\bibinfo{person}{G. {Brockman}}, \bibinfo{person}{V.
+  {Cheung}}, \bibinfo{person}{L. {Pettersson}}, \bibinfo{person}{J.
+  {Schneider}}, \bibinfo{person}{J. {Schulman}}, \bibinfo{person}{J. {Tang}},
+  {and} \bibinfo{person}{W. {Zaremba}}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{OpenAI Gym}}.
+\newblock \bibinfo{journal}{{\em arXiv e-prints\/}} (\bibinfo{date}{June}
+  \bibinfo{year}{2016}).
+\newblock
+\showeprint[arxiv]{1606.01540}
+
+
 \bibitem[\protect\citeauthoryear{Coutinho, de~Oliveira~Albuquerque, Borges,
   Garc{\'\i}a~Villalba, and Kim}{Coutinho et~al\mbox{.}}{2018}]%
         {s18051306}
@@ -82,6 +97,21 @@
 \showISSN{1424-8220}
 \showDOI{%
 \url{https://doi.org/10.3390/s18051306}}
+
+
+\bibitem[\protect\citeauthoryear{Danilo~{Vargas}}{Danilo~{Vargas}}{2017}]%
+        {7460958}
+\bibfield{author}{\bibinfo{person}{Junichi~{Murata} Danilo~{Vargas}}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Spectrum-Diverse Neuroevolution With Unified Neural
+  Models}.
+\newblock \bibinfo{journal}{{\em IEEE Transactions on Neural Networks and
+  Learning Systems\/}} \bibinfo{volume}{28}, \bibinfo{number}{8}
+  (\bibinfo{date}{Aug} \bibinfo{year}{2017}), \bibinfo{pages}{1759--1773}.
+\newblock
+\showISSN{2162-237X}
+\showDOI{%
+\url{https://doi.org/10.1109/TNNLS.2016.2551748}}
 
 
 \bibitem[\protect\citeauthoryear{de~Dormale and Quisquater}{de~Dormale and
@@ -100,6 +130,42 @@
 \url{https://doi.org/10.1016/j.sysarc.2006.09.002}}
 \newblock
 \shownote{Embedded Hardware for Cryptosystems.}
+
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio}{Goodfellow et~al\mbox{.}}{2014}]%
+        {NIPS2014_5423}
+\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Jean
+  Pouget-Abadie}, \bibinfo{person}{Mehdi Mirza}, \bibinfo{person}{Bing Xu},
+  \bibinfo{person}{David Warde-Farley}, \bibinfo{person}{Sherjil Ozair},
+  \bibinfo{person}{Aaron Courville}, {and} \bibinfo{person}{Yoshua Bengio}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Generative Adversarial Nets}.
+\newblock In \bibinfo{booktitle}{{\em Advances in Neural Information Processing
+  Systems 27}}, \bibfield{editor}{\bibinfo{person}{Z.~Ghahramani},
+  \bibinfo{person}{M.~Welling}, \bibinfo{person}{C.~Cortes},
+  \bibinfo{person}{N.~D. Lawrence}, {and} \bibinfo{person}{K.~Q. Weinberger}}
+  (Eds.). \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{pages}{2672--2680}.
+\newblock
+\showURL{%
+\url{http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}}
+
+
+\bibitem[\protect\citeauthoryear{{Hsiao}, {Wen}, {Tsai}, and {Chen}}{{Hsiao}
+  et~al\mbox{.}}{2010}]%
+        {5669194}
+\bibfield{author}{\bibinfo{person}{S. {Hsiao}}, \bibinfo{person}{C. {Wen}},
+  \bibinfo{person}{M. {Tsai}}, {and} \bibinfo{person}{M. {Chen}}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Automatic generation of high-performance
+  multiple-input XOR/XNOR circuits and its application in Advanced Encryption
+  Standard (AES)}. In \bibinfo{booktitle}{{\em 2010 International Symposium on
+  Next Generation Electronics}}. \bibinfo{pages}{77--80}.
+\newblock
+\showISSN{2378-8607}
+\showDOI{%
+\url{https://doi.org/10.1109/ISNE.2010.5669194}}
 
 
 \bibitem[\protect\citeauthoryear{Ismayilov and Topcuoglu}{Ismayilov and
@@ -192,6 +258,33 @@
 \url{https://github.com/rval735/BiSUNA}}
 
 
+\bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
+  et~al\mbox{.}}{2019a}]%
+        {8953134-B}
+\bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C. {Sham}},
+  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{a}.
+\newblock \showarticletitle{Evolved binary neural networks through harnessing
+  FPGA capabilities}. In \bibinfo{booktitle}{{\em 2019 International Conference
+  on Field-Programmable Technology (FPT)}}. \bibinfo{pages}{395--398}.
+\newblock
+\showISSN{null}
+
+
+\bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
+  et~al\mbox{.}}{2019b}]%
+        {8953134}
+\bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C. {Sham}},
+  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{b}.
+\newblock \showarticletitle{Using Neuroevolved Binary Neural Networks to solve
+  reinforcement learning environments}. In \bibinfo{booktitle}{{\em 2019 IEEE
+  Asia Pacific Conference on Circuits and Systems (APCCAS)}}.
+  \bibinfo{pages}{301--304}.
+\newblock
+\showISSN{null}
+\showDOI{%
+\url{https://doi.org/10.1109/APCCAS47518.2019.8953134}}
+
+
 \bibitem[\protect\citeauthoryear{Yu and Cao}{Yu and Cao}{2006}]%
         {YU2006333}
 \bibfield{author}{\bibinfo{person}{Wenwu Yu} {and} \bibinfo{person}{Jinde
@@ -204,6 +297,20 @@
 \showISSN{0375-9601}
 \showDOI{%
 \url{https://doi.org/10.1016/j.physleta.2006.03.069}}
+
+
+\bibitem[\protect\citeauthoryear{{Zhu}, {Vargas}, and {Sakurai}}{{Zhu}
+  et~al\mbox{.}}{2018}]%
+        {8590945}
+\bibfield{author}{\bibinfo{person}{Y. {Zhu}}, \bibinfo{person}{D.~V. {Vargas}},
+  {and} \bibinfo{person}{K. {Sakurai}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Neural Cryptography Based on the Topology Evolving
+  Neural Networks}. In \bibinfo{booktitle}{{\em 2018 Sixth International
+  Symposium on Computing and Networking Workshops (CANDARW)}}.
+  \bibinfo{pages}{472--478}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/CANDARW.2018.00091}}
 
 
 \end{thebibliography}
