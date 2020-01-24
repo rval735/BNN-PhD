@@ -183,6 +183,19 @@
 \url{https://doi.org/10.1016/j.future.2019.08.012}}
 
 
+\bibitem[\protect\citeauthoryear{Katz and Lindell}{Katz and Lindell}{2008}]%
+        {katz2008introduction}
+\bibfield{author}{\bibinfo{person}{J. Katz} {and} \bibinfo{person}{Y.
+  Lindell}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Introduction to modern cryptography}}.
+\newblock \bibinfo{publisher}{Chapman \& Hall/CRC}.
+\newblock
+\showISBNx{9781584885511}
+\showLCCN{2007017861}
+\showURL{%
+\url{https://books.google.ca/books?id=WIc\_AQAAIAAJ}}
+
+
 \bibitem[\protect\citeauthoryear{Klimov, Mityagin, and Shamir}{Klimov
   et~al\mbox{.}}{2002}]%
         {10.1007/3-540-36178-2_18}

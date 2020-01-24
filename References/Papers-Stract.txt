@@ -2328,6 +2328,11 @@ Automatic generation of high-performance multiple-input XOR/XNOR circuits and it
 -
 -
 
+Introduction to Modern Cryptography- Principles and Protocols
+-
+-
+-
+
 < Crypto
 
 ------> Other
