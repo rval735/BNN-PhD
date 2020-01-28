@@ -37,6 +37,19 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{{Abadi} and {Andersen}}{{Abadi} and
+  {Andersen}}{2016}]%
+        {2016arXiv161006918A}
+\bibfield{author}{\bibinfo{person}{M. {Abadi}} {and} \bibinfo{person}{D.~G.
+  {Andersen}}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{{Learning to Protect Communications with
+  Adversarial Neural Cryptography}}.
+\newblock \bibinfo{journal}{{\em ArXiv e-prints\/}} (\bibinfo{date}{Oct.}
+  \bibinfo{year}{2016}).
+\newblock
+\showeprint[arxiv]{cs.CR/1610.06918}
+
+
 \bibitem[\protect\citeauthoryear{Alani}{Alani}{2012}]%
         {10.1007/978-3-642-34500-5_75}
 \bibfield{author}{\bibinfo{person}{Mohammed~M. Alani}.}
