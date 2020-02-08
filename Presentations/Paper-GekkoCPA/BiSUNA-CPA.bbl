@@ -285,22 +285,10 @@
 
 
 \bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
-  et~al\mbox{.}}{2019a}]%
-        {8953134-B}
-\bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C. {Sham}},
-  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{a}.
-\newblock \showarticletitle{Evolved binary neural networks through harnessing
-  FPGA capabilities}. In \bibinfo{booktitle}{{\em 2019 International Conference
-  on Field-Programmable Technology (FPT)}}. \bibinfo{pages}{395--398}.
-\newblock
-\showISSN{null}
-
-
-\bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
-  et~al\mbox{.}}{2019b}]%
+  et~al\mbox{.}}{2019}]%
         {8953134}
 \bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C. {Sham}},
-  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{b}.
+  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{}.
 \newblock \showarticletitle{Using Neuroevolved Binary Neural Networks to solve
   reinforcement learning environments}. In \bibinfo{booktitle}{{\em 2019 IEEE
   Asia Pacific Conference on Circuits and Systems (APCCAS)}}.

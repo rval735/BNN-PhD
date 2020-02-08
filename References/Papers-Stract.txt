@@ -912,6 +912,35 @@ Unsupervised learning by competing hidden units
 - Algorithm is agnostic about the task that the network will have to solve eventually in the top layer
 - Tested with MNIST (98.54%) and CIFAR (50.75%) datasets 
 
+Large-Scale Study of Curiosity-Driven Learning
+- We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments.
+- We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.).
+- We demonstrate limitations of the prediction-based rewards in stochastic setups.
+
+Exploration by Random Network Distillation
+- Introduces a method to flexibly combine intrinsic and extrinsic rewards
+- Establish state of the art performance on Montezuma’s Revenge
+- Better than average human performance on this game without using demonstrations
+
+Emergent Tool Use from Multi-Agent Interaction
+- Human-relevant strategies and skills, far more complex than the seed game dynamics and environment, can emerge from multi-agent competition and standard reinforcement learning algorithms at scale
+- More open-ended and diverse environment, multi-agent dynamics could lead to extremely complex and human-relevant behavior.
+
+Feudal Reinforcement Learning
+-
+-
+-
+
+Human-level performance in 3D multiplayer games with populationbased reinforcement learning
+-
+-
+-
+
+Learning to Predict Without Looking Ahead-World Models Without Forward Prediction
+-
+-
+-
+
 < DNN
 -------> NN
 

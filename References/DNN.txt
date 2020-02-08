@@ -43,3 +43,24 @@ https://dl.acm.org/citation.cfm?id=3277326
 
 Unsupervised learning by competing hidden units
 https://www.pnas.org/content/early/2019/03/27/1820458116
+
+Large-Scale Study of Curiosity-Driven Learning
+https://pathak22.github.io/large-scale-curiosity/
+
+Exploration by Random Network Distillation
+https://openai.com/blog/reinforcement-learning-with-prediction-based-rewards/
+
+Emergent Tool Use from Multi-Agent Interaction
+https://openai.com/blog/emergent-tool-use/
+
+Feudal Reinforcement Learning
+https://papers.nips.cc/paper/714-feudal-reinforcement-learning
+
+Human-level performance in 3D multiplayer games with populationbased reinforcement learning
+https://deepmind.com/blog/article/capture-the-flag-science
+
+Learning to Predict Without Looking Ahead-World Models Without Forward Prediction
+https://github.com/google/brain-tokyo-workshop/tree/master/learntopredict
+http://papers.nips.cc/paper/8778-learning-to-predict-without-looking-ahead-world-models-without-forward-prediction
+https://learningtopredict.github.io
+
