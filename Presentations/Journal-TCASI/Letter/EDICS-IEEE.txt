@@ -1,0 +1,274 @@
+ACS - Analog and Mixed Mode Circuits and Systems
+ACS100 - Circuit theory < ACS - Analog and Mixed Mode Circuits and Systems
+ACS110 - Current mode circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS120 - Low power/low voltage analog circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS130 - Amplifiers < ACS - Analog and Mixed Mode Circuits and Systems
+ACS140 - Analog filters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS150 - Oscillators < ACS - Analog and Mixed Mode Circuits and Systems
+ACS160 - Timing circuits and clock generators < ACS - Analog and Mixed Mode Circuits and Systems
+ACS170 - HF and RF analog circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS180 - Low noise circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS190 - Discrete time analog circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS190A0 - Switched capacitor circuits < ACS190 - Discrete time analog circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS190A5 - Switched current circuits < ACS190 - Discrete time analog circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS200 - Continuous-time-digital systems < ACS - Analog and Mixed Mode Circuits and Systems
+ACS210 - Signal conditioning and interfacing < ACS - Analog and Mixed Mode Circuits and Systems
+ACS210A0 - Conditioning and interfacing for sensors < ACS210 - Signal conditioning and interfacing < ACS - Analog and Mixed Mode Circuits and Systems
+ACS210A5 - Conditioning and interfacing for actuators < ACS210 - Signal conditioning and interfacing < ACS - Analog and Mixed Mode Circuits and Systems
+ACS220 - Voltage and current references < ACS - Analog and Mixed Mode Circuits and Systems
+ACS230 - Voltage and current regulators < ACS - Analog and Mixed Mode Circuits and Systems
+ACS240 - Reconfigurable and field programmable analog circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250A0 - Organic/molecular/self-assembled devices in analog circuits < ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250A5 - Nano devices in analog circuits < ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250B0 - Interface circuits for MEMS < ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250B5 - Interface circuits for NEMS < ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250C0 - Optical devices and analog circuits < ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS250C5 - 3D integration in analog circuits < ACS250 - Design techniques for analog and mixed mode circuits with non conventional devices < ACS - Analog and Mixed Mode Circuits and Systems
+ACS260 - Design techniques targeting specific technologies, technology related issues or specific device operation modes < ACS - Analog and Mixed Mode Circuits and Systems
+ACS260A0 - Analog circuits in specific processes (including. digital CMOS, bipolar, BiCMOS, GaAs, SiGe, SOI, etc.) < ACS260 - Design techniques targeting specific technologies, technology related issues or specific device operation modes < ACS - Analog and Mixed Mode Circuits and Systems )
+ACS260A5 - Analog circuits exploiting back-gated or floating gate MOS transistors < ACS260 - Design techniques targeting specific technologies, technology related issues or specific device operation modes < ACS - Analog and Mixed Mode Circuits and Systems
+ACS260B0 - Analog circuits exploiting sub-threshold operation of MOS transistors < ACS260 - Design techniques targeting specific technologies, technology related issues or specific device operation modes < ACS - Analog and Mixed Mode Circuits and Systems 
+ACS260B5 - Circuit design and analysis in presence of substrate noise < ACS260 - Design techniques targeting specific technologies, technology related issues or specific device operation modes < ACS - Analog and Mixed Mode Circuits and Systems
+ACS270 - Testing of analog and mixed mode circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS270A0 - Fault detection in analog and mixed mode circuits < ACS270 - Testing of analog and mixed mode circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS270A5 - Fault tolerance in analog and mixed mode circuits < ACS270 - Testing of analog and mixed mode circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS270B0 - Design for testability of analog and mixed mode circuits < ACS270 - Testing of analog and mixed mode circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS280 - Phase locked loops < ACS - Analog and Mixed Mode Circuits and Systems
+ACS290 - Delay locked loops < ACS - Analog and Mixed Mode Circuits and Systems
+ACS300 - Frequency synthesizers < ACS - Analog and Mixed Mode Circuits and Systems
+ACS310 - Clock/data recovery circuits < ACS - Analog and Mixed Mode Circuits and Systems
+ACS320 - Digital to analog converters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS330 - Analog to digital converters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS330A0 - Pipeline < ACS330 - Analog to digital converters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS330A5 - Folding < ACS330 - Analog to digital converters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS330B0 - Sigma-Delta and oversampling < ACS330 - Analog to digital converters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS340 - V/F and F/V converters < ACS - Analog and Mixed Mode Circuits and Systems
+ACS350 - PWM, PDM, PPM modulators < ACS - Analog and Mixed Mode Circuits and Systems
+ACS360 - Mixers < ACS - Analog and Mixed Mode Circuits and Systems
+ACS370 - Multipliers and other function blocks < ACS - Analog and Mixed Mode Circuits and Systems
+ACS380 - Charge pumps < ACS - Analog and Mixed Mode Circuits and Systems
+ACS390 - S/H, T/H, analog registers and memories < ACS - Analog and Mixed Mode Circuits and Systems
+ACS400 - Circuits and systems for biomedical applications, life science and biology < ACS - Analog and Mixed Mode Circuits and Systems
+ACS400A0 - Circuits for Electronics/biology fusion < ACS400 - Circuits and systems for biomedical applications, life science and biology < ACS - Analog and Mixed Mode Circuits and Systems
+ACS400A5 - Medical circuits and systems < ACS400 - Circuits and systems for biomedical applications, life science and biology < ACS - Analog and Mixed Mode Circuits and Systems
+ACS400B0 - Circuits for wearable/implantable (bio)electronics < ACS400 - Circuits and systems for biomedical applications, life science and biology < ACS - Analog and Mixed Mode Circuits and Systems )electronics
+ACS400B5 - Neuromorphic circuits and systems < ACS400 - Circuits and systems for biomedical applications, life science and biology < ACS - Analog and Mixed Mode Circuits and Systems
+ACS410 - Circuits for energy harvesting < ACS - Analog and Mixed Mode Circuits and Systems
+ACS420 - Fractional circuits and systems < ACS - Analog and Mixed Mode Circuits and Systems
+CAD - Computer Aided Design and Electronic Design Automation
+CAD100 - Computer aided design and synthesis < CAD - Computer Aided Design and Electronic Design Automation
+CAD100A0 - Computer aided system level design < CAD100 - Computer aided design and synthesis < CAD - Computer Aided Design and Electronic Design Automation
+CAD100A5 - Computer aided high level synthesis < CAD100 - Computer aided design and synthesis < CAD - Computer Aided Design and Electronic Design Automation
+CAD100B0 - Computer aided logic synthesis and optimization < CAD100 - Computer aided design and synthesis < CAD - Computer Aided Design and Electronic Design Automation
+CAD110 - Computer aided verification < CAD - Computer Aided Design and Electronic Design Automation
+CAD110A0 - Computer aided physical verification < CAD110 - Computer aided verification < CAD - Computer Aided Design and Electronic Design Automation
+CAD120 - Computer aided testing and validation < CAD - Computer Aided Design and Electronic Design Automation
+CAD130 - Computer aided placement and routing < CAD - Computer Aided Design and Electronic Design Automation
+CAD140 - Computer aided design of clock and power/ground distribution networks < CAD - Computer Aided Design and Electronic Design Automation
+CAD150 - Computer aided interconnect analysis and optimization < CAD - Computer Aided Design and Electronic Design Automation
+CAD150A0 - Interconnect modeling in digital systems < CAD150 - Computer aided interconnect analysis and optimization < CAD - Computer Aided Design and Electronic Design Automation
+CAD150A5 - Interconnect optimization in digital systems < CAD150 - Computer aided interconnect analysis and optimization < CAD - Computer Aided Design and Electronic Design Automation
+CAD150B0 - Signal integrity in digital systems < CAD150 - Computer aided interconnect analysis and optimization < CAD - Computer Aided Design and Electronic Design Automation
+CAD160 - Circuit simulation < CAD - Computer Aided Design and Electronic Design Automation
+CAD160A0 - Analog circuit simulation < CAD160 - Circuit simulation < CAD - Computer Aided Design and Electronic Design Automation
+CAD160A5 - Digital circuit simulation < CAD160 - Circuit simulation < CAD - Computer Aided Design and Electronic Design Automation
+CAD160B0 - Mixed mode circuit simulation < CAD160 - Circuit simulation < CAD - Computer Aided Design and Electronic Design Automation
+CAD160B5 - Behavioural and multi-domain simulation < CAD160 - Circuit simulation < CAD - Computer Aided Design and Electronic Design Automation
+CAD170 - Computer aided timing analysis < CAD - Computer Aided Design and Electronic Design Automation
+CAD180 - Computer aided power analysis < CAD - Computer Aided Design and Electronic Design Automation
+CAD190 - Computer aided reliability analysis < CAD - Computer Aided Design and Electronic Design Automation
+CAD200 - Design for manufacturing < CAD - Computer Aided Design and Electronic Design Automation
+CAD210 - Chip-package co-design < CAD - Computer Aided Design and Electronic Design Automation
+CAD220 - Assisted analog modeling, synthesis and optimization < CAD - Computer Aided Design and Electronic Design Automation
+CAD230 - Device modeling < CAD - Computer Aided Design and Electronic Design Automation
+CAD240 - FPGA design tools and applications < CAD - Computer Aided Design and Electronic Design Automation
+CAD250 - New, emerging or specialized design techniques < CAD - Computer Aided Design and Electronic Design Automation
+CAD260 - Network on chip < CAD - Computer Aided Design and Electronic Design Automation
+COMM - Circuits and Systems for Communications
+COMM100 - Circuits and systems for coding in communication systems < COMM - Circuits and Systems for Communications
+COMM100A0 - Source coding < COMM100 - Circuits and systems for coding in communication systems < COMM - Circuits and Systems for Communications
+COMM100A5 - Channel coding < COMM100 - Circuits and systems for coding in communication systems < COMM - Circuits and Systems for Communications
+COMM110 - Modulation < COMM - Circuits and Systems for Communications
+COMM110A0 - Analog modulation schemes < COMM110 - Modulation < COMM - Circuits and Systems for Communications
+COMM110A5 - Digital modulation schemes < COMM110 - Modulation < COMM - Circuits and Systems for Communications
+COMM120 - Optimal receiver design < COMM - Circuits and Systems for Communications
+COMM130 - Carrier and symbol synchronization < COMM - Circuits and Systems for Communications
+COMM140 - Circuits and systems for specific channels < COMM - Circuits and Systems for Communications
+COMM140A0 - Band limited channels < COMM140 - Circuits and systems for specific channels < COMM - Circuits and Systems for Communications
+COMM140A5 - Fading multipath channels < COMM140 - Circuits and systems for specific channels < COMM - Circuits and Systems for Communications
+COMM140B0 - Intersymbol interference channels < COMM140 - Circuits and systems for specific channels < COMM - Circuits and Systems for Communications
+COMM140B5 - Signal design for specific channels < COMM140 - Circuits and systems for specific channels < COMM - Circuits and Systems for Communications
+COMM150 - Multichannel and multicarrier systems < COMM - Circuits and Systems for Communications
+COMM150A0 - Multichannel digital communications < COMM150 - Multichannel and multicarrier systems < COMM - Circuits and Systems for Communications
+COMM150A5 - Multicarrier communication < COMM150 - Multichannel and multicarrier systems < COMM - Circuits and Systems for Communications
+COMM160 - Multi-user communications < COMM - Circuits and Systems for Communications
+COMM160A0 - Multiple access techniques < COMM160 - Multi-user communications < COMM - Circuits and Systems for Communications
+COMM160A5 - CDMA (Code-Division Multiple Access) < COMM160 - Multi-user communications < COMM - Circuits and Systems for Communications )
+COMM160B0 - Random access methods < COMM160 - Multi-user communications < COMM - Circuits and Systems for Communications
+COMM180 - Diversity techniques, circuits and systems for communications < COMM - Circuits and Systems for Communications
+COMM190 - MIMO and multiple antenna systems < COMM - Circuits and Systems for Communications
+COMM200 - Wireless communication systems < COMM - Circuits and Systems for Communications
+COMM200A0 - Antenna design < COMM200 - Wireless communication systems < COMM - Circuits and Systems for Communications
+COMM200A5 - MAC (Medium Access Control) < COMM200 - Wireless communication systems < COMM - Circuits and Systems for Communications )
+COMM210 - Optical communication systems < COMM - Circuits and Systems for Communications
+COMM220 - Infrared-based Communication Systems < COMM - Circuits and Systems for Communications
+COMM230 - Networks < COMM - Circuits and Systems for Communications
+COMM230A0 - Routing < COMM230 - Networks < COMM - Circuits and Systems for Communications
+COMM230A5 - Protocols < COMM230 - Networks < COMM - Circuits and Systems for Communications
+COMM240 - Spread-spectrum communications < COMM - Circuits and Systems for Communications
+COMM240A0 - Direct sequence spread spectrum systems < COMM240 - Spread-spectrum communications < COMM - Circuits and Systems for Communications
+COMM240A5 - Frequency-hopping spread spectrum systems < COMM240 - Spread-spectrum communications < COMM - Circuits and Systems for Communications
+COMM250 - Ultra-Wideband (UWB) communications < COMM - Circuits and Systems for Communications ) communications
+COMM250A0 - Channel modeling and estimation < COMM250 - Ultra-Wideband (UWB) communications < COMM - Circuits and Systems for Communications
+COMM250A5 - Impulse Radio < COMM250 - Ultra-Wideband (UWB) communications < COMM - Circuits and Systems for Communications
+COMM250B0 - Waveform design < COMM250 - Ultra-Wideband (UWB) communications < COMM - Circuits and Systems for Communications
+COMM250B5 - Interference and coexistence < COMM250 - Ultra-Wideband (UWB) communications < COMM - Circuits and Systems for Communications
+COMM260 - Circuits and systems for software-defined radio < COMM - Circuits and Systems for Communications
+COMM270 - Circuits and Systems for cognitive radio < COMM - Circuits and Systems for Communications
+CTRL - Control Theory topics in Circuits and Systems
+CTRL100 - Control theory < CTRL - Control Theory topics in Circuits and Systems
+CTRL100A0 - Adaptive control < CTRL100 - Control theory < CTRL - Control Theory topics in Circuits and Systems
+CTRL100A5 - Robust control < CTRL100 - Control theory < CTRL - Control Theory topics in Circuits and Systems
+CTRL100B0 - Fuzzy and neural control < CTRL100 - Control theory < CTRL - Control Theory topics in Circuits and Systems
+CTRL100B5 - Intelligent control < CTRL100 - Control theory < CTRL - Control Theory topics in Circuits and Systems
+CTRL110 - Networked control systems < CTRL - Control Theory topics in Circuits and Systems
+CTRL120 - Hybrid dynamical systems < CTRL - Control Theory topics in Circuits and Systems
+CTRL130 - Embedded control systems < CTRL - Control Theory topics in Circuits and Systems
+CTRL140 - Emerging control technologies < CTRL - Control Theory topics in Circuits and Systems
+CTRL150 - Applications of control < CTRL - Control Theory topics in Circuits and Systems
+CTRL150A0 - Control of nonlinear systems < CTRL150 - Applications of control < CTRL - Control Theory topics in Circuits and Systems
+CTRL150A5 - Control of electrical networks < CTRL150 - Applications of control < CTRL - Control Theory topics in Circuits and Systems
+CTRL150B0 - Control of networked systems < CTRL150 - Applications of control < CTRL - Control Theory topics in Circuits and Systems
+CTRL150B5 - Control of biological and biomedical systems < CTRL150 - Applications of control < CTRL - Control Theory topics in Circuits and Systems
+CTRL160 - Control of complex systems < CTRL - Control Theory topics in Circuits and Systems
+CTRL170 - System identification < CTRL - Control Theory topics in Circuits and Systems
+Digital Circuits and Systems (and VLSI) )
+DCS100 - Arithmetic circuits and systems < Digital Circuits and Systems (and VLSI)
+DCS100A0 - Adders < DCS100 - Arithmetic circuits and systems < Digital Circuits and Systems (and VLSI)
+DCS100A5 - Arithmetic architectures < DCS100 - Arithmetic circuits and systems < Digital Circuits and Systems (and VLSI)
+DCS100B0 - Arithmetic circuits and systems < DCS100 - Arithmetic circuits and systems < Digital Circuits and Systems (and VLSI)
+DCS100B5 - Logarithm and residue arithmetic circuits and systems < DCS100 - Arithmetic circuits and systems < Digital Circuits and Systems (and VLSI)
+DCS100C0 - Multipliers < DCS100 - Arithmetic circuits and systems < Digital Circuits and Systems (and VLSI)
+DCS110 - Digital ASICs < Digital Circuits and Systems (and VLSI)
+DCS120 - Digital circuits and systems for cryptography < Digital Circuits and Systems (and VLSI)
+DCS120A0 - Cryptography circuits < DCS120 - Digital circuits and systems for cryptography < Digital Circuits and Systems (and VLSI)
+DCS120A5 - Cryptography architectures < DCS120 - Digital circuits and systems for cryptography < Digital Circuits and Systems (and VLSI)
+DCS120B0 - Cryptography hardware and implementation < DCS120 - Digital circuits and systems for cryptography < Digital Circuits and Systems (and VLSI)
+DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS130A0 - Deep submicron digital circuits < DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS130A5 - Digital circuit modeling < DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS130B0 - Digital circuit design < DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS130B5 - Flip-flops < DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS130C0 - High-speed digital circuits < DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS130C5 - Low voltage and ultra low voltage digital circuits < DCS130 - Digital circuits techniques and building blocks < Digital Circuits and Systems (and VLSI)
+DCS140 - Embedded digital systems < Digital Circuits and Systems (and VLSI)
+DCS150 - Digital I/O circuits < Digital Circuits and Systems (and VLSI)
+DCS160 - Low power digital systems < Digital Circuits and Systems (and VLSI)
+DCS160A0 - Low power design < DCS160 - Low power digital systems < Digital Circuits and Systems (and VLSI)
+DCS160A5 - Low power architectures < DCS160 - Low power digital systems < Digital Circuits and Systems (and VLSI)
+DCS170 - Memory circuits and design < Digital Circuits and Systems (and VLSI)
+DCS180 - Processors < Digital Circuits and Systems (and VLSI)
+DCS190 - Reconfigurable and field programmable digital circuits < Digital Circuits and Systems (and VLSI)
+DCS190A0 - FPGAs < DCS190 - Reconfigurable and field programmable digital circuits < Digital Circuits and Systems (and VLSI)
+DCS200 - Reliability in digital systems < Digital Circuits and Systems (and VLSI)
+DCS210 - Systems on chip < Digital Circuits and Systems (and VLSI)
+DCS220 - Testing of digital circuits < Digital Circuits and Systems (and VLSI)
+DCS220A0 - Fault detection in digital circuits < DCS220 - Testing of digital circuits < Digital Circuits and Systems (and VLSI)
+DCS220A5 - Fault tolerance in digital circuits < DCS220 - Testing of digital circuits < Digital Circuits and Systems (and VLSI)
+DCS220B0 - Design for testability of digital circuits < DCS220 - Testing of digital circuits < Digital Circuits and Systems (and VLSI)
+DCS230 - Digital VLSI < Digital Circuits and Systems (and VLSI)
+DCS230A0 - Digital hardware implementations for multimedia < DCS230 - Digital VLSI < Digital Circuits and Systems (and VLSI)
+DCS230A5 - Scheduling and allocation in digital systems < DCS230 - Digital VLSI < Digital Circuits and Systems (and VLSI)
+DCS230B0 - VLSI digital circuits, designs and implementations < DCS230 - Digital VLSI < Digital Circuits and Systems (and VLSI)
+DCS230B5 - VLSI digital systems < DCS230 - Digital VLSI < Digital Circuits and Systems (and VLSI)
+DCS240 - Digital design and architectures targeting specific technologies < Digital Circuits and Systems (and VLSI)
+NOLIN - Nonlinear Circuits and Systems
+NOLIN100 - Analysis/modeling/simulation of nonlinear networks < NOLIN - Nonlinear Circuits and Systems
+NOLIN100A0 - Stability analysis < NOLIN100 - Analysis/modeling/simulation of nonlinear networks < NOLIN - Nonlinear Circuits and Systems
+NOLIN110 - Oscillator analysis < NOLIN - Nonlinear Circuits and Systems
+NOLIN120 - Externally linear internally nonlinear networks < NOLIN - Nonlinear Circuits and Systems
+NOLIN130 - Translinear circuits < NOLIN - Nonlinear Circuits and Systems
+NOLIN140 - Implementation of nonlinear primitives < NOLIN - Nonlinear Circuits and Systems
+NOLIN150 - Circuits and systems for nonlinear control < NOLIN - Nonlinear Circuits and Systems
+NOLIN160 - Random number generators < NOLIN - Nonlinear Circuits and Systems
+NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN170A0 - Discrete time chaotic systems < NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN170A5 - Continuous time chaotic systems < NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN170B0 - Statistical approach to the analysis of chaotic circuits and systems < NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN170B5 - Bifurcation analysis < NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN170C0 - Engineering applications of chaotic circuits < NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN170C5 - Syncronization of chaotic systems < NOLIN170 - Chaotic circuits and systems < NOLIN - Nonlinear Circuits and Systems
+NOLIN180 - Neural networks < NOLIN - Nonlinear Circuits and Systems
+NOLIN180A0 - Biomorphic neural networks < NOLIN180 - Neural networks < NOLIN - Nonlinear Circuits and Systems
+NOLIN190 - CNNs < NOLIN - Nonlinear Circuits and Systems
+NOLIN190A0 - Biomorphic CNNs < NOLIN190 - CNNs < NOLIN - Nonlinear Circuits and Systems
+NOLIN200 - Circuits and systems for fuzzy computing < NOLIN - Nonlinear Circuits and Systems
+POW - Power Systems and Electronic Circuits
+POW100 - Power electronic circuits < POW - Power Systems and Electronic Circuits
+POW100A0 - Rectifiers (incl. line frequency diode rectifiers) < POW100 - Power electronic circuits < POW - Power Systems and Electronic Circuits )
+POW100A5 - Power converters < POW100 - Power electronic circuits < POW - Power Systems and Electronic Circuits
+POW100B0 - Resonant Circuits < POW100 - Power electronic circuits < POW - Power Systems and Electronic Circuits
+POW110 - DC switching mode power supplies < POW - Power Systems and Electronic Circuits
+POW120 - AC-DC, DC-AC converters and modeling < POW - Power Systems and Electronic Circuits
+POW120A0 - Control circuits < POW120 - AC-DC, DC-AC converters and modeling < POW - Power Systems and Electronic Circuits
+POW120A5 - Averaged models < POW120 - AC-DC, DC-AC converters and modeling < POW - Power Systems and Electronic Circuits
+POW130 - Integrated power converters and charge pumps < POW - Power Systems and Electronic Circuits
+POW130A0 - PC-board design technology and circuits < POW130 - Integrated power converters and charge pumps < POW - Power Systems and Electronic Circuits
+POW130A5 - VLSI technology and circuits < POW130 - Integrated power converters and charge pumps < POW - Power Systems and Electronic Circuits
+POW130B0 - Heat dissipation < POW130 - Integrated power converters and charge pumps < POW - Power Systems and Electronic Circuits
+POW130B5 - System configuration and actuation < POW130 - Integrated power converters and charge pumps < POW - Power Systems and Electronic Circuits
+POW140 - Application circuits < POW - Power Systems and Electronic Circuits
+POW150 - Practical design considerations < POW - Power Systems and Electronic Circuits
+POW150A0 - Snubber circuits < POW150 - Practical design considerations < POW - Power Systems and Electronic Circuits
+POW150A5 - Gate and base drive circuits < POW150 - Practical design considerations < POW - Power Systems and Electronic Circuits
+POW150B0 - Magnetic components < POW150 - Practical design considerations < POW - Power Systems and Electronic Circuits
+POW160 - Power analysis tools and techniques < POW - Power Systems and Electronic Circuits
+POW160A0 - Power flow analysis < POW160 - Power analysis tools and techniques < POW - Power Systems and Electronic Circuits
+POW160A5 - Unbalanced system analysis < POW160 - Power analysis tools and techniques < POW - Power Systems and Electronic Circuits
+POW160B0 - System protection analysis < POW160 - Power analysis tools and techniques < POW - Power Systems and Electronic Circuits
+POW160B5 - State estimation analysis < POW160 - Power analysis tools and techniques < POW - Power Systems and Electronic Circuits
+POW160C0 - Contingency analysis < POW160 - Power analysis tools and techniques < POW - Power Systems and Electronic Circuits
+POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170A0 - Single and multi-machine dynamics < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170A5 - Small signal dynamics < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170B0 - Voltage and power control < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170B5 - Energy function methods < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170C0 - Modeling of transmission lines < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170C5 - Modeling of transformers < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170D0 - Modeling of generators and loads < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170D5 - Steady-state behaviours < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW170E0 - Transient behaviours < POW170 - Power systems modeling, dynamics and control < POW - Power Systems and Electronic Circuits
+POW180 - Distributed generation systems (incl. diesel/wind/microturbine/photovotaic generation systems) < POW - Power Systems and Electronic Circuits )
+POW190 - Power system security < POW - Power Systems and Electronic Circuits
+POW200 - Interchange of power and energy < POW - Power Systems and Electronic Circuits
+SIPRO - Signal Processing
+SIPRO100 - Adaptive signal processing < SIPRO - Signal Processing
+SIPRO100A0 - Adaptive filter design < SIPRO100 - Adaptive signal processing < SIPRO - Signal Processing
+SIPRO100A5 - Applications of adaptive filters < SIPRO100 - Adaptive signal processing < SIPRO - Signal Processing
+SIPRO100B0 - Frequency domain adaptive filtering < SIPRO100 - Adaptive signal processing < SIPRO - Signal Processing
+SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110A0 - Digital filter desing < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110A5 - Structures for digital signal processing < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110B0 - Multirate signal processing < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110B5 - Filter bank theory and design < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110C0 - Wavelets and applications < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110C5 - Sampling, extrapolation and interpolation < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110D0 - Robust filtering < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110D5 - Algorithms and architectures for digital signal processing < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO110E0 - DSP design and implementation < SIPRO110 - Digital signal processing < SIPRO - Signal Processing
+SIPRO120 - Multidimensional signal processing < SIPRO - Signal Processing
+SIPRO120A0 - Multidimensional filter design < SIPRO120 - Multidimensional signal processing < SIPRO - Signal Processing
+SIPRO120A5 - Applications of multidimensional signal processing < SIPRO120 - Multidimensional signal processing < SIPRO - Signal Processing
+SIPRO120B0 - Algorithms for multidimensional signal processing < SIPRO120 - Multidimensional signal processing < SIPRO - Signal Processing
+SIPRO130 - Array signal processing < SIPRO - Signal Processing
+SIPRO130A0 - Beamforming < SIPRO130 - Array signal processing < SIPRO - Signal Processing
+SIPRO140 - Equalization techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO140A0 - Adaptive linear equalizer < SIPRO140 - Equalization techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO140A5 - Adaptive decision-feedback equalizer < SIPRO140 - Equalization techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO140B0 - Kalman algorithms for equalization < SIPRO140 - Equalization techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO140B5 - Blind equalization < SIPRO140 - Equalization techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO140C0 - Iterative equalization < SIPRO140 - Equalization techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO150 - Estimation and detection techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO150A0 - ML techniques < SIPRO150 - Estimation and detection techniques, circuits and systems < SIPRO - Signal Processing
+SIPRO160 - Digital hardware for signal processing < SIPRO - Signal Processing
