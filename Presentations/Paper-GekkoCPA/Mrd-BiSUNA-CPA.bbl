@@ -1,0 +1,210 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{15}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{{Chiu-Wing Sham}, {Wai-Chiu Wong}, and
+  {Young}}{{Chiu-Wing Sham} et~al\mbox{.}}{2002}]%
+        {998375}
+\bibfield{author}{\bibinfo{person}{{Chiu-Wing Sham}},
+  \bibinfo{person}{{Wai-Chiu Wong}}, {and} \bibinfo{person}{E.~R.~Y. {Young}}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Congestion estimation with buffer planning in
+  floorplan design}. In \bibinfo{booktitle}{\emph{Proceedings 2002 Design,
+  Automation and Test in Europe Conference and Exhibition}}.
+  \bibinfo{pages}{696--701}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Coutinho, de~Oliveira~Albuquerque, Borges,
+  Garc{\'\i}a~Villalba, and Kim}{Coutinho et~al\mbox{.}}{2018}]%
+        {s18051306}
+\bibfield{author}{\bibinfo{person}{Murilo Coutinho}, et al.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Learning Perfectly Secure Cryptography to Protect
+  Communications with Adversarial Neural Cryptography}.
+\newblock \bibinfo{journal}{\emph{Sensors}} \bibinfo{volume}{18},
+  \bibinfo{number}{5} (\bibinfo{year}{2018}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{de~Dormale and Quisquater}{de~Dormale and
+  Quisquater}{2007}]%
+        {MEURICEDEDORMALE200772}
+\bibfield{author}{\bibinfo{person}{Guerric~Meurice de Dormale} {and}
+  \bibinfo{person}{Jean-Jacques Quisquater}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{High-speed hardware implementations of Elliptic
+  Curve Cryptography: A survey}.
+\newblock \bibinfo{journal}{\emph{Journal of Systems Architecture}}
+  \bibinfo{volume}{53}, \bibinfo{number}{2} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{72 -- 84}.
+
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio}{Goodfellow et~al\mbox{.}}{2014}]%
+        {NIPS2014_5423}
+\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, et al.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Generative Adversarial Nets}.
+\newblock In \bibinfo{booktitle}{\emph{Advances in Neural Information
+  Processing Systems 27}}, \bibfield{editor}{\bibinfo{person}{Z.~Ghahramani},
+  \bibinfo{person}{M.~Welling}, \bibinfo{person}{C.~Cortes},
+  \bibinfo{person}{N.~D. Lawrence}, {and} \bibinfo{person}{K.~Q. Weinberger}}
+  (Eds.). \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{pages}{2672--2680}.
+
+
+\bibitem[\protect\citeauthoryear{Ismayilov and Topcuoglu}{Ismayilov and
+  Topcuoglu}{2020}]%
+        {ISMAYILOV2020307}
+\bibfield{author}{\bibinfo{person}{Goshgar Ismayilov} {and}
+  \bibinfo{person}{Haluk~Rahmi Topcuoglu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Neural network based multi-objective evolutionary
+  algorithm for dynamic workflow scheduling in cloud computing}.
+\newblock \bibinfo{journal}{\emph{Future Generation Computer Systems}}
+  \bibinfo{volume}{102} (\bibinfo{year}{2020}), \bibinfo{pages}{307 -- 322}.
+
+
+\bibitem[\protect\citeauthoryear{Katz and Lindell}{Katz and Lindell}{2008}]%
+        {katz2008introduction}
+\bibfield{author}{\bibinfo{person}{J. Katz} {and} \bibinfo{person}{Y.
+  Lindell}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Introduction to modern cryptography}}.
+\newblock \bibinfo{publisher}{Chapman \& Hall/CRC}.
+
+
+\bibitem[\protect\citeauthoryear{{Lo}, {Lau}, and {Chiu-Wing Sham}}{{Lo}
+  et~al\mbox{.}}{2018}]%
+        {8587580}
+\bibfield{author}{\bibinfo{person}{Chun-Yan {Lo}}, \bibinfo{person}{Francis
+  C.~M. {Lau}}, {and} \bibinfo{person}{{Chiu-Wing Sham}}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{Fixed-Point Implementation of Convolutional Neural
+  Networks for Image Classification}}. In \bibinfo{booktitle}{\emph{2018
+  International Conference on Advanced Technologies for Communications (ATC)}}.
+  \bibinfo{pages}{105--109}.
+
+
+\bibitem[\protect\citeauthoryear{Lu, Chow, and Sham}{Lu et~al\mbox{.}}{2012}]%
+        {LU2012121}
+\bibfield{author}{\bibinfo{person}{Jingwei Lu}, \bibinfo{person}{Wing-Kai
+  Chow}, {and} \bibinfo{person}{Chiu-Wing Sham}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{A new clock network synthesizer for modern VLSI
+  designs}.
+\newblock \bibinfo{journal}{\emph{Integration}} \bibinfo{volume}{45},
+  \bibinfo{number}{2} (\bibinfo{year}{2012}), \bibinfo{pages}{121 -- 131}.
+
+
+\bibitem[\protect\citeauthoryear{{Ma}, {Chiu-Wing Sham}, {Sun}, and
+  {Tenorio}}{{Ma} et~al\mbox{.}}{2019}]%
+        {8906146}
+\bibfield{author}{\bibinfo{person}{L. {Ma}}, \bibinfo{person}{{Chiu-Wing
+  Sham}}, \bibinfo{person}{J. {Sun}}, {and} \bibinfo{person}{R.~V. {Tenorio}}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{A Real-Time Flexible Telecommunication Decoding
+  Architecture using FPGA Partial Reconfiguration}}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Circuits and Systems II:
+  Express Briefs}} (\bibinfo{year}{2019}), \bibinfo{pages}{1--1}.
+
+
+\bibitem[\protect\citeauthoryear{Nalepa, Antoniak, Myller, Lorenzo, and
+  Marcinkiewicz}{Nalepa et~al\mbox{.}}{2020}]%
+        {NALEPA2020102994}
+\bibfield{author}{\bibinfo{person}{Jakub Nalepa}, et al.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Towards resource-frugal deep convolutional neural
+  networks for hyperspectral image segmentation}.
+\newblock \bibinfo{journal}{\emph{Microprocessors and Microsystems}}
+  \bibinfo{volume}{73} (\bibinfo{year}{2020}), \bibinfo{pages}{102994}.
+
+
+\bibitem[\protect\citeauthoryear{{Tai-Wen Yue} and {Suchen Chiang}}{{Tai-Wen
+  Yue} and {Suchen Chiang}}{2000}]%
+        {861518}
+\bibfield{author}{\bibinfo{person}{{Tai-Wen Yue}} {and}
+  \bibinfo{person}{{Suchen Chiang}}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{A neural network approach for visual cryptography}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the IEEE-INNS-ENNS International
+  Joint Conference on Neural Networks. IJCNN 2000. Neural Computing: New
+  Challenges and Perspectives for the New Millennium}},
+  Vol.~\bibinfo{volume}{5}. \bibinfo{pages}{494--499 vol.5}.
+
+
+\bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
+  et~al\mbox{.}}{2019a}]%
+        {8953134}
+\bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C. {Sham}},
+  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{a}.
+\newblock \showarticletitle{Using Neuroevolved Binary Neural Networks to solve
+  reinforcement learning environments}. In \bibinfo{booktitle}{\emph{2019 IEEE
+  Asia Pacific Conference on Circuits and Systems (APCCAS)}}.
+  \bibinfo{pages}{301--304}.
+
+
+\bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
+  et~al\mbox{.}}{2019b}]%
+        {8977877}
+\bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C.~W.
+  {Sham}}, {and} \bibinfo{person}{O. {Sinnen}}.}
+  \bibinfo{year}{2019}\natexlab{b}.
+\newblock \showarticletitle{Evolved Binary Neural Networks Through Harnessing
+  FPGA Capabilities}. In \bibinfo{booktitle}{\emph{2019 International
+  Conference on Field-Programmable Technology (ICFPT)}}.
+  \bibinfo{pages}{395--398}.
+
+
+\bibitem[\protect\citeauthoryear{Yu and Cao}{Yu and Cao}{2006}]%
+        {YU2006333}
+\bibfield{author}{\bibinfo{person}{Wenwu Yu} {and} \bibinfo{person}{Jinde
+  Cao}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Cryptography based on delayed chaotic neural
+  networks}.
+\newblock \bibinfo{journal}{\emph{Physics Letters A}} \bibinfo{volume}{356},
+  \bibinfo{number}{4} (\bibinfo{year}{2006}), \bibinfo{pages}{333 -- 338}.
+
+
+\bibitem[\protect\citeauthoryear{{Zhu}, {Vargas}, and {Sakurai}}{{Zhu}
+  et~al\mbox{.}}{2018}]%
+        {8590945}
+\bibfield{author}{\bibinfo{person}{Y. {Zhu}}, et al.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Neural Cryptography Based on the Topology Evolving
+  Neural Networks}. In \bibinfo{booktitle}{\emph{2018 Sixth International
+  Symposium on Computing and Networking Workshops (CANDARW)}}.
+  \bibinfo{pages}{472--478}.
+
+
+\end{thebibliography}

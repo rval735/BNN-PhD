@@ -111,6 +111,11 @@ T.~Simons and D.-J. Lee, ``A review of binarized neural networks,''
   \url{https://www.mdpi.com/2079-9292/8/6/661}
 \BIBentrySTDinterwordspacing
 
+\bibitem{8977877}
+R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
+  through harnessing fpga capabilities,'' in \emph{2019 International
+  Conference on Field-Programmable Technology (ICFPT)}, Dec 2019, pp. 395--398.
+
 \bibitem{Sher2013NeuroEvol}
 \BIBentryALTinterwordspacing
 G.~I. Sher, \emph{Handbook of Neuroevolution Through Erlang}.\hskip 1em plus
@@ -208,11 +213,6 @@ S.~Han, X.~Liu, H.~Mao, J.~Pu, A.~Pedram, M.~A. Horowitz, and W.~J. Dally,
   Piscataway, NJ, USA: IEEE Press, 2016, pp. 243--254. [Online]. Available:
   \url{https://doi.org/10.1109/ISCA.2016.30}
 \BIBentrySTDinterwordspacing
-
-\bibitem{8977877}
-R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
-  through harnessing fpga capabilities,'' in \emph{2019 International
-  Conference on Field-Programmable Technology (ICFPT)}, Dec 2019, pp. 395--398.
 
 \bibitem{Kung2018}
 \BIBentryALTinterwordspacing
