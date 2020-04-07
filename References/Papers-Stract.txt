@@ -2362,6 +2362,11 @@ Introduction to Modern Cryptography- Principles and Protocols
 -
 -
 
+Synchronization of neural networks by mutual learning and its application to cryptography
+- Use NN to learn a secret key over public channels
+- Employ mutual learning in a tree parity machine
+- Use a genetic attack to confirm the system
+
 < Crypto
 
 ------> Other

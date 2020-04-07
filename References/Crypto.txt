@@ -90,3 +90,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5669194
 
 Introduction to Modern Cryptography- Principles and Protocols
 https://repo.zenk-security.com/Cryptographie%20.%20Algorithmes%20.%20Steganographie/Introduction%20to%20Modern%20Cryptography.pdf
+
+Synchronization of neural networks by mutual learning and its application to cryptography
+https://papers.nips.cc/paper/2744-synchronization-of-neural-networks-by-mutual-learning-and-its-application-to-cryptography
