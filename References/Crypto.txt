@@ -93,3 +93,15 @@ https://repo.zenk-security.com/Cryptographie%20.%20Algorithmes%20.%20Steganograp
 
 Synchronization of neural networks by mutual learning and its application to cryptography
 https://papers.nips.cc/paper/2744-synchronization-of-neural-networks-by-mutual-learning-and-its-application-to-cryptography
+
+An Approach to Cryptography Based on Continuous-Variable Quantum Neural Network
+https://www.nature.com/articles/s41598-020-58928-1
+
+Quantum computing- the end of classical cryptography
+https://dl-acm-org.ezproxy.auckland.ac.nz/doi/abs/10.1145/190616.190617
+
+Neural Synchronization and Cryptography
+https://arxiv.org/abs/0711.2411
+
+SHE- A Fast and Accurate Deep Neural Network for Encrypted Data
+https://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-network-for-encrypted-data

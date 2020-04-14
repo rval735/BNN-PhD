@@ -341,6 +341,11 @@ Empirical Asset Pricing via Machine Learning
 -
 -
 
+Unsupervised Learning of Object Structure and Dynamics from Videos
+-
+-
+-
+
 < NN-Fin
 
 ------> FPGA
@@ -2366,6 +2371,26 @@ Synchronization of neural networks by mutual learning and its application to cry
 - Use NN to learn a secret key over public channels
 - Employ mutual learning in a tree parity machine
 - Use a genetic attack to confirm the system
+
+An Approach to Cryptography Based on Continuous-Variable Quantum Neural Network
+-
+-
+-
+
+Quantum computing- the end of classical cryptography
+-
+-
+-
+
+Neural Synchronization and Cryptography
+-
+-
+-
+
+SHE- A Fast and Accurate Deep Neural Network for Encrypted Data
+-
+-
+-
 
 < Crypto
 

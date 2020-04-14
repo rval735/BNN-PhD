@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Shi, Jinjing
+AU  - Chen, Shuhui
+AU  - Lu, Yuhu
+AU  - Feng, Yanyan
+AU  - Shi, Ronghua
+AU  - Yang, Yuguang
+AU  - Li, Jian
+PY  - 2020
+DA  - 2020/02/07
+TI  - An Approach to Cryptography Based on Continuous-Variable Quantum Neural Network
+JO  - Scientific Reports
+SP  - 2107
+VL  - 10
+IS  - 1
+AB  - An efficient cryptography scheme is proposed based on continuous-variable quantum neural network (CV-QNN), in which a specified CV-QNN model is introduced for designing the quantum cryptography algorithm. It indicates an approach to design a quantum neural cryptosystem which contains the processes of key generation, encryption and decryption. Security analysis demonstrates that our scheme is security. Several simulation experiments are performed on the Strawberry Fields platform for processing the classical data “Quantum Cryptography” with CV-QNN to describe the feasibility of our method. Three sets of representative experiments are presented and the second experimental results confirm that our scheme can correctly and effectively encrypt and decrypt data with the optimal learning rate 8e − 2 regardless of classical or quantum data, and better performance can be achieved with the method of learning rate adaption (where increase factor R1 = 2, decrease factor R2 = 0.8). Indeed, the scheme with learning rate adaption can shorten the encryption and decryption time according to the simulation results presented in Figure 12. It can be considered as a valid quantum cryptography scheme and has a potential application on quantum devices.
+SN  - 2045-2322
+UR  - https://doi.org/10.1038/s41598-020-58928-1
+DO  - 10.1038/s41598-020-58928-1
+ID  - Shi2020
+ER  - 

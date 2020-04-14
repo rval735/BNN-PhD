@@ -245,3 +245,5 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S014193
 Neural network based multi-objective evolutionary algorithm for dynamic workflow scheduling in cloud computing
 https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S0167739X19306983
 
+Unsupervised Learning of Object Structure and Dynamics from Videos
+https://papers.nips.cc/paper/8304-unsupervised-learning-of-object-structure-and-dynamics-from-videos

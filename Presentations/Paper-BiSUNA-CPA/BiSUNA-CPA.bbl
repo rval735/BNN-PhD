@@ -19,23 +19,22 @@ M.~M. Alani.
   Berlin Heidelberg.
 \newblock ISBN 978-3-642-34500-5.
 
-\bibitem[Baldominos et~al.(2019)Baldominos, Saez, and
-  Isasi]{scarpiniti_hybridizing_2019}
-A.~Baldominos, Y.~Saez, and P.~Isasi.
-\newblock Hybridizing {Evolutionary} {Computation} and {Deep} {Neural}
-  {Networks}: {An} {Approach} to {Handwriting} {Recognition} {Using}
-  {Committees} and {Transfer} {Learning}.
-\newblock \emph{Complexity}, 2019:\penalty0 2952304, Mar. 2019.
-\newblock ISSN 1076-2787.
-\newblock \doi{10.1155/2019/2952304}.
-\newblock URL \url{https://doi.org/10.1155/2019/2952304}.
+\bibitem[Brassard(1994)]{10.1145/190616.190617}
+G.~Brassard.
+\newblock Quantum computing: The end of classical cryptography?
+\newblock \emph{SIGACT News}, 25\penalty0 (4):\penalty0 15--21, Dec. 1994.
+\newblock ISSN 0163-5700.
+\newblock \doi{10.1145/190616.190617}.
+\newblock URL
+  \url{https://doi-org.ezproxy.auckland.ac.nz/10.1145/190616.190617}.
 
-\bibitem[{Brockman} et~al.(2016){Brockman}, {Cheung}, {Pettersson},
-  {Schneider}, {Schulman}, {Tang}, and {Zaremba}]{2016arXiv160601540B}
-G.~{Brockman}, V.~{Cheung}, L.~{Pettersson}, J.~{Schneider}, J.~{Schulman},
-  J.~{Tang}, and W.~{Zaremba}.
-\newblock {OpenAI Gym}.
-\newblock \emph{arXiv e-prints}, June 2016.
+\bibitem[Courbariaux et~al.(2015)Courbariaux, Bengio, and David]{NIPS2015_5647}
+M.~Courbariaux, Y.~Bengio, and J.-P. David.
+\newblock Binaryconnect: Training deep neural networks with binary weights
+  during propagations.
+\newblock In C.~Cortes, N.~D. Lawrence, D.~D. Lee, M.~Sugiyama, and R.~Garnett,
+  editors, \emph{Advances in Neural Information Processing Systems 28}, pages
+  3123--3131. Curran Associates, Inc., 2015.
 
 \bibitem[Coutinho et~al.(2018)Coutinho, de~Oliveira~Albuquerque, Borges,
   Garc{\'\i}a~Villalba, and Kim]{s18051306}
@@ -47,14 +46,6 @@ M.~Coutinho, R.~de~Oliveira~Albuquerque, F.~Borges, L.~J. Garc{\'\i}a~Villalba,
 \newblock ISSN 1424-8220.
 \newblock \doi{10.3390/s18051306}.
 \newblock URL \url{http://www.mdpi.com/1424-8220/18/5/1306}.
-
-\bibitem[Danilo~{Vargas}(2017)]{7460958}
-J.~M. Danilo~{Vargas}.
-\newblock Spectrum-diverse neuroevolution with unified neural models.
-\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
-  28\penalty0 (8):\penalty0 1759--1773, Aug 2017.
-\newblock ISSN 2162-237X.
-\newblock \doi{10.1109/TNNLS.2016.2551748}.
 
 \bibitem[de~Dormale and Quisquater(2007)]{MEURICEDEDORMALE200772}
 G.~M. de~Dormale and J.-J. Quisquater.
@@ -106,6 +97,16 @@ J.~Katz and Y.~Lindell.
 \newblock ISBN 9781584885511.
 \newblock URL \url{https://books.google.ca/books?id=WIc\_AQAAIAAJ}.
 
+\bibitem[Klein et~al.(2005)Klein, Mislovaty, Kanter, Ruttor, and
+  Kinzel]{NIPS2004_2744}
+E.~Klein, R.~Mislovaty, I.~Kanter, A.~Ruttor, and W.~Kinzel.
+\newblock Synchronization of neural networks by mutual learning and its
+  application to cryptography.
+\newblock In L.~K. Saul, Y.~Weiss, and L.~Bottou, editors, \emph{Advances in
+  Neural Information Processing Systems 17}, pages 689--696. MIT Press, 2005.
+\newblock URL
+  \url{http://papers.nips.cc/paper/2744-synchronization-of-neural-networks-by-mutual-learning-and-its-application-to-cryptography.pdf}.
+
 \bibitem[Klimov et~al.(2002)Klimov, Mityagin, and
   Shamir]{10.1007/3-540-36178-2_18}
 A.~Klimov, A.~Mityagin, and A.~Shamir.
@@ -114,16 +115,42 @@ A.~Klimov, A.~Mityagin, and A.~Shamir.
   2002}, pages 288--298, Berlin, Heidelberg, 2002. Springer Berlin Heidelberg.
 \newblock ISBN 978-3-540-36178-7.
 
-\bibitem[Nalepa et~al.(2020)Nalepa, Antoniak, Myller, Lorenzo, and
-  Marcinkiewicz]{NALEPA2020102994}
-J.~Nalepa, M.~Antoniak, M.~Myller, P.~R. Lorenzo, and M.~Marcinkiewicz.
-\newblock Towards resource-frugal deep convolutional neural networks for
-  hyperspectral image segmentation.
-\newblock \emph{Microprocessors and Microsystems}, 73:\penalty0 102994, 2020.
-\newblock ISSN 0141-9331.
-\newblock \doi{https://doi.org/10.1016/j.micpro.2020.102994}.
+\bibitem[Minderer et~al.(2019)Minderer, Sun, Villegas, Cole, Murphy, and
+  Lee]{NIPS2019_8304}
+M.~Minderer, C.~Sun, R.~Villegas, F.~Cole, K.~P. Murphy, and H.~Lee.
+\newblock Unsupervised learning of object structure and dynamics from videos.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~Alch\'{e}-Buc,
+  E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural Information
+  Processing Systems 32}, pages 92--102. Curran Associates, Inc., 2019.
 \newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S0141933119302844}.
+  \url{http://papers.nips.cc/paper/8304-unsupervised-learning-of-object-structure-and-dynamics-from-videos.pdf}.
+
+\bibitem[Riazi et~al.(2019)Riazi, Samragh, Chen, Laine, Lauter, and
+  Koushanfar]{1133}
+M.~S. Riazi, M.~Samragh, H.~Chen, K.~Laine, K.~Lauter, and F.~Koushanfar.
+\newblock Xonn: Xnor-based oblivious deep neural network inference.
+\newblock In \emph{USENIX Security}. USENIX, USENIX, 05/2019 2019.
+\newblock URL \url{https://arxiv.org/pdf/1902.07342.pdf}.
+
+\bibitem[Shi et~al.(2020)Shi, Chen, Lu, Feng, Shi, Yang, and Li]{Shi:2020aa}
+J.~Shi, S.~Chen, Y.~Lu, Y.~Feng, R.~Shi, Y.~Yang, and J.~Li.
+\newblock An approach to cryptography based on continuous-variable quantum
+  neural network.
+\newblock \emph{Scientific Reports}, 10\penalty0 (1):\penalty0 2107, 2020.
+\newblock \doi{10.1038/s41598-020-58928-1}.
+\newblock URL \url{https://doi.org/10.1038/s41598-020-58928-1}.
+
+\bibitem[Song et~al.(2018)Song, He, Gao, Xu, Hanjalic, and Shen]{AAAI1817150}
+J.~Song, T.~He, L.~Gao, X.~Xu, A.~Hanjalic, and H.~T. Shen.
+\newblock Binary generative adversarial networks for image retrieval, 2018.
+\newblock URL
+  \url{https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17150}.
+
+\bibitem[Soudry et~al.(2014)Soudry, Hubara, and Meir]{Soudry2014ExpectationBP}
+D.~Soudry, I.~Hubara, and R.~Meir.
+\newblock Expectation backpropagation: Parameter-free training of multilayer
+  neural networks with continuous or discrete weights.
+\newblock In \emph{NIPS}, 2014.
 
 \bibitem[{Stanley} and {Miikkulainen}(2002)]{1004508}
 K.~O. {Stanley} and R.~{Miikkulainen}.
@@ -132,39 +159,6 @@ K.~O. {Stanley} and R.~{Miikkulainen}.
   Computation. CEC'02 (Cat. No.02TH8600)}, volume~2, pages 1757--1762 vol.2,
   May 2002.
 \newblock \doi{10.1109/CEC.2002.1004508}.
-
-\bibitem[{Tai-Wen Yue} and {Suchen Chiang}(2000)]{861518}
-{Tai-Wen Yue} and {Suchen Chiang}.
-\newblock A neural network approach for visual cryptography.
-\newblock In \emph{Proceedings of the IEEE-INNS-ENNS International Joint
-  Conference on Neural Networks. IJCNN 2000. Neural Computing: New Challenges
-  and Perspectives for the New Millennium}, volume~5, pages 494--499 vol.5,
-  July 2000.
-\newblock \doi{10.1109/IJCNN.2000.861518}.
-
-\bibitem[Valencia(2019)]{BiSUNAGithub}
-R.~Valencia.
-\newblock Binary spectrum-diverse unified neuroevolution architecture, Sep
-  2019.
-\newblock URL \url{https://github.com/rval735/BiSUNA}.
-
-\bibitem[{Valencia} et~al.(2019){Valencia}, {Sham}, and {Sinnen}]{8953134}
-R.~{Valencia}, C.~{Sham}, and O.~{Sinnen}.
-\newblock Using neuroevolved binary neural networks to solve reinforcement
-  learning environments.
-\newblock In \emph{2019 IEEE Asia Pacific Conference on Circuits and Systems
-  (APCCAS)}, pages 301--304, Nov 2019.
-\newblock \doi{10.1109/APCCAS47518.2019.8953134}.
-
-\bibitem[Yu and Cao(2006)]{YU2006333}
-W.~Yu and J.~Cao.
-\newblock Cryptography based on delayed chaotic neural networks.
-\newblock \emph{Physics Letters A}, 356\penalty0 (4):\penalty0 333 -- 338,
-  2006.
-\newblock ISSN 0375-9601.
-\newblock \doi{https://doi.org/10.1016/j.physleta.2006.03.069}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S037596010600510X}.
 
 \bibitem[{Zhu} et~al.(2018){Zhu}, {Vargas}, and {Sakurai}]{8590945}
 Y.~{Zhu}, D.~V. {Vargas}, and K.~{Sakurai}.
