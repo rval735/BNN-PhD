@@ -946,6 +946,11 @@ Learning to Predict Without Looking Ahead-World Models Without Forward Predictio
 -
 -
 
+AutoML-Zero- Evolving Machine Learning Algorithms From Scratch
+-
+-
+-
+
 < DNN
 -------> NN
 

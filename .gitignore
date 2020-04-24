@@ -24,8 +24,6 @@ References/Papers
 Velocity/
 Tutto
 *ubyte
-*.tex
-*.pdf
 *.lco
 
 # Xcode
@@ -106,3 +104,11 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Latex
+*.tex
+*.pdf
+*.blg
+*.log
+*.out
+*.synctex.gz

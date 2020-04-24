@@ -64,3 +64,5 @@ https://github.com/google/brain-tokyo-workshop/tree/master/learntopredict
 http://papers.nips.cc/paper/8778-learning-to-predict-without-looking-ahead-world-models-without-forward-prediction
 https://learningtopredict.github.io
 
+AutoML-Zero- Evolving Machine Learning Algorithms From Scratch
+https://arxiv.org/abs/2003.03384

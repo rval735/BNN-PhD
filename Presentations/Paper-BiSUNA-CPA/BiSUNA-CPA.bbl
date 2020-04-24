@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -78,17 +78,6 @@ S.~{Hsiao}, C.~{Wen}, M.~{Tsai}, and M.~{Chen}.
   Electronics}, pages 77--80, Nov 2010.
 \newblock \doi{10.1109/ISNE.2010.5669194}.
 
-\bibitem[Ismayilov and Topcuoglu(2020)]{ISMAYILOV2020307}
-G.~Ismayilov and H.~R. Topcuoglu.
-\newblock Neural network based multi-objective evolutionary algorithm for
-  dynamic workflow scheduling in cloud computing.
-\newblock \emph{Future Generation Computer Systems}, 102:\penalty0 307 -- 322,
-  2020.
-\newblock ISSN 0167-739X.
-\newblock \doi{https://doi.org/10.1016/j.future.2019.08.012}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S0167739X19306983}.
-
 \bibitem[Katz and Lindell(2008)]{katz2008introduction}
 J.~Katz and Y.~Lindell.
 \newblock \emph{Introduction to modern cryptography}.
@@ -115,15 +104,20 @@ A.~Klimov, A.~Mityagin, and A.~Shamir.
   2002}, pages 288--298, Berlin, Heidelberg, 2002. Springer Berlin Heidelberg.
 \newblock ISBN 978-3-540-36178-7.
 
-\bibitem[Minderer et~al.(2019)Minderer, Sun, Villegas, Cole, Murphy, and
-  Lee]{NIPS2019_8304}
-M.~Minderer, C.~Sun, R.~Villegas, F.~Cole, K.~P. Murphy, and H.~Lee.
-\newblock Unsupervised learning of object structure and dynamics from videos.
+\bibitem[Lou and Jiang(2019)]{NIPS2019_9194}
+Q.~Lou and L.~Jiang.
+\newblock She: A fast and accurate deep neural network for encrypted data.
 \newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~Alch\'{e}-Buc,
   E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural Information
-  Processing Systems 32}, pages 92--102. Curran Associates, Inc., 2019.
+  Processing Systems 32}, pages 10035--10043. Curran Associates, Inc., 2019.
 \newblock URL
-  \url{http://papers.nips.cc/paper/8304-unsupervised-learning-of-object-structure-and-dynamics-from-videos.pdf}.
+  \url{http://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-network-for-encrypted-data.pdf}.
+
+\bibitem[Ma et~al.(2019)Ma, Xiong, Hu, and Ma]{Ma_2019_CVPR_Workshops}
+Y.~Ma, H.~Xiong, Z.~Hu, and L.~Ma.
+\newblock Efficient super resolution using binarized neural network.
+\newblock In \emph{The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR) Workshops}, June 2019.
 
 \bibitem[Riazi et~al.(2019)Riazi, Samragh, Chen, Laine, Lauter, and
   Koushanfar]{1133}
@@ -159,6 +153,35 @@ K.~O. {Stanley} and R.~{Miikkulainen}.
   Computation. CEC'02 (Cat. No.02TH8600)}, volume~2, pages 1757--1762 vol.2,
   May 2002.
 \newblock \doi{10.1109/CEC.2002.1004508}.
+
+\bibitem[Sun et~al.(2019)Sun, Choi, Chen, Wang, Venkataramani, Srinivasan, Cui,
+  Zhang, and Gopalakrishnan]{NIPS2019_8736}
+X.~Sun, J.~Choi, C.-Y. Chen, N.~Wang, S.~Venkataramani, V.~V. Srinivasan,
+  X.~Cui, W.~Zhang, and K.~Gopalakrishnan.
+\newblock Hybrid 8-bit floating point (hfp8) training and inference for deep
+  neural networks.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~Alch\'{e}-Buc,
+  E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural Information
+  Processing Systems 32}, pages 4900--4909. Curran Associates, Inc., 2019.
+\newblock URL
+  \url{http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf}.
+
+\bibitem[{Valencia} et~al.(2019{\natexlab{a}}){Valencia}, {Sham}, and
+  {Sinnen}]{8953134}
+R.~{Valencia}, C.~{Sham}, and O.~{Sinnen}.
+\newblock Using neuroevolved binary neural networks to solve reinforcement
+  learning environments.
+\newblock In \emph{2019 IEEE Asia Pacific Conference on Circuits and Systems
+  (APCCAS)}, pages 301--304, Nov 2019{\natexlab{a}}.
+\newblock \doi{10.1109/APCCAS47518.2019.8953134}.
+
+\bibitem[{Valencia} et~al.(2019{\natexlab{b}}){Valencia}, {Sham}, and
+  {Sinnen}]{8977877}
+R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}.
+\newblock Evolved binary neural networks through harnessing fpga capabilities.
+\newblock In \emph{2019 International Conference on Field-Programmable
+  Technology (ICFPT)}, pages 395--398, Dec 2019{\natexlab{b}}.
+\newblock \doi{10.1109/ICFPT47387.2019.00076}.
 
 \bibitem[{Zhu} et~al.(2018){Zhu}, {Vargas}, and {Sakurai}]{8590945}
 Y.~{Zhu}, D.~V. {Vargas}, and K.~{Sakurai}.
