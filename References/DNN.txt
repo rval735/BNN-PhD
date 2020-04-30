@@ -66,3 +66,6 @@ https://learningtopredict.github.io
 
 AutoML-Zero- Evolving Machine Learning Algorithms From Scratch
 https://arxiv.org/abs/2003.03384
+
+Efficient and Robust Automated Machine Learning
+https://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning
