@@ -11,22 +11,22 @@
 %
 % Accommodates theses for degrees other than the PhD.
 %
-% This class does not intervene much — font and chapter heading customisation 
+% This class does not intervene much — font and chapter heading customisation
 % are left for the user to determine, and without locking users into or out of XeLaTeX.
-% 
-% 
+%
+%
 % This file may be distributed and/or modified under the conditions of
 % the LaTeX Project Public License, either version 1.2 of this license
 % or (at your option) any later version.  The latest version of this
 % license is in:
-% 
+%
 %    http://www.latex-project.org/lppl.txt
-% 
+%
 % and version 1.2 or later is part of all distributions of LaTeX version
 % 1999/12/01 or later.
 %
 
- 
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{aucklandthesis}
       [2016/01/01 University of Auckland thesis class]
@@ -69,6 +69,7 @@
 
 \RequirePackage{setspace}
 \RequirePackage{fancyhdr}
+\RequirePackage{textcase}
 \raggedbottom
 
 \pagestyle{fancyplain}
@@ -111,7 +112,7 @@
 	\end{center}
 	\vspace*{\fill}
 	\end{minipage}
-	
+
 	\noindent\begin{minipage}[t][0.3\textheight][t]{\textwidth}
 	\vspace*{\fill}
 	\begin{center}
@@ -120,34 +121,34 @@
 	\end{center}
 	\vspace*{\fill}
 	\end{minipage}
-	
+
 	\noindent\begin{minipage}[t][0.3\textheight][t]{\textwidth}
 	\vspace*{\fill}
 	\begin{center}
 		\normalfont
 		A thesis submitted in
 		\ifUa@partialfulfilment
-			partial 
+			partial
 		\fi
 		fulfilment of the requirements for the degree of
-		
+
 		\@degreesought\
-		in 
+		in
 		\@degreediscipline,
-		
+
 		The University of Auckland,
 		\@degreecompletionyear.
-		
+
 		\ifUa@examcp
 			\bigskip
-			This thesis is for examination purposes only, 
-			
+			This thesis is for examination purposes only,
+
 			and is confidential to the examination process.
 		\fi
 	\end{center}
 	\vspace*{\fill}
 	\end{minipage}
-	
+
 	\clearpage
 	\restoregeometry
 	\mainmatter
@@ -191,12 +192,12 @@
                          \refstepcounter{chapter}%
                          \typeout{\@chapapp\space\thechapter.}%
                          \addcontentsline{toc}{chapter}%
-                                   {\protect\numberline{\thechapter}\MakeUppercase{#1}}%
+                                   {\protect\numberline{\thechapter}#1}%
                        \else
-                         \addcontentsline{toc}{chapter}{\MakeUppercase{#1}}%
+                         \addcontentsline{toc}{chapter}{#1}%
                        \fi
                     \else
-                      \addcontentsline{toc}{chapter}{\MakeUppercase{#1}}%
+                      \addcontentsline{toc}{chapter}{#1}%
                     \fi
                     \chaptermark{#1}%
                     \addtocontents{lof}{\protect\addvspace{10\p@}}%

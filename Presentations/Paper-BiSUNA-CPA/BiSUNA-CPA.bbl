@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -58,6 +58,16 @@ G.~M. de~Dormale and J.-J. Quisquater.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S1383762106001044}.
 \newblock Embedded Hardware for Cryptosystems.
+
+\bibitem[Feurer et~al.(2015)Feurer, Klein, Eggensperger, Springenberg, Blum,
+  and Hutter]{NIPS2015_5872}
+M.~Feurer, A.~Klein, K.~Eggensperger, J.~Springenberg, M.~Blum, and F.~Hutter.
+\newblock Efficient and robust automated machine learning.
+\newblock In C.~Cortes, N.~D. Lawrence, D.~D. Lee, M.~Sugiyama, and R.~Garnett,
+  editors, \emph{Advances in Neural Information Processing Systems 28}, pages
+  2962--2970. Curran Associates, Inc., 2015.
+\newblock URL
+  \url{http://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning.pdf}.
 
 \bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
   Warde-Farley, Ozair, Courville, and Bengio]{NIPS2014_5423}

@@ -44,3 +44,8 @@ proceedings.mlr.press/v80/srouji18a
 High-Performance Pseudorandom Number Generator Using Two-Dimensional Cellular Automata
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/4459620
 
+Cross-Correlation Properties of Perfect Binary Sequences
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11423461_14
+
+Computation of the normalized cross-correlation by fast Fourier transform
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203434

@@ -2402,6 +2402,15 @@ SHE- A Fast and Accurate Deep Neural Network for Encrypted Data
 -
 -
 
+Cryptanalysis of Selected Block Ciphers
+-
+-
+-
+
+Advanced Encryption Standard
+-
+-
+-
 < Crypto
 
 ------> Other
@@ -2475,6 +2484,16 @@ Structured Control Nets for Deep Reinforcement Learning
 - Incorporates problem specific priors into the architecture
 
 High-Performance Pseudorandom Number Generator Using Two-Dimensional Cellular Automata
+-
+-
+-
+
+Cross-Correlation Properties of Perfect Binary Sequences
+-
+-
+-
+
+Computation of the normalized cross-correlation by fast Fourier transform
 -
 -
 -

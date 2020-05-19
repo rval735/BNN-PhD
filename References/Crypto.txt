@@ -105,3 +105,9 @@ https://arxiv.org/abs/0711.2411
 
 SHE- A Fast and Accurate Deep Neural Network for Encrypted Data
 https://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-network-for-encrypted-data
+
+Cryptanalysis of Selected Block Ciphers
+https://orbit.dtu.dk/en/publications/cryptanalysis-of-selected-block-ciphers
+
+Advanced Encryption Standard
+https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
