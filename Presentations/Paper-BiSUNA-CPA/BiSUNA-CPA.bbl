@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -88,6 +88,14 @@ S.~{Hsiao}, C.~{Wen}, M.~{Tsai}, and M.~{Chen}.
   Electronics}, pages 77--80, Nov 2010.
 \newblock \doi{10.1109/ISNE.2010.5669194}.
 
+\bibitem[Kaso(2018)]{10.1371/journal.pone.0203434}
+A.~Kaso.
+\newblock Computation of the normalized cross-correlation by fast fourier
+  transform.
+\newblock \emph{PLOS ONE}, 13\penalty0 (9):\penalty0 1--16, 09 2018.
+\newblock \doi{10.1371/journal.pone.0203434}.
+\newblock URL \url{https://doi.org/10.1371/journal.pone.0203434}.
+
 \bibitem[Katz and Lindell(2008)]{katz2008introduction}
 J.~Katz and Y.~Lindell.
 \newblock \emph{Introduction to modern cryptography}.
@@ -129,12 +137,24 @@ Y.~Ma, H.~Xiong, Z.~Hu, and L.~Ma.
 \newblock In \emph{The IEEE Conference on Computer Vision and Pattern
   Recognition (CVPR) Workshops}, June 2019.
 
+\bibitem[Morris J.~Dworkin(2001)]{AES-NIST}
+J.~R. N. J. F. L. E. B. E. R. J. F. D.~J. Morris J.~Dworkin, Elaine B.~Barker.
+\newblock Advanced encryption standard (aes).
+\newblock \emph{Federal Inf. Process. Stds. (NIST FIPS)}, 197:\penalty0 47, Nov
+  2001.
+
 \bibitem[Riazi et~al.(2019)Riazi, Samragh, Chen, Laine, Lauter, and
   Koushanfar]{1133}
 M.~S. Riazi, M.~Samragh, H.~Chen, K.~Laine, K.~Lauter, and F.~Koushanfar.
 \newblock Xonn: Xnor-based oblivious deep neural network inference.
 \newblock In \emph{USENIX Security}. USENIX, USENIX, 05/2019 2019.
 \newblock URL \url{https://arxiv.org/pdf/1902.07342.pdf}.
+
+\bibitem[Shannon(1949)]{CommTheoryShannon}
+C.~Shannon.
+\newblock Communication theory and secrecy systems.
+\newblock \emph{Bell system Technical Journal}, 28\penalty0 (4):\penalty0
+  656--715, 1949 1949.
 
 \bibitem[Shi et~al.(2020)Shi, Chen, Lu, Feng, Shi, Yang, and Li]{Shi:2020aa}
 J.~Shi, S.~Chen, Y.~Lu, Y.~Feng, R.~Shi, Y.~Yang, and J.~Li.
