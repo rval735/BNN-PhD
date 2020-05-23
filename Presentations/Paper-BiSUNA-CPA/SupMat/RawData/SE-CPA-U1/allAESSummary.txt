@@ -1,0 +1,30 @@
+Execution: exe1
+Resolved: 86
+Average Resolved NCC: -1.26143855813953488372
+AES NCC: -0.604872
+AES Block NCC: 1.566572
+----------
+Execution: exe2
+Resolved: 75
+Average Resolved NCC: .00579400000000000000
+AES NCC: -0.604872
+AES Block NCC: 1.566572
+----------
+Execution: exe3
+Resolved: 79
+Average Resolved NCC: 2.01194744303797468354
+AES NCC: -0.604872
+AES Block NCC: 1.566572
+----------
+Execution: exe4
+Resolved: 83
+Average Resolved NCC: -2.22440375903614457831
+AES NCC: -0.604872
+AES Block NCC: 1.566572
+----------
+Execution: exe5
+Resolved: 85
+Average Resolved NCC: -1.97749423529411764705
+AES NCC: -0.604872
+AES Block NCC: 1.566572
+----------
