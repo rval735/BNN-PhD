@@ -1,0 +1,2 @@
+Notes:
+- Only selected "image" folders were kept to comply with the 100MB limit
