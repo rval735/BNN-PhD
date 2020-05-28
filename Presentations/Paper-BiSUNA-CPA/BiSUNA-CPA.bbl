@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -46,6 +46,14 @@ M.~Coutinho, R.~de~Oliveira~Albuquerque, F.~Borges, L.~J. Garc{\'\i}a~Villalba,
 \newblock ISSN 1424-8220.
 \newblock \doi{10.3390/s18051306}.
 \newblock URL \url{http://www.mdpi.com/1424-8220/18/5/1306}.
+
+\bibitem[Danilo~{Vargas}(2017)]{7460958}
+J.~M. Danilo~{Vargas}.
+\newblock Spectrum-diverse neuroevolution with unified neural models.
+\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  28\penalty0 (8):\penalty0 1759--1773, Aug 2017.
+\newblock ISSN 2162-237X.
+\newblock \doi{10.1109/TNNLS.2016.2551748}.
 
 \bibitem[de~Dormale and Quisquater(2007)]{MEURICEDEDORMALE200772}
 G.~M. de~Dormale and J.-J. Quisquater.
@@ -150,6 +158,14 @@ M.~S. Riazi, M.~Samragh, H.~Chen, K.~Laine, K.~Lauter, and F.~Koushanfar.
 \newblock In \emph{USENIX Security}. USENIX, USENIX, 05/2019 2019.
 \newblock URL \url{https://arxiv.org/pdf/1902.07342.pdf}.
 
+\bibitem[Shannon(1945)]{MatThCryptoShannon}
+C.~Shannon.
+\newblock A mathematical theory of cryptography.
+\newblock In I.~A. for Cryptologic~Research, editor, \emph{A Mathematical
+  Theory of Cryptography}, volume~1, page 132. International Association for
+  Cryptologic Research, International Association for Cryptologic Research,
+  1945.
+
 \bibitem[Shannon(1949)]{CommTheoryShannon}
 C.~Shannon.
 \newblock Communication theory and secrecy systems.
@@ -163,6 +179,14 @@ J.~Shi, S.~Chen, Y.~Lu, Y.~Feng, R.~Shi, Y.~Yang, and J.~Li.
 \newblock \emph{Scientific Reports}, 10\penalty0 (1):\penalty0 2107, 2020.
 \newblock \doi{10.1038/s41598-020-58928-1}.
 \newblock URL \url{https://doi.org/10.1038/s41598-020-58928-1}.
+
+\bibitem[Simons and Lee(2019)]{electronics8060661}
+T.~Simons and D.-J. Lee.
+\newblock A review of binarized neural networks.
+\newblock \emph{Electronics}, 8\penalty0 (6), 2019.
+\newblock ISSN 2079-9292.
+\newblock \doi{10.3390/electronics8060661}.
+\newblock URL \url{https://www.mdpi.com/2079-9292/8/6/661}.
 
 \bibitem[Song et~al.(2018)Song, He, Gao, Xu, Hanjalic, and Shen]{AAAI1817150}
 J.~Song, T.~He, L.~Gao, X.~Xu, A.~Hanjalic, and H.~T. Shen.
