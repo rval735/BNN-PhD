@@ -247,3 +247,7 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S016773
 
 Unsupervised Learning of Object Structure and Dynamics from Videos
 https://papers.nips.cc/paper/8304-unsupervised-learning-of-object-structure-and-dynamics-from-videos
+
+Some studies in machine learning using the game of checkers
+https://dl.acm.org/doi/10.1147/rd.33.0210
+http://www2.stat.duke.edu/~sayan/R_stuff/Datamatters.key/Data/samuel_1959_B-95.pdf

@@ -139,3 +139,14 @@ https://arxiv.org/abs/1808.03819
 
 A Topological Study of Chaotic Iterations Application to Hash Functions
 https://arxiv.org/abs/1608.05920
+
+Accelerating Very Deep Convolutional Networks for Classification and Detection
+https://ieeexplore.ieee.org/document/7332968
+
+Going deeper with convolutions
+https://ieeexplore.ieee.org/document/7298594
+
+Benchmarking and Analyzing Deep Neural Network Training
+http://www.cs.toronto.edu/~serailhydra/publications/tbd-iiswc18.pdf
+
+Efficient Processing of Deep Neural Networks- A Tutorial and Survey

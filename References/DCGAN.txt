@@ -38,6 +38,7 @@ Autoencoding beyond pixels using a learned similarity metric
 https://arxiv.org/abs/1512.09300
 
 Evolving Mario Levels in the Latent Space of a Deep Convolutional Generative Adversarial Network
+https://dl.acm.org/doi/10.1145/3205455.3205517
 https://arxiv.org/abs/1805.00728
 
 Learning to Protect Communications with Adversarial Neural Cryptography

@@ -198,6 +198,21 @@ A Topological Study of Chaotic Iterations Application to Hash Functions
 -
 -
 
+Accelerating Very Deep Convolutional Networks for Classification and Detection
+-
+-
+-
+
+Going deeper with convolutions
+-
+-
+-
+
+Benchmarking and Analyzing Deep Neural Network Training
+-
+-
+-
+
 < CNN
 
 ------> CNN-Fin
@@ -342,6 +357,11 @@ Empirical Asset Pricing via Machine Learning
 -
 
 Unsupervised Learning of Object Structure and Dynamics from Videos
+-
+-
+-
+
+Some studies in machine learning using the game of checkers
 -
 -
 -
