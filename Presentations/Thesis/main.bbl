@@ -1886,6 +1886,69 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{8832578}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LX}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZJ}{%
+         family={{Zhou}},
+         familyi={Z\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=QH}{%
+         family={{Qian}},
+         familyi={Q\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{NN; exploding gradient, feedforward neural nets;gradient
+  methods;gradient instability;deep neural network models;deep feed-forward
+  neural networks;activation functions;Training;Neurons;Biological neural
+  networks;Backpropagation;Convergence;Task analysis;Activation
+  Functions;Gradient Instability;Deep Neural Network}
+    \strng{namehash}{LXZJQH1}
+    \strng{fullhash}{LXZJQH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The most widely used activation functions in current deep feed-forward
+  neural networks are rectified linear units (ReLU), besides many alternatives.
+  However, none of these alternatives have managed to consistently outperform
+  the rest and there is no unified theory connecting properties of the task and
+  networks with properties of activation functions in the sense of efficient
+  training. In order to understand the related problems fundamentally, it is
+  necessary to figure out possible causes of gradient instability
+  mathematically, and how different activation functions can be adopted to
+  improve system performances. Theoretical analysis about gradient instability
+  is given in the paper, as well as the fundamental explanation for the
+  exploding/vanishing gradient and the possible solutions. The performances of
+  different activation functions in a given example network are investigated.
+  Numerical simulations suggest that the convergence rate of gradient varies
+  with the activation function. There is no activation function that performs
+  well to all structures. The findings in the paper provide a reference for the
+  selection of activation function in the design of deep neural network
+  models.%
+    }
+    \field{booktitle}{2019 Chinese Control And Decision Conference (CCDC)}
+    \verb{doi}
+    \verb 10.1109/CCDC.2019.8832578
+    \endverb
+    \field{issn}{1948-9447}
+    \field{pages}{3966\bibrangedash 3971}
+    \field{title}{Comparison and Evaluation of Activation Functions in Term of
+  Gradient Instability in Deep Neural Networks}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Minsky:1988:PEE:50066}{book}{}
     \name{author}{2}{}{%
       {{hash=MML}{%
@@ -2049,6 +2112,58 @@
     \field{eprintclass}{cs.CV}
     \field{month}{04}
     \field{year}{2018}
+  \endentry
+
+  \entry{5380141}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RR}{%
+         family={Rafeh},
+         familyi={R\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mesgar},
+         familyi={M\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, biology computing;DNA;eigenvalues and eigenfunctions;forensic
+  science;matrix algebra;medical computing;neural nets;neural network;human
+  identification;DNA sequences;graphical representation;criminal
+  investigations;genetic disease;matrix eigenvalues;Neural
+  networks;Humans;Sequences;Computer networks;DNA computing;Eigenvalues and
+  eigenfunctions;Artificial neural
+  networks;Genetics;Diseases;Forensics;University Timetabling;Optimization
+  Problems;Constraint Programming;Linear Programming}
+    \strng{namehash}{RRMM1}
+    \strng{fullhash}{RRMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    In this paper we propose a new method to analyze the
+  similarity/dissimilarity of DNA sequences which can be used in human
+  identification field. This method is based on the graphical representation
+  proposed by Randic et al [M. Randic, M. Vracko, L. Nella, P. Dejan, Chem.
+  (2003)]. Instead of calculating the leading eigenvalues of the matrix for
+  graphical representation we smooth the zigzag curve and calculate its
+  curvature. Similarity between DNA sequences are decided by neural network.
+  Our method is useful for human identification in criminal investigations and
+  in genetic disease. Our results verify the validity of our method.%
+    }
+    \field{booktitle}{2009 Second International Conference on Computer and
+  Electrical Engineering}
+    \verb{doi}
+    \verb 10.1109/ICCEE.2009.132
+    \endverb
+    \field{pages}{64\bibrangedash 67}
+    \field{title}{Neural Network in Human Identification by DNA Sequences}
+    \field{volume}{2}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{10.1007/978-3-319-46493-0_32}{inproceedings}{}
@@ -3142,6 +3257,84 @@
     \field{title}{Binary neural network with 16 Mb RRAM macro chip for
   classification and online training}
     \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8296359}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=ZC}{%
+         family={{Zhang}},
+         familyi={Z\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={{Nguyen}},
+         familyi={N\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={{Sah}},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={{Ptucha}},
+         familyi={P\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={{Loui}},
+         familyi={L\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={{Salvaggio}},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, batch normalization, computer vision;eigenvalues and
+  eigenfunctions;feedforward neural nets;batch-normalized recurrent highway
+  networks;gradient control;feed-forward networks;computer vision
+  tasks;recurrence loop;eigenvalues;temporal Jacobian;gradient flow;image
+  captioning task;Training;Logic gates;Road transportation;Task
+  analysis;Transforms;Measurement;Computer architecture;Gradient
+  control;recurrent highway network;batch normalization;vanishing
+  gradient;exploding gradient}
+    \strng{namehash}{ZC+1}
+    \strng{fullhash}{ZCNTSSPRLASC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Gradient control plays an important role in feed-forward networks applied
+  to various computer vision tasks. Previous work has shown that Recurrent
+  Highway Networks minimize the problem of vanishing or exploding gradients.
+  They achieve this by setting the eigenvalues of the temporal Jacobian to 1
+  across the time steps. In this work, batch normalized recurrent highway
+  networks are proposed to control the gradient flow in an improved way for
+  network convergence. Specifically, the introduced model can be formed by
+  batch normalizing the inputs at each recurrence loop. The proposed model is
+  tested on an image captioning task using MSCOCO dataset. Experimental results
+  indicate that the batch normalized recurrent highway networks converge faster
+  and performs better compared with the traditional LSTM and RHN based models.%
+    }
+    \field{booktitle}{2017 IEEE International Conference on Image Processing
+  (ICIP)}
+    \verb{doi}
+    \verb 10.1109/ICIP.2017.8296359
+    \endverb
+    \field{issn}{2381-8549}
+    \field{pages}{640\bibrangedash 644}
+    \field{title}{Batch-normalized recurrent highway networks}
+    \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
   \endentry
 

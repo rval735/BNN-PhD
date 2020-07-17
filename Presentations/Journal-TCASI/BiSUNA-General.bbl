@@ -67,9 +67,12 @@ S.~A. Brodsky, G.~C. Marsden, and C.~C. Guest, ``Optical matrix--vector
   \url{http://ao.osa.org/abstract.cfm?URI=ao-32-8-1338}
 \BIBentrySTDinterwordspacing
 
-\bibitem{2009arXiv0904.4587T}
-J.-M. {Torres-Moreno} and M.~B. {Gordon}, ``{Adaptive Learning with Binary
-  Neurons},'' \emph{ArXiv e-prints}, Apr. 2009.
+\bibitem{857854}
+M.~{Costa}, D.~{Palmisano}, and E.~{Pasero}, ``Gradient descent in feed-forward
+  networks with binary neurons,'' in \emph{Proceedings of the IEEE-INNS-ENNS
+  International Joint Conference on Neural Networks. IJCNN 2000. Neural
+  Computing: New Challenges and Perspectives for the New Millennium}, vol.~1,
+  July 2000, pp. 311--316 vol.1.
 
 \bibitem{NIPS2015_5647}
 M.~Courbariaux, Y.~Bengio, and J.-P. David, ``Binaryconnect: Training deep
@@ -116,6 +119,17 @@ R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
   through harnessing fpga capabilities,'' in \emph{2019 International
   Conference on Field-Programmable Technology (ICFPT)}, Dec 2019, pp. 395--398.
 
+\bibitem{7460958}
+J.~M. Danilo~{Vargas}, ``Spectrum-diverse neuroevolution with unified neural
+  models,'' \emph{IEEE Transactions on Neural Networks and Learning Systems},
+  vol.~28, no.~8, pp. 1759--1773, Aug 2017.
+
+\bibitem{10.1007/3-540-61108-8_27}
+T.~B{\"a}ck, ``Evolution strategies: An alternative evolutionary algorithm,''
+  in \emph{Artificial Evolution}, J.-M. Alliot, E.~Lutton, E.~Ronald,
+  M.~Schoenauer, and D.~Snyers, Eds.\hskip 1em plus 0.5em minus 0.4em\relax
+  Berlin, Heidelberg: Springer Berlin Heidelberg, 1996, pp. 1--20.
+
 \bibitem{Sher2013NeuroEvol}
 \BIBentryALTinterwordspacing
 G.~I. Sher, \emph{Handbook of Neuroevolution Through Erlang}.\hskip 1em plus
@@ -156,11 +170,6 @@ F.~Gomez, ``Scalable neuroevolution for reinforcement learning,'' in
   \emph{Theory and Practice of Natural Computing}, A.-H. Dediu,
   C.~Mart{\'\i}n-Vide, and B.~Truthe, Eds.\hskip 1em plus 0.5em minus
   0.4em\relax Berlin, Heidelberg: Springer Berlin Heidelberg, 2012, pp. 27--29.
-
-\bibitem{7460958}
-J.~M. Danilo~{Vargas}, ``Spectrum-diverse neuroevolution with unified neural
-  models,'' \emph{IEEE Transactions on Neural Networks and Learning Systems},
-  vol.~28, no.~8, pp. 1759--1773, Aug 2017.
 
 \bibitem{8590945}
 Y.~{Zhu}, D.~V. {Vargas}, and K.~{Sakurai}, ``Neural cryptography based on the
@@ -204,6 +213,21 @@ R.~{Valencia}, C.~{Sham}, and O.~{Sinnen}, ``Using neuroevolved binary neural
   Asia Pacific Conference on Circuits and Systems (APCCAS)}, Nov 2019, pp.
   301--304.
 
+\bibitem{7033335}
+O.~P. Patel and A.~Tiwari, ``Quantum inspired binary neural network
+  algorithm,'' in \emph{2014 International Conference on Information
+  Technology}, Dec 2014, pp. 270--274.
+
+\bibitem{NIPS2016_6573}
+\BIBentryALTinterwordspacing
+I.~Hubara, M.~Courbariaux, D.~Soudry, R.~El-Yaniv, and Y.~Bengio, ``Binarized
+  neural networks,'' in \emph{Advances in Neural Information Processing Systems
+  29}, D.~D. Lee, M.~Sugiyama, U.~V. Luxburg, I.~Guyon, and R.~Garnett,
+  Eds.\hskip 1em plus 0.5em minus 0.4em\relax Curran Associates, Inc., 2016,
+  pp. 4107--4115. [Online]. Available:
+  \url{http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Han:2016:EEI:3001136.3001163}
 \BIBentryALTinterwordspacing
 S.~Han, X.~Liu, H.~Mao, J.~Pu, A.~Pedram, M.~A. Horowitz, and W.~J. Dally,
@@ -213,6 +237,11 @@ S.~Han, X.~Liu, H.~Mao, J.~Pu, A.~Pedram, M.~A. Horowitz, and W.~J. Dally,
   Piscataway, NJ, USA: IEEE Press, 2016, pp. 243--254. [Online]. Available:
   \url{https://doi.org/10.1109/ISCA.2016.30}
 \BIBentrySTDinterwordspacing
+
+\bibitem{Gecco-BiSUNA}
+D.~V.~V. Raul~Valencia, Chiu Wing~Sham, ``Preliminary study of applied binary
+  neural networks for neural cryptography,'' ACM, Ed., vol.~1, no.~20, July
+  2020.
 
 \bibitem{Kung2018}
 \BIBentryALTinterwordspacing
@@ -227,10 +256,38 @@ G.~{Brockman}, V.~{Cheung}, L.~{Pettersson}, J.~{Schneider}, J.~{Schulman},
   J.~{Tang}, and W.~{Zaremba}, ``{OpenAI Gym},'' \emph{arXiv e-prints}, Jun.
   2016.
 
+\bibitem{Mnih:2015aa}
+\BIBentryALTinterwordspacing
+V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~A. Rusu, J.~Veness, M.~G. Bellemare,
+  A.~Graves, M.~Riedmiller, A.~K. Fidjeland, G.~Ostrovski, S.~Petersen,
+  C.~Beattie, A.~Sadik, I.~Antonoglou, H.~King, D.~Kumaran, D.~Wierstra,
+  S.~Legg, and D.~Hassabis, ``Human-level control through deep reinforcement
+  learning,'' \emph{Nature}, vol. 518, no. 7540, pp. 529--533, 2015. [Online].
+  Available: \url{https://doi.org/10.1038/nature14236}
+\BIBentrySTDinterwordspacing
+
+\bibitem{gRPCPage}
+\BIBentryALTinterwordspacing
+L.~Foundation. (2020) grpc. [Online]. Available: \url{https://grpc.io}
+\BIBentrySTDinterwordspacing
+
+\bibitem{NectarCloud}
+\BIBentryALTinterwordspacing
+N.~R.~I. for Australia. (2017, Nov) New zealand nectar cloud. [Online].
+  Available:
+  \url{https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{BiSUNAGithub}
 \BIBentryALTinterwordspacing
 R.~Valencia. (2019, Sep) Binary spectrum-diverse unified neuroevolution
   architecture. [Online]. Available: \url{https://github.com/rval735/BiSUNA}
+\BIBentrySTDinterwordspacing
+
+\bibitem{TF-DQNTut}
+\BIBentryALTinterwordspacing
+TensorFlow. Train a deep q network with tf-agents. [Online]. Available:
+  \url{https://www.tensorflow.org/agents/tutorials/1_dqn_tutorial}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Moore-1991-13223}
@@ -262,6 +319,40 @@ blole. (2016) Algorithm on nchain-v0. [Online]. Available:
 \BIBentryALTinterwordspacing
 colinmorris. (2016) Algorithm on duplicatedinput-v0. [Online]. Available:
   \url{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{5607329}
+A.~Gomperts, A.~Ukil, and F.~Zurfluh, ``Development and implementation of
+  parameterized fpga-based general purpose neural networks for online
+  applications,'' \emph{IEEE Transactions on Industrial Informatics}, vol.~7,
+  no.~1, pp. 78--89, Feb 2011.
+
+\bibitem{Zhang:2015:OFA:2684746.2689060}
+\BIBentryALTinterwordspacing
+C.~Zhang, P.~Li, G.~Sun, Y.~Guan, B.~Xiao, and J.~Cong, ``Optimizing fpga-based
+  accelerator design for deep convolutional neural networks,'' in
+  \emph{Proceedings of the 2015 ACM/SIGDA International Symposium on
+  Field-Programmable Gate Arrays}, ser. FPGA '15.\hskip 1em plus 0.5em minus
+  0.4em\relax New York, NY, USA: ACM, 2015, pp. 161--170. [Online]. Available:
+  \url{http://doi.acm.org/10.1145/2684746.2689060}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Zhao:2017:ABC:3020078.3021741}
+\BIBentryALTinterwordspacing
+R.~Zhao, W.~Song, W.~Zhang, T.~Xing, J.-H. Lin, M.~Srivastava, R.~Gupta, and
+  Z.~Zhang, ``Accelerating binarized convolutional neural networks with
+  software-programmable fpgas,'' in \emph{Proceedings of the 2017 ACM/SIGDA
+  International Symposium on Field-Programmable Gate Arrays}, ser. FPGA
+  '17.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: ACM, 2017, pp.
+  15--24. [Online]. Available: \url{http://doi.acm.org/10.1145/3020078.3021741}
+\BIBentrySTDinterwordspacing
+
+\bibitem{LIANG20181072}
+\BIBentryALTinterwordspacing
+S.~Liang, S.~Yin, L.~Liu, W.~Luk, and S.~Wei, ``Fp-bnn: Binarized neural
+  network on fpga,'' \emph{Neurocomputing}, vol. 275, pp. 1072 -- 1086, 2018.
+  [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0925231217315655}
 \BIBentrySTDinterwordspacing
 
 \bibitem{10.1007/978-3-030-01237-3_23}

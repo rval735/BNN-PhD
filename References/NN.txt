@@ -251,3 +251,12 @@ https://papers.nips.cc/paper/8304-unsupervised-learning-of-object-structure-and-
 Some studies in machine learning using the game of checkers
 https://dl.acm.org/doi/10.1147/rd.33.0210
 http://www2.stat.duke.edu/~sayan/R_stuff/Datamatters.key/Data/samuel_1959_B-95.pdf
+
+Comparison and Evaluation of Activation Functions in Term of Gradient Instability in Deep Neural Networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8832578
+
+Batch-normalized recurrent highway networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8296359
+
+Gradient descent in feed-forward networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/857854

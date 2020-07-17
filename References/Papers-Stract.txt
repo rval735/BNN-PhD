@@ -1401,6 +1401,21 @@ Neural network based multi-objective evolutionary algorithm for dynamic workflow
 -
 -
 
+Comparison and Evaluation of Activation Functions in Term of Gradient Instability in Deep Neural Networks
+-
+-
+-
+
+Batch-normalized recurrent highway networks
+-
+-
+-
+
+Gradient descent in feed-forward networks
+-
+-
+-
+
 < NN
 
 -------> Decentralized
@@ -1546,6 +1561,11 @@ Generative Adversarial Nets
 -
 
 Everybody’s Talkin’: Let Me Talk as You Want
+-
+-
+-
+
+Frame Difference Generative Adversarial Networks- Clearer Contour Video Generating
 -
 -
 -

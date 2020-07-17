@@ -72,3 +72,6 @@ papers.nips.cc/paper/5423-generative-adversarial-nets
 
 Everybody’s Talkin’: Let Me Talk as You Want
 https://arxiv.org/abs/2001.05201
+
+Frame Difference Generative Adversarial Networks- Clearer Contour Video Generating
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8951676
