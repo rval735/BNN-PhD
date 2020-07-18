@@ -278,10 +278,10 @@ N.~R.~I. for Australia. (2017, Nov) New zealand nectar cloud. [Online].
   \url{https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{BiSUNAGithub}
+\bibitem{BiSUNAOCLGithub}
 \BIBentryALTinterwordspacing
-R.~Valencia. (2019, Sep) Binary spectrum-diverse unified neuroevolution
-  architecture. [Online]. Available: \url{https://github.com/rval735/BiSUNA}
+R.~Valencia. (2019, Dec) Binary spectrum-diverse unified neuroevolution
+  architecture. [Online]. Available: \url{github.com/rval735/bisunaocl}
 \BIBentrySTDinterwordspacing
 
 \bibitem{TF-DQNTut}
@@ -353,22 +353,6 @@ S.~Liang, S.~Yin, L.~Liu, W.~Luk, and S.~Wei, ``Fp-bnn: Binarized neural
   network on fpga,'' \emph{Neurocomputing}, vol. 275, pp. 1072 -- 1086, 2018.
   [Online]. Available:
   \url{http://www.sciencedirect.com/science/article/pii/S0925231217315655}
-\BIBentrySTDinterwordspacing
-
-\bibitem{10.1007/978-3-030-01237-3_23}
-D.~Zhang, J.~Yang, D.~Ye, and G.~Hua, ``Lq-nets: Learned quantization for
-  highly accurate and compact deep neural networks,'' in \emph{Computer Vision
-  -- ECCV 2018}, V.~Ferrari, M.~Hebert, C.~Sminchisescu, and Y.~Weiss,
-  Eds.\hskip 1em plus 0.5em minus 0.4em\relax Cham: Springer International
-  Publishing, 2018, pp. 373--390.
-
-\bibitem{Morse:2016:SEO:2908812.2908916}
-\BIBentryALTinterwordspacing
-G.~Morse and K.~O. Stanley, ``Simple evolutionary optimization can rival
-  stochastic gradient descent in neural networks,'' in \emph{Proceedings of the
-  Genetic and Evolutionary Computation Conference 2016}, ser. GECCO '16.\hskip
-  1em plus 0.5em minus 0.4em\relax New York, NY, USA: ACM, 2016, pp. 477--484.
-  [Online]. Available: \url{http://doi.acm.org/10.1145/2908812.2908916}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
