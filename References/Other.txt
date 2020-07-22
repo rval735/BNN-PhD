@@ -49,3 +49,10 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11423461_14
 
 Computation of the normalized cross-correlation by fast Fourier transform
 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0203434
+
+NCOR- An FPGA-Friendly Nonblocking Data Cache for Soft Processors with Runahead Execution
+https://www.hindawi.com/journals/ijrc/2012/915178/
+https://www.eecg.utoronto.ca/~moshovos/research/NCOR.pdf
+
+A Multiprocessor Architecture with an Omega Network for the Massively Parallel Model GCA
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-03138-0_11

@@ -68,6 +68,74 @@
     \field{year}{2018}
   \endentry
 
+  \entry{7154838}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=AS}{%
+         family={{Ahish}},
+         familyi={A\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KYBN}{%
+         family={{Kumar}},
+         familyi={K\bibinitperiod},
+         given={Y.\bibnamedelima B.\bibnamedelima N.},
+         giveni={Y\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={{Sharma}},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=VMH}{%
+         family={{Vasantha}},
+         familyi={V\bibinitperiod},
+         given={M.\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{NN; MAC; digital signal processing chips;logic design;multiplying
+  circuits;high-performance multiply-accumulate computation unit design;digital
+  signal processing;DSP;MAC unit;partial-product reduction
+  block;PPRB;multiplier implementation;multibit adder blocks;delay
+  reduction;power consumption reduction;area requirement
+  reduction;Adders;Delays;Digital signal processing;Computer
+  architecture;Computers;Consumer electronics;Carry-lookahead adder;brent-kung
+  adder;wallace tree;booth multiplier;multiply-accumulate unit}
+    \strng{namehash}{AS+1}
+    \strng{fullhash}{ASKYBNSDVMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    In Digital Signal Processing (DSP), Multiply-Accumulate Computation (MAC)
+  unit plays a very important role and lies in the critical path. Multiplier is
+  one of the most important block in MAC unit. The overall performance of the
+  MAC unit depends on the resources used by the multiplier. Therefore, this
+  paper describes the design of a Partial Product Reduction Block (PPRB) that
+  is used in the implementation of multiplier having better area, delay and
+  power performances. PPRB reduces the partial products row wise by using
+  different multi-bit adder blocks instead of conventional coloumn wise
+  reduction. MAC unit consisting of the multiplier realized using the proposed
+  partial product reduction technique has a delay reduction of 46%, power
+  consumption is reduced by 39% and area requirement is reduced by 17% when
+  compared to MAC unit realised using conventional multiplier architecture.%
+    }
+    \field{booktitle}{2015 IEEE International Advance Computing Conference
+  (IACC)}
+    \verb{doi}
+    \verb 10.1109/IADCC.2015.7154838
+    \endverb
+    \field{pages}{915\bibrangedash 918}
+    \field{title}{Design of high performance Multiply-Accumulate Computation
+  unit}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8226999}{article}{}
     \name{author}{11}{}{%
       {{hash=AK}{%
@@ -987,6 +1055,95 @@
     \field{year}{2018}
   \endentry
 
+  \entry{8641739}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=DS}{%
+         family={{Dey}},
+         familyi={D\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={{Li}},
+         familyi={L\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={{Kundu}},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={{Huang}},
+         familyi={H\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=CKM}{%
+         family={{Chugg}},
+         familyi={C\bibinitperiod},
+         given={K.\bibnamedelima M.},
+         giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BPA}{%
+         family={{Beerel}},
+         familyi={B\bibinitperiod},
+         given={P.\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA-NN, Training, field programmable gate arrays;neural
+  nets;reconfigurable architectures;inference;network connectivity;structured
+  sparsity;computational requirements;edge-processing;parallelization;training
+  time;datasets;complexity reduction;network hyperparameters;structures
+  on-chip;Artix-7 FPGA;sparse neural network training;parallel
+  architecture;reconfigurable architecture;sparse neural networks;on-chip
+  training;pipelining;reconfigurability;parallel FPGA
+  implementation;Junctions;Training;Hardware;Neurons;Field programmable gate
+  arrays;Artificial neural networks;Computer architecture;Machine
+  learning;Neural networks;Sparse neural networks;FPGA
+  Training;Parallelism;Pipelining}
+    \strng{namehash}{DS+1}
+    \strng{fullhash}{DSCDLZKSHKCKMBPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    This paper describes the development of an FPGA implementation of a
+  parallel and reconfigurable architecture for sparse neural networks, capable
+  of on-chip training and inference. The network connectivity uses
+  pre-determined, structured sparsity to significantly reduce complexity by
+  lowering memory and computational requirements. The architecture uses a
+  notion of edge-processing, leading to efficient pipelining and
+  parallelization. Moreover, the device can be reconfigured to trade off
+  resource utilization with training time to fit networks and datasets of
+  varying sizes. The combined effects of complexity reduction and easy
+  reconfigurability enable greater exploration of network hyperparameters and
+  structures on-chip. As proof of concept, we show implementation results on an
+  Artix-7 FPGA.%
+    }
+    \field{booktitle}{2018 International Conference on ReConFigurable Computing
+  and FPGAs (ReConFig)}
+    \verb{doi}
+    \verb 10.1109/RECONFIG.2018.8641739
+    \endverb
+    \field{issn}{2640-0472}
+    \field{pages}{1\bibrangedash 4}
+    \field{title}{A Highly Parallel FPGA Implementation of Sparse Neural
+  Network Training}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8394726}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=FY}{%
@@ -1111,6 +1268,100 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{8533530}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=GT}{%
+         family={{Geng}},
+         familyi={G\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={{Wang}},
+         familyi={W\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={{Sanaullah}},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YC}{%
+         family={{Yang}},
+         familyi={Y\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PR}{%
+         family={{Patel}},
+         familyi={P\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={{Herbordt}},
+         familyi={H\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA-NN, training, CNN, convolutional neural nets;field programmable
+  gate arrays;logic design;random-access storage;resource allocation;BRAM
+  utilization;fine-grained pipelined manner;inter-FPGA
+  bandwidth;deeply-pipelined FPGA clusters;FPGA-based CNN accelerators;off-chip
+  memory bottlenecks;multiFPGA designs;CNN training logic;energy-efficient
+  training;DSP slice utilization;convolutional neural
+  networks;Microsoft;resource utilization;multiple FPGA;RTL implementation;CNN
+  weight allocation;weight load balancing;cloud computing service
+  providers;Amazon;Alibaba;FPDeep scalable framework;Field programmable gate
+  arrays;Training;Graphics processing units;Parallel processing;Load
+  management;Resource management;System-on-chip;CNN Training;FPGA Cluster;High
+  Performance Computing}
+    \strng{namehash}{GT+1}
+    \strng{fullhash}{GTWTSAYCPRHM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    To improve flexibility and energy efficiency of Convolutional Neural
+  Networks, a number of cloud computing service providers-including Microsoft,
+  Amazon, and Alibaba-are using FPGA-based CNN accelerators. However, the
+  growing size and complexity of neural networks, coupled with communication
+  and off-chip memory bottlenecks, make it increasingly difficult for
+  multi-FPGA designs to achieve high resource utilization and performance,
+  especially when training. In this work, we present new results for a scalable
+  framework, FPDeep, which helps users efficiently map CNN training logic to
+  multiple FPGAs and automatically generates the resulting RTL implementation.
+  FPDeep is equipped with two mechanisms to facilitate high-performance and
+  energy-efficient training. First, FPDeep improves DSP slice utilization
+  across FPGAs by balancing workload using dedicated partition and mapping
+  strategies. Second, only on-chip memory is used in the CONV layers: a) FPDeep
+  balances CNN weight allocation among FPGAs to improve BRAM utilization; b)
+  training of CNNs is executed in a fine-grained pipelined manner, minimizing
+  the time features need to be cached while waiting for back-propagation
+  leading to a reduced storage demand. We evaluate our framework by training
+  AlexNet, VGG-16, and VGG-19. Experimental results show FPDeep has good
+  scalability to a large number of FPGAs, with the limiting factor being the
+  inter-FPGA bandwidth. With 6 transceivers per FPGA, FPDeep shows linearity up
+  to 83 FPGAs. FPDeep provides, on average, 6.36x higher energy efficiency than
+  GPU servers.%
+    }
+    \field{booktitle}{2018 28th International Conference on Field Programmable
+  Logic and Applications (FPL)}
+    \verb{doi}
+    \verb 10.1109/FPL.2018.00074
+    \endverb
+    \field{issn}{1946-1488}
+    \field{pages}{394\bibrangedash 3944}
+    \field{title}{A Framework for Acceleration of CNN Training on
+  Deeply-Pipelined FPGA Clusters with Work and Weight Load Balancing}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8457633}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=GM}{%
@@ -1174,6 +1425,146 @@
     \field{issn}{2576-2621}
     \field{pages}{57\bibrangedash 64}
     \field{title}{ReBNet: Residual Binarized Neural Network}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{5607329}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GA}{%
+         family={Gomperts},
+         familyi={G\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=UA}{%
+         family={Ukil},
+         familyi={U\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ZF}{%
+         family={Zurfluh},
+         familyi={Z\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{backpropagation;field programmable gate arrays;hardware description
+  languages;multilayer perceptrons;FPGA;VLSI hardware description
+  language;arithmetic operation;artificial neural network;backpropagation
+  multilayer perceptron;fast prototyping;field programmable gate array;general
+  purpose neural network;hardware-based MLP;learning capability;online
+  application;space exploration;Backpropagation;NIR spectra
+  calibration;VHDL;Xilinx FPGA;field programmable gate array (FPGA);hardware
+  implementation;multilayer perceptron;neural network;spectroscopy}
+    \strng{namehash}{GAUAZF1}
+    \strng{fullhash}{GAUAZF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    This paper presents the development and implementation of a generalized
+  backpropagation multilayer perceptron (MLP) architecture described in VLSI
+  hardware description language (VHDL). The development of hardware platforms
+  has been complicated by the high hardware cost and quantity of the arithmetic
+  operations required in online artificial neural networks (ANNs), i.e.,
+  general purpose ANNs with learning capability. Besides, there remains a
+  dearth of hardware platforms for design space exploration, fast prototyping,
+  and testing of these networks. Our general purpose architecture seeks to fill
+  that gap and at the same time serve as a tool to gain a better understanding
+  of issues unique to ANNs implemented in hardware, particularly using field
+  programmable gate array (FPGA). The challenge is thus to find an architecture
+  that minimizes hardware costs, while maximizing performance, accuracy, and
+  parameterization. This work describes a platform that offers a high degree of
+  parameterization, while maintaining generalized network design with
+  performance comparable to other hardware-based MLP implementations.
+  Application of the hardware implementation of ANN with backpropagation
+  learning algorithm for a realistic application is also presented.%
+    }
+    \verb{doi}
+    \verb 10.1109/TII.2010.2085006
+    \endverb
+    \field{issn}{1551-3203}
+    \field{number}{1}
+    \field{pages}{78\bibrangedash 89}
+    \field{title}{Development and Implementation of Parameterized FPGA-Based
+  General Purpose Neural Networks for Online Applications}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE Transactions on Industrial Informatics}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8665777}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={{Haidar}},
+         familyi={H\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={{Tomov}},
+         familyi={T\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={{Dongarra}},
+         familyi={D\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HNJ}{%
+         family={{Higham}},
+         familyi={H\bibinitperiod},
+         given={N.\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{NN; FP16; coprocessors;floating point arithmetic;iterative
+  methods;linear algebra;mathematics computing;tensors;scientific computing
+  applications;artificial intelligence;high-performance computing
+  applications;general HPC problem;dense matrix;double precision
+  solution;FP16-FP64;architecture-specific algorithms;FP16-TC;classical FP16
+  arithmetic;FP32 arithmetic;mixed-precision iterative refinement
+  solvers;low-precision floating-point arithmetic;fast FP16 arithmetic;GPU
+  tensor core;half-precision tensor cores;GEMM accumulation;Graphics processing
+  units;Iterative algorithms;Acceleration;Matrices;FP16 Arithmetic;Half
+  Precision;Mixed Precision Solvers;Iterative Refinement Computation;GPU
+  Computing;Linear Algebra}
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HATSDJHNJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Low-precision floating-point arithmetic is a powerful tool for accelerating
+  scientific computing applications, especially those in artificial
+  intelligence. Here, we present an investigation showing that other
+  high-performance computing (HPC) applications can also harness this power.
+  Specifically, we use the general HPC problem, Ax b, where A is a large dense
+  matrix, and a double precision (FP64) solution is needed for accuracy. Our
+  approach is based on mixed-precision (FP16-FP64) iterative refinement, and we
+  generalize and extend prior advances into a framework, for which we develop
+  architecture-specific algorithms and highly tuned implementations. These new
+  methods show how using half-precision Tensor Cores (FP16-TC) for the
+  arithmetic can provide up to 4× speedup. This is due to the performance
+  boost that the FP16-TC provide as well as to the improved accuracy over the
+  classical FP16 arithmetic that is obtained because the GEMM accumulation
+  occurs in FP32 arithmetic.%
+    }
+    \field{booktitle}{SC18: International Conference for High Performance
+  Computing, Networking, Storage and Analysis}
+    \verb{doi}
+    \verb 10.1109/SC.2018.00050
+    \endverb
+    \field{pages}{603\bibrangedash 613}
+    \field{title}{Harnessing GPU Tensor Cores for Fast FP16 Arithmetic to Speed
+  up Mixed-Precision Iterative Refinement Solvers}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -1344,6 +1735,29 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{HauweiAscend}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=H}{%
+         family={Huawei},
+         familyi={H\bibinitperiod},
+      }}%
+    }
+    \keyw{URL, Huawei, NPU}
+    \strng{namehash}{H1}
+    \strng{fullhash}{H1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Huawei launches Ascend 910, the world's most powerful AI
+  processor, and MindSpore, an all-scenario AI computing framework}
+    \verb{url}
+    \verb https://www.huawei.com/en/news/2019/8/huawei-ascend-910-most-powerful
+    \verb -ai-processor
+    \endverb
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
   \entry{NIPS2016_6573}{incollection}{}
     \name{author}{5}{}{%
       {{hash=HI}{%
@@ -1377,38 +1791,6 @@
          giveni={Y\bibinitperiod},
       }}%
     }
-    \name{editor}{5}{}{%
-      {{hash=LDD}{%
-         family={Lee},
-         familyi={L\bibinitperiod},
-         given={D.\bibnamedelima D.},
-         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Sugiyama},
-         familyi={S\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=LUV}{%
-         family={Luxburg},
-         familyi={L\bibinitperiod},
-         given={U.\bibnamedelima V.},
-         giveni={U\bibinitperiod\bibinitdelim V\bibinitperiod},
-      }}%
-      {{hash=GI}{%
-         family={Guyon},
-         familyi={G\bibinitperiod},
-         given={I.},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=GR}{%
-         family={Garnett},
-         familyi={G\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-    }
     \list{publisher}{1}{%
       {Curran Associates, Inc.}%
     }
@@ -1425,6 +1807,10 @@
     \verb{url}
     \verb http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf
     \endverb
+    \field{annotation}{%
+    Editor: D. D. Lee and M. Sugiyama and U. V. Luxburg and I. Guyon and R.
+  Garnett%
+    }
     \field{year}{2016}
   \endentry
 
@@ -1532,6 +1918,98 @@
     \field{pages}{2276\bibrangedash 2281}
     \field{title}{On the State Space of the Binary Neural Network}
     \field{year}{1988}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8892195}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=KS}{%
+         family={{Kolala Venkataramanaiah}},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={{Ma}},
+         familyi={M\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={{Yin}},
+         familyi={Y\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NE}{%
+         family={{Nurvithadhi}},
+         familyi={N\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={{Dasu}},
+         familyi={D\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CY}{%
+         family={{Cao}},
+         familyi={C\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={{Seo}},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA-NN, training, convolutional neural nets;DRAM chips;field
+  programmable gate arrays;learning (artificial intelligence);program
+  compilers;automatic compiler;FPGA accelerator;convolutional neural
+  networks;embedded platforms;on-device learning;designing flexible training
+  hardware;inference hardware;16-bit fixed-point precision;complete CNN
+  training;forward pass;FP;backward pass;weight update;optimized RTL
+  library;training-specific tasks;RTL compiler;FPGA-synthesizable
+  RTL;user-defined constraints;BP phases;representative CNNs;Intel Stratix 10
+  GX FPGA;hardware architecture;GOPS performance;Training;Field programmable
+  gate arrays;Kernel;Hardware;Libraries;Task analysis;Random access
+  memory;Convolution neural networks, neural network training,
+  back-propagation, hardware accelerator, FPGA}
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSMYYSNEDACYSJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Training of convolutional neural networks (CNNs) on embedded platforms to
+  support on-device learning is earning vital importance in recent days.
+  Designing flexible training hardware is much more challenging than inference
+  hardware, due to design complexity and large computation/memory requirement.
+  In this work, we present an automatic compiler based FPGA accelerator with
+  16-bit fixed-point precision for complete CNN training, including Forward
+  Pass (FP), Backward Pass (BP) and Weight Update (WU). We implemented an
+  optimized RTL library to perform training-specific tasks and developed an RTL
+  compiler to automatically generate FPGA-synthesizable RTL based on
+  user-defined constraints. We present a new cyclic weight storage/access
+  scheme for on-chip BRAM and off-chip DRAM to efficiently implement
+  non-transpose and transpose operations during FP and BP phases, respectively.
+  Representative CNNs for CIFAR-10 dataset are implemented and trained on Intel
+  Stratix 10 GX FPGA using proposed hardware architecture, demonstrating up to
+  479 GOPS performance.%
+    }
+    \field{booktitle}{2019 29th International Conference on Field Programmable
+  Logic and Applications (FPL)}
+    \verb{doi}
+    \verb 10.1109/FPL.2019.00034
+    \endverb
+    \field{issn}{1946-1488}
+    \field{pages}{166\bibrangedash 172}
+    \field{title}{Automatic Compiler Based FPGA Accelerator for CNN Training}
+    \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -1695,6 +2173,76 @@
   'urldate'}
   \endentry
 
+  \entry{7460666}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=LND}{%
+         family={{Lane}},
+         familyi={L\bibinitperiod},
+         given={N.\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={{Bhattacharya}},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={{Georgiev}},
+         familyi={G\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FC}{%
+         family={{Forlivesi}},
+         familyi={F\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={{Kawsar}},
+         familyi={K\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{embedded systems;learning (artificial intelligence);mobile
+  computing;neural nets;sensors;Qualcomm Snapdragon 400;Nvidia Tegra
+  K1;resource constrained embedded platforms;convolutional neural networks;deep
+  neural networks;software accelerator;mobile platforms;resource constrained
+  wearable platforms;computational techniques;computational power;inference
+  accuracies;sensor measurements;DeepX;embedded deep learning;Machine
+  learning;Computational modeling;Mobile communication;Image recognition;Neural
+  networks;Computer architecture;Prototypes}
+    \strng{namehash}{LND+1}
+    \strng{fullhash}{LNDBSGPFCKF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Deep learning has revolutionized the way sensor measurements are
+  interpreted and application of deep learning has seen a great leap in
+  inference accuracies in a number of fields. However, the significant
+  requirement for memory and computational power has hindered the wide scale
+  adoption of these novel computational techniques on resource constrained
+  wearable and mobile platforms. In this demonstration we present DeepX, a
+  software accelerator for efficiently running deep neural networks and
+  convolutional neural networks on resource constrained embedded platforms,
+  e.g., Nvidia Tegra K1 and Qualcomm Snapdragon 400.%
+    }
+    \field{booktitle}{2016 15th ACM/IEEE International Conference on
+  Information Processing in Sensor Networks (IPSN)}
+    \verb{doi}
+    \verb 10.1109/IPSN.2016.7460666
+    \endverb
+    \field{pages}{1\bibrangedash 2}
+    \field{title}{Demonstration Abstract: Accelerating Embedded Deep Learning
+  Using DeepX}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8541786}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=LS}{%
@@ -1803,6 +2351,70 @@
     \field{volume}{284}
     \field{month}{03}
     \field{year}{2013}
+  \endentry
+
+  \entry{10.1145/3154839}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yixing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zichuan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Fengbo},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{CNN-FPGA, BNN, energy efficiency, deep learning, FPGA,
+  high-throughput, convolutional neural network, hardware acceleration, binary
+  neural network, GPU}
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYLZXKYHRF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1145/3154839
+    \endverb
+    \field{issn}{1550-4832}
+    \field{number}{2}
+    \field{title}{A GPU-Outperforming FPGA Accelerator Architecture for Binary
+  Convolutional Neural Networks}
+    \verb{url}
+    \verb https://doi-org.ezproxy.auckland.ac.nz/10.1145/3154839
+    \endverb
+    \field{volume}{14}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
+    \field{month}{07}
+    \field{year}{2018}
   \endentry
 
   \entry{Linnainmaa1976}{article}{}
@@ -1980,6 +2592,108 @@
       {Cambridge, MA, USA}%
     }
     \field{year}{1988}
+  \endentry
+
+  \entry{Omondi:2010:FIN:1941654}{book}{}
+    \name{author}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Publishing Company, Incorporated}%
+    }
+    \keyw{FPGA-NN, ASIC, Book by Publications}
+    \strng{namehash}{OARRJC1}
+    \strng{fullhash}{OARRJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{edition}{1st}
+    \field{isbn}{1441939423, 9781441939425}
+    \field{title}{FPGA Implementations of Neural Networks}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Omondi2006}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bajger},
+         familyi={B\bibinitperiod},
+         given={Mariusz},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \keyw{FPGA-NN, NN, Neurocomputers, Book Chapter}
+    \strng{namehash}{OARRJCBM1}
+    \strng{fullhash}{OARRJCBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    This introductory chapter reviews the basics of artificial-neural-network
+  theory, discusses various aspects of the hardware implementation of neural
+  networks (in both ASIC and FPGA technologies, with a focus on special
+  features of artificial neural networks), and concludes with a brief note on
+  performance-evaluation. Special points are the exploitation of the
+  parallelism inherent in neural networks and the appropriate implementation of
+  arithmetic functions, especially the sigmoid function. With respect to the
+  sigmoid function, the chapter includes a significant contribution.%
+    }
+    \field{booktitle}{FPGA Implementations of Neural Networks}
+    \verb{doi}
+    \verb 10.1007/0-387-28487-7_1
+    \endverb
+    \field{isbn}{978-0-387-28487-3}
+    \field{pages}{1\bibrangedash 36}
+    \field{title}{FPGA Neurocomputers}
+    \verb{url}
+    \verb https://doi.org/10.1007/0-387-28487-7_1
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{year}{2006}
   \endentry
 
   \entry{7033335}{inproceedings}{}
@@ -2261,41 +2975,6 @@
     \field{year}{2016}
   \endentry
 
-  \entry{Gecco-BiSUNA}{article}{}
-    \name{author}{1}{}{%
-      {{hash=RVDVVCWS}{%
-         family={Raul\bibnamedelima Valencia},
-         familyi={R\bibinitperiod\bibinitdelim V\bibinitperiod},
-         suffix={Chiu Wing\bibnamedelima Sham},
-         suffixi={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
-  S\bibinitperiod},
-         given={Danilo Vasconcellos\bibnamedelima Vargas},
-         giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim
-  V\bibinitperiod},
-      }}%
-    }
-    \name{editor}{1}{}{%
-      {{hash=A}{%
-         family={ACM},
-         familyi={A\bibinitperiod},
-      }}%
-    }
-    \keyw{NeuroEvolution, Binary Neural Network, Neurocryptography}
-    \strng{namehash}{RVCWSDVV1}
-    \strng{fullhash}{RVCWSDVV1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{R}
-    \field{sortinithash}{R}
-    \field{number}{20}
-    \field{title}{Preliminary study of applied Binary Neural Networks for
-  Neural Cryptography}
-    \field{volume}{1}
-    \field{journaltitle}{GECCO'20}
-    \field{year}{2020}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
   \entry{8461456}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=SC}{%
@@ -2416,6 +3095,58 @@
     \field{year}{1959}
   \endentry
 
+  \entry{7561676}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SR}{%
+         family={{Sang}},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LQ}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={Q.},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=ZQ}{%
+         family={{Zhang}},
+         familyi={Z\bibinitperiod},
+         given={Q.},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA-NN, cost reduction;field programmable gate arrays;learning
+  (artificial intelligence);microwave devices;FPGA-based acceleration;neural
+  network training;microwave device modeling;model training process;development
+  cost reduction;Training;Field programmable gate arrays;Artificial neural
+  networks;Software;Random access memory;Hardware;neural network;quasi-Newton
+  method;FPGA;hardware acceleration}
+    \strng{namehash}{SRLQZQ1}
+    \strng{fullhash}{SRLQZQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Neural networks (NNs) have been widely used in microwave device modeling.
+  One of the greatest challenges is how to speed up the model training process
+  and reduce the development cost. To address the issue, this paper exploits
+  FPGAs to accelerate NN training. Experimental results demonstrate that the
+  model training time can be reduced by up to 99.1%, compared to the
+  traditional software implementation.%
+    }
+    \field{booktitle}{2016 IEEE MTT-S International Conference on Numerical
+  Electromagnetic and Multiphysics Modeling and Optimization (NEMO)}
+    \verb{doi}
+    \verb 10.1109/NEMO.2016.7561676
+    \endverb
+    \field{pages}{1\bibrangedash 2}
+    \field{title}{FPGA-based acceleration of neural network training}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{6847217}{article}{}
     \name{author}{3}{}{%
       {{hash=SL}{%
@@ -2486,6 +3217,72 @@
   Systems}
     \field{year}{2015}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8594633}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SA}{%
+         family={{Shawahna}},
+         familyi={S\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SSM}{%
+         family={{Sait}},
+         familyi={S\bibinitperiod},
+         given={S.\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=EA}{%
+         family={{El-Maleh}},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA-NN, Deep learning; FPGA; Neural networks; Hardware;
+  Acceleration;Convolution; Adaptable architectures; CNN; deep learning;
+  dynamic reconfiguration; energy-efficient architecture; hardware accelerator;
+  machine learning; neural networks; optimization;parallel computer
+  architecture;reconfigurable computing}
+    \strng{namehash}{SASSMEA1}
+    \strng{fullhash}{SASSMEA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Due to recent advances in digital technologies, and availability of
+  credible data, an area of artificial intelligence, deep learning, has emerged
+  and has demonstrated its ability and effectiveness in solving complex
+  learning problems not possible before. In particular, convolutional neural
+  networks (CNNs) have demonstrated their effectiveness in the image detection
+  and recognition applications. However, they require intensive CPU operations
+  and memory bandwidth that make general CPUs fail to achieve the desired
+  performance levels. Consequently, hardware accelerators that use
+  application-specific integrated circuits, field-programmable gate arrays
+  (FPGAs), and graphic processing units have been employed to improve the
+  throughput of CNNs. More precisely, FPGAs have been recently adopted for
+  accelerating the implementation of deep learning networks due to their
+  ability to maximize parallelism and their energy efficiency. In this paper,
+  we review the recent existing techniques for accelerating deep learning
+  networks on FPGAs. We highlight the key features employed by the various
+  techniques for improving the acceleration performance. In addition, we
+  provide recommendations for enhancing the utilization of FPGAs for CNNs
+  acceleration. The techniques investigated in this paper represent the recent
+  trends in the FPGA-based accelerators of deep learning networks. Thus, this
+  paper is expected to direct the future advances on efficient hardware
+  accelerators and to be useful for deep learning researchers.%
+    }
+    \verb{doi}
+    \verb 10.1109/ACCESS.2018.2890150
+    \endverb
+    \field{pages}{7823\bibrangedash 7859}
+    \field{title}{FPGA-Based Accelerators of Deep Learning Networks for
+  Learning and Classification: A Review}
+    \field{volume}{7}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2019}
   \endentry
 
   \entry{Soudry2014ExpectationBP}{inproceedings}{}
@@ -2698,6 +3495,32 @@
     \field{journaltitle}{Proceedings of the IEEE}
     \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{AppleFaceDetectionURL}{online}{}
+    \name{author}{1}{}{%
+      {{hash=TCVML}{%
+         family={Team},
+         familyi={T\bibinitperiod},
+         given={Computer Vision Machine\bibnamedelima Learning},
+         giveni={C\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \keyw{URL, NPU, Neural engine, Apple, Vision Framework, Face recognition}
+    \strng{namehash}{TCVML1}
+    \strng{fullhash}{TCVML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{An On-device Deep Neural Network for Face Detection}
+    \verb{url}
+    \verb https://machinelearning.apple.com/2017/11/16/face-detection.html
+    \endverb
+    \field{month}{11}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'urldate'}
   \endentry
 
   \entry{7016218}{inproceedings}{}

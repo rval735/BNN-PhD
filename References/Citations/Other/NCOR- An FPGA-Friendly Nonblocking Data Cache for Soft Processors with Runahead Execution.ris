@@ -1,0 +1,17 @@
+TY  - JOUR
+A2  - Prasanna, Viktor K.
+AU  - Aasaraai, Kaveh
+AU  - Moshovos, Andreas
+PY  - 2012
+DA  - 2011/11/29
+TI  - NCOR: An FPGA-Friendly Nonblocking Data Cache for Soft Processors with Runahead Execution
+SP  - 915178
+VL  - 2012
+AB  - Soft processors often use data caches to reduce the gap between processor andmain memory speeds. To achieve high efficiency, simple, blocking caches are used. Such caches are not appropriate for processor designs such as Runahead and out-of-order execution that require nonblocking caches to tolerate main memory latencies. Instead, these processors use non-blocking caches to extract memory level parallelismand improve performance. However, conventional non-blocking cache designs are expensive and slow on FPGAs as they use content-addressable memories (CAMs). Thiswork proposes NCOR, an FPGA-friendly non-blocking cache that exploits the keyproperties of Runahead execution. NCOR does not require CAMs and utilizes smartcache controllers. A 4&#x2009;KB NCOR operates at 329&#x2009;MHz on Stratix III FPGAs while ituses only 270 logic elements. A 32&#x2009;KB NCOR operates at 278&#x2009;Mhz and uses 269 logicelements.
+SN  - 1687-7195
+UR  - https://doi.org/10.1155/2012/915178
+DO  - 10.1155/2012/915178
+JF  - International Journal of Reconfigurable Computing
+PB  - Hindawi Publishing Corporation
+KW  - 
+ER  - 

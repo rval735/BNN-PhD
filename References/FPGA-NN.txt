@@ -69,3 +69,9 @@ https://ieeexplore.ieee.org/document/8594633
 
 Neural Network Based Reinforcement Learning Acceleration on FPGA Platforms
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3039915
+
+A Framework for Acceleration of CNN Training on Deeply-Pipelined FPGA Clusters with Work and Weight Load Balancing
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8533530
+
+Automatic Compiler Based FPGA Accelerator for CNN Training
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8892195

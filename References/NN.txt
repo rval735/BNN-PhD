@@ -260,3 +260,12 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8296359
 
 Gradient descent in feed-forward networks
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/857854
+
+Harnessing GPU Tensor Cores for Fast FP16 Arithmetic to Speed up Mixed-Precision Iterative Refinement Solvers
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8665777
+
+Demonstration Abstract- Accelerating Embedded Deep Learning Using DeepX
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7460666
+
+Design of high performance Multiply-Accumulate Computation unit
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7154838

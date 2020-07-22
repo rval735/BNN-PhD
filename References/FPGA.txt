@@ -72,3 +72,9 @@ https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3174970
 
 Exploring Functional Acceleration of OpenCL on FPGAs and GPUs Through Platform-Independent Optimizations
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-319-78890-6_44
+
+FPGA vs. Multi-core CPUs vs. GPUs- Hands-On Experience with a Sorting Application
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-16233-6_12
+
+Enabling Standalone FPGA Computing
+https://ieeexplore.ieee.org/document/9070311

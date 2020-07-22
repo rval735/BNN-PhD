@@ -451,6 +451,16 @@ Exploring Functional Acceleration of OpenCL on FPGAs and GPUs Through Platform-I
 -
 -
 
+FPGA vs. Multi-core CPUs vs. GPUs- Hands-On Experience with a Sorting Application
+-
+-
+-
+
+Enabling Standalone FPGA Computing
+-
+-
+-
+
 < FPGA
 
 ------> FPGA-NN
@@ -584,6 +594,16 @@ FPGA-based Accelerators of Deep Learning Networks for Learning and Classificatio
 -
 
 Neural Network Based Reinforcement Learning Acceleration on FPGA Platforms
+-
+-
+-
+
+A Framework for Acceleration of CNN Training on Deeply-Pipelined FPGA Clusters with Work and Weight Load Balancing
+-
+-
+-
+
+Automatic Compiler Based FPGA Accelerator for CNN Training
 -
 -
 -
@@ -1412,6 +1432,21 @@ Batch-normalized recurrent highway networks
 -
 
 Gradient descent in feed-forward networks
+-
+-
+-
+
+Harnessing GPU Tensor Cores for Fast FP16 Arithmetic to Speed up Mixed-Precision Iterative Refinement Solvers
+-
+-
+-
+
+Demonstration Abstract- Accelerating Embedded Deep Learning Using DeepX
+-
+-
+-
+
+Design of high performance Multiply-Accumulate Computation unit
 -
 -
 -
@@ -2534,6 +2569,16 @@ Cross-Correlation Properties of Perfect Binary Sequences
 -
 
 Computation of the normalized cross-correlation by fast Fourier transform
+-
+-
+-
+
+NCOR- An FPGA-Friendly Nonblocking Data Cache for Soft Processors with Runahead Execution
+-
+-
+-
+
+A Multiprocessor Architecture with an Omega Network for the Massively Parallel Model GCA
 -
 -
 -
