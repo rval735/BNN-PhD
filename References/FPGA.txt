@@ -78,3 +78,8 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-16233
 
 Enabling Standalone FPGA Computing
 https://ieeexplore.ieee.org/document/9070311
+
+An FPGA Design Flow for Reconfigurable Network-Based Multi-Processor Systems on Chip
+https://ieeexplore.ieee.org/document/4211782
+http://www.es.ele.tue.nl/premadona/publications/KHHC07.pdf
+

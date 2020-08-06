@@ -461,6 +461,11 @@ Enabling Standalone FPGA Computing
 -
 -
 
+An FPGA Design Flow for Reconfigurable Network-Based Multi-Processor Systems on Chip
+-
+-
+-
+
 < FPGA
 
 ------> FPGA-NN
@@ -1451,6 +1456,11 @@ Design of high performance Multiply-Accumulate Computation unit
 -
 -
 
+Greedy Layer-Wise Training of Deep Networks
+-
+-
+-
+
 < NN
 
 -------> Decentralized
@@ -2300,6 +2310,11 @@ Using Neuroevolved Binary Neural Networks to solve reinforcement learning enviro
 -
 -
 
+Network Search for Binary Networks
+-
+-
+-
+
 < BNN
 
 ------> Crypto
@@ -2925,6 +2940,50 @@ Improving Exploration in Evolution Strategies for Deep Reinforcement Learning vi
 -
 
 Efficient evolution of neural network topologies
+-
+-
+-
+
+-
+-
+-
+
+Evolving the Topology and the Weights of Neural Networks Using a Dual Representation
+-
+-
+-
+
+NeuroEvolution- Evolving Heterogeneous Artificial Neural Networks
+-
+-
+-
+
+MBEANN- Mutation-Based Evolving Artificial Neural Networks
+-
+-
+-
+
+Incremental evolution of neural network architectures for adaptive behavior
+-
+-
+-
+
+Fast learning neural networks using Cartesian genetic programming
+-
+-
+-
+
+An evolutionary algorithm that constructs recurrent neural networks
+-
+-
+-
+
+Evolving Complex Neuro-Controllers with Interactively Constrained Neuro-Evolution
+-
+-
+-
+
+The Importance of Topology Evolution in NeuroEvolution- A Case Study Using Cartesian Genetic Programming of Artificial Neural Networks
 -
 -
 -

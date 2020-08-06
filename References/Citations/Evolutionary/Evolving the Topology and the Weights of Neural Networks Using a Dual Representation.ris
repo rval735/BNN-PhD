@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Pujol, João Carlos Figueira
+AU  - Poli, Riccardo
+PY  - 1998
+DA  - 1998/01/01
+TI  - Evolving the Topology and the Weights of Neural Networks Using a Dual Representation
+JO  - Applied Intelligence
+SP  - 73
+EP  - 84
+VL  - 8
+IS  - 1
+AB  - Evolutionary computation is a class of global search techniques based on the learning process of a population of potential solutions to a given problem, that has been successfully applied to a variety of problems. In this paper a new approach to the construction of neural networks based on evolutionary computation is presented. A linear chromosome combined to a graph representation of the network are used by genetic operators, which allow the evolution of the architecture and the weights simultaneously without the need of local weight optimization. This paper describes the approach, the operators and reports results of the application of this technique to several binary classification problems.
+SN  - 1573-7497
+UR  - https://doi.org/10.1023/A:1008272615525
+DO  - 10.1023/A:1008272615525
+ID  - Pujol1998
+ER  - 

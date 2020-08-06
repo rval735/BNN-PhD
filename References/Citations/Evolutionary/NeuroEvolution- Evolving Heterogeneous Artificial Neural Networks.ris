@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Turner, Andrew James
+AU  - Miller, Julian Francis
+PY  - 2014
+DA  - 2014/11/01
+TI  - NeuroEvolution: Evolving Heterogeneous Artificial Neural Networks
+JO  - Evolutionary Intelligence
+SP  - 135
+EP  - 154
+VL  - 7
+IS  - 3
+AB  - NeuroEvolution is the application of Evolutionary Algorithms to the training of Artificial Neural Networks. Currently the vast majority of NeuroEvolutionary methods create homogeneous networks of user defined transfer functions. This is despite NeuroEvolution being capable of creating heterogeneous networks where each neuron’s transfer function is not chosen by the user, but selected or optimised during evolution. This paper demonstrates how NeuroEvolution can be used to select or optimise each neuron’s transfer function and empirically shows that doing so significantly aids training. This result is important as the majority of NeuroEvolutionary methods are capable of creating heterogeneous networks using the methods described.
+SN  - 1864-5917
+UR  - https://doi.org/10.1007/s12065-014-0115-5
+DO  - 10.1007/s12065-014-0115-5
+ID  - Turner2014
+ER  - 

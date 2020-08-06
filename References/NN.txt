@@ -269,3 +269,7 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7460666
 
 Design of high performance Multiply-Accumulate Computation unit
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7154838
+
+Greedy Layer-Wise Training of Deep Networks
+https://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks 
+

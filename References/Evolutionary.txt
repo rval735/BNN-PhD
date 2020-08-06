@@ -186,3 +186,27 @@ https://dl.acm.org/citation.cfm?id=3327410
 
 Efficient evolution of neural network topologies
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/1004508/
+
+Evolving the Topology and the Weights of Neural Networks Using a Dual Representation
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1023/A:1008272615525#citeas
+
+NeuroEvolution- Evolving Heterogeneous Artificial Neural Networks
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/s12065-014-0115-5
+
+MBEANN- Mutation-Based Evolving Artificial Neural Networks
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-540-74913-4_94
+
+Incremental evolution of neural network architectures for adaptive behavior
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.147.798&rep=rep1&type=pdf
+https://dblp.org/rec/bibtex/conf/esann/CliffHH93
+
+Fast learning neural networks using Cartesian genetic programming
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.568.8562&rep=rep1&type=pdf
+https://dl.acm.org/doi/10.1016/j.neucom.2013.04.005
+
+An evolutionary algorithm that constructs recurrent neural networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/265960
+https://dl.acm.org/doi/10.1109/72.265960
+
+Evolving Complex Neuro-Controllers with Interactively Constrained Neuro-Evolution
+https://repositorium.ub.uni-osnabrueck.de/handle/urn:nbn:de:gbv:700-2012101710370

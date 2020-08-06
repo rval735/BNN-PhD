@@ -366,3 +366,5 @@ http://www.cs.toronto.edu/~lillanes/papers/ToroIcarteICCMB-cp2019-training-prepr
 Using Neuroevolved Binary Neural Networks to solve reinforcement learning environments
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8953134
 
+Network Search for Binary Networks
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8852036
