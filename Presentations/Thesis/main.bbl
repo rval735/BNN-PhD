@@ -17,6 +17,41 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{2016arXiv161006918A}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AM}{%
+         family={{Abadi}},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ADG}{%
+         family={{Andersen}},
+         familyi={A\bibinitperiod},
+         given={D.\bibnamedelima G.},
+         giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \keyw{DCGAN; Computer Science - Cryptography and Security, Computer Science
+  - Machine Learning, Cryptonet}
+    \strng{namehash}{AMADG1}
+    \strng{fullhash}{AMADG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{eprint}
+    \verb 1610.06918
+    \endverb
+    \field{title}{{Learning to Protect Communications with Adversarial Neural
+  Cryptography}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{cs.CR}
+    \field{month}{10}
+    \field{year}{2016}
+  \endentry
+
   \entry{7154838}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=AS}{%
@@ -83,6 +118,67 @@
   unit}
     \field{year}{2015}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{10.1007/978-3-642-34500-5_75}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=AMM}{%
+         family={Alani},
+         familyi={A\bibinitperiod},
+         given={Mohammed\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \name{editor}{4}{}{%
+      {{hash=HT}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Tingwen},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Zhigang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Chuandong},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LCS}{%
+         family={Leung},
+         familyi={L\bibinitperiod},
+         given={Chi\bibnamedelima Sing},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Book, Neurocryptography, DES,}
+    \strng{namehash}{AMM1}
+    \strng{fullhash}{AMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    In this paper, we apply a new cryptanalytic attack on DES and Triple-DES.
+  The implemented attack is a known-plaintext attack based on neural networks.
+  In this attack we trained a neural network to retrieve plaintext from
+  ciphertext without retrieving the key used in encryption.%
+    }
+    \field{booktitle}{Neural Information Processing}
+    \field{isbn}{978-3-642-34500-5}
+    \field{pages}{637\bibrangedash 646}
+    \field{title}{Neuro-Cryptanalysis of DES and Triple-DES}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2012}
   \endentry
 
   \entry{8226999}{article}{}
@@ -353,6 +449,34 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{NectarCloud}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=fANRI}{%
+         prefix={for},
+         prefixi={f\bibinitperiod},
+         family={Australia},
+         familyi={A\bibinitperiod},
+         given={National Research\bibnamedelima Infraestructure},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  I\bibinitperiod},
+      }}%
+    }
+    \keyw{Nectar, Cloud, New Zealand, Research}
+    \strng{namehash}{ANRIf1}
+    \strng{fullhash}{ANRIf1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{New Zealand Nectar Cloud}
+    \verb{url}
+    \verb https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/
+    \endverb
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month' \item Invalid format of field
+  'urldate'}
+  \endentry
+
   \entry{NIPS2006_3048}{incollection}{}
     \name{author}{4}{}{%
       {{hash=BY}{%
@@ -463,6 +587,146 @@
     \field{volume}{5}
     \field{year}{2003}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{6215974}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BD}{%
+         family={{Bhargavaram}},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PMGK}{%
+         family={{Pillai}},
+         familyi={P\bibinitperiod},
+         given={M.\bibnamedelima G.\bibnamedelima K.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+    }
+    \keyw{Other, SUNA, circuit switching;CMOS logic circuits;flip-flops;logic
+  design;low-power electronics;NAND circuits;fow power dual edge triggered
+  flip-flop;digital circuit;power consumption;synchronous circuit;pulse
+  generator;power dissipation reduction;dual edge static pulsed flip-flop;dual
+  edge trigger sense amplifier flip-flop;dual edge trigger NAND keeper
+  flip-flop keeper technique;keeper transistor width;conditional
+  switching;circuit design;CMOS process;power 347 muW;voltage 1.8 V;size 0.18
+  mum;Switches;Flip-flops;Clocks;MOS devices;Topology;Dual pulse
+  generator;sense amplifier flip-flop;Static pulsed flip-flop;NAND keeper
+  flip-flop;Pulsed flip-flop}
+    \strng{namehash}{BDPMGK1}
+    \strng{fullhash}{BDPMGK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Flip-flops are critical timing elements in digital circuits which have a
+  large impact on circuit speed and power consumption. The performance of the
+  Flip-Flop is an important element to determine the performance of the whole
+  synchronous circuit. The pulse generator can be shared among many flip-flops
+  to reduce the power dissipation. Firstly, in the Dual edge static pulsed
+  flip-flop suffers from high leakage current leads to more power consumption.
+  Secondly, Dual edge trigger sense amplifier flip-flop having unnecessary
+  transitions which causes power consumption. Thirdly, Dual edge trigger NAND
+  keeper flip-flop keeper technique is used to pull up the voltage to VDD
+  having full swing and this keeper transistor width is high and which consumes
+  more power. The power consumption of the Dual edge nand keeper flip-flop is
+  347uW. Lastly, Dual edge trigger pulsed flip-flop is introduced by employing
+  a technique called conditional switching for further power reduction. The
+  circuits are designed in a 0.18-um standard CMOS process with a 1.8V power
+  supply voltage.%
+    }
+    \field{booktitle}{IEEE-International Conference On Advances In Engineering,
+  Science And Management (ICAESM -2012)}
+    \field{pages}{63\bibrangedash 67}
+    \field{title}{Low power dual edge triggered flip-flop}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{nchainv0OpenAI}{online}{}
+    \name{author}{1}{}{%
+      {{hash=b}{%
+         family={blole},
+         familyi={b\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, OpenAI Gym, SUNA}
+    \strng{namehash}{b1}
+    \strng{fullhash}{b1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Algorithm on NChain-v0}
+    \verb{url}
+    \verb https://gym.openai.com/evaluations/eval_8KB72MuwRqqdbRG4UMs1w/
+    \endverb
+    \field{year}{2016}
+  \endentry
+
+  \entry{2016arXiv160601540B}{article}{}
+    \name{author}{7}{}{%
+      {{hash=BG}{%
+         family={{Brockman}},
+         familyi={B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CV}{%
+         family={{Cheung}},
+         familyi={C\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={{Pettersson}},
+         familyi={P\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={{Schneider}},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={{Schulman}},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={{Tang}},
+         familyi={T\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={{Zaremba}},
+         familyi={Z\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \keyw{Other, OpenAI, Machine Learning, Artificial Intelligence}
+    \strng{namehash}{BG+1}
+    \strng{fullhash}{BGCVPLSJSJTJZW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{eprint}
+    \verb 1606.01540
+    \endverb
+    \field{title}{{OpenAI Gym}}
+    \field{journaltitle}{arXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{month}{06}
+    \field{year}{2016}
   \endentry
 
   \entry{5726804}{inproceedings}{}
@@ -677,6 +941,27 @@
     \verb f
     \endverb
     \field{year}{1993}
+  \endentry
+
+  \entry{duplicatedOpenAIGym}{online}{}
+    \name{author}{1}{}{%
+      {{hash=c}{%
+         family={colinmorris},
+         familyi={c\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, OpenAI Gym, Reinforcement Learning, BiSUNA}
+    \strng{namehash}{c1}
+    \strng{fullhash}{c1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Algorithm on DuplicatedInput-v0}
+    \verb{url}
+    \verb https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/
+    \endverb
+    \field{year}{2016}
   \endentry
 
   \entry{Conti:2018:IEE:3327345.3327410}{inproceedings}{}
@@ -1047,6 +1332,120 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{NIPS2015_5872}{incollection}{}
+    \name{author}{6}{}{%
+      {{hash=FM}{%
+         family={Feurer},
+         familyi={F\bibinitperiod},
+         given={Matthias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=EK}{%
+         family={Eggensperger},
+         familyi={E\bibinitperiod},
+         given={Katharina},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Springenberg},
+         familyi={S\bibinitperiod},
+         given={Jost},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Blum},
+         familyi={B\bibinitperiod},
+         given={Manuel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hutter},
+         familyi={H\bibinitperiod},
+         given={Frank},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LND}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={N.\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LDD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={D.\bibnamedelima D.},
+         giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sugiyama},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \keyw{DNN, AutoML, NAS}
+    \strng{namehash}{FM+1}
+    \strng{fullhash}{FMKAEKSJBMHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Advances in Neural Information Processing Systems 28}
+    \field{pages}{2962\bibrangedash 2970}
+    \field{title}{Efficient and Robust Automated Machine Learning}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/5872-efficient-and-robust-automated-machi
+    \verb ne-learning.pdf
+    \endverb
+    \field{year}{2015}
+  \endentry
+
+  \entry{gRPCPage}{online}{}
+    \name{author}{1}{}{%
+      {{hash=FL}{%
+         family={Foundation},
+         familyi={F\bibinitperiod},
+         given={Linux},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{URL}
+    \strng{namehash}{FL1}
+    \strng{fullhash}{FL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{gRPC}
+    \verb{url}
+    \verb https://grpc.io
+    \endverb
+    \field{year}{2020}
+  \endentry
+
   \entry{616215}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=FN}{%
@@ -1272,6 +1671,85 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Gomez-Pulido2011}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GPJA}{%
+         family={Gomez-Pulido},
+         familyi={G\bibinithyphendelim P\bibinitperiod},
+         given={Juan\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VRMA}{%
+         family={Vega-Rodriguez},
+         familyi={V\bibinithyphendelim R\bibinitperiod},
+         given={Miguel\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SPJM}{%
+         family={Sanchez-Perez},
+         familyi={S\bibinithyphendelim P\bibinitperiod},
+         given={Juan\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PMS}{%
+         family={Priem-Mendes},
+         familyi={P\bibinithyphendelim M\bibinitperiod},
+         given={Silvio},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CV}{%
+         family={Carreira},
+         familyi={C\bibinitperiod},
+         given={Vitor},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary, FPGA, GPU, floating-point}
+    \strng{namehash}{GPJA+1}
+    \strng{fullhash}{GPJAVRMASPJMPMSCV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Many large combinatorial optimization problems tackled with evolutionary
+  algorithms often require very high computational times, usually due to the
+  fitness evaluation. This fact forces programmers to use clusters of
+  computers, a computational solution very useful for running applications of
+  intensive calculus but having a high acquisition price and operation cost,
+  mainly due to the Central Processing Unit (CPU) power consumption and
+  refrigeration devices. A low-cost and high-performance alternative comes from
+  reconfigurable computing, a hardware technology based on Field Programmable
+  Gate Array devices (FPGAs). The main objective of the work presented in this
+  paper is to compare implementations on FPGAs and CPUs of different fitness
+  functions in evolutionary algorithms in order to study the performance of the
+  floating-point arithmetic in FPGAs and CPUs that is often present in the
+  optimization problems tackled by these algorithms. We have taken advantage of
+  the parallelism at chip-level of FPGAs pursuing the acceleration of the
+  fitness functions (and consequently, of the evolutionary algorithms) and
+  showing the parallel scalability to reach low cost, low power and high
+  performance computational solutions based on FPGA. Finally, the recent
+  popularity of GPUs as computational units has moved us to introduce these
+  devices in our performance comparisons. We analyze performance in terms of
+  computation times and economic cost.%
+    }
+    \verb{doi}
+    \verb 10.1007/s10710-011-9137-2
+    \endverb
+    \field{issn}{1573-7632}
+    \field{number}{4}
+    \field{pages}{403\bibrangedash 427}
+    \field{title}{Accelerating floating-point fitness functions in evolutionary
+  algorithms: a FPGA-CPU-GPU performance comparison}
+    \verb{url}
+    \verb https://doi.org/10.1007/s10710-011-9137-2
+    \endverb
+    \field{volume}{12}
+    \field{journaltitle}{Genetic Programming and Evolvable Machines}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{5607329}{article}{}
     \name{author}{3}{}{%
       {{hash=GA}{%
@@ -1338,6 +1816,108 @@
     \field{journaltitle}{IEEE Transactions on Industrial Informatics}
     \field{year}{2011}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{NIPS2014_5423}{incollection}{}
+    \name{author}{8}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PAJ}{%
+         family={Pouget-Abadie},
+         familyi={P\bibinithyphendelim A\bibinitperiod},
+         given={Jean},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mirza},
+         familyi={M\bibinitperiod},
+         given={Mehdi},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=XB}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Bing},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WFD}{%
+         family={Warde-Farley},
+         familyi={W\bibinithyphendelim F\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=OS}{%
+         family={Ozair},
+         familyi={O\bibinitperiod},
+         given={Sherjil},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \name{editor}{5}{}{%
+      {{hash=GZ}{%
+         family={Ghahramani},
+         familyi={G\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Welling},
+         familyi={W\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Cortes},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LND}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={N.\bibnamedelima D.},
+         giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WKQ}{%
+         family={Weinberger},
+         familyi={W\bibinitperiod},
+         given={K.\bibnamedelima Q.},
+         giveni={K\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \keyw{DCGAN, GAN, CNN, adversarial training}
+    \strng{namehash}{GI+1}
+    \strng{fullhash}{GIPAJMMXBWFDOSCABY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{Advances in Neural Information Processing Systems 27}
+    \field{pages}{2672\bibrangedash 2680}
+    \field{title}{Generative Adversarial Nets}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf
+    \endverb
+    \field{year}{2014}
   \endentry
 
   \entry{8665777}{inproceedings}{}
@@ -1412,6 +1992,82 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Han:2016:EEI:3001136.3001163}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=HS}{%
+         family={Han},
+         familyi={H\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xingyu},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Mao},
+         familyi={M\bibinitperiod},
+         given={Huizi},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pu},
+         familyi={P\bibinitperiod},
+         given={Jing},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pedram},
+         familyi={P\bibinitperiod},
+         given={Ardavan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HMA}{%
+         family={Horowitz},
+         familyi={H\bibinitperiod},
+         given={Mark\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DWJ}{%
+         family={Dally},
+         familyi={D\bibinitperiod},
+         given={William\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE Press}%
+    }
+    \keyw{FPGA-NN, ASIC, algorithm-hardware co-design, deep learning, hardware
+  acceleration, model compression}
+    \strng{namehash}{HS+1}
+    \strng{fullhash}{HSLXMHPJPAHMADWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the 43rd International Symposium on
+  Computer Architecture}
+    \verb{doi}
+    \verb 10.1109/ISCA.2016.30
+    \endverb
+    \field{isbn}{978-1-4673-8947-1}
+    \field{pages}{243\bibrangedash 254}
+    \field{series}{ISCA '16}
+    \field{title}{EIE: Efficient Inference Engine on Compressed Deep Neural
+  Network}
+    \verb{url}
+    \verb https://doi.org/10.1109/ISCA.2016.30
+    \endverb
+    \list{location}{1}{%
+      {Seoul, Republic of Korea}%
+    }
+    \field{year}{2016}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{7780459}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=HK}{%
@@ -1475,6 +2131,67 @@
     \field{pages}{770\bibrangedash 778}
     \field{title}{Deep Residual Learning for Image Recognition}
     \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{5669194}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=HS}{%
+         family={{Hsiao}},
+         familyi={H\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WC}{%
+         family={{Wen}},
+         familyi={W\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={{Tsai}},
+         familyi={T\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Crypto, CMOS logic circuits;cryptography;logic
+  design;transistor-transistor logic;automatic generation;high performance
+  multiple-input XOR/XNOR circuits;advanced encryption standard;pass transistor
+  logic;static CMOS design;Data structures;IP networks;Lead;Boolean
+  functions;Layout;CMOS integrated circuits;Encryption}
+    \strng{namehash}{HS+2}
+    \strng{fullhash}{HSWCTMCM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Exclusive-OR (XOR) gate is one of the critical components in many
+  applications such as cryptography. In this paper, we present an efficient
+  multi-input XOR circuit design based on pass-transistor logic (PTL). A
+  synthesis algorithm is developed to efficiently generate the PTL-based
+  multi-input XOR circuits. Both pre-layout and post-layout simulation results
+  show that our proposed multi-input XOR design outperforms static CMOS design.
+  The multi-input XOR circuits are also used to design the transformations in
+  the Advanced Encryption Standard (AES).%
+    }
+    \field{booktitle}{2010 International Symposium on Next Generation
+  Electronics}
+    \verb{doi}
+    \verb 10.1109/ISNE.2010.5669194
+    \endverb
+    \field{issn}{2378-8607}
+    \field{pages}{77\bibrangedash 80}
+    \field{title}{Automatic generation of high-performance multiple-input
+  XOR/XNOR circuits and its application in Advanced Encryption Standard (AES)}
+    \field{year}{2010}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -1764,6 +2481,219 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{10.1371/journal.pone.0203434}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Kaso},
+         familyi={K\bibinitperiod},
+         given={Artan},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \keyw{Other, NCC, fast Fourier transforms}
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    The normalized cross-correlation (NCC), usually its 2D version, is
+  routinely encountered in template matching algorithms, such as in facial
+  recognition, motion-tracking, registration in medical imaging, etc. Its rapid
+  computation becomes critical in time sensitive applications. Here I develop a
+  scheme for the computation of NCC by fast Fourier transform that can
+  favorably compare for speed efficiency with other existing techniques and may
+  outperform some of them given an appropriate search scenario.%
+    }
+    \verb{doi}
+    \verb 10.1371/journal.pone.0203434
+    \endverb
+    \field{number}{9}
+    \field{pages}{1\bibrangedash 16}
+    \field{title}{Computation of the normalized cross-correlation by fast
+  Fourier transform}
+    \verb{url}
+    \verb https://doi.org/10.1371/journal.pone.0203434
+    \endverb
+    \field{volume}{13}
+    \field{journaltitle}{PLOS ONE}
+    \field{month}{09}
+    \field{year}{2018}
+  \endentry
+
+  \entry{katz2008introduction}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KJ}{%
+         family={Katz},
+         familyi={K\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lindell},
+         familyi={L\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Chapman \& Hall/CRC}%
+    }
+    \keyw{Books, Cryptographic, CPA,}
+    \strng{namehash}{KJLY1}
+    \strng{fullhash}{KJLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{isbn}{9781584885511}
+    \field{series}{Chapman and Hall/CRC Cryptography and Network Security
+  Series}
+    \field{title}{Introduction to modern cryptography}
+    \verb{url}
+    \verb https://books.google.ca/books?id=WIc\_AQAAIAAJ
+    \endverb
+    \field{year}{2008}
+  \endentry
+
+  \entry{NIPS2004_2744}{incollection}{}
+    \name{author}{5}{}{%
+      {{hash=KE}{%
+         family={Klein},
+         familyi={K\bibinitperiod},
+         given={Einat},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mislovaty},
+         familyi={M\bibinitperiod},
+         given={Rachel},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kanter},
+         familyi={K\bibinitperiod},
+         given={Ido},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Ruttor},
+         familyi={R\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KW}{%
+         family={Kinzel},
+         familyi={K\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=SLK}{%
+         family={Saul},
+         familyi={S\bibinitperiod},
+         given={L.\bibnamedelima K.},
+         giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Weiss},
+         familyi={W\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Bottou},
+         familyi={B\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT Press}%
+    }
+    \keyw{Cryptography, Neural Network, Mutual Learning}
+    \strng{namehash}{KE+1}
+    \strng{fullhash}{KEMRKIRAKW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{booktitle}{Advances in Neural Information Processing Systems 17}
+    \field{pages}{689\bibrangedash 696}
+    \field{title}{Synchronization of neural networks by mutual learning and its
+  application to cryptography}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/2744-synchronization-of-neural-networks-b
+    \verb y-mutual-learning-and-its-application-to-cryptography.pdf
+    \endverb
+    \field{year}{2005}
+  \endentry
+
+  \entry{10.1007/3-540-36178-2_18}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KA}{%
+         family={Klimov},
+         familyi={K\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mityagin},
+         familyi={M\bibinitperiod},
+         given={Anton},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Shamir},
+         familyi={S\bibinitperiod},
+         given={Adi},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=ZY}{%
+         family={Zheng},
+         familyi={Z\bibinitperiod},
+         given={Yuliang},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Crypto, Neurocryptography, Public key}
+    \strng{namehash}{KAMASA1}
+    \strng{fullhash}{KAMASA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    In this paper we analyse the security of a new key exchange protocol
+  proposed in [3], which is based on mutually learning neural networks. This is
+  a new potential source for public key cryptographic schemes which are not
+  based on number theoretic functions, and have small time and memory
+  complexities. In the first part of the paper we analyse the scheme, explain
+  why the two parties converge to a common key, and why an attacker using a
+  similar neural network is unlikely to converge to the same key. However, in
+  the second part of the paper we show that this key exchange protocol can be
+  broken in three different ways, and thus it is completely insecure.%
+    }
+    \field{booktitle}{Advances in Cryptology --- ASIACRYPT 2002}
+    \field{isbn}{978-3-540-36178-7}
+    \field{pages}{288\bibrangedash 298}
+    \field{title}{Analysis of Neural Cryptography}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2002}
+  \endentry
+
   \entry{8892195}{inproceedings}{}
     \name{author}{7}{}{%
       {{hash=KS}{%
@@ -1950,6 +2880,78 @@
     \field{year}{2015}
   \endentry
 
+  \entry{Kung2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KJ}{%
+         family={Kung},
+         familyi={K\bibinitperiod},
+         given={Jaeha},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZD}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=vdWG}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Wal},
+         familyi={W\bibinitperiod},
+         given={Gooitzen},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chai},
+         familyi={C\bibinitperiod},
+         given={Sek},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mukhopadhyay},
+         familyi={M\bibinitperiod},
+         given={Saibal},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, object detection, GPU, Infrared, FPGA}
+    \strng{namehash}{KJ+1}
+    \strng{fullhash}{KJZDWGvdCSMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Memory performance is a key bottleneck for deep learning systems.
+  Binarization of both activations and weights is one promising approach that
+  can best scale to realize the highest energy efficient system using the
+  lowest possible precision. In this paper, we utilize and analyze the
+  binarized neural network in doing human detection on infrared images. Our
+  results show comparable algorithmic performance of binarized versus 32bit
+  floating-point networks, with the added benefit of greatly simplified
+  computation and reduced memory overhead. In addition, we present a system
+  architecture designed specifically for computation using binary
+  representation that achieves at least 4{\texttimes} speedup and the energy is
+  improved by three orders of magnitude over GPU.%
+    }
+    \verb{doi}
+    \verb 10.1007/s11265-017-1255-5
+    \endverb
+    \field{issn}{1939-8115}
+    \field{number}{6}
+    \field{pages}{877\bibrangedash 890}
+    \field{title}{Efficient Object Detection Using Embedded Binarized Neural
+  Networks}
+    \verb{url}
+    \verb https://doi.org/10.1007/s11265-017-1255-5
+    \endverb
+    \field{volume}{90}
+    \field{journaltitle}{Journal of Signal Processing Systems}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{AIWinter-Andrey}{misc}{}
     \name{author}{1}{}{%
       {{hash=KA}{%
@@ -1960,8 +2962,8 @@
       }}%
     }
     \keyw{AI, Neural Networks, History}
-    \strng{namehash}{KA1}
-    \strng{fullhash}{KA1}
+    \strng{namehash}{KA2}
+    \strng{fullhash}{KA2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
@@ -2156,6 +3158,101 @@
     \field{year}{2013}
   \endentry
 
+  \entry{LIANG20181072}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LS}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Shuang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=YS}{%
+         family={Yin},
+         familyi={Y\bibinitperiod},
+         given={Shouyi},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Leibo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Luk},
+         familyi={L\bibinitperiod},
+         given={Wayne},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wei},
+         familyi={W\bibinitperiod},
+         given={Shaojun},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, Binarized neural network, Hardware accelerator, FPGA}
+    \strng{namehash}{LS+2}
+    \strng{fullhash}{LSYSLLLWWS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.neucom.2017.09.046
+    \endverb
+    \field{issn}{0925-2312}
+    \field{pages}{1072 \bibrangedash  1086}
+    \field{title}{FP-BNN: Binarized neural network on FPGA}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0925231217315655
+    \endverb
+    \field{volume}{275}
+    \field{journaltitle}{Neurocomputing}
+    \field{year}{2018}
+  \endentry
+
+  \entry{ijcai2017-316}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LT}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Tian},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AK}{%
+         family={Aberer},
+         familyi={A\bibinitperiod},
+         given={Karl},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{NN; Neural Network, LSTM, Convolutional Neural Network, Hybrid}
+    \strng{namehash}{LTGTAK1}
+    \strng{fullhash}{LTGTAK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Proceedings of the Twenty-Sixth International Joint
+  Conference on Artificial Intelligence, {IJCAI-17}}
+    \verb{doi}
+    \verb 10.24963/ijcai.2017/316
+    \endverb
+    \field{pages}{2273\bibrangedash 2279}
+    \field{title}{Hybrid Neural Networks for Learning the Trend in Time Series}
+    \verb{url}
+    \verb https://doi.org/10.24963/ijcai.2017/316
+    \endverb
+    \field{year}{2017}
+  \endentry
+
   \entry{Linnainmaa1976}{article}{}
     \name{author}{1}{}{%
       {{hash=LS}{%
@@ -2237,6 +3334,68 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{8398183}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LS}{%
+         family={{Liu}},
+         familyi={L\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={{Liao}},
+         familyi={L\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DY}{%
+         family={{Ding}},
+         familyi={D\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{NN-Fin; SUNA; nonlinear dynamical systems;pricing;recurrent neural
+  nets;stock markets;time series;homogeneous time process;time recurrent neural
+  network;time series;LSTM neural network algorithm;LSTM recurrent neural
+  networks;stock price volatility;nonlinear dynamic system;stock transaction
+  prediction modeling;stock trading volume;stock self correlation;term memory
+  long short;feature value extraction;stock data analysis;Predictive
+  models;Logic gates;Computational modeling;Indexes;Neural networks;Time series
+  analysis;Feature extraction;machine learning;neural network;stock transaction
+  prediction;LSTM}
+    \strng{namehash}{LSLGDY1}
+    \strng{fullhash}{LSLGDY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Stock price volatility is a highly complex nonlinear dynamic system. The
+  stock's trading volume affects the stock's self correlation, self correlation
+  and inertial effect, and the adjustment of the stock is not to advance with a
+  homogeneous time process, which has its own independent time to promote the
+  process. LSTM (Term Memory Long-Short) is a kind of time recurrent neural
+  network, which is suitable for processing and predicting the important events
+  of interval and long delay in time series. Based on temporal characteristics
+  of stock and LSTM neural network algorithm, this paper uses the LSTM
+  recurrent neural networks to filter, extract feature value and analyze the
+  stock data, and set up the the prediction model of the corresponding stock
+  transaction.%
+    }
+    \field{booktitle}{2018 13th IEEE Conference on Industrial Electronics and
+  Applications (ICIEA)}
+    \verb{doi}
+    \verb 10.1109/ICIEA.2018.8398183
+    \endverb
+    \field{issn}{2158-2297}
+    \field{pages}{2787\bibrangedash 2790}
+    \field{title}{Stock transaction prediction modeling and analysis based on
+  LSTM}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8832578}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=LX}{%
@@ -2298,6 +3457,80 @@
   Gradient Instability in Deep Neural Networks}
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{NIPS2019_9194}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=LQ}{%
+         family={Lou},
+         familyi={L\bibinitperiod},
+         given={Qian},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Lei},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \name{editor}{6}{}{%
+      {{hash=WH}{%
+         family={Wallach},
+         familyi={W\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Larochelle},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Beygelzimer},
+         familyi={B\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ABF}{%
+         family={Alch\'{e}-Buc},
+         familyi={A\bibinithyphendelim B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FE}{%
+         family={Fox},
+         familyi={F\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Garnett},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Curran Associates, Inc.}%
+    }
+    \keyw{Crypto, FHE, DNN, encrypted data}
+    \strng{namehash}{LQJL1}
+    \strng{fullhash}{LQJL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{booktitle}{Advances in Neural Information Processing Systems 32}
+    \field{pages}{10035\bibrangedash 10043}
+    \field{title}{SHE: A Fast and Accurate Deep Neural Network for Encrypted
+  Data}
+    \verb{url}
+    \verb http://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-
+    \verb network-for-encrypted-data.pdf
+    \endverb
+    \field{year}{2019}
   \endentry
 
   \entry{AIFoundations}{book}{}
@@ -2462,6 +3695,462 @@
       {Cambridge, MA, USA}%
     }
     \field{year}{1988}
+  \endentry
+
+  \entry{Mnih:2015aa}{article}{}
+    \name{author}{19}{}{%
+      {{hash=MV}{%
+         family={Mnih},
+         familyi={M\bibinitperiod},
+         given={Volodymyr},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kavukcuoglu},
+         familyi={K\bibinitperiod},
+         given={Koray},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RAA}{%
+         family={Rusu},
+         familyi={R\bibinitperiod},
+         given={Andrei\bibnamedelima A.},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Veness},
+         familyi={V\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BMG}{%
+         family={Bellemare},
+         familyi={B\bibinitperiod},
+         given={Marc\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Graves},
+         familyi={G\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Riedmiller},
+         familyi={R\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FAK}{%
+         family={Fidjeland},
+         familyi={F\bibinitperiod},
+         given={Andreas\bibnamedelima K.},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=OG}{%
+         family={Ostrovski},
+         familyi={O\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Petersen},
+         familyi={P\bibinitperiod},
+         given={Stig},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Beattie},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sadik},
+         familyi={S\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AI}{%
+         family={Antonoglou},
+         familyi={A\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Helen},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kumaran},
+         familyi={K\bibinitperiod},
+         given={Dharshan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wierstra},
+         familyi={W\bibinitperiod},
+         given={Daan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Legg},
+         familyi={L\bibinitperiod},
+         given={Shane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hassabis},
+         familyi={H\bibinitperiod},
+         given={Demis},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{DNN, DQN, Deepmind, Q-Learning}
+    \strng{namehash}{MV+1}
+    \strng{fullhash}{MVKKSDRAAVJBMGGARMFAKOGPSBCSAAIKHKDWDLSHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    An artificial agent is developed that learns to play a diverse range of
+  classic Atari 2600 computer games directly from sensory experience, achieving
+  a performance comparable to that of an expert human player; this work paves
+  the way to building general-purpose learning algorithms that bridge the
+  divide between perception and action.%
+    }
+    \verb{doi}
+    \verb 10.1038/nature14236
+    \endverb
+    \field{isbn}{1476-4687}
+    \field{number}{7540}
+    \field{pages}{529\bibrangedash 533}
+    \field{title}{Human-level control through deep reinforcement learning}
+    \verb{url}
+    \verb https://doi.org/10.1038/nature14236
+    \endverb
+    \field{volume}{518}
+    \field{journaltitle}{Nature}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Moore-1991-13223}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=MA}{%
+         family={Moore},
+         familyi={M\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, SUNA, Reinforcement Learning, Mountain Car}
+    \strng{namehash}{MA1}
+    \strng{fullhash}{MA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Efficient Memory-based Learning for Robot Control}
+    \list{location}{1}{%
+      {Pittsburgh, PA}%
+    }
+    \list{institution}{1}{%
+      {Carnegie Mellon University}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{1991}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{AES-NIST}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MJDJRNJFLEBERJFDJEBB}{%
+         family={Morris J.\bibnamedelima Dworkin},
+         familyi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+         suffix={Elaine B.\bibnamedelima Barker},
+         suffixi={E\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  B\bibinitperiod},
+         given={James R. Nechvatal James Foti Lawrence E. Bassham E. Roback
+  James F. Dray\bibnamedelima Jr.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  N\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  F\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  J\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{Crypto, Cryptography, AES, NIST}
+    \strng{namehash}{MJDEBBJRNJFLEBERJFDJ1}
+    \strng{fullhash}{MJDEBBJRNJFLEBERJFDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{47}
+    \field{title}{Advanced Encryption Standard (AES)}
+    \field{volume}{197}
+    \field{journaltitle}{Federal Inf. Process. Stds. (NIST FIPS)}
+    \field{year}{2001}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Moussa2006}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=MM}{%
+         family={Moussa},
+         familyi={M\bibinitperiod},
+         given={Medhat},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Areibi},
+         familyi={A\bibinitperiod},
+         given={Shawki},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nichols},
+         familyi={N\bibinitperiod},
+         given={Kristian},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=OAR}{%
+         family={Omondi},
+         familyi={O\bibinitperiod},
+         given={Amos\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=RJC}{%
+         family={Rajapakse},
+         familyi={R\bibinitperiod},
+         given={Jagath\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer US}%
+    }
+    \keyw{FPGA-NN, Book Chapter}
+    \strng{namehash}{MMASNK1}
+    \strng{fullhash}{MMASNK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Artificial Neural Networks (ANNs) are inherently parallel architectures
+  which represent a natural fit for custom implementation on FPGAs. One
+  important implementation issue is to determine the numerical precision format
+  that allows an optimum tradeoff between precision and implementation areas.
+  Standard single or double precision floating-point representations minimize
+  quantization errors while requiring significant hardware resources. Less
+  precise fixed-point representation may require less hardware resources but
+  add quantization errors that may prevent learning from taking place,
+  especially in regression problems. This chapter examines this issue and
+  reports on a recent experiment where we implemented a Multi-layer perceptron
+  (MLP) on an FPGA using both fixed and floating point precision. Results show
+  that the fixed-point MLP implementation was over 12x greater in speed, over
+  13x smaller in area, and achieves far greater processing density compared to
+  the floating-point FPGA-based MLP.%
+    }
+    \field{booktitle}{FPGA Implementations of Neural Networks}
+    \verb{doi}
+    \verb 10.1007/0-387-28487-7_2
+    \endverb
+    \field{isbn}{978-0-387-28487-3}
+    \field{pages}{37\bibrangedash 61}
+    \field{title}{On the Arithmetic Precision for Implementing Back-Propagation
+  Networks on FPGA: A Case Study}
+    \verb{url}
+    \verb https://doi.org/10.1007/0-387-28487-7_2
+    \endverb
+    \list{location}{1}{%
+      {Boston, MA}%
+    }
+    \field{year}{2006}
+  \endentry
+
+  \entry{Nurvitadhi:2017:FBG:3020078.3021740}{inproceedings}{}
+    \name{author}{11}{}{%
+      {{hash=NE}{%
+         family={Nurvitadhi},
+         familyi={N\bibinitperiod},
+         given={Eriko},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Venkatesh},
+         familyi={V\bibinitperiod},
+         given={Ganesh},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sim},
+         familyi={S\bibinitperiod},
+         given={Jaewoong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marr},
+         familyi={M\bibinitperiod},
+         given={Debbie},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Randy},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=OGHJ}{%
+         family={Ong Gee\bibnamedelima Hock},
+         familyi={O\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LYT}{%
+         family={Liew},
+         familyi={L\bibinitperiod},
+         given={Yeong\bibnamedelima Tat},
+         giveni={Y\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Srivatsan},
+         familyi={S\bibinitperiod},
+         given={Krishnan},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Moss},
+         familyi={M\bibinitperiod},
+         given={Duncan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Subhaschandra},
+         familyi={S\bibinitperiod},
+         given={Suchit},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Boudoukh},
+         familyi={B\bibinitperiod},
+         given={Guy},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{FPGA-NN; FPGA, GPU, accelerator, deep learning, intel stratix 10}
+    \strng{namehash}{NE+1}
+    \strng{fullhash}{NEVGSJMDHROGHJLYTSKMDSSBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/3020078.3021740
+    \endverb
+    \field{isbn}{978-1-4503-4354-1}
+    \field{pages}{5\bibrangedash 14}
+    \field{series}{FPGA '17}
+    \field{title}{Can FPGAs Beat GPUs in Accelerating Next-Generation Deep
+  Neural Networks?}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3020078.3021740
+    \endverb
+    \list{location}{1}{%
+      {Monterey, California, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{5678632}{article}{}
+    \name{author}{2}{}{%
+      {{hash=OCO}{%
+         family={{Oluigbo}},
+         familyi={O\bibinitperiod},
+         given={C.\bibnamedelima O.},
+         giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=RAR}{%
+         family={{Rezai}},
+         familyi={R\bibinitperiod},
+         given={A.\bibnamedelima R.},
+         giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \keyw{Other; SUNA; biochemistry;bioelectric
+  phenomena;brain;cognition;electrochemistry;macromolecules;medical
+  disorders;molecular biophysics;neuromuscular
+  stimulation;prosthetics;neurological disorders;neuromodulation;emotional
+  disability;aging population;chronic physical disability;patient
+  therapy;implantable devices;reversible adjustable application;electrical
+  agents;chemical agents;biological agents;central nervous system;peripheral
+  nervous system;clinical applications;electrical stimulation;cognitive
+  disability;Neuromuscular;Aging;Medical
+  services;Neuromodulation;Gerontology;Neuromodulation;neurological
+  disorders;Adult;Biomedical Engineering;Deep Brain Stimulation;Electric
+  Stimulation Therapy;Electric Stimulation Therapy;Electrodes,
+  Implanted;Female;Humans;Infusion Pumps, Implantable;Male;Nerve Net;Nervous
+  System Diseases;Neurosciences;Vagus Nerve Stimulation}
+    \strng{namehash}{OCORAR1}
+    \strng{fullhash}{OCORAR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Neurological disorders are becoming increasingly common in developed
+  countries as a result of the aging population. In spite of medications, these
+  disorders can result in progressive loss of function as well as chronic
+  physical, cognitive, and emotional disability that ultimately places enormous
+  emotional and economic on the patient, caretakers, and the society in
+  general. Neuromodulation is emerging as a therapeutic option in these
+  patients. Neuromodulation is a field, which involves implantable devices that
+  allow for the reversible adjustable application of electrical, chemical, or
+  biological agents to the central or peripheral nervous system with the
+  objective of altering its functioning with the objective of achieving a
+  therapeutic or clinically beneficial effect. It is a rapidly evolving field
+  that brings together many different specialties in the fields of medicine,
+  materials science, computer science and technology, biomedical, and neural
+  engineering as well as the surgical or interventional specialties. It has
+  multiple current and emerging indications, and an enormous potential for
+  growth. The main challenges before it are in the need for effective
+  collaboration between engineers, basic scientists, and clinicians to develop
+  innovations that address specific problems resulting in new devices and
+  clinical applications.%
+    }
+    \verb{doi}
+    \verb 10.1109/TBME.2010.2102758
+    \endverb
+    \field{issn}{0018-9294}
+    \field{number}{7}
+    \field{pages}{1907\bibrangedash 1917}
+    \field{title}{Addressing Neurological Disorders With Neuromodulation}
+    \field{volume}{58}
+    \field{journaltitle}{IEEE Transactions on Biomedical Engineering}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Omondi:2010:FIN:1941654}{book}{}
@@ -2707,6 +4396,96 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{6804688}{article}{}
+    \name{author}{5}{}{%
+      {{hash=RM}{%
+         family={{Rahimi Azghadi}},
+         familyi={R\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=IN}{%
+         family={{Iannella}},
+         familyi={I\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ASF}{%
+         family={{Al-Sarawi}},
+         familyi={A\bibinitperiod},
+         given={S.\bibnamedelima F.},
+         giveni={S\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={{Indiveri}},
+         familyi={I\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={{Abbott}},
+         familyi={A\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{analogue integrated circuits;learning (artificial
+  intelligence);neural chips;VLSI;spike based synaptic plasticity;artificial
+  spiking neural networks;mathematical prescriptions;learning rules;abstract
+  computational neuroscience models;analog very large scale integration
+  circuit;VLSI;neural chips;Transistors;Logic
+  gates;Silicon;Neuromorphics;Neurons;Neuroscience;Learning
+  systems;Plastics;Analog/digital synapse;Bienenstock--Cooper--Munro
+  (BCM);calcium-based plasticity;learning;local correlation plasticity
+  (LCP);neuromorphic engineering;rate-based plasticity;spike-timing-dependent
+  plasticity (STDP);spike-based plasticity;spiking neural networks;synaptic
+  plasticity;triplet STDP;very large-scale integration (VLSI);voltage-based
+  STDP;Analog/digital synapse;Bienenstock¿Cooper¿Munro (BCM);calcium-based
+  plasticity;learning;local correlation plasticity (LCP);neuromorphic
+  engineering;rate-based plasticity;spike-timing-dependent plasticity
+  (STDP);spike-based plasticity;spiking neural networks;synaptic
+  plasticity;triplet STDP;very large-scale integration (VLSI);voltage-based
+  STDP}
+    \strng{namehash}{RM+1}
+    \strng{fullhash}{RMINASFIGAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    The ability to carry out signal processing, classification, recognition,
+  and computation in artificial spiking neural networks (SNNs) is mediated by
+  their synapses. In particular, through activity-dependent alteration of their
+  efficacies, synapses play a fundamental role in learning. The mathematical
+  prescriptions under which synapses modify their weights are termed synaptic
+  plasticity rules. These learning rules can be based on abstract computational
+  neuroscience models or on detailed biophysical ones. As these rules are being
+  proposed and developed by experimental and computational neuroscientists,
+  engineers strive to design and implement them in silicon and en masse in
+  order to employ them in complex real-world applications. In this paper, we
+  describe analog very large-scale integration (VLSI) circuit implementations
+  of multiple synaptic plasticity rules, ranging from phenomenological ones
+  (e.g., based on spike timing, mean firing rates, or both) to biophysically
+  realistic ones (e.g., calcium-dependent models). We discuss the application
+  domains, weaknesses, and strengths of various representative approaches
+  proposed in the literature, and provide insight into the challenges that
+  engineers face when designing and implementing synaptic plasticity rules in
+  VLSI technology for utilizing them in real-world applications.%
+    }
+    \verb{doi}
+    \verb 10.1109/JPROC.2014.2314454
+    \endverb
+    \field{issn}{0018-9219}
+    \field{number}{5}
+    \field{pages}{717\bibrangedash 737}
+    \field{title}{Spike-Based Synaptic Plasticity in Silicon: Design,
+  Implementation, Application, and Challenges}
+    \field{volume}{102}
+    \field{journaltitle}{Proceedings of the IEEE}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{10.1007/978-3-319-46493-0_32}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=RM}{%
@@ -2764,7 +4543,7 @@
       {Springer International Publishing}%
     }
     \keyw{BNN, XNOR, ImageNet, CNN, AlexNet}
-    \strng{namehash}{RM+1}
+    \strng{namehash}{RM+2}
     \strng{fullhash}{RMOVRJFA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2825,6 +4604,67 @@
     }
     \field{type}{phdthesis}
     \field{year}{2012}
+  \endentry
+
+  \entry{1133}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=RMS}{%
+         family={Riazi},
+         familyi={R\bibinitperiod},
+         given={M.\bibnamedelima Sadegh},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Samragh},
+         familyi={S\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Laine},
+         familyi={L\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lauter},
+         familyi={L\bibinitperiod},
+         given={Kristin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Koushanfar},
+         familyi={K\bibinitperiod},
+         given={Farinaz},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {USENIX}%
+    }
+    \list{publisher}{1}{%
+      {USENIX}%
+    }
+    \keyw{Crypto, Homomorphic encryption, BNN, Cryptography and Security}
+    \strng{namehash}{RMS+1}
+    \strng{fullhash}{RMSSMCHLKLKKF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{USENIX Security}
+    \field{title}{XONN: XNOR-based Oblivious Deep Neural Network Inference}
+    \verb{url}
+    \verb https://arxiv.org/pdf/1902.07342.pdf
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{8461456}{inproceedings}{}
@@ -3041,6 +4881,31 @@
     \field{year}{2015}
   \endentry
 
+  \entry{CommTheoryShannon}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SC}{%
+         family={Shannon},
+         familyi={S\bibinitperiod},
+         given={Claude},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Cryptography, Cryptanalysis}
+    \strng{namehash}{SC1}
+    \strng{fullhash}{SC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{4}
+    \field{pages}{656\bibrangedash 715}
+    \field{title}{Communication Theory and Secrecy Systems}
+    \field{volume}{28}
+    \field{journaltitle}{Bell system Technical Journal}
+    \field{year}{1949}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{6847217}{article}{}
     \name{author}{3}{}{%
       {{hash=SL}{%
@@ -3206,6 +5071,77 @@
     \field{volume}{abs/1409.1556}
     \field{journaltitle}{ILSVRC - CoRR}
     \field{year}{2014}
+  \endentry
+
+  \entry{AAAI1817150}{misc}{}
+    \name{author}{6}{}{%
+      {{hash=SJ}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Jingkuan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={Tao},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Lianli},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=XX}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Xing},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hanjalic},
+         familyi={H\bibinitperiod},
+         given={Alan},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SHT}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Heng\bibnamedelima Tao},
+         giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{DCGAN; hashing; GAN; image retrieval}
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJHTGLXXHASHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    The most striking successes in image retrieval using deep hashing have
+  mostly involved discriminative models, which require labels. In this paper,
+  we use binary generative adversarial networks (BGAN) to embed images to
+  binary codes in an unsupervised way. By restricting the input noise variable
+  of generative adversarial networks (GAN) to be binary and conditioned on the
+  features of each input image, BGAN can simultaneously learn a binary
+  representation per image, and generate an image plausibly similar to the
+  original one. In the proposed framework, we address two main problems: 1) how
+  to directly generate binary codes without relaxation? 2) how to equip the
+  binary representation with the ability of accurate image retrieval? We
+  resolve these problems by proposing new sign-activation strategy and a loss
+  function steering the learning process, which consists of new models for
+  adversarial loss, a content loss, and a neighborhood structure loss.
+  Experimental results on standard datasets (CIFAR-10, NUSWIDE, and Flickr)
+  demonstrate that our BGAN significantly outperforms existing hashing methods
+  by up to 107% in terms of mAP (See Table 2).%
+    }
+    \field{title}{Binary Generative Adversarial Networks for Image Retrieval}
+    \verb{url}
+    \verb https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17150
+    \endverb
+    \field{year}{2018}
   \endentry
 
   \entry{Soudry2014ExpectationBP}{inproceedings}{}
@@ -3407,6 +5343,38 @@
     \field{year}{2019}
   \endentry
 
+  \entry{Strens:2000:BFR:645529.658114}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SMJA}{%
+         family={Strens},
+         familyi={S\bibinitperiod},
+         given={Malcolm J.\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Reinforcement Learning, OpenAI Gym}
+    \strng{namehash}{SMJA1}
+    \strng{fullhash}{SMJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Proceedings of the Seventeenth International Conference
+  on Machine Learning}
+    \field{isbn}{1-55860-707-2}
+    \field{pages}{943\bibrangedash 950}
+    \field{series}{ICML '00}
+    \field{title}{A Bayesian Framework for Reinforcement Learning}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=645529.658114
+    \endverb
+    \field{annotation}{%
+    Publisher Morgan Kaufmann Publishers Inc. Address San Francisco, CA, USA%
+    }
+    \field{year}{2000}
+  \endentry
+
   \entry{Sun:2018:FPR:3201607.3201741}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=SX}{%
@@ -3556,6 +5524,27 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{rouletteV0OpenAI}{online}{}
+    \name{author}{1}{}{%
+      {{hash=t}{%
+         family={tanemaki},
+         familyi={t\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, OpenAI Gym, Reinforcement Learning, BiSUNA}
+    \strng{namehash}{t1}
+    \strng{fullhash}{t1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Algorithm on Roulette-v0}
+    \verb{url}
+    \verb https://gym.openai.com/evaluations/eval_DFWdtrdSCikuZWwf8HN8A/
+    \endverb
+    \field{year}{2016}
+  \endentry
+
   \entry{AppleFaceDetectionURL}{online}{}
     \name{author}{1}{}{%
       {{hash=TCVML}{%
@@ -3579,6 +5568,80 @@
     \endverb
     \field{month}{11}
     \field{year}{2017}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{10.1145/3377929.3389933}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=TRHV}{%
+         family={Tenorio},
+         familyi={T\bibinitperiod},
+         given={Raul Horacio\bibnamedelima Valencia},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+      {{hash=SCW}{%
+         family={Sham},
+         familyi={S\bibinitperiod},
+         given={Chiu\bibnamedelima Wing},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=VDV}{%
+         family={Vargas},
+         familyi={V\bibinitperiod},
+         given={Danilo\bibnamedelima Vasconcellos},
+         giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{Neuroevolution, Evolutionary, CPA, binary neural network, BiSUNA,
+  adversarial neurocryptography, neuroevolution}
+    \strng{namehash}{TRHVSCWVDV1}
+    \strng{fullhash}{TRHVSCWVDV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{Proceedings of the 2020 Genetic and Evolutionary
+  Computation Conference Companion}
+    \verb{doi}
+    \verb 10.1145/3377929.3389933
+    \endverb
+    \field{isbn}{9781450371278}
+    \field{pages}{291\bibrangedash 292}
+    \field{series}{GECCO '20}
+    \field{title}{Preliminary Study of Applied Binary Neural Networks for
+  Neural Cryptography}
+    \verb{url}
+    \verb https://doi.org/10.1145/3377929.3389933
+    \endverb
+    \list{location}{1}{%
+      {Canc\'{u}n, Mexico}%
+    }
+    \field{year}{2020}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{TF-DQNTut}{online}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={TensorFlow},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \keyw{url, Tutorial, DQN,}
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Train a Deep Q Network with TF-Agents}
+    \verb{url}
+    \verb https://www.tensorflow.org/agents/tutorials/1_dqn_tutorial
+    \endverb
     \warn{\item Invalid format of field 'urldate'}
   \endentry
 
@@ -3758,6 +5821,82 @@
     \field{year}{2013}
   \endentry
 
+  \entry{Umuroglu:2017:FFF:3020078.3021744}{inproceedings}{}
+    \name{author}{7}{}{%
+      {{hash=UY}{%
+         family={Umuroglu},
+         familyi={U\bibinitperiod},
+         given={Yaman},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=FNJ}{%
+         family={Fraser},
+         familyi={F\bibinitperiod},
+         given={Nicholas\bibnamedelima J.},
+         giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Gambardella},
+         familyi={G\bibinitperiod},
+         given={Giulio},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Blott},
+         familyi={B\bibinitperiod},
+         given={Michaela},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Leong},
+         familyi={L\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Jahre},
+         familyi={J\bibinitperiod},
+         given={Magnus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VK}{%
+         family={Vissers},
+         familyi={V\bibinitperiod},
+         given={Kees},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{BNN; FPGA, binarized neural network, binary neural network, hardware
+  acceleration, neural networks, reconfigurable logic}
+    \strng{namehash}{UY+1}
+    \strng{fullhash}{UYFNJGGBMLPJMVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/3020078.3021744
+    \endverb
+    \field{isbn}{978-1-4503-4354-1}
+    \field{pages}{65\bibrangedash 74}
+    \field{series}{FPGA '17}
+    \field{title}{FINN: A Framework for Fast, Scalable Binarized Neural Network
+  Inference}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3020078.3021744
+    \endverb
+    \list{location}{1}{%
+      {Monterey, California, USA}%
+    }
+    \field{year}{2017}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{8953134}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=VR}{%
@@ -3865,6 +6004,56 @@
   Capabilities}
     \field{year}{2019}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{BiSUNAOCLGithub}{online}{}
+    \name{author}{1}{}{%
+      {{hash=VR}{%
+         family={Valencia},
+         familyi={V\bibinitperiod},
+         given={Raul},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{BiSUNA, OCL}
+    \strng{namehash}{VR1}
+    \strng{fullhash}{VR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Binary Spectrum-diverse Unified Neuroevolution Architecture}
+    \verb{url}
+    \verb github.com/rval735/bisunaocl
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month' \item Invalid format of field
+  'urldate'}
+  \endentry
+
+  \entry{BiSUNAGithub}{online}{}
+    \name{author}{1}{}{%
+      {{hash=VR}{%
+         family={Valencia},
+         familyi={V\bibinitperiod},
+         given={Raul},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{BiSUNA,}
+    \strng{namehash}{VR1}
+    \strng{fullhash}{VR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Binary Spectrum-diverse Unified Neuroevolution Architecture}
+    \verb{url}
+    \verb https://github.com/rval735/BiSUNA
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month' \item Invalid format of field
+  'urldate'}
   \endentry
 
   \entry{10.1145/3205455.3205517}{inproceedings}{}
@@ -4149,6 +6338,75 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Zhang:2015:OFA:2684746.2689060}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=ZC}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Chen},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Guangyu},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Yijin},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=XB}{%
+         family={Xiao},
+         familyi={X\bibinitperiod},
+         given={Bingjun},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cong},
+         familyi={C\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Acceleration, convolutional neural network, fpga, roofline model}
+    \strng{namehash}{ZC+2}
+    \strng{fullhash}{ZCLPSGGYXBCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 2015 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/2684746.2689060
+    \endverb
+    \field{isbn}{978-1-4503-3315-3}
+    \field{pages}{161\bibrangedash 170}
+    \field{series}{FPGA '15}
+    \field{title}{Optimizing FPGA-based Accelerator Design for Deep
+  Convolutional Neural Networks}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2684746.2689060
+    \endverb
+    \list{location}{1}{%
+      {Monterey, California, USA}%
+    }
+    \field{year}{2015}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{7332968}{article}{}
     \name{author}{4}{}{%
       {{hash=ZX}{%
@@ -4215,6 +6473,149 @@
     \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine
   Intelligence}
     \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Zhao:2017:ABC:3020078.3021741}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=ZR}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Ritchie},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Weinan},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Wentao},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=XT}{%
+         family={Xing},
+         familyi={X\bibinitperiod},
+         given={Tianwei},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LJH}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Jeng-Hau},
+         giveni={J\bibinithyphendelim H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Srivastava},
+         familyi={S\bibinitperiod},
+         given={Mani},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gupta},
+         familyi={G\bibinitperiod},
+         given={Rajesh},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Zhiru},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{FPGAs, binarized, binarized convolutional networks, deep learning,
+  high-level synthesis, reconfigurable computing}
+    \strng{namehash}{ZR+1}
+    \strng{fullhash}{ZRSWZWXTLJHSMGRZZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{Proceedings of the 2017 ACM/SIGDA International Symposium
+  on Field-Programmable Gate Arrays}
+    \verb{doi}
+    \verb 10.1145/3020078.3021741
+    \endverb
+    \field{isbn}{978-1-4503-4354-1}
+    \field{pages}{15\bibrangedash 24}
+    \field{series}{FPGA '17}
+    \field{title}{Accelerating Binarized Convolutional Neural Networks with
+  Software-Programmable FPGAs}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3020078.3021741
+    \endverb
+    \field{annotation}{%
+    Location Monterey, California, USA Address New York, NY, USA%
+    }
+    \field{year}{2017}
+  \endentry
+
+  \entry{8590945}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=ZY}{%
+         family={{Zhu}},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=VDV}{%
+         family={{Vargas}},
+         familyi={V\bibinitperiod},
+         given={D.\bibnamedelima V.},
+         giveni={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={{Sakurai}},
+         familyi={S\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary; SUNA; cryptography;learning (artificial
+  intelligence);neural nets;topology evolving neural networks;neural network
+  architecture;neural cryptography scheme;neural symmetric
+  cryptosystem;mathematical theory;spectrum-diverse unified neuroevolution
+  architecture;automatic encryption;automatic decryption;adversarial
+  training;Neurons;Encryption;Biological neural networks;Network
+  topology;Topology;Neural cryptography, Symmetric cryptosystem,
+  Spectrum-diverse unified neuroevolution architecture, Topology evolving
+  neural networks}
+    \strng{namehash}{ZYVDVSK1}
+    \strng{fullhash}{ZYVDVSK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Modern cryptographic schemes is developed based on the mathematical theory.
+  Recently works show a new direction about cryptography based on the neural
+  networks. Instead of learning a specific algorithm, a cryptographic scheme is
+  generated automatically. While one kind of neural network is used to achieve
+  the scheme, the idea of the neural cryptography can be realized by other
+  neural network architecture is unknown. In this paper, we make use of this
+  property to create neural cryptography scheme on a new topology evolving
+  neural network architecture called Spectrum-diverse unified neuroevolution
+  architecture. First, experiments are conducted to verify that
+  Spectrum-diverse unified neuroevolution architecture is able to achieve
+  automatic encryption and decryption. Subsequently, we do experiments to
+  achieve the neural symmetric cryptosystem by using adversarial training.%
+    }
+    \field{booktitle}{2018 Sixth International Symposium on Computing and
+  Networking Workshops (CANDARW)}
+    \verb{doi}
+    \verb 10.1109/CANDARW.2018.00091
+    \endverb
+    \field{pages}{472\bibrangedash 478}
+    \field{title}{Neural Cryptography Based on the Topology Evolving Neural
+  Networks}
+    \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
 \enddatalist
