@@ -111,3 +111,6 @@ https://orbit.dtu.dk/en/publications/cryptanalysis-of-selected-block-ciphers
 
 Advanced Encryption Standard
 https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
+
+The Pushdown Attack on AES
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5210990

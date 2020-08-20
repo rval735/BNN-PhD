@@ -1,247 +1,241 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
 
-\bibitem[{Abadi} and {Andersen}(2016)]{2016arXiv161006918A}
-M.~{Abadi} and D.~G. {Andersen}.
+\bibitem[{{Abadi} and {Andersen}(2016)}]{2016arXiv161006918A}
+{Abadi}, M.; and {Andersen}, D.~G. 2016.
 \newblock {Learning to Protect Communications with Adversarial Neural
   Cryptography}.
-\newblock \emph{ArXiv e-prints}, Oct. 2016.
+\newblock \emph{ArXiv e-prints} .
 
-\bibitem[Alani(2012)]{10.1007/978-3-642-34500-5_75}
-M.~M. Alani.
-\newblock Neuro-cryptanalysis of des and triple-des.
-\newblock In T.~Huang, Z.~Zeng, C.~Li, and C.~S. Leung, editors, \emph{Neural
-  Information Processing}, pages 637--646, Berlin, Heidelberg, 2012. Springer
-  Berlin Heidelberg.
+\bibitem[{Alani(2012)}]{10.1007/978-3-642-34500-5_75}
+Alani, M.~M. 2012.
+\newblock Neuro-Cryptanalysis of DES and Triple-DES.
+\newblock In Huang, T.; Zeng, Z.; Li, C.; and Leung, C.~S., eds., \emph{Neural
+  Information Processing}, 637--646. Berlin, Heidelberg: Springer Berlin
+  Heidelberg.
 \newblock ISBN 978-3-642-34500-5.
 
-\bibitem[Brassard(1994)]{10.1145/190616.190617}
-G.~Brassard.
-\newblock Quantum computing: The end of classical cryptography?
-\newblock \emph{SIGACT News}, 25\penalty0 (4):\penalty0 15--21, Dec. 1994.
+\bibitem[{Brassard(1994)}]{10.1145/190616.190617}
+Brassard, G. 1994.
+\newblock Quantum Computing: The End of Classical Cryptography?
+\newblock \emph{SIGACT News} 25(4): 15--21.
 \newblock ISSN 0163-5700.
 \newblock \doi{10.1145/190616.190617}.
-\newblock URL
-  \url{https://doi-org.ezproxy.auckland.ac.nz/10.1145/190616.190617}.
+\newblock
+  \urlprefix\url{https://doi-org.ezproxy.auckland.ac.nz/10.1145/190616.190617}.
 
-\bibitem[Courbariaux et~al.(2015)Courbariaux, Bengio, and David]{NIPS2015_5647}
-M.~Courbariaux, Y.~Bengio, and J.-P. David.
-\newblock Binaryconnect: Training deep neural networks with binary weights
+\bibitem[{Courbariaux, Bengio, and David(2015)}]{NIPS2015_5647}
+Courbariaux, M.; Bengio, Y.; and David, J.-P. 2015.
+\newblock BinaryConnect: Training Deep Neural Networks with binary weights
   during propagations.
-\newblock In C.~Cortes, N.~D. Lawrence, D.~D. Lee, M.~Sugiyama, and R.~Garnett,
-  editors, \emph{Advances in Neural Information Processing Systems 28}, pages
-  3123--3131. Curran Associates, Inc., 2015.
+\newblock In Cortes, C.; Lawrence, N.~D.; Lee, D.~D.; Sugiyama, M.; and
+  Garnett, R., eds., \emph{Advances in Neural Information Processing Systems
+  28}, 3123--3131. Curran Associates, Inc.
 
-\bibitem[Coutinho et~al.(2018)Coutinho, de~Oliveira~Albuquerque, Borges,
-  Garc{\'\i}a~Villalba, and Kim]{s18051306}
-M.~Coutinho, R.~de~Oliveira~Albuquerque, F.~Borges, L.~J. Garc{\'\i}a~Villalba,
-  and T.-H. Kim.
-\newblock Learning perfectly secure cryptography to protect communications with
-  adversarial neural cryptography.
-\newblock \emph{Sensors}, 18\penalty0 (5), 2018.
+\bibitem[{Coutinho et~al.(2018)Coutinho, de~Oliveira~Albuquerque, Borges,
+  Garc{\'\i}a~Villalba, and Kim}]{s18051306}
+Coutinho, M.; de~Oliveira~Albuquerque, R.; Borges, F.; Garc{\'\i}a~Villalba,
+  L.~J.; and Kim, T.-H. 2018.
+\newblock Learning Perfectly Secure Cryptography to Protect Communications with
+  Adversarial Neural Cryptography.
+\newblock \emph{Sensors} 18(5).
 \newblock ISSN 1424-8220.
 \newblock \doi{10.3390/s18051306}.
-\newblock URL \url{http://www.mdpi.com/1424-8220/18/5/1306}.
+\newblock \urlprefix\url{http://www.mdpi.com/1424-8220/18/5/1306}.
 
-\bibitem[Danilo~{Vargas}(2017)]{7460958}
-J.~M. Danilo~{Vargas}.
-\newblock Spectrum-diverse neuroevolution with unified neural models.
-\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems},
-  28\penalty0 (8):\penalty0 1759--1773, Aug 2017.
-\newblock ISSN 2162-237X.
-\newblock \doi{10.1109/TNNLS.2016.2551748}.
-
-\bibitem[de~Dormale and Quisquater(2007)]{MEURICEDEDORMALE200772}
-G.~M. de~Dormale and J.-J. Quisquater.
-\newblock High-speed hardware implementations of elliptic curve cryptography: A
+\bibitem[{de~Dormale and Quisquater(2007)}]{MEURICEDEDORMALE200772}
+de~Dormale, G.~M.; and Quisquater, J.-J. 2007.
+\newblock High-speed hardware implementations of Elliptic Curve Cryptography: A
   survey.
-\newblock \emph{Journal of Systems Architecture}, 53\penalty0 (2):\penalty0 72
-  -- 84, 2007.
+\newblock \emph{Journal of Systems Architecture} 53(2): 72 -- 84.
 \newblock ISSN 1383-7621.
 \newblock \doi{https://doi.org/10.1016/j.sysarc.2006.09.002}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S1383762106001044}.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1383762106001044}.
 \newblock Embedded Hardware for Cryptosystems.
 
-\bibitem[Feurer et~al.(2015)Feurer, Klein, Eggensperger, Springenberg, Blum,
-  and Hutter]{NIPS2015_5872}
-M.~Feurer, A.~Klein, K.~Eggensperger, J.~Springenberg, M.~Blum, and F.~Hutter.
-\newblock Efficient and robust automated machine learning.
-\newblock In C.~Cortes, N.~D. Lawrence, D.~D. Lee, M.~Sugiyama, and R.~Garnett,
-  editors, \emph{Advances in Neural Information Processing Systems 28}, pages
-  2962--2970. Curran Associates, Inc., 2015.
-\newblock URL
-  \url{http://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning.pdf}.
+\bibitem[{{El-Fotouh} and {Diepold}(2009)}]{5210990}
+{El-Fotouh}, M.~A.; and {Diepold}, K. 2009.
+\newblock The Pushdown Attack on AES.
+\newblock In \emph{2009 Third International Conference on Emerging Security
+  Information, Systems and Technologies}, 280--285.
+\newblock ISSN 2162-2116.
+\newblock \doi{10.1109/SECURWARE.2009.50}.
 
-\bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
-  Warde-Farley, Ozair, Courville, and Bengio]{NIPS2014_5423}
-I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
-  A.~Courville, and Y.~Bengio.
-\newblock Generative adversarial nets.
-\newblock In Z.~Ghahramani, M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q.
-  Weinberger, editors, \emph{Advances in Neural Information Processing Systems
-  27}, pages 2672--2680. Curran Associates, Inc., 2014.
-\newblock URL
-  \url{http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}.
+\bibitem[{Feurer et~al.(2015)Feurer, Klein, Eggensperger, Springenberg, Blum,
+  and Hutter}]{NIPS2015_5872}
+Feurer, M.; Klein, A.; Eggensperger, K.; Springenberg, J.; Blum, M.; and
+  Hutter, F. 2015.
+\newblock Efficient and Robust Automated Machine Learning.
+\newblock In Cortes, C.; Lawrence, N.~D.; Lee, D.~D.; Sugiyama, M.; and
+  Garnett, R., eds., \emph{Advances in Neural Information Processing Systems
+  28}, 2962--2970. Curran Associates, Inc.
+\newblock
+  \urlprefix\url{http://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning.pdf}.
 
-\bibitem[{Hsiao} et~al.(2010){Hsiao}, {Wen}, {Tsai}, and {Chen}]{5669194}
-S.~{Hsiao}, C.~{Wen}, M.~{Tsai}, and M.~{Chen}.
-\newblock Automatic generation of high-performance multiple-input xor/xnor
-  circuits and its application in advanced encryption standard (aes).
+\bibitem[{Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio}]{NIPS2014_5423}
+Goodfellow, I.; Pouget-Abadie, J.; Mirza, M.; Xu, B.; Warde-Farley, D.; Ozair,
+  S.; Courville, A.; and Bengio, Y. 2014.
+\newblock Generative Adversarial Nets.
+\newblock In Ghahramani, Z.; Welling, M.; Cortes, C.; Lawrence, N.~D.; and
+  Weinberger, K.~Q., eds., \emph{Advances in Neural Information Processing
+  Systems 27}, 2672--2680. Curran Associates, Inc.
+\newblock
+  \urlprefix\url{http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}.
+
+\bibitem[{{Hsiao} et~al.(2010){Hsiao}, {Wen}, {Tsai}, and {Chen}}]{5669194}
+{Hsiao}, S.; {Wen}, C.; {Tsai}, M.; and {Chen}, M. 2010.
+\newblock Automatic generation of high-performance multiple-input XOR/XNOR
+  circuits and its application in Advanced Encryption Standard (AES).
 \newblock In \emph{2010 International Symposium on Next Generation
-  Electronics}, pages 77--80, Nov 2010.
+  Electronics}, 77--80.
+\newblock ISSN 2378-8607.
 \newblock \doi{10.1109/ISNE.2010.5669194}.
 
-\bibitem[Kaso(2018)]{10.1371/journal.pone.0203434}
-A.~Kaso.
-\newblock Computation of the normalized cross-correlation by fast fourier
-  transform.
-\newblock \emph{PLOS ONE}, 13\penalty0 (9):\penalty0 1--16, 09 2018.
-\newblock \doi{10.1371/journal.pone.0203434}.
-\newblock URL \url{https://doi.org/10.1371/journal.pone.0203434}.
-
-\bibitem[Katz and Lindell(2008)]{katz2008introduction}
-J.~Katz and Y.~Lindell.
+\bibitem[{Katz and Lindell(2008)}]{katz2008introduction}
+Katz, J.; and Lindell, Y. 2008.
 \newblock \emph{Introduction to modern cryptography}.
 \newblock Chapman and Hall/CRC Cryptography and Network Security Series.
-  Chapman \& Hall/CRC, 2008.
+  Chapman \& Hall/CRC.
 \newblock ISBN 9781584885511.
-\newblock URL \url{https://books.google.ca/books?id=WIc\_AQAAIAAJ}.
+\newblock \urlprefix\url{https://books.google.ca/books?id=WIc\_AQAAIAAJ}.
 
-\bibitem[Klein et~al.(2005)Klein, Mislovaty, Kanter, Ruttor, and
-  Kinzel]{NIPS2004_2744}
-E.~Klein, R.~Mislovaty, I.~Kanter, A.~Ruttor, and W.~Kinzel.
+\bibitem[{Klein et~al.(2005)Klein, Mislovaty, Kanter, Ruttor, and
+  Kinzel}]{NIPS2004_2744}
+Klein, E.; Mislovaty, R.; Kanter, I.; Ruttor, A.; and Kinzel, W. 2005.
 \newblock Synchronization of neural networks by mutual learning and its
   application to cryptography.
-\newblock In L.~K. Saul, Y.~Weiss, and L.~Bottou, editors, \emph{Advances in
-  Neural Information Processing Systems 17}, pages 689--696. MIT Press, 2005.
-\newblock URL
-  \url{http://papers.nips.cc/paper/2744-synchronization-of-neural-networks-by-mutual-learning-and-its-application-to-cryptography.pdf}.
+\newblock In Saul, L.~K.; Weiss, Y.; and Bottou, L., eds., \emph{Advances in
+  Neural Information Processing Systems 17}, 689--696. MIT Press.
+\newblock
+  \urlprefix\url{http://papers.nips.cc/paper/2744-synchronization-of-neural-networks-by-mutual-learning-and-its-application-to-cryptography.pdf}.
 
-\bibitem[Klimov et~al.(2002)Klimov, Mityagin, and
-  Shamir]{10.1007/3-540-36178-2_18}
-A.~Klimov, A.~Mityagin, and A.~Shamir.
-\newblock Analysis of neural cryptography.
-\newblock In Y.~Zheng, editor, \emph{Advances in Cryptology --- ASIACRYPT
-  2002}, pages 288--298, Berlin, Heidelberg, 2002. Springer Berlin Heidelberg.
+\bibitem[{Klimov, Mityagin, and Shamir(2002)}]{10.1007/3-540-36178-2_18}
+Klimov, A.; Mityagin, A.; and Shamir, A. 2002.
+\newblock Analysis of Neural Cryptography.
+\newblock In Zheng, Y., ed., \emph{Advances in Cryptology --- ASIACRYPT 2002},
+  288--298. Berlin, Heidelberg: Springer Berlin Heidelberg.
 \newblock ISBN 978-3-540-36178-7.
 
-\bibitem[Lou and Jiang(2019)]{NIPS2019_9194}
-Q.~Lou and L.~Jiang.
-\newblock She: A fast and accurate deep neural network for encrypted data.
-\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~Alch\'{e}-Buc,
-  E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural Information
-  Processing Systems 32}, pages 10035--10043. Curran Associates, Inc., 2019.
-\newblock URL
-  \url{http://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-network-for-encrypted-data.pdf}.
+\bibitem[{Lou and Jiang(2019)}]{NIPS2019_9194}
+Lou, Q.; and Jiang, L. 2019.
+\newblock SHE: A Fast and Accurate Deep Neural Network for Encrypted Data.
+\newblock In Wallach, H.; Larochelle, H.; Beygelzimer, A.; Alch\'{e}-Buc, F.;
+  Fox, E.; and Garnett, R., eds., \emph{Advances in Neural Information
+  Processing Systems 32}, 10035--10043. Curran Associates, Inc.
+\newblock
+  \urlprefix\url{http://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-network-for-encrypted-data.pdf}.
 
-\bibitem[Ma et~al.(2019)Ma, Xiong, Hu, and Ma]{Ma_2019_CVPR_Workshops}
-Y.~Ma, H.~Xiong, Z.~Hu, and L.~Ma.
-\newblock Efficient super resolution using binarized neural network.
+\bibitem[{Ma et~al.(2019)Ma, Xiong, Hu, and Ma}]{Ma_2019_CVPR_Workshops}
+Ma, Y.; Xiong, H.; Hu, Z.; and Ma, L. 2019.
+\newblock Efficient Super Resolution Using Binarized Neural Network.
 \newblock In \emph{The IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR) Workshops}, June 2019.
+  Recognition (CVPR) Workshops}.
 
-\bibitem[Morris J.~Dworkin(2001)]{AES-NIST}
-J.~R. N. J. F. L. E. B. E. R. J. F. D.~J. Morris J.~Dworkin, Elaine B.~Barker.
-\newblock Advanced encryption standard (aes).
-\newblock \emph{Federal Inf. Process. Stds. (NIST FIPS)}, 197:\penalty0 47, Nov
+\bibitem[{Morris J.~Dworkin(2001)}]{AES-NIST}
+Morris J.~Dworkin, Elaine B.~Barker, J. R. N. J. F. L. E. B. E. R. J. F. D.~J.
   2001.
+\newblock Advanced Encryption Standard (AES).
+\newblock \emph{Federal Inf. Process. Stds. (NIST FIPS)} 197: 47.
 
-\bibitem[Riazi et~al.(2019)Riazi, Samragh, Chen, Laine, Lauter, and
-  Koushanfar]{1133}
-M.~S. Riazi, M.~Samragh, H.~Chen, K.~Laine, K.~Lauter, and F.~Koushanfar.
-\newblock Xonn: Xnor-based oblivious deep neural network inference.
-\newblock In \emph{USENIX Security}. USENIX, USENIX, 05/2019 2019.
-\newblock URL \url{https://arxiv.org/pdf/1902.07342.pdf}.
+\bibitem[{Omar G.~Abood(2018)}]{SurveyCrypto}
+Omar G.~Abood, S. K.~G. 2018.
+\newblock A Survey on Cryptography Algorithms.
+\newblock In \emph{International Journal of Scientific and Research
+  Publications (IJSRP)}, volume~8, 21. IJSRP, IJSRP.
 
-\bibitem[Shannon(1945)]{MatThCryptoShannon}
-C.~Shannon.
-\newblock A mathematical theory of cryptography.
-\newblock In I.~A. for Cryptologic~Research, editor, \emph{A Mathematical
-  Theory of Cryptography}, volume~1, page 132. International Association for
-  Cryptologic Research, International Association for Cryptologic Research,
-  1945.
+\bibitem[{Riazi et~al.(2019)Riazi, Samragh, Chen, Laine, Lauter, and
+  Koushanfar}]{1133}
+Riazi, M.~S.; Samragh, M.; Chen, H.; Laine, K.; Lauter, K.; and Koushanfar, F.
+  2019.
+\newblock XONN: XNOR-based Oblivious Deep Neural Network Inference.
+\newblock In \emph{USENIX Security}. USENIX, USENIX.
+\newblock \urlprefix\url{https://arxiv.org/pdf/1902.07342.pdf}.
 
-\bibitem[Shannon(1949)]{CommTheoryShannon}
-C.~Shannon.
-\newblock Communication theory and secrecy systems.
-\newblock \emph{Bell system Technical Journal}, 28\penalty0 (4):\penalty0
-  656--715, 1949 1949.
+\bibitem[{Shannon(1945)}]{MatThCryptoShannon}
+Shannon, C. 1945.
+\newblock A Mathematical Theory of Cryptography.
+\newblock In for Cryptologic~Research, I.~A., ed., \emph{A Mathematical Theory
+  of Cryptography}, volume~1, 132. International Association for Cryptologic
+  Research, International Association for Cryptologic Research.
 
-\bibitem[Shi et~al.(2020)Shi, Chen, Lu, Feng, Shi, Yang, and Li]{Shi:2020aa}
-J.~Shi, S.~Chen, Y.~Lu, Y.~Feng, R.~Shi, Y.~Yang, and J.~Li.
-\newblock An approach to cryptography based on continuous-variable quantum
-  neural network.
-\newblock \emph{Scientific Reports}, 10\penalty0 (1):\penalty0 2107, 2020.
+\bibitem[{Shi et~al.(2020)Shi, Chen, Lu, Feng, Shi, Yang, and Li}]{Shi:2020aa}
+Shi, J.; Chen, S.; Lu, Y.; Feng, Y.; Shi, R.; Yang, Y.; and Li, J. 2020.
+\newblock An Approach to Cryptography Based on Continuous-Variable Quantum
+  Neural Network.
+\newblock \emph{Scientific Reports} 10(1): 2107.
 \newblock \doi{10.1038/s41598-020-58928-1}.
-\newblock URL \url{https://doi.org/10.1038/s41598-020-58928-1}.
+\newblock \urlprefix\url{https://doi.org/10.1038/s41598-020-58928-1}.
 
-\bibitem[Simons and Lee(2019)]{electronics8060661}
-T.~Simons and D.-J. Lee.
-\newblock A review of binarized neural networks.
-\newblock \emph{Electronics}, 8\penalty0 (6), 2019.
+\bibitem[{Simons and Lee(2019)}]{electronics8060661}
+Simons, T.; and Lee, D.-J. 2019.
+\newblock A Review of Binarized Neural Networks.
+\newblock \emph{Electronics} 8(6).
 \newblock ISSN 2079-9292.
 \newblock \doi{10.3390/electronics8060661}.
-\newblock URL \url{https://www.mdpi.com/2079-9292/8/6/661}.
+\newblock \urlprefix\url{https://www.mdpi.com/2079-9292/8/6/661}.
 
-\bibitem[Song et~al.(2018)Song, He, Gao, Xu, Hanjalic, and Shen]{AAAI1817150}
-J.~Song, T.~He, L.~Gao, X.~Xu, A.~Hanjalic, and H.~T. Shen.
-\newblock Binary generative adversarial networks for image retrieval, 2018.
-\newblock URL
-  \url{https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17150}.
+\bibitem[{Song et~al.(2018)Song, He, Gao, Xu, Hanjalic, and Shen}]{AAAI1817150}
+Song, J.; He, T.; Gao, L.; Xu, X.; Hanjalic, A.; and Shen, H.~T. 2018.
+\newblock Binary Generative Adversarial Networks for Image Retrieval.
+\newblock
+  \urlprefix\url{https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17150}.
 
-\bibitem[Soudry et~al.(2014)Soudry, Hubara, and Meir]{Soudry2014ExpectationBP}
-D.~Soudry, I.~Hubara, and R.~Meir.
-\newblock Expectation backpropagation: Parameter-free training of multilayer
-  neural networks with continuous or discrete weights.
-\newblock In \emph{NIPS}, 2014.
+\bibitem[{Soudry, Hubara, and Meir(2014)}]{Soudry2014ExpectationBP}
+Soudry, D.; Hubara, I.; and Meir, R. 2014.
+\newblock Expectation Backpropagation: Parameter-Free Training of Multilayer
+  Neural Networks with Continuous or Discrete Weights.
+\newblock In \emph{NIPS}.
 
-\bibitem[{Stanley} and {Miikkulainen}(2002)]{1004508}
-K.~O. {Stanley} and R.~{Miikkulainen}.
+\bibitem[{{Stanley} and {Miikkulainen}(2002)}]{1004508}
+{Stanley}, K.~O.; and {Miikkulainen}, R. 2002.
 \newblock Efficient evolution of neural network topologies.
 \newblock In \emph{Proceedings of the 2002 Congress on Evolutionary
-  Computation. CEC'02 (Cat. No.02TH8600)}, volume~2, pages 1757--1762 vol.2,
-  May 2002.
+  Computation. CEC'02 (Cat. No.02TH8600)}, volume~2, 1757--1762 vol.2.
+\newblock ISSN null.
 \newblock \doi{10.1109/CEC.2002.1004508}.
 
-\bibitem[Sun et~al.(2019)Sun, Choi, Chen, Wang, Venkataramani, Srinivasan, Cui,
-  Zhang, and Gopalakrishnan]{NIPS2019_8736}
-X.~Sun, J.~Choi, C.-Y. Chen, N.~Wang, S.~Venkataramani, V.~V. Srinivasan,
-  X.~Cui, W.~Zhang, and K.~Gopalakrishnan.
-\newblock Hybrid 8-bit floating point (hfp8) training and inference for deep
-  neural networks.
-\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~Alch\'{e}-Buc,
-  E.~Fox, and R.~Garnett, editors, \emph{Advances in Neural Information
-  Processing Systems 32}, pages 4900--4909. Curran Associates, Inc., 2019.
-\newblock URL
-  \url{http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf}.
+\bibitem[{Sun et~al.(2019)Sun, Choi, Chen, Wang, Venkataramani, Srinivasan,
+  Cui, Zhang, and Gopalakrishnan}]{NIPS2019_8736}
+Sun, X.; Choi, J.; Chen, C.-Y.; Wang, N.; Venkataramani, S.; Srinivasan, V.~V.;
+  Cui, X.; Zhang, W.; and Gopalakrishnan, K. 2019.
+\newblock Hybrid 8-bit Floating Point (HFP8) Training and Inference for Deep
+  Neural Networks.
+\newblock In Wallach, H.; Larochelle, H.; Beygelzimer, A.; Alch\'{e}-Buc, F.;
+  Fox, E.; and Garnett, R., eds., \emph{Advances in Neural Information
+  Processing Systems 32}, 4900--4909. Curran Associates, Inc.
+\newblock
+  \urlprefix\url{http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf}.
 
-\bibitem[{Valencia} et~al.(2019{\natexlab{a}}){Valencia}, {Sham}, and
-  {Sinnen}]{8953134}
-R.~{Valencia}, C.~{Sham}, and O.~{Sinnen}.
-\newblock Using neuroevolved binary neural networks to solve reinforcement
+\bibitem[{{Valencia}, {Sham}, and {Sinnen}(2019{\natexlab{a}})}]{8953134}
+{Valencia}, R.; {Sham}, C.; and {Sinnen}, O. 2019{\natexlab{a}}.
+\newblock Using Neuroevolved Binary Neural Networks to solve reinforcement
   learning environments.
 \newblock In \emph{2019 IEEE Asia Pacific Conference on Circuits and Systems
-  (APCCAS)}, pages 301--304, Nov 2019{\natexlab{a}}.
+  (APCCAS)}, 301--304.
+\newblock ISSN null.
 \newblock \doi{10.1109/APCCAS47518.2019.8953134}.
 
-\bibitem[{Valencia} et~al.(2019{\natexlab{b}}){Valencia}, {Sham}, and
-  {Sinnen}]{8977877}
-R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}.
-\newblock Evolved binary neural networks through harnessing fpga capabilities.
+\bibitem[{{Valencia}, {Sham}, and {Sinnen}(2019{\natexlab{b}})}]{8977877}
+{Valencia}, R.; {Sham}, C.~W.; and {Sinnen}, O. 2019{\natexlab{b}}.
+\newblock Evolved Binary Neural Networks Through Harnessing FPGA Capabilities.
 \newblock In \emph{2019 International Conference on Field-Programmable
-  Technology (ICFPT)}, pages 395--398, Dec 2019{\natexlab{b}}.
+  Technology (ICFPT)}, 395--398.
+\newblock ISSN null.
 \newblock \doi{10.1109/ICFPT47387.2019.00076}.
 
-\bibitem[{Zhu} et~al.(2018){Zhu}, {Vargas}, and {Sakurai}]{8590945}
-Y.~{Zhu}, D.~V. {Vargas}, and K.~{Sakurai}.
-\newblock Neural cryptography based on the topology evolving neural networks.
+\bibitem[{{Zhu}, {Vargas}, and {Sakurai}(2018)}]{8590945}
+{Zhu}, Y.; {Vargas}, D.~V.; and {Sakurai}, K. 2018.
+\newblock Neural Cryptography Based on the Topology Evolving Neural Networks.
 \newblock In \emph{2018 Sixth International Symposium on Computing and
-  Networking Workshops (CANDARW)}, pages 472--478, Nov 2018.
+  Networking Workshops (CANDARW)}, 472--478.
 \newblock \doi{10.1109/CANDARW.2018.00091}.
 
 \end{thebibliography}
