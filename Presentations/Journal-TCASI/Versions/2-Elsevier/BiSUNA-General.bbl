@@ -1,0 +1,363 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{BiSUNAOCLGithub}
+R.~Valencia, \href{github.com/rval735/bisunaocl}{Binary spectrum-diverse
+  unified neuroevolution architecture} (Dec 2019).
+\newline\urlprefix\url{github.com/rval735/bisunaocl}
+
+\bibitem{Minsky:1988:PEE:50066}
+M.~L. Minsky, S.~A. Papert, Perceptrons: Expanded Edition, MIT Press,
+  Cambridge, MA, USA, 1988.
+
+\bibitem{Linnainmaa1976}
+S.~Linnainmaa, \href{https://doi.org/10.1007/BF01931367}{Taylor expansion of
+  the accumulated rounding error}, BIT Numerical Mathematics 16~(2) (1976)
+  146--160.
+\newblock \href {https://doi.org/10.1007/BF01931367}
+  {\path{doi:10.1007/BF01931367}}.
+\newline\urlprefix\url{https://doi.org/10.1007/BF01931367}
+
+\bibitem{AIWinter-Andrey}
+A.~Kurenkov.
+\newblock
+  \href{http://www.andreykurenkov.com/writing/ai/a-brief-history-of-neural-nets-and-deep-learning}{A
+  'brief' history of neural nets and deep learning} [online] (September 2018)
+  [cited 25-Sep-2018].
+
+\bibitem{Krizhevsky2999257}
+A.~Krizhevsky, I.~Sutskever, G.~E. Hinton,
+  \href{http://dl.acm.org/citation.cfm?id=2999134.2999257}{Imagenet
+  classification with deep convolutional neural networks}, in: Proceedings of
+  the 25th International Conference on Neural Information Processing Systems -
+  Volume 1, NIPS'12, Curran Associates Inc., USA, 2012, pp. 1097--1105.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=2999134.2999257}
+
+\bibitem{4790104}
+M.~Kam, R.~Cheng, A.~Guez, On the state space of the binary neural network, in:
+  1988 American Control Conference, 1988, pp. 2276--2281.
+\newblock \href {https://doi.org/10.23919/ACC.1988.4790104}
+  {\path{doi:10.23919/ACC.1988.4790104}}.
+
+\bibitem{5726804}
+S.~A. Brodsky, C.~C. Guest, Binary backpropagation in content addressable
+  memory, in: 1990 IJCNN International Joint Conference on Neural Networks,
+  1990, pp. 205--210 vol.3.
+\newblock \href {https://doi.org/10.1109/IJCNN.1990.137846}
+  {\path{doi:10.1109/IJCNN.1990.137846}}.
+
+\bibitem{Brodsky:93}
+S.~A. Brodsky, G.~C. Marsden, C.~C. Guest,
+  \href{http://ao.osa.org/abstract.cfm?URI=ao-32-8-1338}{Optical matrix--vector
+  implementation of the content-addressable network}, Appl. Opt. 32~(8) (1993)
+  1338--1345.
+\newblock \href {https://doi.org/10.1364/AO.32.001338}
+  {\path{doi:10.1364/AO.32.001338}}.
+\newline\urlprefix\url{http://ao.osa.org/abstract.cfm?URI=ao-32-8-1338}
+
+\bibitem{857854}
+M.~{Costa}, D.~{Palmisano}, E.~{Pasero}, Gradient descent in feed-forward
+  networks with binary neurons, in: Proceedings of the IEEE-INNS-ENNS
+  International Joint Conference on Neural Networks. IJCNN 2000. Neural
+  Computing: New Challenges and Perspectives for the New Millennium, Vol.~1,
+  2000, pp. 311--316 vol.1.
+\newblock \href {https://doi.org/10.1109/IJCNN.2000.857854}
+  {\path{doi:10.1109/IJCNN.2000.857854}}.
+
+\bibitem{NIPS2015_5647}
+M.~Courbariaux, Y.~Bengio, J.-P. David, Binaryconnect: Training deep neural
+  networks with binary weights during propagations, in: C.~Cortes, N.~D.
+  Lawrence, D.~D. Lee, M.~Sugiyama, R.~Garnett (Eds.), Advances in Neural
+  Information Processing Systems 28, Curran Associates, Inc., 2015, pp.
+  3123--3131.
+
+\bibitem{10.1007/978-3-319-46493-0_32}
+M.~Rastegari, V.~Ordonez, J.~Redmon, A.~Farhadi, Xnor-net: Imagenet
+  classification using binary convolutional neural networks, in: B.~Leibe,
+  J.~Matas, N.~Sebe, M.~Welling (Eds.), Computer Vision -- ECCV 2016, Springer
+  International Publishing, Cham, 2016, pp. 525--542.
+
+\bibitem{Umuroglu:2017:FFF:3020078.3021744}
+Y.~Umuroglu, N.~J. Fraser, G.~Gambardella, M.~Blott, P.~Leong, M.~Jahre,
+  K.~Vissers, \href{http://doi.acm.org/10.1145/3020078.3021744}{Finn: A
+  framework for fast, scalable binarized neural network inference}, in:
+  Proceedings of the 2017 ACM/SIGDA International Symposium on
+  Field-Programmable Gate Arrays, FPGA '17, ACM, New York, NY, USA, 2017, pp.
+  65--74.
+\newblock \href {https://doi.org/10.1145/3020078.3021744}
+  {\path{doi:10.1145/3020078.3021744}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/3020078.3021744}
+
+\bibitem{Blott:2018:FRE:3299999.3242897}
+M.~Blott, T.~B. Preusser, N.~J. Fraser, G.~Gambardella, K.~O'brien,
+  Y.~Umuroglu, M.~Leeser, K.~Vissers,
+  \href{http://doi.acm.org/10.1145/3242897}{Finn-r: An end-to-end deep-learning
+  framework for fast exploration of quantized neural networks}, ACM Trans.
+  Reconfigurable Technol. Syst. 11~(3) (2018) 16:1--16:23.
+\newblock \href {https://doi.org/10.1145/3242897} {\path{doi:10.1145/3242897}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/3242897}
+
+\bibitem{electronics8060661}
+T.~Simons, D.-J. Lee, \href{https://www.mdpi.com/2079-9292/8/6/661}{A review of
+  binarized neural networks}, Electronics 8~(6) (2019).
+\newblock \href {https://doi.org/10.3390/electronics8060661}
+  {\path{doi:10.3390/electronics8060661}}.
+\newline\urlprefix\url{https://www.mdpi.com/2079-9292/8/6/661}
+
+\bibitem{8977877}
+R.~{Valencia}, C.~W. {Sham}, O.~{Sinnen}, Evolved binary neural networks
+  through harnessing fpga capabilities, in: 2019 International Conference on
+  Field-Programmable Technology (ICFPT), 2019, pp. 395--398.
+\newblock \href {https://doi.org/10.1109/ICFPT47387.2019.00076}
+  {\path{doi:10.1109/ICFPT47387.2019.00076}}.
+
+\bibitem{7460958}
+J.~M. Danilo~{Vargas}, Spectrum-diverse neuroevolution with unified neural
+  models, IEEE Transactions on Neural Networks and Learning Systems 28~(8)
+  (2017) 1759--1773.
+\newblock \href {https://doi.org/10.1109/TNNLS.2016.2551748}
+  {\path{doi:10.1109/TNNLS.2016.2551748}}.
+
+\bibitem{10.1007/3-540-61108-8_27}
+T.~B{\"a}ck, Evolution strategies: An alternative evolutionary algorithm, in:
+  J.-M. Alliot, E.~Lutton, E.~Ronald, M.~Schoenauer, D.~Snyers (Eds.),
+  Artificial Evolution, Springer Berlin Heidelberg, Berlin, Heidelberg, 1996,
+  pp. 1--20.
+
+\bibitem{Sher2013NeuroEvol}
+G.~I. Sher, \href{https://doi.org/10.1007/978-1-4614-4463-3_1}{Handbook of
+  Neuroevolution Through Erlang}, Springer New York, New York, NY, 2013.
+\newblock \href {https://doi.org/10.1007/978-1-4614-4463-3_1}
+  {\path{doi:10.1007/978-1-4614-4463-3_1}}.
+\newline\urlprefix\url{https://doi.org/10.1007/978-1-4614-4463-3_1}
+
+\bibitem{5524599}
+M.~Stoica, G.~A. Calangiu, F.~Sisak, Measuring the time needed for training a
+  neural network based on the number of training steps, in: 19th International
+  Workshop on Robotics in Alpe-Adria-Danube Region (RAAD 2010), 2010, pp.
+  109--113.
+\newblock \href {https://doi.org/10.1109/RAAD.2010.5524599}
+  {\path{doi:10.1109/RAAD.2010.5524599}}.
+
+\bibitem{Gruau:1996:CCE:1595536.1595547}
+F.~Gruau, D.~Whitley, L.~Pyeatt,
+  \href{http://dl.acm.org/citation.cfm?id=1595536.1595547}{A comparison between
+  cellular encoding and direct encoding for genetic neural networks}, in:
+  Proceedings of the 1st Annual Conference on Genetic Programming, MIT Press,
+  Cambridge, MA, USA, 1996, pp. 81--89.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1595536.1595547}
+
+\bibitem{4250190}
+L.~Chen, D.~Alahakoon, Neuroevolution of augmenting topologies with learning
+  for data classification, in: 2006 International Conference on Information and
+  Automation, 2006, pp. 367--371.
+\newblock \href {https://doi.org/10.1109/ICINFA.2006.374100}
+  {\path{doi:10.1109/ICINFA.2006.374100}}.
+
+\bibitem{Siebel:2007:ERL:1367012.1367016}
+N.~T. Siebel, G.~Sommer,
+  \href{http://dl.acm.org/citation.cfm?id=1367012.1367016}{Evolutionary
+  reinforcement learning of artificial neural networks}, Int. J. Hybrid Intell.
+  Syst. 4~(3) (2007) 171--183.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=1367012.1367016}
+
+\bibitem{10.1007/978-3-642-33860-1_3}
+F.~Gomez, Scalable neuroevolution for reinforcement learning, in: A.-H. Dediu,
+  C.~Mart{\'\i}n-Vide, B.~Truthe (Eds.), Theory and Practice of Natural
+  Computing, Springer Berlin Heidelberg, Berlin, Heidelberg, 2012, pp. 27--29.
+
+\bibitem{8590945}
+Y.~{Zhu}, D.~V. {Vargas}, K.~{Sakurai}, Neural cryptography based on the
+  topology evolving neural networks, in: 2018 Sixth International Symposium on
+  Computing and Networking Workshops (CANDARW), 2018, pp. 472--478.
+\newblock \href {https://doi.org/10.1109/CANDARW.2018.00091}
+  {\path{doi:10.1109/CANDARW.2018.00091}}.
+
+\bibitem{ijcai2017-316}
+T.~Lin, T.~Guo, K.~Aberer,
+  \href{https://doi.org/10.24963/ijcai.2017/316}{Hybrid neural networks for
+  learning the trend in time series}, in: Proceedings of the Twenty-Sixth
+  International Joint Conference on Artificial Intelligence, {IJCAI-17}, 2017,
+  pp. 2273--2279.
+\newblock \href {https://doi.org/10.24963/ijcai.2017/316}
+  {\path{doi:10.24963/ijcai.2017/316}}.
+\newline\urlprefix\url{https://doi.org/10.24963/ijcai.2017/316}
+
+\bibitem{5678632}
+C.~O. {Oluigbo}, A.~R. {Rezai}, Addressing neurological disorders with
+  neuromodulation, IEEE Transactions on Biomedical Engineering 58~(7) (2011)
+  1907--1917.
+\newblock \href {https://doi.org/10.1109/TBME.2010.2102758}
+  {\path{doi:10.1109/TBME.2010.2102758}}.
+
+\bibitem{6804688}
+M.~{Rahimi Azghadi}, N.~{Iannella}, S.~F. {Al-Sarawi}, G.~{Indiveri},
+  D.~{Abbott}, Spike-based synaptic plasticity in silicon: Design,
+  implementation, application, and challenges, Proceedings of the IEEE 102~(5)
+  (2014) 717--737.
+\newblock \href {https://doi.org/10.1109/JPROC.2014.2314454}
+  {\path{doi:10.1109/JPROC.2014.2314454}}.
+
+\bibitem{6215974}
+D.~{Bhargavaram}, M.~G.~K. {Pillai}, Low power dual edge triggered flip-flop,
+  in: IEEE-International Conference On Advances In Engineering, Science And
+  Management (ICAESM -2012), 2012, pp. 63--67.
+
+\bibitem{8398183}
+S.~{Liu}, G.~{Liao}, Y.~{Ding}, Stock transaction prediction modeling and
+  analysis based on lstm, in: 2018 13th IEEE Conference on Industrial
+  Electronics and Applications (ICIEA), 2018, pp. 2787--2790.
+\newblock \href {https://doi.org/10.1109/ICIEA.2018.8398183}
+  {\path{doi:10.1109/ICIEA.2018.8398183}}.
+
+\bibitem{8953134}
+R.~{Valencia}, C.~{Sham}, O.~{Sinnen}, Using neuroevolved binary neural
+  networks to solve reinforcement learning environments, in: 2019 IEEE Asia
+  Pacific Conference on Circuits and Systems (APCCAS), 2019, pp. 301--304.
+\newblock \href {https://doi.org/10.1109/APCCAS47518.2019.8953134}
+  {\path{doi:10.1109/APCCAS47518.2019.8953134}}.
+
+\bibitem{7033335}
+O.~P. Patel, A.~Tiwari, Quantum inspired binary neural network algorithm, in:
+  2014 International Conference on Information Technology, 2014, pp. 270--274.
+\newblock \href {https://doi.org/10.1109/ICIT.2014.29}
+  {\path{doi:10.1109/ICIT.2014.29}}.
+
+\bibitem{NIPS2016_6573}
+I.~Hubara, M.~Courbariaux, D.~Soudry, R.~El-Yaniv, Y.~Bengio,
+  \href{http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf}{Binarized
+  neural networks}, in: Advances in Neural Information Processing Systems 29,
+  Curran Associates, Inc., 2016, pp. 4107--4115.
+\newline\urlprefix\url{http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf}
+
+\bibitem{Han:2016:EEI:3001136.3001163}
+S.~Han, X.~Liu, H.~Mao, J.~Pu, A.~Pedram, M.~A. Horowitz, W.~J. Dally,
+  \href{https://doi.org/10.1109/ISCA.2016.30}{Eie: Efficient inference engine
+  on compressed deep neural network}, in: Proceedings of the 43rd International
+  Symposium on Computer Architecture, ISCA '16, IEEE Press, Piscataway, NJ,
+  USA, 2016, pp. 243--254.
+\newblock \href {https://doi.org/10.1109/ISCA.2016.30}
+  {\path{doi:10.1109/ISCA.2016.30}}.
+\newline\urlprefix\url{https://doi.org/10.1109/ISCA.2016.30}
+
+\bibitem{10.1145/3377929.3389933}
+R.~H.~V. Tenorio, C.~W. Sham, D.~V. Vargas,
+  \href{https://doi.org/10.1145/3377929.3389933}{Preliminary study of applied
+  binary neural networks for neural cryptography}, in: Proceedings of the 2020
+  Genetic and Evolutionary Computation Conference Companion, GECCO '20,
+  Association for Computing Machinery, New York, NY, USA, 2020, pp. 291--292.
+\newblock \href {https://doi.org/10.1145/3377929.3389933}
+  {\path{doi:10.1145/3377929.3389933}}.
+\newline\urlprefix\url{https://doi.org/10.1145/3377929.3389933}
+
+\bibitem{Kung2018}
+J.~Kung, D.~Zhang, G.~van~der Wal, S.~Chai, S.~Mukhopadhyay,
+  \href{https://doi.org/10.1007/s11265-017-1255-5}{Efficient object detection
+  using embedded binarized neural networks}, Journal of Signal Processing
+  Systems 90~(6) (2018) 877--890.
+\newblock \href {https://doi.org/10.1007/s11265-017-1255-5}
+  {\path{doi:10.1007/s11265-017-1255-5}}.
+\newline\urlprefix\url{https://doi.org/10.1007/s11265-017-1255-5}
+
+\bibitem{2016arXiv160601540B}
+G.~{Brockman}, V.~{Cheung}, L.~{Pettersson}, J.~{Schneider}, J.~{Schulman},
+  J.~{Tang}, W.~{Zaremba}, {OpenAI Gym}, arXiv e-prints (Jun. 2016).
+\newblock \href {http://arxiv.org/abs/1606.01540} {\path{arXiv:1606.01540}}.
+
+\bibitem{mnih-atari-2013}
+V.~Mnih, K.~Kavukcuoglu, D.~Silver, A.~Graves, I.~Antonoglou, D.~Wierstra,
+  M.~Riedmiller, Playing atari with deep reinforcement learning, in: NIPS Deep
+  Learning Workshop, NIPS, 2013.
+
+\bibitem{gRPCPage}
+L.~Foundation, \href{https://grpc.io}{grpc} (2020) [cited 9/Jul/2020].
+\newline\urlprefix\url{https://grpc.io}
+
+\bibitem{NectarCloud}
+N.~R.~I. for Australia.
+\newblock
+  \href{https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/}{New
+  zealand nectar cloud research} [online] (Nov 2017) [cited Jul, 2019].
+
+\bibitem{TF-DQNTut}
+TensorFlow,
+  \href{https://www.tensorflow.org/agents/tutorials/1_dqn_tutorial}{Train a
+  deep q network with tf-agents}.
+\newline\urlprefix\url{https://www.tensorflow.org/agents/tutorials/1_dqn_tutorial}
+
+\bibitem{Moore-1991-13223}
+A.~Moore, Efficient memory-based learning for robot control, Ph.D. thesis,
+  Carnegie Mellon University, Pittsburgh, PA (March 1991).
+
+\bibitem{rouletteV0OpenAI}
+tanemaki,
+  \href{https://gym.openai.com/evaluations/eval_DFWdtrdSCikuZWwf8HN8A/}{Algorithm
+  on roulette-v0} (2016) [cited 30 Apr 2019].
+\newline\urlprefix\url{https://gym.openai.com/evaluations/eval_DFWdtrdSCikuZWwf8HN8A/}
+
+\bibitem{Strens:2000:BFR:645529.658114}
+M.~J.~A. Strens, \href{http://dl.acm.org/citation.cfm?id=645529.658114}{A
+  bayesian framework for reinforcement learning}, in: Proceedings of the
+  Seventeenth International Conference on Machine Learning, ICML '00, 2000, pp.
+  943--950.
+\newline\urlprefix\url{http://dl.acm.org/citation.cfm?id=645529.658114}
+
+\bibitem{nchainv0OpenAI}
+blole,
+  \href{https://gym.openai.com/evaluations/eval_8KB72MuwRqqdbRG4UMs1w/}{Algorithm
+  on nchain-v0} (2016) [cited 2/May/2019].
+\newline\urlprefix\url{https://gym.openai.com/evaluations/eval_8KB72MuwRqqdbRG4UMs1w/}
+
+\bibitem{duplicatedOpenAIGym}
+colinmorris,
+  \href{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}{Algorithm
+  on duplicatedinput-v0} (2016) [cited 30 Apr 2019].
+\newline\urlprefix\url{https://gym.openai.com/evaluations/eval_5PlrBv8wRNGI2J1lp3otUA/}
+
+\bibitem{5607329}
+A.~Gomperts, A.~Ukil, F.~Zurfluh, Development and implementation of
+  parameterized fpga-based general purpose neural networks for online
+  applications, IEEE Transactions on Industrial Informatics 7~(1) (2011)
+  78--89.
+\newblock \href {https://doi.org/10.1109/TII.2010.2085006}
+  {\path{doi:10.1109/TII.2010.2085006}}.
+
+\bibitem{Zhang:2015:OFA:2684746.2689060}
+C.~Zhang, P.~Li, G.~Sun, Y.~Guan, B.~Xiao, J.~Cong,
+  \href{http://doi.acm.org/10.1145/2684746.2689060}{Optimizing fpga-based
+  accelerator design for deep convolutional neural networks}, in: Proceedings
+  of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate
+  Arrays, FPGA '15, ACM, New York, NY, USA, 2015, pp. 161--170.
+\newblock \href {https://doi.org/10.1145/2684746.2689060}
+  {\path{doi:10.1145/2684746.2689060}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/2684746.2689060}
+
+\bibitem{Zhao:2017:ABC:3020078.3021741}
+R.~Zhao, W.~Song, W.~Zhang, T.~Xing, J.-H. Lin, M.~Srivastava, R.~Gupta,
+  Z.~Zhang, \href{http://doi.acm.org/10.1145/3020078.3021741}{Accelerating
+  binarized convolutional neural networks with software-programmable fpgas},
+  in: Proceedings of the 2017 ACM/SIGDA International Symposium on
+  Field-Programmable Gate Arrays, FPGA '17, ACM, 2017, pp. 15--24.
+\newblock \href {https://doi.org/10.1145/3020078.3021741}
+  {\path{doi:10.1145/3020078.3021741}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/3020078.3021741}
+
+\bibitem{LIANG20181072}
+S.~Liang, S.~Yin, L.~Liu, W.~Luk, S.~Wei,
+  \href{http://www.sciencedirect.com/science/article/pii/S0925231217315655}{Fp-bnn:
+  Binarized neural network on fpga}, Neurocomputing 275 (2018) 1072 -- 1086.
+\newblock \href {https://doi.org/https://doi.org/10.1016/j.neucom.2017.09.046}
+  {\path{doi:https://doi.org/10.1016/j.neucom.2017.09.046}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0925231217315655}
+
+\bibitem{OpenVINOStarterKit}
+Terasic,
+  \href{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=1159}{Starter
+  platform for openvino{\texttrademark} toolkit} [cited 2020].
+\newline\urlprefix\url{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=1159}
+
+\end{thebibliography}

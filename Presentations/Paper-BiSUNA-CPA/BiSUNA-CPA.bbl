@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{31}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -21,6 +21,14 @@ Alani, M.~M. 2012.
   Heidelberg.
 \newblock ISBN 978-3-642-34500-5.
 
+\bibitem[{Biryukov(2011)}]{Biryukov2011}
+Biryukov, A. 2011.
+\newblock \emph{Chosen Plaintext Attack}, 205--206.
+\newblock Boston, MA: Springer US.
+\newblock ISBN 978-1-4419-5906-5.
+\newblock \doi{10.1007/978-1-4419-5906-5_557}.
+\newblock \urlprefix\url{https://doi.org/10.1007/978-1-4419-5906-5_557}.
+
 \bibitem[{Brassard(1994)}]{10.1145/190616.190617}
 Brassard, G. 1994.
 \newblock Quantum Computing: The End of Classical Cryptography?
@@ -30,13 +38,18 @@ Brassard, G. 1994.
 \newblock
   \urlprefix\url{https://doi-org.ezproxy.auckland.ac.nz/10.1145/190616.190617}.
 
-\bibitem[{Courbariaux, Bengio, and David(2015)}]{NIPS2015_5647}
-Courbariaux, M.; Bengio, Y.; and David, J.-P. 2015.
-\newblock BinaryConnect: Training Deep Neural Networks with binary weights
-  during propagations.
-\newblock In Cortes, C.; Lawrence, N.~D.; Lee, D.~D.; Sugiyama, M.; and
-  Garnett, R., eds., \emph{Advances in Neural Information Processing Systems
-  28}, 3123--3131. Curran Associates, Inc.
+\bibitem[{{B{\"u}sching} and {Wolf}(2015)}]{6979219}
+{B{\"u}sching}, F.; and {Wolf}, L. 2015.
+\newblock The Rebirth of One-Time Pads---Secure Data Transmission from BAN to
+  Sink.
+\newblock \emph{IEEE Internet of Things Journal} 2(1): 63--71.
+\newblock ISSN 2327-4662.
+\newblock \doi{10.1109/JIOT.2014.2378783}.
+
+\bibitem[{Cheng et~al.(2020)Cheng, Lin, Juan, Wei, and
+  Sun}]{anchieh2018instanas}
+Cheng, A.-C.; Lin, C.~H.; Juan, D.-C.; Wei, W.; and Sun, M. 2020.
+\newblock InstaNAS: Instance-aware Neural Architecture Search .
 
 \bibitem[{Coutinho et~al.(2018)Coutinho, de~Oliveira~Albuquerque, Borges,
   Garc{\'\i}a~Villalba, and Kim}]{s18051306}
@@ -68,17 +81,6 @@ de~Dormale, G.~M.; and Quisquater, J.-J. 2007.
 \newblock ISSN 2162-2116.
 \newblock \doi{10.1109/SECURWARE.2009.50}.
 
-\bibitem[{Feurer et~al.(2015)Feurer, Klein, Eggensperger, Springenberg, Blum,
-  and Hutter}]{NIPS2015_5872}
-Feurer, M.; Klein, A.; Eggensperger, K.; Springenberg, J.; Blum, M.; and
-  Hutter, F. 2015.
-\newblock Efficient and Robust Automated Machine Learning.
-\newblock In Cortes, C.; Lawrence, N.~D.; Lee, D.~D.; Sugiyama, M.; and
-  Garnett, R., eds., \emph{Advances in Neural Information Processing Systems
-  28}, 2962--2970. Curran Associates, Inc.
-\newblock
-  \urlprefix\url{http://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning.pdf}.
-
 \bibitem[{Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
   Warde-Farley, Ozair, Courville, and Bengio}]{NIPS2014_5423}
 Goodfellow, I.; Pouget-Abadie, J.; Mirza, M.; Xu, B.; Warde-Farley, D.; Ozair,
@@ -98,6 +100,14 @@ Goodfellow, I.; Pouget-Abadie, J.; Mirza, M.; Xu, B.; Warde-Farley, D.; Ozair,
   Electronics}, 77--80.
 \newblock ISSN 2378-8607.
 \newblock \doi{10.1109/ISNE.2010.5669194}.
+
+\bibitem[{Kaso(2018)}]{10.1371/journal.pone.0203434}
+Kaso, A. 2018.
+\newblock Computation of the normalized cross-correlation by fast Fourier
+  transform.
+\newblock \emph{PLOS ONE} 13(9): 1--16.
+\newblock \doi{10.1371/journal.pone.0203434}.
+\newblock \urlprefix\url{https://doi.org/10.1371/journal.pone.0203434}.
 
 \bibitem[{Katz and Lindell(2008)}]{katz2008introduction}
 Katz, J.; and Lindell, Y. 2008.
@@ -165,6 +175,11 @@ Shannon, C. 1945.
 \newblock In for Cryptologic~Research, I.~A., ed., \emph{A Mathematical Theory
   of Cryptography}, volume~1, 132. International Association for Cryptologic
   Research, International Association for Cryptologic Research.
+
+\bibitem[{Shannon(1949)}]{CommTheoryShannon}
+Shannon, C. 1949.
+\newblock Communication Theory and Secrecy Systems.
+\newblock \emph{Bell system Technical Journal} 28(4): 656--715.
 
 \bibitem[{Shi et~al.(2020)Shi, Chen, Lu, Feng, Shi, Yang, and Li}]{Shi:2020aa}
 Shi, J.; Chen, S.; Lu, Y.; Feng, Y.; Shi, R.; Yang, Y.; and Li, J. 2020.

@@ -1,5 +1,5 @@
 Notes:
-- Only selected "image" folders inside "RawData" were kept to comply with the 100MB limit
+- Just few BiSUNA image pairs were included in folder "RawData" in order to comply with the 50MB limit
 - Code does not require any special libraries, only a g++ compiler
 - BiSUNA-CPAFull.pdf is the original paper plus the appendix with extra information that could not be included in the main submission
 - It is possible to parallelize agent execution, just change setting "ThreadNumber" inside "BiSUNAConf.ini" to match the number of processors the test computer has
