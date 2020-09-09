@@ -30,6 +30,7 @@ https://arxiv-org.ezproxy.auckland.ac.nz/pdf/1711.10761.pdf
 
 Build a Compact Binary Neural Network through Bit-level Sensitivity and Data Pruning
 https://arxiv-org.ezproxy.auckland.ac.nz/abs/1802.00904
+https://asu.pure.elsevier.com/en/publications/build-a-compact-binary-neural-network-through-bit-level-sensitivi
 
 Fully Parallel RRAM Synaptic Array for Implementing Binary Neural Network
 https://dl-acm-org.ezproxy.auckland.ac.nz/citation.cfm?id=3201741
@@ -368,3 +369,14 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8953134
 
 Network Search for Binary Networks
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8852036
+
+RTN- Reparameterized Ternary Network
+https://www.aaai.org/Papers/AAAI/2020GB/AAAI-LiY.3787.pdf
+https://arxiv.org/abs/1912.02057
+
+An Empirical study of Binary Neural Networks' Optimisation
+https://openreview.net/forum?id=rJfUCoR5KX
+
+Universal Approximation Property and Equivalence of Stochastic Computing-Based Neural Networks and Binary Neural Networks
+https://www.aaai.org/ojs/index.php/AAAI/article/view/4475
+https://arxiv.org/abs/1803.05391

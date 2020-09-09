@@ -3,7 +3,7 @@ Use Haskell-Clash to develop a CNN for HFT
 ------> Fin
 
 Adjoints and automatic (algorithmic) differentiation in computational finance
-- Use AD to reduce computation time, increase accuracy 
+- Use AD to reduce computation time, increase accuracy
 - Create an "adjoint" for reverse computations
 - Applied to Monte Carlo Simulations for the Greeks
 
@@ -59,7 +59,7 @@ Eyeriss- An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional N
 - Used AlexNet (227x227) and VGG-16 (224x224)
 
 Designing Energy-Efficient Convolutional Neural Networks using Energy-Aware Pruning
-- Energy-aware pruning algorithm for CNNs 
+- Energy-aware pruning algorithm for CNNs
 - Uses the energy consumption to guide the pruning process
 - Minimizes error in the output feature maps instead of weights filter
 - Reduce energy consumption: AlexNet (3.7x) and GoogLeNet (1.6x)
@@ -152,7 +152,7 @@ Visualizing and Understanding Recurrent Networks
 
 Convolutional Networks for Fast, Energy-Efficient Neuromorphic Computing
 - Develops the "TrueNorth" chip, which consists of a network of neurosynaptic cores with programmable connectivity, synapses, and neuron parameters
-- Uses a variant of an integrate-and-fire model with 23 configurable parameters 
+- Uses a variant of an integrate-and-fire model with 23 configurable parameters
 - Tests with CIFAR. SVHN, GTSRB, FlickrLogos, VAD and TIMIT
 
 Progressive Neural Architecture Search
@@ -191,7 +191,7 @@ Hybridizing Evolutionary Computation and Deep Neural Networks- An Approach to Ha
 Secure Convolutional Neural Networks using FHE
 -
 -
-- 
+-
 
 A Topological Study of Chaotic Iterations Application to Hash Functions
 -
@@ -222,11 +222,11 @@ Intraday prediction of Borsa Istanbul using convolutional neural networks and fe
 - CNN better than Macro Average F-Measure for random and correlated features
 - Istanbul stock exchange
 
-Forecasting Stock Prices from the Limit Order Book using Convolutional Neural Networks 
+Forecasting Stock Prices from the Limit Order Book using Convolutional Neural Networks
 - CNN better than RNN, RBM (Restricted Boltzmann Machine), SVM (Support Vector Machines)
 - Taiwan stock exchange
 
-Financial Time-series Data Analysis using Deep Convolutional Neural Networks 
+Financial Time-series Data Analysis using Deep Convolutional Neural Networks
 - Transform data into an image
 - Executed on a CPU using Matlab
 
@@ -237,7 +237,7 @@ Deep learning for event-driven stock prediction
 - Profitability of the CNN against other publications
 - S&P stocks
 
-Convolutional Neural Networks Applied to High-Frequency Market Microstructure Forecasting 
+Convolutional Neural Networks Applied to High-Frequency Market Microstructure Forecasting
 - Confirmation of CNN works "reasonably well" on forecasting price trend
 - Explains the structure of their CNN for order book and event flow
 
@@ -276,10 +276,10 @@ Finance time series prediction using complex-valued flexible neural tree model
 
 ------> NN-Fin
 
-A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters 
+A Deep Neural-Network Based Stock Trading System Based on Evolutionary Optimized Technical Analysis Parameters
 - Use of NN un a trading system for 30 stocks of the Dow
-- Next steps are going to make a CNN 
-- Use SMA and RSI 
+- Next steps are going to make a CNN
+- Use SMA and RSI
 
 Adaptive Neuro Fuzzy Inference Systems for High Frequency Financial Trading and Forecasting
 - Another Machine learning technique: Adaptive Neuro-Fuzzy Inference System
@@ -349,7 +349,7 @@ Working with OpenCL to Speed Up a Genetic Programming Financial Forecasting Algo
 EDDIE-Automation, a decision support tool for financial forecasting
 - Evolutionary Dynamic Data Investment Evaluator (EDDIE) is a genetic programming (GP)-based decision support tool for financial forecasting
 - Improve the productivity of experts in searching the space of decision trees
-- EDDIE-Automation 1.0 enables the users to conduct large-scale learning to fill the good-rules bank, the more rule sets one generates, the more chance that one could spot in- vestment opportunities or combine recommendations 
+- EDDIE-Automation 1.0 enables the users to conduct large-scale learning to fill the good-rules bank, the more rule sets one generates, the more chance that one could spot in- vestment opportunities or combine recommendations
 
 Empirical Asset Pricing via Machine Learning
 -
@@ -471,7 +471,7 @@ An FPGA Design Flow for Reconfigurable Network-Based Multi-Processor Systems on 
 ------> FPGA-NN
 
 ESE- Efficient Speech Recognition Engine with Sparse LSTM on FPGA
-- Implement a LSTM on Xilinx XCKU060 
+- Implement a LSTM on Xilinx XCKU060
 - 3x faster than GPU Pascal Titan
 - 11.5x efficient GPU
 - Used Sparse Matrix-vector Multiplication with 16bit wide elements (12quant + 4index)
@@ -512,7 +512,7 @@ EIE- Efficient Inference Engine on Compressed Deep Neural Network
 Accelerating CNN inference on FPGAs- A Survey
 - Survey of current techniques used for CNN accelerated by FPGAs
 - Explain CNN elements, types of parallelism
-- Different approaches: algorithmic, datapath, model optimizations and hardware generation 
+- Different approaches: algorithmic, datapath, model optimizations and hardware generation
 - Reduce computations: weight pruning, rank approximation.
 
 Fast inference of deep neural networks in FPGAs for particle physics
@@ -722,7 +722,7 @@ PipeCNN- An OpenCL-Based Open-Source FPGA Accelerator for Convolution Neural Net
 
 Minitaur, an Event-Driven FPGA-Based Spiking Network Accelerator
 - Used MNIST and 20 newsgroups classification data sets
-- Development based on "Spiking" event-driven NN 
+- Development based on "Spiking" event-driven NN
 - Aims robotics as one of its applications
 - Executed on a Xilinx Spartan 6 ZTEX board
 
@@ -813,7 +813,7 @@ Cartesian closed 2-categories and permutation equivalence in higher-order rewrit
 -
 -
 
-< Haskell 
+< Haskell
 
 ------> Haskell-FPGA
 
@@ -821,7 +821,7 @@ Haskell as a higher order structural hardware description language
 - Published at the same time as "ClasH - From Haskell To Hardware"
 - Defend hardware description as a mathematical function application
 
-A mathematical approach towards hardware design 
+A mathematical approach towards hardware design
 - Defend that a functional design can be used for logic circuit deployments
 - Use clash but also mentions bluespec
 - Sustain how basic functions translate to circuits
@@ -838,7 +838,7 @@ A transformation-based approach to hardware design using higher-order functions
 A two step hardware design method using CλaSH
 - A procedure to develop HDL programs with Haskell
 - Particle filtering application
-- Publication from (previous) thesis 
+- Publication from (previous) thesis
 
 Comparing CλaSH and VHDL by implementing a dataflow processor
 - in some cases, Clash can synthesize better than VHDL code
@@ -889,7 +889,7 @@ A Functional Approach to Hardware Software Co-Design
 
 Hardware in Haskell- Implementing Memories in a Stream-Based World
 - Proposes a sequence of abstractions lowering transformations that exposes recursive haskell program
-- Using recursive Stream data type inspired by the Lustre language 
+- Using recursive Stream data type inspired by the Lustre language
 - Each "stream operator" becomes a hardware register
 - Does not allow streams of streams
 - Simple, syntax-directed translation to SystemVerilog
@@ -941,7 +941,7 @@ Trust Region Policy Optimization
 Differentiable plasticity- training plastic neural networks with backpropagation
 - In an image reconstruction task, a network memorizes a set of natural images that it has never seen before, then the network reconstructs the missing half from memory
 - Highly flexible, providing gradient descent with an elementary building block: plastic connection
-- Offer a more efficient form of memory than recurrence alone 
+- Offer a more efficient form of memory than recurrence alone
 
 On the Learning Capabilities of Recurrent Neural Networks- A Cryptographic Perspective
 - Training RNN based models to learn various cryptographic tasks
@@ -960,7 +960,7 @@ Unsupervised learning by competing hidden units
 - Network with one hidden layer that generate codes for input images trained in a unsupervised way, then the output is fed into another SGD NN
 - No top–down propagation of information, the synaptic weights are learned using only bottom–up signals.
 - Algorithm is agnostic about the task that the network will have to solve eventually in the top layer
-- Tested with MNIST (98.54%) and CIFAR (50.75%) datasets 
+- Tested with MNIST (98.54%) and CIFAR (50.75%) datasets
 
 Large-Scale Study of Curiosity-Driven Learning
 - We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments.
@@ -997,6 +997,16 @@ AutoML-Zero- Evolving Machine Learning Algorithms From Scratch
 -
 
 Efficient and Robust Automated Machine Learning
+-
+-
+-
+
+Dueling Network Architectures for Deep Reinforcement Learning
+-
+-
+-
+
+InstaNAS- Instance-aware Neural Architecture Search.pdf
 -
 -
 -
@@ -1044,7 +1054,7 @@ Improving Variational Inference with Inverse Autoregressive Flow
 - Applied to MNIST, CIFAR
 - IAF is a new type of normalizing flow
 - Faster sampling in CIFAR thanks to log-likelihood results
-- Used variational autoencoders with bidirectional inference 
+- Used variational autoencoders with bidirectional inference
 
 Equilibrated adaptive learning rates for non-convex
 optimization
@@ -1087,7 +1097,7 @@ Neural Machine Translation by Jointly Learning to Align and Translate
 
 End-To-End Memory Networks
 - RNN with (large) external memory
-- Train a NN with explicit memory and recurrent attention, 
+- Train a NN with explicit memory and recurrent attention,
 - A NN with "intuition" of information from a text
 - Compared to baseline NN like: LSTM, MemNN and MemNN-WSH (weakly supervised heuristic)
 
@@ -1100,7 +1110,7 @@ Neural Turing Machines
 GPU-Accelerated Adjoint Algorithmic Differentiation
 - Implementation improvement over naïve AD code
 - Feasible for multithreaded environments, specially GPUs
-- CPU vs GPU implementations 
+- CPU vs GPU implementations
 - Use vectorization to reduce tape size
 
 Automatic Differentiation of Algorithms for Machine Learning
@@ -1135,7 +1145,7 @@ Hardware for Machine Learning- Challenges and Opportunities
 Efficient Processing of Deep Neural Networks- A Tutorial and Survey
 - Tutorial on past, present and future of DNN from a research perspective
 - DNN Applications: image/video, speech/language, medical, game play, robotics
-- DNN numerical precision survey according to the bitwidth 
+- DNN numerical precision survey according to the bitwidth
 - DNN models: LeNet, AlexNet, Overfeat, VGG, GoogLeNet, ResNet
 - Techniques used on accelerators for SIMD operations
 - Metrics for Hardware: power/energy, latency/throughput, cost
@@ -1159,8 +1169,8 @@ Learning to See in the Dark
 
 Toward Deeper Understanding of Neural Networks- The Power of Initialization and a Dual View on Expressivity
 - Proposed general duality between NN and compositional kernels
-- Math background: reproducing kernel Hilbert space (RKHS) or kernel space 
-- Extensive explanation of math: taylor series, 
+- Math background: reproducing kernel Hilbert space (RKHS) or kernel space
+- Extensive explanation of math: taylor series,
 - Using skeletons and compositional kernel spaces, it is possible to understand how functions learn
 - State a conjecture that ReLU is more robust to initialization
 
@@ -1178,7 +1188,7 @@ Explaining NonLinear Classification Decisions with Deep Taylor Decomposition
 - MNIST and ILSVRC data sets
 - Pixel-wise heatmap explaining why a NN classifier made a particular decision
 - Examples of unconstrained (w^2 rule) and constrained (z rules) input spaces
-- It is stable under different architectures and datasets, 
+- It is stable under different architectures and datasets,
 - It does not require hyperparameter tuning
 
 Understanding Deep Learning requires rethinking generalization
@@ -1227,7 +1237,7 @@ Learning and Memory in Neural Networks
 - Hopfield networks can create CAM to retrieve patterns from partial information
 - Associative networks are feedforward NN that learn an association between two input patterns
 
-Explorations of the Mean Field Theory Learning Algorithm 
+Explorations of the Mean Field Theory Learning Algorithm
 - MFT compared against Back Propagation (BP) in mirror simmetry and pattern classification
 - A NxN (visible x hidden) units can store up to 4N patterns
 - MFT can be implemented using VLSI circuitry
@@ -1284,13 +1294,13 @@ Neural Network in Human Identification by DNA Sequences
 
 Study of underlying repeats in genomic DNA sequences with neural networks
 - Modeling quasi-random replacements using with multi-symbol extension of energy-minimizing neural networks
-- Genomes datasets of PHIX174 and MIG4XX 
+- Genomes datasets of PHIX174 and MIG4XX
 - The distance between two sequences of arbitrary length is determined as the number of non-coincident nucleotides in the same sites (Hamming distance)
 
 Hybrid Neural Networks for Learning the Trend in Time Series
 - Uses a hybrid CNN-LSTM to calculate time series trends
 - Compared against other CNN, LSTM, SVR, Pattern-based Hidden Markov Model and naive NN implementations
-- Tested on datasets of power consumption, gas sensor and stock transaction 
+- Tested on datasets of power consumption, gas sensor and stock transaction
 
 Measuring the time needed for training a neural network based on the number of training steps
 -
@@ -1316,7 +1326,7 @@ CryptoNets- Applying Neural Networks to Encrypted Data with High Throughput and 
 CryptoDL- Deep Neural Networks over Encrypted Data
 - CNN with the approximation polynomials instead of original activation functions and it
 analyzes the performance of their models
-- MNIST (99.52%) and 164000 predictions/hour. CIFAR-10 (91.5%) 
+- MNIST (99.52%) and 164000 predictions/hour. CIFAR-10 (91.5%)
 - In theory, it is possible to train neural networks over encrypted data: replacing activation functions with polynomials, BP can be computed
 
 SecureNN- Efficient and Private Neural Network Training
@@ -1344,7 +1354,7 @@ Cache Friendly Parallelization of Neural Encoder-Decoder Models Without Padding 
 Generalized synchronization theorems for a kind of Neural Network with application in data encryption
 -
 -
-- 
+-
 
 A chaotic encryption system using PCA neural networks
 -
@@ -1358,7 +1368,7 @@ QSGD- Communication-Efficient SGD via Gradient Quantization and Encoding
 - With 16GPUs, they can train the ResNet-152 network to full accuracy on ImageNet 1.8× faster than the full-precision variant
 
 Neural Cryptography- From Symmetric Encryption to Adversarial Steganography
-- Shows how NN are capable of performing symmetric encryption in an adversarial setting 
+- Shows how NN are capable of performing symmetric encryption in an adversarial setting
 - NN capable of detecting insecure communications based on Ciphertext Indistinguishability
 - Shows futher research on Neural Steganography in the context of developing neural end-to-end stegonographic algorithms
 
@@ -1741,7 +1751,7 @@ XNOR-Net- ImageNet Classification Using Binary Convolutional Neural Networks
 Bitwise Neural Networks
 - Proposed BNN for all elements in the NN
 - Tested for MNIST
-- Training was done with real values and bitwise 
+- Training was done with real values and bitwise
 - Hyperbolic tangent was used for both weight compression and activation
 
 Accelerating Binarized Convolutional Neural Networks with Software-Programmable FPGAs
@@ -1802,7 +1812,7 @@ GXNOR-Net- Training deep neural networks with ternary weights and activations wi
 
 FP-BNN- Binarized neural network on FPGA
 - Proposed BNN to cut down hardware consumption while maintaining acceptable accuracy
-- Resource-Aware Model Analysis (RAMA) method to 
+- Resource-Aware Model Analysis (RAMA) method to
 - 64-channel accelerator architecture for CNN and FC-NN
 - Stratix-V 5SGSD8 FPGA, 26.2W, 150MHz
 - MNIST, CIFAR and AlexNet
@@ -1832,7 +1842,7 @@ Binary backpropagation in content addressable memory
 - Because of discrete size corrections, minimal size is chosen, at most 1 bit in any connection row
 - When all the synapse functions are identical, selection is arbitrary
 - Patterns with a small number of discrete levels can be learned through a simple extension of the synapse function
-- Asymmetric two variable boolean functions must be learnt locally by the NN 
+- Asymmetric two variable boolean functions must be learnt locally by the NN
 
 Hardware efficient learning on a 3-D optoelectronic neural system
 - Mentions an special type of processor called Dual-Scale Topology Optoelectronic Processor (D-STOP)
@@ -1875,12 +1885,12 @@ Associative content-addressable networks with exponentially many robust stable s
 - ACAM possesses expander graph connectivity on a restricted Boltzmann machine
 - Constraint nodes correct corrupted input patterns to the nearest (in Hamming distance) permitted pattern
 - A network with initially specified connectivity but unspecified weights can self-organize to have exponentially many well-separated minima
-- ACAM can be used to to generate robust labels for arbitrary input patterns in a high 
+- ACAM can be used to to generate robust labels for arbitrary input patterns in a high
 dimensional space
 
 A highly scalable 3D chip for binary neural network classification applications
 - Binary neural networks require only TLUs and are very suitable for a VLSI implementation
-- The threshold function is indeed easy to implement in digital and this results in significant silicon area saving as compared to sigmoidal or radial basis functions used in multilayer perceptrons or RBF networks and implemented through area consuming look-up tables. 
+- The threshold function is indeed easy to implement in digital and this results in significant silicon area saving as compared to sigmoidal or radial basis functions used in multilayer perceptrons or RBF networks and implemented through area consuming look-up tables.
 
 A Survey on Methods and Theories of Quantized Neural Networks
 -
@@ -2156,7 +2166,7 @@ Two-Step Quantization for Low-bit Neural Networks
 - The TSQ framework decomposes the network quantization problem into two steps: code learning and transformation function learning based on learned codes
 - 1st step: sparse quantization method for code learning
 - 2nd step: non-linear least square regression problem with low-bit constraints, solved iteratively
-- Experiments on CIFAR-10 and ILSVRC-12 
+- Experiments on CIFAR-10 and ILSVRC-12
 - 2-bit activation and ternary weight quantization (AlexNet), TSQ accuracy drops by ~0.5 points
 
 Explicit Loss-Error-Aware Quantization for Low-Bit Deep Neural Networks
@@ -2169,7 +2179,7 @@ SYQ- Learning Symmetric Quantization For Efficient Deep Neural Networks
 - Open source code: github.com/julianfaraone/SYQ
 - This method improves accuracy for 1-2 bit weights and 2-8 bit activations
 - AlexNet, ResNet and VGG models and compared to QNN, Dorefa or TTQ
-- Considers DSP/LUT utilization in Xilinx ZU3 FPGA 
+- Considers DSP/LUT utilization in Xilinx ZU3 FPGA
 
 A Ternary Weight Binary Input Convolutional Neural Network: Realization on the Embedded Processor
 - Trains CNNs using the AdaDelta optimizer
@@ -2311,6 +2321,21 @@ Using Neuroevolved Binary Neural Networks to solve reinforcement learning enviro
 -
 
 Network Search for Binary Networks
+-
+-
+-
+
+RTN- Reparameterized Ternary Network
+-
+-
+-
+
+An Empirical study of Binary Neural Networks' Optimisation
+-
+-
+-
+
+Universal Approximation Property and Equivalence of Stochastic Computing-Based Neural Networks and Binary Neural Networks
 -
 -
 -
@@ -2507,6 +2532,11 @@ The Pushdown Attack on AES
 -
 -
 
+The Rebirth of One-Time Pads—Secure Data Transmission from BAN to Sink
+-
+-
+-
+
 < Crypto
 
 ------> Other
@@ -2549,7 +2579,7 @@ Survey of Stochastic Computing
 
 OpenAI Gym
 - Python environment for reinforcement learning algorithms
-- Includes several topics like: algorithms, control systems, robotics 
+- Includes several topics like: algorithms, control systems, robotics
 - Open source and accessible here: https://github.com/openai/gym
 
 Spike-Based Synaptic Plasticity in Silicon: Design, Implementation, Application, and Challenges
@@ -2562,7 +2592,7 @@ Addressing Neurological Disorders With Neuromodulation
 -
 -
 
-Low power dual edge triggered flip-flop 
+Low power dual edge triggered flip-flop
 -
 -
 -
@@ -2636,7 +2666,7 @@ Evolving simple programs for playing Atari games
 
 Evolution Strategies as a Scalable Alternative to Reinforcement Learning
 - Scalable algorithm that linearly grows as the number of CPUs are open
-- ES can be competitive with competing RL algorithms 
+- ES can be competitive with competing RL algorithms
 - Tested with MuJoCo and Atari game lab
 - It avoids gradient decent and agent communication is low
 
@@ -2703,7 +2733,7 @@ Large-Scale Evolution of Image Classifiers
 
 Deep Learning with Darwin- Evolutionary Synthesis of Deep Neural Networks
 - Uses evolutionary algorithms to improve how the NN inferences more efficiently
-- Uses probabilities to make selections between NN  
+- Uses probabilities to make selections between NN
 - Restricts resources available to descendant networks to encourage the evolution of highly-efficient deep neural networks
 - Tests datasets: MSRA-B and HKU-IS with VGG-Net model
 
@@ -2758,10 +2788,10 @@ Evolving Neural Networks through Augmenting Topologies
 
 A Genetic Algorithm-Based Solver for Very Large Jigsaw Puzzles
 - Solve puzzles up to 22,000 pieces
-- Detects, extracts and combine segments from parents to create improved children 
+- Detects, extracts and combine segments from parents to create improved children
 - Create and shares benchmark images for future testing
 
-Information Collection Strategies In Memetic Cooperative Neuroevolution For Time Series Prediction 
+Information Collection Strategies In Memetic Cooperative Neuroevolution For Time Series Prediction
 - Cooperative coevolution has been combined as memetic cooperative neuroevolution with application to chaotic time series prediction
 - Collection strategies that maintains and refines a pool of memes during global search
 - Two collection strategies: sequential and concurrent
@@ -2788,7 +2818,7 @@ Neuroevolution in Games: State of the Art and Open Challenges
 Towards Hardware Acceleration of Neuroevolution for Multimedia Processing Applications on Mobile Devices
 - Proposed digital hardware architecture capable of processing any evolved network topology
 - Memory partitioning and data caching are used to minimise the effects of PE pipeline stalling
-- XOR problem and the double pole balancing tests problem 
+- XOR problem and the double pole balancing tests problem
 - Used Verilog with a 90nm TSMC ASIC library
 
 A Public Key Compression Method for Fully Homomorphic Encryption using Genetic Algorithms
@@ -2858,14 +2888,14 @@ EvoNN - A Customizable Evolutionary Neural Network with Heterogenous Activation 
 
 Recurrent Cartesian Genetic Programming of Artificial
 - Extend CGP to support recurrent connections with applications on time series
-- Tested with Laser, Sunsports, Mackey-Glass datasets  
+- Tested with Laser, Sunsports, Mackey-Glass datasets
 - Compared with RWF, MEAN, ETS, aRIMA, MLP, CGP, RCGP, CGPANN
 - RCGPANNs also outperformed all the other methods based on CGP with statistical significance
 
 Foreign Currency Exchange Rates Prediction Using CGP and Recurrent Neural Network
-- Uses RCGPANN to predict forex market 
+- Uses RCGPANN to predict forex market
 - Efficient performance thanks to its ability to select the best possible feature, network architecture and connectivity pattern for prediction
-- Historical data sets of 1000 days for Yen, NZ, CAN, Won and Rupiah with up to 98.5% accuracy.  
+- Historical data sets of 1000 days for Yen, NZ, CAN, Won and Rupiah with up to 98.5% accuracy.
 
 Novelty-organizing team of classifiers in noisy and dynamic environments
 - NOTC compared with NEAT with better performance but more time to convergence
@@ -2875,7 +2905,7 @@ Novelty-organizing team of classifiers in noisy and dynamic environments
 
 Designing neural networks through neuroevolution
 - Survey of the changes in the area of neuroevolution, since 1980's
-- NEAT addressed the problem of crossing over variable topologies through historical marking 
+- NEAT addressed the problem of crossing over variable topologies through historical marking
 - Evolving new content in real time while the game is played
 - Evolutionary algorithms can be less sample efficient, but because they are extremely parallelizable, they can run far faster in real (wall clock) time (for example hours instead of days), albeit at the cost of requiring more computing resources
 - A final critical opportunity for neuroevolution is to lead the effort to construct ‘open-ended’ algorithms
@@ -2920,7 +2950,7 @@ An Implementation of Evolutionary Computation Operators in OpenCL
 
 Intrinsic evolvable hardware for combinatorial synthesis based on soc+fpga and gpu platforms
 - Genetic Programming was implemented in a GPU and High Performance Computers
-- Pseudo random number generation, a Mersenne-Twister-based coprocessor was inserted 
+- Pseudo random number generation, a Mersenne-Twister-based coprocessor was inserted
 - HPC (512 processors) and GPU (192 CUDA cores)
 
 Implementation of Parallel Genetic Algorithm Based on CUDA

@@ -114,3 +114,6 @@ https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf
 
 The Pushdown Attack on AES
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5210990
+
+The Rebirth of One-Time Pads - Secure Data Transmission from BAN to Sink
+https://ieeexplore.ieee.org/document/6979219

@@ -56,7 +56,7 @@ https://openai.com/blog/emergent-tool-use/
 Feudal Reinforcement Learning
 https://papers.nips.cc/paper/714-feudal-reinforcement-learning
 
-Human-level performance in 3D multiplayer games with populationbased reinforcement learning
+Human-level performance in 3D multiplayer games with population based reinforcement learning
 https://deepmind.com/blog/article/capture-the-flag-science
 
 Learning to Predict Without Looking Ahead-World Models Without Forward Prediction
@@ -69,3 +69,13 @@ https://arxiv.org/abs/2003.03384
 
 Efficient and Robust Automated Machine Learning
 https://papers.nips.cc/paper/5872-efficient-and-robust-automated-machine-learning
+
+Playing Atari With Deep Reinforcement Learning
+https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf
+
+Dueling Network Architectures for Deep Reinforcement Learning
+http://proceedings.mlr.press/v48/wangf16
+http://proceedings.mlr.press/v48/wangf16.pdf
+
+InstaNAS- Instance-aware Neural Architecture Search.pdf
+https://hubert0527.github.io/InstaNAS/
