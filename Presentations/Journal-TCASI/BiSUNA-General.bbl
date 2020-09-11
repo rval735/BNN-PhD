@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
@@ -6,6 +6,11 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{nee(2016)}]{needle-python}
+ 2016.
+\newblock Needle Deep RL Examples.
+\newblock \urlprefix\url{https://github.com/roosephu/needle}.
 
 \bibitem[{{Angeline}, {Saunders}, and {Pollack}(1994)}]{265960}
 {Angeline}, P.~J.; {Saunders}, G.~M.; and {Pollack}, J.~B. 1994.
@@ -287,6 +292,14 @@ Terasic. ????
 \newblock Starter Platform for OpenVINO{\texttrademark} Toolkit.
 \newblock
   \urlprefix\url{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=1159}.
+
+\bibitem[{Thomas and Luk(2013)}]{Thomas:2013aa}
+Thomas, D.~B.; and Luk, W. 2013.
+\newblock Multiplierless Algorithm for Multivariate Gaussian Random Number
+  Generation in FPGAs.
+\newblock \emph{IEEE Transactions on Very Large Scale Integration (VLSI)
+  Systems} 21(12): 2193--2205.
+\newblock \doi{10.1109/TVLSI.2012.2228017}.
 
 \bibitem[{{Valencia}, {Sham}, and {Sinnen}(2019{\natexlab{a}})}]{8953134}
 {Valencia}, R.; {Sham}, C.; and {Sinnen}, O. 2019{\natexlab{a}}.

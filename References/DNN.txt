@@ -79,3 +79,6 @@ http://proceedings.mlr.press/v48/wangf16.pdf
 
 InstaNAS- Instance-aware Neural Architecture Search.pdf
 https://hubert0527.github.io/InstaNAS/
+
+Reward learning from human preferences and demonstrations in Atari
+https://papers.nips.cc/paper/8025-reward-learning-from-human-preferences-and-demonstrations-in-atari

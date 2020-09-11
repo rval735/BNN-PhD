@@ -56,3 +56,6 @@ https://www.eecg.utoronto.ca/~moshovos/research/NCOR.pdf
 
 A Multiprocessor Architecture with an Omega Network for the Massively Parallel Model GCA
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-03138-0_11
+
+Simplifying decision trees
+https://dspace.mit.edu/handle/1721.1/6453

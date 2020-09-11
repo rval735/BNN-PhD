@@ -1011,6 +1011,11 @@ InstaNAS- Instance-aware Neural Architecture Search.pdf
 -
 -
 
+Reward learning from human preferences and demonstrations in Atari
+-
+-
+-
+
 < DNN
 -------> NN
 
@@ -2630,6 +2635,11 @@ NCOR- An FPGA-Friendly Nonblocking Data Cache for Soft Processors with Runahead 
 -
 
 A Multiprocessor Architecture with an Omega Network for the Massively Parallel Model GCA
+-
+-
+-
+
+Simplifying decision trees
 -
 -
 -
