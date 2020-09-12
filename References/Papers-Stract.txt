@@ -2542,6 +2542,21 @@ The Rebirth of One-Time Pads—Secure Data Transmission from BAN to Sink
 -
 -
 
+A Statistical Test Suite for Random and Pseudorandom Number Generators for Cryptographic Applications
+-
+-
+-
+
+Algorithm 970- Optimizing the NIST Statistical Test Suite and the Berlekamp-Massey Algorithm
+-
+-
+-
+
+HEDGE- Efficient Traffic Classification of Encrypted and Compressed Packets
+-
+-
+-
+
 < Crypto
 
 ------> Other

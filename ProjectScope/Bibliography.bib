@@ -1,12 +1,83 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for RH VT at 2020-09-10 11:20:00 +1200 
+%% Created for RH VT at 2020-09-12 10:47:37 +1200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{8691576,
+	Abstract = {As the size and source of network traffic increase, so does the challenge of monitoring and analyzing network traffic. Therefore, sampling algorithms are often used to alleviate these scalability issues. However, the use of high entropy data streams, through the use of either encryption or compression, further compounds the challenge as current state-of-the-art algorithms cannot accurately and efficiently differentiate between encrypted and compressed packets. In this paper, we propose a novel traffic classification method named High Entropy DistinGuishEr (HEDGE) to distinguish between compressed and encrypted traffic. HEDGE is based on the evaluation of the randomness of the data streams and can be applied to individual packets without the need to have access to the entire stream. The findings from the evaluation show that our approach outperforms current state of the art. We also make available our statistically sound dataset, based on known benchmarks, to the wider research community.},
+	Author = {F. {Casino} and K. R. {Choo} and C. {Patsakis}},
+	Date-Added = {2020-09-12 10:47:04 +1200},
+	Date-Modified = {2020-09-12 10:47:37 +1200},
+	Doi = {10.1109/TIFS.2019.2911156},
+	Issn = {1556-6021},
+	Journal = {IEEE Transactions on Information Forensics and Security},
+	Keywords = {Crypto, Cryptanalysis, NIST, cryptography;data compression;entropy;pattern classification;encryption;HEDGE;compressed traffic;encrypted traffic;encrypted packets;sampling algorithms;high entropy data streams;compressed packets;traffic classification method;high entropy distinguisher;Entropy;Encryption;Payloads;Benchmark testing;Real-time systems;Encryption;high entropy sources;compression;classification;traffic analysis},
+	Month = {Nov},
+	Number = {11},
+	Pages = {2916-2926},
+	Title = {HEDGE: Efficient Traffic Classification of Encrypted and Compressed Packets},
+	Volume = {14},
+	Year = {2019},
+	Bdsk-Url-1 = {https://doi.org/10.1109/TIFS.2019.2911156}}
+
+@inproceedings{7016926,
+	Abstract = {NIST SP800-22 is a statistical test suite for determining whether given sequences are random or not for each statistical test. The statistical test suite has been used widely. However, it was not mentioned in the statistical test suite how many the ratio of passing all the 15 kinds of tests should be for the target generator to be regarded as the ideally true random number generator. In this paper, the ratio of passing all the 15 kinds of tests for the ideally true random number sequences is derived by the theoretical analysis. To verify the theoretical deduction, the statistical tests have been performed on several well known random number generators, such as AES, 3DES, SHA1, stream ciphers wined in eStream project, and some perfect pseudo-random number generator recommended by NIST. The result of the numerical simulations is accord with the theoretical analysis.},
+	Author = {D. {Lihua} and Z. {Yong} and J. {Ligang} and H. {Xucang}},
+	Booktitle = {2014 Tenth International Conference on Computational Intelligence and Security},
+	Date-Added = {2020-09-12 10:32:07 +1200},
+	Date-Modified = {2020-09-12 10:32:39 +1200},
+	Doi = {10.1109/CIS.2014.120},
+	Keywords = {Crypto, NIST, random number generation;statistical analysis;NIST SP800-22 statistical test suite;statistical test;target generator;random number sequences;stream ciphers;eStream project;pseudo random number generator;numerical simulations;NIST;Generators;Correlation;Numerical simulation;Educational institutions;Probability;Algorithm design and analysis;NIST SP800-22;statistical test;random number;randomnes},
+	Month = {Nov},
+	Pages = {402-404},
+	Title = {Study on the Pass Rate of NIST SP800-22 Statistical Test Suite},
+	Year = {2014},
+	Bdsk-Url-1 = {https://doi.org/10.1109/CIS.2014.120}}
+
+@article{10.1145/2988228,
+	Abstract = {The NIST Statistical Test Suite (NIST STS) is one of the most popular tools for the analysis of randomness. This test battery is widely used, but its implementation is quite inefficient. A complete randomness analysis using the NIST STS can take hours on a standard computer when the tested data volume is on the order of GB. We improved the most time-consuming test (Linear Complexity) from the previous most efficient implementation of the NIST STS. We also optimized other tests and achieved an overall speedup of 50.6 \texttimes{} compared with the reference implementation. This means that 20MB of data can be tested within a minute using our new optimized version of the NIST STS. To speed up the Linear Complexity test, we proposed a new version of the Berlekamp-Massey algorithm that computes only the linear complexity of a sequence. This new variant does not construct a linear feedback shift register and is approximately 187 \texttimes{} faster than the original NIST implementation of the Berlekamp-Massey algorithm.},
+	Address = {New York, NY, USA},
+	Articleno = {27},
+	Author = {S\'{y}s, Marek and \v{R}\'{\i}ha, Zden\v{e}k and Maty\'{a}\v{s}, Vashek},
+	Date-Added = {2020-09-12 10:15:03 +1200},
+	Date-Modified = {2020-09-12 10:15:23 +1200},
+	Doi = {10.1145/2988228},
+	Issn = {0098-3500},
+	Issue_Date = {January 2017},
+	Journal = {ACM Trans. Math. Softw.},
+	Keywords = {Crypto, NIST, statistical randomness testing, Berlekamp-Massey algorithm, STS},
+	Month = dec,
+	Number = {3},
+	Numpages = {11},
+	Publisher = {Association for Computing Machinery},
+	Title = {Algorithm 970: Optimizing the NIST Statistical Test Suite and the Berlekamp-Massey Algorithm},
+	Url = {https://doi.org/10.1145/2988228},
+	Volume = {43},
+	Year = {2016},
+	Bdsk-Url-1 = {https://doi.org/10.1145/2988228}}
+
+@proceedings{SP800-22Rev1a,
+	Abstract = {This paper discusses some aspects of selecting and testing random and pseudorandom number generators. The outputs of such generators may be used in many cryptographic applications, such as the generation of key material. Generators suitable for use in cryptographic applications may need to meet stronger requirements than for other applications. In particular, their outputs must be unpredictable in the absence of knowledge of the inputs. Some criteria for characterizing and selecting appropriate generators are discussed in this document. The subject of statistical testing and its relation to cryptanalysis is also discussed, and some recommended statistical tests are provided. These tests may be useful as a first step in determining whether or not a generator is suitable for a particular cryptographic application. However, no set of statistical tests can absolutely certify a generator as appropriate for usage in a particular application, i.e., statistical testing cannot serve as a substitute for cryptanalysis. The design and cryptanalysis of generators is outside the scope of this paper.
+
+https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final},
+	Annote = {https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final},
+	Author = {Lawrence Bassham, Andrew Rukhin, Juan Soto, James Nechvatal, Miles Smid, Elaine Barker, Stefan Leigh, Mark Levenson, Mark Vangel, David Banks, N. Heckert, James Dray},
+	Date-Added = {2020-09-11 23:50:49 +1200},
+	Date-Modified = {2020-09-11 23:55:10 +1200},
+	Editor = {NIST},
+	Keywords = {Crypto, hypothesis test; P-value; random number generator; statistical tests},
+	Month = {April},
+	Number = {800},
+	Organization = {NIST},
+	Publisher = {NIST},
+	Title = {A Statistical Test Suite for Random and Pseudorandom Number Generators for Cryptographic Applications},
+	Volume = {22},
+	Year = {2010}}
 
 @incollection{NIPS2018_8025,
 	Author = {Ibarz, Borja and Leike, Jan and Pohlen, Tobias and Irving, Geoffrey and Legg, Shane and Amodei, Dario},
@@ -14,7 +85,7 @@
 	Date-Added = {2020-09-10 11:19:14 +1200},
 	Date-Modified = {2020-09-10 11:19:57 +1200},
 	Editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett},
-	Keywords = {DNN, Atari, },
+	Keywords = {DNN, Atari,},
 	Pages = {8011--8023},
 	Publisher = {Curran Associates, Inc.},
 	Title = {Reward learning from human preferences and demonstrations in Atari},

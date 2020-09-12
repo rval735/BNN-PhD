@@ -117,3 +117,15 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/5210990
 
 The Rebirth of One-Time Pads - Secure Data Transmission from BAN to Sink
 https://ieeexplore.ieee.org/document/6979219
+
+A Statistical Test Suite for Random and Pseudorandom Number Generators for Cryptographic Applications
+https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final
+
+Algorithm 970- Optimizing the NIST Statistical Test Suite and the Berlekamp-Massey Algorithm
+https://dl.acm.org/doi/10.1145/2988228
+
+Study on the Pass Rate of NIST SP800-22 Statistical Test Suite
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7016926
+
+HEDGE- Efficient Traffic Classification of Encrypted and Compressed Packets
+https://ieeexplore.ieee.org/document/8691576
