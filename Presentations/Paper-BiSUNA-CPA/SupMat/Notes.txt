@@ -1,5 +1,7 @@
 Notes:
-- Just few BiSUNA image pairs were included in folder "RawData" in order to comply with the 50MB limit
-- Code does not require any special libraries, only a g++ compiler
+- Just few BiSUNA image pairs were included in folder "RawData" in order to comply with the 350MB limit
+- Code does not require any special libraries, only a g++/clang compiler
 - BiSUNA-CPAFull.pdf is the original paper plus the appendix with extra information that could not be included in the main submission
 - It is possible to parallelize agent execution, just change setting "ThreadNumber" inside "BiSUNAConf.ini" to match the number of processors the test computer has
+- An additional zip file was added, "NIST-results.zip", which has results from the NIST-STS, "fast". Using their online testing tool, a small sample of the files used
+here were submitted to their service, the output is included in the zip file. Unfortunately because of time, these could not be included in the full paper.

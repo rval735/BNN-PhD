@@ -1,12 +1,82 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for RH VT at 2020-09-12 10:47:37 +1200 
+%% Created for RH VT at 2020-09-17 13:43:21 +1200 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{FastNIST-STS-Muni,
+	Author = {S{\'y}s, M.; Z. {\v R}{\'\i}ha, V. Maty{\'a}{\v s}, K.M{\'a}rton, A. Suciu},
+	Booktitle = {Romanian Journal of Information Science and Technology},
+	Date-Added = {2020-09-17 13:39:21 +1200},
+	Date-Modified = {2020-09-17 13:43:18 +1200},
+	Editor = {Publishing House of the Romanian Academy},
+	Keywords = {Crypto, NIST, Muni, Fast-STS, STS},
+	Pages = {18-32},
+	Title = {On the Interpretation of Results from the NIST Statistical Test Suite},
+	Volume = {18},
+	Year = {2015}}
+
+@article{PETRICA2018251,
+	Abstract = {Pseudo-random number generators (PRNGs) are important to applications ranging from cryptography to Monte-Carlo methods. Consequently, many PRNG architectures have been proposed, including some optimized for FPGA, e.g the LUT-SR family of PRNGs which utilize embedded FPGA shift registers, and self-programmable cellular automaton (SPCA) PRNGs. However, LUT-SR and other PRNGs do not utilize key features of modern Xilinx FPGAs: embedded carry chains and splittable Look-Up Tables (LUTs), i.e., 6-input LUTs which can operate as two 5-input LUTs which share inputs. In this paper we explore the SPCA structure and derive a set of parameter constraints which allow a SPCA PRNG to produce 2 random bits per LUT in every clock cycle on modern Xilinx FPGAs. We determine this to be the maximum logic density achievable for SPCA, and propose an architectural improvement of SPCA to enable further density increase by making use of FPGA embedded carry chains as a method to compute an additional random bit per LUT in each clock cycle. The resulting Split-LUT-Carry SPCA (SLC-SPCA) PRNG achieves 6x improvement in logic density compared to LUT-SR, and a 1.5x density increase compared to SPCA. We evaluate the randomness of SLC-SPCA utilizing the NIST Statistical Test Suite, and we provide a power and energy comparison of LUT-SR and SLC-SPCA on a Xilinx Zynq 7020 FPGA device. Our results indicate that SLC-SPCA generates 3x more bits per clock at approximately the same power dissipation as LUT-SR, and consequently 3x less energy to generate 1 gigabit of random data. SLC-SPCA is also 1.5x more energy-efficient than a SPCA PRNG.},
+	Author = {Lucian Petrica},
+	Date-Added = {2020-09-17 13:08:37 +1200},
+	Date-Modified = {2020-09-17 13:08:59 +1200},
+	Doi = {https://doi.org/10.1016/j.jpdc.2017.05.022},
+	Issn = {0743-7315},
+	Journal = {Journal of Parallel and Distributed Computing},
+	Keywords = {Crypto, NIST, STS, PRNG, FPGA, Cellular automaton, Random number generator},
+	Pages = {251 - 259},
+	Title = {FPGA optimized cellular automaton random number generator},
+	Url = {http://www.sciencedirect.com/science/article/pii/S0743731517301892},
+	Volume = {111},
+	Year = {2018},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S0743731517301892},
+	Bdsk-Url-2 = {https://doi.org/10.1016/j.jpdc.2017.05.022}}
+
+@article{R2020103041,
+	Abstract = {With the advent of computers, networks, distributed systems and wireless data transfer technologies, data communication is subjected to potential threats and hence needs to be protected. Advanced Encryption Standard (AES) is an efficient encryption algorithm used for secure wireless communication, but its security is under threat due to different forms of theoretical and practical attacks such as linear cryptanalysis, differential cryptanalysis, boomerang attack, truncated differentials, hybrid attacks, related-key distinguishing attack, and side channel attacks. This work is focused on reducing the attacks by increasing the complexity of cryptanalysis through small scale variations in the shift row transformation and key expansion unit of the AES algorithm. The proposed small scale variations in the linear layer of the cipher unit and in the word column of key expansion unit enhances confusion during encryption. The inherent diffusion property of the algorithm along with the proposed confusion characteristics allows us to increase the overall security of the algorithm. The confusion and diffusion characteristics of the modified algorithm are found to be higher in terms of balance, Strict Avalanche Criterion and bit independence criteria. The AES variants are also tested using NIST-800-22 statistical test suite for random number generators, the small scale variations made in the architecture provides a higher degree of randomness in the ciphertext thus increasing cryptanalysis complexity. This paper also proposes an obfuscation control unit that allows on-demand selection of the three AES variants resulting in a variable encrypting pattern for a plaintext-key pair thus adding more bottlenecks to the adversaries.},
+	Author = {Lavanya R and Karpagam M},
+	Date-Added = {2020-09-17 13:04:44 +1200},
+	Date-Modified = {2020-09-17 13:04:59 +1200},
+	Doi = {https://doi.org/10.1016/j.micpro.2020.103041},
+	Issn = {0141-9331},
+	Journal = {Microprocessors and Microsystems},
+	Keywords = {Crypto, NIST, AES, STS, Advanced Encryption Standard, Security, FPGA, Avalanche effect, Randomness, NIST randomness testing, Obfuscation},
+	Pages = {103041},
+	Title = {Enhancing the security of AES through small scale confusion operations for data communication},
+	Url = {http://www.sciencedirect.com/science/article/pii/S0141933119306568},
+	Volume = {75},
+	Year = {2020},
+	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S0141933119306568},
+	Bdsk-Url-2 = {https://doi.org/10.1016/j.micpro.2020.103041}}
+
+@inproceedings{8632138,
+	Abstract = {In recent years, numerous studies of stream symmetric ciphers in Ukraine are continuing, the main purpose of which is to argue the principles of creating a new cryptographic algorithm, which can be based on the national standard. One of the essential aspects in choosing from many alternatives is the statistical properties of the output pseudorandom sequence (key stream). In this paper, the results of comparative studies of statistical properties of output sequences, which are formed by various stream ciphers, in particular, by world-known algorithms Enocoro, Decim, Grain, HC, MUGI, Mickey, Rabbit, RC-4, Salsa20, SNOW2.0, Sosemanuk, Trivium and the Ukrainian cryptographic algorithm Strumok, that was developed in recent years, are presented. For comparative studies, the NIST STS method was used, according to which experimental studies are performed in 15 statistical tests, the purpose of which is to determine the randomness of the output binary sequences. Each of the tests is aimed at studying certain vulnerabilities of the generator, that is, points to the potential usage of different methods of cryptographic analysis. Although each of the considered streaming encryption algorithms has been studied, we have carried out a statistical test of the generated pseudorandom sequences under equal conditions and with identical initial parameters, that is, our results allow us to perform a comparative analysis of ciphers and to justify the best of statistical properties. The estimates presented in the article, as expected, confirmed the high statistical security indexes of modern ciphers. In addition, according to the results of experimental research, it was found that the new Ukrainian development - the stream cipher Strumok does not yield to the best world algorithms in the statistical properties of the initial sequences.},
+	Author = {O. {Nariezhnii} and E. {Eremin} and V. {Frolenko} and K. {Chernov} and T. {Kuznetsova} and I. {Chepurko}},
+	Booktitle = {2018 International Scientific-Practical Conference Problems of Infocommunications. Science and Technology (PIC S T)},
+	Date-Added = {2020-09-17 12:55:40 +1200},
+	Date-Modified = {2020-09-17 12:56:01 +1200},
+	Doi = {10.1109/INFOCOMMST.2018.8632138},
+	Keywords = {Crypto, NIST, STS, AES, binary sequences;cryptography;random number generation;random sequences;statistical testing;statistical tests;streaming encryption algorithms;experimental studies;Ukrainian cryptographic algorithm Strumok;stream ciphers;output sequences;output pseudorandom sequence;stream symmetric ciphers;stream cipher Strumok;high statistical security indexes;statistical properties;generated pseudorandom sequences;statistical test;output binary sequences;Ciphers;Rabbits;Random sequences;IEC Standards;ISO Standards;Cryptanalysis;gamma;statistical tests;stream cryptographic algorithms;symmetric cryptography},
+	Month = {Oct},
+	Pages = {696-700},
+	Title = {Research of Statistical Properties of Stream Symmetric Ciphers},
+	Year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1109/INFOCOMMST.2018.8632138}}
+
+@techreport{NIST-SP800,
+	Author = {Elaine Barker},
+	Date-Added = {2020-09-17 12:25:43 +1200},
+	Date-Modified = {2020-09-17 12:26:46 +1200},
+	Institution = {NIST},
+	Keywords = {Crypto, NIST, SP800, key management},
+	Number = {800-57-1},
+	Title = {Recommendation For Key Management - Part 1 General},
+	Year = {2020}}
 
 @article{8691576,
 	Abstract = {As the size and source of network traffic increase, so does the challenge of monitoring and analyzing network traffic. Therefore, sampling algorithms are often used to alleviate these scalability issues. However, the use of high entropy data streams, through the use of either encryption or compression, further compounds the challenge as current state-of-the-art algorithms cannot accurately and efficiently differentiate between encrypted and compressed packets. In this paper, we propose a novel traffic classification method named High Entropy DistinGuishEr (HEDGE) to distinguish between compressed and encrypted traffic. HEDGE is based on the evaluation of the randomness of the data streams and can be applied to individual packets without the need to have access to the entire stream. The findings from the evaluation show that our approach outperforms current state of the art. We also make available our statistically sound dataset, based on known benchmarks, to the wider research community.},

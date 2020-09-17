@@ -1,0 +1,13 @@
+@article{PETRICA2018251,
+title = "FPGA optimized cellular automaton random number generator",
+journal = "Journal of Parallel and Distributed Computing",
+volume = "111",
+pages = "251 - 259",
+year = "2018",
+issn = "0743-7315",
+doi = "https://doi.org/10.1016/j.jpdc.2017.05.022",
+url = "http://www.sciencedirect.com/science/article/pii/S0743731517301892",
+author = "Lucian Petrica",
+keywords = "FPGA, Cellular automaton, Random number generator",
+abstract = "Pseudo-random number generators (PRNGs) are important to applications ranging from cryptography to Monte-Carlo methods. Consequently, many PRNG architectures have been proposed, including some optimized for FPGA, e.g the LUT-SR family of PRNGs which utilize embedded FPGA shift registers, and self-programmable cellular automaton (SPCA) PRNGs. However, LUT-SR and other PRNGs do not utilize key features of modern Xilinx FPGAs: embedded carry chains and splittable Look-Up Tables (LUTs), i.e., 6-input LUTs which can operate as two 5-input LUTs which share inputs. In this paper we explore the SPCA structure and derive a set of parameter constraints which allow a SPCA PRNG to produce 2 random bits per LUT in every clock cycle on modern Xilinx FPGAs. We determine this to be the maximum logic density achievable for SPCA, and propose an architectural improvement of SPCA to enable further density increase by making use of FPGA embedded carry chains as a method to compute an additional random bit per LUT in each clock cycle. The resulting Split-LUT-Carry SPCA (SLC-SPCA) PRNG achieves 6x improvement in logic density compared to LUT-SR, and a 1.5x density increase compared to SPCA. We evaluate the randomness of SLC-SPCA utilizing the NIST Statistical Test Suite, and we provide a power and energy comparison of LUT-SR and SLC-SPCA on a Xilinx Zynq 7020 FPGA device. Our results indicate that SLC-SPCA generates 3x more bits per clock at approximately the same power dissipation as LUT-SR, and consequently 3x less energy to generate 1 gigabit of random data. SLC-SPCA is also 1.5x more energy-efficient than a SPCA PRNG."
+}
