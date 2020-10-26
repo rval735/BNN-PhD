@@ -1,0 +1,205 @@
+Number,NCC-Alice Bob(%),NCC-Alice Original(%),NCC-Bob Original(%),Alice Name,Bob Name
+Repetitions: 24576 - 20599 - 11518 - 11518
+0,-0.522936,-0.522936,100.000000,Bunny/Bunny0Enc.bmp,Bunny/Bunny0Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+1,-0.522936,-0.522936,100.000000,Bunny/Bunny1Enc.bmp,Bunny/Bunny1Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+2,-0.522936,-0.522936,100.000000,Bunny/Bunny2Enc.bmp,Bunny/Bunny2Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+3,-0.522936,-0.522936,100.000000,Bunny/Bunny3Enc.bmp,Bunny/Bunny3Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+4,-0.522936,-0.522936,100.000000,Bunny/Bunny4Enc.bmp,Bunny/Bunny4Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+5,-0.522936,-0.522936,100.000000,Bunny/Bunny5Enc.bmp,Bunny/Bunny5Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+6,-0.522936,-0.522936,100.000000,Bunny/Bunny6Enc.bmp,Bunny/Bunny6Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+7,-0.522936,-0.522936,100.000000,Bunny/Bunny7Enc.bmp,Bunny/Bunny7Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+8,-0.522936,-0.522936,100.000000,Bunny/Bunny8Enc.bmp,Bunny/Bunny8Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+9,-0.522936,-0.522936,100.000000,Bunny/Bunny9Enc.bmp,Bunny/Bunny9Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+10,-0.522936,-0.522936,100.000000,Bunny/Bunny10Enc.bmp,Bunny/Bunny10Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+11,-0.522936,-0.522936,100.000000,Bunny/Bunny11Enc.bmp,Bunny/Bunny11Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+12,-0.522936,-0.522936,100.000000,Bunny/Bunny12Enc.bmp,Bunny/Bunny12Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+13,-0.522936,-0.522936,100.000000,Bunny/Bunny13Enc.bmp,Bunny/Bunny13Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+14,-0.522971,-0.522936,100.000000,Bunny/Bunny14Enc.bmp,Bunny/Bunny14Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+15,-0.522936,-0.522936,100.000000,Bunny/Bunny15Enc.bmp,Bunny/Bunny15Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+16,-0.522936,-0.522936,100.000000,Bunny/Bunny16Enc.bmp,Bunny/Bunny16Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+17,-0.522936,-0.522936,100.000000,Bunny/Bunny17Enc.bmp,Bunny/Bunny17Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+18,-0.522936,-0.522936,100.000000,Bunny/Bunny18Enc.bmp,Bunny/Bunny18Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+19,-0.522936,-0.522936,100.000000,Bunny/Bunny19Enc.bmp,Bunny/Bunny19Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+20,-0.522936,-0.522936,100.000000,Bunny/Bunny20Enc.bmp,Bunny/Bunny20Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+21,-0.522936,-0.522936,100.000000,Bunny/Bunny21Enc.bmp,Bunny/Bunny21Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+22,-0.522936,-0.522936,100.000000,Bunny/Bunny22Enc.bmp,Bunny/Bunny22Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+23,-0.522936,-0.522936,100.000000,Bunny/Bunny23Enc.bmp,Bunny/Bunny23Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+24,-0.522936,-0.522936,100.000000,Bunny/Bunny24Enc.bmp,Bunny/Bunny24Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+25,-0.522936,-0.522936,100.000000,Bunny/Bunny25Enc.bmp,Bunny/Bunny25Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+26,-0.522936,-0.522936,100.000000,Bunny/Bunny26Enc.bmp,Bunny/Bunny26Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+27,-0.522936,-0.522936,100.000000,Bunny/Bunny27Enc.bmp,Bunny/Bunny27Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+28,-0.522936,-0.522936,100.000000,Bunny/Bunny28Enc.bmp,Bunny/Bunny28Dec.bmp
+Repetitions: 24576 - 20599 - 279 - 11518
+29,0.177331,-0.522936,3.189597,Bunny/Bunny29Enc.bmp,Bunny/Bunny29Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+30,-0.522936,-0.522936,100.000000,Bunny/Bunny30Enc.bmp,Bunny/Bunny30Dec.bmp
+Repetitions: 24576 - 20599 - 11368 - 11518
+31,-0.522952,-0.522936,100.000000,Bunny/Bunny31Enc.bmp,Bunny/Bunny31Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+32,-0.522936,-0.522936,100.000000,Bunny/Bunny32Enc.bmp,Bunny/Bunny32Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+33,-0.522936,-0.522936,100.000000,Bunny/Bunny33Enc.bmp,Bunny/Bunny33Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+34,-0.522936,-0.522936,100.000000,Bunny/Bunny34Enc.bmp,Bunny/Bunny34Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+35,-0.522936,-0.522936,100.000000,Bunny/Bunny35Enc.bmp,Bunny/Bunny35Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+36,-0.522936,-0.522936,100.000000,Bunny/Bunny36Enc.bmp,Bunny/Bunny36Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+37,-0.522936,-0.522936,100.000000,Bunny/Bunny37Enc.bmp,Bunny/Bunny37Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+38,-0.522936,-0.522936,100.000000,Bunny/Bunny38Enc.bmp,Bunny/Bunny38Dec.bmp
+Repetitions: 24576 - 15354 - 13301 - 11518
+39,-0.523224,-0.523137,99.999672,Bunny/Bunny39Enc.bmp,Bunny/Bunny39Dec.bmp
+Repetitions: 24576 - 20513 - 17682 - 11518
+40,-0.486096,-0.523246,90.832047,Bunny/Bunny40Enc.bmp,Bunny/Bunny40Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+41,-0.522936,-0.522936,100.000000,Bunny/Bunny41Enc.bmp,Bunny/Bunny41Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+42,-0.522936,-0.522936,100.000000,Bunny/Bunny42Enc.bmp,Bunny/Bunny42Dec.bmp
+Repetitions: 24576 - 20599 - 11133 - 11518
+43,-0.528367,-0.522936,99.999367,Bunny/Bunny43Enc.bmp,Bunny/Bunny43Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+44,-0.522936,-0.522936,100.000000,Bunny/Bunny44Enc.bmp,Bunny/Bunny44Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+45,-0.522936,-0.522936,100.000000,Bunny/Bunny45Enc.bmp,Bunny/Bunny45Dec.bmp
+Repetitions: 24576 - 20599 - 1 - 11518
+46,nan,-0.522936,nan,Bunny/Bunny46Enc.bmp,Bunny/Bunny46Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+47,-0.522936,-0.522936,100.000000,Bunny/Bunny47Enc.bmp,Bunny/Bunny47Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+48,-0.522936,-0.522936,100.000000,Bunny/Bunny48Enc.bmp,Bunny/Bunny48Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+49,-0.522936,-0.522936,100.000000,Bunny/Bunny49Enc.bmp,Bunny/Bunny49Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+50,-0.522936,-0.522936,100.000000,Bunny/Bunny50Enc.bmp,Bunny/Bunny50Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+51,-0.522936,-0.522936,100.000000,Bunny/Bunny51Enc.bmp,Bunny/Bunny51Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+52,-0.522936,-0.522936,100.000000,Bunny/Bunny52Enc.bmp,Bunny/Bunny52Dec.bmp
+Repetitions: 24576 - 20599 - 11526 - 11518
+53,-0.522936,-0.522936,100.000000,Bunny/Bunny53Enc.bmp,Bunny/Bunny53Dec.bmp
+Repetitions: 24576 - 20599 - 1 - 11518
+54,nan,-0.522936,nan,Bunny/Bunny54Enc.bmp,Bunny/Bunny54Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+55,-0.522936,-0.522936,100.000000,Bunny/Bunny55Enc.bmp,Bunny/Bunny55Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+56,-0.522971,-0.522936,100.000000,Bunny/Bunny56Enc.bmp,Bunny/Bunny56Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+57,-0.522936,-0.522936,100.000000,Bunny/Bunny57Enc.bmp,Bunny/Bunny57Dec.bmp
+Repetitions: 24576 - 20599 - 1 - 11518
+58,nan,-0.522936,nan,Bunny/Bunny58Enc.bmp,Bunny/Bunny58Dec.bmp
+Repetitions: 24576 - 20599 - 12869 - 11518
+59,-0.769788,-0.522936,2.189401,Bunny/Bunny59Enc.bmp,Bunny/Bunny59Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+60,-0.522936,-0.522936,100.000000,Bunny/Bunny60Enc.bmp,Bunny/Bunny60Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+61,-0.522936,-0.522936,100.000000,Bunny/Bunny61Enc.bmp,Bunny/Bunny61Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+62,-0.522936,-0.522936,100.000000,Bunny/Bunny62Enc.bmp,Bunny/Bunny62Dec.bmp
+Repetitions: 24576 - 1 - 20426 - 11518
+63,nan,nan,-0.480579,Bunny/Bunny63Enc.bmp,Bunny/Bunny63Dec.bmp
+Repetitions: 24576 - 20599 - 11841 - 11518
+64,-0.522929,-0.522936,100.000000,Bunny/Bunny64Enc.bmp,Bunny/Bunny64Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+65,-0.522936,-0.522936,100.000000,Bunny/Bunny65Enc.bmp,Bunny/Bunny65Dec.bmp
+Repetitions: 24576 - 20599 - 1 - 11518
+66,nan,-0.522936,nan,Bunny/Bunny66Enc.bmp,Bunny/Bunny66Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+67,-0.522936,-0.522936,100.000000,Bunny/Bunny67Enc.bmp,Bunny/Bunny67Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+68,-0.522936,-0.522936,100.000000,Bunny/Bunny68Enc.bmp,Bunny/Bunny68Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+69,-0.522936,-0.522936,100.000000,Bunny/Bunny69Enc.bmp,Bunny/Bunny69Dec.bmp
+Repetitions: 24576 - 20599 - 4 - 11518
+70,2.378472,-0.522936,0.063342,Bunny/Bunny70Enc.bmp,Bunny/Bunny70Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+71,-0.522936,-0.522936,100.000000,Bunny/Bunny71Enc.bmp,Bunny/Bunny71Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+72,-0.522936,-0.522936,100.000000,Bunny/Bunny72Enc.bmp,Bunny/Bunny72Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+73,-0.522936,-0.522936,100.000000,Bunny/Bunny73Enc.bmp,Bunny/Bunny73Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+74,-0.522936,-0.522936,100.000000,Bunny/Bunny74Enc.bmp,Bunny/Bunny74Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+75,-0.522936,-0.522936,100.000000,Bunny/Bunny75Enc.bmp,Bunny/Bunny75Dec.bmp
+Repetitions: 24576 - 20599 - 11791 - 11518
+76,-0.522972,-0.522936,100.000000,Bunny/Bunny76Enc.bmp,Bunny/Bunny76Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+77,-0.522936,-0.522936,100.000000,Bunny/Bunny77Enc.bmp,Bunny/Bunny77Dec.bmp
+Repetitions: 24576 - 1 - 4088 - 11518
+78,nan,nan,-0.480615,Bunny/Bunny78Enc.bmp,Bunny/Bunny78Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+79,-0.522936,-0.522936,100.000000,Bunny/Bunny79Enc.bmp,Bunny/Bunny79Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+80,-0.522936,-0.522936,100.000000,Bunny/Bunny80Enc.bmp,Bunny/Bunny80Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+81,-0.522936,-0.522936,100.000000,Bunny/Bunny81Enc.bmp,Bunny/Bunny81Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+82,-0.522936,-0.522936,100.000000,Bunny/Bunny82Enc.bmp,Bunny/Bunny82Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+83,-0.522936,-0.522936,100.000000,Bunny/Bunny83Enc.bmp,Bunny/Bunny83Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+84,-0.522936,-0.522936,100.000000,Bunny/Bunny84Enc.bmp,Bunny/Bunny84Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+85,-0.522936,-0.522936,100.000000,Bunny/Bunny85Enc.bmp,Bunny/Bunny85Dec.bmp
+Repetitions: 24576 - 1 - 20425 - 11518
+86,nan,nan,-0.480519,Bunny/Bunny86Enc.bmp,Bunny/Bunny86Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+87,-0.522936,-0.522936,100.000000,Bunny/Bunny87Enc.bmp,Bunny/Bunny87Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+88,-0.522971,-0.522936,100.000000,Bunny/Bunny88Enc.bmp,Bunny/Bunny88Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+89,-0.522936,-0.522936,100.000000,Bunny/Bunny89Enc.bmp,Bunny/Bunny89Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+90,-0.522936,-0.522936,100.000000,Bunny/Bunny90Enc.bmp,Bunny/Bunny90Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+91,-0.522936,-0.522936,100.000000,Bunny/Bunny91Enc.bmp,Bunny/Bunny91Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+92,-0.522936,-0.522936,100.000000,Bunny/Bunny92Enc.bmp,Bunny/Bunny92Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+93,-0.522936,-0.522936,100.000000,Bunny/Bunny93Enc.bmp,Bunny/Bunny93Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+94,-0.522936,-0.522936,100.000000,Bunny/Bunny94Enc.bmp,Bunny/Bunny94Dec.bmp
+Repetitions: 24576 - 20599 - 1 - 11518
+95,nan,-0.522936,nan,Bunny/Bunny95Enc.bmp,Bunny/Bunny95Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+96,-0.522936,-0.522936,100.000000,Bunny/Bunny96Enc.bmp,Bunny/Bunny96Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+97,-0.522936,-0.522936,100.000000,Bunny/Bunny97Enc.bmp,Bunny/Bunny97Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+98,-0.522936,-0.522936,100.000000,Bunny/Bunny98Enc.bmp,Bunny/Bunny98Dec.bmp
+Repetitions: 24576 - 20599 - 11518 - 11518
+99,-0.522936,-0.522936,100.000000,Bunny/Bunny99Enc.bmp,Bunny/Bunny99Dec.bmp
+-----------
+Number,AES-Alice Bob(%),AES-Alice Original(%),AES-Bob Original(%),AES Name,AES-Clear Name
+0,0.221061,0.221061,100.000000,Bunny/BunnyAES.bmp,Bunny/BunnyAESClear.bmp
+0,4.392013,4.392013,100.000000,Bunny/BunnyAESSections.bmp,Bunny/BunnyAESSectionsClear.bmp

@@ -1016,6 +1016,21 @@ Reward learning from human preferences and demonstrations in Atari
 -
 -
 
+An Atari Model Zoo for Analyzing, Visualizing, and Comparing DeepReinforcement Learning Agents
+-
+-
+-
+
+State Representation Learning For Effective Deep Reinforcement Learning
+-
+-
+-
+
+Let’s Play Again- Variability of Deep Reinforcement Learning Agents in Atari Environments
+-
+-
+-
+
 < DNN
 -------> NN
 

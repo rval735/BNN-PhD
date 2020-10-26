@@ -1,0 +1,205 @@
+Number,NCC-Alice Bob(%),NCC-Alice Original(%),NCC-Bob Original(%),Alice Name,Bob Name
+Repetitions: 16320 - 14509 - 9330 - 9330
+0,-6.608088,-6.608088,100.000000,images/Test0Enc.bmp,images/Test0Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+1,-6.608088,-6.608088,100.000000,images/Test1Enc.bmp,images/Test1Dec.bmp
+Repetitions: 16320 - 14509 - 7703 - 9330
+2,-2.079340,-6.608088,37.601135,images/Test2Enc.bmp,images/Test2Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+3,-6.608088,-6.608088,100.000000,images/Test3Enc.bmp,images/Test3Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+4,-6.608088,-6.608088,100.000000,images/Test4Enc.bmp,images/Test4Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+5,-6.608088,-6.608088,100.000000,images/Test5Enc.bmp,images/Test5Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+6,-6.608088,-6.608088,100.000000,images/Test6Enc.bmp,images/Test6Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+7,-6.608088,-6.608088,100.000000,images/Test7Enc.bmp,images/Test7Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+8,-6.608088,-6.608088,100.000000,images/Test8Enc.bmp,images/Test8Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+9,-6.608088,-6.608088,100.000000,images/Test9Enc.bmp,images/Test9Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+10,-6.608088,-6.608088,100.000000,images/Test10Enc.bmp,images/Test10Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+11,-6.608088,-6.608088,100.000000,images/Test11Enc.bmp,images/Test11Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+12,-6.608088,-6.608088,100.000000,images/Test12Enc.bmp,images/Test12Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+13,-6.608088,-6.608088,100.000000,images/Test13Enc.bmp,images/Test13Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+14,-6.608088,-6.608088,100.000000,images/Test14Enc.bmp,images/Test14Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+15,-6.608088,-6.608088,100.000000,images/Test15Enc.bmp,images/Test15Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+16,-6.608088,-6.608088,100.000000,images/Test16Enc.bmp,images/Test16Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+17,-6.608088,-6.608088,100.000000,images/Test17Enc.bmp,images/Test17Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+18,-6.608088,-6.608088,100.000000,images/Test18Enc.bmp,images/Test18Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+19,-6.608088,-6.608088,100.000000,images/Test19Enc.bmp,images/Test19Dec.bmp
+Repetitions: 16320 - 11197 - 11128 - 9330
+20,-4.504983,-2.205056,40.864517,images/Test20Enc.bmp,images/Test20Dec.bmp
+Repetitions: 16320 - 11195 - 11184 - 9330
+21,-4.055571,-3.700983,50.831192,images/Test21Enc.bmp,images/Test21Dec.bmp
+Repetitions: 16320 - 14477 - 10917 - 9330
+22,-6.392918,-6.525514,97.851418,images/Test22Enc.bmp,images/Test22Dec.bmp
+Repetitions: 16320 - 11197 - 11669 - 9330
+23,-3.572541,-2.371667,37.260281,images/Test23Enc.bmp,images/Test23Dec.bmp
+Repetitions: 16320 - 11203 - 11185 - 9330
+24,-5.064060,-1.814819,36.049606,images/Test24Enc.bmp,images/Test24Dec.bmp
+Repetitions: 16320 - 14509 - 9121 - 9330
+25,-1.606821,-6.608088,19.180227,images/Test25Enc.bmp,images/Test25Dec.bmp
+Repetitions: 16320 - 14394 - 9332 - 9330
+26,-6.608058,-6.608035,100.000000,images/Test26Enc.bmp,images/Test26Dec.bmp
+Repetitions: 16320 - 11195 - 5717 - 9330
+27,2.591409,-3.700983,10.488065,images/Test27Enc.bmp,images/Test27Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+28,-6.608088,-6.608088,100.000000,images/Test28Enc.bmp,images/Test28Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+29,-6.608088,-6.608088,100.000000,images/Test29Enc.bmp,images/Test29Dec.bmp
+Repetitions: 16320 - 14509 - 7645 - 9330
+30,-2.456509,-6.608088,35.766266,images/Test30Enc.bmp,images/Test30Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+31,-6.608088,-6.608088,100.000000,images/Test31Enc.bmp,images/Test31Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+32,-6.608088,-6.608088,100.000000,images/Test32Enc.bmp,images/Test32Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+33,-6.608088,-6.608088,100.000000,images/Test33Enc.bmp,images/Test33Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+34,-6.608088,-6.608088,100.000000,images/Test34Enc.bmp,images/Test34Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+35,-6.608088,-6.608088,100.000000,images/Test35Enc.bmp,images/Test35Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+36,-6.608088,-6.608088,100.000000,images/Test36Enc.bmp,images/Test36Dec.bmp
+Repetitions: 16320 - 13555 - 10782 - 9330
+37,-6.606556,-6.607816,99.999916,images/Test37Enc.bmp,images/Test37Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+38,-6.608088,-6.608088,100.000000,images/Test38Enc.bmp,images/Test38Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+39,-6.608088,-6.608088,100.000000,images/Test39Enc.bmp,images/Test39Dec.bmp
+Repetitions: 16320 - 14267 - 10039 - 9330
+40,-6.607070,-6.608558,99.999962,images/Test40Enc.bmp,images/Test40Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+41,-6.608088,-6.608088,100.000000,images/Test41Enc.bmp,images/Test41Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+42,-6.608088,-6.608088,100.000000,images/Test42Enc.bmp,images/Test42Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+43,-6.608088,-6.608088,100.000000,images/Test43Enc.bmp,images/Test43Dec.bmp
+Repetitions: 16320 - 14509 - 9324 - 9330
+44,-6.608080,-6.608088,100.000000,images/Test44Enc.bmp,images/Test44Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+45,-6.608088,-6.608088,100.000000,images/Test45Enc.bmp,images/Test45Dec.bmp
+Repetitions: 16320 - 13427 - 11031 - 9330
+46,-2.400551,-7.332411,59.983097,images/Test46Enc.bmp,images/Test46Dec.bmp
+Repetitions: 16320 - 14485 - 11161 - 9330
+47,-5.536132,-7.112011,48.292850,images/Test47Enc.bmp,images/Test47Dec.bmp
+Repetitions: 16320 - 14195 - 9341 - 9330
+48,-3.634218,-5.350696,10.649574,images/Test48Enc.bmp,images/Test48Dec.bmp
+Repetitions: 16320 - 14509 - 9387 - 9330
+49,-6.607986,-6.608088,100.000000,images/Test49Enc.bmp,images/Test49Dec.bmp
+Repetitions: 16320 - 14509 - 7732 - 9330
+50,-6.579497,-6.608088,99.848877,images/Test50Enc.bmp,images/Test50Dec.bmp
+Repetitions: 16320 - 14536 - 9419 - 9330
+51,-6.608085,-6.608093,100.000000,images/Test51Enc.bmp,images/Test51Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+52,-6.608088,-6.608088,100.000000,images/Test52Enc.bmp,images/Test52Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+53,-6.608088,-6.608088,100.000000,images/Test53Enc.bmp,images/Test53Dec.bmp
+Repetitions: 16320 - 7698 - 12712 - 9330
+54,-1.560979,-1.016177,18.174093,images/Test54Enc.bmp,images/Test54Dec.bmp
+Repetitions: 16320 - 11197 - 11198 - 9330
+55,-4.268460,-2.371667,53.294964,images/Test55Enc.bmp,images/Test55Dec.bmp
+Repetitions: 16320 - 14437 - 11283 - 9330
+56,-6.537710,-6.606390,99.917915,images/Test56Enc.bmp,images/Test56Dec.bmp
+Repetitions: 16320 - 14509 - 7643 - 9330
+57,-2.573735,-6.608088,36.282566,images/Test57Enc.bmp,images/Test57Dec.bmp
+Repetitions: 16320 - 11196 - 11129 - 9330
+58,-4.504919,-2.205015,40.864704,images/Test58Enc.bmp,images/Test58Dec.bmp
+Repetitions: 16320 - 11198 - 11125 - 9330
+59,-4.504968,-2.205106,40.864281,images/Test59Enc.bmp,images/Test59Dec.bmp
+Repetitions: 16320 - 14445 - 11235 - 9330
+60,-3.494187,-8.263912,47.513153,images/Test60Enc.bmp,images/Test60Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+61,-6.608088,-6.608088,100.000000,images/Test61Enc.bmp,images/Test61Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+62,-6.608088,-6.608088,100.000000,images/Test62Enc.bmp,images/Test62Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+63,-6.608088,-6.608088,100.000000,images/Test63Enc.bmp,images/Test63Dec.bmp
+Repetitions: 16320 - 14509 - 7716 - 9330
+64,-4.619586,-6.608088,26.904165,images/Test64Enc.bmp,images/Test64Dec.bmp
+Repetitions: 16320 - 14465 - 10478 - 9330
+65,-6.610280,-6.608176,99.997505,images/Test65Enc.bmp,images/Test65Dec.bmp
+Repetitions: 16320 - 14509 - 7703 - 9330
+66,-2.079340,-6.608088,37.601135,images/Test66Enc.bmp,images/Test66Dec.bmp
+Repetitions: 16320 - 14463 - 7687 - 9330
+67,-2.079286,-6.608015,37.601139,images/Test67Enc.bmp,images/Test67Dec.bmp
+Repetitions: 16320 - 11095 - 11196 - 9330
+68,-5.064355,-1.814778,36.049416,images/Test68Enc.bmp,images/Test68Dec.bmp
+Repetitions: 16320 - 14482 - 11196 - 9330
+69,-7.335000,-2.984736,44.493874,images/Test69Enc.bmp,images/Test69Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+70,-6.608088,-6.608088,100.000000,images/Test70Enc.bmp,images/Test70Dec.bmp
+Repetitions: 16320 - 14473 - 9325 - 9330
+71,-6.608065,-6.608029,100.000000,images/Test71Enc.bmp,images/Test71Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+72,-6.608088,-6.608088,100.000000,images/Test72Enc.bmp,images/Test72Dec.bmp
+Repetitions: 16320 - 14390 - 7750 - 9330
+73,-2.684710,-6.608061,38.180496,images/Test73Enc.bmp,images/Test73Dec.bmp
+Repetitions: 16320 - 14447 - 9388 - 9330
+74,-6.608105,-6.608088,100.000000,images/Test74Enc.bmp,images/Test74Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+75,-6.608088,-6.608088,100.000000,images/Test75Enc.bmp,images/Test75Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+76,-6.608088,-6.608088,100.000000,images/Test76Enc.bmp,images/Test76Dec.bmp
+Repetitions: 16320 - 14509 - 7703 - 9330
+77,-2.079340,-6.608088,37.601135,images/Test77Enc.bmp,images/Test77Dec.bmp
+Repetitions: 16320 - 14481 - 11241 - 9330
+78,-7.848521,-4.816112,43.285595,images/Test78Enc.bmp,images/Test78Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+79,-6.608088,-6.608088,100.000000,images/Test79Enc.bmp,images/Test79Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+80,-6.608088,-6.608088,100.000000,images/Test80Enc.bmp,images/Test80Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+81,-6.608088,-6.608088,100.000000,images/Test81Enc.bmp,images/Test81Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+82,-6.608088,-6.608088,100.000000,images/Test82Enc.bmp,images/Test82Dec.bmp
+Repetitions: 16320 - 11203 - 11187 - 9330
+83,-5.064415,-1.814819,36.049469,images/Test83Enc.bmp,images/Test83Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+84,-6.608088,-6.608088,100.000000,images/Test84Enc.bmp,images/Test84Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+85,-6.608088,-6.608088,100.000000,images/Test85Enc.bmp,images/Test85Dec.bmp
+Repetitions: 16320 - 14458 - 9233 - 9330
+86,-1.870219,-6.608062,22.700766,images/Test86Enc.bmp,images/Test86Dec.bmp
+Repetitions: 16320 - 14109 - 6820 - 9330
+87,0.820150,-4.871531,6.107457,images/Test87Enc.bmp,images/Test87Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+88,-6.608088,-6.608088,100.000000,images/Test88Enc.bmp,images/Test88Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+89,-6.608088,-6.608088,100.000000,images/Test89Enc.bmp,images/Test89Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+90,-6.608088,-6.608088,100.000000,images/Test90Enc.bmp,images/Test90Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+91,-6.608088,-6.608088,100.000000,images/Test91Enc.bmp,images/Test91Dec.bmp
+Repetitions: 16320 - 11195 - 11184 - 9330
+92,-4.055571,-3.700983,50.831192,images/Test92Enc.bmp,images/Test92Dec.bmp
+Repetitions: 16320 - 12508 - 12159 - 9330
+93,-6.538998,-6.608305,99.916962,images/Test93Enc.bmp,images/Test93Dec.bmp
+Repetitions: 16320 - 11197 - 11542 - 9330
+94,-4.269356,-2.371667,53.301941,images/Test94Enc.bmp,images/Test94Dec.bmp
+Repetitions: 16320 - 14394 - 9332 - 9330
+95,-6.608058,-6.608035,100.000000,images/Test95Enc.bmp,images/Test95Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+96,-6.608088,-6.608088,100.000000,images/Test96Enc.bmp,images/Test96Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+97,-6.608088,-6.608088,100.000000,images/Test97Enc.bmp,images/Test97Dec.bmp
+Repetitions: 16320 - 14394 - 9332 - 9330
+98,-6.608058,-6.608035,100.000000,images/Test98Enc.bmp,images/Test98Dec.bmp
+Repetitions: 16320 - 14509 - 9330 - 9330
+99,-6.608088,-6.608088,100.000000,images/Test99Enc.bmp,images/Test99Dec.bmp
+-----------
+Number,AES-Alice Bob(%),AES-Alice Original(%),AES-Bob Original(%),AES Name,AES-Clear Name
+0,-0.604872,-0.604872,100.000000,images/TestAES.bmp,images/TestAESClear.bmp
+0,1.426762,1.426762,100.000000,images/TestAESSections.bmp,images/TestAESSectionsClear.bmp

@@ -1,0 +1,205 @@
+Number,NCC-Alice Bob(%),NCC-Alice Original(%),NCC-Bob Original(%),Alice Name,Bob Name
+Repetitions: 16320 - 14465 - 4688 - 4686
+0,-0.358263,-0.358224,99.999931,Thundergato/Thunder0Enc.bmp,Thundergato/Thunder0Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+1,-0.358224,-0.358224,100.000000,Thundergato/Thunder1Enc.bmp,Thundergato/Thunder1Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+2,-0.358224,-0.358224,100.000000,Thundergato/Thunder2Enc.bmp,Thundergato/Thunder2Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+3,-0.358224,-0.358224,100.000000,Thundergato/Thunder3Enc.bmp,Thundergato/Thunder3Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+4,-0.358224,-0.358224,100.000000,Thundergato/Thunder4Enc.bmp,Thundergato/Thunder4Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+5,-0.358224,-0.358224,100.000000,Thundergato/Thunder5Enc.bmp,Thundergato/Thunder5Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+6,-0.358224,-0.358224,100.000000,Thundergato/Thunder6Enc.bmp,Thundergato/Thunder6Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+7,-0.358263,-0.358224,99.999931,Thundergato/Thunder7Enc.bmp,Thundergato/Thunder7Dec.bmp
+Repetitions: 16320 - 14465 - 4726 - 4686
+8,-0.357352,-0.358224,99.958656,Thundergato/Thunder8Enc.bmp,Thundergato/Thunder8Dec.bmp
+Repetitions: 16320 - 14465 - 4685 - 4686
+9,-0.358263,-0.358224,99.999931,Thundergato/Thunder9Enc.bmp,Thundergato/Thunder9Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+10,-0.358224,-0.358224,100.000000,Thundergato/Thunder10Enc.bmp,Thundergato/Thunder10Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+11,-0.358224,-0.358224,100.000000,Thundergato/Thunder11Enc.bmp,Thundergato/Thunder11Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+12,-0.358263,-0.358224,99.999931,Thundergato/Thunder12Enc.bmp,Thundergato/Thunder12Dec.bmp
+Repetitions: 16320 - 14465 - 5291 - 4686
+13,-0.340287,-0.358224,20.291395,Thundergato/Thunder13Enc.bmp,Thundergato/Thunder13Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+14,-0.358224,-0.358224,100.000000,Thundergato/Thunder14Enc.bmp,Thundergato/Thunder14Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+15,-0.358263,-0.358224,99.999931,Thundergato/Thunder15Enc.bmp,Thundergato/Thunder15Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+16,-0.358224,-0.358224,100.000000,Thundergato/Thunder16Enc.bmp,Thundergato/Thunder16Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+17,-0.358224,-0.358224,100.000000,Thundergato/Thunder17Enc.bmp,Thundergato/Thunder17Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+18,-0.358263,-0.358224,99.999931,Thundergato/Thunder18Enc.bmp,Thundergato/Thunder18Dec.bmp
+Repetitions: 16320 - 14465 - 5291 - 4686
+19,-0.340287,-0.358224,20.291395,Thundergato/Thunder19Enc.bmp,Thundergato/Thunder19Dec.bmp
+Repetitions: 16320 - 11179 - 7733 - 4686
+20,0.007543,-0.134911,4.654625,Thundergato/Thunder20Enc.bmp,Thundergato/Thunder20Dec.bmp
+Repetitions: 16320 - 11176 - 3977 - 4686
+21,0.838778,-0.122525,37.267059,Thundergato/Thunder21Enc.bmp,Thundergato/Thunder21Dec.bmp
+Repetitions: 16320 - 11165 - 7917 - 4686
+22,-0.009677,-0.158950,6.171965,Thundergato/Thunder22Enc.bmp,Thundergato/Thunder22Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+23,-0.358224,-0.358224,100.000000,Thundergato/Thunder23Enc.bmp,Thundergato/Thunder23Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+24,-0.358224,-0.358224,100.000000,Thundergato/Thunder24Enc.bmp,Thundergato/Thunder24Dec.bmp
+Repetitions: 16320 - 14465 - 4726 - 4686
+25,-0.357352,-0.358224,99.958656,Thundergato/Thunder25Enc.bmp,Thundergato/Thunder25Dec.bmp
+Repetitions: 16320 - 14465 - 4328 - 4686
+26,-0.135734,-0.358224,9.480819,Thundergato/Thunder26Enc.bmp,Thundergato/Thunder26Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+27,-0.358224,-0.358224,100.000000,Thundergato/Thunder27Enc.bmp,Thundergato/Thunder27Dec.bmp
+Repetitions: 16320 - 14477 - 4895 - 4686
+28,-0.358567,-0.358227,99.998985,Thundergato/Thunder28Enc.bmp,Thundergato/Thunder28Dec.bmp
+Repetitions: 16320 - 14494 - 4419 - 4686
+29,-0.173618,-0.358222,5.257043,Thundergato/Thunder29Enc.bmp,Thundergato/Thunder29Dec.bmp
+Repetitions: 16320 - 14465 - 4352 - 4686
+30,-0.477931,-0.358224,98.960289,Thundergato/Thunder30Enc.bmp,Thundergato/Thunder30Dec.bmp
+Repetitions: 16320 - 14470 - 4771 - 4686
+31,-0.358174,-0.358223,100.000000,Thundergato/Thunder31Enc.bmp,Thundergato/Thunder31Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+32,-0.358224,-0.358224,100.000000,Thundergato/Thunder32Enc.bmp,Thundergato/Thunder32Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+33,-0.358224,-0.358224,100.000000,Thundergato/Thunder33Enc.bmp,Thundergato/Thunder33Dec.bmp
+Repetitions: 16320 - 14465 - 4006 - 4686
+34,-0.176656,-0.358224,37.942532,Thundergato/Thunder34Enc.bmp,Thundergato/Thunder34Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+35,-0.358224,-0.358224,100.000000,Thundergato/Thunder35Enc.bmp,Thundergato/Thunder35Dec.bmp
+Repetitions: 16320 - 14465 - 3977 - 4686
+36,-0.031803,-0.358224,37.267059,Thundergato/Thunder36Enc.bmp,Thundergato/Thunder36Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+37,-0.358224,-0.358224,100.000000,Thundergato/Thunder37Enc.bmp,Thundergato/Thunder37Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+38,-0.358224,-0.358224,100.000000,Thundergato/Thunder38Enc.bmp,Thundergato/Thunder38Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+39,-0.358224,-0.358224,100.000000,Thundergato/Thunder39Enc.bmp,Thundergato/Thunder39Dec.bmp
+Repetitions: 16320 - 13430 - 7162 - 4686
+40,2.198535,-0.194137,18.449705,Thundergato/Thunder40Enc.bmp,Thundergato/Thunder40Dec.bmp
+Repetitions: 16320 - 13430 - 7162 - 4686
+41,2.198535,-0.194137,18.449705,Thundergato/Thunder41Enc.bmp,Thundergato/Thunder41Dec.bmp
+Repetitions: 16320 - 14471 - 4836 - 4686
+42,-0.113485,-0.358204,38.507545,Thundergato/Thunder42Enc.bmp,Thundergato/Thunder42Dec.bmp
+Repetitions: 16320 - 14465 - 4726 - 4686
+43,-0.357352,-0.358224,99.958656,Thundergato/Thunder43Enc.bmp,Thundergato/Thunder43Dec.bmp
+Repetitions: 16320 - 14465 - 4685 - 4686
+44,-0.358263,-0.358224,99.999931,Thundergato/Thunder44Enc.bmp,Thundergato/Thunder44Dec.bmp
+Repetitions: 16320 - 14458 - 4890 - 4686
+45,-0.358224,-0.358219,99.999916,Thundergato/Thunder45Enc.bmp,Thundergato/Thunder45Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+46,-0.358224,-0.358224,100.000000,Thundergato/Thunder46Enc.bmp,Thundergato/Thunder46Dec.bmp
+Repetitions: 16320 - 14465 - 6493 - 4686
+47,0.652500,-0.358224,2.578140,Thundergato/Thunder47Enc.bmp,Thundergato/Thunder47Dec.bmp
+Repetitions: 16320 - 14465 - 5966 - 4686
+48,-0.335438,-0.358224,17.516214,Thundergato/Thunder48Enc.bmp,Thundergato/Thunder48Dec.bmp
+Repetitions: 16320 - 11190 - 9256 - 4686
+49,0.005578,-0.131039,4.150732,Thundergato/Thunder49Enc.bmp,Thundergato/Thunder49Dec.bmp
+Repetitions: 16320 - 14465 - 4328 - 4686
+50,-0.135734,-0.358224,9.480819,Thundergato/Thunder50Enc.bmp,Thundergato/Thunder50Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+51,-0.358224,-0.358224,100.000000,Thundergato/Thunder51Enc.bmp,Thundergato/Thunder51Dec.bmp
+Repetitions: 16320 - 11970 - 8944 - 4686
+52,9.571602,-0.140408,6.336130,Thundergato/Thunder52Enc.bmp,Thundergato/Thunder52Dec.bmp
+Repetitions: 16320 - 11138 - 6918 - 4686
+53,0.108306,-0.158948,1.782163,Thundergato/Thunder53Enc.bmp,Thundergato/Thunder53Dec.bmp
+Repetitions: 16320 - 14465 - 4006 - 4686
+54,-0.176656,-0.358224,37.942532,Thundergato/Thunder54Enc.bmp,Thundergato/Thunder54Dec.bmp
+Repetitions: 16320 - 13421 - 6646 - 4686
+55,2.391001,-0.237705,3.944213,Thundergato/Thunder55Enc.bmp,Thundergato/Thunder55Dec.bmp
+Repetitions: 16320 - 14416 - 4790 - 4686
+56,-0.358281,-0.358226,99.999931,Thundergato/Thunder56Enc.bmp,Thundergato/Thunder56Dec.bmp
+Repetitions: 16320 - 14465 - 4734 - 4686
+57,-0.327866,-0.358224,81.908737,Thundergato/Thunder57Enc.bmp,Thundergato/Thunder57Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+58,-0.358224,-0.358224,100.000000,Thundergato/Thunder58Enc.bmp,Thundergato/Thunder58Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+59,-0.358224,-0.358224,100.000000,Thundergato/Thunder59Enc.bmp,Thundergato/Thunder59Dec.bmp
+Repetitions: 16320 - 13471 - 9032 - 4686
+60,2.789903,-0.154826,19.979425,Thundergato/Thunder60Enc.bmp,Thundergato/Thunder60Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+61,-0.358224,-0.358224,100.000000,Thundergato/Thunder61Enc.bmp,Thundergato/Thunder61Dec.bmp
+Repetitions: 16320 - 14465 - 4777 - 4686
+62,-0.357011,-0.358224,94.049301,Thundergato/Thunder62Enc.bmp,Thundergato/Thunder62Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+63,-0.358263,-0.358224,99.999931,Thundergato/Thunder63Enc.bmp,Thundergato/Thunder63Dec.bmp
+Repetitions: 16320 - 14477 - 4895 - 4686
+64,-0.358567,-0.358227,99.998985,Thundergato/Thunder64Enc.bmp,Thundergato/Thunder64Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+65,-0.358224,-0.358224,100.000000,Thundergato/Thunder65Enc.bmp,Thundergato/Thunder65Dec.bmp
+Repetitions: 16320 - 11168 - 7943 - 4686
+66,0.007410,-0.134911,4.657063,Thundergato/Thunder66Enc.bmp,Thundergato/Thunder66Dec.bmp
+Repetitions: 16320 - 11201 - 7728 - 4686
+67,0.008719,-0.130759,4.146068,Thundergato/Thunder67Enc.bmp,Thundergato/Thunder67Dec.bmp
+Repetitions: 16320 - 14477 - 4895 - 4686
+68,-0.358567,-0.358227,99.998985,Thundergato/Thunder68Enc.bmp,Thundergato/Thunder68Dec.bmp
+Repetitions: 16320 - 14465 - 5156 - 4686
+69,-0.370925,-0.358224,99.737419,Thundergato/Thunder69Enc.bmp,Thundergato/Thunder69Dec.bmp
+Repetitions: 16320 - 14465 - 5224 - 4686
+70,-0.050165,-0.358224,30.780210,Thundergato/Thunder70Enc.bmp,Thundergato/Thunder70Dec.bmp
+Repetitions: 16320 - 14465 - 6623 - 4686
+71,0.280948,-0.358224,4.851775,Thundergato/Thunder71Enc.bmp,Thundergato/Thunder71Dec.bmp
+Repetitions: 16320 - 14465 - 9231 - 4686
+72,0.022103,-0.358224,0.762516,Thundergato/Thunder72Enc.bmp,Thundergato/Thunder72Dec.bmp
+Repetitions: 16320 - 14465 - 3975 - 4686
+73,-0.217444,-0.358224,38.806049,Thundergato/Thunder73Enc.bmp,Thundergato/Thunder73Dec.bmp
+Repetitions: 16320 - 14465 - 4594 - 4686
+74,-0.358402,-0.358224,99.999985,Thundergato/Thunder74Enc.bmp,Thundergato/Thunder74Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+75,-0.358224,-0.358224,100.000000,Thundergato/Thunder75Enc.bmp,Thundergato/Thunder75Dec.bmp
+Repetitions: 16320 - 14465 - 3977 - 4686
+76,-0.031803,-0.358224,37.267059,Thundergato/Thunder76Enc.bmp,Thundergato/Thunder76Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+77,-0.358263,-0.358224,99.999931,Thundergato/Thunder77Enc.bmp,Thundergato/Thunder77Dec.bmp
+Repetitions: 16320 - 14453 - 6143 - 4686
+78,-0.366290,-0.358257,31.391352,Thundergato/Thunder78Enc.bmp,Thundergato/Thunder78Dec.bmp
+Repetitions: 16320 - 14465 - 3977 - 4686
+79,-0.031803,-0.358224,37.267059,Thundergato/Thunder79Enc.bmp,Thundergato/Thunder79Dec.bmp
+Repetitions: 16320 - 14465 - 6143 - 4686
+80,-0.449354,-0.358224,8.909300,Thundergato/Thunder80Enc.bmp,Thundergato/Thunder80Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+81,-0.358224,-0.358224,100.000000,Thundergato/Thunder81Enc.bmp,Thundergato/Thunder81Dec.bmp
+Repetitions: 16320 - 14465 - 4704 - 4686
+82,-0.358224,-0.358224,100.000000,Thundergato/Thunder82Enc.bmp,Thundergato/Thunder82Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+83,-0.358263,-0.358224,99.999931,Thundergato/Thunder83Enc.bmp,Thundergato/Thunder83Dec.bmp
+Repetitions: 16320 - 14465 - 4688 - 4686
+84,-0.358263,-0.358224,99.999931,Thundergato/Thunder84Enc.bmp,Thundergato/Thunder84Dec.bmp
+Repetitions: 16320 - 14465 - 4746 - 4686
+85,-0.358238,-0.358224,100.000000,Thundergato/Thunder85Enc.bmp,Thundergato/Thunder85Dec.bmp
+Repetitions: 16320 - 14465 - 4685 - 4686
+86,-0.358263,-0.358224,99.999931,Thundergato/Thunder86Enc.bmp,Thundergato/Thunder86Dec.bmp
+Repetitions: 16320 - 13395 - 7181 - 4686
+87,1.850429,-0.396986,16.453876,Thundergato/Thunder87Enc.bmp,Thundergato/Thunder87Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+88,-0.358224,-0.358224,100.000000,Thundergato/Thunder88Enc.bmp,Thundergato/Thunder88Dec.bmp
+Repetitions: 16320 - 14465 - 4686 - 4686
+89,-0.358224,-0.358224,100.000000,Thundergato/Thunder89Enc.bmp,Thundergato/Thunder89Dec.bmp
+Repetitions: 16320 - 14477 - 4895 - 4686
+90,-0.358567,-0.358227,99.998985,Thundergato/Thunder90Enc.bmp,Thundergato/Thunder90Dec.bmp
+Repetitions: 16320 - 14465 - 5291 - 4686
+91,-0.340287,-0.358224,20.291395,Thundergato/Thunder91Enc.bmp,Thundergato/Thunder91Dec.bmp
+Repetitions: 16320 - 14267 - 5980 - 4686
+92,-0.137198,-0.420207,4.214043,Thundergato/Thunder92Enc.bmp,Thundergato/Thunder92Dec.bmp
+Repetitions: 16320 - 14465 - 7440 - 4686
+93,-0.361748,-0.358224,3.455505,Thundergato/Thunder93Enc.bmp,Thundergato/Thunder93Dec.bmp
+Repetitions: 16320 - 14465 - 4005 - 4686
+94,-0.176583,-0.358224,37.943707,Thundergato/Thunder94Enc.bmp,Thundergato/Thunder94Dec.bmp
+Repetitions: 16320 - 14465 - 3783 - 4686
+95,0.108127,-0.358224,0.633562,Thundergato/Thunder95Enc.bmp,Thundergato/Thunder95Dec.bmp
+Repetitions: 16320 - 14465 - 4518 - 4686
+96,-0.148891,-0.358224,5.107255,Thundergato/Thunder96Enc.bmp,Thundergato/Thunder96Dec.bmp
+Repetitions: 16320 - 11138 - 7721 - 4686
+97,-0.009334,-0.158948,6.171306,Thundergato/Thunder97Enc.bmp,Thundergato/Thunder97Dec.bmp
+Repetitions: 16320 - 14465 - 4702 - 4686
+98,-0.358211,-0.358224,100.000000,Thundergato/Thunder98Enc.bmp,Thundergato/Thunder98Dec.bmp
+Repetitions: 16320 - 14439 - 4915 - 4686
+99,-0.357614,-0.358229,99.978653,Thundergato/Thunder99Enc.bmp,Thundergato/Thunder99Dec.bmp
+-----------
+Number,AES-Alice Bob(%),AES-Alice Original(%),AES-Bob Original(%),AES Name,AES-Clear Name
+0,-0.196514,-0.196514,100.000000,Thundergato/ThunderAES.bmp,Thundergato/ThunderAESClear.bmp
+0,0.071776,0.071776,100.000000,Thundergato/ThunderAESSections.bmp,Thundergato/ThunderAESSectionsClear.bmp

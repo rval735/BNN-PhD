@@ -1,0 +1,205 @@
+Number,NCC-Alice Bob(%),NCC-Alice Original(%),NCC-Bob Original(%),Alice Name,Bob Name
+Repetitions: 24576 - 20519 - 8328 - 11518
+0,0.151497,-0.104428,1.708734,Bunny/Bunny0Enc.bmp,Bunny/Bunny0Dec.bmp
+Repetitions: 24576 - 20518 - 9619 - 11518
+1,-0.207734,-0.102851,9.168114,Bunny/Bunny1Enc.bmp,Bunny/Bunny1Dec.bmp
+Repetitions: 24576 - 20515 - 8698 - 11518
+2,-0.087044,-0.104438,21.474480,Bunny/Bunny2Enc.bmp,Bunny/Bunny2Dec.bmp
+Repetitions: 24576 - 16720 - 10591 - 11518
+3,-0.617759,0.373449,3.740441,Bunny/Bunny3Enc.bmp,Bunny/Bunny3Dec.bmp
+Repetitions: 24576 - 20515 - 12307 - 11518
+4,-0.361365,-0.104438,5.963088,Bunny/Bunny4Enc.bmp,Bunny/Bunny4Dec.bmp
+Repetitions: 24576 - 15598 - 14734 - 11518
+5,3.835444,-0.201278,0.656596,Bunny/Bunny5Enc.bmp,Bunny/Bunny5Dec.bmp
+Repetitions: 24576 - 20515 - 11165 - 11518
+6,-0.205995,-0.104438,4.319577,Bunny/Bunny6Enc.bmp,Bunny/Bunny6Dec.bmp
+Repetitions: 24576 - 20515 - 9010 - 11518
+7,-0.016113,-0.104438,20.804604,Bunny/Bunny7Enc.bmp,Bunny/Bunny7Dec.bmp
+Repetitions: 24576 - 17007 - 8747 - 11518
+8,-0.178015,0.042705,20.805021,Bunny/Bunny8Enc.bmp,Bunny/Bunny8Dec.bmp
+Repetitions: 24576 - 20515 - 11212 - 11518
+9,-0.134156,-0.104438,3.454340,Bunny/Bunny9Enc.bmp,Bunny/Bunny9Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+10,-0.104938,-0.104438,21.555267,Bunny/Bunny10Enc.bmp,Bunny/Bunny10Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+11,-0.104938,-0.104438,21.555267,Bunny/Bunny11Enc.bmp,Bunny/Bunny11Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+12,-0.104938,-0.104438,21.555267,Bunny/Bunny12Enc.bmp,Bunny/Bunny12Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+13,-0.104938,-0.104438,21.555267,Bunny/Bunny13Enc.bmp,Bunny/Bunny13Dec.bmp
+Repetitions: 24576 - 20515 - 10419 - 11518
+14,-0.047902,-0.104438,1.174330,Bunny/Bunny14Enc.bmp,Bunny/Bunny14Dec.bmp
+Repetitions: 24576 - 20515 - 10724 - 11518
+15,-0.985655,-0.104438,2.140865,Bunny/Bunny15Enc.bmp,Bunny/Bunny15Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+16,-0.104938,-0.104438,21.555267,Bunny/Bunny16Enc.bmp,Bunny/Bunny16Dec.bmp
+Repetitions: 24576 - 20515 - 11821 - 11518
+17,-1.517206,-0.104438,2.184152,Bunny/Bunny17Enc.bmp,Bunny/Bunny17Dec.bmp
+Repetitions: 24576 - 20468 - 8837 - 11518
+18,-0.104914,-0.104452,21.557528,Bunny/Bunny18Enc.bmp,Bunny/Bunny18Dec.bmp
+Repetitions: 24576 - 20515 - 8105 - 11518
+19,-0.104921,-0.104438,21.557486,Bunny/Bunny19Enc.bmp,Bunny/Bunny19Dec.bmp
+Repetitions: 24576 - 20515 - 7918 - 11518
+20,0.226551,-0.104438,0.490656,Bunny/Bunny20Enc.bmp,Bunny/Bunny20Dec.bmp
+Repetitions: 24576 - 20515 - 7996 - 11518
+21,-0.177646,-0.104438,0.565683,Bunny/Bunny21Enc.bmp,Bunny/Bunny21Dec.bmp
+Repetitions: 24576 - 19304 - 6051 - 11518
+22,-0.075993,-0.115842,5.961656,Bunny/Bunny22Enc.bmp,Bunny/Bunny22Dec.bmp
+Repetitions: 24576 - 20515 - 8434 - 11518
+23,-0.104929,-0.104438,21.557446,Bunny/Bunny23Enc.bmp,Bunny/Bunny23Dec.bmp
+Repetitions: 24576 - 20515 - 8724 - 11518
+24,-0.105839,-0.104438,23.544485,Bunny/Bunny24Enc.bmp,Bunny/Bunny24Dec.bmp
+Repetitions: 24576 - 20515 - 8414 - 11518
+25,-0.104949,-0.104438,21.556719,Bunny/Bunny25Enc.bmp,Bunny/Bunny25Dec.bmp
+Repetitions: 24576 - 14039 - 9935 - 11518
+26,0.501235,-0.076940,0.061580,Bunny/Bunny26Enc.bmp,Bunny/Bunny26Dec.bmp
+Repetitions: 24576 - 15525 - 12149 - 11518
+27,0.702362,-0.201062,0.416742,Bunny/Bunny27Enc.bmp,Bunny/Bunny27Dec.bmp
+Repetitions: 24576 - 20515 - 6322 - 11518
+28,0.006113,-0.104438,5.883974,Bunny/Bunny28Enc.bmp,Bunny/Bunny28Dec.bmp
+Repetitions: 24576 - 20515 - 8394 - 11518
+29,-0.104933,-0.104438,21.556915,Bunny/Bunny29Enc.bmp,Bunny/Bunny29Dec.bmp
+Repetitions: 24576 - 20521 - 9162 - 11518
+30,0.090975,-0.102845,20.804655,Bunny/Bunny30Enc.bmp,Bunny/Bunny30Dec.bmp
+Repetitions: 24576 - 16955 - 8904 - 11518
+31,-0.314174,-0.037190,21.556442,Bunny/Bunny31Enc.bmp,Bunny/Bunny31Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+32,-0.104938,-0.104438,21.555267,Bunny/Bunny32Enc.bmp,Bunny/Bunny32Dec.bmp
+Repetitions: 24576 - 17009 - 10328 - 11518
+33,-0.051055,-0.273606,0.713685,Bunny/Bunny33Enc.bmp,Bunny/Bunny33Dec.bmp
+Repetitions: 24576 - 20515 - 12105 - 11518
+34,-0.206952,-0.104438,4.562974,Bunny/Bunny34Enc.bmp,Bunny/Bunny34Dec.bmp
+Repetitions: 24576 - 20493 - 11352 - 11518
+35,-0.365303,-0.106038,4.349818,Bunny/Bunny35Enc.bmp,Bunny/Bunny35Dec.bmp
+Repetitions: 24576 - 20515 - 8088 - 11518
+36,-0.104939,-0.104438,21.555265,Bunny/Bunny36Enc.bmp,Bunny/Bunny36Dec.bmp
+Repetitions: 24576 - 20515 - 9771 - 11518
+37,-0.296920,-0.104438,9.168184,Bunny/Bunny37Enc.bmp,Bunny/Bunny37Dec.bmp
+Repetitions: 24576 - 19439 - 10352 - 11518
+38,-0.411351,0.514431,1.332174,Bunny/Bunny38Enc.bmp,Bunny/Bunny38Dec.bmp
+Repetitions: 24576 - 20515 - 7975 - 11518
+39,0.090816,-0.104438,1.539993,Bunny/Bunny39Enc.bmp,Bunny/Bunny39Dec.bmp
+Repetitions: 24576 - 20515 - 8086 - 11518
+40,-0.016112,-0.104438,20.805574,Bunny/Bunny40Enc.bmp,Bunny/Bunny40Dec.bmp
+Repetitions: 24576 - 20515 - 8850 - 11518
+41,-0.016113,-0.104438,20.805111,Bunny/Bunny41Enc.bmp,Bunny/Bunny41Dec.bmp
+Repetitions: 24576 - 20515 - 8176 - 11518
+42,-0.104907,-0.104438,21.554037,Bunny/Bunny42Enc.bmp,Bunny/Bunny42Dec.bmp
+Repetitions: 24576 - 20515 - 8087 - 11518
+43,-0.104938,-0.104438,21.555267,Bunny/Bunny43Enc.bmp,Bunny/Bunny43Dec.bmp
+Repetitions: 24576 - 15787 - 15948 - 11518
+44,-0.861476,-0.201119,0.586381,Bunny/Bunny44Enc.bmp,Bunny/Bunny44Dec.bmp
+Repetitions: 24576 - 12904 - 13701 - 11518
+45,1.103537,0.160905,1.284596,Bunny/Bunny45Enc.bmp,Bunny/Bunny45Dec.bmp
+Repetitions: 24576 - 20515 - 8119 - 11518
+46,-0.104919,-0.104438,21.554594,Bunny/Bunny46Enc.bmp,Bunny/Bunny46Dec.bmp
+Repetitions: 24576 - 16720 - 9160 - 11518
+47,7.965976,0.373449,0.386172,Bunny/Bunny47Enc.bmp,Bunny/Bunny47Dec.bmp
+Repetitions: 24576 - 15443 - 11569 - 11518
+48,0.061692,0.370985,1.323534,Bunny/Bunny48Enc.bmp,Bunny/Bunny48Dec.bmp
+Repetitions: 24576 - 19793 - 11152 - 11518
+49,-0.496535,-0.108552,4.107874,Bunny/Bunny49Enc.bmp,Bunny/Bunny49Dec.bmp
+Repetitions: 24576 - 20468 - 10855 - 11518
+50,-0.057504,-0.104452,1.630851,Bunny/Bunny50Enc.bmp,Bunny/Bunny50Dec.bmp
+Repetitions: 24576 - 20515 - 11377 - 11518
+51,-0.205982,-0.104438,4.318930,Bunny/Bunny51Enc.bmp,Bunny/Bunny51Dec.bmp
+Repetitions: 24576 - 20468 - 8611 - 11518
+52,-0.104920,-0.104452,21.556442,Bunny/Bunny52Enc.bmp,Bunny/Bunny52Dec.bmp
+Repetitions: 24576 - 19348 - 11727 - 11518
+53,-3.974951,0.514432,2.348895,Bunny/Bunny53Enc.bmp,Bunny/Bunny53Dec.bmp
+Repetitions: 24576 - 20084 - 15016 - 11518
+54,-0.964763,-0.109208,2.089987,Bunny/Bunny54Enc.bmp,Bunny/Bunny54Dec.bmp
+Repetitions: 24576 - 14132 - 12915 - 11518
+55,0.615225,-0.185459,0.273482,Bunny/Bunny55Enc.bmp,Bunny/Bunny55Dec.bmp
+Repetitions: 24576 - 20515 - 9591 - 11518
+56,-0.296907,-0.104438,9.167493,Bunny/Bunny56Enc.bmp,Bunny/Bunny56Dec.bmp
+Repetitions: 24576 - 17002 - 8653 - 11518
+57,0.667617,-0.033884,21.560020,Bunny/Bunny57Enc.bmp,Bunny/Bunny57Dec.bmp
+Repetitions: 24576 - 20468 - 8608 - 11518
+58,-0.104924,-0.104452,21.555683,Bunny/Bunny58Enc.bmp,Bunny/Bunny58Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+59,-0.104938,-0.104438,21.555267,Bunny/Bunny59Enc.bmp,Bunny/Bunny59Dec.bmp
+Repetitions: 24576 - 20515 - 10385 - 11518
+60,-0.395711,-0.104438,1.470711,Bunny/Bunny60Enc.bmp,Bunny/Bunny60Dec.bmp
+Repetitions: 24576 - 15435 - 14312 - 11518
+61,-0.929029,-0.201434,0.556612,Bunny/Bunny61Enc.bmp,Bunny/Bunny61Dec.bmp
+Repetitions: 24576 - 16720 - 10358 - 11518
+62,4.157393,0.373449,2.927200,Bunny/Bunny62Enc.bmp,Bunny/Bunny62Dec.bmp
+Repetitions: 24576 - 12249 - 9091 - 11518
+63,-0.813970,0.158659,0.064758,Bunny/Bunny63Enc.bmp,Bunny/Bunny63Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+64,-0.104938,-0.104438,21.555267,Bunny/Bunny64Enc.bmp,Bunny/Bunny64Dec.bmp
+Repetitions: 24576 - 20515 - 12212 - 11518
+65,-0.224085,-0.104438,7.056891,Bunny/Bunny65Enc.bmp,Bunny/Bunny65Dec.bmp
+Repetitions: 24576 - 20491 - 8627 - 11518
+66,-0.103605,-0.104412,21.557289,Bunny/Bunny66Enc.bmp,Bunny/Bunny66Dec.bmp
+Repetitions: 24576 - 13850 - 11925 - 11518
+67,4.851095,-0.077663,1.419846,Bunny/Bunny67Enc.bmp,Bunny/Bunny67Dec.bmp
+Repetitions: 24576 - 17058 - 8996 - 11518
+68,10.231057,-0.093535,0.629489,Bunny/Bunny68Enc.bmp,Bunny/Bunny68Dec.bmp
+Repetitions: 24576 - 13850 - 15626 - 11518
+69,1.011923,-0.077663,1.025476,Bunny/Bunny69Enc.bmp,Bunny/Bunny69Dec.bmp
+Repetitions: 24576 - 19285 - 13295 - 11518
+70,3.688978,-0.136963,2.157094,Bunny/Bunny70Enc.bmp,Bunny/Bunny70Dec.bmp
+Repetitions: 24576 - 19241 - 11652 - 11518
+71,-0.032717,-0.005409,0.651702,Bunny/Bunny71Enc.bmp,Bunny/Bunny71Dec.bmp
+Repetitions: 24576 - 15299 - 13847 - 11518
+72,1.861425,-0.201193,0.686696,Bunny/Bunny72Enc.bmp,Bunny/Bunny72Dec.bmp
+Repetitions: 24576 - 20515 - 6267 - 11518
+73,-0.004451,-0.104438,6.093859,Bunny/Bunny73Enc.bmp,Bunny/Bunny73Dec.bmp
+Repetitions: 24576 - 20515 - 6559 - 11518
+74,-0.105239,-0.104438,21.551146,Bunny/Bunny74Enc.bmp,Bunny/Bunny74Dec.bmp
+Repetitions: 24576 - 20515 - 8260 - 11518
+75,-0.061380,-0.104438,13.097240,Bunny/Bunny75Enc.bmp,Bunny/Bunny75Dec.bmp
+Repetitions: 24576 - 20508 - 8091 - 11518
+76,-0.391867,-0.444130,4.492682,Bunny/Bunny76Enc.bmp,Bunny/Bunny76Dec.bmp
+Repetitions: 24576 - 20515 - 9481 - 11518
+77,-0.016110,-0.104438,20.804865,Bunny/Bunny77Enc.bmp,Bunny/Bunny77Dec.bmp
+Repetitions: 24576 - 20509 - 8322 - 11518
+78,0.090952,-0.102859,20.802208,Bunny/Bunny78Enc.bmp,Bunny/Bunny78Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+79,-0.104938,-0.104438,21.555267,Bunny/Bunny79Enc.bmp,Bunny/Bunny79Dec.bmp
+Repetitions: 24576 - 20515 - 3584 - 11518
+80,-0.004674,-0.104438,0.474157,Bunny/Bunny80Enc.bmp,Bunny/Bunny80Dec.bmp
+Repetitions: 24576 - 15569 - 13836 - 11518
+81,-0.928450,-0.201300,0.556679,Bunny/Bunny81Enc.bmp,Bunny/Bunny81Dec.bmp
+Repetitions: 24576 - 20515 - 9271 - 11518
+82,-0.120466,-0.104438,1.291525,Bunny/Bunny82Enc.bmp,Bunny/Bunny82Dec.bmp
+Repetitions: 24576 - 17007 - 9079 - 11518
+83,-0.178021,0.042705,20.804901,Bunny/Bunny83Enc.bmp,Bunny/Bunny83Dec.bmp
+Repetitions: 24576 - 12878 - 12045 - 11518
+84,7.445331,-0.020959,1.336285,Bunny/Bunny84Enc.bmp,Bunny/Bunny84Dec.bmp
+Repetitions: 24576 - 20567 - 9849 - 11518
+85,-0.116855,-0.103881,1.512584,Bunny/Bunny85Enc.bmp,Bunny/Bunny85Dec.bmp
+Repetitions: 24576 - 15289 - 12106 - 11518
+86,0.728901,0.069030,0.416397,Bunny/Bunny86Enc.bmp,Bunny/Bunny86Dec.bmp
+Repetitions: 24576 - 20468 - 9557 - 11518
+87,-0.016237,-0.104452,20.802881,Bunny/Bunny87Enc.bmp,Bunny/Bunny87Dec.bmp
+Repetitions: 24576 - 20515 - 10445 - 11518
+88,-0.113004,-0.104438,1.510884,Bunny/Bunny88Enc.bmp,Bunny/Bunny88Dec.bmp
+Repetitions: 24576 - 12223 - 8162 - 11518
+89,0.013211,0.079925,0.154905,Bunny/Bunny89Enc.bmp,Bunny/Bunny89Dec.bmp
+Repetitions: 24576 - 20515 - 8085 - 11518
+90,-0.104938,-0.104438,21.555267,Bunny/Bunny90Enc.bmp,Bunny/Bunny90Dec.bmp
+Repetitions: 24576 - 19348 - 12016 - 11518
+91,-0.658742,0.514432,1.440849,Bunny/Bunny91Enc.bmp,Bunny/Bunny91Dec.bmp
+Repetitions: 24576 - 12920 - 13926 - 11518
+92,1.013872,0.158425,1.329625,Bunny/Bunny92Enc.bmp,Bunny/Bunny92Dec.bmp
+Repetitions: 24576 - 20515 - 8260 - 11518
+93,0.109412,-0.104438,6.049253,Bunny/Bunny93Enc.bmp,Bunny/Bunny93Dec.bmp
+Repetitions: 24576 - 20060 - 8964 - 11518
+94,-0.095910,-0.109255,21.557764,Bunny/Bunny94Enc.bmp,Bunny/Bunny94Dec.bmp
+Repetitions: 24576 - 12877 - 13160 - 11518
+95,10.436481,-0.021083,1.710326,Bunny/Bunny95Enc.bmp,Bunny/Bunny95Dec.bmp
+Repetitions: 24576 - 16951 - 13813 - 11518
+96,-0.909671,0.125393,0.680285,Bunny/Bunny96Enc.bmp,Bunny/Bunny96Dec.bmp
+Repetitions: 24576 - 20531 - 11355 - 11518
+97,-0.793124,-0.104436,4.389949,Bunny/Bunny97Enc.bmp,Bunny/Bunny97Dec.bmp
+Repetitions: 24576 - 12351 - 10116 - 11518
+98,6.827033,-0.083165,-0.079145,Bunny/Bunny98Enc.bmp,Bunny/Bunny98Dec.bmp
+Repetitions: 24576 - 20515 - 6063 - 11518
+99,-0.004371,-0.104438,6.095623,Bunny/Bunny99Enc.bmp,Bunny/Bunny99Dec.bmp
+-----------
+Number,AES-Alice Bob(%),AES-Alice Original(%),AES-Bob Original(%),AES Name,AES-Clear Name
+0,0.221061,0.221061,100.000000,Bunny/BunnyAES.bmp,Bunny/BunnyAESClear.bmp
+zsh: segmentation fault  ./BiSUNAOpenCL BiSUNAConf.ini   bunny.bmp Bunny/Bunny.bmp
