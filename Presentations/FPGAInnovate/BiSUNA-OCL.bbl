@@ -21,23 +21,95 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Blott:2018:FRE:3299999.3242897}
+\bibitem{JMLR:v18:16-456}
 \BIBentryALTinterwordspacing
-M.~Blott, T.~B. Preusser, N.~J. Fraser, G.~Gambardella, K.~O'brien,
-  Y.~Umuroglu, M.~Leeser, and K.~Vissers, ``Finn-r: An end-to-end deep-learning
-  framework for fast exploration of quantized neural networks,'' \emph{ACM
-  Trans. Reconfigurable Technol. Syst.}, vol.~11, no.~3, pp. 16:1--16:23, Dec.
-  2018. [Online]. Available: \url{http://doi.acm.org/10.1145/3242897}
+I.~Hubara, M.~Courbariaux, D.~Soudry, R.~El-Yaniv, and Y.~Bengio, ``Quantized
+  neural networks: Training neural networks with low precision weights and
+  activations,'' \emph{Journal of Machine Learning Research}, vol.~18, no. 187,
+  pp. 1--30, 2018. [Online]. Available:
+  \url{http://jmlr.org/papers/v18/16-456.html}
 \BIBentrySTDinterwordspacing
+
+\bibitem{SCHMIDHUBER201585}
+\BIBentryALTinterwordspacing
+J.~Schmidhuber, ``Deep learning in neural networks: An overview,'' \emph{Neural
+  Networks}, vol.~61, pp. 85 -- 117, 2015. [Online]. Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S0893608014002135}
+\BIBentrySTDinterwordspacing
+
+\bibitem{vitis-ai}
+\BIBentryALTinterwordspacing
+Xilinx. (2020) Vitis ai. [Online]. Available:
+  \url{https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{altera-ai}
+\BIBentryALTinterwordspacing
+Intel. Fpgas for artificial intelligence (ai). [Online]. Available:
+  \url{https://www.intel.com/content/www/us/en/artificial-intelligence/programmable/overview.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{electronics8060661}
+\BIBentryALTinterwordspacing
+T.~Simons and D.-J. Lee, ``A review of binarized neural networks,''
+  \emph{Electronics}, vol.~8, no.~6, 2019. [Online]. Available:
+  \url{https://www.mdpi.com/2079-9292/8/6/661}
+\BIBentrySTDinterwordspacing
+
+\bibitem{8425178}
+Y.~Hu, J.~Zhai, D.~Li, Y.~Gong, Y.~Zhu, W.~Liu, L.~Su, and J.~Jin, ``Bitflow:
+  Exploiting vector parallelism for binary neural networks on cpu,'' in
+  \emph{2018 IEEE International Parallel and Distributed Processing Symposium
+  (IPDPS)}, May 2018, pp. 244--253.
 
 \bibitem{Tang2017HowTT}
 W.~Tang, G.~Hua, and L.~Wang, ``How to train a compact binary neural network
   with high accuracy?'' in \emph{AAAI}, 2017.
 
-\bibitem{7460958}
-J.~M. Danilo~{Vargas}, ``Spectrum-diverse neuroevolution with unified neural
-  models,'' \emph{IEEE Transactions on Neural Networks and Learning Systems},
-  vol.~28, no.~8, pp. 1759--1773, Aug 2017.
+\bibitem{8953134}
+R.~{Valencia}, C.~{Sham}, and O.~{Sinnen}, ``Using neuroevolved binary neural
+  networks to solve reinforcement learning environments,'' in \emph{2019 IEEE
+  Asia Pacific Conference on Circuits and Systems (APCCAS)}, Nov 2019, pp.
+  301--304.
+
+\bibitem{NIPS2019_8736}
+\BIBentryALTinterwordspacing
+X.~Sun, J.~Choi, C.-Y. Chen, N.~Wang, S.~Venkataramani, V.~V. Srinivasan,
+  X.~Cui, W.~Zhang, and K.~Gopalakrishnan, ``Hybrid 8-bit floating point (hfp8)
+  training and inference for deep neural networks,'' in \emph{Advances in
+  Neural Information Processing Systems 32}, H.~Wallach, H.~Larochelle,
+  A.~Beygelzimer, F.~Alch\'{e}-Buc, E.~Fox, and R.~Garnett, Eds.\hskip 1em plus
+  0.5em minus 0.4em\relax Curran Associates, Inc., 2019, pp. 4900--4909.
+  [Online]. Available:
+  \url{http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{8977877}
+R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
+  through harnessing fpga capabilities,'' in \emph{2019 International
+  Conference on Field-Programmable Technology (ICFPT)}, Dec 2019, pp. 395--398.
+
+\bibitem{10.1145/3377929.3389933}
+\BIBentryALTinterwordspacing
+R.~H.~V. Tenorio, C.~W. Sham, and D.~V. Vargas, ``Preliminary study of applied
+  binary neural networks for neural cryptography,'' in \emph{Proceedings of the
+  2020 Genetic and Evolutionary Computation Conference Companion}, ser. GECCO
+  '20.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
+  for Computing Machinery, 2020, pp. 291--292. [Online]. Available:
+  \url{https://doi.org/10.1145/3377929.3389933}
+\BIBentrySTDinterwordspacing
+
+\bibitem{9087264}
+M.~Y. {Ibrahim}, R.~{Sridhar}, T.~V. {Geetha}, and D.~S. {S}, ``Advances in
+  neuroevolution through augmenting topologies -- a case study,'' in \emph{2019
+  11th International Conference on Advanced Computing (ICoAC)}, Dec 2019, pp.
+  111--116.
+
+\bibitem{alveoU50}
+\BIBentryALTinterwordspacing
+Xilinx. (2020) Alveo u50. [Online]. Available:
+  \url{https://www.xilinx.com/products/boards-and-kits/alveo/u50.html}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Zhao:2016aa}
 W.~Zhao, H.~Fu, W.~Luk, T.~Yu, S.~Wang, B.~Feng, Y.~Ma, and G.~Yang, ``F-cnn:
@@ -45,25 +117,22 @@ W.~Zhao, H.~Fu, W.~Luk, T.~Yu, S.~Wang, B.~Feng, Y.~Ma, and G.~Yang, ``F-cnn:
   \emph{2016 IEEE 27th International Conference on Application-specific
   Systems, Architectures and Processors (ASAP)}, 2016, pp. 107--114.
 
-\bibitem{Cong:2018:UPD:3174243.3174970}
+\bibitem{gpgpu-ai-dominance}
 \BIBentryALTinterwordspacing
-J.~Cong, Z.~Fang, M.~Lo, H.~Wang, J.~Xu, and S.~Zhang, ``Understanding
-  performance differences of fpgas and gpus: (abtract only),'' in
-  \emph{Proceedings of the 2018 ACM/SIGDA International Symposium on
-  Field-Programmable Gate Arrays}, ser. FPGA '18.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 2018, pp. 288--288. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/3174243.3174970}
+J.~Kobielus. (2019) Gpus continue to dominate the ai accelerator market for
+  now. [Online]. Available:
+  \url{https://www.informationweek.com/big-data/ai-machine-learning/gpus-continue-to-dominate-the-ai-accelerator-market-for-now/a/d-id/1336475}
 \BIBentrySTDinterwordspacing
+
+\bibitem{8594633}
+A.~{Shawahna}, S.~M. {Sait}, and A.~{El-Maleh}, ``Fpga-based accelerators of
+  deep learning networks for learning and classification: A review,''
+  \emph{IEEE Access}, vol.~7, pp. 7823--7859, 2019.
 
 \bibitem{2017arXiv170303864S}
 T.~{Salimans}, J.~{Ho}, X.~{Chen}, S.~{Sidor}, and I.~{Sutskever}, ``{Evolution
   Strategies as a Scalable Alternative to Reinforcement Learning},''
   \emph{ArXiv e-prints}, Mar. 2017.
-
-\bibitem{8977877}
-R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
-  through harnessing fpga capabilities,'' in \emph{2019 International
-  Conference on Field-Programmable Technology (ICFPT)}, Dec 2019, pp. 395--398.
 
 \bibitem{BiSUNAGithub}
 \BIBentryALTinterwordspacing
