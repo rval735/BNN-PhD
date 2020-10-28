@@ -134,10 +134,44 @@ T.~{Salimans}, J.~{Ho}, X.~{Chen}, S.~{Sidor}, and I.~{Sutskever}, ``{Evolution
   Strategies as a Scalable Alternative to Reinforcement Learning},''
   \emph{ArXiv e-prints}, Mar. 2017.
 
+\bibitem{Grozea2010}
+\BIBentryALTinterwordspacing
+C.~Grozea, Z.~Bankovic, and P.~Laskov, \emph{FPGA vs. Multi-core CPUs vs. GPUs:
+  Hands-On Experience with a Sorting Application}.\hskip 1em plus 0.5em minus
+  0.4em\relax Berlin, Heidelberg: Springer Berlin Heidelberg, 2010, pp.
+  105--117. [Online]. Available:
+  \url{https://doi.org/10.1007/978-3-642-16233-6_12}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Shackleford2001}
+\BIBentryALTinterwordspacing
+B.~Shackleford, G.~Snider, R.~J. Carter, E.~Okushi, M.~Yasuda, K.~Seo, and
+  H.~Yasuura, ``A high-performance, pipelined, fpga-based genetic algorithm
+  machine,'' \emph{Genetic Programming and Evolvable Machines}, vol.~2, no.~1,
+  pp. 33--60, Mar 2001. [Online]. Available:
+  \url{https://doi.org/10.1023/A:1010018632078}
+\BIBentrySTDinterwordspacing
+
+\bibitem{initializationIntervalXilinx}
+\BIBentryALTinterwordspacing
+Xilinx. (2020) Loop pipelining and loop unrolling. [Online]. Available:
+  \url{https://www.xilinx.com/support/documentation/sw_manuals/xilinx2015_2/sdsoc_doc/topics/calling-coding-guidelines/concept_pipelining_loop_unrolling.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{BiSUNAGithub}
 \BIBentryALTinterwordspacing
 R.~Valencia. (2019, Sep) Binary spectrum-diverse unified neuroevolution
   architecture. [Online]. Available: \url{https://github.com/rval735/BiSUNA}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Suda:2016:TOF:2847263.2847276}
+\BIBentryALTinterwordspacing
+N.~Suda, V.~Chandra, G.~Dasika, A.~Mohanty, Y.~Ma, S.~Vrudhula, J.-s. Seo, and
+  Y.~Cao, ``Throughput-optimized opencl-based fpga accelerator for large-scale
+  convolutional neural networks,'' in \emph{Proceedings of the 2016 ACM/SIGDA
+  International Symposium on Field-Programmable Gate Arrays}, ser. FPGA
+  '16.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: ACM, 2016, pp.
+  16--25. [Online]. Available: \url{http://doi.acm.org/10.1145/2847263.2847276}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Nurvitadhi:2017:FBG:3020078.3021740}
@@ -151,26 +185,21 @@ E.~Nurvitadhi, G.~Venkatesh, J.~Sim, D.~Marr, R.~Huang, J.~Ong Gee~Hock, Y.~T.
   \url{http://doi.acm.org/10.1145/3020078.3021740}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Umuroglu:2017:FFF:3020078.3021744}
+\bibitem{9070311}
+J.~{Lant}, J.~{Navaridas}, A.~{Attwood}, M.~{Lujan}, and J.~{Goodacre},
+  ``Enabling standalone fpga computing,'' in \emph{2019 IEEE Symposium on
+  High-Performance Interconnects (HOTI)}, Aug 2019, pp. 23--26.
+
+\bibitem{Moore-1991-13223}
+A.~Moore, ``Efficient memory-based learning for robot control,'' Ph.D.
+  dissertation, Carnegie Mellon University, Pittsburgh, PA, March 1991.
+
+\bibitem{Dietterich:2000:HRL:1622262.1622268}
 \BIBentryALTinterwordspacing
-Y.~Umuroglu, N.~J. Fraser, G.~Gambardella, M.~Blott, P.~Leong, M.~Jahre, and
-  K.~Vissers, ``Finn: A framework for fast, scalable binarized neural network
-  inference,'' in \emph{Proceedings of the 2017 ACM/SIGDA International
-  Symposium on Field-Programmable Gate Arrays}, ser. FPGA '17.\hskip 1em plus
-  0.5em minus 0.4em\relax New York, NY, USA: ACM, 2017, pp. 65--74. [Online].
-  Available: \url{http://doi.acm.org/10.1145/3020078.3021744}
+T.~G. Dietterich, ``Hierarchical reinforcement learning with the maxq value
+  function decomposition,'' \emph{J. Artif. Int. Res.}, vol.~13, no.~1, pp.
+  227--303, Nov. 2000. [Online]. Available:
+  \url{http://dl.acm.org/citation.cfm?id=1622262.1622268}
 \BIBentrySTDinterwordspacing
-
-\bibitem{NIPS2015_5647}
-M.~Courbariaux, Y.~Bengio, and J.-P. David, ``Binaryconnect: Training deep
-  neural networks with binary weights during propagations,'' in \emph{Advances
-  in Neural Information Processing Systems 28}, C.~Cortes, N.~D. Lawrence,
-  D.~D. Lee, M.~Sugiyama, and R.~Garnett, Eds.\hskip 1em plus 0.5em minus
-  0.4em\relax Curran Associates, Inc., 2015, pp. 3123--3131.
-
-\bibitem{2016arXiv160601540B}
-G.~{Brockman}, V.~{Cheung}, L.~{Pettersson}, J.~{Schneider}, J.~{Schulman},
-  J.~{Tang}, and W.~{Zaremba}, ``{OpenAI Gym},'' \emph{arXiv e-prints}, Jun.
-  2016.
 
 \end{thebibliography}
