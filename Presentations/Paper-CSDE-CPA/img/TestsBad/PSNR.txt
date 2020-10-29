@@ -1,0 +1,27 @@
+./DiffImg.sh Paper-GekkoCPA/img/Tests/TestImage.png Paper-GekkoCPA/img/TestsBad
+Paper-GekkoCPA/img/Tests/TestImage.png PNG 128x85 128x85+0+0 8-bit sRGB 23419B 0.000u 0:00.009
+Paper-GekkoCPA/img/TestsBad/U5-ResultDec20.bmp BMP3 128x85 128x85+0+0 8-bit sRGB 32694B 0.000u 0:00.000
+Image: Paper-GekkoCPA/img/Tests/TestImage.png
+  Channel distortion: PSNR
+    red: 13.0058
+    green: 13.0981
+    blue: 10.8655
+    all: 12.1948
+Paper-GekkoCPA/img/Tests/TestImage.png=>Paper-GekkoCPA/img/TestsBad/diff1.png PNG 128x85 128x85+0+0 8-bit sRGB 23419B 0.010u 0:00.009
+Paper-GekkoCPA/img/Tests/TestImage.png PNG 128x85 128x85+0+0 8-bit sRGB 23419B 0.000u 0:00.000
+Paper-GekkoCPA/img/TestsBad/U6-ResultDec44.bmp BMP3 128x85 128x85+0+0 8-bit sRGB 32694B 0.000u 0:00.000
+Image: Paper-GekkoCPA/img/Tests/TestImage.png
+  Channel distortion: PSNR
+    red: inf
+    green: 17.8604
+    blue: 32.9894
+    all: 22.5003
+Paper-GekkoCPA/img/Tests/TestImage.png=>Paper-GekkoCPA/img/TestsBad/diff3.png PNG 128x85 128x85+0+0 8-bit sRGB 23419B 0.010u 0:00.009
+Paper-GekkoCPA/img/Tests/TestImage.png PNG 128x85 128x85+0+0 8-bit sRGB 23419B 0.000u 0:00.000
+Paper-GekkoCPA/img/TestsBad/U7-ResultDec67.bmp BMP3 128x85 128x85+0+0 8-bit sRGB 32694B 0.000u 0:00.000
+Image: Paper-GekkoCPA/img/Tests/TestImage.png
+  Channel distortion: PSNR
+    red: 11.8836
+    green: 12.1042
+    blue: 12.3988
+    all: 12.1237

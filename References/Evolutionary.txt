@@ -210,3 +210,6 @@ https://dl.acm.org/doi/10.1109/72.265960
 
 Evolving Complex Neuro-Controllers with Interactively Constrained Neuro-Evolution
 https://repositorium.ub.uni-osnabrueck.de/handle/urn:nbn:de:gbv:700-2012101710370
+
+Neuroevolution with Analog Genetic Encoding
+https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11844297_68
