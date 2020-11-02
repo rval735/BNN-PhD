@@ -91,3 +91,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/9102924
 
 Let’s Play Again- Variability of Deep Reinforcement Learning Agents in Atari Environments
 https://arxiv.org/abs/1904.06312
+
+Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model
+https://arxiv.org/abs/1911.08265

@@ -1031,6 +1031,11 @@ Let’s Play Again- Variability of Deep Reinforcement Learning Agents in Atari E
 -
 -
 
+Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model
+-
+-
+-
+
 < DNN
 -------> NN
 
