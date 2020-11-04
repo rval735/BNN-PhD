@@ -1496,6 +1496,11 @@ Greedy Layer-Wise Training of Deep Networks
 -
 -
 
+Distilling the Knowledge in a Neural Network
+-
+-
+-
+
 < NN
 
 -------> Decentralized

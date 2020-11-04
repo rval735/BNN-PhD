@@ -468,7 +468,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{title}{New Zealand Nectar Cloud}
+    \field{title}{New Zealand Nectar Cloud Research}
     \verb{url}
     \verb https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/
     \endverb
@@ -1178,6 +1178,30 @@
     \field{volume}{18}
     \field{journaltitle}{Sensors}
     \field{year}{2018}
+  \endentry
+
+  \entry{gd-Haskell}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CHB}{%
+         family={Curry},
+         familyi={C\bibinitperiod},
+         given={Haskell\bibnamedelima B.},
+         giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \keyw{Other, gradient descent,}
+    \strng{namehash}{CHB1}
+    \strng{fullhash}{CHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{pages}{258\bibrangedash 261}
+    \field{title}{The method of steepest descent for non-linearminimization
+  problems}
+    \field{volume}{2}
+    \field{journaltitle}{Quarterly of Applied Mathematics}
+    \field{year}{1944}
   \endentry
 
   \entry{7460958}{article}{}
@@ -2132,6 +2156,42 @@
     \field{title}{Deep Residual Learning for Image Recognition}
     \field{year}{2016}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{44873}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VO}{%
+         family={Vinyals},
+         familyi={V\bibinitperiod},
+         given={Oriol},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, DNN, MNIST, Supervised learning}
+    \strng{namehash}{HGVODJ1}
+    \strng{fullhash}{HGVODJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{NIPS Deep Learning and Representation Learning Workshop}
+    \field{title}{Distilling the Knowledge in a Neural Network}
+    \verb{url}
+    \verb http://arxiv.org/abs/1503.02531
+    \endverb
+    \field{year}{2015}
   \endentry
 
   \entry{5669194}{inproceedings}{}
@@ -4667,6 +4727,37 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{aiNorvig}{book}{}
+    \name{author}{2}{}{%
+      {{hash=RS}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Norvig},
+         familyi={N\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Pearson}%
+    }
+    \keyw{Book, AI, ML, Unsupervised learning}
+    \strng{namehash}{RSNP1}
+    \strng{fullhash}{RSNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{edition}{4}
+    \field{title}{Artificial Intelligence: A Modern Approach}
+    \field{volume}{1}
+    \field{year}{2020}
+  \endentry
+
   \entry{8461456}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=SC}{%
@@ -4747,6 +4838,63 @@
   Networks Via Continuous Binarization}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Salvaris2018Book}{book}{}
+    \name{author}{3}{}{%
+      {{hash=SM}{%
+         family={Salvaris},
+         familyi={S\bibinitperiod},
+         given={Mathew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Danielle},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TWH}{%
+         family={Tok},
+         familyi={T\bibinitperiod},
+         given={Wee\bibnamedelima Hyong},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Apress}%
+    }
+    \keyw{Evolutionary, Books, Neuroevolution}
+    \strng{namehash}{SMDDTWH1}
+    \strng{fullhash}{SMDDTWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    This chapter discusses some of the trends in deep learning and related
+  fields. We cover specifically which trends might be useful for what tasks as
+  well as discuss some of the methods and ideas that could have far-reaching
+  implications but have yet to be applied to many real-world problems. We
+  finish by covering briefly some of the current limitations of deep learning
+  as well as some other areas of AI that seem to hold promise for future AI
+  applications, and discuss briefly some of the ethical and legal implications
+  of deep learning applications.%
+    }
+    \field{booktitle}{Deep Learning with Azure: Building and Deploying
+  Artificial Intelligence Solutions on the Microsoft AI Platform}
+    \verb{doi}
+    \verb 10.1007/978-1-4842-3679-6_3
+    \endverb
+    \field{isbn}{978-1-4842-3679-6}
+    \field{title}{Trends in Deep Learning}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-1-4842-3679-6_3
+    \endverb
+    \list{location}{1}{%
+      {Berkeley, CA}%
+    }
+    \field{year}{2018}
   \endentry
 
   \entry{10.1147/rd.33.0210}{article}{}
@@ -6124,6 +6272,59 @@
     }
     \field{year}{2018}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{Wang_2018_CVPR}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=WP}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Peisong},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HQ}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Qinghao},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yifan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=ZC}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Chunjie},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Jian},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN; Quantization, Low-bit}
+    \strng{namehash}{WP+1}
+    \strng{fullhash}{WPHQZYZCLYCJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}
+    \field{title}{Two-Step Quantization for Low-Bit Neural Networks}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{8103902}{article}{}

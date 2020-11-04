@@ -1,0 +1,7 @@
+@inproceedings{44873,
+title	= {Distilling the Knowledge in a Neural Network},
+author	= {Geoffrey Hinton and Oriol Vinyals and Jeffrey Dean},
+year	= {2015},
+URL	= {http://arxiv.org/abs/1503.02531},
+booktitle	= {NIPS Deep Learning and Representation Learning Workshop}
+}

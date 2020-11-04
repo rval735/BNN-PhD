@@ -1,4 +1,4 @@
-NN 
+NN
 
 Backwards Differentiation in AD and Neural Nets- Past Links and New Opportunities
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/3-540-28438-9_2
@@ -128,8 +128,8 @@ http://homepages.inf.ed.ac.uk/rbf/EUCOGNITION/BRIEFINGS/billings.pdf
 Selfless Sequential Learning.pdf
 https://arxiv.org/abs/1806.05421
 
-Explorations of the Mean Field Theory Learning Algorithm 
-https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/0893608089900452 
+Explorations of the Mean Field Theory Learning Algorithm
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/0893608089900452
 http://home.thep.lu.se/~carsten/pubs/lu_tp_89_02.pdf
 https://researchr.org/publication/PetersonH89/
 
@@ -271,5 +271,7 @@ Design of high performance Multiply-Accumulate Computation unit
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/7154838
 
 Greedy Layer-Wise Training of Deep Networks
-https://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks 
+https://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks
 
+Distilling the Knowledge in a Neural Network
+https://research.google/pubs/pub44873/
