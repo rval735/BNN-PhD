@@ -2709,6 +2709,16 @@ Simplifying decision trees
 -
 -
 
+A Stochastic Approximation Method
+-
+-
+-
+
+An Alternative View- When Does SGD Escape Local Minima
+-
+-
+-
+
 < Other
 
 ------> SNN

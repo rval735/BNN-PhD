@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v80-kleinberg18a,
+  title = 	 {An Alternative View: When Does {SGD} Escape Local Minima?},
+  author =       {Kleinberg, Bobby and Li, Yuanzhi and Yuan, Yang},
+  pages = 	 {2698--2707},
+  year = 	 {2018},
+  editor = 	 {Jennifer Dy and Andreas Krause},
+  volume = 	 {80},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Stockholmsmässan, Stockholm Sweden},
+  month = 	 {10--15 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v80/kleinberg18a/kleinberg18a.pdf},
+  url = 	 {http://proceedings.mlr.press/v80/kleinberg18a.html},
+  abstract = 	 {Stochastic gradient descent (SGD) is widely used in machine learning. Although being commonly viewed as a fast but not accurate version of gradient descent (GD), it always finds better solutions than GD for modern neural networks. In order to understand this phenomenon, we take an alternative view that SGD is working on the convolved (thus smoothed) version of the loss function. We show that, even if the function $f$ has many bad local minima or saddle points, as long as for every point $x$, the weighted average of the gradients of its neighborhoods is one point convex with respect to the desired solution $x^*$, SGD will get close to, and then stay around $x^*$ with constant probability. Our result identifies a set of functions that SGD provably works, which is much larger than the set of convex functions. Empirically, we observe that the loss surface of neural networks enjoys nice one point convexity properties locally, therefore our theorem helps explain why SGD works so well for neural networks.}
+}

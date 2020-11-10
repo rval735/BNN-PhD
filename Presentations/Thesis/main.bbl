@@ -449,34 +449,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{NectarCloud}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=fANRI}{%
-         prefix={for},
-         prefixi={f\bibinitperiod},
-         family={Australia},
-         familyi={A\bibinitperiod},
-         given={National Research\bibnamedelima Infraestructure},
-         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
-  I\bibinitperiod},
-      }}%
-    }
-    \keyw{Nectar, Cloud, New Zealand, Research}
-    \strng{namehash}{ANRIf1}
-    \strng{fullhash}{ANRIf1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{title}{New Zealand Nectar Cloud Research}
-    \verb{url}
-    \verb https://nectar.org.au/new-zealand-researchers-join-nectar-cloud/
-    \endverb
-    \field{year}{2017}
-    \warn{\item Invalid format of field 'month' \item Invalid format of field
-  'urldate'}
-  \endentry
-
   \entry{NIPS2006_3048}{incollection}{}
     \name{author}{4}{}{%
       {{hash=BY}{%
@@ -901,6 +873,105 @@
     \field{volume}{20}
     \field{journaltitle}{IEEE Transactions on Neural Networks}
     \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{4250190}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=CL}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Alahakoon},
+         familyi={A\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary; backpropagation;neural nets;pattern
+  classification;search problems;topology;neuroevolution of augmenting
+  topologies;augmenting topology;data classification learning;neural
+  network;learning-NEAT training scheme;backpropagation;search problem;Network
+  topology;Artificial neural networks;Neural networks;Supervised
+  learning;Biological cells;Information technology;Evolutionary
+  computation;Unsupervised learning;Technological innovation}
+    \strng{namehash}{CLAD1}
+    \strng{fullhash}{CLAD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Appropriate topology and connection weight are two very important
+  properties a neural network must have in order to successfully perform data
+  classification. In this paper, we propose a hybrid training scheme
+  Learning-NEAT (L-NEAT) for data classification problem. L-NEAT simplifies
+  evolution by dividing the complete problem domain into sub tasks and learn
+  the sub tasks by incorporating back propagation rule into the NeuroEvolution
+  of Augmenting Topologies (NEAT) algorithm. The new algorithm combines the
+  strength of searching for topology and weights from NEAT and back propagation
+  respectively while overcoming problems associated with direct use of NEAT. We
+  claim that L-NEAT can produce neural network for classification problem
+  effectively and efficiently. Empirical evaluation shows that L-NEAT evolves
+  classifying neural network with good generalization ability. Its accuracy
+  outperforms original NEAT.%
+    }
+    \field{booktitle}{2006 International Conference on Information and
+  Automation}
+    \verb{doi}
+    \verb 10.1109/ICINFA.2006.374100
+    \endverb
+    \field{issn}{2151-1802}
+    \field{pages}{367\bibrangedash 371}
+    \field{title}{NeuroEvolution of Augmenting Topologies with Learning for
+  Data Classification}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{8425687}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CHF}{%
+         family={{Chou}},
+         familyi={C\bibinitperiod},
+         given={Hong-Fu},
+         giveni={H\bibinithyphendelim F\bibinitperiod},
+      }}%
+      {{hash=C}{%
+         family={{Chiu-Wing Sham}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGAGroup;channel coding;error statistics;evolutionary
+  computation;iterative decoding;parity check codes;runlength
+  codes;optimization approach;RLL-constrained LDPC coded recording
+  system;deliberate flipping;run-length-limited constraint;high error coding
+  rate;correcting capability;RLL bit error;iterative decoding;hard error
+  bits;differential evolution approach;unequal error protection LDPC
+  code;optimal LDPC code distribution;density evolution;RLL flipped
+  system;Decoding;Probability density function;Iterative
+  decoding;Optimization;Error correction codes;Equalizers;Parity check
+  codes;iterative decoding;partial response channels;error correction codes}
+    \strng{namehash}{CHFC1}
+    \strng{fullhash}{CHFC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1109/LCOMM.2018.2863363
+    \endverb
+    \field{issn}{1089-7798}
+    \field{number}{10}
+    \field{pages}{1976\bibrangedash 1979}
+    \field{title}{{An Optimization Approach for an RLL-Constrained LDPC Coded
+  Recording System Using Deliberate Flipping}}
+    \field{volume}{22}
+    \field{journaltitle}{IEEE Communications Letters}
+    \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -1944,6 +2015,88 @@
     \field{year}{2014}
   \endentry
 
+  \entry{Grozea2010}{inbook}{}
+    \name{author}{3}{}{%
+      {{hash=GC}{%
+         family={Grozea},
+         familyi={G\bibinitperiod},
+         given={Cristian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BZ}{%
+         family={Bankovic},
+         familyi={B\bibinitperiod},
+         given={Zorana},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Laskov},
+         familyi={L\bibinitperiod},
+         given={Pavel},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=KR}{%
+         family={Keller},
+         familyi={K\bibinitperiod},
+         given={Rainer},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kramer},
+         familyi={K\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WJP}{%
+         family={Weiss},
+         familyi={W\bibinitperiod},
+         given={Jan-Philipp},
+         giveni={J\bibinithyphendelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Books, FPGA, GPU, CPU, Sorting Algorithm}
+    \strng{namehash}{GCBZLP1}
+    \strng{fullhash}{GCBZLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Currently there are several interesting alternatives for low-cost
+  high-performance computing. We report here our experiences with an N-gram
+  extraction and sorting problem, originated in the design of a real-time
+  network intrusion detection system. We have considered FPGAs, multi-core CPUs
+  in symmetric multi-CPU machines and GPUs and have created implementations for
+  each of these platforms. After carefully comparing the advantages and
+  disadvantages of each we have decided to go forward with the implementation
+  written for multi-core CPUs. Arguments for and against each platform are
+  presented -- corresponding to our hands-on experience -- that we intend to be
+  useful in helping with the selection of the hardware acceleration solutions
+  for new projects.%
+    }
+    \field{booktitle}{Facing the Multicore-Challenge: Aspects of New Paradigms
+  and Technologies in Parallel Computing}
+    \verb{doi}
+    \verb 10.1007/978-3-642-16233-6_12
+    \endverb
+    \field{isbn}{978-3-642-16233-6}
+    \field{pages}{105\bibrangedash 117}
+    \field{title}{FPGA vs. Multi-core CPUs vs. GPUs: Hands-On Experience with a
+  Sorting Application}
+    \verb{url}
+    \verb https://doi.org/10.1007/978-3-642-16233-6_12
+    \endverb
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2010}
+  \endentry
+
   \entry{8665777}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=HA}{%
@@ -2486,6 +2639,57 @@
     \field{year}{2018}
   \endentry
 
+  \entry{1136}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HSU}{%
+         family={Hussain},
+         familyi={H\bibinitperiod},
+         given={Siam\bibnamedelima U.},
+         giveni={S\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Koushanfar},
+         familyi={K\bibinitperiod},
+         given={Farinaz},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Crypto, garbled-circuit, Secure computation, FPGA}
+    \strng{namehash}{HSUKF1}
+    \strng{fullhash}{HSUKF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    <p>We present FASE, an FPGA accelerator for Secure Function Evaluation
+  (SFE) by employing the well-known cryptographic protocol named Yao\&rsquo;s
+  Garbled Circuit (GC). SFE allows two parties to jointly compute a function on
+  their private data and learn the output without revealing their inputs to
+  each other. FASE is designed to allow cloud servers to provide secure
+  services to a large number of clients in parallel while preserving the
+  privacy of the data from both sides. Current SFE accelerators either target
+  specific applications, and therefore are not amenable to generic use, or have
+  low throughput due to inefficient management of resources. In this work, we
+  present a pipelined architecture along with an efficient scheduling scheme to
+  ensure optimal usage of the available resources. The scheme is built around a
+  simulator of the hardware design that schedules the workload and assigns the
+  most suitable task to the encryption cores at each cycle. This, coupled with
+  optimal management of the read and write cycles of the Block RAM on FPGA,
+  results in a minimum 2 orders of magnitude improvement in terms of throughput
+  per core for the reported benchmarks compared to the most recent generic GC
+  accelerator. Moreover, our encryption core requires 17\% less resource
+  compared to the most recent secure GC realization.\&nbsp;</p>%
+    }
+    \field{booktitle}{Field-Programmable Custom Computing Machines (FCCM)}
+    \field{title}{FASE: FPGA Acceleration of Secure Function Evaluation}
+    \list{location}{1}{%
+      {San Diego}%
+    }
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{4790104}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=KM}{%
@@ -2694,6 +2898,84 @@
     \field{year}{2005}
   \endentry
 
+  \entry{pmlr-v80-kleinberg18a}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=KB}{%
+         family={Kleinberg},
+         familyi={K\bibinitperiod},
+         given={Bobby},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yuanzhi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=DJ}{%
+         family={Dy},
+         familyi={D\bibinitperiod},
+         given={Jennifer},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Krause},
+         familyi={K\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PMLR}%
+    }
+    \keyw{Other, SDG, Stochastic Gradient Descent, Local Minima}
+    \strng{namehash}{KBLYYY1}
+    \strng{fullhash}{KBLYYY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Stochastic gradient descent (SGD) is widely used in machine learning.
+  Although being commonly viewed as a fast but not accurate version of gradient
+  descent (GD), it always finds better solutions than GD for modern neural
+  networks. In order to understand this phenomenon, we take an alternative view
+  that SGD is working on the convolved (thus smoothed) version of the loss
+  function. We show that, even if the function $f$ has many bad local minima or
+  saddle points, as long as for every point $x$, the weighted average of the
+  gradients of its neighborhoods is one point convex with respect to the
+  desired solution $x^*$, SGD will get close to, and then stay around $x^*$
+  with constant probability. Our result identifies a set of functions that SGD
+  provably works, which is much larger than the set of convex functions.
+  Empirically, we observe that the loss surface of neural networks enjoys nice
+  one point convexity properties locally, therefore our theorem helps explain
+  why SGD works so well for neural networks.%
+    }
+    \field{pages}{2698\bibrangedash 2707}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{An Alternative View: When Does {SGD} Escape Local Minima?}
+    \verb{url}
+    \verb http://proceedings.mlr.press/v80/kleinberg18a.html
+    \endverb
+    \field{volume}{80}
+    \list{location}{1}{%
+      {Stockholmsm{\"a}ssan, Stockholm Sweden}%
+    }
+    \verb{file}
+    \verb http://proceedings.mlr.press/v80/kleinberg18a/kleinberg18a.pdf
+    \endverb
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{10.1007/3-540-36178-2_18}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=KA}{%
@@ -2752,6 +3034,30 @@
       {Berlin, Heidelberg}%
     }
     \field{year}{2002}
+  \endentry
+
+  \entry{gpgpu-ai-dominance}{online}{}
+    \name{author}{1}{}{%
+      {{hash=KJ}{%
+         family={Kobielus},
+         familyi={K\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, GPGPU, AI}
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{GPUs Continue to Dominate the AI Accelerator Market for Now}
+    \verb{url}
+    \verb https://www.informationweek.com/big-data/ai-machine-learning/gpus-con
+    \verb tinue-to-dominate-the-ai-accelerator-market-for-now/a/d-id/1336475
+    \endverb
+    \field{year}{2019}
   \endentry
 
   \entry{8892195}{inproceedings}{}
@@ -4044,6 +4350,19 @@
     \field{year}{2006}
   \endentry
 
+  \entry{needle-python}{misc}{}
+    \keyw{SourceCode, Python, DQN, TRPO}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Needle Deep RL Examples}
+    \verb{url}
+    \verb https://github.com/roosephu/needle
+    \endverb
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Nurvitadhi:2017:FBG:3020078.3021740}{inproceedings}{}
     \name{author}{11}{}{%
       {{hash=NE}{%
@@ -4315,6 +4634,26 @@
     \field{year}{2006}
   \endentry
 
+  \entry{oaiBaseline-Github}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OpenAI},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \keyw{OpenAI Gym, Baselines, Github}
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{Baselines}
+    \verb{url}
+    \verb https://github.com/openai/baselines
+    \endverb
+  \endentry
+
   \entry{7033335}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=POP}{%
@@ -4351,6 +4690,61 @@
     \field{title}{Quantum Inspired Binary Neural Network Algorithm}
     \field{year}{2014}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{PETRICA2018251}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PL}{%
+         family={Petrica},
+         familyi={P\bibinitperiod},
+         given={Lucian},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Crypto, NIST, STS, PRNG, FPGA, Cellular automaton, Random number
+  generator}
+    \strng{namehash}{PL1}
+    \strng{fullhash}{PL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Pseudo-random number generators (PRNGs) are important to applications
+  ranging from cryptography to Monte-Carlo methods. Consequently, many PRNG
+  architectures have been proposed, including some optimized for FPGA, e.g the
+  LUT-SR family of PRNGs which utilize embedded FPGA shift registers, and
+  self-programmable cellular automaton (SPCA) PRNGs. However, LUT-SR and other
+  PRNGs do not utilize key features of modern Xilinx FPGAs: embedded carry
+  chains and splittable Look-Up Tables (LUTs), i.e., 6-input LUTs which can
+  operate as two 5-input LUTs which share inputs. In this paper we explore the
+  SPCA structure and derive a set of parameter constraints which allow a SPCA
+  PRNG to produce 2 random bits per LUT in every clock cycle on modern Xilinx
+  FPGAs. We determine this to be the maximum logic density achievable for SPCA,
+  and propose an architectural improvement of SPCA to enable further density
+  increase by making use of FPGA embedded carry chains as a method to compute
+  an additional random bit per LUT in each clock cycle. The resulting
+  Split-LUT-Carry SPCA (SLC-SPCA) PRNG achieves 6x improvement in logic density
+  compared to LUT-SR, and a 1.5x density increase compared to SPCA. We evaluate
+  the randomness of SLC-SPCA utilizing the NIST Statistical Test Suite, and we
+  provide a power and energy comparison of LUT-SR and SLC-SPCA on a Xilinx Zynq
+  7020 FPGA device. Our results indicate that SLC-SPCA generates 3x more bits
+  per clock at approximately the same power dissipation as LUT-SR, and
+  consequently 3x less energy to generate 1 gigabit of random data. SLC-SPCA is
+  also 1.5x more energy-efficient than a SPCA PRNG.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.jpdc.2017.05.022
+    \endverb
+    \field{issn}{0743-7315}
+    \field{pages}{251 \bibrangedash  259}
+    \field{title}{FPGA optimized cellular automaton random number generator}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0743731517301892
+    \endverb
+    \field{volume}{111}
+    \field{journaltitle}{Journal of Parallel and Distributed Computing}
+    \field{year}{2018}
   \endentry
 
   \entry{Pujol:1998aa}{article}{}
@@ -4727,6 +5121,46 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{robbins1951}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RH}{%
+         family={Robbins},
+         familyi={R\bibinitperiod},
+         given={Herbert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Monro},
+         familyi={M\bibinitperiod},
+         given={Sutton},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The Institute of Mathematical Statistics}%
+    }
+    \keyw{Other, Stochastic Gradient Descent, SGD, Derivates}
+    \strng{namehash}{RHMS1}
+    \strng{fullhash}{RHMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1214/aoms/1177729586
+    \endverb
+    \field{number}{3}
+    \field{pages}{400\bibrangedash 407}
+    \field{title}{A Stochastic Approximation Method}
+    \verb{url}
+    \verb https://doi.org/10.1214/aoms/1177729586
+    \endverb
+    \field{volume}{22}
+    \field{journaltitle}{Ann. Math. Statist.}
+    \field{month}{09}
+    \field{year}{1951}
+  \endentry
+
   \entry{aiNorvig}{book}{}
     \name{author}{2}{}{%
       {{hash=RS}{%
@@ -4838,6 +5272,60 @@
   Networks Via Continuous Binarization}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{2017arXiv170303864S}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ST}{%
+         family={{Salimans}},
+         familyi={S\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={{Ho}},
+         familyi={H\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CX}{%
+         family={{Chen}},
+         familyi={C\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={{Sidor}},
+         familyi={S\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={{Sutskever}},
+         familyi={S\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolutionary; Statistics - Machine Learning, Computer Science -
+  Artificial Intelligence, Computer Science - Machine Learning, Computer
+  Science - Neural and Evolutionary Computing; OpenAI}
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STHJCXSSSI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{eprint}
+    \verb 1703.03864
+    \endverb
+    \field{title}{{Evolution Strategies as a Scalable Alternative to
+  Reinforcement Learning}}
+    \field{journaltitle}{ArXiv e-prints}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{stat.ML}
+    \field{month}{03}
+    \field{year}{2017}
   \endentry
 
   \entry{Salvaris2018Book}{book}{}
@@ -5027,6 +5515,184 @@
     \field{volume}{61}
     \field{journaltitle}{Neural Networks}
     \field{year}{2015}
+  \endentry
+
+  \entry{pmlr-v37-schulman15}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=SJ}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Abbeel},
+         familyi={A\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JM}{%
+         family={Jordan},
+         familyi={J\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Moritz},
+         familyi={M\bibinitperiod},
+         given={Philipp},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=BF}{%
+         family={Bach},
+         familyi={B\bibinitperiod},
+         given={Francis},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Blei},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {PMLR}%
+    }
+    \keyw{DNN, RL, TRPO, Reinforcement Learning, Atari}
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJLSAPJMMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    In this article, we describe a method for optimizing control policies, with
+  guaranteed monotonic improvement. By making several approximations to the
+  theoretically-justified scheme, we develop a practical algorithm, called
+  Trust Region Policy Optimization (TRPO). This algorithm is effective for
+  optimizing large nonlinear policies such as neural networks. Our experiments
+  demonstrate its robust performance on a wide variety of tasks: learning
+  simulated robotic swimming, hopping, and walking gaits; and playing Atari
+  games using images of the screen as input. Despite its approximations that
+  deviate from the theory, TRPO tends to give monotonic improvement, with
+  little tuning of hyperparameters.%
+    }
+    \field{pages}{1889\bibrangedash 1897}
+    \field{series}{Proceedings of Machine Learning Research}
+    \field{title}{Trust Region Policy Optimization}
+    \verb{url}
+    \verb http://proceedings.mlr.press/v37/schulman15.html
+    \endverb
+    \field{volume}{37}
+    \list{location}{1}{%
+      {Lille, France}%
+    }
+    \verb{file}
+    \verb http://proceedings.mlr.press/v37/schulman15.pdf
+    \endverb
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Shackleford2001}{article}{}
+    \name{author}{7}{}{%
+      {{hash=SB}{%
+         family={Shackleford},
+         familyi={S\bibinitperiod},
+         given={Barry},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Snider},
+         familyi={S\bibinitperiod},
+         given={Greg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CRJ}{%
+         family={Carter},
+         familyi={C\bibinitperiod},
+         given={Richard\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=OE}{%
+         family={Okushi},
+         familyi={O\bibinitperiod},
+         given={Etsuko},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=YM}{%
+         family={Yasuda},
+         familyi={Y\bibinitperiod},
+         given={Mitsuhiro},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Seo},
+         familyi={S\bibinitperiod},
+         given={Katsuhiko},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yasuura},
+         familyi={Y\bibinitperiod},
+         given={Hiroto},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA, GA, Pipeline, HPC}
+    \strng{namehash}{SB+1}
+    \strng{fullhash}{SBSGCRJOEYMSKYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Accelerating a genetic algorithm (GA) by implementing it in a
+  reconfigurable field programmable gate array (FPGA) is described. The
+  implemented GA features: random parent selection, which conserves selection
+  circuitry; a steady-state memory model, which conserves chip area; survival
+  of fitter child chromosomes over their less-fit parent chromosomes, which
+  promotes evolution. A net child chromosome generation rate of one per clock
+  cycle is obtained by pipelining the parent selection, crossover, mutation,
+  and fitness evaluation functions. Complex fitness functions can be further
+  pipelined to maintain a high-speed clock cycle. Fitness functions with a
+  pipeline initiation interval of greater than one can be plurally implemented
+  to maintain a net evaluated-chromosome throughput of one per clock cycle. Two
+  prototypes are described: The first prototype (c. 1996 technology) is a
+  multiple-FPGA chip implementation, running at a 1 MHz clock rate, that solves
+  a 94-row {\texttimes} 520-column set covering problem 2,200{\texttimes}
+  faster than a 100 MHz workstation running the same algorithm in C. The second
+  prototype (Xilinx XVC300) is a single-FPGA chip implementation, running at a
+  66 MHZ clock rate, that solves a 36-residue protein folding problem in a 2-d
+  lattice 320{\texttimes} faster than a 366 MHz Pentium II. The current largest
+  FPGA (Xilinx XCV3200E) has circuitry available for the implementation of 30
+  fitness function units which would yield an acceleration of 9,600{\texttimes}
+  for the 36-residue protein folding problem.%
+    }
+    \verb{doi}
+    \verb 10.1023/A:1010018632078
+    \endverb
+    \field{issn}{1573-7632}
+    \field{number}{1}
+    \field{pages}{33\bibrangedash 60}
+    \field{title}{A High-Performance, Pipelined, FPGA-Based Genetic Algorithm
+  Machine}
+    \verb{url}
+    \verb https://doi.org/10.1023/A:1010018632078
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{Genetic Programming and Evolvable Machines}
+    \field{year}{2001}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{CommTheoryShannon}{article}{}
@@ -5261,7 +5927,7 @@
       }}%
     }
     \keyw{DCGAN; hashing; GAN; image retrieval}
-    \strng{namehash}{SJ+1}
+    \strng{namehash}{SJ+2}
     \strng{fullhash}{SJHTGLXXHASHT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -5772,27 +6438,6 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{TF-DQNTut}{online}{}
-    \name{author}{1}{}{%
-      {{hash=T}{%
-         family={TensorFlow},
-         familyi={T\bibinitperiod},
-      }}%
-    }
-    \keyw{url, Tutorial, DQN,}
-    \strng{namehash}{T1}
-    \strng{fullhash}{T1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{title}{Train a Deep Q Network with TF-Agents}
-    \verb{url}
-    \verb https://www.tensorflow.org/agents/tutorials/1_dqn_tutorial
-    \endverb
-    \warn{\item Invalid format of field 'urldate'}
-  \endentry
-
   \entry{7016218}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=TMLR}{%
@@ -6045,6 +6690,29 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
+  \entry{bisunaU50Git}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=VR}{%
+         family={{Valencia}},
+         familyi={V\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, BiSUNA}
+    \strng{namehash}{VR1}
+    \strng{fullhash}{VR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{BiSUNA - Alveo U50}
+    \verb{url}
+    \verb https://github.com/rval735/bisunaU50
+    \endverb
+    \field{year}{2020}
+  \endentry
+
   \entry{8953134}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=VR}{%
@@ -6154,31 +6822,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{BiSUNAOCLGithub}{online}{}
-    \name{author}{1}{}{%
-      {{hash=VR}{%
-         family={Valencia},
-         familyi={V\bibinitperiod},
-         given={Raul},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \keyw{BiSUNA, OCL}
-    \strng{namehash}{VR1}
-    \strng{fullhash}{VR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{V}
-    \field{sortinithash}{V}
-    \field{title}{Binary Spectrum-diverse Unified Neuroevolution Architecture}
-    \verb{url}
-    \verb github.com/rval735/bisunaocl
-    \endverb
-    \field{year}{2019}
-    \warn{\item Invalid format of field 'month' \item Invalid format of field
-  'urldate'}
-  \endentry
-
   \entry{BiSUNAGithub}{online}{}
     \name{author}{1}{}{%
       {{hash=VR}{%
@@ -6189,8 +6832,8 @@
       }}%
     }
     \keyw{BiSUNA,}
-    \strng{namehash}{VR1}
-    \strng{fullhash}{VR1}
+    \strng{namehash}{VR2}
+    \strng{fullhash}{VR2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{V}
@@ -6198,6 +6841,31 @@
     \field{title}{Binary Spectrum-diverse Unified Neuroevolution Architecture}
     \verb{url}
     \verb https://github.com/rval735/BiSUNA
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month' \item Invalid format of field
+  'urldate'}
+  \endentry
+
+  \entry{BiSUNAOCLGithub}{online}{}
+    \name{author}{1}{}{%
+      {{hash=VR}{%
+         family={Valencia},
+         familyi={V\bibinitperiod},
+         given={Raul},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{BiSUNA, OCL}
+    \strng{namehash}{VR2}
+    \strng{fullhash}{VR2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Binary Spectrum-diverse Unified Neuroevolution Architecture}
+    \verb{url}
+    \verb github.com/rval735/bisunaocl
     \endverb
     \field{year}{2019}
     \warn{\item Invalid format of field 'month' \item Invalid format of field
@@ -6406,6 +7074,29 @@
   (VLSI) Systems}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{initializationIntervalXilinx}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \keyw{Webpage, Xilinx, FPGA,}
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{Loop Pipelining and Loop Unrolling}
+    \verb{url}
+    \verb https://www.xilinx.com/support/documentation/sw_manuals/xilinx2015_2/
+    \verb sdsoc_doc/topics/calling-coding-guidelines/concept_pipelining_loop_un
+    \verb rolling.html
+    \endverb
+    \field{year}{2020}
   \endentry
 
   \entry{8393327}{inproceedings}{}
@@ -6677,6 +7368,79 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{9102924}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=ZJ}{%
+         family={{Zhao}},
+         familyi={Z\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ZW}{%
+         family={{Zhou}},
+         familyi={Z\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=ZT}{%
+         family={{Zhao}},
+         familyi={Z\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={{Zhou}},
+         familyi={Z\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={{Li}},
+         familyi={L\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \keyw{DNN, Baselines, OpenAI Gym, computer games;computer vision;learning
+  (artificial intelligence);neural nets;OpenAI baselines;MuJoCo continuous
+  control tasks;Atari games;adjacent state consistency loss;optimization
+  solvers;DNN;deep reinforcement learning;state representation learning;vision
+  games;RL loss;ASC loss;DRL algorithms;state feature learning;Representation
+  learning;reinforcement learning}
+    \strng{namehash}{ZJ+1}
+    \strng{fullhash}{ZJZWZTZYLH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Recent years have witnessed the great success of deep reinforcement
+  learning (DRL) on a variety of vision games. Although DNN has demonstrated
+  strong power in representation learning, such capacity is under-explored in
+  most DRL works whose focus is usually on optimization solvers. In fact, we
+  discover that the state feature learning is the main obstacle for further
+  improvement of DRL algorithms. To address this issue, we propose a new state
+  representation learning scheme with our Adjacent State Consistency Loss (ASC
+  Loss). The loss is defined based on the hypothesis that there are fewer
+  changes between adjacent states than that of far apart ones, since scenes in
+  videos generally evolve smoothly. In this paper, we exploit ASC loss as an
+  assistant of RL loss in the training phase to boost the state feature
+  learning. We conduct evaluation on Atari games and MuJoCo continuous control
+  tasks, which demonstrates that our method is superior to OpenAI baselines.%
+    }
+    \field{booktitle}{2020 IEEE International Conference on Multimedia and Expo
+  (ICME)}
+    \verb{doi}
+    \verb 10.1109/ICME46284.2020.9102924
+    \endverb
+    \field{issn}{1945-788X}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{State Representation Learning For Effective Deep
+  Reinforcement Learning}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Zhao:2017:ABC:3020078.3021741}{inproceedings}{}
     \name{author}{8}{}{%
       {{hash=ZR}{%
@@ -6756,6 +7520,81 @@
     Location Monterey, California, USA Address New York, NY, USA%
     }
     \field{year}{2017}
+  \endentry
+
+  \entry{Zhao:2016aa}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=ZW}{%
+         family={Zhao},
+         familyi={Z\bibinitperiod},
+         given={Wenlai},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Haohuan},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Luk},
+         familyi={L\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=YT}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Teng},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Shaojun},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FB}{%
+         family={Feng},
+         familyi={F\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Yuchun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YG}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={Guangwen},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \keyw{field programmable gate arrays; floating point arithmetic; neural
+  nets; 32bit floating-point arithmetic; FPGA-based framework; bandwidth
+  resources; convolutional neural networks; hardware resources; streaming
+  datapath; Bandwidth; Computational modeling; Convolution; Field programmable
+  gate arrays; Neural networks; Runtime; Training}
+    \strng{namehash}{ZW+1}
+    \strng{fullhash}{ZWFHLWYTWSFBMYYG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{2016 IEEE 27th International Conference on
+  Application-specific Systems, Architectures and Processors (ASAP)}
+    \verb{doi}
+    \verb 10.1109/ASAP.2016.7760779
+    \endverb
+    \field{pages}{107\bibrangedash 114}
+    \field{title}{F-CNN: An FPGA-based framework for training Convolutional
+  Neural Networks}
+    \field{journaltitle}{2016 IEEE 27th International Conference on
+  Application-specific Systems, Architectures and Processors (ASAP)}
+    \field{year}{2016}
   \endentry
 
   \entry{8590945}{inproceedings}{}

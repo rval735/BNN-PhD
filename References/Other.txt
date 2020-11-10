@@ -59,3 +59,9 @@ https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/978-3-642-03138
 
 Simplifying decision trees
 https://dspace.mit.edu/handle/1721.1/6453
+
+A Stochastic Approximation Method
+https://projecteuclid.org/euclid.aoms/1177729586#info
+
+An Alternative View- When Does SGD Escape Local Minima
+http://proceedings.mlr.press/v80/kleinberg18a.html
