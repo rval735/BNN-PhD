@@ -190,6 +190,12 @@ J.~{Lant}, J.~{Navaridas}, A.~{Attwood}, M.~{Lujan}, and J.~{Goodacre},
   ``Enabling standalone fpga computing,'' in \emph{2019 IEEE Symposium on
   High-Performance Interconnects (HOTI)}, Aug 2019, pp. 23--26.
 
+\bibitem{bisunaU50Git}
+\BIBentryALTinterwordspacing
+R.~{Valencia}. (2020) Bisuna - alveo u50. [Online]. Available:
+  \url{https://github.com/rval735/bisunaU50}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Moore-1991-13223}
 A.~Moore, ``Efficient memory-based learning for robot control,'' Ph.D.
   dissertation, Carnegie Mellon University, Pittsburgh, PA, March 1991.
