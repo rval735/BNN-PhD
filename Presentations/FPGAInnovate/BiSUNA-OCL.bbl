@@ -26,34 +26,59 @@
 I.~Hubara, M.~Courbariaux, D.~Soudry, R.~El-Yaniv, and Y.~Bengio, ``Quantized
   neural networks: Training neural networks with low precision weights and
   activations,'' \emph{Journal of Machine Learning Research}, vol.~18, no. 187,
-  pp. 1--30, 2018. [Online]. Available:
-  \url{http://jmlr.org/papers/v18/16-456.html}
+  pp. 1--30, 2018.
 \BIBentrySTDinterwordspacing
 
 \bibitem{SCHMIDHUBER201585}
 \BIBentryALTinterwordspacing
 J.~Schmidhuber, ``Deep learning in neural networks: An overview,'' \emph{Neural
-  Networks}, vol.~61, pp. 85 -- 117, 2015. [Online]. Available:
-  \url{http://www.sciencedirect.com/science/article/pii/S0893608014002135}
+  Networks}, vol.~61, pp. 85 -- 117, 2015.
 \BIBentrySTDinterwordspacing
+
+\bibitem{LU2012121}
+\BIBentryALTinterwordspacing
+J.~Lu, W.-K. Chow, and C.-W. Sham, ``A new clock network synthesizer for modern
+  vlsi designs,'' \emph{Integration}, vol.~45, no.~2, pp. 121 -- 131, 2012.
+
+\BIBentrySTDinterwordspacing
+
+\bibitem{6523615}
+J.~L. ; and {Chiu-Wing Sham}, ``{LMgr: A low-M emory global router with dynamic
+  topology update and bending-aware optimum path search},'' in
+  \emph{International Symposium on Quality Electronic Design (ISQED)}, March
+  2013, pp. 231--238.
+
+\bibitem{998375}
+{Chiu-Wing Sham}, {Wai-Chiu Wong}, and E.~R.~Y. {Young}, ``Congestion
+  estimation with buffer planning in floorplan design,'' in \emph{Proceedings
+  2002 Design, Automation and Test in Europe Conference and Exhibition}, March
+  2002, pp. 696--701.
+
+\bibitem{8587580}
+C.-Y. {Lo}, F.~C.~M. {Lau}, and {Chiu-Wing Sham}, ``{Fixed-Point Implementation
+  of Convolutional Neural Networks for Image Classification},'' in \emph{2018
+  International Conference on Advanced Technologies for Communications (ATC)},
+  Oct 2018, pp. 105--109.
+
+\bibitem{9184436}
+C.~Y. {Lo} and C.-W. {Sham}, ``Energy efficient fixed-point inference system of
+  convolutional neural network,'' in \emph{2020 IEEE 63rd International Midwest
+  Symposium on Circuits and Systems (MWSCAS)}, 2020, pp. 403--406.
 
 \bibitem{vitis-ai}
 \BIBentryALTinterwordspacing
-Xilinx. (2020) Vitis ai. [Online]. Available:
-  \url{https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html}
+Xilinx. (2020) Vitis ai.
 \BIBentrySTDinterwordspacing
 
 \bibitem{altera-ai}
 \BIBentryALTinterwordspacing
-Intel. Fpgas for artificial intelligence (ai). [Online]. Available:
-  \url{https://www.intel.com/content/www/us/en/artificial-intelligence/programmable/overview.html}
+Intel. Fpgas for artificial intelligence (ai).
 \BIBentrySTDinterwordspacing
 
 \bibitem{electronics8060661}
 \BIBentryALTinterwordspacing
 T.~Simons and D.-J. Lee, ``A review of binarized neural networks,''
-  \emph{Electronics}, vol.~8, no.~6, 2019. [Online]. Available:
-  \url{https://www.mdpi.com/2079-9292/8/6/661}
+  \emph{Electronics}, vol.~8, no.~6, 2019.
 \BIBentrySTDinterwordspacing
 
 \bibitem{8425178}
@@ -80,8 +105,7 @@ X.~Sun, J.~Choi, C.-Y. Chen, N.~Wang, S.~Venkataramani, V.~V. Srinivasan,
   Neural Information Processing Systems 32}, H.~Wallach, H.~Larochelle,
   A.~Beygelzimer, F.~Alch\'{e}-Buc, E.~Fox, and R.~Garnett, Eds.\hskip 1em plus
   0.5em minus 0.4em\relax Curran Associates, Inc., 2019, pp. 4900--4909.
-  [Online]. Available:
-  \url{http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf}
+
 \BIBentrySTDinterwordspacing
 
 \bibitem{8977877}
@@ -95,8 +119,7 @@ R.~H.~V. Tenorio, C.~W. Sham, and D.~V. Vargas, ``Preliminary study of applied
   binary neural networks for neural cryptography,'' in \emph{Proceedings of the
   2020 Genetic and Evolutionary Computation Conference Companion}, ser. GECCO
   '20.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
-  for Computing Machinery, 2020, pp. 291--292. [Online]. Available:
-  \url{https://doi.org/10.1145/3377929.3389933}
+  for Computing Machinery, 2020, pp. 291--292.
 \BIBentrySTDinterwordspacing
 
 \bibitem{9087264}
@@ -107,8 +130,7 @@ M.~Y. {Ibrahim}, R.~{Sridhar}, T.~V. {Geetha}, and D.~S. {S}, ``Advances in
 
 \bibitem{alveoU50}
 \BIBentryALTinterwordspacing
-Xilinx. (2020) Alveo u50. [Online]. Available:
-  \url{https://www.xilinx.com/products/boards-and-kits/alveo/u50.html}
+Xilinx. (2020) Alveo u50.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Zhao:2016aa}
@@ -120,8 +142,7 @@ W.~Zhao, H.~Fu, W.~Luk, T.~Yu, S.~Wang, B.~Feng, Y.~Ma, and G.~Yang, ``F-cnn:
 \bibitem{gpgpu-ai-dominance}
 \BIBentryALTinterwordspacing
 J.~Kobielus. (2019) Gpus continue to dominate the ai accelerator market for
-  now. [Online]. Available:
-  \url{https://www.informationweek.com/big-data/ai-machine-learning/gpus-continue-to-dominate-the-ai-accelerator-market-for-now/a/d-id/1336475}
+  now.
 \BIBentrySTDinterwordspacing
 
 \bibitem{8594633}
@@ -139,8 +160,7 @@ T.~{Salimans}, J.~{Ho}, X.~{Chen}, S.~{Sidor}, and I.~{Sutskever}, ``{Evolution
 C.~Grozea, Z.~Bankovic, and P.~Laskov, \emph{FPGA vs. Multi-core CPUs vs. GPUs:
   Hands-On Experience with a Sorting Application}.\hskip 1em plus 0.5em minus
   0.4em\relax Berlin, Heidelberg: Springer Berlin Heidelberg, 2010, pp.
-  105--117. [Online]. Available:
-  \url{https://doi.org/10.1007/978-3-642-16233-6_12}
+  105--117.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Shackleford2001}
@@ -148,20 +168,18 @@ C.~Grozea, Z.~Bankovic, and P.~Laskov, \emph{FPGA vs. Multi-core CPUs vs. GPUs:
 B.~Shackleford, G.~Snider, R.~J. Carter, E.~Okushi, M.~Yasuda, K.~Seo, and
   H.~Yasuura, ``A high-performance, pipelined, fpga-based genetic algorithm
   machine,'' \emph{Genetic Programming and Evolvable Machines}, vol.~2, no.~1,
-  pp. 33--60, Mar 2001. [Online]. Available:
-  \url{https://doi.org/10.1023/A:1010018632078}
+  pp. 33--60, Mar 2001.
 \BIBentrySTDinterwordspacing
 
 \bibitem{initializationIntervalXilinx}
 \BIBentryALTinterwordspacing
-Xilinx. (2020) Loop pipelining and loop unrolling. [Online]. Available:
-  \url{https://www.xilinx.com/support/documentation/sw_manuals/xilinx2015_2/sdsoc_doc/topics/calling-coding-guidelines/concept_pipelining_loop_unrolling.html}
+Xilinx. (2020) Loop pipelining and loop unrolling.
 \BIBentrySTDinterwordspacing
 
 \bibitem{BiSUNAGithub}
 \BIBentryALTinterwordspacing
 R.~Valencia. (2019, Sep) Binary spectrum-diverse unified neuroevolution
-  architecture. [Online]. Available: \url{https://github.com/rval735/BiSUNA}
+  architecture. \url{https://github.com/rval735/BiSUNA}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Suda:2016:TOF:2847263.2847276}
@@ -171,7 +189,7 @@ N.~Suda, V.~Chandra, G.~Dasika, A.~Mohanty, Y.~Ma, S.~Vrudhula, J.-s. Seo, and
   convolutional neural networks,'' in \emph{Proceedings of the 2016 ACM/SIGDA
   International Symposium on Field-Programmable Gate Arrays}, ser. FPGA
   '16.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: ACM, 2016, pp.
-  16--25. [Online]. Available: \url{http://doi.acm.org/10.1145/2847263.2847276}
+  16--25. \url{http://doi.acm.org/10.1145/2847263.2847276}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Nurvitadhi:2017:FBG:3020078.3021740}
@@ -181,8 +199,7 @@ E.~Nurvitadhi, G.~Venkatesh, J.~Sim, D.~Marr, R.~Huang, J.~Ong Gee~Hock, Y.~T.
   beat gpus in accelerating next-generation deep neural networks?'' in
   \emph{Proceedings of the 2017 ACM/SIGDA International Symposium on
   Field-Programmable Gate Arrays}, ser. FPGA '17.\hskip 1em plus 0.5em minus
-  0.4em\relax New York, NY, USA: ACM, 2017, pp. 5--14. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/3020078.3021740}
+  0.4em\relax New York, NY, USA: ACM, 2017, pp. 5--14.
 \BIBentrySTDinterwordspacing
 
 \bibitem{9070311}
@@ -192,8 +209,7 @@ J.~{Lant}, J.~{Navaridas}, A.~{Attwood}, M.~{Lujan}, and J.~{Goodacre},
 
 \bibitem{bisunaU50Git}
 \BIBentryALTinterwordspacing
-R.~{Valencia}. (2020) Bisuna - alveo u50. [Online]. Available:
-  \url{https://github.com/rval735/bisunaU50}
+R.~{Valencia}. (2020) Bisuna - alveo u50.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Moore-1991-13223}
@@ -204,8 +220,7 @@ A.~Moore, ``Efficient memory-based learning for robot control,'' Ph.D.
 \BIBentryALTinterwordspacing
 T.~G. Dietterich, ``Hierarchical reinforcement learning with the maxq value
   function decomposition,'' \emph{J. Artif. Int. Res.}, vol.~13, no.~1, pp.
-  227--303, Nov. 2000. [Online]. Available:
-  \url{http://dl.acm.org/citation.cfm?id=1622262.1622268}
+  227--303, Nov. 2000.
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

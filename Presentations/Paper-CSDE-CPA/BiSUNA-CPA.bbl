@@ -29,12 +29,30 @@ J.~Nalepa, M.~Antoniak, M.~Myller, P.~R. Lorenzo, and M.~Marcinkiewicz,
   vol.~73, p. 102994, 2020.
 \BIBentrySTDinterwordspacing
 
+\bibitem{8587580}
+C.-Y. {Lo}, F.~C.~M. {Lau}, and {Chiu-Wing Sham}, ``{Fixed-Point Implementation
+  of Convolutional Neural Networks for Image Classification},'' in \emph{2018
+  International Conference on Advanced Technologies for Communications (ATC)},
+  Oct 2018, pp. 105--109.
+
+\bibitem{9184436}
+C.~Y. {Lo} and C.-W. {Sham}, ``Energy efficient fixed-point inference system of
+  convolutional neural network,'' in \emph{2020 IEEE 63rd International Midwest
+  Symposium on Circuits and Systems (MWSCAS)}, 2020, pp. 403--406.
+
 \bibitem{ISMAYILOV2020307}
 \BIBentryALTinterwordspacing
 G.~Ismayilov and H.~R. Topcuoglu, ``Neural network based multi-objective
   evolutionary algorithm for dynamic workflow scheduling in cloud computing,''
   \emph{Future Generation Computer Systems}, vol. 102, pp. 307 -- 322, 2020.
+
 \BIBentrySTDinterwordspacing
+
+\bibitem{7393120}
+Q.~{Lu}, {Chiu-Wing Sham}, and F.~C.~M. {Lau}, ``{An architecture-algorithm
+  co-design of artificial intelligence for Trax player},'' in \emph{2015
+  International Conference on Field Programmable Technology (FPT)}, Dec 2015,
+  pp. 264--267.
 
 \bibitem{MEURICEDEDORMALE200772}
 \BIBentryALTinterwordspacing
@@ -87,7 +105,8 @@ M.~M. Alani, ``Neuro-cryptanalysis of des and triple-des,'' in \emph{Neural
 \bibitem{YU2006333}
 \BIBentryALTinterwordspacing
 W.~Yu and J.~Cao, ``Cryptography based on delayed chaotic neural networks,''
-  \emph{Physics Letters A}, vol. 356, no.~4, pp. 333 -- 338, 2006.
+  \emph{Physics Letters A}, vol. 356, no.~4, pp. 333 -- 338, 2006. [Online].
+  Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{8590945}
@@ -118,6 +137,7 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
   \emph{Advances in Neural Information Processing Systems 27}, Z.~Ghahramani,
   M.~Welling, C.~Cortes, N.~D. Lawrence, and K.~Q. Weinberger, Eds.\hskip 1em
   plus 0.5em minus 0.4em\relax Curran Associates, Inc., 2014, pp. 2672--2680.
+
 \BIBentrySTDinterwordspacing
 
 \bibitem{2016arXiv161006918A}
