@@ -144,3 +144,6 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S074373
 
 On the Interpretation of Results from the NIST Statistical Test Suite
 https://www.muni.cz/en/research/publications/1322353
+
+Pseudo Random Number Generation- a Reinforcement Learning approach
+https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S1877050920304944

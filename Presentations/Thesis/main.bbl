@@ -3414,6 +3414,76 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{SP800-22Rev1a}{proceedings}{}
+    \name{author}{1}{}{%
+      {{hash=LBJSJNMSEBSLMLMVDBNHJDAR}{%
+         family={Lawrence\bibnamedelima Bassham},
+         familyi={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+         suffix={Andrew\bibnamedelima Rukhin},
+         suffixi={A\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Juan Soto James Nechvatal Miles Smid Elaine Barker Stefan Leigh
+  Mark Levenson Mark Vangel David Banks N. Heckert James\bibnamedelima Dray},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  J\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  E\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  S\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim
+  M\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim
+  D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  N\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=N}{%
+         family={NIST},
+         familyi={N\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {NIST}%
+    }
+    \list{publisher}{1}{%
+      {NIST}%
+    }
+    \keyw{Crypto, hypothesis test; P-value; random number generator;
+  statistical tests}
+    \strng{namehash}{LBARJSJNMSEBSLMLMVDBNHJD1}
+    \strng{fullhash}{LBARJSJNMSEBSLMLMVDBNHJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    This paper discusses some aspects of selecting and testing random and
+  pseudorandom number generators. The outputs of such generators may be used in
+  many cryptographic applications, such as the generation of key material.
+  Generators suitable for use in cryptographic applications may need to meet
+  stronger requirements than for other applications. In particular, their
+  outputs must be unpredictable in the absence of knowledge of the inputs. Some
+  criteria for characterizing and selecting appropriate generators are
+  discussed in this document. The subject of statistical testing and its
+  relation to cryptanalysis is also discussed, and some recommended statistical
+  tests are provided. These tests may be useful as a first step in determining
+  whether or not a generator is suitable for a particular cryptographic
+  application. However, no set of statistical tests can absolutely certify a
+  generator as appropriate for usage in a particular application, i.e.,
+  statistical testing cannot serve as a substitute for cryptanalysis. The
+  design and cryptanalysis of generators is outside the scope of this paper.
+  https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final%
+    }
+    \field{number}{800}
+    \field{title}{A Statistical Test Suite for Random and Pseudorandom Number
+  Generators for Cryptographic Applications}
+    \field{volume}{22}
+    \field{annotation}{%
+    https://csrc.nist.gov/publications/detail/sp/800-22/rev-1a/final%
+    }
+    \field{year}{2010}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{8541786}{inproceedings}{}
     \name{author}{6}{}{%
       {{hash=LS}{%
@@ -6252,6 +6322,45 @@
     }
     \field{year}{2018}
     \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
+  \entry{FastNIST-STS-Muni}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SVMKASMZR}{%
+         family={S{\'y}s},
+         familyi={S\bibinitperiod},
+         suffix={M.; Z.\bibnamedelima {\v R}{\'\i}ha},
+         suffixi={M\bibinitperiod\bibinitdelim Z\bibinitperiod\bibinitdelim {\v
+  R}\bibinitperiod},
+         given={V.\bibnamedelima Maty{\'a}{\v s} K.M{\'a}rton A.\bibnamedelima
+  Suciu},
+         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  K\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=otRAPH}{%
+         prefix={of\bibnamedelima the},
+         prefixi={o\bibinitperiod\bibinitdelim t\bibinitperiod},
+         family={Romanian\bibnamedelima Academy},
+         familyi={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+         given={Publishing\bibnamedelima House},
+         giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{Crypto, NIST, Muni, Fast-STS, STS}
+    \strng{namehash}{SMZRVMKAS1}
+    \strng{fullhash}{SMZRVMKAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Romanian Journal of Information Science and Technology}
+    \field{pages}{18\bibrangedash 32}
+    \field{title}{On the Interpretation of Results from the NIST Statistical
+  Test Suite}
+    \field{volume}{18}
+    \field{year}{2015}
   \endentry
 
   \entry{8114708}{article}{}
