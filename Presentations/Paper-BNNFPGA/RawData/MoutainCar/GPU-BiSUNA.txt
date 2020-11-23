@@ -1,4 +1,4 @@
-Config file: /Users/rhvt/Dev/BiSUNAOpenCL/resources/BiSUNAConf.ini 
+Config file: BiSUNAOpenCL/resources/BiSUNAConf.ini 
  ----------------------------------
   CL_DEVICE_NAME:					AMD Radeon Pro 560 Compute Engine
   CL_DEVICE_VERSION:				OpenCL 1.2 
@@ -424,7 +424,7 @@ Program ended with exit code: 0
 
 **************************************************************************************
 
-Config file: /Users/rhvt/Dev/BiSUNAOpenCL/resources/BiSUNAConf.ini 
+Config file: BiSUNAOpenCL/resources/BiSUNAConf.ini 
  ----------------------------------
   CL_DEVICE_NAME:					AMD Radeon Pro 560 Compute Engine
   CL_DEVICE_VERSION:				OpenCL 1.2 
