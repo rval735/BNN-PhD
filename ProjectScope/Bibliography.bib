@@ -1,12 +1,95 @@
 %% This BibTeX bibliography file was created using BibDesk.
 %% https://bibdesk.sourceforge.io/
 
-%% Created for RH VT at 2020-11-19 17:50:08 +1300 
+%% Created for RH VT at 2020-12-02 13:45:48 +1300 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{Hassan:2020aa,
+	abstract = {Deep Convolutional Neural Networks (CNNs) are the state-of-the-art systems for image classification due to their high accuracy but on the other hand their high computational complexity is very costly. The acceleration is the target in this field nowadays for using these systems in real time applications. The Graphics Processing Units is the solution but its high-power consumption prevents its utilization in daily-used equipment moreover the Field Programmable Gate Array (FPGA) has low power consumption and flexible architecture which fits more for CNN implementations. This work discusses this problem and provides a solution that compromises between the speed of the CNN and the power consumption of the FPGA. This solution depends on two main techniques for speeding up: parallelism of layers resources and pipelining inside some layers. On the other hand, we added a new methodology to compromise the area requirements with the speed and design time by implementing CNN using Xilinx SDSOC tool (including processor and FPGA on the same board). Implementing design using HW/SW partitioning will enhance time design based on high level language(C or C++) in Vivado HLS (High Level Synthesis). It also fits for more large designs than using FPGA only and faster in design time.},
+	author = {Hassan, Rania O. and Mostafa, Hassan},
+	da = {2020/03/24},
+	date-added = {2020-12-02 13:45:26 +1300},
+	date-modified = {2020-12-02 13:45:48 +1300},
+	doi = {10.1007/s10470-020-01638-5},
+	id = {Hassan2020},
+	isbn = {1573-1979},
+	journal = {Analog Integrated Circuits and Signal Processing},
+	keywords = {FPGA-NN, Xilinx, SoC, DNN},
+	title = {Implementation of deep neural networks on FPGA-CPU platform using Xilinx SDSOC},
+	ty = {JOUR},
+	url = {https://doi.org/10.1007/s10470-020-01638-5},
+	year = {2020},
+	Bdsk-Url-1 = {https://doi.org/10.1007/s10470-020-01638-5}}
+
+@techreport{zynqDPU,
+	author = {Xilinx},
+	date-added = {2020-12-01 23:47:16 +1300},
+	date-modified = {2020-12-01 23:55:12 +1300},
+	keywords = {Other, Zynq, Xilinx, DPU},
+	month = {July},
+	number = {PG338},
+	publisher = {Xilinx},
+	title = {Zynq DPU v3.2},
+	type = {Product Guide},
+	url = {https://www.xilinx.com/support/documentation/ip_documentation/dpu/v3_2/pg338-dpu.pdf},
+	year = {2020}}
+
+@inproceedings{DBLP:conf/eccv/HuLWZC18,
+	author = {Qinghao Hu and Gang Li and Peisong Wang and Yifan Zhang and Jian Cheng},
+	booktitle = {ECCV (13)},
+	cdate = {1514764800000},
+	crossref = {conf/eccv/2018-13},
+	date-added = {2020-12-01 18:09:15 +1300},
+	date-modified = {2020-12-01 18:10:58 +1300},
+	keywords = {BNN, FPGA, DNN},
+	pages = {657-673},
+	title = {Training Binary Weight Networks via Semi-Binary Decomposition},
+	url = {https://doi.org/10.1007/978-3-030-01261-8_39},
+	year = {2018},
+	Bdsk-Url-1 = {https://doi.org/10.1007/978-3-030-01261-8_39}}
+
+@article{Qin_2020,
+	author = {Qin, Haotong and Gong, Ruihao and Liu, Xianglong and Bai, Xiao and Song, Jingkuan and Sebe, Nicu},
+	date-added = {2020-12-01 17:09:05 +1300},
+	date-modified = {2020-12-01 17:09:39 +1300},
+	doi = {10.1016/j.patcog.2020.107281},
+	issn = {0031-3203},
+	journal = {Pattern Recognition},
+	keywords = {BNN, Survey, gradient descent},
+	month = {Sep},
+	pages = {107281},
+	publisher = {Elsevier BV},
+	title = {Binary neural networks: A survey},
+	url = {http://dx.doi.org/10.1016/j.patcog.2020.107281},
+	volume = {105},
+	year = {2020},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/j.patcog.2020.107281}}
+
+@inproceedings{csde-ANE,
+	abstract = {Adversarial neuro encoding could provide new insights for ciphering information with different perspectives. Nevertheless, it is still underexplored with a handful of publications on the subject. This work proposes the implementation of neuroevolved binary neural networks based on boolean logic functions only (BiSUNA) that apply payload ciphering between two agents to disperse information from an observer. The BiSUNA framework provides three distinctive attributions: it uses an adversarial neural encoding environment to improve the system data transmission; one execution yields a diversity of results given its population heuristics; lastly, it is an unconventional proposal to employ binary neural networks for the solution of symmetric ciphered problems.},
+	author = {R. {Valencia} and C. {Sham}},
+	booktitle = {2020 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE)},
+	date-added = {2020-11-25 11:42:34 +1300},
+	date-modified = {2020-11-29 16:43:03 +1300},
+	keywords = {Binary Neural Network, BiSUNA, CPA, Adversarial Neurocryptography, Neuroevolution},
+	month = {Dec},
+	title = {Adversarial Neuro Encoding with Binary Neural Networks},
+	year = {2020}}
+
+@inproceedings{csde-FPGA,
+	abstract = {Deep Learning has reached a prominent area of research thanks to advances in semiconductor technologies, with Deep Neural Network (DNN) as the pivot of change. It is capable of solving complex multi-dimensional problems. This paper focuses on one particular example, the Binary Neural Network (BNN): it uses fixed-length bits in its connections and logic functions to perform excitation operations, reducing memory requirements. The conventional use of Field Programmable Gate Arrays (FPGAs) dictates inference only of deep learning networks. This publication demonstrates how the algorithm Binary Spectrum-diverse Unified Neuroevolution Architecture (BiSUNA) can perform training and inference on FPGA by dismissing gradient descent, solving reinforcement learning and reaching maximum parallelism and energy efficiency, up to 16\% faster compared to a CPU. Source code can be found in github.com/rval735/bisunaU50.},
+	author = {R. {Valencia} and C. {Sham}},
+	booktitle = {2020 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE)},
+	date-added = {2020-11-25 11:40:23 +1300},
+	date-modified = {2020-11-29 16:42:58 +1300},
+	keywords = {BiSUNA, FPGA, U50, Xilinx},
+	month = {Dec},
+	title = {FPGA deployment of neuroevolved Binary Neural Networks},
+	year = {2020}}
 
 @article{PASQUALINI20201122,
 	abstract = {Pseudo-Random Numbers Generators (PRNGs) are algorithms produced to generate long sequences of statistically uncorrelated numbers, i.e. Pseudo-Random Numbers (PRNs). These numbers are widely employed in mid-level cryptography and in software applications. Test suites are used to evaluate PRNGs quality by checking statistical properties of the generated sequences. Machine learning techniques are often used to break these generators, i.e. approximating a certain generator or a certain sequence using a neural network. But what about using machine learning to generate PRNs generators? This paper proposes a Reinforcement Learning (RL) approach to the task of generating PRNGs from scratch by learning a policy to solve an N-dimensional navigation problem. In this context, N is the length of the period of the sequence to generate and the policy is iteratively improved using the average score of an appropriate test suite run over that period. Aim of this work is to demonstrate the feasibility of the proposed approach, to compare it with classical methods, and to lay the foundation of a research path which combines RL and PRNGs.},
@@ -73,10 +156,6 @@
 	title = {The method of steepest descent for non-linearminimization problems},
 	volume = {2},
 	year = {1944}}
-
-@book{g,
-	date-added = {2020-11-03 23:03:57 +1300},
-	date-modified = {2020-11-03 23:04:03 +1300}}
 
 @book{aiNorvig,
 	author = {Stuart Russell and Peter Norvig},
@@ -9835,9 +9914,9 @@ In this thesis, research is done on the co-simulation of ClaSH and traditional H
 	Bdsk-Url-1 = {http://www.sciencedirect.com/science/article/pii/S0167926011000903},
 	Bdsk-Url-2 = {https://doi.org/10.1016/j.vlsi.2011.11.001}}
 
-@INPROCEEDINGS{9184436,
-	author={C. Y. {Lo} and Chiu-Wing {Sham}},
-	booktitle={2020 IEEE 63rd International Midwest Symposium on Circuits and Systems (MWSCAS)},
-	title={Energy Efficient Fixed-point Inference System of Convolutional Neural Network},
-	year={2020},
-	pages={403-406}}
+@inproceedings{9184436,
+	author = {C. Y. {Lo} and Chiu-Wing {Sham}},
+	booktitle = {2020 IEEE 63rd International Midwest Symposium on Circuits and Systems (MWSCAS)},
+	pages = {403-406},
+	title = {Energy Efficient Fixed-point Inference System of Convolutional Neural Network},
+	year = {2020}}

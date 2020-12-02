@@ -613,6 +613,11 @@ Automatic Compiler Based FPGA Accelerator for CNN Training
 -
 -
 
+Implementation of deep neural networks on FPGA-CPU platform using Xilinx SDSOC
+-
+-
+-
+
 < FPGA-NN
 ------> FPGA-Fin
 
@@ -2366,6 +2371,11 @@ An Empirical study of Binary Neural Networks' Optimisation
 -
 
 Universal Approximation Property and Equivalence of Stochastic Computing-Based Neural Networks and Binary Neural Networks
+-
+-
+-
+
+Binary neural networks- A survey
 -
 -
 -

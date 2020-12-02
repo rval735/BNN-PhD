@@ -1,0 +1,13 @@
+TY  - JOUR
+AU  - Hassan, Rania O.
+AU  - Mostafa, Hassan
+PY  - 2020
+DA  - 2020/03/24
+TI  - Implementation of deep neural networks on FPGA-CPU platform using Xilinx SDSOC
+JO  - Analog Integrated Circuits and Signal Processing
+AB  - Deep Convolutional Neural Networks (CNNs) are the state-of-the-art systems for image classification due to their high accuracy but on the other hand their high computational complexity is very costly. The acceleration is the target in this field nowadays for using these systems in real time applications. The Graphics Processing Units is the solution but its high-power consumption prevents its utilization in daily-used equipment moreover the Field Programmable Gate Array (FPGA) has low power consumption and flexible architecture which fits more for CNN implementations. This work discusses this problem and provides a solution that compromises between the speed of the CNN and the power consumption of the FPGA. This solution depends on two main techniques for speeding up: parallelism of layers resources and pipelining inside some layers. On the other hand, we added a new methodology to compromise the area requirements with the speed and design time by implementing CNN using Xilinx SDSOC tool (including processor and FPGA on the same board). Implementing design using HW/SW partitioning will enhance time design based on high level language(C or C++) in Vivado HLS (High Level Synthesis). It also fits for more large designs than using FPGA only and faster in design time.
+SN  - 1573-1979
+UR  - https://doi.org/10.1007/s10470-020-01638-5
+DO  - 10.1007/s10470-020-01638-5
+ID  - Hassan2020
+ER  - 

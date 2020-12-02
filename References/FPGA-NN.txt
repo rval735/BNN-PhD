@@ -75,3 +75,6 @@ https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8533530
 
 Automatic Compiler Based FPGA Accelerator for CNN Training
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/8892195
+
+Implementation of deep neural networks on FPGA-CPU platform using Xilinx SDSOC
+https://link-springer-com.ezproxy.auckland.ac.nz/article/10.1007/s10470-020-01638-5

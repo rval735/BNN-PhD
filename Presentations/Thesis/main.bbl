@@ -52,6 +52,39 @@
     \field{year}{2016}
   \endentry
 
+  \entry{aggarwal2017deep}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AS}{%
+         family={Aggarwal},
+         familyi={A\bibinitperiod},
+         given={Saurabh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Aggarwal},
+         familyi={A\bibinitperiod},
+         given={Somya},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Foundation of Computer Science}%
+    }
+    \keyw{DNN, Finance, Portfolio, LSTM}
+    \strng{namehash}{ASAS1}
+    \strng{fullhash}{ASAS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{2}
+    \field{title}{Deep Investment in Financial Markets using Deep Learning
+  Models}
+    \field{volume}{162}
+    \field{journaltitle}{International Journal of Computer Applications}
+    \field{year}{2017}
+  \endentry
+
   \entry{7154838}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=AS}{%
@@ -929,6 +962,81 @@
     \field{title}{NeuroEvolution of Augmenting Topologies with Learning for
   Data Classification}
     \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{7966159}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=CX}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HX}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=ZH}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=XN}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \keyw{application specific integrated circuits;convolution;field
+  programmable gate arrays;fixed point arithmetic;floating point
+  arithmetic;neural nets;FxpNet;deep convolutional neural network;fixed-point
+  representation;bit-width arithmetics;forward pass;backward
+  pass;floating-point values;binarized neural networks;quantized neural
+  networks;fixed-point primal weights;low resolution fixed-point
+  values;fixed-point primal parameters;FPGAs;ASICs;integer batch
+  normalization;IBN;fixed-point ADAM;FxpADAM;CIFAR-10 dataset;12-bit primal
+  parameters;12-bit gradients;Quantization (signal);Training;Field programmable
+  gate arrays;Neural networks;Convolution;Kernel;Acceleration}
+    \strng{namehash}{CX+1}
+    \strng{fullhash}{CXHXZHXN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    We introduce FxpNet, a framework to train deep convolutional neural
+  networks with low bit-width arithmetics in both forward pass and backward
+  pass. During training FxpNet further reduces the bit-width of stored
+  parameters (also known as primal parameters) by adaptively updating their
+  fixed-point formats. These primal parameters are usually represented in the
+  full resolution of floating-point values in previous binarized and quantized
+  neural networks. In FxpNet, during forward pass fixed-point primal weights
+  and activations are first binarized before computation, while in backward
+  pass all gradients are represented as low resolution fixed-point values and
+  then accumulated to corresponding fixed-point primal parameters. To have
+  highly efficient implementations in FPGAs, ASICs and other dedicated devices,
+  FxpNet introduces Integer Batch Normalization (IBN) and Fixed-point ADAM
+  (FxpADAM) methods to further reduce the required floating-point operations,
+  which will save considerable power and chip area. The evaluation on CIFAR-10
+  dataset indicates the effectiveness that FxpNet with 12-bit primal parameters
+  and 12-bit gradients achieves comparable prediction accuracy with
+  state-of-the-art binarized and quantized neural networks.%
+    }
+    \field{booktitle}{2017 International Joint Conference on Neural Networks
+  (IJCNN)}
+    \verb{doi}
+    \verb 10.1109/IJCNN.2017.7966159
+    \endverb
+    \field{issn}{2161-4407}
+    \field{pages}{2494\bibrangedash 2501}
+    \field{title}{FxpNet: Training a deep convolutional neural network in
+  fixed-point representation}
+    \field{year}{2017}
     \warn{\item Invalid format of field 'month'}
   \endentry
 
@@ -2690,6 +2798,190 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{altera-ai}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={Intel},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, Intel, FPGA, Altera, AI}
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{FPGAs for Artificial Intelligence (AI)}
+    \verb{url}
+    \verb https://www.intel.com/content/www/us/en/artificial-intelligence/progr
+    \verb ammable/overview.html
+    \endverb
+  \endentry
+
+  \entry{Jaderberg859}{article}{}
+    \name{author}{18}{}{%
+      {{hash=JM}{%
+         family={Jaderberg},
+         familyi={J\bibinitperiod},
+         given={Max},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CWM}{%
+         family={Czarnecki},
+         familyi={C\bibinitperiod},
+         given={Wojciech\bibnamedelima M.},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DI}{%
+         family={Dunning},
+         familyi={D\bibinitperiod},
+         given={Iain},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Marris},
+         familyi={M\bibinitperiod},
+         given={Luke},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LG}{%
+         family={Lever},
+         familyi={L\bibinitperiod},
+         given={Guy},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CAG}{%
+         family={Casta{\~n}eda},
+         familyi={C\bibinitperiod},
+         given={Antonio\bibnamedelima Garcia},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Beattie},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RNC}{%
+         family={Rabinowitz},
+         familyi={R\bibinitperiod},
+         given={Neil\bibnamedelima C.},
+         giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MAS}{%
+         family={Morcos},
+         familyi={M\bibinitperiod},
+         given={Ari\bibnamedelima S.},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Ruderman},
+         familyi={R\bibinitperiod},
+         given={Avraham},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sonnerat},
+         familyi={S\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Green},
+         familyi={G\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DL}{%
+         family={Deason},
+         familyi={D\bibinitperiod},
+         given={Louise},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LJZ}{%
+         family={Leibo},
+         familyi={L\bibinitperiod},
+         given={Joel\bibnamedelima Z.},
+         giveni={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hassabis},
+         familyi={H\bibinitperiod},
+         given={Demis},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kavukcuoglu},
+         familyi={K\bibinitperiod},
+         given={Koray},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Graepel},
+         familyi={G\bibinitperiod},
+         given={Thore},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Association for the Advancement of Science}%
+    }
+    \keyw{DNN, DeepMind, 3D mutiplayer, multi-agent systems}
+    \strng{namehash}{JM+1}
+    \strng{fullhash}{JMCWMDIMLLGCAGBCRNCMASRASNGTDLLJZSDHDKKGT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    Artificially intelligent agents are getting better and better at two-player
+  games, but most real-world endeavors require teamwork. Jaderberg et al.
+  designed a computer program that excels at playing the video game Quake III
+  Arena in Capture the Flag mode, where two multiplayer teams compete in
+  capturing the flags of the opposing team. The agents were trained by playing
+  thousands of games, gradually learning successful strategies not unlike those
+  favored by their human counterparts. Computer agents competed successfully
+  against humans even when their reaction times were slowed to match those of
+  humans.Science, this issue p. 859Reinforcement learning (RL) has shown great
+  success in increasingly complex single-agent environments and two-player
+  turn-based games. However, the real world contains multiple agents, each
+  learning and acting independently to cooperate and compete with other agents.
+  We used a tournament-style evaluation to demonstrate that an agent can
+  achieve human-level performance in a three-dimensional multiplayer
+  first-person video game, Quake III Arena in Capture the Flag mode, using only
+  pixels and game points scored as input. We used a two-tier optimization
+  process in which a population of independent RL agents are trained
+  concurrently from thousands of parallel matches on randomly generated
+  environments. Each agent learns its own internal reward signal and rich
+  representation of the world. These results indicate the great potential of
+  multiagent reinforcement learning for artificial intelligence research.%
+    }
+    \verb{doi}
+    \verb 10.1126/science.aau6249
+    \endverb
+    \verb{eprint}
+    \verb https://science.sciencemag.org/content/364/6443/859.full.pdf
+    \endverb
+    \field{issn}{0036-8075}
+    \field{number}{6443}
+    \field{pages}{859\bibrangedash 865}
+    \field{title}{Human-level performance in 3D multiplayer games with
+  population-based reinforcement learning}
+    \verb{url}
+    \verb https://science.sciencemag.org/content/364/6443/859
+    \endverb
+    \field{volume}{364}
+    \field{journaltitle}{Science}
+    \field{year}{2019}
+  \endentry
+
   \entry{4790104}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=KM}{%
@@ -3594,6 +3886,70 @@
     \field{year}{2013}
   \endentry
 
+  \entry{10.1145/3154839}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LY}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Yixing},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Zichuan},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=XK}{%
+         family={Xu},
+         familyi={X\bibinitperiod},
+         given={Kai},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Fengbo},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{CNN-FPGA, BNN, energy efficiency, deep learning, FPGA,
+  high-throughput, convolutional neural network, hardware acceleration, binary
+  neural network, GPU}
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYLZXKYHRF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1145/3154839
+    \endverb
+    \field{issn}{1550-4832}
+    \field{number}{2}
+    \field{title}{A GPU-Outperforming FPGA Accelerator Architecture for Binary
+  Convolutional Neural Networks}
+    \verb{url}
+    \verb https://doi-org.ezproxy.auckland.ac.nz/10.1145/3154839
+    \endverb
+    \field{volume}{14}
+    \list{location}{1}{%
+      {New York, NY, USA}%
+    }
+    \field{journaltitle}{J. Emerg. Technol. Comput. Syst.}
+    \field{month}{07}
+    \field{year}{2018}
+  \endentry
+
   \entry{LIANG20181072}{article}{}
     \name{author}{5}{}{%
       {{hash=LS}{%
@@ -4433,6 +4789,71 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{7929192}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=NE}{%
+         family={Nurvitadhi},
+         familyi={N\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sheffield},
+         familyi={S\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sim},
+         familyi={S\bibinitperiod},
+         given={Jaewoong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mishra},
+         familyi={M\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Venkatesh},
+         familyi={V\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marr},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, application specific integrated circuits;field programmable gate
+  arrays;graphics processing units;microprocessor chips;neural nets;ASIC;Aria
+  10 FPGA;BNN hardware accelerator design;CPU;DNN;GPU;binarized neural
+  networks;deep neural network;hardware acceleration;Biological neural
+  networks;Field programmable gate arrays;Graphics processing
+  units;Hardware;Neurons;Random access memory;System-on-chip;ASIC;CPU;Deep
+  learning;FPGA;GPU;binarized neural networks;data analytics;hardware
+  accelerator; FPGA, GPU}
+    \strng{namehash}{NE+1}
+    \strng{fullhash}{NESDSJMAVGMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{2016 International Conference on Field-Programmable
+  Technology (FPT)}
+    \verb{doi}
+    \verb 10.1109/FPT.2016.7929192
+    \endverb
+    \field{pages}{77\bibrangedash 84}
+    \field{title}{Accelerating Binarized Neural Networks: Comparison of FPGA,
+  CPU, GPU, and ASIC}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{Nurvitadhi:2017:FBG:3020078.3021740}{inproceedings}{}
     \name{author}{11}{}{%
       {{hash=NE}{%
@@ -4507,7 +4928,7 @@
       {ACM}%
     }
     \keyw{FPGA-NN; FPGA, GPU, accelerator, deep learning, intel stratix 10}
-    \strng{namehash}{NE+1}
+    \strng{namehash}{NE+2}
     \strng{fullhash}{NEVGSJMDHROGHJLYTSKMDSSBG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -4866,6 +5287,70 @@
     \field{volume}{8}
     \field{journaltitle}{Applied Intelligence}
     \field{year}{1998}
+  \endentry
+
+  \entry{Qin_2020}{article}{}
+    \name{author}{6}{}{%
+      {{hash=QH}{%
+         family={Qin},
+         familyi={Q\bibinitperiod},
+         given={Haotong},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Ruihao},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Xianglong},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=BX}{%
+         family={Bai},
+         familyi={B\bibinitperiod},
+         given={Xiao},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Jingkuan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Sebe},
+         familyi={S\bibinitperiod},
+         given={Nicu},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier BV}%
+    }
+    \keyw{BNN, Survey, gradient descent}
+    \strng{namehash}{QH+1}
+    \strng{fullhash}{QHGRLXBXSJSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Q}
+    \field{sortinithash}{Q}
+    \verb{doi}
+    \verb 10.1016/j.patcog.2020.107281
+    \endverb
+    \field{issn}{0031-3203}
+    \field{pages}{107281}
+    \field{title}{Binary neural networks: A survey}
+    \verb{url}
+    \verb http://dx.doi.org/10.1016/j.patcog.2020.107281
+    \endverb
+    \field{volume}{105}
+    \field{journaltitle}{Pattern Recognition}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{5380141}{inproceedings}{}
@@ -5928,6 +6413,55 @@
     \field{year}{2019}
   \endentry
 
+  \entry{electronics8060661}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ST}{%
+         family={Simons},
+         familyi={S\bibinitperiod},
+         given={Taylor},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LDJ}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Dah-Jye},
+         giveni={D\bibinithyphendelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, Survey, backpropagation}
+    \strng{namehash}{STLDJ1}
+    \strng{fullhash}{STLDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    In this work, we review Binarized Neural Networks (BNNs). BNNs are deep
+  neural networks that use binary values for activations and weights, instead
+  of full precision values. With binary values, BNNs can execute computations
+  using bitwise operations, which reduces execution time. Model sizes of BNNs
+  are much smaller than their full precision counterparts. While the accuracy
+  of a BNN model is generally less than full precision models, BNNs have been
+  closing accuracy gap and are becoming more accurate on larger datasets like
+  ImageNet. BNNs are also good candidates for deep learning implementations on
+  FPGAs and ASICs due to their bitwise efficiency. We give a tutorial of the
+  general BNN methodology and review various contributions, implementations and
+  applications of BNNs.%
+    }
+    \verb{doi}
+    \verb 10.3390/electronics8060661
+    \endverb
+    \field{issn}{2079-9292}
+    \field{number}{6}
+    \field{title}{A Review of Binarized Neural Networks}
+    \verb{url}
+    \verb https://www.mdpi.com/2079-9292/8/6/661
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{Electronics}
+    \field{year}{2019}
+  \endentry
+
   \entry{Simonyan14c}{article}{}
     \name{author}{2}{}{%
       {{hash=SK}{%
@@ -6468,6 +7002,43 @@
     \field{year}{2016}
   \endentry
 
+  \entry{Tang2017HowTT}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=TW}{%
+         family={Tang},
+         familyi={T\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Gang},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Liang},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{BNN, NN, Training}
+    \strng{namehash}{TWHGWL1}
+    \strng{fullhash}{TWHGWL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{booktitle}{AAAI}
+    \field{title}{How to Train a Compact Binary Neural Network with High
+  Accuracy?}
+    \field{annotation}{%
+    https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14619%
+    }
+    \field{year}{2017}
+  \endentry
+
   \entry{AppleFaceDetectionURL}{online}{}
     \name{author}{1}{}{%
       {{hash=TCVML}{%
@@ -6820,6 +7391,93 @@
     \verb https://github.com/rval735/bisunaU50
     \endverb
     \field{year}{2020}
+  \endentry
+
+  \entry{csde-ANE}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=VR}{%
+         family={{Valencia}},
+         familyi={V\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={{Sham}},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Binary Neural Network, BiSUNA, CPA, Adversarial Neurocryptography,
+  Neuroevolution}
+    \strng{namehash}{VRSC1}
+    \strng{fullhash}{VRSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{abstract}{%
+    Adversarial neuro encoding could provide new insights for ciphering
+  information with different perspectives. Nevertheless, it is still
+  underexplored with a handful of publications on the subject. This work
+  proposes the implementation of neuroevolved binary neural networks based on
+  boolean logic functions only (BiSUNA) that apply payload ciphering between
+  two agents to disperse information from an observer. The BiSUNA framework
+  provides three distinctive attributions: it uses an adversarial neural
+  encoding environment to improve the system data transmission; one execution
+  yields a diversity of results given its population heuristics; lastly, it is
+  an unconventional proposal to employ binary neural networks for the solution
+  of symmetric ciphered problems.%
+    }
+    \field{booktitle}{2020 IEEE Asia-Pacific Conference on Computer Science and
+  Data Engineering (CSDE)}
+    \field{title}{Adversarial Neuro Encoding with Binary Neural Networks}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{csde-FPGA}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=VR}{%
+         family={{Valencia}},
+         familyi={V\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={{Sham}},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{BiSUNA, FPGA, U50, Xilinx}
+    \strng{namehash}{VRSC1}
+    \strng{fullhash}{VRSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{abstract}{%
+    Deep Learning has reached a prominent area of research thanks to advances
+  in semiconductor technologies, with Deep Neural Network (DNN) as the pivot of
+  change. It is capable of solving complex multi-dimensional problems. This
+  paper focuses on one particular example, the Binary Neural Network (BNN): it
+  uses fixed-length bits in its connections and logic functions to perform
+  excitation operations, reducing memory requirements. The conventional use of
+  Field Programmable Gate Arrays (FPGAs) dictates inference only of deep
+  learning networks. This publication demonstrates how the algorithm Binary
+  Spectrum-diverse Unified Neuroevolution Architecture (BiSUNA) can perform
+  training and inference on FPGA by dismissing gradient descent, solving
+  reinforcement learning and reaching maximum parallelism and energy
+  efficiency, up to 16\% faster compared to a CPU. Source code can be found in
+  github.com/rval735/bisunaU50.%
+    }
+    \field{booktitle}{2020 IEEE Asia-Pacific Conference on Computer Science and
+  Data Engineering (CSDE)}
+    \field{title}{FPGA deployment of neuroevolved Binary Neural Networks}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{8953134}{inproceedings}{}
@@ -7206,6 +7864,55 @@
     \verb rolling.html
     \endverb
     \field{year}{2020}
+  \endentry
+
+  \entry{vitis-ai}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \keyw{Webpage, Xilinx, FPGA, Vitis, AI,}
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{title}{Vitis AI}
+    \verb{url}
+    \verb https://www.xilinx.com/products/design-tools/vitis/vitis-ai.html
+    \endverb
+    \field{year}{2020}
+  \endentry
+
+  \entry{zynqDPU}{report}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Xilinx}%
+    }
+    \keyw{Other, Zynq, Xilinx, DPU}
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{X}
+    \field{sortinithash}{X}
+    \field{number}{PG338}
+    \field{title}{Zynq DPU v3.2}
+    \verb{url}
+    \verb https://www.xilinx.com/support/documentation/ip_documentation/dpu/v3_
+    \verb 2/pg338-dpu.pdf
+    \endverb
+    \field{type}{Product Guide}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{8393327}{inproceedings}{}

@@ -380,3 +380,7 @@ https://openreview.net/forum?id=rJfUCoR5KX
 Universal Approximation Property and Equivalence of Stochastic Computing-Based Neural Networks and Binary Neural Networks
 https://www.aaai.org/ojs/index.php/AAAI/article/view/4475
 https://arxiv.org/abs/1803.05391
+
+Binary neural networks- A survey
+https://www.sciencedirect.com/science/article/abs/pii/S0031320320300856?via%3Dihub
+https://arxiv.org/abs/2004.03333
