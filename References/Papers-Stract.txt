@@ -366,6 +366,16 @@ Some studies in machine learning using the game of checkers
 -
 -
 
+Learning to trade via direct reinforcement
+-
+-
+-
+
+ImageNet- A large-scale hierarchical image database
+-
+-
+-
+
 < NN-Fin
 
 ------> FPGA
@@ -1037,6 +1047,11 @@ Let’s Play Again- Variability of Deep Reinforcement Learning Agents in Atari E
 -
 
 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model
+-
+-
+-
+
+Reinforcement Renaissance
 -
 -
 -
@@ -2730,6 +2745,21 @@ A Stochastic Approximation Method
 -
 
 An Alternative View- When Does SGD Escape Local Minima
+-
+-
+-
+
+ImageNet Large Scale Visual Recognition Challenge
+-
+-
+-
+
+A survey on metaheuristics for stochastic combinatorial optimization
+-
+-
+-
+
+A Monte Carlo Method for the Approximate Solution of Certain Types of Constrained Optimization Problems
 -
 -
 -

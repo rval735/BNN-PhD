@@ -1,0 +1,69 @@
+Dear Reviewers,
+
+Your opinions and perspectives are highly appreciated, a step up from previous supposedly A* conferences at which people write reject without further explanation. This author's feedback will address "Reasons to Reject" and "Questions (Q&A)" given the space provided for this commentary.
+
+> Reviewer #3
+- Author #1 is the leading writer of the paper and not a native English speaker. In case of acceptance, an extensive analysis will review for clarity and grammar. On the other hand, this paper explores further the BiSUNA algorithm because the first paper [Valencia 2019a] missed parts and more experiments. Given its novelty, it is still not scrutinized by other researchers; for that reason, the AAAI conference would help to reach a larger audience to explore its potential.
+
+- The link to the open-source project is anonymized to comply with the conference rules. If people are interested, they can use it to replicate all the claims in this document with any commodity computer. Other publications use 5 executions, then considered as a baseline given computer power at the author's disposal. For the sake of transparency, results are accessible in the complementary material, allowing the review of the paper claims, then particular verified execution can be performed by you, the reviewer. All the environments are part of the standard OpenAI Gym, which are a collection of RL ready problems for others to use as a baseline, which is the objective of this work. All tests use default conditions
+
+- Your comments are vastly helpful; if the paper goes through the review process, a detailed contribution is going to be updated.
+
+Q&A
+- All meta parameters were the same as provided by default for any architecture (BiSUNA, SUNA, NEAR or TRPO). The executions are as well part of the code in the supplementary material. Randomness is future work. BiSUNA uses a "discretization" function to deal with the continuous values of the mountain car.
+
+> Reviewer #4
+- The paper organization and grammar will change with your acceptance vote.
+
+Q&A
+- BiSUNA does not deal well with "continuous" environments when inputs are not well discretized. For example, if the mountain car says 1.011 then 1.012, if BiSUNA neuron input is the same in both cases, it has a hard time learning anything from the environment.
+
+> Reviewer #5
+- Author #1 failed to completely clarify the contribution of this work as annotated by Reviewer #3, to be addressed for final submission. This paper is relevant to the AI community because it confirms the new perspective on how to train BNN. With the AAAI conference impact, other researchers with a broad vision of the future potential for this work will be able to explore the resources shared by the open-source framework.
+
+Q&A
+- Size varies with the meta parameters used for training. Of the models used to solve the OpenAI Gym RL problems in the paper, a range between 48 - 1048 kb for the whole 100 agent population.
+
+> Reviewer #6
+- As mentioned by you, the paper page limit left many details outside of its scope, a particular reason the supplementary material tried to address, fill the gap of some of those absent aspects. Other algorithms are referenced by the paper to compare BiSUNA performance, given that they are the latest of research around RL problems: NEAT (another TWEANN) and TRPO (Q-Policy optimization).
+
+Q&A
+- This paper demonstrated that BNN resolves discrete RL environments, something not done before publications from [Valencia 2019a], whereas this work confirms that approach. Also, validates FPGA deployments are more energy and hardware efficient using BNN obtained by the BiSUNA framework.
+
+- TRPO and NEAT are other DNN methods with their performance shown in Table 2.
+
+- BiSUNA creates not only a single model but a population of agents that can resolve the RL problem; Fig 3 shows only a single entity. Interpretability is a subjective measure that is yet to explore.
+
+> Reviewer #7
+- Previous work could not explain the inner details of BiSUNA in the same way as this paper does. That is an advancement in itself because this work would be the reference to an advanced understanding of the algorithm.
+
+- These experiments are not explored deeply in the literature by other algorithms because they employ discrete values (except for Mountain Car). That change, as shown in the experiments section, diminishes the performance of traditional floating-point valued algorithms. The author would analyze further which "Basic RL algorithm" solves "Copy" and "Duplicated Input" as BiSUNA does.
+
+Q&A
+- New experiments were included, especially against other RL algorithms. It explained further how BiSUNA works and especially the new codebase used to make BiSUNA faster than work presented by [Valencia 2019a]; it extended the BiSUNA hardware test from [Valencia 2019b]. Even quoting detailed Reviewer #3 opinion: "binary neural networks are a viable alternative".
+
+Note to all reviewers.
+
+Despite the weak spot around grammar, this paper extends the perspective BiSUNA provides outside of traditional DNN by using bio-inspired evolution techniques. Writing publications is complicated for non-native English people, particularly a learning process for a student. Details to update for the final submission.
+
+Also, many inquiries are clearer by executing the code and confirming the paper statements are true under those considerations. Science is about replicability and confirmation of results, not only about getting new things. For that reason, this submission included the source code and data used in the experiments. We all should strive for a more transparent science that benefits humanity.
+
+Let's strive to be better than Reviewer #2 https://www.youtube.com/watch?v=VgqHitvEbR0
+
+Best regards,
+
+Author #1
+
+
+-------------
+
+I appreciate the opportunity you provide to analyze the research I have been doing around BiSUNA. As you can read from the reviewers' position, some are accepting the paper while others have strong views about it, despite data and code provided for reproducibility and transparency.
+From my perspective, their concerns are more about writing and less about the technical contribution. Paper organization and grammar will be updated if the paper is accepted; I will approach a native English speaker to provide a comprehensive analysis.
+Also, in case you give me the opportunity, the paper will include the latest updates where BiSUNA tests Atari games found in the OpenAI Gym, something not included at submission because of time.
+As you can discern from the response to reviewers, I am a Ph.D. student in the final year trying to have the closing paper published before delivering the thesis; it is my last chance to do something relevant for academia before going back to the industry.
+
+Thanks for your support,
+
+Regards,
+
+Author #1

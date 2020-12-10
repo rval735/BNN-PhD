@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Bianchi, Leonora
+AU  - Dorigo, Marco
+AU  - Gambardella, Luca Maria
+AU  - Gutjahr, Walter J.
+PY  - 2009
+DA  - 2009/06/01
+TI  - A survey on metaheuristics for stochastic combinatorial optimization
+JO  - Natural Computing
+SP  - 239
+EP  - 287
+VL  - 8
+IS  - 2
+AB  - Metaheuristics are general algorithmic frameworks, often nature-inspired, designed to solve complex optimization problems, and they are a growing research area since a few decades. In recent years, metaheuristics are emerging as successful alternatives to more classical approaches also for solving optimization problems that include in their mathematical formulation uncertain, stochastic, and dynamic information. In this paper metaheuristics such as Ant Colony Optimization, Evolutionary Computation, Simulated Annealing, Tabu Search and others are introduced, and their applications to the class of Stochastic Combinatorial Optimization Problems (SCOPs) is thoroughly reviewed. Issues common to all metaheuristics, open problems, and possible directions of research are proposed and discussed. In this survey, the reader familiar to metaheuristics finds also pointers to classical algorithmic approaches to optimization under uncertainty, and useful informations to start working on this problem domain, while the reader new to metaheuristics should find a good tutorial in those metaheuristics that are currently being applied to optimization under uncertainty, and motivations for interest in this field.
+SN  - 1572-9796
+UR  - https://doi.org/10.1007/s11047-008-9098-4
+DO  - 10.1007/s11047-008-9098-4
+ID  - Bianchi2009
+ER  - 

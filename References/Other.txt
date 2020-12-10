@@ -65,3 +65,11 @@ https://projecteuclid.org/euclid.aoms/1177729586#info
 
 An Alternative View- When Does SGD Escape Local Minima
 http://proceedings.mlr.press/v80/kleinberg18a.html
+
+ImageNet Large Scale Visual Recognition Challenge
+http://www.image-net.org/challenges/LSVRC/
+
+A survey on metaheuristics for stochastic combinatorial optimization
+https://link.springer.com/article/10.1007/s11047-008-9098-4
+
+A Monte Carlo Method for the Approximate Solution of Certain Types of Constrained Optimization Problems

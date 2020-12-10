@@ -275,3 +275,6 @@ https://papers.nips.cc/paper/3048-greedy-layer-wise-training-of-deep-networks
 
 Distilling the Knowledge in a Neural Network
 https://research.google/pubs/pub44873/
+
+ImageNet- A large-scale hierarchical image database
+https://ieeexplore.ieee.org/document/5206848

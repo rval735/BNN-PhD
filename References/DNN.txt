@@ -94,3 +94,7 @@ https://arxiv.org/abs/1904.06312
 
 Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model
 https://arxiv.org/abs/1911.08265
+
+Reinforcement Renaissance
+https://dl-acm-org.ezproxy.auckland.ac.nz/doi/10.1145/2949662
+https://cacm.acm.org/magazines/2016/8/205048-reinforcement-renaissance/fulltext

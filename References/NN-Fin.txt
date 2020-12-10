@@ -102,3 +102,6 @@ https://www-sciencedirect-com.ezproxy.auckland.ac.nz/science/article/pii/S016792
 
 Empirical Asset Pricing via Machine Learning
 https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3159577
+
+Learning to trade via direct reinforcement
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/935097
