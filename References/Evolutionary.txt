@@ -213,3 +213,10 @@ https://repositorium.ub.uni-osnabrueck.de/handle/urn:nbn:de:gbv:700-201210171037
 
 Neuroevolution with Analog Genetic Encoding
 https://link-springer-com.ezproxy.auckland.ac.nz/chapter/10.1007/11844297_68
+
+Common genetic encoding for both direct and indirect encodings of networks
+https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.159.705
+
+Towards improvement of SUNA in multiplexers with preliminary results of simple logic gate neuron variation
+https://dl.acm.org/doi/10.1145/3377929.3398164
+https://dl-acm-org.ezproxy.auckland.ac.nz/doi/10.1145/3377929.3398164

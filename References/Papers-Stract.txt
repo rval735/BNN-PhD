@@ -376,6 +376,11 @@ ImageNet- A large-scale hierarchical image database
 -
 -
 
+Deep LSTM with Reinforcement Learning Layer for Financial Trend Prediction in FX High Frequency Trading Systems
+-
+-
+-
+
 < NN-Fin
 
 ------> FPGA
@@ -2764,6 +2769,11 @@ A Monte Carlo Method for the Approximate Solution of Certain Types of Constraine
 -
 -
 
+Error detecting and error correcting codes
+-
+-
+-
+
 < Other
 
 ------> SNN
@@ -3155,6 +3165,16 @@ The Importance of Topology Evolution in NeuroEvolution- A Case Study Using Carte
 -
 
 Neuroevolution with Analog Genetic Encoding
+-
+-
+-
+
+Common genetic encoding for both direct and indirect encodings of networks
+-
+-
+-
+
+Towards improvement of SUNA in multiplexers with preliminary results of simple logic gate neuron variation
 -
 -
 -

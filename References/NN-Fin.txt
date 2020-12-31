@@ -105,3 +105,6 @@ https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3159577
 
 Learning to trade via direct reinforcement
 https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/935097
+
+Deep LSTM with Reinforcement Learning Layer for Financial Trend Prediction in FX High Frequency Trading Systems
+https://www.mdpi.com/2076-3417/9/20/4460

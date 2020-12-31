@@ -73,3 +73,7 @@ A survey on metaheuristics for stochastic combinatorial optimization
 https://link.springer.com/article/10.1007/s11047-008-9098-4
 
 A Monte Carlo Method for the Approximate Solution of Certain Types of Constrained Optimization Problems
+https://www.jstor.org/stable/169420
+
+Error detecting and error correcting codes
+https://ieeexplore-ieee-org.ezproxy.auckland.ac.nz/document/6772729
