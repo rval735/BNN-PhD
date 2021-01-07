@@ -36,7 +36,8 @@
 \newif\ifUa@doublesp
 \newif\ifUa@partialfulfilment
 
-\Ua@examcpfalse
+%\Ua@examcpfalse
+\Ua@examcptrue
 \Ua@onehalfspfalse
 \Ua@doublespfalse
 \Ua@partialfulfilmentfalse
