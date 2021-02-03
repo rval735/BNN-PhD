@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Babanezhad, Meisam
+AU  - Behroyan, Iman
+AU  - Nakhjiri, Ali Taghvaie
+AU  - Marjani, Azam
+AU  - Rezakazemi, Mashallah
+AU  - Shirazian, Saeed
+PY  - 2020
+DA  - 2020/12/04
+TI  - High-performance hybrid modeling chemical reactors using differential evolution based fuzzy inference system
+JO  - Scientific Reports
+SP  - 21304
+VL  - 10
+IS  - 1
+AB  - Bubbly flow behavior simulation in two-phase chemical reactors such bubble column type reactors is widely employed for chemical industry purposes. The computational fluid dynamics (CFD) approach has been employed by engineers and researchers for modeling these types of chemical reactors. In spite of the CFD robustness for simulating transport phenomena and chemical reactions in these reactors, this approach has been known as expensive for modeling such turbulent complex flows. Artificial intelligence (AI) algorithm of the adaptive network-based fuzzy inference system (ANFIS) are largely understood and utilized for the CFD approach optimization. In this hybrid approach, the CFD findings are learned by AI algorithms like ANFIS to save computational time and expenses. Once the pattern of the CFD results have been captured by the AI model, this hybrid model can be then used for process simulation and optimization. As such, there is no need for further simulations of new conditions. The objective of this paper is to obviate the need for expensive CFD computations for two-phase flows in chemical reactors via coupling CFD data to an AI algorithm, i.e., differential evolution based fuzzy inference system (DEFIS). To do so, air velocity as the output and the values of the x, and y coordinates, water velocity, and time step as the inputs are inputted the AI model for learning the flow pattern. The effects of cross over as the DE parameter and also the number of inputs on the best intelligence are investigated. Indeed, DEFIS correlates the air velocity to the nodes coordinates, time, and liquid velocity and then after the CFD modeling could be replaced with the simple correlation. For the first time, a comparison is made between the ANFIS and the DEFIS performances in terms of the prediction capability of the gas (air) velocity. The results released that both ANFIS and DEFIS could accurately predict the CFD pattern. The prediction times of both methods were obtained to be equal. However, the learning time of the DEFIS was fourfold of ANFIS.
+SN  - 2045-2322
+UR  - https://doi.org/10.1038/s41598-020-78277-3
+DO  - 10.1038/s41598-020-78277-3
+ID  - Babanezhad2020
+ER  - 

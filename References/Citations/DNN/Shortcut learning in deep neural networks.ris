@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Geirhos, Robert
+AU  - Jacobsen, Jörn-Henrik
+AU  - Michaelis, Claudio
+AU  - Zemel, Richard
+AU  - Brendel, Wieland
+AU  - Bethge, Matthias
+AU  - Wichmann, Felix A.
+PY  - 2020
+DA  - 2020/11/01
+TI  - Shortcut learning in deep neural networks
+JO  - Nature Machine Intelligence
+SP  - 665
+EP  - 673
+VL  - 2
+IS  - 11
+AB  - Deep learning has triggered the current rise of artificial intelligence and is the workhorse of today’s machine intelligence. Numerous success stories have rapidly spread all over science, industry and society, but its limitations have only recently come into focus. In this Perspective we seek to distil how many of deep learning’s failures can be seen as different symptoms of the same underlying problem: shortcut learning. Shortcuts are decision rules that perform well on standard benchmarks but fail to transfer to more challenging testing conditions, such as real-world scenarios. Related issues are known in comparative psychology, education and linguistics, suggesting that shortcut learning may be a common characteristic of learning systems, biological and artificial alike. Based on these observations, we develop a set of recommendations for model interpretation and benchmarking, highlighting recent advances in machine learning to improve robustness and transferability from the lab to real-world applications.
+SN  - 2522-5839
+UR  - https://doi.org/10.1038/s42256-020-00257-z
+DO  - 10.1038/s42256-020-00257-z
+ID  - Geirhos2020
+ER  - 

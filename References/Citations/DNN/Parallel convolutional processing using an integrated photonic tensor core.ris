@@ -1,0 +1,31 @@
+TY  - JOUR
+AU  - Feldmann, J.
+AU  - Youngblood, N.
+AU  - Karpov, M.
+AU  - Gehring, H.
+AU  - Li, X.
+AU  - Stappers, M.
+AU  - Le Gallo, M.
+AU  - Fu, X.
+AU  - Lukashchuk, A.
+AU  - Raja, A. S.
+AU  - Liu, J.
+AU  - Wright, C. D.
+AU  - Sebastian, A.
+AU  - Kippenberg, T. J.
+AU  - Pernice, W. H. P.
+AU  - Bhaskaran, H.
+PY  - 2021
+DA  - 2021/01/01
+TI  - Parallel convolutional processing using an integrated photonic tensor core
+JO  - Nature
+SP  - 52
+EP  - 58
+VL  - 589
+IS  - 7840
+AB  - With the proliferation of ultrahigh-speed mobile networks and internet-connected devices, along with the rise of artificial intelligence (AI)1, the world is generating exponentially increasing amounts of data that need to be processed in a fast and efficient way. Highly parallelized, fast and scalable hardware is therefore becoming progressively more important2. Here we demonstrate a computationally specific integrated photonic hardware accelerator (tensor core) that is capable of operating at speeds of trillions of multiply-accumulate operations per second (1012 MAC operations per second or tera-MACs per second). The tensor core can be considered as the optical analogue of an application-specific integrated circuit (ASIC). It achieves parallelized photonic in-memory computing using phase-change-material memory arrays and photonic chip-based optical frequency combs (soliton microcombs3). The computation is reduced to measuring the optical transmission of reconfigurable and non-resonant passive components and can operate at a bandwidth exceeding 14 gigahertz, limited only by the speed of the modulators and photodetectors. Given recent advances in hybrid integration of soliton microcombs at microwave line rates3–5, ultralow-loss silicon nitride waveguides6,7, and high-speed on-chip detectors and modulators, our approach provides a path towards full complementary metal–oxide–semiconductor (CMOS) wafer-scale integration of the photonic tensor core. Although we focus on convolutional processing, more generally our results indicate the potential of integrated photonics for parallel, fast, and efficient computational hardware in data-heavy AI applications such as autonomous driving, live video processing, and next-generation cloud computing services.
+SN  - 1476-4687
+UR  - https://doi.org/10.1038/s41586-020-03070-1
+DO  - 10.1038/s41586-020-03070-1
+ID  - Feldmann2021
+ER  - 

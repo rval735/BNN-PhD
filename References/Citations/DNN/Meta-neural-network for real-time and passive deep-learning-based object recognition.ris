@@ -1,0 +1,21 @@
+TY  - JOUR
+AU  - Weng, Jingkai
+AU  - Ding, Yujiang
+AU  - Hu, Chengbo
+AU  - Zhu, Xue-Feng
+AU  - Liang, Bin
+AU  - Yang, Jing
+AU  - Cheng, Jianchun
+PY  - 2020
+DA  - 2020/12/09
+TI  - Meta-neural-network for real-time and passive deep-learning-based object recognition
+JO  - Nature Communications
+SP  - 6309
+VL  - 11
+IS  - 1
+AB  - Analyzing scattered wave to recognize object is of fundamental significance in wave physics. Recently-emerged deep learning technique achieved great success in interpreting wave field such as in ultrasound non-destructive testing and disease diagnosis, but conventionally need time-consuming computer postprocessing or bulky-sized diffractive elements. Here we theoretically propose and experimentally demonstrate a purely-passive and small-footprint meta-neural-network for real-time recognizing complicated objects by analyzing acoustic scattering. We prove meta-neural-network mimics a standard neural network despite its compactness, thanks to unique capability of its metamaterial unit-cells (dubbed meta-neurons) to produce deep-subwavelength phase shift as training parameters. The resulting device exhibits the “intelligence” to perform desired tasks with potential to overcome the current limitations, showcased by two distinctive examples of handwritten digit recognition and discerning misaligned orbital-angular-momentum vortices. Our mechanism opens the route to new metamaterial-based deep-learning paradigms and enable conceptual devices automatically analyzing signals, with far-reaching implications for acoustics and related fields.
+SN  - 2041-1723
+UR  - https://doi.org/10.1038/s41467-020-19693-x
+DO  - 10.1038/s41467-020-19693-x
+ID  - Weng2020
+ER  - 
