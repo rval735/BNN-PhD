@@ -96,6 +96,37 @@ M.~A. {El-Fotouh} and K.~{Diepold}, ``The pushdown attack on aes,'' in
   \emph{2009 Third International Conference on Emerging Security Information,
   Systems and Technologies}, June 2009, pp. 280--285.
 
+\bibitem{10.1145/3377929.3389933}
+\BIBentryALTinterwordspacing
+R.~H.~V. Tenorio, C.~W. Sham, and D.~V. Vargas, ``Preliminary study of applied
+  binary neural networks for neural cryptography,'' in \emph{Proceedings of the
+  2020 Genetic and Evolutionary Computation Conference Companion}, ser. GECCO
+  '20.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
+  for Computing Machinery, 2020, pp. 291--292. [Online]. Available:
+  \url{https://doi.org/10.1145/3377929.3389933}
+\BIBentrySTDinterwordspacing
+
+\bibitem{csde-ANE}
+R.~{Valencia} and C.~{Sham}, ``Adversarial neuro encoding with binary neural
+  networks,'' in \emph{2020 IEEE Asia-Pacific Conference on Computer Science
+  and Data Engineering (CSDE)}, Dec 2020.
+
+\bibitem{AAAI1817150}
+\BIBentryALTinterwordspacing
+J.~Song, T.~He, L.~Gao, X.~Xu, A.~Hanjalic, and H.~T. Shen, ``Binary generative
+  adversarial networks for image retrieval,'' in \emph{AAAI Publications,
+  Thirty-Second AAAI Conference on Artificial Intelligence}.\hskip 1em plus
+  0.5em minus 0.4em\relax AAAI, 2018. [Online]. Available:
+  \url{https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17150}
+\BIBentrySTDinterwordspacing
+
+\bibitem{NIPS2015_5647}
+M.~Courbariaux, Y.~Bengio, and J.-P. David, ``Binaryconnect: Training deep
+  neural networks with binary weights during propagations,'' in \emph{Advances
+  in Neural Information Processing Systems 28}, C.~Cortes, N.~D. Lawrence,
+  D.~D. Lee, M.~Sugiyama, and R.~Garnett, Eds.\hskip 1em plus 0.5em minus
+  0.4em\relax Curran Associates, Inc., 2015, pp. 3123--3131.
+
 \bibitem{NIPS2004_2744}
 \BIBentryALTinterwordspacing
 E.~Klein, R.~Mislovaty, I.~Kanter, A.~Ruttor, and W.~Kinzel, ``Synchronization
@@ -130,10 +161,30 @@ Q.~Lou and L.~Jiang, ``She: A fast and accurate deep neural network for
   \url{http://papers.nips.cc/paper/9194-she-a-fast-and-accurate-deep-neural-network-for-encrypted-data.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{861518}
+{Tai-Wen Yue} and {Suchen Chiang}, ``A neural network approach for visual
+  cryptography,'' in \emph{Proceedings of the IEEE-INNS-ENNS International
+  Joint Conference on Neural Networks. IJCNN 2000. Neural Computing: New
+  Challenges and Perspectives for the New Millennium}, vol.~5, July 2000, pp.
+  494--499 vol.5.
+
+\bibitem{YU2006333}
+\BIBentryALTinterwordspacing
+W.~Yu and J.~Cao, ``Cryptography based on delayed chaotic neural networks,''
+  \emph{Physics Letters A}, vol. 356, no.~4, pp. 333 -- 338, 2006. [Online].
+  Available:
+  \url{http://www.sciencedirect.com/science/article/pii/S037596010600510X}
+\BIBentrySTDinterwordspacing
+
 \bibitem{6979219}
 F.~{B{\"u}sching} and L.~{Wolf}, ``The rebirth of one-time pads---secure data
   transmission from ban to sink,'' \emph{IEEE Internet of Things Journal},
   vol.~2, no.~1, pp. 63--71, Feb 2015.
+
+\bibitem{Soudry2014ExpectationBP}
+D.~Soudry, I.~Hubara, and R.~Meir, ``Expectation backpropagation:
+  Parameter-free training of multilayer neural networks with continuous or
+  discrete weights,'' in \emph{NIPS}, 2014.
 
 \bibitem{SurveyCrypto}
 S.~K.~G. Omar G.~Abood, ``A survey on cryptography algorithms,'' in
@@ -183,6 +234,34 @@ J.~Katz and Y.~Lindell, \emph{Introduction to modern cryptography}, ser.
   \url{https://books.google.ca/books?id=WIc\_AQAAIAAJ}
 \BIBentrySTDinterwordspacing
 
+\bibitem{CommTheoryShannon}
+C.~Shannon, ``Communication theory and secrecy systems,'' \emph{Bell system
+  Technical Journal}, vol.~28, no.~4, pp. 656--715, 1949 1949.
+
+\bibitem{10.1371/journal.pone.0203434}
+\BIBentryALTinterwordspacing
+A.~Kaso, ``Computation of the normalized cross-correlation by fast fourier
+  transform,'' \emph{PLOS ONE}, vol.~13, no.~9, pp. 1--16, 09 2018. [Online].
+  Available: \url{https://doi.org/10.1371/journal.pone.0203434}
+\BIBentrySTDinterwordspacing
+
+\bibitem{AES-NIST}
+J.~R. N. J. F. L. E. B. E. R. J. F. D.~J. Morris J.~Dworkin, Elaine B.~Barker,
+  ``Advanced encryption standard (aes),'' \emph{Federal Inf. Process. Stds.
+  (NIST FIPS)}, vol. 197, p.~47, Nov 2001.
+
+\bibitem{NIPS2019_8736}
+\BIBentryALTinterwordspacing
+X.~Sun, J.~Choi, C.-Y. Chen, N.~Wang, S.~Venkataramani, V.~V. Srinivasan,
+  X.~Cui, W.~Zhang, and K.~Gopalakrishnan, ``Hybrid 8-bit floating point (hfp8)
+  training and inference for deep neural networks,'' in \emph{Advances in
+  Neural Information Processing Systems 32}, H.~Wallach, H.~Larochelle,
+  A.~Beygelzimer, F.~Alch\'{e}-Buc, E.~Fox, and R.~Garnett, Eds.\hskip 1em plus
+  0.5em minus 0.4em\relax Curran Associates, Inc., 2019, pp. 4900--4909.
+  [Online]. Available:
+  \url{http://papers.nips.cc/paper/8736-hybrid-8-bit-floating-point-hfp8-training-and-inference-for-deep-neural-networks.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{8977877}
 R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
   through harnessing fpga capabilities,'' in \emph{2019 International
@@ -190,21 +269,6 @@ R.~{Valencia}, C.~W. {Sham}, and O.~{Sinnen}, ``Evolved binary neural networks
 
 \bibitem{csde-FPGA}
 R.~{Valencia} and C.~{Sham}, ``Fpga deployment of neuroevolved binary neural
-  networks,'' in \emph{2020 IEEE Asia-Pacific Conference on Computer Science
-  and Data Engineering (CSDE)}, Dec 2020.
-
-\bibitem{10.1145/3377929.3389933}
-\BIBentryALTinterwordspacing
-R.~H.~V. Tenorio, C.~W. Sham, and D.~V. Vargas, ``Preliminary study of applied
-  binary neural networks for neural cryptography,'' in \emph{Proceedings of the
-  2020 Genetic and Evolutionary Computation Conference Companion}, ser. GECCO
-  '20.\hskip 1em plus 0.5em minus 0.4em\relax New York, NY, USA: Association
-  for Computing Machinery, 2020, pp. 291--292. [Online]. Available:
-  \url{https://doi.org/10.1145/3377929.3389933}
-\BIBentrySTDinterwordspacing
-
-\bibitem{csde-ANE}
-R.~{Valencia} and C.~{Sham}, ``Adversarial neuro encoding with binary neural
   networks,'' in \emph{2020 IEEE Asia-Pacific Conference on Computer Science
   and Data Engineering (CSDE)}, Dec 2020.
 
