@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3431920.3439296,
+author = {Zhang, Yichi and Pan, Junhao and Liu, Xinheng and Chen, Hongzheng and Chen, Deming and Zhang, Zhiru},
+title = {FracBNN: Accurate and FPGA-Efficient Binary Neural Networks with Fractional Activations},
+year = {2021},
+isbn = {9781450382182},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3431920.3439296},
+doi = {10.1145/3431920.3439296},
+abstract = {Binary neural networks (BNNs) have 1-bit weights and activations. Such networks are well suited for FPGAs, as their dominant computations are bitwise arithmetic and the memory requirement is also significantly reduced. However, compared to start-of-the-art compact convolutional neural network (CNN) models, BNNs tend to produce a much lower accuracy on realistic datasets such as ImageNet. In addition, the input layer of BNNs has gradually become a major compute bottleneck, because it is conventionally excluded from binarization to avoid a large accuracy loss.This work proposes FracBNN, which exploits fractional activations to substantially improve the accuracy of BNNs. Specifically, our approach employs a dual-precision activation scheme to compute features with up to two bits, using an additional sparse binary convolution. We further binarize the input layer using a novel thermometer encoding. Overall, FracBNN preserves the key benefits of conventional BNNs, where all convolutional layers are computed in pure binary MAC operations (BMACs). We design an efficient FPGA-based accelerator for our novel BNN model that supports the fractional activations. To evaluate the performance of FracBNN under a resource-constrained scenario, we implement the entire optimized network architecture on an embedded FPGA (Xilinx Ultra96 v2). Our experiments on ImageNet show that FracBNN achieves an accuracy comparable to MobileNetV2, surpassing the best-known BNN design on FPGAs with an increase of 28.9% in top-1 accuracy and a 2.5x reduction in model size. FracBNN also outperforms a recently introduced BNN model with an increase of 2.4% in top-1 accuracy while using the same model size. On the embedded FPGA device, FracBNN demonstrates the ability of real-time image classification.},
+booktitle = {The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+pages = {171–182},
+numpages = {12},
+keywords = {FPGA accelerators, binary neural networks, deep learning, high-level synthesis},
+location = {Virtual Event, USA},
+series = {FPGA '21}
+}

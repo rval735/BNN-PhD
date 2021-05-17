@@ -1,0 +1,19 @@
+TY  - JOUR
+A2  - Cardoso, João
+AU  - da Silva, Bruno
+AU  - Braeken, An
+AU  - D’Hollander, Erik H.
+AU  - Touhafi, Abdellah
+PY  - 2013
+DA  - 2013/12/26
+TI  - Performance Modeling for FPGAs: Extending the Roofline Model with High-Level Synthesis Tools
+SP  - 428078
+VL  - 2013
+AB  -         The potential of FPGAs as accelerators for high-performance computing applications is very large, but many factors are involved in their performance. The design for FPGAs and the selection of the proper optimizations when mapping computations to FPGAs lead to prohibitively long developing time. Alternatives are the high-level synthesis (HLS) tools, which promise a fast design space exploration due to design at high-level or analytical performance models which provide realistic performance expectations, potential impediments to performance, and optimization guidelines. In this paper we propose the combination of both, in order to construct a performance model for FPGAs which is able to visually condense all the helpful information for the designer. Our proposed model extends the roofline model, by considering the resource consumption and the parameters used in the HLS tools, to maximize the performance and the resource utilization within the area of the FPGA. The proposed model is applied to optimize the design exploration of a class of window-based image processing applications using two different HLS tools. The results show the accuracyof the model as well as its flexibility to be combined with any HLS tool.
+SN  - 1687-7195
+UR  - https://doi.org/10.1155/2013/428078
+DO  - 10.1155/2013/428078
+JF  - International Journal of Reconfigurable Computing
+PB  - Hindawi Publishing Corporation
+KW  - 
+ER  - 
