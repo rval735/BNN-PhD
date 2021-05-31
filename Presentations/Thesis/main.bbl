@@ -439,6 +439,74 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{10.1145/3205455.3205517}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=VV}{%
+         family={Volz},
+         familyi={V\bibinitperiod},
+         given={Vanessa},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schrum},
+         familyi={S\bibinitperiod},
+         given={Jacob},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Jialin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LSM}{%
+         family={Lucas},
+         familyi={L\bibinitperiod},
+         given={Simon\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Risi},
+         familyi={R\bibinitperiod},
+         given={Sebastian},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Association for Computing Machinery}%
+    }
+    \keyw{DCGAN, generative adversarial network, CMA-ES, procedural content
+  generation, mario, game}
+    \strng{namehash}{VV+1}
+    \strng{fullhash}{VVSJLJLSMSARS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Genetic and Evolutionary Computation
+  Conference}
+    \verb{doi}
+    \verb 10.1145/3205455.3205517
+    \endverb
+    \field{isbn}{9781450356183}
+    \field{pages}{221\bibrangedash 228}
+    \field{series}{GECCO '18}
+    \field{title}{Evolving Mario Levels in the Latent Space of a Deep
+  Convolutional Generative Adversarial Network}
+    \verb{url}
+    \verb https://doi.org/10.1145/3205455.3205517
+    \endverb
+    \list{location}{1}{%
+      {Kyoto, Japan}%
+    }
+    \field{year}{2018}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{s18051306}{article}{}
     \name{author}{5}{}{%
       {{hash=CM}{%
@@ -2314,7 +2382,7 @@
     \list{publisher}{1}{%
       {Springer Berlin Heidelberg}%
     }
-    \keyw{Book, Neurocryptography, DES,}
+    \keyw{Books, Neurocryptography, DES}
     \strng{namehash}{AMM1}
     \strng{fullhash}{AMM1}
     \field{labelnamesource}{author}
@@ -2507,44 +2575,43 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{csde-FPGA}{inproceedings}{}
+  \entry{9411568}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=VR}{%
-         family={{Valencia}},
+         family={Valencia},
          familyi={V\bibinitperiod},
          given={R.},
          giveni={R\bibinitperiod},
       }}%
       {{hash=SC}{%
-         family={{Sham}},
+         family={Sham},
          familyi={S\bibinitperiod},
          given={C.},
          giveni={C\bibinitperiod},
       }}%
     }
-    \keyw{BiSUNA, FPGA, U50, Xilinx}
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \keyw{FPGA-NN, BiSUNA, deep learning;training;switches;reinforcement
+  learning;programmable logic arrays;tools;parallel processing}
     \strng{namehash}{VRSC1}
     \strng{fullhash}{VRSC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Deep Learning has reached a prominent area of research thanks to advances
-  in semiconductor technologies, with Deep Neural Network (DNN) as the pivot of
-  change. It is capable of solving complex multi-dimensional problems. This
-  paper focuses on one particular example, the Binary Neural Network (BNN): it
-  uses fixed-length bits in its connections and logic functions to perform
-  excitation operations, reducing memory requirements. The conventional use of
-  Field Programmable Gate Arrays (FPGAs) dictates inference only of deep
-  learning networks. This publication demonstrates how the algorithm Binary
-  Spectrum-diverse Unified Neuroevolution Architecture (BiSUNA) can perform
-  training and inference on FPGA by dismissing gradient descent, solving
-  reinforcement learning and reaching maximum parallelism and energy
-  efficiency, up to 16\% faster compared to a CPU. Source code can be found in
-  github.com/rval735/bisunaU50.%
-    }
     \field{booktitle}{2020 IEEE Asia-Pacific Conference on Computer Science and
   Data Engineering (CSDE)}
+    \verb{doi}
+    \verb 10.1109/CSDE50874.2020.9411568
+    \endverb
+    \field{pages}{1\bibrangedash 6}
     \field{title}{FPGA deployment of neuroevolved Binary Neural Networks}
+    \verb{url}
+    \verb https://doi.ieeecomputersociety.org/10.1109/CSDE50874.2020.9411568
+    \endverb
+    \list{location}{1}{%
+      {Los Alamitos, CA, USA}%
+    }
     \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -2600,43 +2667,43 @@
     \warn{\item Can't use 'location' + 'address'}
   \endentry
 
-  \entry{csde-ANE}{inproceedings}{}
+  \entry{9411537}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=VR}{%
-         family={{Valencia}},
+         family={Valencia},
          familyi={V\bibinitperiod},
          given={R.},
          giveni={R\bibinitperiod},
       }}%
       {{hash=SC}{%
-         family={{Sham}},
+         family={Sham},
          familyi={S\bibinitperiod},
          given={C.},
          giveni={C\bibinitperiod},
       }}%
     }
-    \keyw{Binary Neural Network, BiSUNA, CPA, Adversarial Neurocryptography,
-  Neuroevolution}
+    \list{publisher}{1}{%
+      {IEEE Computer Society}%
+    }
+    \keyw{BNN, BiSUNA, training;visualization;image coding;neural
+  networks;sociology;reinforcement learning;encoding}
     \strng{namehash}{VRSC1}
     \strng{fullhash}{VRSC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Adversarial neuro encoding could provide new insights for ciphering
-  information with different perspectives. Nevertheless, it is still
-  underexplored with a handful of publications on the subject. This work
-  proposes the implementation of neuroevolved binary neural networks based on
-  boolean logic functions only (BiSUNA) that apply payload ciphering between
-  two agents to disperse information from an observer. The BiSUNA framework
-  provides three distinctive attributions: it uses an adversarial neural
-  encoding environment to improve the system data transmission; one execution
-  yields a diversity of results given its population heuristics; lastly, it is
-  an unconventional proposal to employ binary neural networks for the solution
-  of symmetric ciphered problems.%
-    }
     \field{booktitle}{2020 IEEE Asia-Pacific Conference on Computer Science and
   Data Engineering (CSDE)}
+    \verb{doi}
+    \verb 10.1109/CSDE50874.2020.9411537
+    \endverb
+    \field{pages}{1\bibrangedash 5}
     \field{title}{Adversarial Neuro Encoding with Binary Neural Networks}
+    \verb{url}
+    \verb https://doi.ieeecomputersociety.org/10.1109/CSDE50874.2020.9411537
+    \endverb
+    \list{location}{1}{%
+      {Los Alamitos, CA, USA}%
+    }
     \field{year}{2020}
     \warn{\item Invalid format of field 'month'}
   \endentry
@@ -3382,7 +3449,7 @@
     \list{publisher}{1}{%
       {Pearson}%
     }
-    \keyw{Book, AI, ML, Unsupervised learning}
+    \keyw{Books, AI, ML, Unsupervised learning}
     \strng{namehash}{RSNP1}
     \strng{fullhash}{RSNP1}
     \field{labelnamesource}{author}
@@ -4264,6 +4331,70 @@
   Networks Via Continuous Binarization}
     \field{year}{2018}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Strens:2000:BFR:645529.658114}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=SMJA}{%
+         family={Strens},
+         familyi={S\bibinitperiod},
+         given={Malcolm J.\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+    }
+    \keyw{NN, Reinforcement Learning, OpenAI Gym}
+    \strng{namehash}{SMJA1}
+    \strng{fullhash}{SMJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Seventeenth International Conference
+  on Machine Learning}
+    \field{isbn}{1-55860-707-2}
+    \field{pages}{943\bibrangedash 950}
+    \field{series}{ICML '00}
+    \field{title}{A Bayesian Framework for Reinforcement Learning}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=645529.658114
+    \endverb
+    \field{annotation}{%
+    Publisher Morgan Kaufmann Publishers Inc. Address San Francisco, CA, USA%
+    }
+    \field{year}{2000}
+  \endentry
+
+  \entry{Dietterich:2000:HRL:1622262.1622268}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DTG}{%
+         family={Dietterich},
+         familyi={D\bibinitperiod},
+         given={Thomas\bibnamedelima G.},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {AI Access Foundation}%
+    }
+    \keyw{NN, OpenAI Gym, Reinforcement Learning}
+    \strng{namehash}{DTG1}
+    \strng{fullhash}{DTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{issn}{1076-9757}
+    \field{number}{1}
+    \field{pages}{227\bibrangedash 303}
+    \field{title}{Hierarchical Reinforcement Learning with the MAXQ Value
+  Function Decomposition}
+    \verb{url}
+    \verb http://dl.acm.org/citation.cfm?id=1622262.1622268
+    \endverb
+    \field{volume}{13}
+    \list{location}{1}{%
+      {USA}%
+    }
+    \field{journaltitle}{J. Artif. Int. Res.}
+    \field{month}{11}
+    \field{year}{2000}
   \endentry
 
   \entry{978-1-4842-5126-3}{book}{}
@@ -6236,7 +6367,7 @@
     \list{publisher}{1}{%
       {Springer International Publishing}%
     }
-    \keyw{Book, Evolutionary, CGP, TWEANN,}
+    \keyw{Books, Evolutionary, CGP, TWEANN}
     \strng{namehash}{TAJMJF1}
     \strng{fullhash}{TAJMJF1}
     \field{labelnamesource}{author}
@@ -6887,6 +7018,99 @@
     \field{year}{2017}
   \endentry
 
+  \entry{10.7554/eLife.61277}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GR}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=vdBRL}{%
+         prefix={van\bibnamedelima den},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Brink},
+         familyi={B\bibinitperiod},
+         given={Ruud\bibnamedelima L},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pfeffer},
+         familyi={P\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VB}{%
+         family={Voytek},
+         familyi={V\bibinitperiod},
+         given={Bradley},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=VM}{%
+         family={Vinck},
+         familyi={V\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CLL}{%
+         family={Colgin},
+         familyi={C\bibinitperiod},
+         given={Laura\bibnamedelima L},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Womelsdorf},
+         familyi={W\bibinitperiod},
+         given={Thilo},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {eLife Sciences Publications, Ltd}%
+    }
+    \keyw{Other, neuronal timescales, cortical gradients, functional
+  specialization, transcriptomics, spectral analysis}
+    \strng{namehash}{GR+1}
+    \strng{fullhash}{GRBRLvdPTVB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Complex cognitive functions such as working memory and decision-making
+  require information maintenance over seconds to years, from transient sensory
+  stimuli to long-term contextual cues. While theoretical accounts predict the
+  emergence of a corresponding hierarchy of neuronal timescales, direct
+  electrophysiological evidence across the human cortex is lacking. Here, we
+  infer neuronal timescales from invasive intracranial recordings. Timescales
+  increase along the principal sensorimotor-to-association axis across the
+  entire human cortex, and scale with single-unit timescales within macaques.
+  Cortex-wide transcriptomic analysis shows direct alignment between timescales
+  and expression of excitation- and inhibition-related genes, as well as genes
+  specific to voltage-gated transmembrane ion transporters. Finally, neuronal
+  timescales are functionally dynamic: prefrontal cortex timescales expand
+  during working memory maintenance and predict individual performance, while
+  cortex-wide timescales compress with aging. Thus, neuronal timescales follow
+  cytoarchitectonic gradients across the human cortex and are relevant for
+  cognition in both short and long terms, bridging microcircuit physiology with
+  macroscale dynamics and behavior.%
+    }
+    \verb{doi}
+    \verb 10.7554/eLife.61277
+    \endverb
+    \field{issn}{2050-084X}
+    \field{pages}{e61277}
+    \field{title}{Neuronal timescales are functionally dynamic and shaped by
+  cortical microarchitecture}
+    \verb{url}
+    \verb https://doi.org/10.7554/eLife.61277
+    \endverb
+    \field{volume}{9}
+    \field{journaltitle}{eLife}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{5678632}{article}{}
     \name{author}{2}{}{%
       {{hash=OCO}{%
@@ -7040,6 +7264,61 @@
     \field{journaltitle}{Proceedings of the IEEE}
     \field{year}{2014}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{10.3389/fnhum.2013.00887}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NR}{%
+         family={Nudo},
+         familyi={N\bibinitperiod},
+         given={Randolph},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Other, Neuroscience, Brain, synaptic plasticity}
+    \strng{namehash}{NR1}
+    \strng{fullhash}{NR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    The past 20 years have represented an important period in the development
+  of principles underlying neuroplasticity, especially as they apply to
+  recovery from neurological injury. It is now generally accepted that acquired
+  brain injuries, such as occur in stroke or trauma, initiate a cascade of
+  regenerative events that last for at least several weeks, if not months. Many
+  investigators have pointed out striking parallels between post-injury
+  plasticity and the molecular and cellular events that take place during
+  normal brain development. As evidence for the principles and mechanisms
+  underlying post-injury neuroplasticity has been gleaned from both animal
+  models and human populations, novel approaches to therapeutic intervention
+  have been proposed. One important theme has persisted as the sophistication
+  of clinicians and scientists in their knowledge of neuroplasticity mechanisms
+  has grown: behavioral experience is the most potent modulator of brain
+  plasticity. While there is substantial evidence for this principle in normal,
+  healthy brains, the injured brain is particularly malleable. Based on the
+  quantity and quality of motor experience, the brain can be reshaped after
+  injury in either adaptive or maladaptive ways. This paper reviews selected
+  studies that have demonstrated the neurophysiological and neuroanatomical
+  changes that are triggered by motor experience, by injury, and the
+  interaction of these processes. In addition, recent studies using new and
+  elegant techniques are providing novel perspectives on the events that take
+  place in the injured brain, providing a real-time window into post-injury
+  plasticity. These new approaches are likely to accelerate the pace of basic
+  research, and provide a wealth of opportunities to translate basic principles
+  into therapeutic methodologies.%
+    }
+    \verb{doi}
+    \verb 10.3389/fnhum.2013.00887
+    \endverb
+    \field{issn}{1662-5161}
+    \field{pages}{887}
+    \field{title}{Recovery after brain injury: mechanisms and principles}
+    \verb{url}
+    \verb https://www.frontiersin.org/article/10.3389/fnhum.2013.00887
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Frontiers in Human Neuroscience}
+    \field{year}{2013}
   \endentry
 
   \entry{6215974}{inproceedings}{}
@@ -7405,6 +7684,24 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{oaiBaseline-Github}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OpenAI},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \keyw{OpenAI Gym, Baselines, Github}
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Baselines}
+    \verb{url}
+    \verb https://github.com/openai/baselines
+    \endverb
+  \endentry
+
   \entry{gRPCPage}{online}{}
     \name{author}{1}{}{%
       {{hash=FL}{%
@@ -7540,36 +7837,6 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{Strens:2000:BFR:645529.658114}{inproceedings}{}
-    \name{author}{1}{}{%
-      {{hash=SMJA}{%
-         family={Strens},
-         familyi={S\bibinitperiod},
-         given={Malcolm J.\bibnamedelima A.},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
-  A\bibinitperiod},
-      }}%
-    }
-    \keyw{NN, Reinforcement Learning, OpenAI Gym}
-    \strng{namehash}{SMJA1}
-    \strng{fullhash}{SMJA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Proceedings of the Seventeenth International Conference
-  on Machine Learning}
-    \field{isbn}{1-55860-707-2}
-    \field{pages}{943\bibrangedash 950}
-    \field{series}{ICML '00}
-    \field{title}{A Bayesian Framework for Reinforcement Learning}
-    \verb{url}
-    \verb http://dl.acm.org/citation.cfm?id=645529.658114
-    \endverb
-    \field{annotation}{%
-    Publisher Morgan Kaufmann Publishers Inc. Address San Francisco, CA, USA%
-    }
-    \field{year}{2000}
-  \endentry
-
   \entry{nchainv0OpenAI}{online}{}
     \name{author}{1}{}{%
       {{hash=b}{%
@@ -7627,24 +7894,6 @@
     \field{year}{2016}
   \endentry
 
-  \entry{oaiBaseline-Github}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=O}{%
-         family={OpenAI},
-         familyi={O\bibinitperiod},
-      }}%
-    }
-    \keyw{OpenAI Gym, Baselines, Github}
-    \strng{namehash}{O1}
-    \strng{fullhash}{O1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Baselines}
-    \verb{url}
-    \verb https://github.com/openai/baselines
-    \endverb
-  \endentry
-
   \entry{BiSUNAOCLGithub}{online}{}
     \name{author}{1}{}{%
       {{hash=VR}{%
@@ -7666,26 +7915,6 @@
     \field{year}{2019}
     \warn{\item Invalid format of field 'month' \item Invalid format of field
   'urldate'}
-  \endentry
-
-  \entry{OpenVINOStarterKit}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=T}{%
-         family={Terasic},
-         familyi={T\bibinitperiod},
-      }}%
-    }
-    \keyw{Terasic, OpenVINO, FPGA}
-    \strng{namehash}{T1}
-    \strng{fullhash}{T1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Starter Platform for OpenVINO{\texttrademark} Toolkit}
-    \verb{url}
-    \verb https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&C
-    \verb ategoryNo=167&No=1159
-    \endverb
-    \field{urlyear}{2013}
   \endentry
 
   \entry{Moussa2006}{inbook}{}
@@ -8750,6 +8979,25 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{alveoU50}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=X}{%
+         family={Xilinx},
+         familyi={X\bibinitperiod},
+      }}%
+    }
+    \keyw{WebPage, Xilinx, FPGA, Alveo U50}
+    \strng{namehash}{X1}
+    \strng{fullhash}{X1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Alveo U50}
+    \verb{url}
+    \verb https://www.xilinx.com/products/boards-and-kits/alveo/u50.html
+    \endverb
+    \field{year}{2020}
+  \endentry
+
   \entry{bisunaU50Git}{misc}{}
     \name{author}{1}{}{%
       {{hash=VR}{%
@@ -8771,61 +9019,6 @@
     \field{year}{2020}
   \endentry
 
-  \entry{alveoU50}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=X}{%
-         family={Xilinx},
-         familyi={X\bibinitperiod},
-      }}%
-    }
-    \keyw{WebPage, Xilinx, FPGA, Alveo U50}
-    \strng{namehash}{X1}
-    \strng{fullhash}{X1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Alveo U50}
-    \verb{url}
-    \verb https://www.xilinx.com/products/boards-and-kits/alveo/u50.html
-    \endverb
-    \field{year}{2020}
-  \endentry
-
-  \entry{nimbixAlveo}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=N}{%
-         family={Nimbix},
-         familyi={N\bibinitperiod},
-      }}%
-    }
-    \keyw{Webpage, Cloud, Numbix, FPGA}
-    \strng{namehash}{N1}
-    \strng{fullhash}{N1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{Alveo FPGA}
-    \verb{url}
-    \verb https://www.nimbix.net/alveo
-    \endverb
-    \field{year}{2020}
-  \endentry
-
-  \entry{awsF1}{online}{}
-    \name{author}{1}{}{%
-      {{hash=SAW}{%
-         family={Services},
-         familyi={S\bibinitperiod},
-         given={Amazon\bibnamedelima Web},
-         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \keyw{Webpage, AWS F1, FPGA, Xilinx}
-    \strng{namehash}{SAW1}
-    \strng{fullhash}{SAW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{title}{AWS F1 instance}
-  \endentry
-
   \entry{OpenCL-In-Action}{book}{}
     \name{author}{1}{}{%
       {{hash=SM}{%
@@ -8838,7 +9031,7 @@
     \list{publisher}{1}{%
       {Manning}%
     }
-    \keyw{OpenCL, Book}
+    \keyw{OpenCL, Books}
     \strng{namehash}{SM1}
     \strng{fullhash}{SM1}
     \field{labelnamesource}{author}
@@ -8921,65 +9114,6 @@
     \verb y-mutual-learning-and-its-application-to-cryptography.pdf
     \endverb
     \field{year}{2005}
-  \endentry
-
-  \entry{1133}{inproceedings}{}
-    \name{author}{6}{}{%
-      {{hash=RMS}{%
-         family={Riazi},
-         familyi={R\bibinitperiod},
-         given={M.\bibnamedelima Sadegh},
-         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Samragh},
-         familyi={S\bibinitperiod},
-         given={Mohammad},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=CH}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={Hao},
-         giveni={H\bibinitperiod},
-      }}%
-      {{hash=LK}{%
-         family={Laine},
-         familyi={L\bibinitperiod},
-         given={Kim},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=LK}{%
-         family={Lauter},
-         familyi={L\bibinitperiod},
-         given={Kristin},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=KF}{%
-         family={Koushanfar},
-         familyi={K\bibinitperiod},
-         given={Farinaz},
-         giveni={F\bibinitperiod},
-      }}%
-    }
-    \list{organization}{1}{%
-      {USENIX}%
-    }
-    \list{publisher}{1}{%
-      {USENIX}%
-    }
-    \keyw{Crypto, Homomorphic encryption, BNN, Cryptography and Security}
-    \strng{namehash}{RMS+1}
-    \strng{fullhash}{RMSSMCHLKLKKF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{USENIX Security}
-    \field{title}{XONN: XNOR-based Oblivious Deep Neural Network Inference}
-    \verb{url}
-    \verb https://arxiv.org/pdf/1902.07342.pdf
-    \endverb
-    \field{year}{2019}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{NIPS2019_9194}{incollection}{}
@@ -9145,6 +9279,65 @@
     \field{volume}{356}
     \field{journaltitle}{Physics Letters A}
     \field{year}{2006}
+  \endentry
+
+  \entry{1133}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=RMS}{%
+         family={Riazi},
+         familyi={R\bibinitperiod},
+         given={M.\bibnamedelima Sadegh},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Samragh},
+         familyi={S\bibinitperiod},
+         given={Mohammad},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Hao},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Laine},
+         familyi={L\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lauter},
+         familyi={L\bibinitperiod},
+         given={Kristin},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Koushanfar},
+         familyi={K\bibinitperiod},
+         given={Farinaz},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {USENIX}%
+    }
+    \list{publisher}{1}{%
+      {USENIX}%
+    }
+    \keyw{Crypto, Homomorphic encryption, BNN, Cryptography and Security}
+    \strng{namehash}{RMS+1}
+    \strng{fullhash}{RMSSMCHLKLKKF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{USENIX Security}
+    \field{title}{XONN: XNOR-based Oblivious Deep Neural Network Inference}
+    \verb{url}
+    \verb https://arxiv.org/pdf/1902.07342.pdf
+    \endverb
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{AAAI1817150}{inproceedings}{}
@@ -9835,6 +10028,201 @@
     \verb https://randomness-tests.fi.muni.cz/
     \endverb
     \field{year}{2014}
+  \endentry
+
+  \entry{10.1007/978-3-319-12060-7_18}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={S{\'y}s},
+         familyi={S\bibinitperiod},
+         given={Marek},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RZ}{%
+         family={{\v{R}}{\'\i}ha},
+         familyi={{\v{R}}\bibinitperiod},
+         given={Zden{\v{e}}k},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \name{editor}{3}{}{%
+      {{hash=CRS}{%
+         family={Chakraborty},
+         familyi={C\bibinitperiod},
+         given={Rajat\bibnamedelima Subhra},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Matyas},
+         familyi={M\bibinitperiod},
+         given={Vashek},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schaumont},
+         familyi={S\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \keyw{Other, NIST, STS}
+    \strng{namehash}{SMRZ1}
+    \strng{fullhash}{SMRZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Randomness testing plays an important role in cryptography. Randomness is
+  typically examined by batteries of statistical tests. One of the most
+  frequently used test batteries is the NIST Statistical Test Suite. The tests
+  of randomness should be rather fast since they usually process large volumes
+  of data. Unfortunately, this is not the case for the NIST STS, where a
+  complete test can take hours. Alternative implementations do exist, but are
+  not very efficient either or they do not focus on the most time-consuming
+  tests. We reimplemented all NIST STS tests and achieved interesting speedups
+  in most of the tests, including the tests with the highest time complexity.
+  Overall, our implementation runs 30 times faster than the original code.%
+    }
+    \field{booktitle}{Security, Privacy, and Applied Cryptography Engineering}
+    \field{isbn}{978-3-319-12060-7}
+    \field{pages}{272\bibrangedash 284}
+    \field{title}{Faster Randomness Testing with the NIST Statistical Test
+  Suite}
+    \list{location}{1}{%
+      {Cham}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{10.1007/978-3-662-44788-8_17}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SP}{%
+         family={{\v{S}}venda},
+         familyi={{\v{S}}\bibinitperiod},
+         given={Petr},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=UM}{%
+         family={Ukrop},
+         familyi={U\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Maty{\'a}{\v{s}}},
+         familyi={M\bibinitperiod},
+         given={Vashek},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=OMS}{%
+         family={Obaidat},
+         familyi={O\bibinitperiod},
+         given={Mohammad\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Filipe},
+         familyi={F\bibinitperiod},
+         given={Joaquim},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Berlin Heidelberg}%
+    }
+    \keyw{Books, Other, NIST, STS}
+    \strng{namehash}{SPUMMV1}
+    \strng{fullhash}{SPUMMV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    Cryptanalysis of a cryptographic function usually requires advanced
+  cryptanalytical skills and extensive amount of human labor with an option of
+  using randomness testing suites like STS NIST [1] or Dieharder [2]. These can
+  be applied to test statistical properties of cryptographic function outputs.
+  We propose a more open approach based on software circuit that acts as a
+  testing function automatically evolved by a stochastic optimization
+  algorithm. Information leaked during cryptographic function evaluation is
+  used to find a distinguisher [4] of outputs produced by 25 candidate
+  algorithms for eStream and SHA-3 competition from truly random sequences. We
+  obtained similar results (with some exceptions) as those produced by STS NIST
+  and Dieharder tests w.r.t. the number of rounds of the inspected algorithm.%
+    }
+    \field{booktitle}{E-Business and Telecommunications}
+    \field{isbn}{978-3-662-44788-8}
+    \field{pages}{290\bibrangedash 305}
+    \field{title}{Determining Cryptographic Distinguishers for eStream and
+  SHA-3 Candidate Functions with Evolutionary Circuits}
+    \list{location}{1}{%
+      {Berlin, Heidelberg}%
+    }
+    \field{year}{2014}
+  \endentry
+
+  \entry{R2020103041}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RL}{%
+         family={R},
+         familyi={R},
+         given={Lavanya},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={M},
+         familyi={M},
+         given={Karpagam},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{Crypto, NIST, AES, STS, Advanced Encryption Standard, Security, FPGA,
+  Avalanche effect, Randomness, NIST randomness testing, Obfuscation}
+    \strng{namehash}{RLMK1}
+    \strng{fullhash}{RLMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    With the advent of computers, networks, distributed systems and wireless
+  data transfer technologies, data communication is subjected to potential
+  threats and hence needs to be protected. Advanced Encryption Standard (AES)
+  is an efficient encryption algorithm used for secure wireless communication,
+  but its security is under threat due to different forms of theoretical and
+  practical attacks such as linear cryptanalysis, differential cryptanalysis,
+  boomerang attack, truncated differentials, hybrid attacks, related-key
+  distinguishing attack, and side channel attacks. This work is focused on
+  reducing the attacks by increasing the complexity of cryptanalysis through
+  small scale variations in the shift row transformation and key expansion unit
+  of the AES algorithm. The proposed small scale variations in the linear layer
+  of the cipher unit and in the word column of key expansion unit enhances
+  confusion during encryption. The inherent diffusion property of the algorithm
+  along with the proposed confusion characteristics allows us to increase the
+  overall security of the algorithm. The confusion and diffusion
+  characteristics of the modified algorithm are found to be higher in terms of
+  balance, Strict Avalanche Criterion and bit independence criteria. The AES
+  variants are also tested using NIST-800-22 statistical test suite for random
+  number generators, the small scale variations made in the architecture
+  provides a higher degree of randomness in the ciphertext thus increasing
+  cryptanalysis complexity. This paper also proposes an obfuscation control
+  unit that allows on-demand selection of the three AES variants resulting in a
+  variable encrypting pattern for a plaintext-key pair thus adding more
+  bottlenecks to the adversaries.%
+    }
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.micpro.2020.103041
+    \endverb
+    \field{issn}{0141-9331}
+    \field{pages}{103041}
+    \field{title}{Enhancing the security of AES through small scale confusion
+  operations for data communication}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0141933119306568
+    \endverb
+    \field{volume}{75}
+    \field{journaltitle}{Microprocessors and Microsystems}
+    \field{year}{2020}
   \endentry
 
   \entry{Schneier-Crypto}{misc}{}
