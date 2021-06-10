@@ -9044,6 +9044,106 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{FPGA-Roofline}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=YMP}{%
+         family={Yali},
+         familyi={Y\bibinitperiod},
+         given={Moein\bibnamedelima Pahlavan},
+         giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{Book, Embedded systems, FPGA, roofline model, performance analysis
+  tools}
+    \strng{namehash}{YMP1}
+    \strng{fullhash}{YMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{FPGA-Roofline: An Insightful Model for FPGA-based Hardware
+  Accelerators in Modern Embedded Systems}
+    \list{institution}{2}{%
+      {Virgina Polytechnic Institute}%
+      {State University}%
+    }
+    \field{type}{Masters}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{muralidharan2015semi}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MS}{%
+         family={Muralidharan},
+         familyi={M\bibinitperiod},
+         given={Servesh},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=OK}{%
+         family={O'Brien},
+         familyi={O\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lalanne},
+         familyi={L\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{FPGA, Roofline Analysis, High Performance Computing}
+    \strng{namehash}{MSOKLC1}
+    \strng{fullhash}{MSOKLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{First International Workshop on Heterogeneous
+  High-performance Reconfigurable Computing}
+    \field{title}{A Semi-Automated Tool Flow for Roofline Anaylsis of OpenCL
+  Kernels on Accelerators}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Price:2015:OEO:2791321.2791333}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=PJ}{%
+         family={Price},
+         familyi={P\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MSS}{%
+         family={McIntosh-Smith},
+         familyi={M\bibinithyphendelim S\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Other, Github, GPGPU, OpenCL, SPIR, debugging, simulation}
+    \strng{namehash}{PJMSS1}
+    \strng{fullhash}{PJMSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the 3rd International Workshop on OpenCL}
+    \verb{doi}
+    \verb 10.1145/2791321.2791333
+    \endverb
+    \field{isbn}{978-1-4503-3484-6}
+    \field{pages}{12:1\bibrangedash 12:7}
+    \field{series}{IWOCL '15}
+    \field{title}{Oclgrind: An Extensible OpenCL Device Simulator}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/2791321.2791333
+    \endverb
+    \list{location}{1}{%
+      {Palo Alto, California}%
+    }
+    \field{year}{2015}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{NIPS2004_2744}{incollection}{}
     \name{author}{5}{}{%
       {{hash=KE}{%
