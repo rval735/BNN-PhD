@@ -1,365 +1,888 @@
-\begin{thebibliography}{43}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\bibitem[{nee(2016)}]{needle-python}
- 2016.
-\newblock Needle Deep RL Examples.
-\newblock \urlprefix\url{https://github.com/roosephu/needle}.
+\begin{thebibliography}{53}
 
-\bibitem[{{Angeline}, {Saunders}, and {Pollack}(1994)}]{265960}
-{Angeline}, P.~J.; {Saunders}, G.~M.; and {Pollack}, J.~B. 1994.
-\newblock An evolutionary algorithm that constructs recurrent neural networks.
-\newblock \emph{IEEE Transactions on Neural Networks} 5(1): 54--65.
-\newblock ISSN 1941-0093.
-\newblock \doi{10.1109/72.265960}.
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
 
-\bibitem[{{Bhargavaram} and {Pillai}(2012)}]{6215974}
-{Bhargavaram}, D.; and {Pillai}, M. G.~K. 2012.
-\newblock Low power dual edge triggered flip-flop.
-\newblock In \emph{IEEE-International Conference On Advances In Engineering,
-  Science And Management (ICAESM -2012)}, 63--67.
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
 
-\bibitem[{{Brockman} et~al.(2016){Brockman}, {Cheung}, {Pettersson},
-  {Schneider}, {Schulman}, {Tang}, and {Zaremba}}]{2016arXiv160601540B}
-{Brockman}, G.; {Cheung}, V.; {Pettersson}, L.; {Schneider}, J.; {Schulman},
-  J.; {Tang}, J.; and {Zaremba}, W. 2016.
-\newblock {OpenAI Gym}.
-\newblock \emph{arXiv e-prints} .
-
-\bibitem[{Chen and Alahakoon(2006)}]{4250190}
-Chen, L.; and Alahakoon, D. 2006.
-\newblock NeuroEvolution of Augmenting Topologies with Learning for Data
-  Classification.
-\newblock In \emph{2006 International Conference on Information and
-  Automation}, 367--371.
-\newblock ISSN 2151-1802.
-\newblock \doi{10.1109/ICINFA.2006.374100}.
-
-\bibitem[{Danilo~{Vargas}(2017)}]{7460958}
-Danilo~{Vargas}, J.~M. 2017.
-\newblock Spectrum-Diverse Neuroevolution With Unified Neural Models.
-\newblock \emph{IEEE Transactions on Neural Networks and Learning Systems}
-  28(8): 1759--1773.
-\newblock ISSN 2162-237X.
-\newblock \doi{10.1109/TNNLS.2016.2551748}.
-
-\bibitem[{Deng et~al.(2018)Deng, Jiao, Pei, Wu, and Li}]{DENG201849}
-Deng, L.; Jiao, P.; Pei, J.; Wu, Z.; and Li, G. 2018.
-\newblock GXNOR-Net: Training deep neural networks with ternary weights and
-  activations without full-precision memory under a unified discretization
-  framework.
-\newblock \emph{Neural Networks} 100: 49 -- 58.
-\newblock ISSN 0893-6080.
-\newblock \doi{https://doi.org/10.1016/j.neunet.2018.01.010}.
+\bibitem[\protect\citeauthoryear{{Angeline}, {Saunders}, and
+  {Pollack}}{{Angeline} et~al\mbox{.}}{1994}]%
+        {265960}
+\bibfield{author}{\bibinfo{person}{P.~J. {Angeline}}, \bibinfo{person}{G.~M.
+  {Saunders}}, {and} \bibinfo{person}{J.~B. {Pollack}}.}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{An evolutionary algorithm that constructs recurrent
+  neural networks}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Neural Networks}}
+  \bibinfo{volume}{5}, \bibinfo{number}{1} (\bibinfo{date}{Jan}
+  \bibinfo{year}{1994}), \bibinfo{pages}{54--65}.
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0893608018300108}.
+\showISSN{1941-0093}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/72.265960}
+\showDOI{\tempurl}
 
-\bibitem[{Fogel, Owens, and Walsh(1965)}]{6591252}
-Fogel, L.~J.; Owens, A.~J.; and Walsh, M.~J. 1965.
-\newblock Intelligent decision-making through a simulation of evolution.
-\newblock \emph{IEEE Transactions on Human Factors in Electronics} HFE-6(1):
-  13--23.
-\newblock ISSN 0096-249X.
-\newblock \doi{10.1109/THFE.1965.6591252}.
 
-\bibitem[{Foundation(2020)}]{gRPCPage}
-Foundation, L. 2020.
-\newblock gRPC.
-\newblock \urlprefix\url{https://grpc.io}.
-
-\bibitem[{Gomez(2012)}]{10.1007/978-3-642-33860-1_3}
-Gomez, F. 2012.
-\newblock Scalable Neuroevolution for Reinforcement Learning.
-\newblock In Dediu, A.-H.; Mart{\'\i}n-Vide, C.; and Truthe, B., eds.,
-  \emph{Theory and Practice of Natural Computing}, 27--29. Berlin, Heidelberg:
-  Springer Berlin Heidelberg.
-\newblock ISBN 978-3-642-33860-1.
-
-\bibitem[{Gomperts, Ukil, and Zurfluh(2011)}]{5607329}
-Gomperts, A.; Ukil, A.; and Zurfluh, F. 2011.
-\newblock Development and Implementation of Parameterized FPGA-Based General
-  Purpose Neural Networks for Online Applications.
-\newblock \emph{IEEE Transactions on Industrial Informatics} 7(1): 78--89.
-\newblock ISSN 1551-3203.
-\newblock \doi{10.1109/TII.2010.2085006}.
-
-\bibitem[{Gruau, Whitley, and Pyeatt(1996)}]{Gruau:1996:CCE:1595536.1595547}
-Gruau, F.; Whitley, D.; and Pyeatt, L. 1996.
-\newblock A Comparison Between Cellular Encoding and Direct Encoding for
-  Genetic Neural Networks.
-\newblock In \emph{Proceedings of the 1st Annual Conference on Genetic
-  Programming}, 81--89. Cambridge, MA, USA: MIT Press.
-\newblock ISBN 0-262-61127-9.
-\newblock \urlprefix\url{http://dl.acm.org/citation.cfm?id=1595536.1595547}.
-
-\bibitem[{Han et~al.(2016)Han, Liu, Mao, Pu, Pedram, Horowitz, and
-  Dally}]{Han:2016:EEI:3001136.3001163}
-Han, S.; Liu, X.; Mao, H.; Pu, J.; Pedram, A.; Horowitz, M.~A.; and Dally,
-  W.~J. 2016.
-\newblock EIE: Efficient Inference Engine on Compressed Deep Neural Network.
-\newblock In \emph{Proceedings of the 43rd International Symposium on Computer
-  Architecture}, ISCA '16, 243--254. Piscataway, NJ, USA: IEEE Press.
-\newblock ISBN 978-1-4673-8947-1.
-\newblock \doi{10.1109/ISCA.2016.30}.
-\newblock \urlprefix\url{https://doi.org/10.1109/ISCA.2016.30}.
-
-\bibitem[{Hubara et~al.(2016)Hubara, Courbariaux, Soudry, El-Yaniv, and
-  Bengio}]{NIPS2016_6573}
-Hubara, I.; Courbariaux, M.; Soudry, D.; El-Yaniv, R.; and Bengio, Y. 2016.
-\newblock Binarized Neural Networks.
-\newblock In \emph{Advances in Neural Information Processing Systems 29},
-  4107--4115. Curran Associates, Inc.
+\bibitem[\protect\citeauthoryear{{Bhargavaram} and {Pillai}}{{Bhargavaram} and
+  {Pillai}}{2012}]%
+        {6215974}
+\bibfield{author}{\bibinfo{person}{D. {Bhargavaram}} {and}
+  \bibinfo{person}{M.~G.~K. {Pillai}}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Low power dual edge triggered flip-flop}. In
+  \bibinfo{booktitle}{\emph{IEEE-International Conference On Advances In
+  Engineering, Science And Management (ICAESM -2012)}}.
+  \bibinfo{pages}{63--67}.
 \newblock
-  \urlprefix\url{http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf}.
 
-\bibitem[{Hubara et~al.(2018)Hubara, Courbariaux, Soudry, El-Yaniv, and
-  Bengio}]{JMLR:v18:16-456}
-Hubara, I.; Courbariaux, M.; Soudry, D.; El-Yaniv, R.; and Bengio, Y. 2018.
-\newblock Quantized Neural Networks: Training Neural Networks with Low
-  Precision Weights and Activations.
-\newblock \emph{Journal of Machine Learning Research} 18(187): 1--30.
-\newblock \urlprefix\url{http://jmlr.org/papers/v18/16-456.html}.
 
-\bibitem[{{Kondratenko} and {Kuperin}(2003)}]{2003cond.mat..4469K}
-{Kondratenko}, V.~V.; and {Kuperin}, Y.~A. 2003.
-\newblock {Using Recurrent Neural Networks To Forecasting of Forex}.
-\newblock \emph{eprint arXiv:cond-mat/0304469} .
-
-\bibitem[{Li et~al.(2019)Li, Dong, Zhang, Bai, Chen, and Wang}]{li2019rtn}
-Li, Y.; Dong, X.; Zhang, S.~Q.; Bai, H.; Chen, Y.; and Wang, W. 2019.
-\newblock RTN: Reparameterized Ternary Network.
-\newblock In AAAI, ed., \emph{AAAI Technical Track: Machine Learning},
-  volume~34, 7. AAAI.
-
-\bibitem[{Li et~al.(2020)Li, Zhang, Zhou, and
-  Ren}]{0328e31afe5f481bace5457f700c35ea}
-Li, Y.; Zhang, S.; Zhou, X.; and Ren, F. 2020.
-\newblock Build a compact binary neural network through bit-level sensitivity
-  and data pruning.
-\newblock \emph{Neurocomputing} 398: 45--54.
-\newblock ISSN 0925-2312.
-\newblock \doi{10.1016/j.neucom.2020.02.012}.
-
-\bibitem[{Liang et~al.(2018)Liang, Yin, Liu, Luk, and Wei}]{LIANG20181072}
-Liang, S.; Yin, S.; Liu, L.; Luk, W.; and Wei, S. 2018.
-\newblock FP-BNN: Binarized neural network on FPGA.
-\newblock \emph{Neurocomputing} 275: 1072 -- 1086.
-\newblock ISSN 0925-2312.
-\newblock \doi{https://doi.org/10.1016/j.neucom.2017.09.046}.
+\bibitem[\protect\citeauthoryear{Chen and Alahakoon}{Chen and
+  Alahakoon}{2006}]%
+        {4250190}
+\bibfield{author}{\bibinfo{person}{L. Chen} {and} \bibinfo{person}{D.
+  Alahakoon}.} \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{NeuroEvolution of Augmenting Topologies with
+  Learning for Data Classification}. In \bibinfo{booktitle}{\emph{2006
+  International Conference on Information and Automation}}.
+  \bibinfo{pages}{367--371}.
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0925231217315655}.
+\showISSN{2151-1802}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICINFA.2006.374100}
+\showDOI{\tempurl}
 
-\bibitem[{Lin, Guo, and Aberer(2017)}]{ijcai2017-316}
-Lin, T.; Guo, T.; and Aberer, K. 2017.
-\newblock Hybrid Neural Networks for Learning the Trend in Time Series.
-\newblock In \emph{Proceedings of the Twenty-Sixth International Joint
-  Conference on Artificial Intelligence, {IJCAI-17}}, 2273--2279.
-\newblock \doi{10.24963/ijcai.2017/316}.
-\newblock \urlprefix\url{https://doi.org/10.24963/ijcai.2017/316}.
 
-\bibitem[{Linnainmaa(1976)}]{Linnainmaa1976}
-Linnainmaa, S. 1976.
-\newblock Taylor expansion of the accumulated rounding error.
-\newblock \emph{BIT Numerical Mathematics} 16(2): 146--160.
-\newblock ISSN 1572-9125.
-\newblock \doi{10.1007/BF01931367}.
-\newblock \urlprefix\url{https://doi.org/10.1007/BF01931367}.
-
-\bibitem[{Liu and Deng(2010)}]{5432472}
-Liu, L.; and Deng, M. 2010.
-\newblock An Evolutionary Artificial Neural Network Approach for Breast Cancer
-  Diagnosis.
-\newblock In \emph{2010 Third International Conference on Knowledge Discovery
-  and Data Mining}, 593--596.
-\newblock \doi{10.1109/WKDD.2010.148}.
-
-\bibitem[{{Liu}, {Liao}, and {Ding}(2018)}]{8398183}
-{Liu}, S.; {Liao}, G.; and {Ding}, Y. 2018.
-\newblock Stock transaction prediction modeling and analysis based on LSTM.
-\newblock In \emph{2018 13th IEEE Conference on Industrial Electronics and
-  Applications (ICIEA)}, 2787--2790.
-\newblock ISSN 2158-2297.
-\newblock \doi{10.1109/ICIEA.2018.8398183}.
-
-\bibitem[{{Liu}, {Zhou}, and {Qian}(2019)}]{8832578}
-{Liu}, X.; {Zhou}, J.; and {Qian}, H. 2019.
-\newblock Comparison and Evaluation of Activation Functions in Term of Gradient
-  Instability in Deep Neural Networks.
-\newblock In \emph{2019 Chinese Control And Decision Conference (CCDC)},
-  3966--3971.
-\newblock ISSN 1948-9447.
-\newblock \doi{10.1109/CCDC.2019.8832578}.
-
-\bibitem[{{Oluigbo} and {Rezai}(2011)}]{5678632}
-{Oluigbo}, C.~O.; and {Rezai}, A.~R. 2011.
-\newblock Addressing Neurological Disorders With Neuromodulation.
-\newblock \emph{IEEE Transactions on Biomedical Engineering} 58(7): 1907--1917.
-\newblock ISSN 0018-9294.
-\newblock \doi{10.1109/TBME.2010.2102758}.
-
-\bibitem[{Quinlan(1987)}]{QUINLAN1987221}
-Quinlan, J. 1987.
-\newblock Simplifying decision trees.
-\newblock \emph{International Journal of Man-Machine Studies} 27(3): 221 --
-  234.
-\newblock ISSN 0020-7373.
-\newblock \doi{https://doi.org/10.1016/S0020-7373(87)80053-6}.
+\bibitem[\protect\citeauthoryear{Courbariaux, Bengio, and David}{Courbariaux
+  et~al\mbox{.}}{2015}]%
+        {NIPS2015_5647}
+\bibfield{author}{\bibinfo{person}{Matthieu Courbariaux},
+  \bibinfo{person}{Yoshua Bengio}, {and} \bibinfo{person}{Jean-Pierre David}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{BinaryConnect: Training Deep Neural Networks with
+  binary weights during propagations}.
+\newblock In \bibinfo{booktitle}{\emph{Advances in Neural Information
+  Processing Systems 28}}, \bibfield{editor}{\bibinfo{person}{C.~Cortes},
+  \bibinfo{person}{N.~D. Lawrence}, \bibinfo{person}{D.~D. Lee},
+  \bibinfo{person}{M.~Sugiyama}, {and} \bibinfo{person}{R.~Garnett}} (Eds.).
+  \bibinfo{publisher}{Curran Associates, Inc.}, \bibinfo{pages}{3123--3131}.
 \newblock
-  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0020737387800536}.
 
-\bibitem[{{Rahimi Azghadi} et~al.(2014){Rahimi Azghadi}, {Iannella},
-  {Al-Sarawi}, {Indiveri}, and {Abbott}}]{6804688}
-{Rahimi Azghadi}, M.; {Iannella}, N.; {Al-Sarawi}, S.~F.; {Indiveri}, G.; and
-  {Abbott}, D. 2014.
-\newblock Spike-Based Synaptic Plasticity in Silicon: Design, Implementation,
-  Application, and Challenges.
-\newblock \emph{Proceedings of the IEEE} 102(5): 717--737.
-\newblock ISSN 0018-9219.
-\newblock \doi{10.1109/JPROC.2014.2314454}.
 
-\bibitem[{Riazi et~al.(2019)Riazi, Samragh, Chen, Laine, Lauter, and
-  Koushanfar}]{1133}
-Riazi, M.~S.; Samragh, M.; Chen, H.; Laine, K.; Lauter, K.; and Koushanfar, F.
-  2019.
-\newblock XONN: XNOR-based Oblivious Deep Neural Network Inference.
-\newblock In \emph{USENIX Security}. USENIX, USENIX.
-\newblock \urlprefix\url{https://arxiv.org/pdf/1902.07342.pdf}.
-
-\bibitem[{Schulman et~al.(2015)Schulman, Levine, Abbeel, Jordan, and
-  Moritz}]{pmlr-v37-schulman15}
-Schulman, J.; Levine, S.; Abbeel, P.; Jordan, M.; and Moritz, P. 2015.
-\newblock Trust Region Policy Optimization.
-\newblock volume~37 of \emph{Proceedings of Machine Learning Research},
-  1889--1897. Lille, France: PMLR.
-\newblock \urlprefix\url{http://proceedings.mlr.press/v37/schulman15.html}.
-
-\bibitem[{Sher(2013)}]{Sher2013NeuroEvol}
-Sher, G.~I. 2013.
-\newblock \emph{Handbook of Neuroevolution Through Erlang}.
-\newblock New York, NY: Springer New York.
-\newblock ISBN 978-1-4614-4463-3.
-\newblock \doi{10.1007/978-1-4614-4463-3_1}.
-\newblock \urlprefix\url{https://doi.org/10.1007/978-1-4614-4463-3_1}.
-
-\bibitem[{Siebel and Sommer(2007)}]{Siebel:2007:ERL:1367012.1367016}
-Siebel, N.~T.; and Sommer, G. 2007.
-\newblock Evolutionary Reinforcement Learning of Artificial Neural Networks.
-\newblock \emph{Int. J. Hybrid Intell. Syst.} 4(3): 171--183.
-\newblock ISSN 1448-5869.
-\newblock \urlprefix\url{http://dl.acm.org/citation.cfm?id=1367012.1367016}.
-
-\bibitem[{Simons and Lee(2019)}]{electronics8060661}
-Simons, T.; and Lee, D.-J. 2019.
-\newblock A Review of Binarized Neural Networks.
-\newblock \emph{Electronics} 8(6).
-\newblock ISSN 2079-9292.
-\newblock \doi{10.3390/electronics8060661}.
-\newblock \urlprefix\url{https://www.mdpi.com/2079-9292/8/6/661}.
-
-\bibitem[{Soudry, Hubara, and Meir(2014)}]{Soudry2014ExpectationBP}
-Soudry, D.; Hubara, I.; and Meir, R. 2014.
-\newblock Expectation Backpropagation: Parameter-Free Training of Multilayer
-  Neural Networks with Continuous or Discrete Weights.
-\newblock In \emph{NIPS}.
-
-\bibitem[{{Stanley} and {Miikkulainen}(2002)}]{1004508}
-{Stanley}, K.~O.; and {Miikkulainen}, R. 2002.
-\newblock Efficient evolution of neural network topologies.
-\newblock In \emph{Proceedings of the 2002 Congress on Evolutionary
-  Computation. CEC'02 (Cat. No.02TH8600)}, volume~2, 1757--1762 vol.2.
-\newblock ISSN null.
-\newblock \doi{10.1109/CEC.2002.1004508}.
-
-\bibitem[{Tenorio, Sham, and Vargas(2020)}]{10.1145/3377929.3389933}
-Tenorio, R. H.~V.; Sham, C.~W.; and Vargas, D.~V. 2020.
-\newblock Preliminary Study of Applied Binary Neural Networks for Neural
-  Cryptography.
-\newblock In \emph{Proceedings of the 2020 Genetic and Evolutionary Computation
-  Conference Companion}, GECCO '20, 291--292. New York, NY, USA: Association
-  for Computing Machinery.
-\newblock ISBN 9781450371278.
-\newblock \doi{10.1145/3377929.3389933}.
-\newblock \urlprefix\url{https://doi.org/10.1145/3377929.3389933}.
-
-\bibitem[{Terasic()}]{OpenVINOStarterKit}
-Terasic. ????
-\newblock Starter Platform for OpenVINO{\texttrademark} Toolkit.
+\bibitem[\protect\citeauthoryear{Deng, Jiao, Pei, Wu, and Li}{Deng
+  et~al\mbox{.}}{2018}]%
+        {DENG201849}
+\bibfield{author}{\bibinfo{person}{Lei Deng}, \bibinfo{person}{Peng Jiao},
+  \bibinfo{person}{Jing Pei}, \bibinfo{person}{Zhenzhi Wu}, {and}
+  \bibinfo{person}{Guoqi Li}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{GXNOR-Net: Training deep neural networks with
+  ternary weights and activations without full-precision memory under a unified
+  discretization framework}.
+\newblock \bibinfo{journal}{\emph{Neural Networks}}  \bibinfo{volume}{100}
+  (\bibinfo{year}{2018}), \bibinfo{pages}{49 -- 58}.
 \newblock
-  \urlprefix\url{https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=167&No=1159}.
+\showISSN{0893-6080}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.neunet.2018.01.010}
+\showDOI{\tempurl}
 
-\bibitem[{Thomas and Luk(2013)}]{Thomas:2013aa}
-Thomas, D.~B.; and Luk, W. 2013.
-\newblock Multiplierless Algorithm for Multivariate Gaussian Random Number
-  Generation in FPGAs.
-\newblock \emph{IEEE Transactions on Very Large Scale Integration (VLSI)
-  Systems} 21(12): 2193--2205.
-\newblock \doi{10.1109/TVLSI.2012.2228017}.
 
-\bibitem[{{Valencia}, {Sham}, and {Sinnen}(2019{\natexlab{a}})}]{8953134}
-{Valencia}, R.; {Sham}, C.; and {Sinnen}, O. 2019{\natexlab{a}}.
-\newblock Using Neuroevolved Binary Neural Networks to solve reinforcement
-  learning environments.
-\newblock In \emph{2019 IEEE Asia Pacific Conference on Circuits and Systems
-  (APCCAS)}, 301--304.
-\newblock ISSN null.
-\newblock \doi{10.1109/APCCAS47518.2019.8953134}.
+\bibitem[\protect\citeauthoryear{Fogel, Owens, and Walsh}{Fogel
+  et~al\mbox{.}}{1965}]%
+        {6591252}
+\bibfield{author}{\bibinfo{person}{L.~J. Fogel}, \bibinfo{person}{A.~J. Owens},
+  {and} \bibinfo{person}{M.~J. Walsh}.} \bibinfo{year}{1965}\natexlab{}.
+\newblock \showarticletitle{Intelligent decision-making through a simulation of
+  evolution}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Human Factors in
+  Electronics}} \bibinfo{volume}{HFE-6}, \bibinfo{number}{1}
+  (\bibinfo{date}{Sep.} \bibinfo{year}{1965}), \bibinfo{pages}{13--23}.
+\newblock
+\showISSN{0096-249X}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/THFE.1965.6591252}
+\showDOI{\tempurl}
 
-\bibitem[{{Valencia}, {Sham}, and {Sinnen}(2019{\natexlab{b}})}]{8977877}
-{Valencia}, R.; {Sham}, C.~W.; and {Sinnen}, O. 2019{\natexlab{b}}.
-\newblock Evolved Binary Neural Networks Through Harnessing FPGA Capabilities.
-\newblock In \emph{2019 International Conference on Field-Programmable
-  Technology (ICFPT)}, 395--398.
-\newblock ISSN null.
-\newblock \doi{10.1109/ICFPT47387.2019.00076}.
 
-\bibitem[{Wang et~al.(2018)Wang, Zhan, Li, Tang, Yuan, Zhao, Wen, Wang, and
-  Lin}]{OUAPES-AAAI}
-Wang, Y.; Zhan, Z.; Li, J.; Tang, J.; Yuan, B.; Zhao, L.; Wen, W.; Wang, S.;
-  and Lin, X. 2018.
-\newblock On the Universal Approximation Property and Equivalence of Stochastic
-  Computing-based Neural Networks and Binary Neural Networks.
-\newblock In AAAI, ed., \emph{AAAI Technical Track: Machine Learning},
-  volume~33, 7. AAAI, AAAI.
-\newblock \urlprefix\url{http://arxiv.org/abs/1803.05391}.
+\bibitem[\protect\citeauthoryear{Foundation}{Foundation}{2020}]%
+        {gRPCPage}
+\bibfield{author}{\bibinfo{person}{Linux Foundation}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{gRPC}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://grpc.io}
+\showURL{%
+\tempurl}
 
-\bibitem[{Yaman et~al.(2018)Yaman, Mocanu, Iacca, Fletcher, and
-  Pechenizkiy}]{Yaman:2018:LEC:3205455.3205555}
-Yaman, A.; Mocanu, D.~C.; Iacca, G.; Fletcher, G.; and Pechenizkiy, M. 2018.
-\newblock Limited Evaluation Cooperative Co-evolutionary Differential Evolution
-  for Large-scale Neuroevolution.
-\newblock In \emph{Proceedings of the Genetic and Evolutionary Computation
-  Conference}, GECCO '18, 569--576. New York, NY, USA: ACM.
-\newblock ISBN 978-1-4503-5618-3.
-\newblock \doi{10.1145/3205455.3205555}.
-\newblock \urlprefix\url{http://doi.acm.org/10.1145/3205455.3205555}.
 
-\bibitem[{Zhang et~al.(2015)Zhang, Li, Sun, Guan, Xiao, and
-  Cong}]{Zhang:2015:OFA:2684746.2689060}
-Zhang, C.; Li, P.; Sun, G.; Guan, Y.; Xiao, B.; and Cong, J. 2015.
-\newblock Optimizing FPGA-based Accelerator Design for Deep Convolutional
-  Neural Networks.
-\newblock In \emph{Proceedings of the 2015 ACM/SIGDA International Symposium on
-  Field-Programmable Gate Arrays}, FPGA '15, 161--170. New York, NY, USA: ACM.
-\newblock ISBN 978-1-4503-3315-3.
-\newblock \doi{10.1145/2684746.2689060}.
-\newblock \urlprefix\url{http://doi.acm.org/10.1145/2684746.2689060}.
+\bibitem[\protect\citeauthoryear{Gomez}{Gomez}{2012}]%
+        {10.1007/978-3-642-33860-1_3}
+\bibfield{author}{\bibinfo{person}{Faustino Gomez}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Scalable Neuroevolution for Reinforcement
+  Learning}. In \bibinfo{booktitle}{\emph{Theory and Practice of Natural
+  Computing}}, \bibfield{editor}{\bibinfo{person}{Adrian-Horia Dediu},
+  \bibinfo{person}{Carlos Mart{\'\i}n-Vide}, {and} \bibinfo{person}{Bianca
+  Truthe}} (Eds.). \bibinfo{publisher}{Springer Berlin Heidelberg},
+  \bibinfo{address}{Berlin, Heidelberg}, \bibinfo{pages}{27--29}.
+\newblock
+\showISBNx{978-3-642-33860-1}
 
-\bibitem[{Zhao et~al.(2017)Zhao, Song, Zhang, Xing, Lin, Srivastava, Gupta, and
-  Zhang}]{Zhao:2017:ABC:3020078.3021741}
-Zhao, R.; Song, W.; Zhang, W.; Xing, T.; Lin, J.-H.; Srivastava, M.; Gupta, R.;
-  and Zhang, Z. 2017.
-\newblock Accelerating Binarized Convolutional Neural Networks with
-  Software-Programmable FPGAs.
-\newblock In \emph{Proceedings of the 2017 ACM/SIGDA International Symposium on
-  Field-Programmable Gate Arrays}, FPGA '17, 15--24. ACM.
-\newblock ISBN 978-1-4503-4354-1.
-\newblock \doi{10.1145/3020078.3021741}.
-\newblock \urlprefix\url{http://doi.acm.org/10.1145/3020078.3021741}.
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio}{Goodfellow et~al\mbox{.}}{2014}]%
+        {NIPS2014_5423}
+\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Jean
+  Pouget-Abadie}, \bibinfo{person}{Mehdi Mirza}, \bibinfo{person}{Bing Xu},
+  \bibinfo{person}{David Warde-Farley}, \bibinfo{person}{Sherjil Ozair},
+  \bibinfo{person}{Aaron Courville}, {and} \bibinfo{person}{Yoshua Bengio}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Generative Adversarial Nets}.
+\newblock In \bibinfo{booktitle}{\emph{Advances in Neural Information
+  Processing Systems 27}}, \bibfield{editor}{\bibinfo{person}{Z.~Ghahramani},
+  \bibinfo{person}{M.~Welling}, \bibinfo{person}{C.~Cortes},
+  \bibinfo{person}{N.~D. Lawrence}, {and} \bibinfo{person}{K.~Q. Weinberger}}
+  (Eds.). \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{pages}{2672--2680}.
+\newblock
+\urldef\tempurl%
+\url{http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Gruau, Whitley, and Pyeatt}{Gruau
+  et~al\mbox{.}}{1996}]%
+        {Gruau:1996:CCE:1595536.1595547}
+\bibfield{author}{\bibinfo{person}{Fr{\'e}d{\'e}ric Gruau},
+  \bibinfo{person}{Darrell Whitley}, {and} \bibinfo{person}{Larry Pyeatt}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{A Comparison Between Cellular Encoding and Direct
+  Encoding for Genetic Neural Networks}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 1st Annual Conference on Genetic
+  Programming}} (Stanford, California). \bibinfo{publisher}{MIT Press},
+  \bibinfo{address}{Cambridge, MA, USA}, \bibinfo{pages}{81--89}.
+\newblock
+\showISBNx{0-262-61127-9}
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=1595536.1595547}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Hamming}}{{Hamming}}{1950}]%
+        {6772729}
+\bibfield{author}{\bibinfo{person}{R.~W. {Hamming}}.}
+  \bibinfo{year}{1950}\natexlab{}.
+\newblock \showarticletitle{Error detecting and error correcting codes}.
+\newblock \bibinfo{journal}{\emph{The Bell System Technical Journal}}
+  \bibinfo{volume}{29}, \bibinfo{number}{2} (\bibinfo{date}{April}
+  \bibinfo{year}{1950}), \bibinfo{pages}{147--160}.
+\newblock
+\showISSN{0005-8580}
+\urldef\tempurl%
+\url{https://doi.org/10.1002/j.1538-7305.1950.tb00463.x}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Han, Liu, Mao, Pu, Pedram, Horowitz, and
+  Dally}{Han et~al\mbox{.}}{2016}]%
+        {Han:2016:EEI:3001136.3001163}
+\bibfield{author}{\bibinfo{person}{Song Han}, \bibinfo{person}{Xingyu Liu},
+  \bibinfo{person}{Huizi Mao}, \bibinfo{person}{Jing Pu},
+  \bibinfo{person}{Ardavan Pedram}, \bibinfo{person}{Mark~A. Horowitz}, {and}
+  \bibinfo{person}{William~J. Dally}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{EIE: Efficient Inference Engine on Compressed Deep
+  Neural Network}. In \bibinfo{booktitle}{\emph{Proceedings of the 43rd
+  International Symposium on Computer Architecture}} (Seoul, Republic of Korea)
+  \emph{(\bibinfo{series}{ISCA '16})}. \bibinfo{publisher}{IEEE Press},
+  \bibinfo{address}{Piscataway, NJ, USA}, \bibinfo{pages}{243--254}.
+\newblock
+\showISBNx{978-1-4673-8947-1}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ISCA.2016.30}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hubara, Courbariaux, Soudry, El-Yaniv, and
+  Bengio}{Hubara et~al\mbox{.}}{2016}]%
+        {NIPS2016_6573}
+\bibfield{author}{\bibinfo{person}{Itay Hubara}, \bibinfo{person}{Matthieu
+  Courbariaux}, \bibinfo{person}{Daniel Soudry}, \bibinfo{person}{Ran
+  El-Yaniv}, {and} \bibinfo{person}{Yoshua Bengio}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Binarized Neural Networks}.
+\newblock In \bibinfo{booktitle}{\emph{Advances in Neural Information
+  Processing Systems 29}}. \bibinfo{publisher}{Curran Associates, Inc.},
+  \bibinfo{pages}{4107--4115}.
+\newblock
+\urldef\tempurl%
+\url{http://papers.nips.cc/paper/6573-binarized-neural-networks.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Hubara, Courbariaux, Soudry, El-Yaniv, and
+  Bengio}{Hubara et~al\mbox{.}}{2018}]%
+        {JMLR:v18:16-456}
+\bibfield{author}{\bibinfo{person}{Itay Hubara}, \bibinfo{person}{Matthieu
+  Courbariaux}, \bibinfo{person}{Daniel Soudry}, \bibinfo{person}{Ran
+  El-Yaniv}, {and} \bibinfo{person}{Yoshua Bengio}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Quantized Neural Networks: Training Neural Networks
+  with Low Precision Weights and Activations}.
+\newblock \bibinfo{journal}{\emph{Journal of Machine Learning Research}}
+  \bibinfo{volume}{18}, \bibinfo{number}{187} (\bibinfo{year}{2018}),
+  \bibinfo{pages}{1--30}.
+\newblock
+\urldef\tempurl%
+\url{http://jmlr.org/papers/v18/16-456.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Kassahun, Sommer, Edgington, Metzen, and
+  Kirchner}{Kassahun et~al\mbox{.}}{2007}]%
+        {Kassahun07commongenetic}
+\bibfield{author}{\bibinfo{person}{Yohannes Kassahun}, \bibinfo{person}{Gerald
+  Sommer}, \bibinfo{person}{Mark Edgington}, \bibinfo{person}{Jan~Hendrik
+  Metzen}, {and} \bibinfo{person}{Frank Kirchner}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Common genetic encoding for both direct and
+  indirect encodings of networks}. In \bibinfo{booktitle}{\emph{In Proceedings
+  of the Genetic and Evolutionary Computation Conference (GECCO 2007}}.
+  \bibinfo{publisher}{ACM Press}, \bibinfo{pages}{1029--1036}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Katz and Lindell}{Katz and Lindell}{2008}]%
+        {katz2008introduction}
+\bibfield{author}{\bibinfo{person}{J. Katz} {and} \bibinfo{person}{Y.
+  Lindell}.} \bibinfo{year}{2008}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Introduction to modern cryptography}}.
+\newblock \bibinfo{publisher}{Chapman \& Hall/CRC}.
+\newblock
+\showISBNx{9781584885511}
+\showLCCN{2007017861}
+\urldef\tempurl%
+\url{https://books.google.ca/books?id=WIc\_AQAAIAAJ}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Klein, Mislovaty, Kanter, Ruttor, and
+  Kinzel}{Klein et~al\mbox{.}}{2005}]%
+        {NIPS2004_2744}
+\bibfield{author}{\bibinfo{person}{Einat Klein}, \bibinfo{person}{Rachel
+  Mislovaty}, \bibinfo{person}{Ido Kanter}, \bibinfo{person}{Andreas Ruttor},
+  {and} \bibinfo{person}{Wolfgang Kinzel}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Synchronization of neural networks by mutual
+  learning and its application to cryptography}.
+\newblock In \bibinfo{booktitle}{\emph{Advances in Neural Information
+  Processing Systems 17}}, \bibfield{editor}{\bibinfo{person}{L.~K. Saul},
+  \bibinfo{person}{Y.~Weiss}, {and} \bibinfo{person}{L.~Bottou}} (Eds.).
+  \bibinfo{publisher}{MIT Press}, \bibinfo{pages}{689--696}.
+\newblock
+\urldef\tempurl%
+\url{http://papers.nips.cc/paper/2744-synchronization-of-neural-networks-by-mutual-learning-and-its-application-to-cryptography.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Klimov, Mityagin, and Shamir}{Klimov
+  et~al\mbox{.}}{2002}]%
+        {10.1007/3-540-36178-2_18}
+\bibfield{author}{\bibinfo{person}{Alexander Klimov}, \bibinfo{person}{Anton
+  Mityagin}, {and} \bibinfo{person}{Adi Shamir}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Analysis of Neural Cryptography}. In
+  \bibinfo{booktitle}{\emph{Advances in Cryptology --- ASIACRYPT 2002}},
+  \bibfield{editor}{\bibinfo{person}{Yuliang Zheng}} (Ed.).
+  \bibinfo{publisher}{Springer Berlin Heidelberg}, \bibinfo{address}{Berlin,
+  Heidelberg}, \bibinfo{pages}{288--298}.
+\newblock
+\showISBNx{978-3-540-36178-7}
+
+
+\bibitem[\protect\citeauthoryear{{Kondratenko} and {Kuperin}}{{Kondratenko} and
+  {Kuperin}}{2003}]%
+        {2003cond.mat..4469K}
+\bibfield{author}{\bibinfo{person}{V.~V. {Kondratenko}} {and}
+  \bibinfo{person}{Y.~A {Kuperin}}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{{Using Recurrent Neural Networks To Forecasting of
+  Forex}}.
+\newblock \bibinfo{journal}{\emph{eprint arXiv:cond-mat/0304469}}
+  (\bibinfo{date}{April} \bibinfo{year}{2003}).
+\newblock
+\showeprint{cond-mat/0304469}
+
+
+\bibitem[\protect\citeauthoryear{Li, Dong, Zhang, Bai, Chen, and Wang}{Li
+  et~al\mbox{.}}{2019}]%
+        {li2019rtn}
+\bibfield{author}{\bibinfo{person}{Yuhang Li}, \bibinfo{person}{Xin Dong},
+  \bibinfo{person}{Sai~Qian Zhang}, \bibinfo{person}{Haoli Bai},
+  \bibinfo{person}{Yuanpeng Chen}, {and} \bibinfo{person}{Wei Wang}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{RTN: Reparameterized Ternary Network}. In
+  \bibinfo{booktitle}{\emph{AAAI Technical Track: Machine Learning}},
+  \bibfield{editor}{\bibinfo{person}{AAAI}} (Ed.), Vol.~\bibinfo{volume}{34}.
+  AAAI, \bibinfo{pages}{7}.
+\newblock
+\showeprint[arxiv]{1912.02057}
+
+
+\bibitem[\protect\citeauthoryear{Li, Zhang, Zhou, and Ren}{Li
+  et~al\mbox{.}}{2020}]%
+        {0328e31afe5f481bace5457f700c35ea}
+\bibfield{author}{\bibinfo{person}{Yixing Li}, \bibinfo{person}{Shuai Zhang},
+  \bibinfo{person}{Xichuan Zhou}, {and} \bibinfo{person}{Fengbo Ren}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Build a compact binary neural network through
+  bit-level sensitivity and data pruning}.
+\newblock \bibinfo{journal}{\emph{Neurocomputing}}  \bibinfo{volume}{398}
+  (\bibinfo{date}{20 July} \bibinfo{year}{2020}), \bibinfo{pages}{45--54}.
+\newblock
+\showISSN{0925-2312}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.neucom.2020.02.012}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lin, Guo, and Aberer}{Lin
+  et~al\mbox{.}}{2017}]%
+        {ijcai2017-316}
+\bibfield{author}{\bibinfo{person}{Tao Lin}, \bibinfo{person}{Tian Guo}, {and}
+  \bibinfo{person}{Karl Aberer}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Hybrid Neural Networks for Learning the Trend in
+  Time Series}. In \bibinfo{booktitle}{\emph{Proceedings of the Twenty-Sixth
+  International Joint Conference on Artificial Intelligence, {IJCAI-17}}}.
+  \bibinfo{pages}{2273--2279}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.24963/ijcai.2017/316}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Linnainmaa}{Linnainmaa}{1976}]%
+        {Linnainmaa1976}
+\bibfield{author}{\bibinfo{person}{Seppo Linnainmaa}.}
+  \bibinfo{year}{1976}\natexlab{}.
+\newblock \showarticletitle{Taylor expansion of the accumulated rounding
+  error}.
+\newblock \bibinfo{journal}{\emph{BIT Numerical Mathematics}}
+  \bibinfo{volume}{16}, \bibinfo{number}{2} (\bibinfo{date}{01 Jun}
+  \bibinfo{year}{1976}), \bibinfo{pages}{146--160}.
+\newblock
+\showISSN{1572-9125}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/BF01931367}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Liu and Deng}{Liu and Deng}{2010}]%
+        {5432472}
+\bibfield{author}{\bibinfo{person}{L. Liu} {and} \bibinfo{person}{M. Deng}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{An Evolutionary Artificial Neural Network Approach
+  for Breast Cancer Diagnosis}. In \bibinfo{booktitle}{\emph{2010 Third
+  International Conference on Knowledge Discovery and Data Mining}}.
+  \bibinfo{pages}{593--596}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/WKDD.2010.148}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Liu}, {Liao}, and {Ding}}{{Liu}
+  et~al\mbox{.}}{2018}]%
+        {8398183}
+\bibfield{author}{\bibinfo{person}{S. {Liu}}, \bibinfo{person}{G. {Liao}},
+  {and} \bibinfo{person}{Y. {Ding}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Stock transaction prediction modeling and analysis
+  based on LSTM}. In \bibinfo{booktitle}{\emph{2018 13th IEEE Conference on
+  Industrial Electronics and Applications (ICIEA)}}.
+  \bibinfo{pages}{2787--2790}.
+\newblock
+\showISSN{2158-2297}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICIEA.2018.8398183}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Liu}, {Zhou}, and {Qian}}{{Liu}
+  et~al\mbox{.}}{2019}]%
+        {8832578}
+\bibfield{author}{\bibinfo{person}{X. {Liu}}, \bibinfo{person}{J. {Zhou}},
+  {and} \bibinfo{person}{H. {Qian}}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Comparison and Evaluation of Activation Functions
+  in Term of Gradient Instability in Deep Neural Networks}. In
+  \bibinfo{booktitle}{\emph{2019 Chinese Control And Decision Conference
+  (CCDC)}}. \bibinfo{pages}{3966--3971}.
+\newblock
+\showISSN{1948-9447}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CCDC.2019.8832578}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Lawrence~Bassham}{NIST}{2010}]%
+        {SP800-22Rev1a}
+\bibfield{editor}{\bibinfo{person}{NIST}} (Ed.).
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{A Statistical Test Suite for Random and
+  Pseudorandom Number Generators for Cryptographic Applications}}.
+  Vol.~\bibinfo{volume}{22}. NIST, \bibinfo{publisher}{NIST}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{{Oluigbo} and {Rezai}}{{Oluigbo} and
+  {Rezai}}{2011}]%
+        {5678632}
+\bibfield{author}{\bibinfo{person}{C.~O. {Oluigbo}} {and}
+  \bibinfo{person}{A.~R. {Rezai}}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Addressing Neurological Disorders With
+  Neuromodulation}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Biomedical Engineering}}
+  \bibinfo{volume}{58}, \bibinfo{number}{7} (\bibinfo{date}{July}
+  \bibinfo{year}{2011}), \bibinfo{pages}{1907--1917}.
+\newblock
+\showISSN{0018-9294}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TBME.2010.2102758}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{OpenAI}{OpenAI}{[n.d.]}]%
+        {oaiBaseline-Github}
+\bibfield{author}{\bibinfo{person}{OpenAI}.} \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{Baselines}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://github.com/openai/baselines}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Petroski~Such, Madhavan, Liu, Wang, Castro,
+  Li, Zhi, Schubert, Bellemare, Clune, and Lehman}{Petroski~Such
+  et~al\mbox{.}}{2019}]%
+        {ijcai2019-0452}
+\bibfield{author}{\bibinfo{person}{Felipe Petroski~Such},
+  \bibinfo{person}{Vashisht Madhavan}, \bibinfo{person}{Rosanne Liu},
+  \bibinfo{person}{Rui Wang}, \bibinfo{person}{Pablo~Samuel Castro},
+  \bibinfo{person}{Yulun Li}, \bibinfo{person}{Jiale Zhi},
+  \bibinfo{person}{Ludwig Schubert}, \bibinfo{person}{Marc~G. Bellemare},
+  \bibinfo{person}{Jeff Clune}, {and} \bibinfo{person}{Joel Lehman}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{An Atari Model Zoo for Analyzing, Visualizing, and
+  Comparing Deep Reinforcement Learning Agents}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the Twenty-Eighth International
+  Joint Conference on Artificial Intelligence, {IJCAI-19}}}.
+  \bibinfo{publisher}{International Joint Conferences on Artificial
+  Intelligence Organization}, \bibinfo{pages}{3260--3267}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.24963/ijcai.2019/452}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Quinlan}{Quinlan}{1987}]%
+        {QUINLAN1987221}
+\bibfield{author}{\bibinfo{person}{J.R. Quinlan}.}
+  \bibinfo{year}{1987}\natexlab{}.
+\newblock \showarticletitle{Simplifying decision trees}.
+\newblock \bibinfo{journal}{\emph{International Journal of Man-Machine
+  Studies}} \bibinfo{volume}{27}, \bibinfo{number}{3} (\bibinfo{year}{1987}),
+  \bibinfo{pages}{221 -- 234}.
+\newblock
+\showISSN{0020-7373}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/S0020-7373(87)80053-6}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{R and M}{R and M}{2020}]%
+        {R2020103041}
+\bibfield{author}{\bibinfo{person}{Lavanya R} {and} \bibinfo{person}{Karpagam
+  M}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Enhancing the security of AES through small scale
+  confusion operations for data communication}.
+\newblock \bibinfo{journal}{\emph{Microprocessors and Microsystems}}
+  \bibinfo{volume}{75} (\bibinfo{year}{2020}), \bibinfo{pages}{103041}.
+\newblock
+\showISSN{0141-9331}
+\urldef\tempurl%
+\url{https://doi.org/10.1016/j.micpro.2020.103041}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Rahimi Azghadi}, {Iannella}, {Al-Sarawi},
+  {Indiveri}, and {Abbott}}{{Rahimi Azghadi} et~al\mbox{.}}{2014}]%
+        {6804688}
+\bibfield{author}{\bibinfo{person}{M. {Rahimi Azghadi}}, \bibinfo{person}{N.
+  {Iannella}}, \bibinfo{person}{S.~F. {Al-Sarawi}}, \bibinfo{person}{G.
+  {Indiveri}}, {and} \bibinfo{person}{D. {Abbott}}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Spike-Based Synaptic Plasticity in Silicon: Design,
+  Implementation, Application, and Challenges}.
+\newblock \bibinfo{journal}{\emph{Proc. IEEE}} \bibinfo{volume}{102},
+  \bibinfo{number}{5} (\bibinfo{date}{May} \bibinfo{year}{2014}),
+  \bibinfo{pages}{717--737}.
+\newblock
+\showISSN{0018-9219}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/JPROC.2014.2314454}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Riazi, Samragh, Chen, Laine, Lauter, and
+  Koushanfar}{Riazi et~al\mbox{.}}{2019}]%
+        {1133}
+\bibfield{author}{\bibinfo{person}{M.~Sadegh Riazi}, \bibinfo{person}{Mohammad
+  Samragh}, \bibinfo{person}{Hao Chen}, \bibinfo{person}{Kim Laine},
+  \bibinfo{person}{Kristin Lauter}, {and} \bibinfo{person}{Farinaz
+  Koushanfar}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{XONN: XNOR-based Oblivious Deep Neural Network
+  Inference}. In \bibinfo{booktitle}{\emph{USENIX Security}}. USENIX,
+  \bibinfo{publisher}{USENIX}.
+\newblock
+\urldef\tempurl%
+\url{https://arxiv.org/pdf/1902.07342.pdf}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Schneier}{Schneier}{1998}]%
+        {Schneier-Crypto}
+\bibfield{author}{\bibinfo{person}{Bruce Schneier}.}
+  \bibinfo{year}{1998}\natexlab{}.
+\newblock \bibinfo{title}{Memo to the Amateur Cipher Designer}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://www.schneier.com/crypto-gram/archives/1998/1015.html#cipherdesign}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sher}{Sher}{2013}]%
+        {Sher2013NeuroEvol}
+\bibfield{author}{\bibinfo{person}{Gene~I. Sher}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Handbook of Neuroevolution Through
+  Erlang}}.
+\newblock \bibinfo{publisher}{Springer New York}, \bibinfo{address}{New York,
+  NY}. 1--39 pages.
+\newblock
+\showISBNx{978-1-4614-4463-3}
+\urldef\tempurl%
+\url{https://doi.org/10.1007/978-1-4614-4463-3_1}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Siebel and Sommer}{Siebel and Sommer}{2007}]%
+        {Siebel:2007:ERL:1367012.1367016}
+\bibfield{author}{\bibinfo{person}{Nils~T. Siebel} {and}
+  \bibinfo{person}{Gerald Sommer}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Evolutionary Reinforcement Learning of Artificial
+  Neural Networks}.
+\newblock \bibinfo{journal}{\emph{Int. J. Hybrid Intell. Syst.}}
+  \bibinfo{volume}{4}, \bibinfo{number}{3} (\bibinfo{date}{Aug.}
+  \bibinfo{year}{2007}), \bibinfo{pages}{171--183}.
+\newblock
+\showISSN{1448-5869}
+\urldef\tempurl%
+\url{http://dl.acm.org/citation.cfm?id=1367012.1367016}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Simons and Lee}{Simons and Lee}{2019}]%
+        {electronics8060661}
+\bibfield{author}{\bibinfo{person}{Taylor Simons} {and}
+  \bibinfo{person}{Dah-Jye Lee}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A Review of Binarized Neural Networks}.
+\newblock \bibinfo{journal}{\emph{Electronics}} \bibinfo{volume}{8},
+  \bibinfo{number}{6} (\bibinfo{year}{2019}).
+\newblock
+\showISSN{2079-9292}
+\urldef\tempurl%
+\url{https://doi.org/10.3390/electronics8060661}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Soudry, Hubara, and Meir}{Soudry
+  et~al\mbox{.}}{2014}]%
+        {Soudry2014ExpectationBP}
+\bibfield{author}{\bibinfo{person}{Daniel Soudry}, \bibinfo{person}{Itay
+  Hubara}, {and} \bibinfo{person}{Ron Meir}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Expectation Backpropagation: Parameter-Free
+  Training of Multilayer Neural Networks with Continuous or Discrete Weights}.
+  In \bibinfo{booktitle}{\emph{NIPS}}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{{Stanley} and {Miikkulainen}}{{Stanley} and
+  {Miikkulainen}}{2002}]%
+        {1004508}
+\bibfield{author}{\bibinfo{person}{K.~O. {Stanley}} {and} \bibinfo{person}{R.
+  {Miikkulainen}}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Efficient evolution of neural network topologies}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 2002 Congress on Evolutionary
+  Computation. CEC'02 (Cat. No.02TH8600)}}, Vol.~\bibinfo{volume}{2}.
+  \bibinfo{pages}{1757--1762 vol.2}.
+\newblock
+\showISSN{null}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CEC.2002.1004508}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Stoica, Calangiu, and Sisak}{Stoica
+  et~al\mbox{.}}{2010}]%
+        {5524599}
+\bibfield{author}{\bibinfo{person}{M. Stoica}, \bibinfo{person}{G.~A.
+  Calangiu}, {and} \bibinfo{person}{F. Sisak}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Measuring the time needed for training a neural
+  network based on the number of training steps}. In
+  \bibinfo{booktitle}{\emph{19th International Workshop on Robotics in
+  Alpe-Adria-Danube Region (RAAD 2010)}}. \bibinfo{pages}{109--113}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/RAAD.2010.5524599}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{\v{S}}venda, Ukrop, and
+  Maty{\'a}{\v{s}}}{{\v{S}}venda et~al\mbox{.}}{2014}]%
+        {10.1007/978-3-662-44788-8_17}
+\bibfield{author}{\bibinfo{person}{Petr {\v{S}}venda}, \bibinfo{person}{Martin
+  Ukrop}, {and} \bibinfo{person}{Vashek Maty{\'a}{\v{s}}}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Determining Cryptographic Distinguishers for
+  eStream and SHA-3 Candidate Functions with Evolutionary Circuits}. In
+  \bibinfo{booktitle}{\emph{E-Business and Telecommunications}},
+  \bibfield{editor}{\bibinfo{person}{Mohammad~S. Obaidat} {and}
+  \bibinfo{person}{Joaquim Filipe}} (Eds.). \bibinfo{publisher}{Springer Berlin
+  Heidelberg}, \bibinfo{address}{Berlin, Heidelberg},
+  \bibinfo{pages}{290--305}.
+\newblock
+\showISBNx{978-3-662-44788-8}
+
+
+\bibitem[\protect\citeauthoryear{S{\'y}s and {\v{R}}{\'\i}ha}{S{\'y}s and
+  {\v{R}}{\'\i}ha}{2014}]%
+        {10.1007/978-3-319-12060-7_18}
+\bibfield{author}{\bibinfo{person}{Marek S{\'y}s} {and}
+  \bibinfo{person}{Zden{\v{e}}k {\v{R}}{\'\i}ha}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Faster Randomness Testing with the NIST Statistical
+  Test Suite}. In \bibinfo{booktitle}{\emph{Security, Privacy, and Applied
+  Cryptography Engineering}}, \bibfield{editor}{\bibinfo{person}{Rajat~Subhra
+  Chakraborty}, \bibinfo{person}{Vashek Matyas}, {and} \bibinfo{person}{Patrick
+  Schaumont}} (Eds.). \bibinfo{publisher}{Springer International Publishing},
+  \bibinfo{address}{Cham}, \bibinfo{pages}{272--284}.
+\newblock
+\showISBNx{978-3-319-12060-7}
+
+
+\bibitem[\protect\citeauthoryear{S{\'y}s}{S{\'y}s}{2015}]%
+        {FastNIST-STS-Muni}
+\bibfield{author}{\bibinfo{person}{V.~Maty{\'a}{\v s} K.M{\'a}rton A.~Suciu
+  S{\'y}s, M.; Z.~{\v R}{\'\i}ha}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{On the Interpretation of Results from the NIST
+  Statistical Test Suite}. In \bibinfo{booktitle}{\emph{Romanian Journal of
+  Information Science and Technology}},
+  \bibfield{editor}{\bibinfo{person}{Publishing~House of~the Romanian~Academy}}
+  (Ed.), Vol.~\bibinfo{volume}{18}. \bibinfo{pages}{18--32}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tenorio, Sham, and Vargas}{Tenorio
+  et~al\mbox{.}}{2020}]%
+        {10.1145/3377929.3389933}
+\bibfield{author}{\bibinfo{person}{Raul Horacio~Valencia Tenorio},
+  \bibinfo{person}{Chiu~Wing Sham}, {and} \bibinfo{person}{Danilo~Vasconcellos
+  Vargas}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Preliminary Study of Applied Binary Neural Networks
+  for Neural Cryptography}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2020 Genetic and Evolutionary Computation Conference Companion}} (Canc\'{u}n,
+  Mexico) \emph{(\bibinfo{series}{GECCO '20})}. \bibinfo{publisher}{Association
+  for Computing Machinery}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{291--292}.
+\newblock
+\showISBNx{9781450371278}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3377929.3389933}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Valencia}{Valencia}{2019}]%
+        {BiSUNAOCLGithub}
+\bibfield{author}{\bibinfo{person}{Raul Valencia}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{Binary Spectrum-diverse Unified Neuroevolution
+  Architecture}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{github.com/rval735/bisunaocl}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Valencia}, {Sham}, and {Sinnen}}{{Valencia}
+  et~al\mbox{.}}{2019}]%
+        {8953134}
+\bibfield{author}{\bibinfo{person}{R. {Valencia}}, \bibinfo{person}{C. {Sham}},
+  {and} \bibinfo{person}{O. {Sinnen}}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Using Neuroevolved Binary Neural Networks to solve
+  reinforcement learning environments}. In \bibinfo{booktitle}{\emph{2019 IEEE
+  Asia Pacific Conference on Circuits and Systems (APCCAS)}}.
+  \bibinfo{pages}{301--304}.
+\newblock
+\showISSN{null}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/APCCAS47518.2019.8953134}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Vargas and Murata}{Vargas and Murata}{2017}]%
+        {7460958}
+\bibfield{author}{\bibinfo{person}{Danilo Vargas} {and}
+  \bibinfo{person}{Junichi Murata}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Spectrum-Diverse Neuroevolution With Unified Neural
+  Models}.
+\newblock \bibinfo{journal}{\emph{IEEE Transactions on Neural Networks and
+  Learning Systems}} \bibinfo{volume}{28}, \bibinfo{number}{8}
+  (\bibinfo{date}{Aug} \bibinfo{year}{2017}), \bibinfo{pages}{1759--1773}.
+\newblock
+\showISSN{2162-237X}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/TNNLS.2016.2551748}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Wang, Zhan, Li, Tang, Yuan, Zhao, Wen, Wang,
+  and Lin}{Wang et~al\mbox{.}}{2018}]%
+        {OUAPES-AAAI}
+\bibfield{author}{\bibinfo{person}{Yanzhi Wang}, \bibinfo{person}{Zheng Zhan},
+  \bibinfo{person}{Jiayu Li}, \bibinfo{person}{Jian Tang}, \bibinfo{person}{Bo
+  Yuan}, \bibinfo{person}{Liang Zhao}, \bibinfo{person}{Wujie Wen},
+  \bibinfo{person}{Siyue Wang}, {and} \bibinfo{person}{Xue Lin}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{On the Universal Approximation Property and
+  Equivalence of Stochastic Computing-based Neural Networks and Binary Neural
+  Networks}. In \bibinfo{booktitle}{\emph{AAAI Technical Track: Machine
+  Learning}}, \bibfield{editor}{\bibinfo{person}{AAAI}} (Ed.),
+  Vol.~\bibinfo{volume}{33}. AAAI, \bibinfo{publisher}{AAAI},
+  \bibinfo{pages}{7}.
+\newblock
+\showeprint{1803.05391}
+\urldef\tempurl%
+\url{http://arxiv.org/abs/1803.05391}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Yaman, Mocanu, Iacca, Fletcher, and
+  Pechenizkiy}{Yaman et~al\mbox{.}}{2018}]%
+        {Yaman:2018:LEC:3205455.3205555}
+\bibfield{author}{\bibinfo{person}{Anil Yaman},
+  \bibinfo{person}{Decebal~Constantin Mocanu}, \bibinfo{person}{Giovanni
+  Iacca}, \bibinfo{person}{George Fletcher}, {and} \bibinfo{person}{Mykola
+  Pechenizkiy}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Limited Evaluation Cooperative Co-evolutionary
+  Differential Evolution for Large-scale Neuroevolution}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the Genetic and Evolutionary
+  Computation Conference}} (Kyoto, Japan) \emph{(\bibinfo{series}{GECCO '18})}.
+  \bibinfo{publisher}{ACM}, \bibinfo{address}{New York, NY, USA},
+  \bibinfo{pages}{569--576}.
+\newblock
+\showISBNx{978-1-4503-5618-3}
+\urldef\tempurl%
+\url{https://doi.org/10.1145/3205455.3205555}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Zdenek~{\v R}{\'\i}ha}{Zdenek~{\v
+  R}{\'\i}ha}{2014}]%
+        {Fast-STS}
+\bibfield{author}{\bibinfo{person}{Marek~S{\'y}s Zdenek~{\v R}{\'\i}ha}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \bibinfo{title}{Faster randomness testing}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://randomness-tests.fi.muni.cz/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Zhao}, {Zhou}, {Zhao}, {Zhou}, and
+  {Li}}{{Zhao} et~al\mbox{.}}{2020}]%
+        {9102924}
+\bibfield{author}{\bibinfo{person}{J. {Zhao}}, \bibinfo{person}{W. {Zhou}},
+  \bibinfo{person}{T. {Zhao}}, \bibinfo{person}{Y. {Zhou}}, {and}
+  \bibinfo{person}{H. {Li}}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{State Representation Learning For Effective Deep
+  Reinforcement Learning}. In \bibinfo{booktitle}{\emph{2020 IEEE International
+  Conference on Multimedia and Expo (ICME)}}. \bibinfo{pages}{1--6}.
+\newblock
+\showISSN{1945-788X}
+\urldef\tempurl%
+\url{https://doi.org/10.1109/ICME46284.2020.9102924}
+\showDOI{\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{{Zhu}, {Vargas}, and {Sakurai}}{{Zhu}
+  et~al\mbox{.}}{2018}]%
+        {8590945}
+\bibfield{author}{\bibinfo{person}{Y. {Zhu}}, \bibinfo{person}{D.~V. {Vargas}},
+  {and} \bibinfo{person}{K. {Sakurai}}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Neural Cryptography Based on the Topology Evolving
+  Neural Networks}. In \bibinfo{booktitle}{\emph{2018 Sixth International
+  Symposium on Computing and Networking Workshops (CANDARW)}}.
+  \bibinfo{pages}{472--478}.
+\newblock
+\urldef\tempurl%
+\url{https://doi.org/10.1109/CANDARW.2018.00091}
+\showDOI{\tempurl}
+
 
 \end{thebibliography}
