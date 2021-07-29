@@ -7608,6 +7608,68 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{Yaman:2018:LEC:3205455.3205555}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=YA}{%
+         family={Yaman},
+         familyi={Y\bibinitperiod},
+         given={Anil},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MDC}{%
+         family={Mocanu},
+         familyi={M\bibinitperiod},
+         given={Decebal\bibnamedelima Constantin},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Iacca},
+         familyi={I\bibinitperiod},
+         given={Giovanni},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FG}{%
+         family={Fletcher},
+         familyi={F\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pechenizkiy},
+         familyi={P\bibinitperiod},
+         given={Mykola},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ACM}%
+    }
+    \keyw{Evolutionary, cooperative co-evolution, differential evolution,
+  direct encoding, neuroevolution, LECCDE}
+    \strng{namehash}{YA+1}
+    \strng{fullhash}{YAMDCIGFGPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Proceedings of the Genetic and Evolutionary Computation
+  Conference}
+    \verb{doi}
+    \verb 10.1145/3205455.3205555
+    \endverb
+    \field{isbn}{978-1-4503-5618-3}
+    \field{pages}{569\bibrangedash 576}
+    \field{series}{GECCO '18}
+    \field{title}{Limited Evaluation Cooperative Co-evolutionary Differential
+  Evolution for Large-scale Neuroevolution}
+    \verb{url}
+    \verb http://doi.acm.org/10.1145/3205455.3205555
+    \endverb
+    \list{location}{1}{%
+      {Kyoto, Japan}%
+    }
+    \field{year}{2018}
+    \warn{\item Can't use 'location' + 'address'}
+  \endentry
+
   \entry{pmlr-v80-kleinberg18a}{inproceedings}{}
     \name{author}{3}{}{%
       {{hash=KB}{%
