@@ -7979,6 +7979,35 @@
   'urldate'}
   \endentry
 
+  \entry{ablationSpeech}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=ANDRR}{%
+         family={Allen\bibnamedelima Newell},
+         familyi={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={D.\bibnamedelima Raj\bibnamedelima Reddy},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=SI}{%
+         family={Symposium},
+         familyi={S\bibinitperiod},
+         given={IEEE},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{ablation test, speech recognition}
+    \strng{namehash}{ANDRR1}
+    \strng{fullhash}{ANDRR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{In Speech Recognition}
+    \field{title}{A Tutorial on Speech Understanding Systems}
+    \field{volume}{Invited Papers Presented}
+    \field{year}{1974}
+  \endentry
+
   \entry{Moussa2006}{inbook}{}
     \name{author}{3}{}{%
       {{hash=MM}{%
